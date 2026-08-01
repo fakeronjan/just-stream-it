@@ -4,291 +4,283 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Just Stream It - Keeper Dossier</title>
-<meta name="description" content="Confidential 2026 keeper decision dossier for the Just Stream It fantasy football league.">
+<meta name="description" content="Confidential 2026 keeper decision terminal for the Just Stream It fantasy football league.">
 <style>
+  /*
+    Deliberately single-theme (dark CRT terminal) - a "light terminal" isn't
+    a real-world thing, so this doesn't adapt to prefers-color-scheme/toggle.
+  */
   :root {
-    color-scheme: light dark;
-
-    --board:        #D9C89A;
-    --board-raised: #F1E9D2;
-    --board-tab:    #C9B888;
-    --ink:          #2B2620;
-    --ink-dim:      #6B6252;
-    --stamp-red:    #8C2F2F;
-    --stamp-green:  #4B6B4F;
-    --rule:         #B7A87A;
-    --shadow:       rgba(43, 38, 32, 0.25);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --board:        #16140F;
-      --board-raised: #201D16;
-      --board-tab:    #26221A;
-      --ink:          #E7D9AF;
-      --ink-dim:      #8A8168;
-      --stamp-red:    #D64545;
-      --stamp-green:  #7FBF83;
-      --rule:         #3A3424;
-      --shadow:       rgba(0, 0, 0, 0.5);
-    }
-  }
-  :root[data-theme="dark"] {
-    --board:        #16140F;
-    --board-raised: #201D16;
-    --board-tab:    #26221A;
-    --ink:          #E7D9AF;
-    --ink-dim:      #8A8168;
-    --stamp-red:    #D64545;
-    --stamp-green:  #7FBF83;
-    --rule:         #3A3424;
-    --shadow:       rgba(0, 0, 0, 0.5);
-  }
-  :root[data-theme="light"] {
-    --board:        #D9C89A;
-    --board-raised: #F1E9D2;
-    --board-tab:    #C9B888;
-    --ink:          #2B2620;
-    --ink-dim:      #6B6252;
-    --stamp-red:    #8C2F2F;
-    --stamp-green:  #4B6B4F;
-    --rule:         #B7A87A;
-    --shadow:       rgba(43, 38, 32, 0.25);
+    color-scheme: dark;
+    --bg:       #060a07;
+    --panel:    #0d1510;
+    --line:     #17301f;
+    --dim:      #2f7a45;
+    --fg:       #4dff77;
+    --bright:   #aaffc2;
+    --alert:    #ff5c5c;
+    --alert-dim: #7a2e2e;
   }
 
   * { box-sizing: border-box; }
 
   body {
     margin: 0;
-    background: var(--board);
-    color: var(--ink);
-    font-family: "Courier New", Courier, monospace;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "SF Mono", "Menlo", "Consolas", "Courier New", monospace;
     font-variant-numeric: tabular-nums;
+    line-height: 1.4;
   }
 
-  .stamp-font {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  /* faint CRT scanline overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0px,
+      rgba(0,0,0,0) 2px,
+      rgba(0,0,0,0.12) 3px
+    );
+    mix-blend-mode: multiply;
   }
 
-  /* ---- masthead ---- */
-  .case-cover {
-    padding: 2rem 1.5rem 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    border-bottom: 3px double var(--rule);
+  a { color: var(--bright); }
+
+  .glow { text-shadow: 0 0 6px rgba(77,255,119,0.45); }
+
+  @keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
   }
-  .case-cover .classified {
+  .cursor {
     display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.3em;
-    font-size: 0.75rem;
-    color: var(--stamp-red);
-    border: 2px solid var(--stamp-red);
-    padding: 0.2rem 0.7rem;
-    transform: rotate(-2deg);
-    margin-bottom: 0.75rem;
+    width: 0.55em;
+    height: 1em;
+    background: var(--fg);
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
   }
-  .case-cover h1 {
-    margin: 0 0 0.35rem;
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    text-wrap: balance;
-  }
-  .case-cover .subtitle {
-    color: var(--ink-dim);
-    font-size: 0.9rem;
+  @media (prefers-reduced-motion: reduce) {
+    .cursor { animation: none; }
   }
 
-  /* ---- folder tab selector ---- */
-  nav.folders {
+  /* ---- lock screen ---- */
+  #lock-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: var(--bg);
     display: flex;
-    gap: 0.4rem;
-    overflow-x: auto;
-    padding: 1.25rem 1.5rem 0;
-    max-width: 1000px;
-    margin: 0 auto;
-    scrollbar-width: thin;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
   }
-  .folder-tab {
-    flex: 0 0 auto;
+  .lock-box {
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    padding: 1.5rem;
+  }
+  .lock-box p { margin: 0.3rem 0; }
+  .lock-box .prompt-line {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: var(--board-tab);
-    border: 1px solid var(--rule);
-    border-bottom: none;
-    border-radius: 8px 8px 0 0;
-    padding: 0.5rem 0.8rem;
-    cursor: pointer;
-    color: var(--ink-dim);
-    font-size: 0.8rem;
-    transition: transform 0.12s ease, color 0.12s ease, background 0.12s ease;
+    margin-top: 0.75rem;
   }
-  .folder-tab:hover { transform: translateY(-2px); color: var(--ink); }
-  .folder-tab.active {
-    background: var(--board-raised);
-    color: var(--ink);
-    font-weight: 700;
-    transform: translateY(-2px);
+  .lock-box .prompt-line span.dollar { color: var(--bright); }
+  .lock-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    color: var(--fg);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.3rem 0.2rem;
+    outline: none;
   }
-  .folder-tab img {
-    width: 22px;
-    height: 22px;
-    border-radius: 4px;
-    object-fit: cover;
-    background: var(--board);
-  }
-  .folder-tab .tab-name {
-    max-width: 11ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+  .lock-box input:focus { border-bottom-color: var(--fg); }
+  .lock-error { color: var(--alert); margin-top: 0.6rem; display: none; }
+  .lock-error.show { display: block; }
 
-  /* ---- dossier sheet ---- */
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1.5rem 3rem;
+  /* ---- terminal window chrome ---- */
+  .term-window {
+    max-width: 1080px;
+    margin: 1.5rem auto;
+    border: 1px solid var(--line);
+    background: var(--panel);
   }
-  .dossier-sheet {
-    background: var(--board-raised);
-    border: 1px solid var(--rule);
-    border-radius: 0 6px 6px 6px;
-    box-shadow: 0 8px 24px var(--shadow);
-    padding: 1.5rem;
-    position: relative;
-    overflow: hidden;
+  .term-titlebar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--dim);
+    font-size: 0.78rem;
   }
-  .sheet-header {
+  .term-titlebar .dots { display: flex; gap: 0.35rem; }
+  .term-titlebar .dots span {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--line);
+  }
+  .term-body { padding: 1.25rem 1.25rem 1.5rem; }
+
+  header.masthead { padding: 0 0 1rem; }
+  header.masthead .tag {
+    display: inline-block;
+    border: 1px solid var(--alert);
+    color: var(--alert);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    padding: 0.1rem 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+  header.masthead h1 {
+    margin: 0 0 0.3rem;
+    font-size: clamp(1.2rem, 3.2vw, 1.7rem);
+    text-wrap: balance;
+  }
+  header.masthead .subtitle { color: var(--dim); font-size: 0.85rem; }
+
+  /* ---- team selection grid ---- */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 0.6rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .team-box {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid var(--line);
+    padding: 0.55rem 0.7rem;
+    cursor: pointer;
+    color: var(--dim);
+    background: transparent;
+    text-align: left;
+    font-family: inherit;
+    font-size: 0.82rem;
+  }
+  .team-box:hover { border-color: var(--fg); color: var(--fg); }
+  .team-box.active {
+    background: var(--fg);
+    border-color: var(--fg);
+    color: var(--bg);
+    font-weight: 700;
+  }
+  .team-box img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
+  }
+  .team-box.active img { border-color: var(--bg); }
+  .team-box .box-name { line-height: 1.25; }
+  .team-box .box-owner { display: block; font-size: 0.72rem; opacity: 0.75; }
+
+  /* ---- dossier ---- */
+  .dossier-header {
     display: flex;
     align-items: center;
     gap: 1rem;
-    border-bottom: 2px dashed var(--rule);
+    border-bottom: 1px solid var(--line);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
-  .sheet-header img {
-    width: 56px;
-    height: 56px;
-    border-radius: 8px;
+  .dossier-header img {
+    width: 52px;
+    height: 52px;
     object-fit: cover;
-    border: 1px solid var(--rule);
+    border: 1px solid var(--line);
   }
-  .sheet-header h2 {
+  .dossier-header h2 {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-size: 1.3rem;
-    text-wrap: balance;
+    font-size: 1.15rem;
   }
-  .sheet-header .owner-line {
-    color: var(--ink-dim);
-    font-size: 0.85rem;
-    margin-top: 0.2rem;
-  }
-  .eyes-only {
+  .dossier-header .owner-line { color: var(--dim); font-size: 0.82rem; }
+  .access-tag {
     margin-left: auto;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-weight: 800;
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-    color: var(--stamp-red);
-    border: 2px solid var(--stamp-red);
-    border-radius: 4px;
-    padding: 0.3rem 0.5rem;
-    transform: rotate(3deg);
-    line-height: 1.3;
+    border: 1px solid var(--alert);
+    color: var(--alert);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    padding: 0.25rem 0.5rem;
     white-space: nowrap;
   }
 
-  .warning-stamp {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 0.8rem;
-    color: var(--stamp-red);
-    border: 2px solid var(--stamp-red);
-    border-radius: 4px;
+  .warning-box {
+    border: 1px solid var(--alert);
+    color: var(--alert);
     padding: 0.5rem 0.75rem;
     margin-bottom: 0.75rem;
-    transform: rotate(-0.4deg);
+    font-size: 0.8rem;
   }
 
   .table-scroll { overflow-x: auto; }
   table.dossier-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.82rem;
-    min-width: 760px;
+    font-size: 0.8rem;
+    min-width: 820px;
   }
   .dossier-table th {
     text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     font-size: 0.68rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--ink-dim);
-    padding: 0.4rem 0.6rem;
-    border-bottom: 2px solid var(--rule);
+    color: var(--dim);
+    padding: 0.35rem 0.6rem;
+    border-bottom: 1px solid var(--line);
     white-space: nowrap;
   }
   .dossier-table td {
-    padding: 0.45rem 0.6rem;
-    border-bottom: 1px dotted var(--rule);
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--line);
     white-space: nowrap;
   }
-  .dossier-table td.player-cell { white-space: normal; }
-  .dossier-table tbody tr:hover { background: color-mix(in srgb, var(--rule) 20%, transparent); }
+  .dossier-table td.player-cell { white-space: normal; color: var(--bright); }
+  .dossier-table tbody tr:hover { background: rgba(77,255,119,0.06); }
 
   .pos-chip {
     display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     font-size: 0.65rem;
-    font-weight: 700;
-    padding: 0.05rem 0.35rem;
-    border-radius: 3px;
-    border: 1px solid var(--rule);
-    color: var(--ink-dim);
+    padding: 0.03rem 0.3rem;
+    border: 1px solid var(--line);
+    color: var(--dim);
     margin-right: 0.3rem;
   }
-  .acq-chip {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
+  .meta-chip {
+    font-size: 0.7rem;
+    color: var(--dim);
   }
-  .vig.good { color: var(--stamp-green); font-weight: 700; }
-  .vig.bad { color: var(--stamp-red); font-weight: 700; }
-  .vig-tag {
+  .kv.good { color: var(--fg); font-weight: 700; }
+  .kv.bad { color: var(--alert); font-weight: 700; }
+  .kv-tag {
     display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     font-size: 0.6rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    padding: 0.05rem 0.3rem;
-    border-radius: 3px;
+    letter-spacing: 0.04em;
+    padding: 0.03rem 0.3rem;
     margin-left: 0.4rem;
+    border: 1px solid currentColor;
   }
-  .vig-tag.bargain { background: var(--stamp-green); color: var(--board-raised); }
-  .vig-tag.overpay { background: var(--stamp-red); color: var(--board-raised); }
 
-  details.redacted {
-    margin-top: 1.5rem;
-    font-size: 0.85rem;
-  }
+  details.redacted { margin-top: 1.5rem; font-size: 0.82rem; }
   details.redacted summary {
     cursor: pointer;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--ink-dim);
+    color: var(--dim);
   }
   .redacted-list { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.3rem; }
   .redacted-row {
@@ -296,50 +288,67 @@
     justify-content: space-between;
     gap: 1rem;
     padding: 0.3rem 0.5rem;
-    background: color-mix(in srgb, var(--ink) 8%, transparent);
-    border-radius: 3px;
+    border: 1px solid var(--line);
   }
-  .redacted-row .reason { color: var(--ink-dim); font-size: 0.78rem; }
+  .redacted-row .reason { color: var(--dim); font-size: 0.75rem; }
 
   .rules-note {
-    max-width: 1000px;
-    margin: 1.5rem auto 0;
-    padding: 0 1.5rem;
-    color: var(--ink-dim);
-    font-size: 0.75rem;
+    max-width: 1080px;
+    margin: 0 auto 2rem;
+    padding: 0 1.25rem;
+    color: var(--dim);
+    font-size: 0.72rem;
   }
 
-  .empty-state {
-    text-align: center;
-    color: var(--ink-dim);
-    padding: 3rem 0;
-  }
+  .empty-state { text-align: center; color: var(--dim); padding: 3rem 0; }
 </style>
 </head>
 <body>
 
-<header class="case-cover">
-  <div class="classified">Classified</div>
-  <h1 id="league-name">Just Stream It - Keeper Dossier</h1>
-  <div class="subtitle">2026 keeper decisions, compiled from 2025 league records</div>
-</header>
+<div id="lock-screen">
+  <div class="lock-box">
+    <p class="glow">&gt; SYSTEM: JUST STREAM IT KEEPER DATABASE</p>
+    <p>&gt; STATUS: <span style="color:var(--alert)">ACCESS RESTRICTED</span></p>
+    <p>&gt; league members only. enter passphrase to continue:</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">$</span>
+      <input type="password" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">&gt; ACCESS DENIED. TRY AGAIN.</p>
+  </div>
+</div>
 
-<nav class="folders" id="folder-tabs"></nav>
+<div id="app" style="display:none">
+  <div class="term-window">
+    <div class="term-titlebar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span>user@just-stream-it: ~/keepers/2026</span>
+    </div>
+    <div class="term-body">
+      <header class="masthead">
+        <div class="tag">Classified</div>
+        <h1 class="glow">Just Stream It - Keeper Terminal<span class="cursor"></span></h1>
+        <div class="subtitle">2026 keeper decisions, compiled from 2025 league records</div>
+      </header>
 
-<main id="dossier-content">
-  <div class="empty-state">Loading case files…</div>
-</main>
+      <div class="team-grid" id="team-grid"></div>
 
-<p class="rules-note">
-  Cost = original 2025 draft round minus one (round 1 stays round 1, but costs a second keeper slot).
-  Pick-level figures are estimates - real slot depends on 2026 draft order. ADP uses ESPN's SUPERFLEX
-  rank (this league starts a QB + a superflex slot, so standard/PPR rank badly undervalues QBs). Vig =
-  keeper cost vs. current SUPERFLEX market value, in picks - positive is a bargain, negative is an overpay.
-</p>
+      <main id="dossier-content">
+        <div class="empty-state">Loading records...</div>
+      </main>
+    </div>
+  </div>
+
+  <p class="rules-note">
+    Keeper cost = original 2025 draft round minus one (round 1 stays round 1, but costs a second keeper
+    slot - only the round is enforced, not an exact pick). ADP uses ESPN's SUPERFLEX rank (this league
+    starts a QB + a superflex slot, so standard/PPR rank badly undervalues QBs). Keeper Value compares
+    keeper cost to current SUPERFLEX market value, in picks - positive is a bargain, negative is an overpay.
+  </p>
+</div>
 
 <script>
-let guide = [];
-let selectedTeamId = null;
+const PASSWORD = 'cockroach';
 
 function fmtSigned(n) {
   if (n === null || n === undefined) return '-';
@@ -351,27 +360,30 @@ function posLabel(position, rank) {
   return `<span class="pos-chip">${position}</span>${rank}`;
 }
 
-function vigCell(vig) {
+function keeperValueCell(vig) {
   if (vig === null || vig === undefined) return '-';
   const cls = vig >= 0 ? 'good' : 'bad';
   let tag = '';
-  if (vig >= 40) tag = '<span class="vig-tag bargain">Bargain</span>';
-  else if (vig <= -40) tag = '<span class="vig-tag overpay">Overpay</span>';
-  return `<span class="vig ${cls}">${fmtSigned(vig)}</span>${tag}`;
+  if (vig >= 40) tag = '<span class="kv-tag">BARGAIN</span>';
+  else if (vig <= -40) tag = '<span class="kv-tag">OVERPAY</span>';
+  return `<span class="kv ${cls}">${fmtSigned(vig)}</span>${tag}`;
 }
 
-function renderTabs() {
-  const nav = document.getElementById('folder-tabs');
-  nav.innerHTML = guide.map(t => `
-    <div class="folder-tab ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
+let guide = [];
+let selectedTeamId = null;
+
+function renderTeamGrid() {
+  const grid = document.getElementById('team-grid');
+  grid.innerHTML = guide.map(t => `
+    <button class="team-box ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
       <img src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
-      <span class="tab-name">${t.team_name}</span>
-    </div>
+      <span class="box-name">${t.team_name}<span class="box-owner">${t.owners.join(' & ')}</span></span>
+    </button>
   `).join('');
-  nav.querySelectorAll('.folder-tab').forEach(el => {
+  grid.querySelectorAll('.team-box').forEach(el => {
     el.addEventListener('click', () => {
       selectedTeamId = Number(el.dataset.team);
-      renderTabs();
+      renderTeamGrid();
       renderDossier();
     });
   });
@@ -380,88 +392,103 @@ function renderTabs() {
 function renderDossier() {
   const team = guide.find(t => t.team_id === selectedTeamId);
   const main = document.getElementById('dossier-content');
-  if (!team) { main.innerHTML = '<div class="empty-state">Select a team folder above.</div>'; return; }
+  if (!team) { main.innerHTML = '<div class="empty-state">Select a team above.</div>'; return; }
 
   let warnings = '';
   if (team.cannot_keep_multiple_round1) {
-    warnings += `<div class="warning-stamp">⚠ Holds multiple round-1-drafted players (${team.round1_candidates.join(', ')}) - only one can be kept, since both would require the single round-1 slot.</div>`;
+    warnings += `<div class="warning-box">!! Holds multiple round-1-drafted players (${team.round1_candidates.join(', ')}) - only one can be kept, since both would require the single round-1 slot.</div>`;
   } else if (team.cannot_keep_both_round1_and_round2) {
-    warnings += `<div class="warning-stamp">⚠ Cannot keep both the round-1 and round-2 picks below - both would cost a round-1 pick, and there's only one round-1 slot.</div>`;
+    warnings += `<div class="warning-box">!! Cannot keep both the round-1 and round-2 picks below - both would cost a round-1 pick, and there's only one round-1 slot.</div>`;
   }
 
   const rows = team.candidates.map(c => `
     <tr>
-      <td class="player-cell">${c.name}<br><span class="acq-chip" style="color:var(--ink-dim)">${c.pro_team}</span></td>
-      <td>${c.drafted_pick_2025} <span class="acq-chip">(#${c.drafted_overall_2025})</span></td>
-      <td class="acq-chip">${c.acquisition_type}</td>
+      <td class="player-cell">${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
+      <td>${c.drafted_pick_2025} <span class="meta-chip">(#${c.drafted_overall_2025})</span></td>
+      <td class="meta-chip">${c.acquisition_type}</td>
       <td>${c.points_actual_2025 != null ? c.points_actual_2025.toFixed(1) : '-'}</td>
       <td>${posLabel(c.position, c.position_rank_actual_2025)}</td>
       <td>${c.points_projected_2026 != null ? c.points_projected_2026.toFixed(1) : '-'}</td>
       <td>${posLabel(c.position, c.position_rank_projected_2026)}</td>
       <td>${c.adp_pick_estimate || '-'}</td>
-      <td>${c.keeper_cost_pick_estimate}${c.is_first_round_pick ? ' <span class="acq-chip">(+1 slot)</span>' : ''}</td>
-      <td>${vigCell(c.vig)}</td>
+      <td>Round ${c.keeper_cost_round_2026}${c.is_first_round_pick ? ' <span class="meta-chip">(+1 slot)</span>' : ''}</td>
+      <td>${keeperValueCell(c.vig)}</td>
     </tr>
   `).join('');
 
   const ineligibleRows = team.ineligible.map(p => `
     <div class="redacted-row">
-      <span>${p.name} <span class="acq-chip">${p.position}, ${p.pro_team}</span></span>
+      <span>${p.name} <span class="meta-chip">${p.position}, ${p.pro_team}</span></span>
       <span class="reason">${p.reason}</span>
     </div>
   `).join('');
 
   main.innerHTML = `
-    <div class="dossier-sheet">
-      <div class="sheet-header">
-        <img src="${team.logo}" alt="" onerror="this.style.visibility='hidden'">
-        <div>
-          <h2>${team.team_name}</h2>
-          <div class="owner-line">Owner: ${team.owners.join(' & ')}</div>
-        </div>
-        <div class="eyes-only">Eyes Only<br>${team.owners[0] || ''}</div>
+    <div class="dossier-header">
+      <img src="${team.logo}" alt="" onerror="this.style.visibility='hidden'">
+      <div>
+        <h2>${team.team_name}</h2>
+        <div class="owner-line">Owner: ${team.owners.join(' & ')}</div>
       </div>
-
-      ${warnings}
-
-      <div class="table-scroll">
-        <table class="dossier-table">
-          <thead>
-            <tr>
-              <th>Player</th>
-              <th>Drafted</th>
-              <th>Acquired</th>
-              <th>'25 Pts</th>
-              <th>'25 Rank</th>
-              <th>'26 Proj Pts</th>
-              <th>'26 Proj Rank</th>
-              <th>ADP (SF)</th>
-              <th>Keeper Cost</th>
-              <th>Vig</th>
-            </tr>
-          </thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>
-
-      <details class="redacted">
-        <summary>Not keeper-eligible (${team.ineligible.length})</summary>
-        <div class="redacted-list">${ineligibleRows}</div>
-      </details>
+      <div class="access-tag">ACCESS: ${team.owners[0] || ''} ONLY</div>
     </div>
+
+    ${warnings}
+
+    <div class="table-scroll">
+      <table class="dossier-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Drafted</th>
+            <th>Acquired</th>
+            <th>'25 Pts</th>
+            <th>'25 Rank</th>
+            <th>'26 Proj Pts</th>
+            <th>'26 Proj Rank</th>
+            <th>ADP (SF)</th>
+            <th>Keeper Cost</th>
+            <th>Keeper Value</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+
+    <details class="redacted">
+      <summary>Not keeper-eligible (${team.ineligible.length})</summary>
+      <div class="redacted-list">${ineligibleRows}</div>
+    </details>
   `;
 }
 
-async function init() {
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+  if (guide.length) return; // already loaded once this session
   const res = await fetch('data/keeper_guide_2026.json');
   guide = await res.json();
   guide.sort((a, b) => a.team_name.localeCompare(b.team_name));
   selectedTeamId = guide[0].team_id;
-  renderTabs();
+  renderTeamGrid();
   renderDossier();
 }
 
-init();
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
 </script>
 </body>
 </html>
