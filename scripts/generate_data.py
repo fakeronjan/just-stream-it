@@ -77,6 +77,7 @@ def build_rosters(league):
                     "lineup_slot": LINEUP_SLOT_MAP.get(e["lineupSlotId"], e["lineupSlotId"]),
                     "keeper_value": e["playerPoolEntry"].get("keeperValue"),
                     "injury_status": e.get("injuryStatus"),
+                    "acquisition_type": e.get("acquisitionType"),
                 }
             )
         rosters[t["id"]] = players

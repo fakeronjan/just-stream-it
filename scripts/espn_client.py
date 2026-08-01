@@ -71,3 +71,27 @@ def fetch_players_by_id(league_id, season, player_ids):
     resp.raise_for_status()
     players = resp.json().get("players", [])
     return {p["id"]: p["player"] for p in players}
+
+
+def fetch_player_pool(league_id, season, limit=600):
+    """Bulk-fetch the top `limit` fantasy-relevant players (by ownership%),
+    with full stats/projections - used to compute position rank against the
+    full NFL universe rather than just this league's ~228 drafted players.
+    """
+    s2, swid = _load_credentials()
+    cookies = {"espn_s2": s2, "SWID": swid}
+    url = f"{BASE_URL}/seasons/{season}/segments/0/leagues/{league_id}"
+    filt = {
+        "players": {
+            "filterActive": {"value": True},
+            "limit": limit,
+            "sortPercOwned": {"sortPriority": 1, "sortAsc": False},
+        }
+    }
+    headers = {"x-fantasy-filter": json.dumps(filt)}
+    resp = requests.get(
+        url, cookies=cookies, params=[("view", "kona_player_info")], headers=headers, timeout=30
+    )
+    resp.raise_for_status()
+    players = resp.json().get("players", [])
+    return {p["id"]: p["player"] for p in players}
