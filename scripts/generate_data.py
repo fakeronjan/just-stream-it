@@ -7,13 +7,58 @@ import datetime
 import json
 from pathlib import Path
 
+import io
+
+import requests
+from PIL import Image
+
 from config import CURRENT_SEASON, LEAGUE_ID, LEAGUE_NAME, SEASONS
-from espn_client import fetch_league, fetch_players_by_id
+from espn_client import _load_credentials, fetch_league, fetch_players_by_id
 from espn_maps import LINEUP_SLOT_MAP, POSITION_MAP, PRO_TEAM_MAP
 
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
+LOGOS_DIR = Path(__file__).parent.parent / "docs" / "logos"
 
 VIEWS = ["mTeam", "mRoster", "mSettings", "mMatchup", "mDraftDetail"]
+
+EXT_BY_CONTENT_TYPE = {
+    "image/jpg": ".jpg",
+    "image/jpeg": ".jpg",
+    "image/png": ".png",
+    "image/svg+xml": ".svg",
+}
+
+
+LOGO_MAX_DIM = 160  # displayed at 28-56px; this covers retina with room to spare
+
+
+def download_logo(team_id, url):
+    """Custom-uploaded team logos live behind ESPN's auth wall (the default
+    stock logos on g.espncdn.com don't, but there's no way to tell which
+    from the URL alone) - so hotlinking them breaks for site visitors who
+    aren't authenticated. Download with our own credentials, downscale
+    (source images can be 400KB+ for a thumbnail shown at 28-56px), and
+    host locally.
+    """
+    s2, swid = _load_credentials()
+    resp = requests.get(url, cookies={"espn_s2": s2, "SWID": swid}, timeout=30)
+    resp.raise_for_status()
+    content_type = resp.headers.get("content-type", "").split(";")[0].strip()
+    ext = EXT_BY_CONTENT_TYPE.get(content_type, ".png")
+    LOGOS_DIR.mkdir(parents=True, exist_ok=True)
+    path = LOGOS_DIR / f"{team_id}{ext}"
+
+    if ext == ".svg":
+        path.write_bytes(resp.content)
+    else:
+        img = Image.open(io.BytesIO(resp.content))
+        img.thumbnail((LOGO_MAX_DIM, LOGO_MAX_DIM))
+        if ext == ".jpg":
+            img.convert("RGB").save(path, "JPEG", quality=85)
+        else:
+            img.save(path, "PNG", optimize=True)
+
+    return f"logos/{team_id}{ext}"
 
 
 def build_teams(league):
@@ -22,12 +67,13 @@ def build_teams(league):
     for t in league["teams"]:
         record = t["record"]["overall"]
         owners = [members.get(o, o) for o in t.get("owners", [])]
+        logo_url = t.get("logo")
         teams.append(
             {
                 "id": t["id"],
                 "name": t["name"],
                 "abbrev": t["abbrev"],
-                "logo": t.get("logo"),
+                "logo": download_logo(t["id"], logo_url) if logo_url else None,
                 "owners": owners,
                 "wins": record["wins"],
                 "losses": record["losses"],
