@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #2563eb;
+    --row-alt: #f9fafb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #e8e8e8;
+      --muted: #9ca3af;
+      --border: #2a2d33;
+      --accent: #60a5fa;
+      --row-alt: #1b1e24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  header {
+    padding: 1.5rem 1.5rem 0.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 { margin: 0 0 0.25rem; font-size: 1.6rem; }
+  .sub { color: var(--muted); font-size: 0.9rem; }
+  main { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+  nav.tabs, .season-picker {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  nav.tabs button, .season-picker button {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--fg);
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  nav.tabs button.active, .season-picker button.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  th, td {
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+  }
+  th { color: var(--muted); font-weight: 600; }
+  td.center, th.center { text-align: center; }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  .section { display: none; }
+  .section.active { display: block; }
+  .empty { color: var(--muted); padding: 2rem 0; text-align: center; }
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 2rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 id="league-name">Just Stream It</h1>
+  <div class="sub" id="last-updated"></div>
+  <div class="season-picker" id="season-picker"></div>
+  <nav class="tabs">
+    <button data-tab="standings" class="active">Standings</button>
+    <button data-tab="draft">Draft</button>
+    <button data-tab="rosters">Rosters</button>
+  </nav>
+</header>
+
+<main>
+  <section id="standings" class="section active">
+    <table>
+      <thead>
+        <tr>
+          <th class="center">Rank</th>
+          <th>Team</th>
+          <th>Owner</th>
+          <th class="center">Record</th>
+          <th class="center">PF</th>
+          <th class="center">PA</th>
+        </tr>
+      </thead>
+      <tbody id="standings-body"></tbody>
+    </table>
+  </section>
+
+  <section id="draft" class="section">
+    <table>
+      <thead>
+        <tr>
+          <th class="center">Pick</th>
+          <th class="center">Rd</th>
+          <th>Team</th>
+          <th>Player</th>
+          <th class="center">Pos</th>
+          <th class="center">NFL</th>
+          <th class="center">Keeper</th>
+        </tr>
+      </thead>
+      <tbody id="draft-body"></tbody>
+    </table>
+    <div class="empty" id="draft-empty" style="display:none">Draft hasn't happened yet.</div>
+  </section>
+
+  <section id="rosters" class="section">
+    <div class="season-picker" id="team-picker"></div>
+    <table>
+      <thead>
+        <tr>
+          <th class="center">Slot</th>
+          <th>Player</th>
+          <th class="center">Pos</th>
+          <th class="center">NFL</th>
+          <th class="center">Keeper Cost</th>
+        </tr>
+      </thead>
+      <tbody id="roster-body"></tbody>
+    </table>
+  </section>
+</main>
+
+<footer>Data pulled from ESPN Fantasy Football. Updates daily during the season.</footer>
+
+<script>
+let meta = null;
+let season = null;
+let teamsById = {};
+let selectedTeamId = null;
+
+async function loadJSON(path) {
+  const res = await fetch(path);
+  return res.json();
+}
+
+function fmtRecord(t) {
+  return t.ties ? `${t.wins}-${t.losses}-${t.ties}` : `${t.wins}-${t.losses}`;
+}
+
+function ownerLine(t) {
+  return t.owners && t.owners.length ? t.owners.join(' & ') : '';
+}
+
+async function renderStandings() {
+  const teams = await loadJSON(`data/${season}/teams.json`);
+  teamsById = Object.fromEntries(teams.map(t => [t.id, t]));
+  teams.sort((a, b) => {
+    const ar = a.final_rank || 999, br = b.final_rank || 999;
+    if (ar !== br) return ar - br;
+    return b.points_for - a.points_for;
+  });
+  const body = document.getElementById('standings-body');
+  body.innerHTML = teams.map((t, i) => `
+    <tr>
+      <td class="center">${t.final_rank || (i + 1)}</td>
+      <td>${t.name}</td>
+      <td>${ownerLine(t)}</td>
+      <td class="center">${fmtRecord(t)}</td>
+      <td class="center">${t.points_for.toFixed(1)}</td>
+      <td class="center">${t.points_against.toFixed(1)}</td>
+    </tr>
+  `).join('');
+}
+
+async function renderDraft() {
+  const draft = await loadJSON(`data/${season}/draft.json`);
+  const body = document.getElementById('draft-body');
+  const empty = document.getElementById('draft-empty');
+  const picked = draft.filter(p => p.player_name);
+  if (!picked.length) {
+    body.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  body.innerHTML = picked.map(p => `
+    <tr>
+      <td class="center">${p.overall_pick}</td>
+      <td class="center">${p.round}.${String(p.round_pick).padStart(2, '0')}</td>
+      <td>${teamsById[p.team_id] ? teamsById[p.team_id].name : p.team_id}</td>
+      <td>${p.player_name}</td>
+      <td class="center">${p.position || ''}</td>
+      <td class="center">${p.pro_team || ''}</td>
+      <td class="center">${p.keeper ? 'Yes' : ''}</td>
+    </tr>
+  `).join('');
+}
+
+async function renderRosterPicker() {
+  const teams = Object.values(teamsById).sort((a, b) => a.name.localeCompare(b.name));
+  const picker = document.getElementById('team-picker');
+  picker.innerHTML = teams.map(t =>
+    `<button data-team="${t.id}" class="${t.id === selectedTeamId ? 'active' : ''}">${t.name}</button>`
+  ).join('');
+  picker.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedTeamId = Number(btn.dataset.team);
+      renderRosterPicker();
+      renderRoster();
+    });
+  });
+}
+
+async function renderRoster() {
+  const rosters = await loadJSON(`data/${season}/rosters.json`);
+  if (!selectedTeamId) selectedTeamId = Number(Object.keys(rosters)[0]);
+  const players = rosters[selectedTeamId] || [];
+  const slotOrder = ['QB', 'RB', 'WR', 'TE', 'FLEX', 'D/ST', 'K', 'BE', 'IR'];
+  players.sort((a, b) => slotOrder.indexOf(a.lineup_slot) - slotOrder.indexOf(b.lineup_slot));
+  const body = document.getElementById('roster-body');
+  body.innerHTML = players.map(p => `
+    <tr>
+      <td class="center">${p.lineup_slot}</td>
+      <td>${p.name}</td>
+      <td class="center">${p.position}</td>
+      <td class="center">${p.pro_team}</td>
+      <td class="center">${p.keeper_value ?? ''}</td>
+    </tr>
+  `).join('');
+}
+
+function showTab(tab) {
+  document.querySelectorAll('nav.tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('main .section').forEach(s => s.classList.toggle('active', s.id === tab));
+}
+
+async function selectSeason(s) {
+  season = s;
+  document.querySelectorAll('#season-picker button').forEach(b => b.classList.toggle('active', b.dataset.season === String(s)));
+  await renderStandings();
+  await renderDraft();
+  await renderRosterPicker();
+  await renderRoster();
+}
+
+async function init() {
+  meta = await loadJSON('data/meta.json');
+  document.getElementById('league-name').textContent = meta.league_name;
+  document.getElementById('last-updated').textContent =
+    `Last updated ${new Date(meta.last_updated).toLocaleString()}`;
+
+  const seasons = [...meta.seasons].sort((a, b) => b - a); // newest first
+  const picker = document.getElementById('season-picker');
+  picker.innerHTML = seasons.map(s => `<button data-season="${s}">${s}</button>`).join('');
+  picker.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => selectSeason(Number(btn.dataset.season)));
+  });
+
+  document.querySelectorAll('nav.tabs button').forEach(btn => {
+    btn.addEventListener('click', () => showTab(btn.dataset.tab));
+  });
+
+  await selectSeason(meta.current_season);
+}
+
+init();
+</script>
+</body>
+</html>

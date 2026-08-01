@@ -1,0 +1,11 @@
+.DS_Store
+.swp
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# ESPN auth cookies - never commit
+.env
+secrets.json

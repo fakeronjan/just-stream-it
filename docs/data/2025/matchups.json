@@ -1,0 +1,911 @@
+[
+  {
+    "week": 1,
+    "is_playoffs": false,
+    "home_team_id": 8,
+    "home_score": 153.52,
+    "away_team_id": 6,
+    "away_score": 108.26,
+    "winner": "HOME"
+  },
+  {
+    "week": 1,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 122.28,
+    "away_team_id": 12,
+    "away_score": 134.0,
+    "winner": "AWAY"
+  },
+  {
+    "week": 1,
+    "is_playoffs": false,
+    "home_team_id": 1,
+    "home_score": 139.98,
+    "away_team_id": 2,
+    "away_score": 111.92,
+    "winner": "HOME"
+  },
+  {
+    "week": 1,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 159.04,
+    "away_team_id": 10,
+    "away_score": 111.88,
+    "winner": "HOME"
+  },
+  {
+    "week": 1,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 100.44,
+    "away_team_id": 7,
+    "away_score": 86.88,
+    "winner": "HOME"
+  },
+  {
+    "week": 1,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 143.04,
+    "away_team_id": 9,
+    "away_score": 115.9,
+    "winner": "HOME"
+  },
+  {
+    "week": 2,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 112.82,
+    "away_team_id": 12,
+    "away_score": 182.86,
+    "winner": "AWAY"
+  },
+  {
+    "week": 2,
+    "is_playoffs": false,
+    "home_team_id": 2,
+    "home_score": 189.2,
+    "away_team_id": 8,
+    "away_score": 121.06,
+    "winner": "HOME"
+  },
+  {
+    "week": 2,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 114.5,
+    "away_team_id": 5,
+    "away_score": 142.12,
+    "winner": "AWAY"
+  },
+  {
+    "week": 2,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 119.1,
+    "away_team_id": 1,
+    "away_score": 138.7,
+    "winner": "AWAY"
+  },
+  {
+    "week": 2,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 112.22,
+    "away_team_id": 3,
+    "away_score": 139.56,
+    "winner": "AWAY"
+  },
+  {
+    "week": 2,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 127.12,
+    "away_team_id": 4,
+    "away_score": 73.16,
+    "winner": "HOME"
+  },
+  {
+    "week": 3,
+    "is_playoffs": false,
+    "home_team_id": 2,
+    "home_score": 131.16,
+    "away_team_id": 6,
+    "away_score": 110.98,
+    "winner": "HOME"
+  },
+  {
+    "week": 3,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 87.12,
+    "away_team_id": 10,
+    "away_score": 131.64,
+    "winner": "AWAY"
+  },
+  {
+    "week": 3,
+    "is_playoffs": false,
+    "home_team_id": 8,
+    "home_score": 132.82,
+    "away_team_id": 7,
+    "away_score": 98.96,
+    "winner": "HOME"
+  },
+  {
+    "week": 3,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 156.36,
+    "away_team_id": 9,
+    "away_score": 128.5,
+    "winner": "HOME"
+  },
+  {
+    "week": 3,
+    "is_playoffs": false,
+    "home_team_id": 1,
+    "home_score": 119.0,
+    "away_team_id": 11,
+    "away_score": 116.64,
+    "winner": "HOME"
+  },
+  {
+    "week": 3,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 161.44,
+    "away_team_id": 4,
+    "away_score": 106.3,
+    "winner": "HOME"
+  },
+  {
+    "week": 4,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 140.24,
+    "away_team_id": 10,
+    "away_score": 152.84,
+    "winner": "AWAY"
+  },
+  {
+    "week": 4,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 89.28,
+    "away_team_id": 2,
+    "away_score": 140.98,
+    "winner": "AWAY"
+  },
+  {
+    "week": 4,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 140.72,
+    "away_team_id": 12,
+    "away_score": 132.86,
+    "winner": "HOME"
+  },
+  {
+    "week": 4,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 99.4,
+    "away_team_id": 8,
+    "away_score": 139.92,
+    "winner": "AWAY"
+  },
+  {
+    "week": 4,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 160.82,
+    "away_team_id": 5,
+    "away_score": 152.02,
+    "winner": "HOME"
+  },
+  {
+    "week": 4,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 139.04,
+    "away_team_id": 1,
+    "away_score": 111.3,
+    "winner": "HOME"
+  },
+  {
+    "week": 5,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 84.86,
+    "away_team_id": 6,
+    "away_score": 165.3,
+    "winner": "AWAY"
+  },
+  {
+    "week": 5,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 131.7,
+    "away_team_id": 9,
+    "away_score": 139.06,
+    "winner": "AWAY"
+  },
+  {
+    "week": 5,
+    "is_playoffs": false,
+    "home_team_id": 2,
+    "home_score": 143.56,
+    "away_team_id": 11,
+    "away_score": 139.82,
+    "winner": "HOME"
+  },
+  {
+    "week": 5,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 117.38,
+    "away_team_id": 4,
+    "away_score": 119.14,
+    "winner": "AWAY"
+  },
+  {
+    "week": 5,
+    "is_playoffs": false,
+    "home_team_id": 8,
+    "home_score": 159.92,
+    "away_team_id": 3,
+    "away_score": 129.5,
+    "winner": "HOME"
+  },
+  {
+    "week": 5,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 158.98,
+    "away_team_id": 1,
+    "away_score": 93.28,
+    "winner": "HOME"
+  },
+  {
+    "week": 6,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 178.34,
+    "away_team_id": 9,
+    "away_score": 117.22,
+    "winner": "HOME"
+  },
+  {
+    "week": 6,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 106.8,
+    "away_team_id": 7,
+    "away_score": 108.5,
+    "winner": "AWAY"
+  },
+  {
+    "week": 6,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 81.06,
+    "away_team_id": 10,
+    "away_score": 166.04,
+    "winner": "AWAY"
+  },
+  {
+    "week": 6,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 120.48,
+    "away_team_id": 2,
+    "away_score": 164.54,
+    "winner": "AWAY"
+  },
+  {
+    "week": 6,
+    "is_playoffs": false,
+    "home_team_id": 1,
+    "home_score": 107.08,
+    "away_team_id": 12,
+    "away_score": 93.38,
+    "winner": "HOME"
+  },
+  {
+    "week": 6,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 173.2,
+    "away_team_id": 8,
+    "away_score": 110.38,
+    "winner": "HOME"
+  },
+  {
+    "week": 7,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 144.76,
+    "away_team_id": 6,
+    "away_score": 145.9,
+    "winner": "AWAY"
+  },
+  {
+    "week": 7,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 161.5,
+    "away_team_id": 4,
+    "away_score": 103.88,
+    "winner": "HOME"
+  },
+  {
+    "week": 7,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 127.26,
+    "away_team_id": 3,
+    "away_score": 136.52,
+    "winner": "AWAY"
+  },
+  {
+    "week": 7,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 93.74,
+    "away_team_id": 1,
+    "away_score": 94.06,
+    "winner": "AWAY"
+  },
+  {
+    "week": 7,
+    "is_playoffs": false,
+    "home_team_id": 2,
+    "home_score": 144.58,
+    "away_team_id": 5,
+    "away_score": 127.76,
+    "winner": "HOME"
+  },
+  {
+    "week": 7,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 102.68,
+    "away_team_id": 8,
+    "away_score": 159.82,
+    "winner": "AWAY"
+  },
+  {
+    "week": 8,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 115.84,
+    "away_team_id": 4,
+    "away_score": 113.16,
+    "winner": "HOME"
+  },
+  {
+    "week": 8,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 123.8,
+    "away_team_id": 11,
+    "away_score": 115.1,
+    "winner": "HOME"
+  },
+  {
+    "week": 8,
+    "is_playoffs": false,
+    "home_team_id": 1,
+    "home_score": 90.06,
+    "away_team_id": 9,
+    "away_score": 145.88,
+    "winner": "AWAY"
+  },
+  {
+    "week": 8,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 138.98,
+    "away_team_id": 7,
+    "away_score": 104.54,
+    "winner": "HOME"
+  },
+  {
+    "week": 8,
+    "is_playoffs": false,
+    "home_team_id": 8,
+    "home_score": 147.26,
+    "away_team_id": 10,
+    "away_score": 114.68,
+    "winner": "HOME"
+  },
+  {
+    "week": 8,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 161.92,
+    "away_team_id": 2,
+    "away_score": 95.32,
+    "winner": "HOME"
+  },
+  {
+    "week": 9,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 137.78,
+    "away_team_id": 6,
+    "away_score": 127.92,
+    "winner": "HOME"
+  },
+  {
+    "week": 9,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 178.56,
+    "away_team_id": 1,
+    "away_score": 150.0,
+    "winner": "HOME"
+  },
+  {
+    "week": 9,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 143.9,
+    "away_team_id": 5,
+    "away_score": 146.9,
+    "winner": "AWAY"
+  },
+  {
+    "week": 9,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 138.96,
+    "away_team_id": 8,
+    "away_score": 146.2,
+    "winner": "AWAY"
+  },
+  {
+    "week": 9,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 133.76,
+    "away_team_id": 12,
+    "away_score": 110.6,
+    "winner": "HOME"
+  },
+  {
+    "week": 9,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 90.5,
+    "away_team_id": 2,
+    "away_score": 106.32,
+    "winner": "AWAY"
+  },
+  {
+    "week": 10,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 97.74,
+    "away_team_id": 1,
+    "away_score": 122.62,
+    "winner": "AWAY"
+  },
+  {
+    "week": 10,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 186.1,
+    "away_team_id": 3,
+    "away_score": 167.74,
+    "winner": "HOME"
+  },
+  {
+    "week": 10,
+    "is_playoffs": false,
+    "home_team_id": 8,
+    "home_score": 121.36,
+    "away_team_id": 4,
+    "away_score": 121.46,
+    "winner": "AWAY"
+  },
+  {
+    "week": 10,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 96.5,
+    "away_team_id": 11,
+    "away_score": 93.38,
+    "winner": "HOME"
+  },
+  {
+    "week": 10,
+    "is_playoffs": false,
+    "home_team_id": 2,
+    "home_score": 114.5,
+    "away_team_id": 9,
+    "away_score": 155.54,
+    "winner": "AWAY"
+  },
+  {
+    "week": 10,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 105.14,
+    "away_team_id": 7,
+    "away_score": 117.3,
+    "winner": "AWAY"
+  },
+  {
+    "week": 11,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 127.04,
+    "away_team_id": 6,
+    "away_score": 137.64,
+    "winner": "AWAY"
+  },
+  {
+    "week": 11,
+    "is_playoffs": false,
+    "home_team_id": 1,
+    "home_score": 112.06,
+    "away_team_id": 8,
+    "away_score": 110.66,
+    "winner": "HOME"
+  },
+  {
+    "week": 11,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 149.78,
+    "away_team_id": 12,
+    "away_score": 126.7,
+    "winner": "HOME"
+  },
+  {
+    "week": 11,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 124.18,
+    "away_team_id": 2,
+    "away_score": 96.2,
+    "winner": "HOME"
+  },
+  {
+    "week": 11,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 94.76,
+    "away_team_id": 10,
+    "away_score": 137.38,
+    "winner": "AWAY"
+  },
+  {
+    "week": 11,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 99.52,
+    "away_team_id": 7,
+    "away_score": 139.34,
+    "winner": "AWAY"
+  },
+  {
+    "week": 12,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 122.62,
+    "away_team_id": 8,
+    "away_score": 163.36,
+    "winner": "AWAY"
+  },
+  {
+    "week": 12,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 104.72,
+    "away_team_id": 5,
+    "away_score": 132.08,
+    "winner": "AWAY"
+  },
+  {
+    "week": 12,
+    "is_playoffs": false,
+    "home_team_id": 2,
+    "home_score": 171.34,
+    "away_team_id": 1,
+    "away_score": 103.66,
+    "winner": "HOME"
+  },
+  {
+    "week": 12,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 116.5,
+    "away_team_id": 3,
+    "away_score": 119.26,
+    "winner": "AWAY"
+  },
+  {
+    "week": 12,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 67.26,
+    "away_team_id": 4,
+    "away_score": 137.04,
+    "winner": "AWAY"
+  },
+  {
+    "week": 12,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 189.4,
+    "away_team_id": 11,
+    "away_score": 120.78,
+    "winner": "HOME"
+  },
+  {
+    "week": 13,
+    "is_playoffs": false,
+    "home_team_id": 12,
+    "home_score": 126.82,
+    "away_team_id": 6,
+    "away_score": 149.98,
+    "winner": "AWAY"
+  },
+  {
+    "week": 13,
+    "is_playoffs": false,
+    "home_team_id": 8,
+    "home_score": 101.82,
+    "away_team_id": 2,
+    "away_score": 100.28,
+    "winner": "HOME"
+  },
+  {
+    "week": 13,
+    "is_playoffs": false,
+    "home_team_id": 5,
+    "home_score": 122.9,
+    "away_team_id": 10,
+    "away_score": 97.98,
+    "winner": "HOME"
+  },
+  {
+    "week": 13,
+    "is_playoffs": false,
+    "home_team_id": 1,
+    "home_score": 119.92,
+    "away_team_id": 7,
+    "away_score": 106.5,
+    "winner": "HOME"
+  },
+  {
+    "week": 13,
+    "is_playoffs": false,
+    "home_team_id": 3,
+    "home_score": 157.56,
+    "away_team_id": 9,
+    "away_score": 137.06,
+    "winner": "HOME"
+  },
+  {
+    "week": 13,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 120.68,
+    "away_team_id": 11,
+    "away_score": 87.64,
+    "winner": "HOME"
+  },
+  {
+    "week": 14,
+    "is_playoffs": false,
+    "home_team_id": 6,
+    "home_score": 70.98,
+    "away_team_id": 2,
+    "away_score": 101.28,
+    "winner": "AWAY"
+  },
+  {
+    "week": 14,
+    "is_playoffs": false,
+    "home_team_id": 10,
+    "home_score": 139.24,
+    "away_team_id": 12,
+    "away_score": 109.9,
+    "winner": "HOME"
+  },
+  {
+    "week": 14,
+    "is_playoffs": false,
+    "home_team_id": 7,
+    "home_score": 60.02,
+    "away_team_id": 8,
+    "away_score": 109.22,
+    "winner": "AWAY"
+  },
+  {
+    "week": 14,
+    "is_playoffs": false,
+    "home_team_id": 9,
+    "home_score": 128.26,
+    "away_team_id": 5,
+    "away_score": 131.14,
+    "winner": "AWAY"
+  },
+  {
+    "week": 14,
+    "is_playoffs": false,
+    "home_team_id": 11,
+    "home_score": 97.0,
+    "away_team_id": 1,
+    "away_score": 164.82,
+    "winner": "AWAY"
+  },
+  {
+    "week": 14,
+    "is_playoffs": false,
+    "home_team_id": 4,
+    "home_score": 167.62,
+    "away_team_id": 3,
+    "away_score": 148.34,
+    "winner": "HOME"
+  },
+  {
+    "week": 15,
+    "is_playoffs": true,
+    "home_team_id": 2,
+    "home_score": 195.02,
+    "away_team_id": 4,
+    "away_score": 111.8,
+    "winner": "HOME"
+  },
+  {
+    "week": 15,
+    "is_playoffs": true,
+    "home_team_id": 8,
+    "home_score": 129.7,
+    "away_team_id": 1,
+    "away_score": 132.68,
+    "winner": "AWAY"
+  },
+  {
+    "week": 15,
+    "is_playoffs": true,
+    "home_team_id": 9,
+    "home_score": 150.3,
+    "away_team_id": 6,
+    "away_score": 137.04,
+    "winner": "HOME"
+  },
+  {
+    "week": 15,
+    "is_playoffs": true,
+    "home_team_id": 10,
+    "home_score": 132.62,
+    "away_team_id": 12,
+    "away_score": 176.06,
+    "winner": "AWAY"
+  },
+  {
+    "week": 15,
+    "is_playoffs": true,
+    "home_team_id": 7,
+    "home_score": 73.08,
+    "away_team_id": 11,
+    "away_score": 69.46,
+    "winner": "HOME"
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "home_team_id": 5,
+    "home_score": 176.08,
+    "away_team_id": 2,
+    "away_score": 100.54,
+    "winner": "HOME"
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "home_team_id": 3,
+    "home_score": 101.6,
+    "away_team_id": 1,
+    "away_score": 115.44,
+    "winner": "AWAY"
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "home_team_id": 8,
+    "home_score": 114.58,
+    "away_team_id": 4,
+    "away_score": 153.18,
+    "winner": "AWAY"
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "home_team_id": 9,
+    "home_score": 159.26,
+    "away_team_id": 12,
+    "away_score": 170.82,
+    "winner": "AWAY"
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "home_team_id": 6,
+    "home_score": 126.22,
+    "away_team_id": 7,
+    "away_score": 124.76,
+    "winner": "HOME"
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "home_team_id": 10,
+    "home_score": 125.6,
+    "away_team_id": 11,
+    "away_score": 111.06,
+    "winner": "HOME"
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "home_team_id": 5,
+    "home_score": 156.2,
+    "away_team_id": 1,
+    "away_score": 128.76,
+    "winner": "HOME"
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "home_team_id": 3,
+    "home_score": 117.56,
+    "away_team_id": 2,
+    "away_score": 104.34,
+    "winner": "HOME"
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "home_team_id": 8,
+    "home_score": 104.14,
+    "away_team_id": 4,
+    "away_score": 143.18,
+    "winner": "AWAY"
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "home_team_id": 6,
+    "home_score": 123.1,
+    "away_team_id": 12,
+    "away_score": 127.1,
+    "winner": "AWAY"
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "home_team_id": 9,
+    "home_score": 103.82,
+    "away_team_id": 10,
+    "away_score": 144.32,
+    "winner": "AWAY"
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "home_team_id": 7,
+    "home_score": 94.14,
+    "away_team_id": 11,
+    "away_score": 121.7,
+    "winner": "AWAY"
+  }
+]

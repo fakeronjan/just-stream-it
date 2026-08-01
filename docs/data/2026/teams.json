@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "name": "Lamar and Drake's Grahamy's",
+    "abbrev": "IH",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/4541eb60-80fb-11f0-b6e4-9dd13c0fbbe2",
+    "owners": [
+      "imran_hirani"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 2,
+    "name": "Mednis Madness",
+    "abbrev": "MMM",
+    "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/19.svg",
+    "owners": [
+      "mariss0"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 3,
+    "name": "Illusions Michael",
+    "abbrev": "TRIK",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/36f1c500-b1fa-11f0-90f7-112fa0f42e74",
+    "owners": [
+      "PeteGallagher"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 4,
+    "name": "Conquering Heroes",
+    "abbrev": "UofM",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/af2a4d50-76a2-11f0-83c0-f394f484d545",
+    "owners": [
+      "BBrownPorter"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 5,
+    "name": "Team Kantastrophe",
+    "abbrev": "CCT",
+    "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_05.svg",
+    "owners": [
+      "Cara Kantrowitz"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 6,
+    "name": "Mahomes is where the heart is \u2764",
+    "abbrev": "MCM",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/7dc18dd0-7faa-11f0-b1c3-bf61c28fbeb9",
+    "owners": [
+      "ESPNFAN9142563318"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 7,
+    "name": "Terrible Towels",
+    "abbrev": "MMT",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/57c178c0-764a-11f0-8fb1-755573069c8a",
+    "owners": [
+      "espn06316455"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 8,
+    "name": "Daddy Nielsen ",
+    "abbrev": "NLSN",
+    "logo": "https://g.espncdn.com/lm-static/logo-packs/core/OldTimeMickeyAndFriends/Football_Mickey.svg",
+    "owners": [
+      "Bracket Ferguson"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 9,
+    "name": "McConkey Kong Country",
+    "abbrev": "rj",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/3736e6a0-7fad-11f0-b6e4-9dd13c0fbbe2",
+    "owners": [
+      "fakeronjan"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 10,
+    "name": "Baker's Dirty Dozen",
+    "abbrev": "BDD",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/627e0a30-7fb9-11f0-b6e4-9dd13c0fbbe2",
+    "owners": [
+      "kabel-4"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 11,
+    "name": "Keep 'em and weep",
+    "abbrev": "SAD",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/6a7756d0-812e-11f0-b1c3-bf61c28fbeb9",
+    "owners": [
+      "ESPNFAN2483532073"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  },
+  {
+    "id": 12,
+    "name": "Buffalo Abusement Park",
+    "abbrev": "BAP",
+    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/70bf1fc0-892e-11f0-89de-d1ac062a5dc6",
+    "owners": [
+      "Melinda4real"
+    ],
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "points_for": 0.0,
+    "points_against": 0.0,
+    "playoff_seed": 0,
+    "final_rank": 0
+  }
+]
