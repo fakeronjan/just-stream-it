@@ -25,7 +25,7 @@ from pathlib import Path
 
 from config import CURRENT_SEASON, LEAGUE_ID
 from espn_client import fetch_boxscore_week, fetch_transactions
-from espn_maps import POSITION_MAP
+from espn_maps import POSITION_MAP, PRO_TEAM_MAP
 
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
 
@@ -125,6 +125,7 @@ def build_weekly_boxscores(season, num_weeks):
                             "player_id": e["playerId"],
                             "name": p["fullName"],
                             "position": POSITION_MAP.get(p["defaultPositionId"], p["defaultPositionId"]),
+                            "pro_team": PRO_TEAM_MAP.get(p["proTeamId"], p["proTeamId"]),
                             "lineup_slot_id": e["lineupSlotId"],
                             "started": e["lineupSlotId"] not in BENCH_IR_SLOTS,
                             "points": e["playerPoolEntry"].get("appliedStatTotal", 0.0),

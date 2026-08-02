@@ -1421,7 +1421,12 @@
         "player_id": 4429795,
         "name": "Jahmyr Gibbs",
         "position": "RB",
-        "points": 49.900000000000006
+        "points": 49.900000000000006,
+        "pro_team": "DET",
+        "pro_opponent": "NYG",
+        "pro_home": true,
+        "pro_team_score": 34.0,
+        "pro_opponent_score": 27.0
       },
       {
         "week": 10,
@@ -1429,7 +1434,12 @@
         "player_id": 4242335,
         "name": "Jonathan Taylor",
         "position": "RB",
-        "points": 48.10000000000001
+        "points": 48.10000000000001,
+        "pro_team": "IND",
+        "pro_opponent": "ATL",
+        "pro_home": true,
+        "pro_team_score": 31.0,
+        "pro_opponent_score": 25.0
       },
       {
         "week": 17,
@@ -1437,7 +1447,12 @@
         "player_id": 3043078,
         "name": "Derrick Henry",
         "position": "RB",
-        "points": 45.6
+        "points": 45.6,
+        "pro_team": "BAL",
+        "pro_opponent": "GB",
+        "pro_home": false,
+        "pro_team_score": 41.0,
+        "pro_opponent_score": 24.0
       },
       {
         "week": 15,
@@ -1445,7 +1460,12 @@
         "player_id": 4360310,
         "name": "Trevor Lawrence",
         "position": "QB",
-        "points": 44.300000000000004
+        "points": 44.300000000000004,
+        "pro_team": "JAX",
+        "pro_opponent": "NYJ",
+        "pro_home": true,
+        "pro_team_score": 48.0,
+        "pro_opponent_score": 20.0
       },
       {
         "week": 11,
@@ -1453,7 +1473,12 @@
         "player_id": 3918298,
         "name": "Josh Allen",
         "position": "QB",
-        "points": 42.68
+        "points": 42.68,
+        "pro_team": "BUF",
+        "pro_opponent": "TB",
+        "pro_home": true,
+        "pro_team_score": 44.0,
+        "pro_opponent_score": 32.0
       },
       {
         "week": 16,
@@ -1461,7 +1486,12 @@
         "player_id": 4426515,
         "name": "Puka Nacua",
         "position": "WR",
-        "points": 40.5
+        "points": 40.5,
+        "pro_team": "LAR",
+        "pro_opponent": "SEA",
+        "pro_home": false,
+        "pro_team_score": 37.0,
+        "pro_opponent_score": 38.0
       },
       {
         "week": 1,
@@ -1469,7 +1499,12 @@
         "player_id": 3918298,
         "name": "Josh Allen",
         "position": "QB",
-        "points": 38.76
+        "points": 38.76,
+        "pro_team": "BUF",
+        "pro_opponent": "BAL",
+        "pro_home": true,
+        "pro_team_score": 41.0,
+        "pro_opponent_score": 40.0
       },
       {
         "week": 14,
@@ -1477,7 +1512,12 @@
         "player_id": 3918298,
         "name": "Josh Allen",
         "position": "QB",
-        "points": 37.84
+        "points": 37.84,
+        "pro_team": "BUF",
+        "pro_opponent": "CIN",
+        "pro_home": true,
+        "pro_team_score": 39.0,
+        "pro_opponent_score": 34.0
       },
       {
         "week": 9,
@@ -1485,7 +1525,12 @@
         "player_id": 4431611,
         "name": "Caleb Williams",
         "position": "QB",
-        "points": 37.7
+        "points": 37.7,
+        "pro_team": "CHI",
+        "pro_opponent": "CIN",
+        "pro_home": false,
+        "pro_team_score": 47.0,
+        "pro_opponent_score": 42.0
       },
       {
         "week": 10,
@@ -1493,7 +1538,12 @@
         "player_id": 4429160,
         "name": "De'Von Achane",
         "position": "RB",
-        "points": 37.50000000000001
+        "points": 37.50000000000001,
+        "pro_team": "MIA",
+        "pro_opponent": "BUF",
+        "pro_home": true,
+        "pro_team_score": 30.0,
+        "pro_opponent_score": 13.0
       }
     ],
     "worst_performances": [
@@ -1503,7 +1553,12 @@
         "player_id": -16020,
         "name": "Jets D/ST",
         "position": "D/ST",
-        "points": -6.0
+        "points": -6.0,
+        "pro_team": "NYJ",
+        "pro_opponent": "JAX",
+        "pro_home": false,
+        "pro_team_score": 20.0,
+        "pro_opponent_score": 48.0
       },
       {
         "week": 4,
@@ -1511,7 +1566,12 @@
         "player_id": -16009,
         "name": "Packers D/ST",
         "position": "D/ST",
-        "points": -5.0
+        "points": -5.0,
+        "pro_team": "GB",
+        "pro_opponent": "DAL",
+        "pro_home": false,
+        "pro_team_score": 40.0,
+        "pro_opponent_score": 40.0
       },
       {
         "week": 2,
@@ -1519,7 +1579,12 @@
         "player_id": -16006,
         "name": "Cowboys D/ST",
         "position": "D/ST",
-        "points": -4.0
+        "points": -4.0,
+        "pro_team": "DAL",
+        "pro_opponent": "NYG",
+        "pro_home": true,
+        "pro_team_score": 40.0,
+        "pro_opponent_score": 37.0
       },
       {
         "week": 7,
@@ -1527,7 +1592,12 @@
         "player_id": -16023,
         "name": "Steelers D/ST",
         "position": "D/ST",
-        "points": -4.0
+        "points": -4.0,
+        "pro_team": "PIT",
+        "pro_opponent": "CIN",
+        "pro_home": false,
+        "pro_team_score": 31.0,
+        "pro_opponent_score": 33.0
       },
       {
         "week": 16,
@@ -1535,7 +1605,12 @@
         "player_id": -16026,
         "name": "Seahawks D/ST",
         "position": "D/ST",
-        "points": -4.0
+        "points": -4.0,
+        "pro_team": "SEA",
+        "pro_opponent": "LAR",
+        "pro_home": true,
+        "pro_team_score": 38.0,
+        "pro_opponent_score": 37.0
       },
       {
         "week": 1,
@@ -1543,7 +1618,12 @@
         "player_id": -16015,
         "name": "Dolphins D/ST",
         "position": "D/ST",
-        "points": -3.0
+        "points": -3.0,
+        "pro_team": "MIA",
+        "pro_opponent": "IND",
+        "pro_home": false,
+        "pro_team_score": 8.0,
+        "pro_opponent_score": 33.0
       },
       {
         "week": 8,
@@ -1551,7 +1631,12 @@
         "player_id": -16025,
         "name": "49ers D/ST",
         "position": "D/ST",
-        "points": -3.0
+        "points": -3.0,
+        "pro_team": "SF",
+        "pro_opponent": "HOU",
+        "pro_home": false,
+        "pro_team_score": 15.0,
+        "pro_opponent_score": 26.0
       },
       {
         "week": 8,
@@ -1559,7 +1644,12 @@
         "player_id": -16010,
         "name": "Titans D/ST",
         "position": "D/ST",
-        "points": -3.0
+        "points": -3.0,
+        "pro_team": "TEN",
+        "pro_opponent": "IND",
+        "pro_home": false,
+        "pro_team_score": 14.0,
+        "pro_opponent_score": 38.0
       },
       {
         "week": 12,
@@ -1567,7 +1657,12 @@
         "player_id": -16008,
         "name": "Lions D/ST",
         "position": "D/ST",
-        "points": -3.0
+        "points": -3.0,
+        "pro_team": "DET",
+        "pro_opponent": "NYG",
+        "pro_home": true,
+        "pro_team_score": 34.0,
+        "pro_opponent_score": 27.0
       },
       {
         "week": 5,
@@ -1575,7 +1670,12 @@
         "player_id": -16014,
         "name": "Rams D/ST",
         "position": "D/ST",
-        "points": -2.0
+        "points": -2.0,
+        "pro_team": "LAR",
+        "pro_opponent": "SF",
+        "pro_home": true,
+        "pro_team_score": 23.0,
+        "pro_opponent_score": 26.0
       }
     ]
   },

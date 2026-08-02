@@ -272,57 +272,6 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   color: var(--text-mute);
 }
 
-/* ---------- champion hero ---------- */
-
-.hero {
-  background: linear-gradient(160deg, var(--panel-2), var(--panel));
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 32px;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  flex-wrap: wrap;
-}
-
-.hero img.team-logo {
-  width: 96px;
-  height: 96px;
-  border-radius: 14px;
-  object-fit: cover;
-  background: var(--panel-2);
-  flex-shrink: 0;
-}
-
-.hero-body { flex: 1; min-width: 220px; }
-
-.hero-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--brand);
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin: 4px 0 6px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-}
-
-.hero .hero-meta {
-  color: var(--text-dim);
-  font-size: 0.95rem;
-}
-
-.hero .hero-stats {
-  display: flex;
-  gap: 28px;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-
 .stat {
   display: flex;
   flex-direction: column;
@@ -345,58 +294,71 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   color: var(--text-mute);
 }
 
-/* ---------- championship path ---------- */
+/* ---------- playoff bracket ---------- */
 
-.path {
+.bracket {
   display: flex;
-  align-items: stretch;
-  gap: 14px;
-  flex-wrap: wrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
 }
 
-.path-step {
+.bracket-round {
   flex: 1;
-  min-width: 190px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 16px 18px;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.path-step .path-round {
-  font-size: 0.68rem;
+.bracket-round-title {
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--text-mute);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-.path-step .path-result-label {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-weight: 700;
-  color: var(--text-dim);
-  font-size: 0.85rem;
-}
-.path-step .path-result.bye { margin-top: 8px; color: var(--text-dim); font-weight: 500; font-style: italic; }
-
-.path-step .path-score {
-  color: var(--text-dim);
-  font-size: 0.85rem;
-  margin-top: 10px;
+.bracket-match {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.path-arrow {
+.bracket-team {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  opacity: 0.55;
+}
+.bracket-team.winner { opacity: 1; }
+
+.bracket-score {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+.bracket-team.winner .bracket-score { color: var(--brand); }
+
+.bracket-bye {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bracket-bye-label {
+  font-size: 0.75rem;
+  font-style: italic;
   color: var(--text-mute);
-  font-size: 1.2rem;
 }
 
 @media (max-width: 640px) {
-  .path { flex-direction: column; }
-  .path-step { min-width: 0; }
-  .path-arrow { justify-content: center; transform: rotate(90deg); padding: 2px 0; }
+  .bracket-round { min-width: 200px; }
 }
 
 /* ---------- standings rows ---------- */
@@ -592,6 +554,7 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 .rank-list li {
   counter-increment: rank;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   padding: 12px 0;
@@ -611,6 +574,15 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 .rank-list .rank-sub { color: var(--text-dim); font-size: 0.82rem; margin-top: 4px; }
 .rank-list .rank-sub-row { display: flex; align-items: center; gap: 6px; margin-top: 5px; flex-wrap: wrap; }
 .rank-list .rank-value { font-weight: 800; color: var(--brand); font-variant-numeric: tabular-nums; }
+
+/* Forces onto its own line within the li (flex-wrap trick) - extra detail
+   under a rank-list entry without restructuring the whole row. */
+.rank-list .rank-detail-full { flex-basis: 100%; margin-top: 2px; margin-left: calc(1.2em + 12px); }
+
+.mini-scorers { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.8rem; color: var(--text-dim); }
+.mini-scorers b { color: var(--brand); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.nfl-detail { font-size: 0.8rem; color: var(--text-dim); }
 
 /* ---------- expanded superlative content ---------- */
 

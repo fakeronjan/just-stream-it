@@ -154,23 +154,42 @@ function computeBiggestFlip(weeklyBoxscores, week, teamAId, teamBId) {
   return best;
 }
 
-function computeChampionshipPath(matchups, champId, teamsById) {
+/* Traces the real championship bracket forward, round by round - "real"
+   meaning only games where both sides are still unbeaten within the
+   bracket, so this naturally excludes the parallel consolation-ladder
+   games (same is_playoffs=true weeks, different competition) and the
+   placement games among already-eliminated bracket teams (e.g. the
+   "3rd place game" - see compute_standings in build_season_moments.py
+   for why that's not treated as official here). */
+function computePlayoffBracket(matchups, standings, teamsById) {
+  const bracketIds = new Set(standings.filter(r => r.status !== 'non_playoff').map(r => r.team_id));
   const playoffWeeks = [...new Set(matchups.filter(m => m.is_playoffs).map(m => m.week))].sort((a, b) => a - b);
-  const steps = [];
+  const roundTitle = (i, n) => {
+    if (i === n - 1) return 'Final';
+    if (n - i === 2) return 'Semifinal';
+    if (n - i === 3) return 'Quarterfinal';
+    return `Round ${i + 1}`;
+  };
+
+  let alive = new Set(bracketIds);
+  const rounds = [];
   playoffWeeks.forEach((week, i) => {
-    const game = matchups.find(m => m.is_playoffs && m.week === week && (m.home_team_id === champId || m.away_team_id === champId));
-    const round = i === playoffWeeks.length - 1 ? 'Final' : `Round ${i + 1}`;
-    if (!game) {
-      steps.push({ round, bye: true });
-      return;
-    }
-    const isHome = game.home_team_id === champId;
-    const oppId = isHome ? game.away_team_id : game.home_team_id;
-    const champScore = isHome ? game.home_score : game.away_score;
-    const oppScore = isHome ? game.away_score : game.home_score;
-    steps.push({ round, bye: false, won: champScore > oppScore, opp: teamsById[oppId], champScore, oppScore });
+    const games = matchups.filter(m => m.is_playoffs && m.week === week && alive.has(m.home_team_id) && alive.has(m.away_team_id));
+    const gameTeamIds = new Set(games.flatMap(g => [g.home_team_id, g.away_team_id]));
+    const byes = [...alive].filter(id => !gameTeamIds.has(id));
+    const slots = games.map(g => ({
+      type: 'match',
+      teamA: teamsById[g.home_team_id],
+      scoreA: g.home_score,
+      teamB: teamsById[g.away_team_id],
+      scoreB: g.away_score,
+      winnerId: g.winner === 'HOME' ? g.home_team_id : g.away_team_id,
+    }));
+    byes.forEach(id => slots.push({ type: 'bye', team: teamsById[id] }));
+    rounds.push({ title: roundTitle(i, playoffWeeks.length), slots });
+    games.forEach(g => alive.delete(g.winner === 'HOME' ? g.away_team_id : g.home_team_id));
   });
-  return steps;
+  return rounds;
 }
 
 /* Elimination-round label for playoff-bracket teams. standings rows carry
@@ -206,36 +225,29 @@ function scorerListHtml(teamId, teamTopScorers, extraClass) {
   return `<div class="scorer-list ${extraClass || ''}"><div class="tile-label">Top Scorers (PPG)</div>${rows}</div>`;
 }
 
-function renderHero(champ, path, regularSeasonStats) {
-  const rs = regularSeasonStats[champ.id];
-  const pathHtml = path.map((step, i) => {
-    const stepHtml = step.bye
-      ? `<div class="path-round">${step.round}</div><div class="path-result bye">Bye</div>`
-      : `<div class="path-round">${step.round}</div>
-         <div class="path-result-label">${step.won ? 'Beat' : 'Lost to'}</div>
-         ${teamChip(step.opp, 'sm')}
-         <div class="path-score">${fmt1(step.champScore)} - ${fmt1(step.oppScore)}</div>`;
-    const arrow = i < path.length - 1 ? '<div class="path-arrow">&rarr;</div>' : '';
-    return `<div class="path-step">${stepHtml}</div>${arrow}`;
-  }).join('');
-
+function renderBracket(rounds) {
   return `
-    <div class="hero">
-      <img class="team-logo" src="${teamLogo(champ)}" alt="">
-      <div class="hero-body">
-        <div class="hero-eyebrow">2025 Champion</div>
-        <h2>${champ.name}</h2>
-        <div class="hero-meta">${ownerName(champ)}</div>
-        <div class="hero-stats">
-          <div class="stat"><div class="stat-value">${champ.wins}-${champ.losses}</div><div class="stat-label">Record</div></div>
-          <div class="stat"><div class="stat-value">${ppgHtml(rs.ppg, champ.points_for)}</div><div class="stat-label">Points/Game</div></div>
-          <div class="stat"><div class="stat-value">${champ.playoff_seed}</div><div class="stat-label">Playoff Seed</div></div>
+    <div class="bracket">
+      ${rounds.map(round => `
+        <div class="bracket-round">
+          <div class="bracket-round-title">${round.title}</div>
+          ${round.slots.map(slot => slot.type === 'bye' ? `
+            <div class="bracket-match bracket-bye">
+              ${teamChip(slot.team, 'sm')}
+              <div class="bracket-bye-label">Bye</div>
+            </div>
+          ` : `
+            <div class="bracket-match">
+              <div class="bracket-team ${slot.winnerId === slot.teamA.id ? 'winner' : ''}">
+                ${teamChip(slot.teamA, 'sm')}<span class="bracket-score">${fmt1(slot.scoreA)}</span>
+              </div>
+              <div class="bracket-team ${slot.winnerId === slot.teamB.id ? 'winner' : ''}">
+                ${teamChip(slot.teamB, 'sm')}<span class="bracket-score">${fmt1(slot.scoreB)}</span>
+              </div>
+            </div>
+          `).join('')}
         </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="section-title">Championship Path</div>
-      <div class="path">${pathHtml}</div>
+      `).join('')}
     </div>
   `;
 }
@@ -353,26 +365,45 @@ function wireChartControls(matchups, teamsById, champId, ruId) {
   selB.addEventListener('change', rerender);
 }
 
-function renderTopPerformances(moments, teamsById) {
-  const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => `
+function renderTopPerformances(moments, teamsById, weeklyBoxscores) {
+  const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => {
+    const topScorers = (weeklyBoxscores[w.week]?.[w.team_id] || []).filter(p => p.started).sort((a, b) => b.points - a.points).slice(0, 3);
+    const scorersHtml = topScorers.length ? `
+      <div class="rank-detail-full">
+        <div class="mini-scorers">
+          ${topScorers.map(p => `<span class="mini-scorer"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name} <b>${fmt1(p.points)}</b></span>`).join('')}
+        </div>
+      </div>
+    ` : '';
+    return `
     <li>
       <div class="rank-main">
         <div class="rank-chip-row">${teamChip(teamsById[w.team_id], 'sm')}</div>
         <div class="rank-sub">Week ${w.week}${w.is_playoffs ? ' (playoffs)' : ''}</div>
       </div>
       <div class="rank-value">${fmt1(w.score)}</div>
+      ${scorersHtml}
     </li>
-  `).join('');
+  `;
+  }).join('');
 
-  const playerWeeks = moments.player_extremes.best_performances.slice(0, 5).map(p => `
+  const playerWeeks = moments.player_extremes.best_performances.slice(0, 5).map(p => {
+    const nflHtml = p.pro_opponent ? `
+      <div class="rank-detail-full">
+        <span class="nfl-detail">${p.pro_team} ${p.pro_home ? 'vs' : '@'} ${p.pro_opponent} &middot; Final ${fmt1(p.pro_team_score)}-${fmt1(p.pro_opponent_score)}</span>
+      </div>
+    ` : '';
+    return `
     <li>
       <div class="rank-main">
         <span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}
         <div class="rank-sub-row">${teamChip(teamsById[p.team_id], 'xs')}<span class="rank-sub">&middot; Week ${p.week}</span></div>
       </div>
       <div class="rank-value">${fmt1(p.points)}</div>
+      ${nflHtml}
     </li>
-  `).join('');
+  `;
+  }).join('');
 
   return `
     <div class="tile-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
@@ -646,14 +677,17 @@ async function loadApp() {
   const teamGamesPlayed = computeTeamGamesPlayed(matchups);
   const playerTotals = computeTeamPlayerTotals(weeklyBoxscores);
   const teamTopScorers = Object.fromEntries(Object.entries(playerTotals).map(([id, players]) => [id, topN(players, 3)]));
-  const path = computeChampionshipPath(matchups, champ.id, teamsById);
+  const bracketRounds = computePlayoffBracket(matchups, standings, teamsById);
 
   document.getElementById('content').innerHTML = `
-    ${renderHero(champ, path, regularSeasonStats)}
-
     <div class="section">
       <div class="section-title">Final Standings</div>
       ${renderTeamRows(standings, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound)}
+    </div>
+
+    <div class="section">
+      <div class="section-title">Playoff Bracket</div>
+      <div class="card">${renderBracket(bracketRounds)}</div>
     </div>
 
     <div class="section">
@@ -663,7 +697,7 @@ async function loadApp() {
 
     <div class="section">
       <div class="section-title">Top Performances</div>
-      ${renderTopPerformances(moments, teamsById)}
+      ${renderTopPerformances(moments, teamsById, weeklyBoxscores)}
     </div>
 
     <div class="section">

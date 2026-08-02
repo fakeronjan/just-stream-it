@@ -143,13 +143,15 @@ def compute_weekly_team_extremes(matchups):
     }
 
 
-def compute_player_extremes(weekly_boxscores):
+def compute_player_extremes(weekly_boxscores, nfl_schedule):
     performances = []
     for week, teams in weekly_boxscores.items():
+        week_schedule = nfl_schedule.get(week, {})
         for team_id, players in teams.items():
             for p in players:
                 if not p["started"]:
                     continue
+                game = week_schedule.get(p.get("pro_team"))
                 performances.append(
                     {
                         "week": int(week),
@@ -158,6 +160,11 @@ def compute_player_extremes(weekly_boxscores):
                         "name": p["name"],
                         "position": p["position"],
                         "points": p["points"],
+                        "pro_team": p.get("pro_team"),
+                        "pro_opponent": game["opponent"] if game else None,
+                        "pro_home": game["home"] if game else None,
+                        "pro_team_score": game["team_score"] if game else None,
+                        "pro_opponent_score": game["opponent_score"] if game else None,
                     }
                 )
     performances.sort(key=lambda p: -p["points"])
@@ -389,6 +396,7 @@ def main(season):
     weekly_boxscores = load(season, "weekly_boxscores.json")
     draft_picks = load(season, "draft.json")
     transactions = load(season, "transactions.json")
+    nfl_schedule = load(season, "nfl_schedule.json")
     total_weeks = max(m["week"] for m in matchups)
 
     pickups, trades = compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total_weeks)
@@ -399,7 +407,7 @@ def main(season):
         "standings": standings,
         "upsets": compute_upsets(matchups, rank_by_team),
         "weekly_team_extremes": compute_weekly_team_extremes(matchups),
-        "player_extremes": compute_player_extremes(weekly_boxscores),
+        "player_extremes": compute_player_extremes(weekly_boxscores, nfl_schedule),
         "bench_mistakes": compute_bench_mistakes(weekly_boxscores),
         "injury_burden": compute_injury_burden(weekly_boxscores),
         "best_waiver_pickups": pickups[:15],
