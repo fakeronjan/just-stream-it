@@ -395,7 +395,7 @@ function renderTeamGrid() {
   grid.innerHTML = guide.map(t => `
     <button class="team-box ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
       <img src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
-      <span class="box-name">${t.team_name}<span class="box-owner">${t.owners.join(' & ')}</span></span>
+      <span class="box-name">${t.owners.join(' & ')}<span class="box-owner">${t.team_name}</span></span>
     </button>
   `).join('');
   grid.querySelectorAll('.team-box').forEach(el => {
@@ -461,8 +461,8 @@ function renderDossier() {
     <div class="dossier-header">
       <img src="${team.logo}" alt="" onerror="this.style.visibility='hidden'">
       <div>
-        <h2>${team.team_name}</h2>
-        <div class="owner-line">Owner: ${team.owners.join(' & ')}</div>
+        <h2>${team.owners.join(' & ')}</h2>
+        <div class="owner-line">${team.team_name} (2026)</div>
       </div>
       <div class="access-tag">ACCESS: ${team.owners[0] || ''} ONLY</div>
     </div>
@@ -503,7 +503,7 @@ async function loadApp() {
   if (guide.length) return; // already loaded once this session
   const res = await fetch('data/keeper_guide_2026.json');
   guide = await res.json();
-  guide.sort((a, b) => a.team_name.localeCompare(b.team_name));
+  guide.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
   selectedTeamId = guide[0].team_id;
   renderTeamGrid();
   renderDossier();

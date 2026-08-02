@@ -32,21 +32,27 @@ EXT_BY_CONTENT_TYPE = {
 LOGO_MAX_DIM = 160  # displayed at 28-56px; this covers retina with room to spare
 
 
-def download_logo(team_id, url):
+def download_logo(team_id, url, season):
     """Custom-uploaded team logos live behind ESPN's auth wall (the default
     stock logos on g.espncdn.com don't, but there's no way to tell which
     from the URL alone) - so hotlinking them breaks for site visitors who
     aren't authenticated. Download with our own credentials, downscale
     (source images can be 400KB+ for a thumbnail shown at 28-56px), and
     host locally.
+
+    Stored per-season (docs/logos/{season}/{team_id}.ext), NOT a single
+    shared file per team_id - team_id is just this season's roster slot,
+    and owners frequently rebrand (new name/logo) between seasons. A shared
+    file would silently overwrite prior seasons' identity every re-pull.
     """
     s2, swid = _load_credentials()
     resp = requests.get(url, cookies={"espn_s2": s2, "SWID": swid}, timeout=30)
     resp.raise_for_status()
     content_type = resp.headers.get("content-type", "").split(";")[0].strip()
     ext = EXT_BY_CONTENT_TYPE.get(content_type, ".png")
-    LOGOS_DIR.mkdir(parents=True, exist_ok=True)
-    path = LOGOS_DIR / f"{team_id}{ext}"
+    season_dir = LOGOS_DIR / str(season)
+    season_dir.mkdir(parents=True, exist_ok=True)
+    path = season_dir / f"{team_id}{ext}"
 
     if ext == ".svg":
         path.write_bytes(resp.content)
@@ -58,10 +64,17 @@ def download_logo(team_id, url):
         else:
             img.save(path, "PNG", optimize=True)
 
-    return f"logos/{team_id}{ext}"
+    return f"logos/{season}/{team_id}{ext}"
 
 
-def build_teams(league):
+def build_teams(league, season):
+    # NOTE for future scripts: team_id is a per-season ESPN roster SLOT, not
+    # a stable franchise identity - it's just "whoever holds this draft
+    # position this season." The thing that actually persists across
+    # seasons is the MANAGER (owners[], i.e. ESPN member displayName). If a
+    # slot's ownership ever changes hands, don't attribute the outgoing
+    # owner's history (team name, logo, keeper decisions) to the new one
+    # based on team_id alone - compare by owners[] for cross-season identity.
     members = {m["id"]: m["displayName"] for m in league.get("members", [])}
     teams = []
     for t in league["teams"]:
@@ -73,7 +86,7 @@ def build_teams(league):
                 "id": t["id"],
                 "name": t["name"],
                 "abbrev": t["abbrev"],
-                "logo": download_logo(t["id"], logo_url) if logo_url else None,
+                "logo": download_logo(t["id"], logo_url, season) if logo_url else None,
                 "owners": owners,
                 "wins": record["wins"],
                 "losses": record["losses"],
@@ -173,7 +186,7 @@ def main():
         season_dir = DOCS_DATA / str(season)
         season_dir.mkdir(exist_ok=True)
 
-        (season_dir / "teams.json").write_text(json.dumps(build_teams(league), indent=2))
+        (season_dir / "teams.json").write_text(json.dumps(build_teams(league, season), indent=2))
         (season_dir / "matchups.json").write_text(json.dumps(build_matchups(league), indent=2))
         (season_dir / "rosters.json").write_text(json.dumps(build_rosters(league), indent=2))
         (season_dir / "draft.json").write_text(json.dumps(build_draft(league, season), indent=2))

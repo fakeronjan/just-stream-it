@@ -42,3 +42,18 @@ This writes `docs/data/meta.json` and, per season, `teams.json`,
 Add the year to `SEASONS` in `scripts/config.py`. Bump `CURRENT_SEASON` each
 year once the new season opens (this determines which ESPN endpoint shape to
 use - current vs. historical).
+
+## team_id vs. manager - cross-season identity
+
+`team_id` (1-12) is just this season's ESPN roster slot, not a stable
+franchise identity - owners frequently rename their team and change logos
+between seasons (team names/logos are stored per-season for exactly this
+reason: `docs/data/{season}/teams.json` and `docs/logos/{season}/{team_id}.*`,
+never a single shared file). The thing that actually persists across seasons
+is the **manager** (`owners[]`, i.e. ESPN member displayName).
+
+If a slot's ownership ever changes hands, don't attribute the outgoing
+owner's history (keeper decisions, past team name/logo) to the new owner
+just because they now hold the same `team_id`. Anywhere the site or scripts
+need to relate or compare a person's team across different seasons, join on
+`owners[]`, not `team_id`.

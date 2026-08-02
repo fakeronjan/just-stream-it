@@ -214,7 +214,7 @@ def main():
             }
         )
 
-    guide.sort(key=lambda g: g["team_name"])
+    guide.sort(key=lambda g: " & ".join(g["owners"]))
     (DOCS_DATA / "keeper_guide_2026.json").write_text(json.dumps(guide, indent=2))
     print(f"Wrote keeper_guide_2026.json for {len(guide)} teams")
 
