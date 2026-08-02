@@ -193,6 +193,7 @@ def compute_team_analytics(season, teams, transactions, timeline, weekly_boxscor
         "started_points_total": 0.0,
         "started_points_by_source": defaultdict(float),
         "started_points_by_position": defaultdict(float),
+        "player_points_by_source": defaultdict(dict),  # source -> player_id -> {name, position, points}
         "players_started": set(),
         "weekly_rank_log": [],  # (week, rank_1_to_12, won_matchup)
     } for t in teams}
@@ -249,6 +250,11 @@ def compute_team_analytics(season, teams, transactions, timeline, weekly_boxscor
                 stats[team_id]["started_points_by_position"][p["position"]] += pts
                 stats[team_id]["players_started"].add(p["player_id"])
 
+                by_source = stats[team_id]["player_points_by_source"][source]
+                entry = by_source.setdefault(p["player_id"], {"name": p["name"], "position": p["position"], "points": 0.0, "games": 0})
+                entry["points"] += pts
+                entry["games"] += 1
+
     # weekly rank / luck (regular season only - all 12 teams play every week)
     matchups = load(season, "matchups.json")
     for week in range(1, regular_season_weeks + 1):
@@ -278,6 +284,19 @@ def compute_team_analytics(season, teams, transactions, timeline, weekly_boxscor
         good_luck_wins = [wk for wk, r, won in rank_log if r >= num_teams - 2 and won]
 
         started_points_total = s["started_points_total"]
+        top_players_by_source = {
+            source: [
+                {
+                    "name": p["name"],
+                    "position": p["position"],
+                    "points": round(p["points"], 2),
+                    "games": p["games"],
+                    "ppg": round(p["points"] / p["games"], 2) if p["games"] else 0.0,
+                }
+                for p in sorted(players.values(), key=lambda x: -x["points"])[:3]
+            ]
+            for source, players in s["player_points_by_source"].items()
+        }
         results.append(
             {
                 "team_id": team_id,
@@ -297,6 +316,7 @@ def compute_team_analytics(season, teams, transactions, timeline, weekly_boxscor
                 "started_points_pct_by_position": {
                     k: round(v / started_points_total * 100, 1) for k, v in s["started_points_by_position"].items()
                 } if started_points_total else {},
+                "top_players_by_source": top_players_by_source,
                 "actual_wins": actual_wins,
                 "all_play_wins": all_play_wins,
                 "all_play_games": all_play_games,

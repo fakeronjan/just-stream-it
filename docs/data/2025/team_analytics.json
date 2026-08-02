@@ -37,6 +37,70 @@
       "D/ST": 6.6,
       "K": 5.4
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "points": 206.7,
+          "games": 16,
+          "ppg": 12.92
+        },
+        {
+          "name": "Tee Higgins",
+          "position": "WR",
+          "points": 148.0,
+          "games": 12,
+          "ppg": 12.33
+        },
+        {
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "points": 147.1,
+          "games": 13,
+          "ppg": 11.32
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Jacoby Brissett",
+          "position": "QB",
+          "points": 132.84,
+          "games": 7,
+          "ppg": 18.98
+        },
+        {
+          "name": "Michael Wilson",
+          "position": "WR",
+          "points": 123.1,
+          "games": 7,
+          "ppg": 17.59
+        },
+        {
+          "name": "Tyler Loop",
+          "position": "K",
+          "points": 93.0,
+          "games": 12,
+          "ppg": 7.75
+        }
+      ],
+      "TRADE": [
+        {
+          "name": "Brock Bowers",
+          "position": "TE",
+          "points": 110.2,
+          "games": 8,
+          "ppg": 13.77
+        },
+        {
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "points": 31.2,
+          "games": 2,
+          "ppg": 15.6
+        }
+      ]
+    },
     "actual_wins": 9,
     "all_play_wins": 71,
     "all_play_games": 154,
@@ -83,6 +147,54 @@
       "D/ST": 4.0,
       "K": 6.7
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "points": 334.4,
+          "games": 16,
+          "ppg": 20.9
+        },
+        {
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "points": 325.5,
+          "games": 16,
+          "ppg": 20.34
+        },
+        {
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "points": 323.72,
+          "games": 16,
+          "ppg": 20.23
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Harrison Mevis",
+          "position": "K",
+          "points": 57.0,
+          "games": 6,
+          "ppg": 9.5
+        },
+        {
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "points": 46.0,
+          "games": 5,
+          "ppg": 9.2
+        },
+        {
+          "name": "Chimere Dike",
+          "position": "WR",
+          "points": 45.1,
+          "games": 5,
+          "ppg": 9.02
+        }
+      ]
+    },
     "actual_wins": 10,
     "all_play_wins": 114,
     "all_play_games": 154,
@@ -128,6 +240,54 @@
       "TE": 9.3,
       "D/ST": 6.5,
       "K": 7.0
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "points": 194.44,
+          "games": 12,
+          "ppg": 16.2
+        },
+        {
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "points": 162.5,
+          "games": 13,
+          "ppg": 12.5
+        },
+        {
+          "name": "Drake London",
+          "position": "WR",
+          "points": 152.1,
+          "games": 11,
+          "ppg": 13.83
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "points": 83.0,
+          "games": 9,
+          "ppg": 9.22
+        },
+        {
+          "name": "Luther Burden III",
+          "position": "WR",
+          "points": 49.8,
+          "games": 4,
+          "ppg": 12.45
+        },
+        {
+          "name": "Shedeur Sanders",
+          "position": "QB",
+          "points": 46.38,
+          "games": 3,
+          "ppg": 15.46
+        }
+      ]
     },
     "actual_wins": 9,
     "all_play_wins": 65,
@@ -177,6 +337,54 @@
       "D/ST": 5.9,
       "K": 7.1
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Caleb Williams",
+          "position": "QB",
+          "points": 300.6,
+          "games": 16,
+          "ppg": 18.79
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "points": 289.0,
+          "games": 16,
+          "ppg": 18.06
+        },
+        {
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "points": 213.8,
+          "games": 16,
+          "ppg": 13.36
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Cam Little",
+          "position": "K",
+          "points": 72.0,
+          "games": 7,
+          "ppg": 10.29
+        },
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "points": 69.48,
+          "games": 5,
+          "ppg": 13.9
+        },
+        {
+          "name": "Browns D/ST",
+          "position": "D/ST",
+          "points": 68.0,
+          "games": 9,
+          "ppg": 7.56
+        }
+      ]
+    },
     "actual_wins": 10,
     "all_play_wins": 97,
     "all_play_games": 154,
@@ -220,6 +428,54 @@
       "TE": 4.0,
       "D/ST": 6.9,
       "K": 8.6
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "points": 259.4,
+          "games": 16,
+          "ppg": 16.21
+        },
+        {
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "points": 258.7,
+          "games": 16,
+          "ppg": 16.17
+        },
+        {
+          "name": "George Pickens",
+          "position": "WR",
+          "points": 244.0,
+          "games": 16,
+          "ppg": 15.25
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Kenneth Gainwell",
+          "position": "RB",
+          "points": 107.8,
+          "games": 12,
+          "ppg": 8.98
+        },
+        {
+          "name": "Troy Franklin",
+          "position": "WR",
+          "points": 69.5,
+          "games": 8,
+          "ppg": 8.69
+        },
+        {
+          "name": "Emari Demercado",
+          "position": "RB",
+          "points": 18.0,
+          "games": 2,
+          "ppg": 9.0
+        }
+      ]
     },
     "actual_wins": 5,
     "all_play_wins": 65,
@@ -267,6 +523,70 @@
       "K": 7.3,
       "D/ST": 5.7
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Dak Prescott",
+          "position": "QB",
+          "points": 282.12,
+          "games": 15,
+          "ppg": 18.81
+        },
+        {
+          "name": "Justin Herbert",
+          "position": "QB",
+          "points": 271.74,
+          "games": 15,
+          "ppg": 18.12
+        },
+        {
+          "name": "Michael Pittman Jr.",
+          "position": "WR",
+          "points": 160.3,
+          "games": 16,
+          "ppg": 10.02
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "points": 135.0,
+          "games": 13,
+          "ppg": 10.38
+        },
+        {
+          "name": "Rams D/ST",
+          "position": "D/ST",
+          "points": 85.0,
+          "games": 12,
+          "ppg": 7.08
+        },
+        {
+          "name": "Tyler Shough",
+          "position": "QB",
+          "points": 48.82,
+          "games": 3,
+          "ppg": 16.27
+        }
+      ],
+      "TRADE": [
+        {
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "points": 66.2,
+          "games": 7,
+          "ppg": 9.46
+        },
+        {
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "points": 26.5,
+          "games": 2,
+          "ppg": 13.25
+        }
+      ]
+    },
     "actual_wins": 2,
     "all_play_wins": 56,
     "all_play_games": 154,
@@ -311,6 +631,54 @@
       "K": 8.0,
       "D/ST": 5.6
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "points": 356.9,
+          "games": 16,
+          "ppg": 22.31
+        },
+        {
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "points": 285.18,
+          "games": 14,
+          "ppg": 20.37
+        },
+        {
+          "name": "Bo Nix",
+          "position": "QB",
+          "points": 254.34,
+          "games": 15,
+          "ppg": 16.96
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Jason Myers",
+          "position": "K",
+          "points": 91.0,
+          "games": 7,
+          "ppg": 13.0
+        },
+        {
+          "name": "Matt Prater",
+          "position": "K",
+          "points": 37.0,
+          "games": 4,
+          "ppg": 9.25
+        },
+        {
+          "name": "Kendrick Bourne",
+          "position": "WR",
+          "points": 35.9,
+          "games": 2,
+          "ppg": 17.95
+        }
+      ]
+    },
     "actual_wins": 6,
     "all_play_wins": 81,
     "all_play_games": 154,
@@ -354,6 +722,54 @@
       "TE": 10.5,
       "K": 6.2,
       "D/ST": 6.5
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "James Cook III",
+          "position": "RB",
+          "points": 284.2,
+          "games": 16,
+          "ppg": 17.76
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "points": 231.5,
+          "games": 15,
+          "ppg": 15.43
+        },
+        {
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "points": 214.5,
+          "games": 15,
+          "ppg": 14.3
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Mac Jones",
+          "position": "QB",
+          "points": 107.38,
+          "games": 7,
+          "ppg": 15.34
+        },
+        {
+          "name": "Juwan Johnson",
+          "position": "TE",
+          "points": 44.8,
+          "games": 5,
+          "ppg": 8.96
+        },
+        {
+          "name": "Cairo Santos",
+          "position": "K",
+          "points": 43.0,
+          "games": 4,
+          "ppg": 10.75
+        }
+      ]
     },
     "actual_wins": 4,
     "all_play_wins": 60,
@@ -403,6 +819,63 @@
       "K": 8.0,
       "D/ST": 5.0
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "points": 184.7,
+          "games": 15,
+          "ppg": 12.31
+        },
+        {
+          "name": "Bryce Young",
+          "position": "QB",
+          "points": 148.58,
+          "games": 10,
+          "ppg": 14.86
+        },
+        {
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "points": 114.28,
+          "games": 7,
+          "ppg": 16.33
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Chris Boswell",
+          "position": "K",
+          "points": 137.0,
+          "games": 16,
+          "ppg": 8.56
+        },
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "points": 85.0,
+          "games": 8,
+          "ppg": 10.62
+        },
+        {
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "points": 82.8,
+          "games": 10,
+          "ppg": 8.28
+        }
+      ],
+      "TRADE": [
+        {
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "points": 133.74,
+          "games": 7,
+          "ppg": 19.11
+        }
+      ]
+    },
     "actual_wins": 4,
     "all_play_wins": 38,
     "all_play_games": 154,
@@ -446,6 +919,54 @@
       "TE": 10.6,
       "D/ST": 7.7,
       "K": 5.8
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Josh Allen",
+          "position": "QB",
+          "points": 364.62,
+          "games": 16,
+          "ppg": 22.79
+        },
+        {
+          "name": "De'Von Achane",
+          "position": "RB",
+          "points": 289.3,
+          "games": 16,
+          "ppg": 18.08
+        },
+        {
+          "name": "Trey McBride",
+          "position": "TE",
+          "points": 242.9,
+          "games": 16,
+          "ppg": 15.18
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Harrison Butker",
+          "position": "K",
+          "points": 90.0,
+          "games": 11,
+          "ppg": 8.18
+        },
+        {
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "points": 26.1,
+          "games": 5,
+          "ppg": 5.22
+        },
+        {
+          "name": "Ka'imi Fairbairn",
+          "position": "K",
+          "points": 26.0,
+          "games": 2,
+          "ppg": 13.0
+        }
+      ]
     },
     "actual_wins": 10,
     "all_play_wins": 108,
@@ -496,6 +1017,77 @@
       "D/ST": 5.8,
       "K": 7.2
     },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "points": 299.06,
+          "games": 16,
+          "ppg": 18.69
+        },
+        {
+          "name": "Puka Nacua",
+          "position": "WR",
+          "points": 289.5,
+          "games": 15,
+          "ppg": 19.3
+        },
+        {
+          "name": "Breece Hall",
+          "position": "RB",
+          "points": 189.66,
+          "games": 16,
+          "ppg": 11.85
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Patriots D/ST",
+          "position": "D/ST",
+          "points": 109.0,
+          "games": 12,
+          "ppg": 9.08
+        },
+        {
+          "name": "Eddy Pineiro",
+          "position": "K",
+          "points": 58.0,
+          "games": 6,
+          "ppg": 9.67
+        },
+        {
+          "name": "Oronde Gadsden",
+          "position": "TE",
+          "points": 57.8,
+          "games": 9,
+          "ppg": 6.42
+        }
+      ],
+      "TRADE": [
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "points": 187.76,
+          "games": 8,
+          "ppg": 23.47
+        },
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "points": 182.6,
+          "games": 9,
+          "ppg": 20.29
+        },
+        {
+          "name": "Davante Adams",
+          "position": "WR",
+          "points": 98.3,
+          "games": 7,
+          "ppg": 14.04
+        }
+      ]
+    },
     "actual_wins": 6,
     "all_play_wins": 94,
     "all_play_games": 154,
@@ -543,6 +1135,63 @@
       "TE": 8.6,
       "D/ST": 7.3,
       "K": 8.1
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "points": 281.82,
+          "games": 16,
+          "ppg": 17.61
+        },
+        {
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "points": 246.1,
+          "games": 16,
+          "ppg": 15.38
+        },
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "points": 219.1,
+          "games": 15,
+          "ppg": 14.61
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Andy Borregales",
+          "position": "K",
+          "points": 41.0,
+          "games": 3,
+          "ppg": 13.67
+        },
+        {
+          "name": "Giants D/ST",
+          "position": "D/ST",
+          "points": 38.0,
+          "games": 3,
+          "ppg": 12.67
+        },
+        {
+          "name": "Brandon McManus",
+          "position": "K",
+          "points": 36.0,
+          "games": 4,
+          "ppg": 9.0
+        }
+      ],
+      "TRADE": [
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "points": 96.38,
+          "games": 7,
+          "ppg": 13.77
+        }
+      ]
     },
     "actual_wins": 9,
     "all_play_wins": 75,

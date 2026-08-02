@@ -457,21 +457,22 @@ function positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTota
    filtered to just that source. */
 const SOURCE_DETAIL_LABEL = { DRAFT: 'draft picks', TRADE: 'traded-in players', PICKUP: 'waiver/free-agent pickups' };
 
-function sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, teamTopScorers, source, label) {
+function sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, source, label) {
   const sorted = [...teamAnalytics].sort((a, b) => (b.started_points_pct_by_source[source] || 0) - (a.started_points_pct_by_source[source] || 0));
   const top = sorted[0];
   const pts = top.started_points_by_source[source] || 0;
   const games = teamGamesPlayed[top.team_id] || 1;
+  const keyPlayers = top.top_players_by_source?.[source] || [];
   return {
     label,
     headlineTeam: teamsById[top.team_id],
     detail: `${ppgHtml(pts / games, pts, 'PPG')} from ${SOURCE_DETAIL_LABEL[source]}`,
     value: `${top.started_points_pct_by_source[source] || 0}% of offense`,
-    sub: keyPlayersHtml(teamTopScorers[top.team_id] || []),
+    sub: keyPlayersHtml(keyPlayers),
   };
 }
 
-function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics, teamGamesPlayed, playerTotals, draftedSet, teamTopScorers) {
+function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics, teamGamesPlayed, playerTotals, draftedSet) {
   const upset = moments.upsets[0];
   const bestWeek = moments.weekly_team_extremes.best_weeks[0];
   const pickup = moments.best_waiver_pickups[0];
@@ -643,9 +644,9 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
       value: `${worstDraft.started_points_pct_by_source.DRAFT || 0}% of offense`,
       sub: keyPlayersHtml(worstDraftKeyPlayers),
     },
-    sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, teamTopScorers, 'DRAFT', 'Draft Heavy'),
-    sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, teamTopScorers, 'TRADE', 'Trade Heavy'),
-    sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, teamTopScorers, 'PICKUP', 'Pickup Heavy'),
+    sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, 'DRAFT', 'Draft Heavy'),
+    sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, 'TRADE', 'Trade Heavy'),
+    sourceHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, 'PICKUP', 'Pickup Heavy'),
     positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'QB', 'QB Heavy'),
     positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'RB', 'RB Heavy'),
     positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'WR', 'WR Heavy'),
@@ -750,7 +751,7 @@ async function loadApp() {
 
     <div class="section">
       <div class="section-title">Superlatives</div>
-      ${renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics, teamGamesPlayed, playerTotals, draftedSet, teamTopScorers)}
+      ${renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics, teamGamesPlayed, playerTotals, draftedSet)}
     </div>
   `;
 
