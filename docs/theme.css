@@ -399,59 +399,6 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   .path-arrow { justify-content: center; transform: rotate(90deg); padding: 2px 0; }
 }
 
-/* ---------- podium ---------- */
-
-.podium {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  align-items: end;
-  max-width: 640px;
-}
-
-.podium-card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 18px 16px;
-  text-align: center;
-}
-
-.podium-card.rank-1 {
-  border-color: var(--brand-dim);
-  background: linear-gradient(160deg, var(--panel-2), var(--panel));
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-.podium-rank {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--text-mute);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-.podium-card.rank-1 .podium-rank { color: var(--brand); }
-
-.podium-card img.team-logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin: 10px auto 8px;
-  display: block;
-  background: var(--panel-2);
-}
-.podium-card.rank-1 img.team-logo { width: 72px; height: 72px; }
-
-.podium-team { font-weight: 700; font-size: 0.95rem; }
-.podium-owner { color: var(--text-dim); font-size: 0.82rem; margin-top: 2px; }
-.podium-record { color: var(--text-mute); font-size: 0.8rem; margin-top: 8px; }
-
-@media (max-width: 640px) {
-  .podium { grid-template-columns: 1fr; }
-}
-
 /* ---------- standings rows ---------- */
 
 .team-rows { display: flex; flex-direction: column; gap: 10px; }
@@ -466,6 +413,13 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   border-radius: 12px;
   padding: 12px 16px;
 }
+
+.team-row.rank-1 {
+  border-color: var(--brand-dim);
+  background: linear-gradient(160deg, var(--panel-2), var(--panel));
+}
+.team-row.rank-1 .team-row-rank { color: var(--brand); }
+.team-row.rank-2 { border-color: var(--line); background: var(--panel-2); }
 
 .team-row-rank {
   font-weight: 800;
@@ -509,15 +463,6 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 }
 .scorer-row .scorer-name { color: var(--text); }
 .scorer-row .scorer-pts { color: var(--brand); font-weight: 700; font-variant-numeric: tabular-nums; }
-
-.podium-scorers {
-  border-left: none;
-  border-top: 1px solid var(--line);
-  padding-left: 0;
-  padding-top: 12px;
-  margin-top: 12px;
-  text-align: left;
-}
 
 @media (max-width: 760px) {
   .team-row { grid-template-columns: 24px 36px 1fr; grid-template-rows: auto auto; }
@@ -734,4 +679,11 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   color: var(--text-mute);
   font-style: italic;
   margin-top: 2px;
+}
+.round-tag.highlight {
+  color: var(--brand);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }

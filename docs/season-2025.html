@@ -240,32 +240,17 @@ function renderHero(champ, path, regularSeasonStats) {
   `;
 }
 
-function renderPodium(champTeam, ruTeam, regularSeasonStats, teamTopScorers) {
-  const card = (t, rankLabel, rankClass) => {
-    const rs = regularSeasonStats[t.id];
-    return `
-    <div class="podium-card ${rankClass}">
-      <div class="podium-rank">${rankLabel}</div>
-      <img class="team-logo" src="${teamLogo(t)}" alt="">
-      <div class="podium-team">${t.name}</div>
-      <div class="podium-owner">${ownerName(t)}</div>
-      <div class="podium-record">${t.wins}-${t.losses} &middot; ${ppgHtml(rs.ppg, t.points_for, 'PPG')}</div>
-      ${scorerListHtml(t.id, teamTopScorers, 'podium-scorers')}
-    </div>
-  `;
-  };
-  return card(champTeam, 'Champion', 'rank-1') + card(ruTeam, 'Runner-Up', 'rank-2');
-}
-
 function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound) {
   return `<div class="team-rows">${rows.map(row => {
     const t = teamsById[row.team_id];
     const rs = regularSeasonStats[t.id];
-    const tag = row.status === 'playoff'
-      ? `<div class="round-tag">${roundLabel(row.eliminated_round, maxEliminatedRound)}</div>`
-      : '';
+    let tag = '';
+    if (row.status === 'champion') tag = `<div class="round-tag highlight">Champion</div>`;
+    else if (row.status === 'runner_up') tag = `<div class="round-tag highlight">Runner-Up</div>`;
+    else if (row.status === 'playoff') tag = `<div class="round-tag">${roundLabel(row.eliminated_round, maxEliminatedRound)}</div>`;
+    const rankClass = row.status === 'champion' ? ' rank-1' : row.status === 'runner_up' ? ' rank-2' : '';
     return `
-    <div class="team-row">
+    <div class="team-row${rankClass}">
       <div class="team-row-rank">${row.rank}</div>
       <img class="team-logo" src="${teamLogo(t)}" alt="">
       <div>
@@ -495,7 +480,13 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
   const bestDraftKeyPlayers = topN(draftedPlayers(bestDraft.team_id), 3);
   const worstDraftKeyPlayers = topN(draftedPlayers(worstDraft.team_id), 3);
 
-  // Unluckiest: biggest gap between actual wins and all-play "expected" wins.
+  // Luckiest/Unluckiest: biggest gap between actual wins and all-play
+  // "expected" wins - positive luck_index means they won more games than
+  // their weekly scoring rank alone would predict.
+  const lucky = [...teamAnalytics].sort((a, b) => b.luck_index - a.luck_index)[0];
+  const luckyWeeksNote = lucky.good_luck_win_weeks.length
+    ? ` &middot; finished bottom 3 in scoring and still won in Week ${lucky.good_luck_win_weeks.join(', ')}`
+    : '';
   const unlucky = [...teamAnalytics].sort((a, b) => a.luck_index - b.luck_index)[0];
   const unluckyWeeksNote = unlucky.bad_luck_loss_weeks.length
     ? ` &middot; finished top 3 in scoring and still lost in Week ${unlucky.bad_luck_loss_weeks.join(', ')}`
@@ -581,10 +572,16 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
     positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'WR', 'WR Heavy'),
     positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'D/ST', 'D/ST Heavy'),
     {
+      label: 'Luckiest Team',
+      headlineTeam: teamsById[lucky.team_id],
+      detail: `Expected ~${fmt1(lucky.expected_wins)} wins off weekly scoring rank (all-play ${lucky.all_play_wins}-${lucky.all_play_games - lucky.all_play_wins}), finished with ${lucky.actual_wins}${luckyWeeksNote}`,
+      value: `+${fmt1(lucky.luck_index)} wins`,
+    },
+    {
       label: 'Unluckiest Team',
       headlineTeam: teamsById[unlucky.team_id],
       detail: `Expected ~${fmt1(unlucky.expected_wins)} wins off weekly scoring rank (all-play ${unlucky.all_play_wins}-${unlucky.all_play_games - unlucky.all_play_wins}), finished with ${unlucky.actual_wins}${unluckyWeeksNote}`,
-      value: `${unlucky.luck_index} wins`,
+      value: `${fmt1(unlucky.luck_index)} wins`,
     },
   ];
 
@@ -642,7 +639,6 @@ async function loadApp() {
   const champRow = standings.find(r => r.status === 'champion');
   const ruRow = standings.find(r => r.status === 'runner_up');
   const champ = teamsById[champRow.team_id], ru = teamsById[ruRow.team_id];
-  const restRows = standings.filter(r => r.status !== 'champion' && r.status !== 'runner_up');
   const maxEliminatedRound = Math.max(...standings.filter(r => r.eliminated_round != null).map(r => r.eliminated_round));
   const orderedTeams = standings.map(r => teamsById[r.team_id]);
 
@@ -657,8 +653,7 @@ async function loadApp() {
 
     <div class="section">
       <div class="section-title">Final Standings</div>
-      <div class="podium">${renderPodium(champ, ru, regularSeasonStats, teamTopScorers)}</div>
-      <div style="margin-top:14px">${renderTeamRows(restRows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound)}</div>
+      ${renderTeamRows(standings, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound)}
     </div>
 
     <div class="section">
