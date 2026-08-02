@@ -149,6 +149,21 @@
     text-wrap: balance;
   }
   header.masthead .subtitle { color: var(--dim); font-size: 0.85rem; }
+  nav.resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+  }
+  nav.resources a {
+    color: var(--dim);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 0.2rem 0.55rem;
+  }
+  nav.resources a:hover { color: var(--fg); border-color: var(--fg); }
+  nav.resources a::before { content: "> "; }
 
   /* ---- team selection grid ---- */
   .team-grid {
@@ -360,6 +375,7 @@
         <div class="tag">Classified</div>
         <h1 class="glow">Just Stream It - Keeper Terminal<span class="cursor"></span></h1>
         <div class="subtitle">2026 keeper decisions, compiled from 2025 league records</div>
+        <nav class="resources" id="resources-nav"></nav>
       </header>
 
       <div class="team-grid" id="team-grid"></div>
@@ -519,6 +535,17 @@ async function loadApp() {
   document.getElementById('lock-screen').style.display = 'none';
   document.getElementById('app').style.display = '';
   if (guide.length) return; // already loaded once this session
+
+  const meta = await (await fetch('data/meta.json')).json();
+  const resources = [
+    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0' },
+    { label: 'ADP Rankings', href: `https://fantasy.espn.com/football/players/add?leagueId=${meta.league_id}&seasonId=${meta.current_season}` },
+    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}` },
+  ];
+  document.getElementById('resources-nav').innerHTML = resources
+    .map(r => `<a href="${r.href}" target="_blank" rel="noopener">${r.label}</a>`)
+    .join('');
+
   const res = await fetch('data/keeper_guide_2026.json');
   guide = await res.json();
   guide.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
