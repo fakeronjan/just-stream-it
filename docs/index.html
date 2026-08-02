@@ -192,7 +192,8 @@
   .dossier-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
     border-bottom: 1px solid var(--line);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -267,6 +268,18 @@
   .dossier-table td.player-cell { white-space: normal; color: var(--bright); }
   .dossier-table tbody tr:hover { background: rgba(77,255,119,0.06); }
 
+  /* Player column stays pinned while the rest of the (wide) table scrolls
+     horizontally - otherwise on mobile you lose track of which row is
+     which by the time you scroll to Keeper Cost/Value. */
+  .dossier-table th.player-col,
+  .dossier-table td.player-cell {
+    position: sticky;
+    left: 0;
+    background: var(--panel);
+    box-shadow: 1px 0 0 var(--line);
+  }
+  .dossier-table tbody tr:hover td.player-cell { background: #132318; }
+
   .pos-chip {
     display: inline-block;
     font-size: 0.65rem;
@@ -289,6 +302,8 @@
     margin-left: 0.4rem;
     border: 1px solid currentColor;
   }
+  .kv-tag.good { color: var(--fg); }
+  .kv-tag.bad { color: var(--alert); }
 
   details.redacted { margin-top: 1.5rem; font-size: 0.82rem; }
   details.redacted summary {
@@ -384,8 +399,8 @@ function keeperValueCell(vig) {
   if (vig === null || vig === undefined) return '-';
   const cls = vig >= 0 ? 'good' : 'bad';
   let tag = '';
-  if (vig >= 40) tag = '<span class="kv-tag">BARGAIN</span>';
-  else if (vig <= -40) tag = '<span class="kv-tag">OVERPAY</span>';
+  if (vig >= 40) tag = '<span class="kv-tag good">BARGAIN</span>';
+  else if (vig <= -40) tag = '<span class="kv-tag bad">OVERPAY</span>';
   return `<span class="kv ${cls}">${fmtSigned(vig)}</span>${tag}`;
 }
 
@@ -441,15 +456,15 @@ function renderDossier() {
   const rows = team.candidates.map(c => `
     <tr>
       <td class="player-cell">${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
+      <td>Round ${c.keeper_cost_round_2026}${c.is_first_round_pick ? ' <span class="meta-chip">(+1 slot)</span>' : ''}</td>
+      <td>${keeperValueCell(c.vig)}</td>
       <td>${c.drafted_pick_2025} <span class="meta-chip">(#${c.drafted_overall_2025})</span></td>
       <td class="meta-chip">${c.acquisition_type}</td>
+      <td>${c.adp_pick_estimate || '-'}</td>
       <td>${c.points_actual_2025 != null ? c.points_actual_2025.toFixed(1) : '-'}</td>
       <td>${posLabel(c.position, c.position_rank_actual_2025)}</td>
       <td>${c.points_projected_2026 != null ? c.points_projected_2026.toFixed(1) : '-'}</td>
       <td>${posLabel(c.position, c.position_rank_projected_2026)}</td>
-      <td>${c.adp_pick_estimate || '-'}</td>
-      <td>Round ${c.keeper_cost_round_2026}${c.is_first_round_pick ? ' <span class="meta-chip">(+1 slot)</span>' : ''}</td>
-      <td>${keeperValueCell(c.vig)}</td>
     </tr>
   `).join('');
 
@@ -477,16 +492,16 @@ function renderDossier() {
       <table class="dossier-table">
         <thead>
           <tr>
-            <th>Player</th>
+            <th class="player-col">Player</th>
+            <th>Keeper Cost</th>
+            <th>Keeper Value</th>
             <th>Drafted</th>
             <th>Acquired</th>
+            <th>ADP (SF)</th>
             <th>'25 Pts</th>
             <th>'25 Rank</th>
             <th>'26 Proj Pts</th>
             <th>'26 Proj Rank</th>
-            <th>ADP (SF)</th>
-            <th>Keeper Cost</th>
-            <th>Keeper Value</th>
           </tr>
         </thead>
         <tbody>${rows}</tbody>
