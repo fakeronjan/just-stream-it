@@ -266,7 +266,26 @@ function renderBracket(rounds) {
   `;
 }
 
+/* Standard competition ranking (ties share a rank, next rank skips) over
+   the full team field for a given stat, best-value-first. */
+function rankTeams(rows, valueFn) {
+  const sorted = [...rows].sort((a, b) => valueFn(b) - valueFn(a));
+  const ranks = {};
+  let prevValue = null, prevRank = 0;
+  sorted.forEach((row, i) => {
+    const v = valueFn(row);
+    if (v !== prevValue) { prevRank = i + 1; prevValue = v; }
+    ranks[row.team_id] = prevRank;
+  });
+  return ranks;
+}
+
 function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound, analyticsById) {
+  const ppgRanks = rankTeams(rows, r => regularSeasonStats[r.team_id].ppg);
+  const allPlayRanks = rankTeams(rows, r => {
+    const a = analyticsById[r.team_id];
+    return a.all_play_games ? a.all_play_wins / a.all_play_games : 0;
+  });
   return `<div class="team-rows">${rows.map(row => {
     const t = teamsById[row.team_id];
     const rs = regularSeasonStats[t.id];
@@ -276,6 +295,8 @@ function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, max
     const apScale = an.all_play_games ? an.all_play_games / rs.games : 1;
     const apWinsScaled = an.all_play_wins / apScale;
     const apLossesScaled = apLosses / apScale;
+    const ppgRank = ppgRanks[t.id];
+    const apRank = allPlayRanks[t.id];
     let tag = '';
     if (row.status === 'champion') tag = `<div class="round-tag highlight">Champion</div>`;
     else if (row.status === 'runner_up') tag = `<div class="round-tag highlight">Runner-Up</div>`;
@@ -292,8 +313,8 @@ function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, max
       </div>
       <div class="team-row-stats">
         <div class="stat"><div class="stat-value">${t.wins}-${t.losses}</div><div class="stat-label">Record</div></div>
-        <div class="stat"><div class="stat-value">${ppgHtml(rs.ppg, t.points_for)}</div><div class="stat-label">Points/Game</div></div>
-        <div class="stat"><div class="stat-value">${fmt1(apWinsScaled)}-${fmt1(apLossesScaled)} <span class="stat-sub">(${fmt1(apPct)}%)</span></div><div class="stat-label">All-Play</div></div>
+        <div class="stat"><div class="stat-value">${ppgHtml(rs.ppg, t.points_for)}</div><div class="stat-label">Points/Game <span class="stat-rank">&middot; Rank ${ppgRank}</span></div></div>
+        <div class="stat"><div class="stat-value">${fmt1(apWinsScaled)}-${fmt1(apLossesScaled)} <span class="stat-sub">(${fmt1(apPct)}%)</span></div><div class="stat-label">All-Play <span class="stat-rank">&middot; Rank ${apRank}</span></div></div>
       </div>
       ${scorerListHtml(t.id, teamTopScorers)}
     </div>

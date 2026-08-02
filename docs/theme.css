@@ -341,6 +341,11 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   font-weight: 600;
   color: var(--text-mute);
 }
+.stat-rank {
+  text-transform: none;
+  letter-spacing: normal;
+  opacity: 0.75;
+}
 
 /* ---------- playoff bracket ---------- */
 
@@ -478,7 +483,7 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 
 @media (max-width: 760px) {
   .team-row { grid-template-columns: 24px 36px 1fr; grid-template-rows: auto auto; }
-  .team-row-stats { grid-column: 1 / -1; padding-left: 60px; }
+  .team-row-stats { grid-column: 1 / -1; padding-left: 60px; flex-wrap: wrap; row-gap: 8px; white-space: normal; }
   .scorer-list { grid-column: 1 / -1; border-left: none; border-top: 1px solid var(--line); padding-left: 60px; padding-top: 8px; margin-top: 4px; }
 }
 
