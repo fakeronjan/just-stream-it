@@ -22,10 +22,86 @@ def team_label(teams_by_id, team_id):
     return f"{' & '.join(t['owners'])} ({t['name']})"
 
 
-def compute_upsets(matchups, teams_by_id):
-    """Upset size = winner's final rank minus loser's final rank (final
-    season standing as the "who was actually better" proxy) - positive and
-    large means a weak team beat a strong one.
+def compute_standings(matchups, teams):
+    """This league's own final_rank (ESPN's rankCalculatedFinal) is wrong for
+    our purposes: ESPN derives it from placement games (a "3rd place game",
+    a "9th place game", etc.) that this league doesn't treat as real -
+    the actual rule is (a) playoff-bracket teams ranked by how far they got
+    (order eliminated), tiebreak = regular-season record then points_for,
+    and (b) everyone who didn't make the real championship bracket ranked
+    purely by regular-season record then points_for, ignoring whatever
+    consolation-ladder games ESPN also scheduled for them in weeks 15-17.
+
+    The championship bracket itself isn't hardcoded to N teams - it's
+    traced from the actual bracket tree, walking backward from the final
+    each round to find that round's opponents, so byes (top seeds skip
+    round 1) fall out naturally instead of needing special-casing.
+    """
+    teams_by_id = {t["id"]: t for t in teams}
+    playoff_games = [m for m in matchups if m["is_playoffs"]]
+    playoff_weeks = sorted({m["week"] for m in playoff_games})
+
+    loss_counts = defaultdict(int)
+    for m in playoff_games:
+        loser_id = m["away_team_id"] if m["winner"] == "HOME" else m["home_team_id"]
+        loss_counts[loser_id] += 1
+    champ_id = next(t["id"] for t in teams if loss_counts.get(t["id"], 0) == 0)
+
+    def opponent_in_week(team_id, week):
+        game = next(
+            (m for m in playoff_games if m["week"] == week and team_id in (m["home_team_id"], m["away_team_id"])),
+            None,
+        )
+        if not game:
+            return None
+        return game["away_team_id"] if game["home_team_id"] == team_id else game["home_team_id"]
+
+    tiers = [[champ_id]]  # tiers[0] = champion, [1] = runner-up, [2] = semifinal losers, ...
+    alive_so_far = {champ_id}
+    for week in reversed(playoff_weeks):
+        new_tier = set()
+        for team_id in [tid for tier in tiers for tid in tier]:
+            opp_id = opponent_in_week(team_id, week)
+            if opp_id is not None and opp_id not in alive_so_far:
+                new_tier.add(opp_id)
+        if new_tier:
+            tiers.append(sorted(new_tier))
+            alive_so_far |= new_tier
+
+    def tiebreak_key(team_id):
+        t = teams_by_id[team_id]
+        return (-t["wins"], -t["points_for"])
+
+    def status_for(tier_idx):
+        if tier_idx == 0:
+            return "champion"
+        if tier_idx == 1:
+            return "runner_up"
+        return "playoff"
+
+    standings = []
+    for tier_idx, tier in enumerate(tiers):
+        for team_id in sorted(tier, key=tiebreak_key):
+            standings.append({
+                "team_id": team_id,
+                "status": status_for(tier_idx),
+                "eliminated_round": None if tier_idx <= 1 else len(tiers) - tier_idx,
+            })
+
+    bracket_ids = alive_so_far
+    non_bracket = sorted((t["id"] for t in teams if t["id"] not in bracket_ids), key=tiebreak_key)
+    for team_id in non_bracket:
+        standings.append({"team_id": team_id, "status": "non_playoff", "eliminated_round": None})
+
+    for i, row in enumerate(standings):
+        row["rank"] = i + 1
+    return standings
+
+
+def compute_upsets(matchups, rank_by_team):
+    """Upset size = winner's corrected final rank minus loser's (see
+    compute_standings) - positive and large means a weak team beat a
+    strong one.
     """
     upsets = []
     for m in matchups:
@@ -35,8 +111,8 @@ def compute_upsets(matchups, teams_by_id):
         loser_id = m["away_team_id"] if m["winner"] == "HOME" else m["home_team_id"]
         winner_score = m["home_score"] if m["winner"] == "HOME" else m["away_score"]
         loser_score = m["away_score"] if m["winner"] == "HOME" else m["home_score"]
-        winner_rank = teams_by_id[winner_id]["final_rank"] or 99
-        loser_rank = teams_by_id[loser_id]["final_rank"] or 99
+        winner_rank = rank_by_team.get(winner_id, 99)
+        loser_rank = rank_by_team.get(loser_id, 99)
         upsets.append(
             {
                 "week": m["week"],
@@ -151,17 +227,20 @@ def custody_points(timeline, weekly_boxscores, player_id, team_id, week_start, t
     """Points this player scored (while started) for this team, from
     week_start up until the NEXT time they changed hands (or end of
     season) - so a trade/pickup's value doesn't keep accruing after the
-    player left that team again.
+    player left that team again. Also returns the number of games they
+    actually started in that window, for a per-game rate alongside the total.
     """
     events = timeline.get(player_id, [])
     later_weeks = [w for w, _, _ in events if w > week_start]
     week_end = min(later_weeks) if later_weeks else total_weeks + 1
     total = 0.0
+    games_started = 0
     for week in range(week_start, week_end):
         for p in weekly_boxscores.get(str(week), {}).get(str(team_id), []):
             if p["player_id"] == player_id and p["started"]:
                 total += p["points"] or 0.0
-    return round(total, 2), week_end - 1
+                games_started += 1
+    return round(total, 2), games_started, week_end - 1
 
 
 def build_player_lookup(weekly_boxscores):
@@ -187,7 +266,7 @@ def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total
         for item in t["items"]:
             if item["type"] != "ADD":
                 continue
-            points, week_end = custody_points(
+            points, games_started, week_end = custody_points(
                 timeline, weekly_boxscores, item["player_id"], item["to_team_id"], t["week"], total_weeks
             )
             info = player_lookup.get(item["player_id"], {"name": "Unknown", "position": "?"})
@@ -201,6 +280,8 @@ def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total
                     "rostered_through_week": week_end,
                     "source": t["type"],
                     "points_while_rostered": points,
+                    "games_started": games_started,
+                    "points_per_game": round(points / games_started, 2) if games_started else 0.0,
                 }
             )
     pickups.sort(key=lambda x: -x["points_while_rostered"])
@@ -212,7 +293,7 @@ def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total
         by_team = defaultdict(list)
         for item in t["items"]:
             if item["type"] == "TRADE":
-                points, week_end = custody_points(
+                points, games_started, week_end = custody_points(
                     timeline, weekly_boxscores, item["player_id"], item["to_team_id"], t["week"], total_weeks
                 )
                 info = player_lookup.get(item["player_id"], {"name": "Unknown", "position": "?"})
@@ -223,6 +304,8 @@ def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total
                         "position": info["position"],
                         "points_while_rostered": points,
                         "rostered_through_week": week_end,
+                        "games_started": games_started,
+                        "points_per_game": round(points / games_started, 2) if games_started else 0.0,
                     }
                 )
         if not by_team:
@@ -302,7 +385,6 @@ def compute_injury_burden(weekly_boxscores):
 
 def main(season):
     teams = load(season, "teams.json")
-    teams_by_id = {t["id"]: t for t in teams}
     matchups = load(season, "matchups.json")
     weekly_boxscores = load(season, "weekly_boxscores.json")
     draft_picks = load(season, "draft.json")
@@ -310,9 +392,12 @@ def main(season):
     total_weeks = max(m["week"] for m in matchups)
 
     pickups, trades = compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total_weeks)
+    standings = compute_standings(matchups, teams)
+    rank_by_team = {row["team_id"]: row["rank"] for row in standings}
 
     moments = {
-        "upsets": compute_upsets(matchups, teams_by_id),
+        "standings": standings,
+        "upsets": compute_upsets(matchups, rank_by_team),
         "weekly_team_extremes": compute_weekly_team_extremes(matchups),
         "player_extremes": compute_player_extremes(weekly_boxscores),
         "bench_mistakes": compute_bench_mistakes(weekly_boxscores),

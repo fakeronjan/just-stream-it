@@ -47,6 +47,25 @@ const SEASON = 2025;
 function teamLogo(t) { return t.logo || ''; }
 function ownerName(t) { return (t.owners || []).join(' & '); }
 function fmt1(v) { return v.toFixed(1); }
+function ppgHtml(ppg, total, unit) { return `${fmt1(ppg)}${unit ? ' ' + unit : ''} <span class="stat-sub">(${fmt1(total)} total)</span>`; }
+
+/* Logo + name + manager - the standard way a team is referenced anywhere
+   on this page (headlines, lists, chart legend, path steps, tiles), so a
+   team name is never shown bare without who runs it. */
+function teamChip(team, size) {
+  const cls = size ? `team-chip team-chip-${size}` : 'team-chip';
+  return `<span class="${cls}"><img class="chip-logo" src="${teamLogo(team)}" alt=""><span class="chip-text"><span class="chip-name">${team.name}</span><span class="chip-owner">${ownerName(team)}</span></span></span>`;
+}
+
+function matchupHtml(teamA, teamB, connector) {
+  return `
+    <div class="matchup-block">
+      ${teamChip(teamA, 'sm')}
+      <div class="matchup-connector">${connector}</div>
+      ${teamChip(teamB, 'sm')}
+    </div>
+  `;
+}
 
 /* ---------- derived data ---------- */
 
@@ -66,23 +85,40 @@ function computeRegularSeasonStats(matchups) {
   return out;
 }
 
-function computeTeamTopScorers(weeklyBoxscores) {
+function computeTeamGamesPlayed(matchups) {
+  const games = {};
+  matchups.forEach(m => {
+    games[m.home_team_id] = (games[m.home_team_id] || 0) + 1;
+    games[m.away_team_id] = (games[m.away_team_id] || 0) + 1;
+  });
+  return games;
+}
+
+/* Every started player's season totals, per team, unsliced - the base
+   this page derives top-3 lists from (overall, by position, or filtered
+   to a team's own draft picks) without re-scanning weeklyBoxscores each time. */
+function computeTeamPlayerTotals(weeklyBoxscores) {
   const totals = {};
   Object.values(weeklyBoxscores).forEach(week => {
     Object.entries(week).forEach(([teamId, players]) => {
       totals[teamId] ??= {};
       players.forEach(p => {
         if (!p.started) return;
-        const entry = totals[teamId][p.player_id] ??= { name: p.name, position: p.position, points: 0 };
+        const entry = totals[teamId][p.player_id] ??= { player_id: p.player_id, name: p.name, position: p.position, points: 0, games: 0 };
         entry.points += p.points || 0;
+        entry.games += 1;
       });
     });
   });
   const out = {};
   Object.entries(totals).forEach(([teamId, players]) => {
-    out[teamId] = Object.values(players).sort((a, b) => b.points - a.points).slice(0, 3);
+    out[teamId] = Object.values(players).map(p => ({ ...p, ppg: p.points / p.games }));
   });
   return out;
+}
+
+function topN(players, n) {
+  return [...players].sort((a, b) => b.points - a.points).slice(0, n);
 }
 
 function findMatchup(matchups, week, teamId) {
@@ -137,11 +173,25 @@ function computeChampionshipPath(matchups, champId, teamsById) {
   return steps;
 }
 
+/* Elimination-round label for playoff-bracket teams. standings rows carry
+   eliminated_round as an abstract "rounds before the final" number (see
+   compute_standings in build_season_moments.py) - translate the two that
+   actually occur in a byes-for-top-seeds bracket into plain language,
+   falling back to a round number for anything deeper. */
+function roundLabel(eliminatedRound, maxRound) {
+  const fromFinal = maxRound - eliminatedRound;
+  if (fromFinal === 0) return 'Lost in the Semifinal';
+  if (fromFinal === 1) return 'Lost in the Quarterfinal';
+  return `Lost in Round ${eliminatedRound}`;
+}
+
 /* ---------- rendering ---------- */
 
-function pointsForLabel(team, regularSeasonStats) {
-  const rs = regularSeasonStats[team.id];
-  return `${fmt1(team.points_for)} <span class="stat-sub">(${fmt1(rs.ppg)} PPG)</span>`;
+function keyPlayersHtml(players) {
+  if (!players.length) return '';
+  return `<div class="tile-sublist">${players.map(p => `
+    <div class="sub-row"><span class="name"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}</span><span class="pts">${ppgHtml(p.ppg, p.points)}</span></div>
+  `).join('')}</div>`;
 }
 
 function scorerListHtml(teamId, teamTopScorers, extraClass) {
@@ -150,18 +200,20 @@ function scorerListHtml(teamId, teamTopScorers, extraClass) {
   const rows = players.map(p => `
     <div class="scorer-row">
       <span class="scorer-name"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}</span>
-      <span class="scorer-pts">${fmt1(p.points)}</span>
+      <span class="scorer-pts">${ppgHtml(p.ppg, p.points)}</span>
     </div>
   `).join('');
-  return `<div class="scorer-list ${extraClass || ''}"><div class="tile-label">Top Scorers</div>${rows}</div>`;
+  return `<div class="scorer-list ${extraClass || ''}"><div class="tile-label">Top Scorers (PPG)</div>${rows}</div>`;
 }
 
 function renderHero(champ, path, regularSeasonStats) {
+  const rs = regularSeasonStats[champ.id];
   const pathHtml = path.map((step, i) => {
     const stepHtml = step.bye
       ? `<div class="path-round">${step.round}</div><div class="path-result bye">Bye</div>`
       : `<div class="path-round">${step.round}</div>
-         <div class="path-result">${step.won ? 'Beat' : 'Lost to'} ${step.opp.name}</div>
+         <div class="path-result-label">${step.won ? 'Beat' : 'Lost to'}</div>
+         ${teamChip(step.opp, 'sm')}
          <div class="path-score">${fmt1(step.champScore)} - ${fmt1(step.oppScore)}</div>`;
     const arrow = i < path.length - 1 ? '<div class="path-arrow">&rarr;</div>' : '';
     return `<div class="path-step">${stepHtml}</div>${arrow}`;
@@ -176,7 +228,7 @@ function renderHero(champ, path, regularSeasonStats) {
         <div class="hero-meta">${ownerName(champ)}</div>
         <div class="hero-stats">
           <div class="stat"><div class="stat-value">${champ.wins}-${champ.losses}</div><div class="stat-label">Record</div></div>
-          <div class="stat"><div class="stat-value">${pointsForLabel(champ, regularSeasonStats)}</div><div class="stat-label">Points For</div></div>
+          <div class="stat"><div class="stat-value">${ppgHtml(rs.ppg, champ.points_for)}</div><div class="stat-label">Points/Game</div></div>
           <div class="stat"><div class="stat-value">${champ.playoff_seed}</div><div class="stat-label">Playoff Seed</div></div>
         </div>
       </div>
@@ -188,35 +240,47 @@ function renderHero(champ, path, regularSeasonStats) {
   `;
 }
 
-function renderPodium(top3, regularSeasonStats, teamTopScorers) {
-  return top3.map(t => `
-    <div class="podium-card rank-${t.final_rank}">
-      <div class="podium-rank">${t.final_rank === 1 ? 'Champion' : t.final_rank === 2 ? 'Runner-Up' : 'Third Place'}</div>
+function renderPodium(champTeam, ruTeam, regularSeasonStats, teamTopScorers) {
+  const card = (t, rankLabel, rankClass) => {
+    const rs = regularSeasonStats[t.id];
+    return `
+    <div class="podium-card ${rankClass}">
+      <div class="podium-rank">${rankLabel}</div>
       <img class="team-logo" src="${teamLogo(t)}" alt="">
       <div class="podium-team">${t.name}</div>
       <div class="podium-owner">${ownerName(t)}</div>
-      <div class="podium-record">${t.wins}-${t.losses} &middot; ${fmt1(t.points_for)} PF <span class="stat-sub">(${fmt1(regularSeasonStats[t.id].ppg)} PPG)</span></div>
+      <div class="podium-record">${t.wins}-${t.losses} &middot; ${ppgHtml(rs.ppg, t.points_for, 'PPG')}</div>
       ${scorerListHtml(t.id, teamTopScorers, 'podium-scorers')}
     </div>
-  `).join('');
+  `;
+  };
+  return card(champTeam, 'Champion', 'rank-1') + card(ruTeam, 'Runner-Up', 'rank-2');
 }
 
-function renderTeamRows(rest, regularSeasonStats, teamTopScorers) {
-  return `<div class="team-rows">${rest.map(t => `
+function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound) {
+  return `<div class="team-rows">${rows.map(row => {
+    const t = teamsById[row.team_id];
+    const rs = regularSeasonStats[t.id];
+    const tag = row.status === 'playoff'
+      ? `<div class="round-tag">${roundLabel(row.eliminated_round, maxEliminatedRound)}</div>`
+      : '';
+    return `
     <div class="team-row">
-      <div class="team-row-rank">${t.final_rank}</div>
+      <div class="team-row-rank">${row.rank}</div>
       <img class="team-logo" src="${teamLogo(t)}" alt="">
       <div>
         <div class="team-row-name">${t.name}</div>
         <div class="team-row-owner">${ownerName(t)}</div>
+        ${tag}
       </div>
       <div class="team-row-stats">
         <div class="stat"><div class="stat-value">${t.wins}-${t.losses}</div><div class="stat-label">Record</div></div>
-        <div class="stat"><div class="stat-value">${pointsForLabel(t, regularSeasonStats)}</div><div class="stat-label">Points For</div></div>
+        <div class="stat"><div class="stat-value">${ppgHtml(rs.ppg, t.points_for)}</div><div class="stat-label">Points/Game</div></div>
       </div>
       ${scorerListHtml(t.id, teamTopScorers)}
     </div>
-  `).join('')}</div>`;
+  `;
+  }).join('')}</div>`;
 }
 
 function buildWeeklyArc(matchups, teamAId, teamBId) {
@@ -260,9 +324,9 @@ function renderChartSvg(arc, teamA, teamB) {
 
   return `
     <div class="chart-legend">
-      <span><span class="swatch" style="background:${colorA}"></span>${teamA.name}</span>
-      <span><span class="swatch" style="background:${colorB}"></span>${teamB.name}</span>
-      <span><span class="swatch" style="background:var(--text-mute)"></span>League average</span>
+      <div class="chart-legend-item"><span class="swatch" style="background:${colorA}"></span>${teamChip(teamA, 'xs')}</div>
+      <div class="chart-legend-item"><span class="swatch" style="background:${colorB}"></span>${teamChip(teamB, 'xs')}</div>
+      <div class="chart-legend-item"><span class="swatch" style="background:var(--text-mute)"></span>League average</div>
     </div>
     <svg class="chart-svg" viewBox="0 0 ${W} ${H}">
       ${gridlines}
@@ -278,8 +342,8 @@ function renderChartSvg(arc, teamA, teamB) {
   `;
 }
 
-function renderChartSection(matchups, teamsById, byRank, teamAId, teamBId) {
-  const options = byRank.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
+function renderChartSection(matchups, teamsById, orderedTeams, teamAId, teamBId) {
+  const options = orderedTeams.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
   const arc = buildWeeklyArc(matchups, teamAId, teamBId);
   return `
     <div class="chart-controls">
@@ -307,15 +371,20 @@ function wireChartControls(matchups, teamsById, champId, ruId) {
 function renderTopPerformances(moments, teamsById) {
   const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => `
     <li>
-      <div class="rank-main">${teamsById[w.team_id].name}<div class="rank-sub">Week ${w.week}${w.is_playoffs ? ' (playoffs)' : ''}</div></div>
+      <div class="rank-main">
+        <div class="rank-chip-row">${teamChip(teamsById[w.team_id], 'sm')}</div>
+        <div class="rank-sub">Week ${w.week}${w.is_playoffs ? ' (playoffs)' : ''}</div>
+      </div>
       <div class="rank-value">${fmt1(w.score)}</div>
     </li>
   `).join('');
 
   const playerWeeks = moments.player_extremes.best_performances.slice(0, 5).map(p => `
     <li>
-      <div class="rank-main"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}
-        <div class="rank-sub">${teamsById[p.team_id].name} &middot; Week ${p.week}</div></div>
+      <div class="rank-main">
+        <span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}
+        <div class="rank-sub-row">${teamChip(teamsById[p.team_id], 'xs')}<span class="rank-sub">&middot; Week ${p.week}</span></div>
+      </div>
       <div class="rank-value">${fmt1(p.points)}</div>
     </li>
   `).join('');
@@ -334,18 +403,22 @@ function renderTopPerformances(moments, teamsById) {
   `;
 }
 
-function positionHeavyTile(teamAnalytics, teamsById, pos, label) {
+function positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, pos, label) {
   const sorted = [...teamAnalytics].sort((a, b) => (b.started_points_pct_by_position[pos] || 0) - (a.started_points_pct_by_position[pos] || 0));
   const top = sorted[0];
+  const pts = top.started_points_by_position[pos] || 0;
+  const games = teamGamesPlayed[top.team_id] || 1;
+  const keyPlayers = topN((playerTotals[top.team_id] || []).filter(p => p.position === pos), 3);
   return {
     label,
-    headline: teamsById[top.team_id].name,
-    detail: `${fmt1(top.started_points_by_position[pos] || 0)} pts came from the ${pos} spot`,
+    headlineTeam: teamsById[top.team_id],
+    detail: `${ppgHtml(pts / games, pts, 'PPG')} from the ${pos} spot`,
     value: `${top.started_points_pct_by_position[pos]}% of offense`,
+    sub: keyPlayersHtml(keyPlayers),
   };
 }
 
-function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics) {
+function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics, teamGamesPlayed, playerTotals, draftedSet) {
   const upset = moments.upsets[0];
   const bestWeek = moments.weekly_team_extremes.best_weeks[0];
   const pickup = moments.best_waiver_pickups[0];
@@ -389,9 +462,10 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
     ? `<span class="result-pill ${benchResult.won ? 'win' : 'loss'}">${benchResult.won ? 'Won anyway' : 'Lost'} ${fmt1(benchResult.teamScore)}-${fmt1(benchResult.oppScore)}</span>`
     : '';
 
-  // Closest Game: full score (in the same team order as the headline,
+  // Closest Game: full score (in the same team order as the matchup block,
   // not raw home/away order - those don't necessarily match) + biggest
   // position-matchup flip.
+  const closestTeamA = teamsById[closest.team_ids[0]], closestTeamB = teamsById[closest.team_ids[1]];
   const closestGame = findMatchup(matchups, closest.games[0].week, closest.team_ids[0]);
   const closestScoreA = closestGame ? teamResultInGame(closestGame, closest.team_ids[0]).teamScore : null;
   const closestScoreB = closestGame ? teamResultInGame(closestGame, closest.team_ids[1]).teamScore : null;
@@ -415,6 +489,11 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
   // attributed to their original draft slot (never re-acquired via waiver/trade).
   const draftSorted = [...teamAnalytics].sort((a, b) => (b.started_points_by_source.DRAFT || 0) - (a.started_points_by_source.DRAFT || 0));
   const bestDraft = draftSorted[0], worstDraft = draftSorted[draftSorted.length - 1];
+  const bestDraftGames = teamGamesPlayed[bestDraft.team_id] || 1;
+  const worstDraftGames = teamGamesPlayed[worstDraft.team_id] || 1;
+  const draftedPlayers = (teamId) => (playerTotals[teamId] || []).filter(p => draftedSet.has(`${teamId}_${p.player_id}`));
+  const bestDraftKeyPlayers = topN(draftedPlayers(bestDraft.team_id), 3);
+  const worstDraftKeyPlayers = topN(draftedPlayers(worstDraft.team_id), 3);
 
   // Unluckiest: biggest gap between actual wins and all-play "expected" wins.
   const unlucky = [...teamAnalytics].sort((a, b) => a.luck_index - b.luck_index)[0];
@@ -425,14 +504,14 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
   const tiles = [
     {
       label: 'Biggest Upset',
-      headline: `${winnerTeam.name} over ${loserTeam.name}`,
+      matchup: matchupHtml(winnerTeam, loserTeam, 'beat'),
       detail: `Week ${upset.week}`,
       value: `${fmt1(upset.winner_score)} - ${fmt1(upset.loser_score)}`,
       sub: upsetSub,
     },
     {
       label: 'Best Team Week',
-      headline: teamsById[bestWeek.team_id].name,
+      headlineTeam: teamsById[bestWeek.team_id],
       detail: `Week ${bestWeek.week}${bestWeek.is_playoffs ? ' &middot; playoffs' : ''}`,
       value: fmt1(bestWeek.score),
       sub: bestWeekSub,
@@ -440,23 +519,24 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
     {
       label: 'Best Waiver Add',
       headline: `${pickup.name} (${pickup.position})`,
-      detail: `Added by ${teamsById[pickup.team_id].name} in Week ${pickup.week_added}`,
-      value: `${fmt1(pickup.points_while_rostered)} pts`,
+      detail: `Week ${pickup.week_added} &middot; ${pickup.games_started} games started`,
+      value: ppgHtml(pickup.points_per_game, pickup.points_while_rostered, 'PPG'),
+      teamByline: { label: 'Picked up by', team: teamsById[pickup.team_id] },
     },
     {
       label: 'Best Trade',
       headline: `Week ${bestTrade.week} trade`,
-      detail: `${teamsById[bestTrade.winner.team_id].name} won it by ${fmt1(bestDiff)} pts`,
+      detail: `Won it by ${fmt1(bestDiff)} pts`,
       value: `${fmt1(bestTrade.winner.total_points)} vs ${fmt1(bestTrade.loser.total_points)}`,
       sub: `
         <div class="trade-sides">
           <div class="trade-side">
-            <div class="trade-side-team">${teamsById[bestTrade.winner.team_id].name} received</div>
-            ${bestTrade.winner.players_received.map(p => `<div class="sub-row"><span class="name">${p.name} (${p.position})</span><span class="pts">${fmt1(p.points_while_rostered)}</span></div>`).join('')}
+            <div class="tile-team-byline">${teamChip(teamsById[bestTrade.winner.team_id], 'sm')}<span class="byline-label">received</span></div>
+            ${bestTrade.winner.players_received.map(p => `<div class="sub-row"><span class="name">${p.name} (${p.position})</span><span class="pts">${ppgHtml(p.points_per_game, p.points_while_rostered)}</span></div>`).join('')}
           </div>
           <div class="trade-side">
-            <div class="trade-side-team">${teamsById[bestTrade.loser.team_id].name} received</div>
-            ${bestTrade.loser.players_received.map(p => `<div class="sub-row"><span class="name">${p.name} (${p.position})</span><span class="pts">${fmt1(p.points_while_rostered)}</span></div>`).join('')}
+            <div class="tile-team-byline">${teamChip(teamsById[bestTrade.loser.team_id], 'sm')}<span class="byline-label">received</span></div>
+            ${bestTrade.loser.players_received.map(p => `<div class="sub-row"><span class="name">${p.name} (${p.position})</span><span class="pts">${ppgHtml(p.points_per_game, p.points_while_rostered)}</span></div>`).join('')}
           </div>
         </div>
       `,
@@ -464,42 +544,45 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
     {
       label: 'Worst Bench Mistake',
       headline: `${benched.name} (${benched.position}) left on the bench`,
-      detail: `${teamsById[benched.team_id].name} &middot; Week ${benched.week} ${benchResultHtml}`,
+      detail: `Week ${benched.week} ${benchResultHtml}`,
       value: `${fmt1(benched.points)} pts unused`,
+      teamByline: { label: 'Bench of', team: teamsById[benched.team_id] },
     },
     {
       label: 'Closest Game',
-      headline: `${teamsById[closest.team_ids[0]].name} vs ${teamsById[closest.team_ids[1]].name}`,
+      matchup: matchupHtml(closestTeamA, closestTeamB, 'vs'),
       detail: `Week ${closest.games[0].week}`,
       value: closestGame ? `${fmt1(closestScoreA)} - ${fmt1(closestScoreB)}` : `${closest.avg_margin.toFixed(2)} pt margin`,
       sub: flipHtml,
     },
     {
       label: 'Walking Wounded',
-      headline: teamsById[wounded.team_id].name,
+      headlineTeam: teamsById[wounded.team_id],
       detail: `${wounded.distinct_players_on_ir.length} different players on IR over the season`,
       value: `${wounded.player_weeks_on_ir} player-weeks lost`,
       sub: woundedSub,
     },
     {
       label: 'Best Draft',
-      headline: teamsById[bestDraft.team_id].name,
-      detail: `${fmt1(bestDraft.started_points_by_source.DRAFT)} pts from draft picks still on the roster`,
+      headlineTeam: teamsById[bestDraft.team_id],
+      detail: `${ppgHtml((bestDraft.started_points_by_source.DRAFT || 0) / bestDraftGames, bestDraft.started_points_by_source.DRAFT || 0, 'PPG')} from draft picks still on the roster`,
       value: `${bestDraft.started_points_pct_by_source.DRAFT}% of offense`,
+      sub: keyPlayersHtml(bestDraftKeyPlayers),
     },
     {
       label: 'Worst Draft',
-      headline: teamsById[worstDraft.team_id].name,
-      detail: `Just ${fmt1(worstDraft.started_points_by_source.DRAFT || 0)} pts came from draft picks - the rest was rebuilt off the wire`,
+      headlineTeam: teamsById[worstDraft.team_id],
+      detail: `Just ${ppgHtml((worstDraft.started_points_by_source.DRAFT || 0) / worstDraftGames, worstDraft.started_points_by_source.DRAFT || 0, 'PPG')} from draft picks - the rest was rebuilt off the wire`,
       value: `${worstDraft.started_points_pct_by_source.DRAFT || 0}% of offense`,
+      sub: keyPlayersHtml(worstDraftKeyPlayers),
     },
-    positionHeavyTile(teamAnalytics, teamsById, 'QB', 'QB Heavy'),
-    positionHeavyTile(teamAnalytics, teamsById, 'RB', 'RB Heavy'),
-    positionHeavyTile(teamAnalytics, teamsById, 'WR', 'WR Heavy'),
-    positionHeavyTile(teamAnalytics, teamsById, 'D/ST', 'D/ST Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'QB', 'QB Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'RB', 'RB Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'WR', 'WR Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, teamGamesPlayed, playerTotals, 'D/ST', 'D/ST Heavy'),
     {
       label: 'Unluckiest Team',
-      headline: teamsById[unlucky.team_id].name,
+      headlineTeam: teamsById[unlucky.team_id],
       detail: `Expected ~${fmt1(unlucky.expected_wins)} wins off weekly scoring rank (all-play ${unlucky.all_play_wins}-${unlucky.all_play_games - unlucky.all_play_wins}), finished with ${unlucky.actual_wins}${unluckyWeeksNote}`,
       value: `${unlucky.luck_index} wins`,
     },
@@ -510,9 +593,12 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
       ${tiles.map(t => `
         <div class="tile">
           <div class="tile-label">${t.label}</div>
-          <div class="tile-headline">${t.headline}</div>
+          ${t.headlineTeam ? teamChip(t.headlineTeam) : ''}
+          ${t.matchup || ''}
+          ${t.headline ? `<div class="tile-headline">${t.headline}</div>` : ''}
           <div class="tile-detail">${t.detail}</div>
           <div class="tile-value">${t.value}</div>
+          ${t.teamByline ? `<div class="tile-team-byline"><span class="byline-label">${t.teamByline.label}</span>${teamChip(t.teamByline.team, 'sm')}</div>` : ''}
           ${t.sub || ''}
         </div>
       `).join('')}
@@ -535,22 +621,35 @@ async function loadApp() {
     .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
     .join('');
 
-  const [teams, moments, matchups, weeklyBoxscores, teamAnalytics] = await Promise.all([
+  const [teams, moments, matchups, weeklyBoxscores, teamAnalytics, draftPicks] = await Promise.all([
     fetch(`data/${SEASON}/teams.json`).then(r => r.json()),
     fetch(`data/${SEASON}/season_moments.json`).then(r => r.json()),
     fetch(`data/${SEASON}/matchups.json`).then(r => r.json()),
     fetch(`data/${SEASON}/weekly_boxscores.json`).then(r => r.json()),
     fetch(`data/${SEASON}/team_analytics.json`).then(r => r.json()),
+    fetch(`data/${SEASON}/draft.json`).then(r => r.json()),
   ]);
 
   const teamsById = Object.fromEntries(teams.map(t => [t.id, t]));
-  const byRank = [...teams].sort((a, b) => a.final_rank - b.final_rank);
-  const champ = byRank[0], ru = byRank[1];
-  const top3 = byRank.slice(0, 3);
-  const rest = byRank.slice(3);
+  const draftedSet = new Set(draftPicks.map(p => `${p.team_id}_${p.player_id}`));
+
+  // Standings order comes from moments.standings, NOT teams.json's
+  // final_rank - that's ESPN's own placement-game-based ranking, which
+  // this league doesn't treat as official. See compute_standings in
+  // build_season_moments.py for the real rule (playoff teams ranked by
+  // order eliminated, everyone else by regular-season record/PF).
+  const standings = moments.standings;
+  const champRow = standings.find(r => r.status === 'champion');
+  const ruRow = standings.find(r => r.status === 'runner_up');
+  const champ = teamsById[champRow.team_id], ru = teamsById[ruRow.team_id];
+  const restRows = standings.filter(r => r.status !== 'champion' && r.status !== 'runner_up');
+  const maxEliminatedRound = Math.max(...standings.filter(r => r.eliminated_round != null).map(r => r.eliminated_round));
+  const orderedTeams = standings.map(r => teamsById[r.team_id]);
 
   const regularSeasonStats = computeRegularSeasonStats(matchups);
-  const teamTopScorers = computeTeamTopScorers(weeklyBoxscores);
+  const teamGamesPlayed = computeTeamGamesPlayed(matchups);
+  const playerTotals = computeTeamPlayerTotals(weeklyBoxscores);
+  const teamTopScorers = Object.fromEntries(Object.entries(playerTotals).map(([id, players]) => [id, topN(players, 3)]));
   const path = computeChampionshipPath(matchups, champ.id, teamsById);
 
   document.getElementById('content').innerHTML = `
@@ -558,13 +657,13 @@ async function loadApp() {
 
     <div class="section">
       <div class="section-title">Final Standings</div>
-      <div class="podium">${renderPodium(top3, regularSeasonStats, teamTopScorers)}</div>
-      <div style="margin-top:14px">${renderTeamRows(rest, regularSeasonStats, teamTopScorers)}</div>
+      <div class="podium">${renderPodium(champ, ru, regularSeasonStats, teamTopScorers)}</div>
+      <div style="margin-top:14px">${renderTeamRows(restRows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound)}</div>
     </div>
 
     <div class="section">
       <div class="section-title">Season Arc &mdash; Head to Head</div>
-      <div class="card">${renderChartSection(matchups, teamsById, byRank, champ.id, ru.id)}</div>
+      <div class="card">${renderChartSection(matchups, teamsById, orderedTeams, champ.id, ru.id)}</div>
     </div>
 
     <div class="section">
@@ -574,7 +673,7 @@ async function loadApp() {
 
     <div class="section">
       <div class="section-title">Superlatives</div>
-      ${renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics)}
+      ${renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics, teamGamesPlayed, playerTotals, draftedSet)}
     </div>
   `;
 
