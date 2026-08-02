@@ -266,10 +266,13 @@ function renderBracket(rounds) {
   `;
 }
 
-function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound) {
+function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound, analyticsById) {
   return `<div class="team-rows">${rows.map(row => {
     const t = teamsById[row.team_id];
     const rs = regularSeasonStats[t.id];
+    const an = analyticsById[t.id];
+    const apLosses = an.all_play_games - an.all_play_wins;
+    const apPct = an.all_play_games ? (an.all_play_wins / an.all_play_games * 100) : 0;
     let tag = '';
     if (row.status === 'champion') tag = `<div class="round-tag highlight">Champion</div>`;
     else if (row.status === 'runner_up') tag = `<div class="round-tag highlight">Runner-Up</div>`;
@@ -287,6 +290,7 @@ function renderTeamRows(rows, teamsById, regularSeasonStats, teamTopScorers, max
       <div class="team-row-stats">
         <div class="stat"><div class="stat-value">${t.wins}-${t.losses}</div><div class="stat-label">Record</div></div>
         <div class="stat"><div class="stat-value">${ppgHtml(rs.ppg, t.points_for)}</div><div class="stat-label">Points/Game</div></div>
+        <div class="stat"><div class="stat-value">${an.all_play_wins}-${apLosses} <span class="stat-sub">(${fmt1(apPct)}%)</span></div><div class="stat-label">All-Play</div></div>
       </div>
       ${scorerListHtml(t.id, teamTopScorers)}
     </div>
@@ -727,11 +731,12 @@ async function loadApp() {
   const playerTotals = computeTeamPlayerTotals(weeklyBoxscores);
   const teamTopScorers = Object.fromEntries(Object.entries(playerTotals).map(([id, players]) => [id, topN(players, 3)]));
   const bracketRounds = computePlayoffBracket(matchups, standings, teamsById);
+  const analyticsById = Object.fromEntries(teamAnalytics.map(a => [a.team_id, a]));
 
   document.getElementById('content').innerHTML = `
     <div class="section">
       <div class="section-title">Final Standings</div>
-      ${renderTeamRows(standings, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound)}
+      ${renderTeamRows(standings, teamsById, regularSeasonStats, teamTopScorers, maxEliminatedRound, analyticsById)}
     </div>
 
     <div class="section">
