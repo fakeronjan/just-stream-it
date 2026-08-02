@@ -1805,5 +1805,1556 @@
         "Emari Demercado"
       ]
     }
+  ],
+  "best_waiver_pickups": [
+    {
+      "player_id": 17372,
+      "team_id": 7,
+      "week_added": 1,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 137.0
+    },
+    {
+      "player_id": 4360761,
+      "team_id": 4,
+      "week_added": 11,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 123.1
+    },
+    {
+      "player_id": 2578570,
+      "team_id": 4,
+      "week_added": 9,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 112.14
+    },
+    {
+      "player_id": -16017,
+      "team_id": 9,
+      "week_added": 2,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 109.0
+    },
+    {
+      "player_id": 4371733,
+      "team_id": 10,
+      "week_added": 2,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 107.8
+    },
+    {
+      "player_id": 4241464,
+      "team_id": 12,
+      "week_added": 2,
+      "rostered_through_week": 17,
+      "source": "WAIVER",
+      "points_while_rostered": 107.38
+    },
+    {
+      "player_id": 2473037,
+      "team_id": 6,
+      "week_added": 9,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 91.0
+    },
+    {
+      "player_id": 3055899,
+      "team_id": 3,
+      "week_added": 1,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 90.0
+    },
+    {
+      "player_id": 4360078,
+      "team_id": 7,
+      "week_added": 9,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 85.0
+    },
+    {
+      "player_id": -16030,
+      "team_id": 1,
+      "week_added": 3,
+      "rostered_through_week": 16,
+      "source": "WAIVER",
+      "points_while_rostered": 83.0
+    },
+    {
+      "player_id": 4429025,
+      "team_id": 7,
+      "week_added": 2,
+      "rostered_through_week": 17,
+      "source": "WAIVER",
+      "points_while_rostered": 82.8
+    },
+    {
+      "player_id": -16014,
+      "team_id": 11,
+      "week_added": 5,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 76.0
+    },
+    {
+      "player_id": 4697745,
+      "team_id": 4,
+      "week_added": 9,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 74.0
+    },
+    {
+      "player_id": 4428718,
+      "team_id": 7,
+      "week_added": 4,
+      "rostered_through_week": 17,
+      "source": "WAIVER",
+      "points_while_rostered": 72.6
+    },
+    {
+      "player_id": 4686361,
+      "team_id": 8,
+      "week_added": 11,
+      "rostered_through_week": 17,
+      "source": "FREEAGENT",
+      "points_while_rostered": 72.0
+    }
+  ],
+  "trades": [
+    {
+      "trade_id": "4dcc7f9f-220a-491e-a12e-d5aa9157bcec",
+      "week": 8,
+      "sides": [
+        {
+          "team_id": 9,
+          "players_received": [
+            {
+              "player_id": 4360310,
+              "points_while_rostered": 187.76,
+              "rostered_through_week": 17
+            },
+            {
+              "player_id": 4430027,
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 8
+            }
+          ],
+          "total_points": 187.76
+        },
+        {
+          "team_id": 2,
+          "players_received": [
+            {
+              "player_id": 4432577,
+              "points_while_rostered": 96.38,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 96.38
+        }
+      ]
+    },
+    {
+      "trade_id": "5ba69c38-e8c3-4a93-981b-48d75ef198ec",
+      "week": 8,
+      "sides": [
+        {
+          "team_id": 7,
+          "players_received": [
+            {
+              "player_id": 4689114,
+              "points_while_rostered": 133.74,
+              "rostered_through_week": 17
+            },
+            {
+              "player_id": 4685415,
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 133.74
+        },
+        {
+          "team_id": 9,
+          "players_received": [
+            {
+              "player_id": 16800,
+              "points_while_rostered": 98.3,
+              "rostered_through_week": 17
+            },
+            {
+              "player_id": 15864,
+              "points_while_rostered": 39.18,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 137.48
+        }
+      ]
+    },
+    {
+      "trade_id": "1830fb7d-436f-4d6a-a598-b557c4ff073d",
+      "week": 9,
+      "sides": [
+        {
+          "team_id": 9,
+          "players_received": [
+            {
+              "player_id": 4429795,
+              "points_while_rostered": 182.6,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 182.6
+        },
+        {
+          "team_id": 11,
+          "players_received": [
+            {
+              "player_id": 4685702,
+              "points_while_rostered": 66.2,
+              "rostered_through_week": 17
+            },
+            {
+              "player_id": 4430027,
+              "points_while_rostered": 26.5,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 92.7
+        }
+      ]
+    },
+    {
+      "trade_id": "71a0389b-cd34-43a9-a94a-791eee9efc16",
+      "week": 9,
+      "sides": [
+        {
+          "team_id": 4,
+          "players_received": [
+            {
+              "player_id": 4361529,
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 11
+            },
+            {
+              "player_id": 3059915,
+              "points_while_rostered": 31.2,
+              "rostered_through_week": 17
+            },
+            {
+              "player_id": 4432665,
+              "points_while_rostered": 110.2,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 141.4
+        },
+        {
+          "team_id": 9,
+          "players_received": [
+            {
+              "player_id": 4241478,
+              "points_while_rostered": 63.8,
+              "rostered_through_week": 17
+            },
+            {
+              "player_id": 4695404,
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 17
+            }
+          ],
+          "total_points": 63.8
+        }
+      ]
+    }
+  ],
+  "rivalries": [
+    {
+      "team_ids": [
+        4,
+        8
+      ],
+      "games": [
+        {
+          "week": 10,
+          "margin": 0.1,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 0.1,
+      "record": {
+        "4": 1,
+        "8": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        10
+      ],
+      "games": [
+        {
+          "week": 7,
+          "margin": 0.32,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 0.32,
+      "record": {
+        "1": 1,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        11
+      ],
+      "games": [
+        {
+          "week": 7,
+          "margin": 1.14,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 1.14,
+      "record": {
+        "6": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        8
+      ],
+      "games": [
+        {
+          "week": 11,
+          "margin": 1.4,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 1.4,
+      "record": {
+        "1": 1,
+        "8": 0
+      }
+    },
+    {
+      "team_ids": [
+        7,
+        11
+      ],
+      "games": [
+        {
+          "week": 6,
+          "margin": 1.7,
+          "winner_team_id": 7
+        }
+      ],
+      "avg_margin": 1.7,
+      "record": {
+        "7": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        12
+      ],
+      "games": [
+        {
+          "week": 5,
+          "margin": 1.76,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 1.76,
+      "record": {
+        "4": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        6
+      ],
+      "games": [
+        {
+          "week": 8,
+          "margin": 2.68,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 2.68,
+      "record": {
+        "4": 0,
+        "6": 1
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        11
+      ],
+      "games": [
+        {
+          "week": 9,
+          "margin": 3.0,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 3.0,
+      "record": {
+        "5": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        11,
+        12
+      ],
+      "games": [
+        {
+          "week": 10,
+          "margin": 3.12,
+          "winner_team_id": 12
+        }
+      ],
+      "avg_margin": 3.12,
+      "record": {
+        "11": 0,
+        "12": 1
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        11
+      ],
+      "games": [
+        {
+          "week": 5,
+          "margin": 3.74,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 3.74,
+      "record": {
+        "2": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        8,
+        9
+      ],
+      "games": [
+        {
+          "week": 9,
+          "margin": 7.24,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 7.24,
+      "record": {
+        "8": 1,
+        "9": 0
+      }
+    },
+    {
+      "team_ids": [
+        9,
+        10
+      ],
+      "games": [
+        {
+          "week": 5,
+          "margin": 7.36,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 7.36,
+      "record": {
+        "9": 1,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        9,
+        12
+      ],
+      "games": [
+        {
+          "week": 4,
+          "margin": 7.86,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 7.86,
+      "record": {
+        "9": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        11
+      ],
+      "games": [
+        {
+          "week": 8,
+          "margin": 8.7,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 8.7,
+      "record": {
+        "3": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        5
+      ],
+      "games": [
+        {
+          "week": 4,
+          "margin": 8.8,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 8.8,
+      "record": {
+        "4": 1,
+        "5": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        7
+      ],
+      "games": [
+        {
+          "week": 7,
+          "margin": 9.26,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 9.26,
+      "record": {
+        "3": 1,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        6
+      ],
+      "games": [
+        {
+          "week": 9,
+          "margin": 9.86,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 9.86,
+      "record": {
+        "3": 1,
+        "6": 0
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        6
+      ],
+      "games": [
+        {
+          "week": 11,
+          "margin": 10.6,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 10.6,
+      "record": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "team_ids": [
+        7,
+        10
+      ],
+      "games": [
+        {
+          "week": 10,
+          "margin": 12.16,
+          "winner_team_id": 7
+        }
+      ],
+      "avg_margin": 12.16,
+      "record": {
+        "7": 1,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        10
+      ],
+      "games": [
+        {
+          "week": 4,
+          "margin": 12.6,
+          "winner_team_id": 10
+        }
+      ],
+      "avg_margin": 12.6,
+      "record": {
+        "6": 0,
+        "10": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        12
+      ],
+      "games": [
+        {
+          "week": 6,
+          "margin": 13.7,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 13.7,
+      "record": {
+        "1": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        9
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 27.86,
+          "winner_team_id": 5
+        },
+        {
+          "week": 14,
+          "margin": 2.88,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 15.37,
+      "record": {
+        "5": 2,
+        "9": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        10
+      ],
+      "games": [
+        {
+          "week": 9,
+          "margin": 15.82,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 15.82,
+      "record": {
+        "2": 1,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        7
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 19.6,
+          "winner_team_id": 1
+        },
+        {
+          "week": 13,
+          "margin": 13.42,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 16.51,
+      "record": {
+        "1": 2,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        5
+      ],
+      "games": [
+        {
+          "week": 7,
+          "margin": 16.82,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 16.82,
+      "record": {
+        "2": 1,
+        "5": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        5
+      ],
+      "games": [
+        {
+          "week": 10,
+          "margin": 18.36,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 18.36,
+      "record": {
+        "3": 0,
+        "5": 1
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        12
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 11.72,
+          "winner_team_id": 12
+        },
+        {
+          "week": 12,
+          "margin": 27.36,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 19.54,
+      "record": {
+        "5": 1,
+        "12": 1
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        12
+      ],
+      "games": [
+        {
+          "week": 11,
+          "margin": 23.08,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 23.08,
+      "record": {
+        "3": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        7,
+        12
+      ],
+      "games": [
+        {
+          "week": 9,
+          "margin": 23.16,
+          "winner_team_id": 7
+        }
+      ],
+      "avg_margin": 23.16,
+      "record": {
+        "7": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        9
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 27.34,
+          "winner_team_id": 3
+        },
+        {
+          "week": 13,
+          "margin": 20.5,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 23.92,
+      "record": {
+        "3": 2,
+        "9": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        6
+      ],
+      "games": [
+        {
+          "week": 10,
+          "margin": 24.88,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 24.88,
+      "record": {
+        "1": 1,
+        "6": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        10
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 47.16,
+          "winner_team_id": 3
+        },
+        {
+          "week": 12,
+          "margin": 2.76,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 24.96,
+      "record": {
+        "3": 2,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        6
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 20.18,
+          "winner_team_id": 2
+        },
+        {
+          "week": 14,
+          "margin": 30.3,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 25.24,
+      "record": {
+        "2": 2,
+        "6": 0
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        10
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 27.62,
+          "winner_team_id": 5
+        },
+        {
+          "week": 13,
+          "margin": 24.92,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 26.27,
+      "record": {
+        "5": 2,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        3
+      ],
+      "games": [
+        {
+          "week": 4,
+          "margin": 27.74,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 27.74,
+      "record": {
+        "1": 0,
+        "3": 1
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        4
+      ],
+      "games": [
+        {
+          "week": 11,
+          "margin": 27.98,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 27.98,
+      "record": {
+        "2": 0,
+        "4": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        4
+      ],
+      "games": [
+        {
+          "week": 9,
+          "margin": 28.56,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 28.56,
+      "record": {
+        "1": 0,
+        "4": 1
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        8
+      ],
+      "games": [
+        {
+          "week": 5,
+          "margin": 30.42,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 30.42,
+      "record": {
+        "3": 0,
+        "8": 1
+      }
+    },
+    {
+      "team_ids": [
+        8,
+        10
+      ],
+      "games": [
+        {
+          "week": 8,
+          "margin": 32.58,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 32.58,
+      "record": {
+        "8": 1,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        7
+      ],
+      "games": [
+        {
+          "week": 8,
+          "margin": 34.44,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 34.44,
+      "record": {
+        "5": 1,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        8
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 68.14,
+          "winner_team_id": 2
+        },
+        {
+          "week": 13,
+          "margin": 1.54,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 34.84,
+      "record": {
+        "2": 1,
+        "8": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        11
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 2.36,
+          "winner_team_id": 1
+        },
+        {
+          "week": 14,
+          "margin": 67.82,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 35.09,
+      "record": {
+        "1": 2,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        10,
+        12
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 44.52,
+          "winner_team_id": 10
+        },
+        {
+          "week": 14,
+          "margin": 29.34,
+          "winner_team_id": 10
+        }
+      ],
+      "avg_margin": 36.93,
+      "record": {
+        "10": 2,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        4
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 55.14,
+          "winner_team_id": 3
+        },
+        {
+          "week": 14,
+          "margin": 19.28,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 37.21,
+      "record": {
+        "3": 1,
+        "4": 1
+      }
+    },
+    {
+      "team_ids": [
+        7,
+        9
+      ],
+      "games": [
+        {
+          "week": 11,
+          "margin": 39.82,
+          "winner_team_id": 7
+        }
+      ],
+      "avg_margin": 39.82,
+      "record": {
+        "7": 1,
+        "9": 0
+      }
+    },
+    {
+      "team_ids": [
+        8,
+        11
+      ],
+      "games": [
+        {
+          "week": 4,
+          "margin": 40.52,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 40.52,
+      "record": {
+        "8": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        9
+      ],
+      "games": [
+        {
+          "week": 10,
+          "margin": 41.04,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 41.04,
+      "record": {
+        "2": 0,
+        "9": 1
+      }
+    },
+    {
+      "team_ids": [
+        7,
+        8
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 33.86,
+          "winner_team_id": 8
+        },
+        {
+          "week": 14,
+          "margin": 49.2,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 41.53,
+      "record": {
+        "7": 0,
+        "8": 2
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        7
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 13.56,
+          "winner_team_id": 4
+        },
+        {
+          "week": 12,
+          "margin": 69.78,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 41.67,
+      "record": {
+        "4": 2,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        10,
+        11
+      ],
+      "games": [
+        {
+          "week": 11,
+          "margin": 42.62,
+          "winner_team_id": 10
+        }
+      ],
+      "avg_margin": 42.62,
+      "record": {
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        8
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 45.26,
+          "winner_team_id": 8
+        },
+        {
+          "week": 12,
+          "margin": 40.74,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 43.0,
+      "record": {
+        "6": 0,
+        "8": 2
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        11
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 53.96,
+          "winner_team_id": 11
+        },
+        {
+          "week": 13,
+          "margin": 33.04,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 43.5,
+      "record": {
+        "4": 1,
+        "11": 1
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        3
+      ],
+      "games": [
+        {
+          "week": 6,
+          "margin": 44.06,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 44.06,
+      "record": {
+        "2": 1,
+        "3": 0
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        12
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 70.04,
+          "winner_team_id": 12
+        },
+        {
+          "week": 13,
+          "margin": 23.16,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 46.6,
+      "record": {
+        "6": 1,
+        "12": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        2
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 28.06,
+          "winner_team_id": 1
+        },
+        {
+          "week": 12,
+          "margin": 67.68,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 47.87,
+      "record": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "team_ids": [
+        9,
+        11
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 27.14,
+          "winner_team_id": 11
+        },
+        {
+          "week": 12,
+          "margin": 68.62,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 47.88,
+      "record": {
+        "9": 1,
+        "11": 1
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        7
+      ],
+      "games": [
+        {
+          "week": 4,
+          "margin": 51.7,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 51.7,
+      "record": {
+        "2": 1,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        9
+      ],
+      "games": [
+        {
+          "week": 8,
+          "margin": 55.82,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 55.82,
+      "record": {
+        "1": 0,
+        "9": 1
+      }
+    },
+    {
+      "team_ids": [
+        8,
+        12
+      ],
+      "games": [
+        {
+          "week": 7,
+          "margin": 57.14,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 57.14,
+      "record": {
+        "8": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        9
+      ],
+      "games": [
+        {
+          "week": 7,
+          "margin": 57.62,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 57.62,
+      "record": {
+        "4": 0,
+        "9": 1
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        9
+      ],
+      "games": [
+        {
+          "week": 6,
+          "margin": 61.12,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 61.12,
+      "record": {
+        "6": 1,
+        "9": 0
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        8
+      ],
+      "games": [
+        {
+          "week": 6,
+          "margin": 62.82,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 62.82,
+      "record": {
+        "5": 1,
+        "8": 0
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        5
+      ],
+      "games": [
+        {
+          "week": 5,
+          "margin": 65.7,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 65.7,
+      "record": {
+        "1": 0,
+        "5": 1
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        12
+      ],
+      "games": [
+        {
+          "week": 8,
+          "margin": 66.6,
+          "winner_team_id": 12
+        }
+      ],
+      "avg_margin": 66.6,
+      "record": {
+        "2": 0,
+        "12": 1
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        7
+      ],
+      "games": [
+        {
+          "week": 5,
+          "margin": 80.44,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 80.44,
+      "record": {
+        "6": 1,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        10
+      ],
+      "games": [
+        {
+          "week": 6,
+          "margin": 84.98,
+          "winner_team_id": 10
+        }
+      ],
+      "avg_margin": 84.98,
+      "record": {
+        "4": 0,
+        "10": 1
+      }
+    }
   ]
 }

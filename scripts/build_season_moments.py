@@ -125,6 +125,130 @@ def compute_bench_mistakes(weekly_boxscores):
     return {"worst_single_instances": instances[:10], "season_totals": season_totals_list}
 
 
+def build_arrival_timeline(draft_picks, transactions):
+    """player_id -> sorted [(week, team_id, source), ...] - every event
+    where a player joined a roster (draft, waiver/FA add, trade-in).
+    """
+    timeline = defaultdict(list)
+    for p in draft_picks:
+        if p["player_id"] is not None:
+            timeline[p["player_id"]].append((1, p["team_id"], "DRAFT"))
+    for t in transactions:
+        if t["type"] in ("WAIVER", "FREEAGENT"):
+            for item in t["items"]:
+                if item["type"] == "ADD":
+                    timeline[item["player_id"]].append((t["week"], item["to_team_id"], t["type"]))
+        elif t["type"] == "TRADE_ACCEPT":
+            for item in t["items"]:
+                if item["type"] == "TRADE":
+                    timeline[item["player_id"]].append((t["week"], item["to_team_id"], "TRADE"))
+    for pid in timeline:
+        timeline[pid].sort(key=lambda e: e[0])
+    return timeline
+
+
+def custody_points(timeline, weekly_boxscores, player_id, team_id, week_start, total_weeks):
+    """Points this player scored (while started) for this team, from
+    week_start up until the NEXT time they changed hands (or end of
+    season) - so a trade/pickup's value doesn't keep accruing after the
+    player left that team again.
+    """
+    events = timeline.get(player_id, [])
+    later_weeks = [w for w, _, _ in events if w > week_start]
+    week_end = min(later_weeks) if later_weeks else total_weeks + 1
+    total = 0.0
+    for week in range(week_start, week_end):
+        for p in weekly_boxscores.get(str(week), {}).get(str(team_id), []):
+            if p["player_id"] == player_id and p["started"]:
+                total += p["points"] or 0.0
+    return round(total, 2), week_end - 1
+
+
+def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total_weeks):
+    timeline = build_arrival_timeline(draft_picks, transactions)
+
+    pickups = []
+    for t in transactions:
+        if t["type"] not in ("WAIVER", "FREEAGENT"):
+            continue
+        for item in t["items"]:
+            if item["type"] != "ADD":
+                continue
+            points, week_end = custody_points(
+                timeline, weekly_boxscores, item["player_id"], item["to_team_id"], t["week"], total_weeks
+            )
+            pickups.append(
+                {
+                    "player_id": item["player_id"],
+                    "team_id": item["to_team_id"],
+                    "week_added": t["week"],
+                    "rostered_through_week": week_end,
+                    "source": t["type"],
+                    "points_while_rostered": points,
+                }
+            )
+    pickups.sort(key=lambda x: -x["points_while_rostered"])
+
+    trades = []
+    for t in transactions:
+        if t["type"] != "TRADE_ACCEPT":
+            continue
+        by_team = defaultdict(list)
+        for item in t["items"]:
+            if item["type"] == "TRADE":
+                points, week_end = custody_points(
+                    timeline, weekly_boxscores, item["player_id"], item["to_team_id"], t["week"], total_weeks
+                )
+                by_team[item["to_team_id"]].append(
+                    {"player_id": item["player_id"], "points_while_rostered": points, "rostered_through_week": week_end}
+                )
+        if not by_team:
+            continue
+        sides = [
+            {
+                "team_id": team_id,
+                "players_received": players,
+                "total_points": round(sum(p["points_while_rostered"] for p in players), 2),
+            }
+            for team_id, players in by_team.items()
+        ]
+        trades.append({"trade_id": t["id"], "week": t["week"], "sides": sides})
+
+    return pickups, trades
+
+
+def compute_rivalries(matchups):
+    """Head-to-head pairs this season, closest average margin first. With
+    only one season of history, "rivalry" really just means "closest
+    series" - real multi-season rivalry tracking becomes possible once
+    2026+ data exists.
+    """
+    pair_games = defaultdict(list)
+    for m in matchups:
+        if m["is_playoffs"] or m["winner"] not in ("HOME", "AWAY"):
+            continue
+        pair = tuple(sorted([m["home_team_id"], m["away_team_id"]]))
+        margin = abs(m["home_score"] - m["away_score"])
+        winner = m["home_team_id"] if m["winner"] == "HOME" else m["away_team_id"]
+        pair_games[pair].append({"week": m["week"], "margin": round(margin, 2), "winner_team_id": winner})
+
+    rivalries = []
+    for pair, games in pair_games.items():
+        wins = defaultdict(int)
+        for g in games:
+            wins[g["winner_team_id"]] += 1
+        rivalries.append(
+            {
+                "team_ids": list(pair),
+                "games": games,
+                "avg_margin": round(sum(g["margin"] for g in games) / len(games), 2),
+                "record": {pair[0]: wins.get(pair[0], 0), pair[1]: wins.get(pair[1], 0)},
+            }
+        )
+    rivalries.sort(key=lambda r: r["avg_margin"])
+    return rivalries
+
+
 def compute_injury_burden(weekly_boxscores):
     """IR-slot usage as a proxy for injury burden (no true historical
     injury-status field is available - ESPN only exposes CURRENT status,
@@ -158,6 +282,11 @@ def main(season):
     teams_by_id = {t["id"]: t for t in teams}
     matchups = load(season, "matchups.json")
     weekly_boxscores = load(season, "weekly_boxscores.json")
+    draft_picks = load(season, "draft.json")
+    transactions = load(season, "transactions.json")
+    total_weeks = max(m["week"] for m in matchups)
+
+    pickups, trades = compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total_weeks)
 
     moments = {
         "upsets": compute_upsets(matchups, teams_by_id),
@@ -165,6 +294,9 @@ def main(season):
         "player_extremes": compute_player_extremes(weekly_boxscores),
         "bench_mistakes": compute_bench_mistakes(weekly_boxscores),
         "injury_burden": compute_injury_burden(weekly_boxscores),
+        "best_waiver_pickups": pickups[:15],
+        "trades": trades,
+        "rivalries": compute_rivalries(matchups),
     }
 
     out_path = DOCS_DATA / str(season) / "season_moments.json"
