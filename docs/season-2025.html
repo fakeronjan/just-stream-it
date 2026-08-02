@@ -46,6 +46,77 @@ const SEASON = 2025;
 
 function teamLogo(t) { return t.logo || ''; }
 function ownerName(t) { return (t.owners || []).join(' & '); }
+function fmt1(v) { return v.toFixed(1); }
+
+/* ---------- derived data ---------- */
+
+function computeRegularSeasonStats(matchups) {
+  const points = {}, games = {};
+  matchups.forEach(m => {
+    if (m.is_playoffs) return;
+    points[m.home_team_id] = (points[m.home_team_id] || 0) + m.home_score;
+    points[m.away_team_id] = (points[m.away_team_id] || 0) + m.away_score;
+    games[m.home_team_id] = (games[m.home_team_id] || 0) + 1;
+    games[m.away_team_id] = (games[m.away_team_id] || 0) + 1;
+  });
+  const out = {};
+  Object.keys(points).forEach(id => {
+    out[id] = { points: points[id], games: games[id], ppg: points[id] / games[id] };
+  });
+  return out;
+}
+
+function computeTeamTopScorers(weeklyBoxscores) {
+  const totals = {};
+  Object.values(weeklyBoxscores).forEach(week => {
+    Object.entries(week).forEach(([teamId, players]) => {
+      totals[teamId] ??= {};
+      players.forEach(p => {
+        if (!p.started) return;
+        const entry = totals[teamId][p.player_id] ??= { name: p.name, position: p.position, points: 0 };
+        entry.points += p.points || 0;
+      });
+    });
+  });
+  const out = {};
+  Object.entries(totals).forEach(([teamId, players]) => {
+    out[teamId] = Object.values(players).sort((a, b) => b.points - a.points).slice(0, 3);
+  });
+  return out;
+}
+
+function findMatchup(matchups, week, teamId) {
+  return matchups.find(m => m.week === week && (m.home_team_id === teamId || m.away_team_id === teamId));
+}
+
+function teamResultInGame(game, teamId) {
+  const isHome = game.home_team_id === teamId;
+  const won = (isHome && game.winner === 'HOME') || (!isHome && game.winner === 'AWAY');
+  const teamScore = isHome ? game.home_score : game.away_score;
+  const oppScore = isHome ? game.away_score : game.home_score;
+  return { won, teamScore, oppScore };
+}
+
+function computeBiggestFlip(weeklyBoxscores, week, teamAId, teamBId) {
+  const playersA = (weeklyBoxscores[week]?.[teamAId] || []).filter(p => p.started);
+  const playersB = (weeklyBoxscores[week]?.[teamBId] || []).filter(p => p.started);
+  const groupByPos = players => {
+    const groups = {};
+    players.forEach(p => (groups[p.position] ??= []).push(p));
+    Object.values(groups).forEach(g => g.sort((a, b) => b.points - a.points));
+    return groups;
+  };
+  const groupsA = groupByPos(playersA), groupsB = groupByPos(playersB);
+  let best = null;
+  Object.keys(groupsA).forEach(pos => {
+    const gA = groupsA[pos], gB = groupsB[pos] || [];
+    for (let i = 0; i < Math.min(gA.length, gB.length); i++) {
+      const diff = Math.abs(gA[i].points - gB[i].points);
+      if (!best || diff > best.diff) best = { position: pos, playerA: gA[i], playerB: gB[i], diff };
+    }
+  });
+  return best;
+}
 
 function computeChampionshipPath(matchups, champId, teamsById) {
   const playoffWeeks = [...new Set(matchups.filter(m => m.is_playoffs).map(m => m.week))].sort((a, b) => a - b);
@@ -61,25 +132,37 @@ function computeChampionshipPath(matchups, champId, teamsById) {
     const oppId = isHome ? game.away_team_id : game.home_team_id;
     const champScore = isHome ? game.home_score : game.away_score;
     const oppScore = isHome ? game.away_score : game.home_score;
-    steps.push({
-      round,
-      bye: false,
-      won: champScore > oppScore,
-      opp: teamsById[oppId],
-      champScore,
-      oppScore,
-    });
+    steps.push({ round, bye: false, won: champScore > oppScore, opp: teamsById[oppId], champScore, oppScore });
   });
   return steps;
 }
 
-function renderHero(champ, path) {
+/* ---------- rendering ---------- */
+
+function pointsForLabel(team, regularSeasonStats) {
+  const rs = regularSeasonStats[team.id];
+  return `${fmt1(team.points_for)} <span class="stat-sub">(${fmt1(rs.ppg)} PPG)</span>`;
+}
+
+function scorerListHtml(teamId, teamTopScorers, extraClass) {
+  const players = teamTopScorers[teamId] || [];
+  if (!players.length) return '';
+  const rows = players.map(p => `
+    <div class="scorer-row">
+      <span class="scorer-name"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}</span>
+      <span class="scorer-pts">${fmt1(p.points)}</span>
+    </div>
+  `).join('');
+  return `<div class="scorer-list ${extraClass || ''}"><div class="tile-label">Top Scorers</div>${rows}</div>`;
+}
+
+function renderHero(champ, path, regularSeasonStats) {
   const pathHtml = path.map((step, i) => {
     const stepHtml = step.bye
       ? `<div class="path-round">${step.round}</div><div class="path-result bye">Bye</div>`
       : `<div class="path-round">${step.round}</div>
          <div class="path-result">${step.won ? 'Beat' : 'Lost to'} ${step.opp.name}</div>
-         <div class="path-score">${step.champScore.toFixed(1)} - ${step.oppScore.toFixed(1)}</div>`;
+         <div class="path-score">${fmt1(step.champScore)} - ${fmt1(step.oppScore)}</div>`;
     const arrow = i < path.length - 1 ? '<div class="path-arrow">&rarr;</div>' : '';
     return `<div class="path-step">${stepHtml}</div>${arrow}`;
   }).join('');
@@ -93,7 +176,7 @@ function renderHero(champ, path) {
         <div class="hero-meta">${ownerName(champ)}</div>
         <div class="hero-stats">
           <div class="stat"><div class="stat-value">${champ.wins}-${champ.losses}</div><div class="stat-label">Record</div></div>
-          <div class="stat"><div class="stat-value">${champ.points_for.toFixed(1)}</div><div class="stat-label">Points For</div></div>
+          <div class="stat"><div class="stat-value">${pointsForLabel(champ, regularSeasonStats)}</div><div class="stat-label">Points For</div></div>
           <div class="stat"><div class="stat-value">${champ.playoff_seed}</div><div class="stat-label">Playoff Seed</div></div>
         </div>
       </div>
@@ -105,36 +188,38 @@ function renderHero(champ, path) {
   `;
 }
 
-function renderPodium(top3) {
+function renderPodium(top3, regularSeasonStats, teamTopScorers) {
   return top3.map(t => `
     <div class="podium-card rank-${t.final_rank}">
       <div class="podium-rank">${t.final_rank === 1 ? 'Champion' : t.final_rank === 2 ? 'Runner-Up' : 'Third Place'}</div>
       <img class="team-logo" src="${teamLogo(t)}" alt="">
       <div class="podium-team">${t.name}</div>
       <div class="podium-owner">${ownerName(t)}</div>
-      <div class="podium-record">${t.wins}-${t.losses} &middot; ${t.points_for.toFixed(1)} PF</div>
+      <div class="podium-record">${t.wins}-${t.losses} &middot; ${fmt1(t.points_for)} PF <span class="stat-sub">(${fmt1(regularSeasonStats[t.id].ppg)} PPG)</span></div>
+      ${scorerListHtml(t.id, teamTopScorers, 'podium-scorers')}
     </div>
   `).join('');
 }
 
-function renderStandings(rest) {
-  const rows = rest.map(t => `
-    <tr>
-      <td class="num">${t.final_rank}</td>
-      <td>${t.name}<div class="podium-owner">${ownerName(t)}</div></td>
-      <td class="num">${t.wins}-${t.losses}</td>
-      <td class="num">${t.points_for.toFixed(1)}</td>
-    </tr>
-  `).join('');
-  return `
-    <table class="standings">
-      <thead><tr><th class="num">Rank</th><th>Team</th><th class="num">Record</th><th class="num">PF</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
-  `;
+function renderTeamRows(rest, regularSeasonStats, teamTopScorers) {
+  return `<div class="team-rows">${rest.map(t => `
+    <div class="team-row">
+      <div class="team-row-rank">${t.final_rank}</div>
+      <img class="team-logo" src="${teamLogo(t)}" alt="">
+      <div>
+        <div class="team-row-name">${t.name}</div>
+        <div class="team-row-owner">${ownerName(t)}</div>
+      </div>
+      <div class="team-row-stats">
+        <div class="stat"><div class="stat-value">${t.wins}-${t.losses}</div><div class="stat-label">Record</div></div>
+        <div class="stat"><div class="stat-value">${pointsForLabel(t, regularSeasonStats)}</div><div class="stat-label">Points For</div></div>
+      </div>
+      ${scorerListHtml(t.id, teamTopScorers)}
+    </div>
+  `).join('')}</div>`;
 }
 
-function buildWeeklyArc(matchups, champId, ruId) {
+function buildWeeklyArc(matchups, teamAId, teamBId) {
   const byWeek = {};
   matchups.forEach(m => {
     if (m.is_playoffs) return;
@@ -144,20 +229,19 @@ function buildWeeklyArc(matchups, champId, ruId) {
   return weeks.map(week => {
     const scores = byWeek[week];
     const avg = scores.reduce((s, [, v]) => s + v, 0) / scores.length;
-    const champ = scores.find(([id]) => id === champId)?.[1];
-    const ru = scores.find(([id]) => id === ruId)?.[1];
-    return { week, avg, champ, ru };
+    const teamA = scores.find(([id]) => id === teamAId)?.[1];
+    const teamB = scores.find(([id]) => id === teamBId)?.[1];
+    return { week, avg, teamA, teamB };
   });
 }
 
-function renderChart(arc, champ, ru) {
+function renderChartSvg(arc, teamA, teamB) {
   const W = 1000, H = 320, padL = 36, padR = 60, padT = 16, padB = 30;
-  const allVals = arc.flatMap(d => [d.avg, d.champ, d.ru]).filter(v => v != null);
+  const allVals = arc.flatMap(d => [d.avg, d.teamA, d.teamB]).filter(v => v != null);
   const minV = Math.floor(Math.min(...allVals) / 10) * 10 - 5;
   const maxV = Math.ceil(Math.max(...allVals) / 10) * 10 + 5;
   const x = i => padL + (i / (arc.length - 1)) * (W - padL - padR);
   const y = v => H - padB - ((v - minV) / (maxV - minV)) * (H - padT - padB);
-
   const line = key => arc.map((d, i) => `${x(i)},${y(d[key])}`).join(' ');
 
   const gridVals = [minV, (minV + maxV) / 2, maxV];
@@ -169,36 +253,62 @@ function renderChart(arc, champ, ru) {
   const xTicks = arc.map((d, i) => (i % 2 === 0 || i === arc.length - 1)
     ? `<text class="axis-label" x="${x(i)}" y="${H - 8}" text-anchor="middle">W${d.week}</text>` : '').join('');
 
-  const dots = (key, color) => arc.map((d, i) => `<circle class="end-dot" cx="${x(i)}" cy="${y(d[key])}" r="4" fill="${color}"><title>${d[key].toFixed(1)} pts - Week ${d.week}</title></circle>`).join('');
+  const dots = (key, color) => arc.map((d, i) => `<circle class="end-dot" cx="${x(i)}" cy="${y(d[key])}" r="4" fill="${color}"><title>${fmt1(d[key])} pts - Week ${d.week}</title></circle>`).join('');
 
   const lastI = arc.length - 1;
-  const champColor = 'var(--brand)', ruColor = 'var(--cat-1)';
+  const colorA = 'var(--brand)', colorB = 'var(--cat-1)';
 
   return `
     <div class="chart-legend">
-      <span><span class="swatch" style="background:${champColor}"></span>${champ.name}</span>
-      <span><span class="swatch" style="background:${ruColor}"></span>${ru.name}</span>
+      <span><span class="swatch" style="background:${colorA}"></span>${teamA.name}</span>
+      <span><span class="swatch" style="background:${colorB}"></span>${teamB.name}</span>
       <span><span class="swatch" style="background:var(--text-mute)"></span>League average</span>
     </div>
     <svg class="chart-svg" viewBox="0 0 ${W} ${H}">
       ${gridlines}
       ${xTicks}
       <polyline class="avg-line" points="${line('avg')}" />
-      <polyline class="series-line" points="${line('champ')}" stroke="${champColor}" />
-      <polyline class="series-line" points="${line('ru')}" stroke="${ruColor}" />
-      ${dots('champ', champColor)}
-      ${dots('ru', ruColor)}
-      <text class="end-label" x="${x(lastI) + 8}" y="${y(arc[lastI].champ) + 4}" fill="${champColor}">${champ.abbrev}</text>
-      <text class="end-label" x="${x(lastI) + 8}" y="${y(arc[lastI].ru) + 4}" fill="${ruColor}">${ru.abbrev}</text>
+      <polyline class="series-line" points="${line('teamA')}" stroke="${colorA}" />
+      <polyline class="series-line" points="${line('teamB')}" stroke="${colorB}" />
+      ${dots('teamA', colorA)}
+      ${dots('teamB', colorB)}
+      <text class="end-label" x="${x(lastI) + 8}" y="${y(arc[lastI].teamA) + 4}" fill="${colorA}">${teamA.abbrev}</text>
+      <text class="end-label" x="${x(lastI) + 8}" y="${y(arc[lastI].teamB) + 4}" fill="${colorB}">${teamB.abbrev}</text>
     </svg>
   `;
+}
+
+function renderChartSection(matchups, teamsById, byRank, teamAId, teamBId) {
+  const options = byRank.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
+  const arc = buildWeeklyArc(matchups, teamAId, teamBId);
+  return `
+    <div class="chart-controls">
+      <label>Team A <select id="chart-team-a">${options}</select></label>
+      <label>Team B <select id="chart-team-b">${options}</select></label>
+    </div>
+    <div id="chart-render">${renderChartSvg(arc, teamsById[teamAId], teamsById[teamBId])}</div>
+  `;
+}
+
+function wireChartControls(matchups, teamsById, champId, ruId) {
+  const selA = document.getElementById('chart-team-a');
+  const selB = document.getElementById('chart-team-b');
+  selA.value = champId;
+  selB.value = ruId;
+  const rerender = () => {
+    const teamAId = Number(selA.value), teamBId = Number(selB.value);
+    const arc = buildWeeklyArc(matchups, teamAId, teamBId);
+    document.getElementById('chart-render').innerHTML = renderChartSvg(arc, teamsById[teamAId], teamsById[teamBId]);
+  };
+  selA.addEventListener('change', rerender);
+  selB.addEventListener('change', rerender);
 }
 
 function renderTopPerformances(moments, teamsById) {
   const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => `
     <li>
       <div class="rank-main">${teamsById[w.team_id].name}<div class="rank-sub">Week ${w.week}${w.is_playoffs ? ' (playoffs)' : ''}</div></div>
-      <div class="rank-value">${w.score.toFixed(1)}</div>
+      <div class="rank-value">${fmt1(w.score)}</div>
     </li>
   `).join('');
 
@@ -206,7 +316,7 @@ function renderTopPerformances(moments, teamsById) {
     <li>
       <div class="rank-main"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}
         <div class="rank-sub">${teamsById[p.team_id].name} &middot; Week ${p.week}</div></div>
-      <div class="rank-value">${p.points.toFixed(1)}</div>
+      <div class="rank-value">${fmt1(p.points)}</div>
     </li>
   `).join('');
 
@@ -224,7 +334,18 @@ function renderTopPerformances(moments, teamsById) {
   `;
 }
 
-function renderSuperlatives(moments, teamsById) {
+function positionHeavyTile(teamAnalytics, teamsById, pos, label) {
+  const sorted = [...teamAnalytics].sort((a, b) => (b.started_points_pct_by_position[pos] || 0) - (a.started_points_pct_by_position[pos] || 0));
+  const top = sorted[0];
+  return {
+    label,
+    headline: teamsById[top.team_id].name,
+    detail: `${fmt1(top.started_points_by_position[pos] || 0)} pts came from the ${pos} spot`,
+    value: `${top.started_points_pct_by_position[pos]}% of offense`,
+  };
+}
+
+function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics) {
   const upset = moments.upsets[0];
   const bestWeek = moments.weekly_team_extremes.best_weeks[0];
   const pickup = moments.best_waiver_pickups[0];
@@ -243,61 +364,156 @@ function renderSuperlatives(moments, teamsById) {
       bestTrade = { winner, loser, week: t.week };
     }
   });
-  const tradeHeadliner = bestTrade.winner.players_received.slice().sort((a, b) => b.points_while_rostered - a.points_while_rostered)[0];
+
+  // Biggest Upset: full records for context.
+  const winnerTeam = teamsById[upset.winner_team_id], loserTeam = teamsById[upset.loser_team_id];
+  const upsetSub = `
+    <div class="tile-sublist">
+      <div class="sub-row"><span class="name">${winnerTeam.name} (${winnerTeam.wins}-${winnerTeam.losses}, finished #${upset.winner_final_rank})</span></div>
+      <div class="sub-row"><span class="name">${loserTeam.name} (${loserTeam.wins}-${loserTeam.losses}, finished #${upset.loser_final_rank})</span></div>
+    </div>
+  `;
+
+  // Best Team Week: top 3 players that game.
+  const weekBox = (weeklyBoxscores[bestWeek.week]?.[bestWeek.team_id] || []).filter(p => p.started).sort((a, b) => b.points - a.points).slice(0, 3);
+  const bestWeekSub = `
+    <div class="tile-sublist">
+      ${weekBox.map(p => `<div class="sub-row"><span class="name"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}</span><span class="pts">${fmt1(p.points)}</span></div>`).join('')}
+    </div>
+  `;
+
+  // Worst Bench Mistake: did the team win or lose that week anyway?
+  const benchGame = findMatchup(matchups, benched.week, benched.team_id);
+  const benchResult = benchGame ? teamResultInGame(benchGame, benched.team_id) : null;
+  const benchResultHtml = benchResult
+    ? `<span class="result-pill ${benchResult.won ? 'win' : 'loss'}">${benchResult.won ? 'Won anyway' : 'Lost'} ${fmt1(benchResult.teamScore)}-${fmt1(benchResult.oppScore)}</span>`
+    : '';
+
+  // Closest Game: full score (in the same team order as the headline,
+  // not raw home/away order - those don't necessarily match) + biggest
+  // position-matchup flip.
+  const closestGame = findMatchup(matchups, closest.games[0].week, closest.team_ids[0]);
+  const closestScoreA = closestGame ? teamResultInGame(closestGame, closest.team_ids[0]).teamScore : null;
+  const closestScoreB = closestGame ? teamResultInGame(closestGame, closest.team_ids[1]).teamScore : null;
+  const flip = computeBiggestFlip(weeklyBoxscores, String(closest.games[0].week), String(closest.team_ids[0]), String(closest.team_ids[1]));
+  const flipHtml = flip ? `
+    <div class="flip-matchup">
+      <div class="flip-pos">Biggest Swing &middot; ${flip.position}</div>
+      <div class="flip-row ${flip.playerA.points >= flip.playerB.points ? 'flip-winner' : ''}"><span>${flip.playerA.name}</span><span class="flip-pts">${fmt1(flip.playerA.points)}</span></div>
+      <div class="flip-row ${flip.playerB.points > flip.playerA.points ? 'flip-winner' : ''}"><span>${flip.playerB.name}</span><span class="flip-pts">${fmt1(flip.playerB.points)}</span></div>
+    </div>
+  ` : '';
+
+  // Walking Wounded: actual player names.
+  const woundedSub = `
+    <div class="tile-sublist">
+      <div class="sub-row"><span class="name">${wounded.distinct_players_on_ir.join(', ')}</span></div>
+    </div>
+  `;
+
+  // Draft quality: raw points started this season from players still
+  // attributed to their original draft slot (never re-acquired via waiver/trade).
+  const draftSorted = [...teamAnalytics].sort((a, b) => (b.started_points_by_source.DRAFT || 0) - (a.started_points_by_source.DRAFT || 0));
+  const bestDraft = draftSorted[0], worstDraft = draftSorted[draftSorted.length - 1];
+
+  // Unluckiest: biggest gap between actual wins and all-play "expected" wins.
+  const unlucky = [...teamAnalytics].sort((a, b) => a.luck_index - b.luck_index)[0];
+  const unluckyWeeksNote = unlucky.bad_luck_loss_weeks.length
+    ? ` &middot; finished top 3 in scoring and still lost in Week ${unlucky.bad_luck_loss_weeks.join(', ')}`
+    : '';
 
   const tiles = [
     {
       label: 'Biggest Upset',
-      headline: `${teamsById[upset.winner_team_id].name} over ${teamsById[upset.loser_team_id].name}`,
-      detail: `Week ${upset.week} &middot; #${upset.winner_final_rank} finish beat #${upset.loser_final_rank}`,
-      value: `${upset.winner_score.toFixed(1)} - ${upset.loser_score.toFixed(1)}`,
+      headline: `${winnerTeam.name} over ${loserTeam.name}`,
+      detail: `Week ${upset.week}`,
+      value: `${fmt1(upset.winner_score)} - ${fmt1(upset.loser_score)}`,
+      sub: upsetSub,
     },
     {
       label: 'Best Team Week',
       headline: teamsById[bestWeek.team_id].name,
       detail: `Week ${bestWeek.week}${bestWeek.is_playoffs ? ' &middot; playoffs' : ''}`,
-      value: bestWeek.score.toFixed(1),
+      value: fmt1(bestWeek.score),
+      sub: bestWeekSub,
     },
     {
       label: 'Best Waiver Add',
       headline: `${pickup.name} (${pickup.position})`,
       detail: `Added by ${teamsById[pickup.team_id].name} in Week ${pickup.week_added}`,
-      value: `${pickup.points_while_rostered.toFixed(1)} pts`,
+      value: `${fmt1(pickup.points_while_rostered)} pts`,
     },
     {
       label: 'Best Trade',
-      headline: `${teamsById[bestTrade.winner.team_id].name} got ${tradeHeadliner.name}`,
-      detail: `From ${teamsById[bestTrade.loser.team_id].name} in Week ${bestTrade.week} &middot; ${bestTrade.winner.total_points.toFixed(1)} pts vs ${bestTrade.loser.total_points.toFixed(1)} pts`,
-      value: `+${bestDiff.toFixed(1)} pt edge`,
+      headline: `Week ${bestTrade.week} trade`,
+      detail: `${teamsById[bestTrade.winner.team_id].name} won it by ${fmt1(bestDiff)} pts`,
+      value: `${fmt1(bestTrade.winner.total_points)} vs ${fmt1(bestTrade.loser.total_points)}`,
+      sub: `
+        <div class="trade-sides">
+          <div class="trade-side">
+            <div class="trade-side-team">${teamsById[bestTrade.winner.team_id].name} received</div>
+            ${bestTrade.winner.players_received.map(p => `<div class="sub-row"><span class="name">${p.name} (${p.position})</span><span class="pts">${fmt1(p.points_while_rostered)}</span></div>`).join('')}
+          </div>
+          <div class="trade-side">
+            <div class="trade-side-team">${teamsById[bestTrade.loser.team_id].name} received</div>
+            ${bestTrade.loser.players_received.map(p => `<div class="sub-row"><span class="name">${p.name} (${p.position})</span><span class="pts">${fmt1(p.points_while_rostered)}</span></div>`).join('')}
+          </div>
+        </div>
+      `,
     },
     {
       label: 'Worst Bench Mistake',
       headline: `${benched.name} (${benched.position}) left on the bench`,
-      detail: `${teamsById[benched.team_id].name} &middot; Week ${benched.week}`,
-      value: `${benched.points.toFixed(1)} pts unused`,
+      detail: `${teamsById[benched.team_id].name} &middot; Week ${benched.week} ${benchResultHtml}`,
+      value: `${fmt1(benched.points)} pts unused`,
     },
     {
       label: 'Closest Game',
       headline: `${teamsById[closest.team_ids[0]].name} vs ${teamsById[closest.team_ids[1]].name}`,
       detail: `Week ${closest.games[0].week}`,
-      value: `${closest.avg_margin.toFixed(2)} pt margin`,
+      value: closestGame ? `${fmt1(closestScoreA)} - ${fmt1(closestScoreB)}` : `${closest.avg_margin.toFixed(2)} pt margin`,
+      sub: flipHtml,
     },
     {
       label: 'Walking Wounded',
       headline: teamsById[wounded.team_id].name,
       detail: `${wounded.distinct_players_on_ir.length} different players on IR over the season`,
       value: `${wounded.player_weeks_on_ir} player-weeks lost`,
+      sub: woundedSub,
+    },
+    {
+      label: 'Best Draft',
+      headline: teamsById[bestDraft.team_id].name,
+      detail: `${fmt1(bestDraft.started_points_by_source.DRAFT)} pts from draft picks still on the roster`,
+      value: `${bestDraft.started_points_pct_by_source.DRAFT}% of offense`,
+    },
+    {
+      label: 'Worst Draft',
+      headline: teamsById[worstDraft.team_id].name,
+      detail: `Just ${fmt1(worstDraft.started_points_by_source.DRAFT || 0)} pts came from draft picks - the rest was rebuilt off the wire`,
+      value: `${worstDraft.started_points_pct_by_source.DRAFT || 0}% of offense`,
+    },
+    positionHeavyTile(teamAnalytics, teamsById, 'QB', 'QB Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, 'RB', 'RB Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, 'WR', 'WR Heavy'),
+    positionHeavyTile(teamAnalytics, teamsById, 'D/ST', 'D/ST Heavy'),
+    {
+      label: 'Unluckiest Team',
+      headline: teamsById[unlucky.team_id].name,
+      detail: `Expected ~${fmt1(unlucky.expected_wins)} wins off weekly scoring rank (all-play ${unlucky.all_play_wins}-${unlucky.all_play_games - unlucky.all_play_wins}), finished with ${unlucky.actual_wins}${unluckyWeeksNote}`,
+      value: `${unlucky.luck_index} wins`,
     },
   ];
 
   return `
-    <div class="tile-grid">
+    <div class="tile-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
       ${tiles.map(t => `
         <div class="tile">
           <div class="tile-label">${t.label}</div>
           <div class="tile-headline">${t.headline}</div>
           <div class="tile-detail">${t.detail}</div>
           <div class="tile-value">${t.value}</div>
+          ${t.sub || ''}
         </div>
       `).join('')}
     </div>
@@ -319,10 +535,12 @@ async function loadApp() {
     .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
     .join('');
 
-  const [teams, moments, matchups] = await Promise.all([
+  const [teams, moments, matchups, weeklyBoxscores, teamAnalytics] = await Promise.all([
     fetch(`data/${SEASON}/teams.json`).then(r => r.json()),
     fetch(`data/${SEASON}/season_moments.json`).then(r => r.json()),
     fetch(`data/${SEASON}/matchups.json`).then(r => r.json()),
+    fetch(`data/${SEASON}/weekly_boxscores.json`).then(r => r.json()),
+    fetch(`data/${SEASON}/team_analytics.json`).then(r => r.json()),
   ]);
 
   const teamsById = Object.fromEntries(teams.map(t => [t.id, t]));
@@ -331,21 +549,22 @@ async function loadApp() {
   const top3 = byRank.slice(0, 3);
   const rest = byRank.slice(3);
 
+  const regularSeasonStats = computeRegularSeasonStats(matchups);
+  const teamTopScorers = computeTeamTopScorers(weeklyBoxscores);
   const path = computeChampionshipPath(matchups, champ.id, teamsById);
-  const arc = buildWeeklyArc(matchups, champ.id, ru.id);
 
   document.getElementById('content').innerHTML = `
-    ${renderHero(champ, path)}
+    ${renderHero(champ, path, regularSeasonStats)}
 
     <div class="section">
       <div class="section-title">Final Standings</div>
-      <div class="podium">${renderPodium(top3)}</div>
-      <div class="card" style="margin-top:14px">${renderStandings(rest)}</div>
+      <div class="podium">${renderPodium(top3, regularSeasonStats, teamTopScorers)}</div>
+      <div style="margin-top:14px">${renderTeamRows(rest, regularSeasonStats, teamTopScorers)}</div>
     </div>
 
     <div class="section">
-      <div class="section-title">Season Arc &mdash; Championship Race</div>
-      <div class="card">${renderChart(arc, champ, ru)}</div>
+      <div class="section-title">Season Arc &mdash; Head to Head</div>
+      <div class="card">${renderChartSection(matchups, teamsById, byRank, champ.id, ru.id)}</div>
     </div>
 
     <div class="section">
@@ -355,9 +574,11 @@ async function loadApp() {
 
     <div class="section">
       <div class="section-title">Superlatives</div>
-      ${renderSuperlatives(moments, teamsById)}
+      ${renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamAnalytics)}
     </div>
   `;
+
+  wireChartControls(matchups, teamsById, champ.id, ru.id);
 }
 
 document.getElementById('auth-form').addEventListener('submit', (e) => {

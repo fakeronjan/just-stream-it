@@ -279,6 +279,11 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   letter-spacing: 0.06em;
   margin-top: 2px;
 }
+.stat .stat-value .stat-sub {
+  font-size: 0.6em;
+  font-weight: 600;
+  color: var(--text-mute);
+}
 
 /* ---------- championship path ---------- */
 
@@ -385,30 +390,105 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
   .podium-card.rank-1 { order: 1; }
 }
 
-/* ---------- standings table ---------- */
+/* ---------- standings rows ---------- */
 
-table.standings {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
+.team-rows { display: flex; flex-direction: column; gap: 10px; }
+
+.team-row {
+  display: grid;
+  grid-template-columns: 28px 40px 1fr auto 1.4fr;
+  align-items: center;
+  gap: 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 16px;
 }
-table.standings th, table.standings td {
-  padding: 9px 10px;
-  text-align: left;
-  border-bottom: 1px solid var(--line);
-}
-table.standings th {
+
+.team-row-rank {
+  font-weight: 800;
   color: var(--text-mute);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
 }
-table.standings td.num, table.standings th.num { text-align: center; font-variant-numeric: tabular-nums; }
-table.standings tbody tr:last-child td { border-bottom: none; }
-table.standings tbody tr:hover { background: var(--panel-2); }
+
+.team-row img.team-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--panel-2);
+}
+
+.team-row-name { font-weight: 700; font-size: 0.92rem; }
+.team-row-owner { color: var(--text-dim); font-size: 0.8rem; margin-top: 1px; }
+
+.team-row-stats {
+  display: flex;
+  gap: 22px;
+  white-space: nowrap;
+}
+.team-row-stats .stat-value { font-size: 0.95rem; }
+.team-row-stats .stat-label { font-size: 0.65rem; }
+
+.scorer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid var(--line);
+  padding-left: 16px;
+}
+.scorer-list .tile-label { margin-bottom: 3px; }
+.scorer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.82rem;
+}
+.scorer-row .scorer-name { color: var(--text); }
+.scorer-row .scorer-pts { color: var(--brand); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.podium-scorers {
+  border-left: none;
+  border-top: 1px solid var(--line);
+  padding-left: 0;
+  padding-top: 12px;
+  margin-top: 12px;
+  text-align: left;
+}
+
+@media (max-width: 760px) {
+  .team-row { grid-template-columns: 24px 36px 1fr; grid-template-rows: auto auto; }
+  .team-row-stats { grid-column: 1 / -1; padding-left: 60px; }
+  .scorer-list { grid-column: 1 / -1; border-left: none; border-top: 1px solid var(--line); padding-left: 60px; padding-top: 8px; margin-top: 4px; }
+}
 
 /* ---------- chart ---------- */
+
+.chart-controls {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.chart-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.chart-controls select {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.85rem;
+  outline: none;
+}
+.chart-controls select:focus { border-color: var(--brand-dim); }
 
 .chart-legend {
   display: flex;
@@ -519,3 +599,61 @@ table.standings tbody tr:hover { background: var(--panel-2); }
 .rank-list .rank-main { flex: 1; font-weight: 600; }
 .rank-list .rank-sub { color: var(--text-dim); font-size: 0.82rem; }
 .rank-list .rank-value { font-weight: 800; color: var(--brand); font-variant-numeric: tabular-nums; }
+
+/* ---------- expanded superlative content ---------- */
+
+.tile-sublist {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.tile-sublist .sub-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.82rem;
+}
+.tile-sublist .sub-row .name { color: var(--text-dim); }
+.tile-sublist .sub-row .pts { color: var(--text); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.trade-sides {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.trade-side .trade-side-team { font-size: 0.78rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; margin-bottom: 3px; }
+.trade-side .sub-row .name { color: var(--text); }
+
+.flip-matchup {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.flip-matchup .flip-pos { font-size: 0.68rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; margin-bottom: 6px; }
+.flip-matchup .flip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 3px 0;
+}
+.flip-matchup .flip-row.flip-winner .flip-pts { color: var(--good); }
+.flip-matchup .flip-row .flip-pts { font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.result-pill {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.result-pill.win { background: rgba(44,154,88,0.18); color: var(--good); }
+.result-pill.loss { background: rgba(242,64,76,0.18); color: var(--bad); }
