@@ -135,10 +135,6 @@ function topN(players, n) {
   return [...players].sort((a, b) => b.points - a.points).slice(0, n);
 }
 
-function topNByPpg(players, n) {
-  return [...players].sort((a, b) => b.ppg - a.ppg).slice(0, n);
-}
-
 function findMatchup(matchups, week, teamId) {
   return matchups.find(m => m.week === week && (m.home_team_id === teamId || m.away_team_id === teamId));
 }
@@ -760,7 +756,7 @@ async function loadApp() {
   const playerTotals = computeTeamPlayerTotals(weeklyBoxscores);
   const regularSeasonWeeks = new Set(matchups.filter(m => !m.is_playoffs).map(m => m.week));
   const regularSeasonPlayerTotals = computeTeamPlayerTotals(weeklyBoxscores, regularSeasonWeeks);
-  const teamTopScorers = Object.fromEntries(Object.entries(regularSeasonPlayerTotals).map(([id, players]) => [id, topNByPpg(players, 3)]));
+  const teamTopScorers = Object.fromEntries(Object.entries(regularSeasonPlayerTotals).map(([id, players]) => [id, topN(players, 3)]));
   const bracketRounds = computePlayoffBracket(matchups, standings, teamsById);
   const analyticsById = Object.fromEntries(teamAnalytics.map(a => [a.team_id, a]));
 
