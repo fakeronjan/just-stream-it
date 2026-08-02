@@ -1,0 +1,1809 @@
+{
+  "upsets": [
+    {
+      "week": 8,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 1,
+      "winner_final_rank": 10,
+      "loser_final_rank": 2,
+      "upset_size": 8,
+      "winner_score": 145.88,
+      "loser_score": 90.06,
+      "margin": 55.82
+    },
+    {
+      "week": 11,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 5,
+      "winner_final_rank": 8,
+      "loser_final_rank": 1,
+      "upset_size": 7,
+      "winner_score": 137.64,
+      "loser_score": 127.04,
+      "margin": 10.6
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 11,
+      "loser_team_id": 4,
+      "winner_final_rank": 11,
+      "loser_final_rank": 5,
+      "upset_size": 6,
+      "winner_score": 127.12,
+      "loser_score": 73.16,
+      "margin": 53.96
+    },
+    {
+      "week": 10,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 2,
+      "winner_final_rank": 10,
+      "loser_final_rank": 4,
+      "upset_size": 6,
+      "winner_score": 155.54,
+      "loser_score": 114.5,
+      "margin": 41.04
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 12,
+      "loser_team_id": 5,
+      "winner_final_rank": 7,
+      "loser_final_rank": 1,
+      "upset_size": 6,
+      "winner_score": 134.0,
+      "loser_score": 122.28,
+      "margin": 11.72
+    },
+    {
+      "week": 7,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 4,
+      "winner_final_rank": 10,
+      "loser_final_rank": 5,
+      "upset_size": 5,
+      "winner_score": 161.5,
+      "loser_score": 103.88,
+      "margin": 57.62
+    },
+    {
+      "week": 9,
+      "is_playoffs": false,
+      "winner_team_id": 7,
+      "loser_team_id": 12,
+      "winner_final_rank": 12,
+      "loser_final_rank": 7,
+      "upset_size": 5,
+      "winner_score": 133.76,
+      "loser_score": 110.6,
+      "margin": 23.16
+    },
+    {
+      "week": 6,
+      "is_playoffs": false,
+      "winner_team_id": 10,
+      "loser_team_id": 4,
+      "winner_final_rank": 9,
+      "loser_final_rank": 5,
+      "upset_size": 4,
+      "winner_score": 166.04,
+      "loser_score": 81.06,
+      "margin": 84.98
+    },
+    {
+      "week": 4,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 5,
+      "winner_final_rank": 5,
+      "loser_final_rank": 1,
+      "upset_size": 4,
+      "winner_score": 160.82,
+      "loser_score": 152.02,
+      "margin": 8.8
+    },
+    {
+      "week": 8,
+      "is_playoffs": false,
+      "winner_team_id": 12,
+      "loser_team_id": 2,
+      "winner_final_rank": 7,
+      "loser_final_rank": 4,
+      "upset_size": 3,
+      "winner_score": 161.92,
+      "loser_score": 95.32,
+      "margin": 66.6
+    },
+    {
+      "week": 5,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 3,
+      "winner_final_rank": 6,
+      "loser_final_rank": 3,
+      "upset_size": 3,
+      "winner_score": 159.92,
+      "loser_score": 129.5,
+      "margin": 30.42
+    },
+    {
+      "week": 9,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 1,
+      "winner_final_rank": 5,
+      "loser_final_rank": 2,
+      "upset_size": 3,
+      "winner_score": 178.56,
+      "loser_score": 150.0,
+      "margin": 28.56
+    },
+    {
+      "week": 7,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 5,
+      "winner_final_rank": 4,
+      "loser_final_rank": 1,
+      "upset_size": 3,
+      "winner_score": 144.58,
+      "loser_score": 127.76,
+      "margin": 16.82
+    },
+    {
+      "week": 10,
+      "is_playoffs": false,
+      "winner_team_id": 7,
+      "loser_team_id": 10,
+      "winner_final_rank": 12,
+      "loser_final_rank": 9,
+      "upset_size": 3,
+      "winner_score": 117.3,
+      "loser_score": 105.14,
+      "margin": 12.16
+    },
+    {
+      "week": 4,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 12,
+      "winner_final_rank": 10,
+      "loser_final_rank": 7,
+      "upset_size": 3,
+      "winner_score": 140.72,
+      "loser_score": 132.86,
+      "margin": 7.86
+    },
+    {
+      "week": 8,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 4,
+      "winner_final_rank": 8,
+      "loser_final_rank": 5,
+      "upset_size": 3,
+      "winner_score": 115.84,
+      "loser_score": 113.16,
+      "margin": 2.68
+    },
+    {
+      "week": 12,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 1,
+      "winner_final_rank": 4,
+      "loser_final_rank": 2,
+      "upset_size": 2,
+      "winner_score": 171.34,
+      "loser_score": 103.66,
+      "margin": 67.68
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 10,
+      "loser_team_id": 12,
+      "winner_final_rank": 9,
+      "loser_final_rank": 7,
+      "upset_size": 2,
+      "winner_score": 131.64,
+      "loser_score": 87.12,
+      "margin": 44.52
+    },
+    {
+      "week": 11,
+      "is_playoffs": false,
+      "winner_team_id": 7,
+      "loser_team_id": 9,
+      "winner_final_rank": 12,
+      "loser_final_rank": 10,
+      "upset_size": 2,
+      "winner_score": 139.34,
+      "loser_score": 99.52,
+      "margin": 39.82
+    },
+    {
+      "week": 14,
+      "is_playoffs": false,
+      "winner_team_id": 10,
+      "loser_team_id": 12,
+      "winner_final_rank": 9,
+      "loser_final_rank": 7,
+      "upset_size": 2,
+      "winner_score": 139.24,
+      "loser_score": 109.9,
+      "margin": 29.34
+    },
+    {
+      "week": 14,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 3,
+      "winner_final_rank": 5,
+      "loser_final_rank": 3,
+      "upset_size": 2,
+      "winner_score": 167.62,
+      "loser_score": 148.34,
+      "margin": 19.28
+    },
+    {
+      "week": 15,
+      "is_playoffs": true,
+      "winner_team_id": 9,
+      "loser_team_id": 6,
+      "winner_final_rank": 10,
+      "loser_final_rank": 8,
+      "upset_size": 2,
+      "winner_score": 150.3,
+      "loser_score": 137.04,
+      "margin": 13.26
+    },
+    {
+      "week": 13,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 2,
+      "winner_final_rank": 6,
+      "loser_final_rank": 4,
+      "upset_size": 2,
+      "winner_score": 101.82,
+      "loser_score": 100.28,
+      "margin": 1.54
+    },
+    {
+      "week": 6,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 3,
+      "winner_final_rank": 4,
+      "loser_final_rank": 3,
+      "upset_size": 1,
+      "winner_score": 164.54,
+      "loser_score": 120.48,
+      "margin": 44.06
+    },
+    {
+      "week": 11,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 2,
+      "winner_final_rank": 5,
+      "loser_final_rank": 4,
+      "upset_size": 1,
+      "winner_score": 124.18,
+      "loser_score": 96.2,
+      "margin": 27.98
+    },
+    {
+      "week": 4,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 1,
+      "winner_final_rank": 3,
+      "loser_final_rank": 2,
+      "upset_size": 1,
+      "winner_score": 139.04,
+      "loser_score": 111.3,
+      "margin": 27.74
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 11,
+      "loser_team_id": 9,
+      "winner_final_rank": 11,
+      "loser_final_rank": 10,
+      "upset_size": 1,
+      "winner_score": 143.04,
+      "loser_score": 115.9,
+      "margin": 27.14
+    },
+    {
+      "week": 13,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 12,
+      "winner_final_rank": 8,
+      "loser_final_rank": 7,
+      "upset_size": 1,
+      "winner_score": 149.98,
+      "loser_score": 126.82,
+      "margin": 23.16
+    },
+    {
+      "week": 4,
+      "is_playoffs": false,
+      "winner_team_id": 10,
+      "loser_team_id": 6,
+      "winner_final_rank": 9,
+      "loser_final_rank": 8,
+      "upset_size": 1,
+      "winner_score": 152.84,
+      "loser_score": 140.24,
+      "margin": 12.6
+    },
+    {
+      "week": 5,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 10,
+      "winner_final_rank": 10,
+      "loser_final_rank": 9,
+      "upset_size": 1,
+      "winner_score": 139.06,
+      "loser_score": 131.7,
+      "margin": 7.36
+    },
+    {
+      "week": 15,
+      "is_playoffs": true,
+      "winner_team_id": 7,
+      "loser_team_id": 11,
+      "winner_final_rank": 12,
+      "loser_final_rank": 11,
+      "upset_size": 1,
+      "winner_score": 73.08,
+      "loser_score": 69.46,
+      "margin": 3.62
+    },
+    {
+      "week": 6,
+      "is_playoffs": false,
+      "winner_team_id": 7,
+      "loser_team_id": 11,
+      "winner_final_rank": 12,
+      "loser_final_rank": 11,
+      "upset_size": 1,
+      "winner_score": 108.5,
+      "loser_score": 106.8,
+      "margin": 1.7
+    },
+    {
+      "week": 15,
+      "is_playoffs": true,
+      "winner_team_id": 2,
+      "loser_team_id": 4,
+      "winner_final_rank": 4,
+      "loser_final_rank": 5,
+      "upset_size": -1,
+      "winner_score": 195.02,
+      "loser_score": 111.8,
+      "margin": 83.22
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 12,
+      "loser_team_id": 6,
+      "winner_final_rank": 7,
+      "loser_final_rank": 8,
+      "upset_size": -1,
+      "winner_score": 182.86,
+      "loser_score": 112.82,
+      "margin": 70.04
+    },
+    {
+      "week": 12,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 11,
+      "winner_final_rank": 10,
+      "loser_final_rank": 11,
+      "upset_size": -1,
+      "winner_score": 189.4,
+      "loser_score": 120.78,
+      "margin": 68.62
+    },
+    {
+      "week": 5,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 1,
+      "winner_final_rank": 1,
+      "loser_final_rank": 2,
+      "upset_size": -1,
+      "winner_score": 158.98,
+      "loser_score": 93.28,
+      "margin": 65.7
+    },
+    {
+      "week": 7,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 12,
+      "winner_final_rank": 6,
+      "loser_final_rank": 7,
+      "upset_size": -1,
+      "winner_score": 159.82,
+      "loser_score": 102.68,
+      "margin": 57.14
+    },
+    {
+      "week": 17,
+      "is_playoffs": true,
+      "winner_team_id": 10,
+      "loser_team_id": 9,
+      "winner_final_rank": 9,
+      "loser_final_rank": 10,
+      "upset_size": -1,
+      "winner_score": 144.32,
+      "loser_score": 103.82,
+      "margin": 40.5
+    },
+    {
+      "week": 17,
+      "is_playoffs": true,
+      "winner_team_id": 4,
+      "loser_team_id": 8,
+      "winner_final_rank": 5,
+      "loser_final_rank": 6,
+      "upset_size": -1,
+      "winner_score": 143.18,
+      "loser_score": 104.14,
+      "margin": 39.04
+    },
+    {
+      "week": 16,
+      "is_playoffs": true,
+      "winner_team_id": 4,
+      "loser_team_id": 8,
+      "winner_final_rank": 5,
+      "loser_final_rank": 6,
+      "upset_size": -1,
+      "winner_score": 153.18,
+      "loser_score": 114.58,
+      "margin": 38.6
+    },
+    {
+      "week": 17,
+      "is_playoffs": true,
+      "winner_team_id": 11,
+      "loser_team_id": 7,
+      "winner_final_rank": 11,
+      "loser_final_rank": 12,
+      "upset_size": -1,
+      "winner_score": 121.7,
+      "loser_score": 94.14,
+      "margin": 27.56
+    },
+    {
+      "week": 17,
+      "is_playoffs": true,
+      "winner_team_id": 5,
+      "loser_team_id": 1,
+      "winner_final_rank": 1,
+      "loser_final_rank": 2,
+      "upset_size": -1,
+      "winner_score": 156.2,
+      "loser_score": 128.76,
+      "margin": 27.44
+    },
+    {
+      "week": 16,
+      "is_playoffs": true,
+      "winner_team_id": 1,
+      "loser_team_id": 3,
+      "winner_final_rank": 2,
+      "loser_final_rank": 3,
+      "upset_size": -1,
+      "winner_score": 115.44,
+      "loser_score": 101.6,
+      "margin": 13.84
+    },
+    {
+      "week": 17,
+      "is_playoffs": true,
+      "winner_team_id": 3,
+      "loser_team_id": 2,
+      "winner_final_rank": 3,
+      "loser_final_rank": 4,
+      "upset_size": -1,
+      "winner_score": 117.56,
+      "loser_score": 104.34,
+      "margin": 13.22
+    },
+    {
+      "week": 17,
+      "is_playoffs": true,
+      "winner_team_id": 12,
+      "loser_team_id": 6,
+      "winner_final_rank": 7,
+      "loser_final_rank": 8,
+      "upset_size": -1,
+      "winner_score": 127.1,
+      "loser_score": 123.1,
+      "margin": 4.0
+    },
+    {
+      "week": 10,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 8,
+      "winner_final_rank": 5,
+      "loser_final_rank": 6,
+      "upset_size": -1,
+      "winner_score": 121.46,
+      "loser_score": 121.36,
+      "margin": 0.1
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 8,
+      "winner_final_rank": 4,
+      "loser_final_rank": 6,
+      "upset_size": -2,
+      "winner_score": 189.2,
+      "loser_score": 121.06,
+      "margin": 68.14
+    },
+    {
+      "week": 6,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 9,
+      "winner_final_rank": 8,
+      "loser_final_rank": 10,
+      "upset_size": -2,
+      "winner_score": 178.34,
+      "loser_score": 117.22,
+      "margin": 61.12
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 4,
+      "winner_final_rank": 3,
+      "loser_final_rank": 5,
+      "upset_size": -2,
+      "winner_score": 161.44,
+      "loser_score": 106.3,
+      "margin": 55.14
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 6,
+      "winner_final_rank": 6,
+      "loser_final_rank": 8,
+      "upset_size": -2,
+      "winner_score": 153.52,
+      "loser_score": 108.26,
+      "margin": 45.26
+    },
+    {
+      "week": 15,
+      "is_playoffs": true,
+      "winner_team_id": 12,
+      "loser_team_id": 10,
+      "winner_final_rank": 7,
+      "loser_final_rank": 9,
+      "upset_size": -2,
+      "winner_score": 176.06,
+      "loser_score": 132.62,
+      "margin": 43.44
+    },
+    {
+      "week": 11,
+      "is_playoffs": false,
+      "winner_team_id": 10,
+      "loser_team_id": 11,
+      "winner_final_rank": 9,
+      "loser_final_rank": 11,
+      "upset_size": -2,
+      "winner_score": 137.38,
+      "loser_score": 94.76,
+      "margin": 42.62
+    },
+    {
+      "week": 12,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 6,
+      "winner_final_rank": 6,
+      "loser_final_rank": 8,
+      "upset_size": -2,
+      "winner_score": 163.36,
+      "loser_score": 122.62,
+      "margin": 40.74
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 2,
+      "winner_final_rank": 2,
+      "loser_final_rank": 4,
+      "upset_size": -2,
+      "winner_score": 139.98,
+      "loser_score": 111.92,
+      "margin": 28.06
+    },
+    {
+      "week": 10,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 3,
+      "winner_final_rank": 1,
+      "loser_final_rank": 3,
+      "upset_size": -2,
+      "winner_score": 186.1,
+      "loser_score": 167.74,
+      "margin": 18.36
+    },
+    {
+      "week": 16,
+      "is_playoffs": true,
+      "winner_team_id": 10,
+      "loser_team_id": 11,
+      "winner_final_rank": 9,
+      "loser_final_rank": 11,
+      "upset_size": -2,
+      "winner_score": 125.6,
+      "loser_score": 111.06,
+      "margin": 14.54
+    },
+    {
+      "week": 5,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 12,
+      "winner_final_rank": 5,
+      "loser_final_rank": 7,
+      "upset_size": -2,
+      "winner_score": 119.14,
+      "loser_score": 117.38,
+      "margin": 1.76
+    },
+    {
+      "week": 16,
+      "is_playoffs": true,
+      "winner_team_id": 5,
+      "loser_team_id": 2,
+      "winner_final_rank": 1,
+      "loser_final_rank": 4,
+      "upset_size": -3,
+      "winner_score": 176.08,
+      "loser_score": 100.54,
+      "margin": 75.54
+    },
+    {
+      "week": 8,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 10,
+      "winner_final_rank": 6,
+      "loser_final_rank": 9,
+      "upset_size": -3,
+      "winner_score": 147.26,
+      "loser_score": 114.68,
+      "margin": 32.58
+    },
+    {
+      "week": 16,
+      "is_playoffs": true,
+      "winner_team_id": 12,
+      "loser_team_id": 9,
+      "winner_final_rank": 7,
+      "loser_final_rank": 10,
+      "upset_size": -3,
+      "winner_score": 170.82,
+      "loser_score": 159.26,
+      "margin": 11.56
+    },
+    {
+      "week": 7,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 11,
+      "winner_final_rank": 8,
+      "loser_final_rank": 11,
+      "upset_size": -3,
+      "winner_score": 145.9,
+      "loser_score": 144.76,
+      "margin": 1.14
+    },
+    {
+      "week": 5,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 7,
+      "winner_final_rank": 8,
+      "loser_final_rank": 12,
+      "upset_size": -4,
+      "winner_score": 165.3,
+      "loser_score": 84.86,
+      "margin": 80.44
+    },
+    {
+      "week": 14,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 6,
+      "winner_final_rank": 4,
+      "loser_final_rank": 8,
+      "upset_size": -4,
+      "winner_score": 101.28,
+      "loser_score": 70.98,
+      "margin": 30.3
+    },
+    {
+      "week": 11,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 12,
+      "winner_final_rank": 3,
+      "loser_final_rank": 7,
+      "upset_size": -4,
+      "winner_score": 149.78,
+      "loser_score": 126.7,
+      "margin": 23.08
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 6,
+      "winner_final_rank": 4,
+      "loser_final_rank": 8,
+      "upset_size": -4,
+      "winner_score": 131.16,
+      "loser_score": 110.98,
+      "margin": 20.18
+    },
+    {
+      "week": 9,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 9,
+      "winner_final_rank": 6,
+      "loser_final_rank": 10,
+      "upset_size": -4,
+      "winner_score": 146.2,
+      "loser_score": 138.96,
+      "margin": 7.24
+    },
+    {
+      "week": 10,
+      "is_playoffs": false,
+      "winner_team_id": 12,
+      "loser_team_id": 11,
+      "winner_final_rank": 7,
+      "loser_final_rank": 11,
+      "upset_size": -4,
+      "winner_score": 96.5,
+      "loser_score": 93.38,
+      "margin": 3.12
+    },
+    {
+      "week": 15,
+      "is_playoffs": true,
+      "winner_team_id": 1,
+      "loser_team_id": 8,
+      "winner_final_rank": 2,
+      "loser_final_rank": 6,
+      "upset_size": -4,
+      "winner_score": 132.68,
+      "loser_score": 129.7,
+      "margin": 2.98
+    },
+    {
+      "week": 16,
+      "is_playoffs": true,
+      "winner_team_id": 6,
+      "loser_team_id": 7,
+      "winner_final_rank": 8,
+      "loser_final_rank": 12,
+      "upset_size": -4,
+      "winner_score": 126.22,
+      "loser_score": 124.76,
+      "margin": 1.46
+    },
+    {
+      "week": 11,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 8,
+      "winner_final_rank": 2,
+      "loser_final_rank": 6,
+      "upset_size": -4,
+      "winner_score": 112.06,
+      "loser_score": 110.66,
+      "margin": 1.4
+    },
+    {
+      "week": 6,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 8,
+      "winner_final_rank": 1,
+      "loser_final_rank": 6,
+      "upset_size": -5,
+      "winner_score": 173.2,
+      "loser_score": 110.38,
+      "margin": 62.82
+    },
+    {
+      "week": 4,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 11,
+      "winner_final_rank": 6,
+      "loser_final_rank": 11,
+      "upset_size": -5,
+      "winner_score": 139.92,
+      "loser_score": 99.4,
+      "margin": 40.52
+    },
+    {
+      "week": 9,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 10,
+      "winner_final_rank": 4,
+      "loser_final_rank": 9,
+      "upset_size": -5,
+      "winner_score": 106.32,
+      "loser_score": 90.5,
+      "margin": 15.82
+    },
+    {
+      "week": 6,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 12,
+      "winner_final_rank": 2,
+      "loser_final_rank": 7,
+      "upset_size": -5,
+      "winner_score": 107.08,
+      "loser_score": 93.38,
+      "margin": 13.7
+    },
+    {
+      "week": 9,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 6,
+      "winner_final_rank": 3,
+      "loser_final_rank": 8,
+      "upset_size": -5,
+      "winner_score": 137.78,
+      "loser_score": 127.92,
+      "margin": 9.86
+    },
+    {
+      "week": 14,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 7,
+      "winner_final_rank": 6,
+      "loser_final_rank": 12,
+      "upset_size": -6,
+      "winner_score": 109.22,
+      "loser_score": 60.02,
+      "margin": 49.2
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 10,
+      "winner_final_rank": 3,
+      "loser_final_rank": 9,
+      "upset_size": -6,
+      "winner_score": 159.04,
+      "loser_score": 111.88,
+      "margin": 47.16
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 7,
+      "winner_final_rank": 6,
+      "loser_final_rank": 12,
+      "upset_size": -6,
+      "winner_score": 132.82,
+      "loser_score": 98.96,
+      "margin": 33.86
+    },
+    {
+      "week": 13,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 11,
+      "winner_final_rank": 5,
+      "loser_final_rank": 11,
+      "upset_size": -6,
+      "winner_score": 120.68,
+      "loser_score": 87.64,
+      "margin": 33.04
+    },
+    {
+      "week": 12,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 12,
+      "winner_final_rank": 1,
+      "loser_final_rank": 7,
+      "upset_size": -6,
+      "winner_score": 132.08,
+      "loser_score": 104.72,
+      "margin": 27.36
+    },
+    {
+      "week": 10,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 6,
+      "winner_final_rank": 2,
+      "loser_final_rank": 8,
+      "upset_size": -6,
+      "winner_score": 122.62,
+      "loser_score": 97.74,
+      "margin": 24.88
+    },
+    {
+      "week": 12,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 10,
+      "winner_final_rank": 3,
+      "loser_final_rank": 9,
+      "upset_size": -6,
+      "winner_score": 119.26,
+      "loser_score": 116.5,
+      "margin": 2.76
+    },
+    {
+      "week": 12,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 7,
+      "winner_final_rank": 5,
+      "loser_final_rank": 12,
+      "upset_size": -7,
+      "winner_score": 137.04,
+      "loser_score": 67.26,
+      "margin": 69.78
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 9,
+      "winner_final_rank": 3,
+      "loser_final_rank": 10,
+      "upset_size": -7,
+      "winner_score": 139.56,
+      "loser_score": 112.22,
+      "margin": 27.34
+    },
+    {
+      "week": 13,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 9,
+      "winner_final_rank": 3,
+      "loser_final_rank": 10,
+      "upset_size": -7,
+      "winner_score": 157.56,
+      "loser_score": 137.06,
+      "margin": 20.5
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 7,
+      "winner_final_rank": 5,
+      "loser_final_rank": 12,
+      "upset_size": -7,
+      "winner_score": 100.44,
+      "loser_score": 86.88,
+      "margin": 13.56
+    },
+    {
+      "week": 5,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 11,
+      "winner_final_rank": 4,
+      "loser_final_rank": 11,
+      "upset_size": -7,
+      "winner_score": 143.56,
+      "loser_score": 139.82,
+      "margin": 3.74
+    },
+    {
+      "week": 7,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 10,
+      "winner_final_rank": 2,
+      "loser_final_rank": 9,
+      "upset_size": -7,
+      "winner_score": 94.06,
+      "loser_score": 93.74,
+      "margin": 0.32
+    },
+    {
+      "week": 4,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 7,
+      "winner_final_rank": 4,
+      "loser_final_rank": 12,
+      "upset_size": -8,
+      "winner_score": 140.98,
+      "loser_score": 89.28,
+      "margin": 51.7
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 10,
+      "winner_final_rank": 1,
+      "loser_final_rank": 9,
+      "upset_size": -8,
+      "winner_score": 142.12,
+      "loser_score": 114.5,
+      "margin": 27.62
+    },
+    {
+      "week": 13,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 10,
+      "winner_final_rank": 1,
+      "loser_final_rank": 9,
+      "upset_size": -8,
+      "winner_score": 122.9,
+      "loser_score": 97.98,
+      "margin": 24.92
+    },
+    {
+      "week": 8,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 11,
+      "winner_final_rank": 3,
+      "loser_final_rank": 11,
+      "upset_size": -8,
+      "winner_score": 123.8,
+      "loser_score": 115.1,
+      "margin": 8.7
+    },
+    {
+      "week": 14,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 11,
+      "winner_final_rank": 2,
+      "loser_final_rank": 11,
+      "upset_size": -9,
+      "winner_score": 164.82,
+      "loser_score": 97.0,
+      "margin": 67.82
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 9,
+      "winner_final_rank": 1,
+      "loser_final_rank": 10,
+      "upset_size": -9,
+      "winner_score": 156.36,
+      "loser_score": 128.5,
+      "margin": 27.86
+    },
+    {
+      "week": 7,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 7,
+      "winner_final_rank": 3,
+      "loser_final_rank": 12,
+      "upset_size": -9,
+      "winner_score": 136.52,
+      "loser_score": 127.26,
+      "margin": 9.26
+    },
+    {
+      "week": 14,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 9,
+      "winner_final_rank": 1,
+      "loser_final_rank": 10,
+      "upset_size": -9,
+      "winner_score": 131.14,
+      "loser_score": 128.26,
+      "margin": 2.88
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 11,
+      "winner_final_rank": 2,
+      "loser_final_rank": 11,
+      "upset_size": -9,
+      "winner_score": 119.0,
+      "loser_score": 116.64,
+      "margin": 2.36
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 7,
+      "winner_final_rank": 2,
+      "loser_final_rank": 12,
+      "upset_size": -10,
+      "winner_score": 138.7,
+      "loser_score": 119.1,
+      "margin": 19.6
+    },
+    {
+      "week": 13,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 7,
+      "winner_final_rank": 2,
+      "loser_final_rank": 12,
+      "upset_size": -10,
+      "winner_score": 119.92,
+      "loser_score": 106.5,
+      "margin": 13.42
+    },
+    {
+      "week": 9,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 11,
+      "winner_final_rank": 1,
+      "loser_final_rank": 11,
+      "upset_size": -10,
+      "winner_score": 146.9,
+      "loser_score": 143.9,
+      "margin": 3.0
+    },
+    {
+      "week": 8,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 7,
+      "winner_final_rank": 1,
+      "loser_final_rank": 12,
+      "upset_size": -11,
+      "winner_score": 138.98,
+      "loser_score": 104.54,
+      "margin": 34.44
+    }
+  ],
+  "weekly_team_extremes": {
+    "best_weeks": [
+      {
+        "week": 15,
+        "team_id": 2,
+        "score": 195.02,
+        "is_playoffs": true
+      },
+      {
+        "week": 12,
+        "team_id": 9,
+        "score": 189.4,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 2,
+        "score": 189.2,
+        "is_playoffs": false
+      },
+      {
+        "week": 10,
+        "team_id": 5,
+        "score": 186.1,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 12,
+        "score": 182.86,
+        "is_playoffs": false
+      },
+      {
+        "week": 9,
+        "team_id": 4,
+        "score": 178.56,
+        "is_playoffs": false
+      },
+      {
+        "week": 6,
+        "team_id": 6,
+        "score": 178.34,
+        "is_playoffs": false
+      },
+      {
+        "week": 16,
+        "team_id": 5,
+        "score": 176.08,
+        "is_playoffs": true
+      },
+      {
+        "week": 15,
+        "team_id": 12,
+        "score": 176.06,
+        "is_playoffs": true
+      },
+      {
+        "week": 6,
+        "team_id": 5,
+        "score": 173.2,
+        "is_playoffs": false
+      }
+    ],
+    "worst_weeks": [
+      {
+        "week": 14,
+        "team_id": 7,
+        "score": 60.02,
+        "is_playoffs": false
+      },
+      {
+        "week": 12,
+        "team_id": 7,
+        "score": 67.26,
+        "is_playoffs": false
+      },
+      {
+        "week": 15,
+        "team_id": 11,
+        "score": 69.46,
+        "is_playoffs": true
+      },
+      {
+        "week": 14,
+        "team_id": 6,
+        "score": 70.98,
+        "is_playoffs": false
+      },
+      {
+        "week": 15,
+        "team_id": 7,
+        "score": 73.08,
+        "is_playoffs": true
+      },
+      {
+        "week": 2,
+        "team_id": 4,
+        "score": 73.16,
+        "is_playoffs": false
+      },
+      {
+        "week": 6,
+        "team_id": 4,
+        "score": 81.06,
+        "is_playoffs": false
+      },
+      {
+        "week": 5,
+        "team_id": 7,
+        "score": 84.86,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 7,
+        "score": 86.88,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 12,
+        "score": 87.12,
+        "is_playoffs": false
+      }
+    ]
+  },
+  "player_extremes": {
+    "best_performances": [
+      {
+        "week": 12,
+        "team_id": 9,
+        "player_id": 4429795,
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "points": 49.900000000000006
+      },
+      {
+        "week": 10,
+        "team_id": 5,
+        "player_id": 4242335,
+        "name": "Jonathan Taylor",
+        "position": "RB",
+        "points": 48.10000000000001
+      },
+      {
+        "week": 17,
+        "team_id": 10,
+        "player_id": 3043078,
+        "name": "Derrick Henry",
+        "position": "RB",
+        "points": 45.6
+      },
+      {
+        "week": 15,
+        "team_id": 9,
+        "player_id": 4360310,
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "points": 44.300000000000004
+      },
+      {
+        "week": 11,
+        "team_id": 3,
+        "player_id": 3918298,
+        "name": "Josh Allen",
+        "position": "QB",
+        "points": 42.68
+      },
+      {
+        "week": 16,
+        "team_id": 9,
+        "player_id": 4426515,
+        "name": "Puka Nacua",
+        "position": "WR",
+        "points": 40.5
+      },
+      {
+        "week": 1,
+        "team_id": 3,
+        "player_id": 3918298,
+        "name": "Josh Allen",
+        "position": "QB",
+        "points": 38.76
+      },
+      {
+        "week": 14,
+        "team_id": 3,
+        "player_id": 3918298,
+        "name": "Josh Allen",
+        "position": "QB",
+        "points": 37.84
+      },
+      {
+        "week": 9,
+        "team_id": 8,
+        "player_id": 4431611,
+        "name": "Caleb Williams",
+        "position": "QB",
+        "points": 37.7
+      },
+      {
+        "week": 10,
+        "team_id": 3,
+        "player_id": 4429160,
+        "name": "De'Von Achane",
+        "position": "RB",
+        "points": 37.50000000000001
+      }
+    ],
+    "worst_performances": [
+      {
+        "week": 15,
+        "team_id": 5,
+        "player_id": -16020,
+        "name": "Jets D/ST",
+        "position": "D/ST",
+        "points": -6.0
+      },
+      {
+        "week": 4,
+        "team_id": 8,
+        "player_id": -16009,
+        "name": "Packers D/ST",
+        "position": "D/ST",
+        "points": -5.0
+      },
+      {
+        "week": 2,
+        "team_id": 6,
+        "player_id": -16006,
+        "name": "Cowboys D/ST",
+        "position": "D/ST",
+        "points": -4.0
+      },
+      {
+        "week": 7,
+        "team_id": 10,
+        "player_id": -16023,
+        "name": "Steelers D/ST",
+        "position": "D/ST",
+        "points": -4.0
+      },
+      {
+        "week": 16,
+        "team_id": 3,
+        "player_id": -16026,
+        "name": "Seahawks D/ST",
+        "position": "D/ST",
+        "points": -4.0
+      },
+      {
+        "week": 1,
+        "team_id": 7,
+        "player_id": -16015,
+        "name": "Dolphins D/ST",
+        "position": "D/ST",
+        "points": -3.0
+      },
+      {
+        "week": 8,
+        "team_id": 1,
+        "player_id": -16025,
+        "name": "49ers D/ST",
+        "position": "D/ST",
+        "points": -3.0
+      },
+      {
+        "week": 8,
+        "team_id": 5,
+        "player_id": -16010,
+        "name": "Titans D/ST",
+        "position": "D/ST",
+        "points": -3.0
+      },
+      {
+        "week": 12,
+        "team_id": 7,
+        "player_id": -16008,
+        "name": "Lions D/ST",
+        "position": "D/ST",
+        "points": -3.0
+      },
+      {
+        "week": 5,
+        "team_id": 11,
+        "player_id": -16014,
+        "name": "Rams D/ST",
+        "position": "D/ST",
+        "points": -2.0
+      }
+    ]
+  },
+  "bench_mistakes": {
+    "worst_single_instances": [
+      {
+        "week": 15,
+        "team_id": 1,
+        "player_id": 4360248,
+        "name": "Kyle Pitts Sr.",
+        "position": "TE",
+        "points": 40.1
+      },
+      {
+        "week": 7,
+        "team_id": 6,
+        "player_id": 4426338,
+        "name": "Bo Nix",
+        "position": "QB",
+        "points": 39.96
+      },
+      {
+        "week": 16,
+        "team_id": 8,
+        "player_id": 4361370,
+        "name": "Chris Olave",
+        "position": "WR",
+        "points": 31.8
+      },
+      {
+        "week": 4,
+        "team_id": 11,
+        "player_id": 2577417,
+        "name": "Dak Prescott",
+        "position": "QB",
+        "points": 30.96
+      },
+      {
+        "week": 9,
+        "team_id": 5,
+        "player_id": 11252,
+        "name": "Joe Flacco",
+        "position": "QB",
+        "points": 30.700000000000003
+      },
+      {
+        "week": 2,
+        "team_id": 2,
+        "player_id": 14881,
+        "name": "Russell Wilson",
+        "position": "QB",
+        "points": 30.3
+      },
+      {
+        "week": 7,
+        "team_id": 9,
+        "player_id": 4689114,
+        "name": "Jaxson Dart",
+        "position": "QB",
+        "points": 28.42
+      },
+      {
+        "week": 4,
+        "team_id": 10,
+        "player_id": 4371733,
+        "name": "Kenneth Gainwell",
+        "position": "RB",
+        "points": 28.4
+      },
+      {
+        "week": 10,
+        "team_id": 5,
+        "player_id": 4242546,
+        "name": "Davis Mills",
+        "position": "QB",
+        "points": 27.68
+      },
+      {
+        "week": 4,
+        "team_id": 8,
+        "player_id": 4361432,
+        "name": "Romeo Doubs",
+        "position": "WR",
+        "points": 26.8
+      }
+    ],
+    "season_totals": [
+      {
+        "team_id": 4,
+        "points_left_on_bench": 341.9
+      },
+      {
+        "team_id": 5,
+        "points_left_on_bench": 309.72
+      },
+      {
+        "team_id": 6,
+        "points_left_on_bench": 296.92
+      },
+      {
+        "team_id": 8,
+        "points_left_on_bench": 293.68
+      },
+      {
+        "team_id": 11,
+        "points_left_on_bench": 273.24
+      },
+      {
+        "team_id": 1,
+        "points_left_on_bench": 266.3
+      },
+      {
+        "team_id": 9,
+        "points_left_on_bench": 254.26
+      },
+      {
+        "team_id": 10,
+        "points_left_on_bench": 250.5
+      },
+      {
+        "team_id": 3,
+        "points_left_on_bench": 246.5
+      },
+      {
+        "team_id": 7,
+        "points_left_on_bench": 245.88
+      },
+      {
+        "team_id": 12,
+        "points_left_on_bench": 224.16
+      },
+      {
+        "team_id": 2,
+        "points_left_on_bench": 221.86
+      }
+    ]
+  },
+  "injury_burden": [
+    {
+      "team_id": 11,
+      "player_weeks_on_ir": 67,
+      "distinct_players_on_ir": [
+        "Brandon Aiyuk",
+        "Brock Wright",
+        "Cedric Tillman",
+        "Darren Waller",
+        "Jalen Coker",
+        "Joe Mixon",
+        "Tyreek Hill"
+      ]
+    },
+    {
+      "team_id": 4,
+      "player_weeks_on_ir": 59,
+      "distinct_players_on_ir": [
+        "Brian Thomas Jr.",
+        "Brock Bowers",
+        "Christian Watson",
+        "Colston Loveland",
+        "Darnell Mooney",
+        "Isiah Pacheco",
+        "J.J. McCarthy",
+        "Jalen McMillan",
+        "Joe Burrow",
+        "Jordan Love",
+        "Marvin Harrison Jr.",
+        "Mike Evans",
+        "Omarion Hampton",
+        "Shedeur Sanders",
+        "Taysom Hill",
+        "Tee Higgins"
+      ]
+    },
+    {
+      "team_id": 1,
+      "player_weeks_on_ir": 58,
+      "distinct_players_on_ir": [
+        "Braelon Allen",
+        "Calvin Ridley",
+        "CeeDee Lamb",
+        "Daniel Jones",
+        "Darius Slayton",
+        "Drake London",
+        "George Kittle",
+        "Graham Gano",
+        "Isaiah Likely",
+        "J.K. Dobbins",
+        "Jaydon Blue",
+        "Lamar Jackson",
+        "Luther Burden III",
+        "Michael Penix Jr.",
+        "Ricky Pearsall",
+        "Shedeur Sanders",
+        "Tank Dell"
+      ]
+    },
+    {
+      "team_id": 6,
+      "player_weeks_on_ir": 45,
+      "distinct_players_on_ir": [
+        "Aaron Rodgers",
+        "Alvin Kamara",
+        "Chris Rodriguez Jr.",
+        "Chuba Hubbard",
+        "David Njoku",
+        "Devaughn Vele",
+        "Jason Sanders",
+        "Jauan Jennings",
+        "Josh Reynolds",
+        "Patrick Mahomes",
+        "Xavier Worthy",
+        "Zach Ertz"
+      ]
+    },
+    {
+      "team_id": 12,
+      "player_weeks_on_ir": 40,
+      "distinct_players_on_ir": [
+        "Brock Purdy",
+        "Kyler Murray",
+        "Tucker Kraft",
+        "Tyler Bass"
+      ]
+    },
+    {
+      "team_id": 5,
+      "player_weeks_on_ir": 37,
+      "distinct_players_on_ir": [
+        "Anthony Richardson Sr.",
+        "Evan Engram",
+        "Garrett Wilson",
+        "Jakobi Meyers",
+        "Joshua Palmer",
+        "Najee Harris"
+      ]
+    },
+    {
+      "team_id": 7,
+      "player_weeks_on_ir": 36,
+      "distinct_players_on_ir": [
+        "Bam Knight",
+        "James Conner",
+        "Jayden Daniels",
+        "Josh Reynolds",
+        "Terry McLaurin",
+        "Travis Hunter"
+      ]
+    },
+    {
+      "team_id": 2,
+      "player_weeks_on_ir": 32,
+      "distinct_players_on_ir": [
+        "Cam Skattebo",
+        "Christian Kirk",
+        "Elic Ayomanor",
+        "Greg Dortch",
+        "Isiah Pacheco",
+        "Malik Nabers",
+        "Tyrod Taylor",
+        "Tyrone Tracy Jr."
+      ]
+    },
+    {
+      "team_id": 3,
+      "player_weeks_on_ir": 28,
+      "distinct_players_on_ir": [
+        "A.J. Brown",
+        "Bucky Irving",
+        "Chris Godwin Jr.",
+        "Darnell Mooney",
+        "Matt Prater",
+        "Rhamondre Stevenson",
+        "Rome Odunze",
+        "Trey Benson"
+      ]
+    },
+    {
+      "team_id": 8,
+      "player_weeks_on_ir": 26,
+      "distinct_players_on_ir": [
+        "Aaron Jones Sr.",
+        "Chris Godwin Jr.",
+        "Jayden Reed"
+      ]
+    },
+    {
+      "team_id": 9,
+      "player_weeks_on_ir": 8,
+      "distinct_players_on_ir": [
+        "Brock Bowers",
+        "Puka Nacua",
+        "Tyjae Spears",
+        "Younghoe Koo"
+      ]
+    },
+    {
+      "team_id": 10,
+      "player_weeks_on_ir": 5,
+      "distinct_players_on_ir": [
+        "Dalton Kincaid",
+        "Emari Demercado"
+      ]
+    }
+  ]
+}
