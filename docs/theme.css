@@ -1,0 +1,521 @@
+/*
+  "Broadcast" theme - navy/chrome/teal, taken from the league logo. Used by
+  the season recap and ADP pages. The keeper page stays on terminal.css - a
+  deliberately different, single-purpose look for a different job (a private
+  working tool vs. a page meant to be shared around).
+
+  Single dark theme by design (matches the logo's baked-in navy background,
+  same reasoning as terminal.css not adapting to prefers-color-scheme).
+*/
+:root {
+  color-scheme: dark;
+
+  --bg:        #00030c;
+  --panel:     #0b1220;
+  --panel-2:   #121b30;
+  --line:      #1f2b45;
+
+  --text:      #eef0f4;
+  --text-dim:  #9aa5bd;
+  --text-mute: #5f6b85;
+
+  --brand:     #2dd0d6;  /* headline/link/glow accent - the logo's brush-stroke teal */
+  --brand-dim: #185a5f;
+
+  /* Categorical - validated (node validate_palette.js, dark mode): all six
+     checks pass (protan/orange<->green sits in the legal 6-8 CVD floor band,
+     which is fine because every use here is paired with a direct label).
+     Fixed order, never cycled or reassigned per-filter. */
+  --cat-1: #1c95dc;  /* blue */
+  --cat-2: #f2404c;  /* red */
+  --cat-3: #7c52d6;  /* purple */
+  --cat-4: #1a9aa6;  /* teal */
+  --cat-5: #c8721e;  /* orange */
+  --cat-6: #2c9a58;  /* green */
+
+  --good:  #2c9a58;
+  --bad:   #f2404c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+}
+
+/* ---------- lock screen ---------- */
+
+#lock-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lock-box {
+  width: 100%;
+  max-width: 420px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px 26px;
+}
+
+.lock-box img.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.lock-box p {
+  margin: 0 0 8px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+.lock-box p.lock-title {
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.prompt-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.prompt-line .dollar { color: var(--brand); font-weight: 700; }
+.prompt-line input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.lock-error {
+  color: var(--bad);
+  font-size: 0.85rem;
+  margin-top: 10px;
+  display: none;
+}
+.lock-error.show { display: block; }
+
+/* ---------- header ---------- */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px 0 28px;
+}
+
+.site-header img.logo {
+  width: 84px;
+  height: 84px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.site-header .tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+  border: 1px solid var(--brand-dim);
+  background: rgba(45, 208, 214, 0.08);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}
+
+.site-header .subtitle {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+nav.resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 12px;
+}
+
+nav.resources a {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+nav.resources a:hover { color: var(--brand); text-decoration: none; }
+
+@media (max-width: 480px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+/* ---------- layout primitives ---------- */
+
+.section {
+  margin-top: 44px;
+}
+
+.section-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin: 0 0 14px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.empty-state {
+  color: var(--text-mute);
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ---------- champion hero ---------- */
+
+.hero {
+  background: linear-gradient(160deg, var(--panel-2), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.hero img.team-logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: var(--panel-2);
+  flex-shrink: 0;
+}
+
+.hero-body { flex: 1; min-width: 220px; }
+
+.hero-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin: 4px 0 6px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.hero .hero-meta {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.hero .hero-stats {
+  display: flex;
+  gap: 28px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+.stat .stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.stat .stat-label {
+  font-size: 0.72rem;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+/* ---------- championship path ---------- */
+
+.path {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.path-step {
+  flex: 1;
+  min-width: 150px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.path-step .path-round {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.path-step .path-result {
+  margin-top: 6px;
+  font-weight: 700;
+}
+.path-step .path-result.bye { color: var(--text-dim); font-weight: 500; font-style: italic; }
+
+.path-step .path-score {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.path-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--text-mute);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  .path { flex-direction: column; }
+  .path-step { min-width: 0; }
+  .path-arrow { justify-content: center; transform: rotate(90deg); padding: 2px 0; }
+}
+
+/* ---------- podium ---------- */
+
+.podium {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  align-items: end;
+}
+
+.podium-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.podium-card.rank-1 {
+  border-color: var(--brand-dim);
+  background: linear-gradient(160deg, var(--panel-2), var(--panel));
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.podium-rank {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.podium-card.rank-1 .podium-rank { color: var(--brand); }
+
+.podium-card img.team-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 10px auto 8px;
+  display: block;
+  background: var(--panel-2);
+}
+.podium-card.rank-1 img.team-logo { width: 72px; height: 72px; }
+
+.podium-team { font-weight: 700; font-size: 0.95rem; }
+.podium-owner { color: var(--text-dim); font-size: 0.82rem; margin-top: 2px; }
+.podium-record { color: var(--text-mute); font-size: 0.8rem; margin-top: 8px; }
+
+@media (max-width: 640px) {
+  .podium { grid-template-columns: 1fr; }
+  .podium-card { order: 2; }
+  .podium-card.rank-1 { order: 1; }
+}
+
+/* ---------- standings table ---------- */
+
+table.standings {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+table.standings th, table.standings td {
+  padding: 9px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+table.standings th {
+  color: var(--text-mute);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+table.standings td.num, table.standings th.num { text-align: center; font-variant-numeric: tabular-nums; }
+table.standings tbody tr:last-child td { border-bottom: none; }
+table.standings tbody tr:hover { background: var(--panel-2); }
+
+/* ---------- chart ---------- */
+
+.chart-legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+.chart-legend .swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.chart-svg { width: 100%; height: auto; display: block; }
+.chart-svg .gridline { stroke: var(--line); stroke-width: 1; }
+.chart-svg .axis-label { fill: var(--text-mute); font-size: 10px; }
+.chart-svg .avg-line { stroke: var(--text-mute); stroke-width: 1.5; stroke-dasharray: 3 4; fill: none; }
+.chart-svg .series-line { stroke-width: 2.5; fill: none; }
+.chart-svg .end-dot { stroke: var(--panel); stroke-width: 2; }
+.chart-svg .end-label { font-size: 11px; font-weight: 700; }
+
+/* ---------- stat cards (top performances / superlatives) ---------- */
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.tile {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.tile-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.tile-headline {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.tile-detail {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.tile-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin-top: 8px;
+}
+
+.pos-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 5px;
+  color: #05060b;
+  vertical-align: middle;
+}
+.pos-QB   { background: var(--cat-3); }
+.pos-RB   { background: var(--cat-6); }
+.pos-WR   { background: var(--cat-1); }
+.pos-TE   { background: var(--cat-5); }
+.pos-D\/ST { background: var(--cat-2); }
+.pos-K    { background: var(--cat-4); }
+
+.rank-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: rank;
+}
+.rank-list li {
+  counter-increment: rank;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.rank-list li:last-child { border-bottom: none; }
+.rank-list li::before {
+  content: counter(rank);
+  font-weight: 800;
+  color: var(--text-mute);
+  font-size: 0.85rem;
+  width: 1.2em;
+  flex-shrink: 0;
+}
+.rank-list .rank-main { flex: 1; font-weight: 600; }
+.rank-list .rank-sub { color: var(--text-dim); font-size: 0.82rem; }
+.rank-list .rank-value { font-weight: 800; color: var(--brand); font-variant-numeric: tabular-nums; }

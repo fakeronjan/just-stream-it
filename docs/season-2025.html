@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It - 2025 Season Recap</title>
+<meta name="description" content="2025 season highlight reel for the Just Stream It fantasy football league - the champion's run, the season's ebbs and flows, top performances, and superlatives.">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Just Stream It</p>
+    <p>League members only. Enter the passphrase to continue:</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">$</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none" class="page">
+
+  <header class="site-header">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
+    <div>
+      <div class="tag">2025 Recap</div>
+      <h1>Season in Review</h1>
+      <div class="subtitle">The champion's run, the ebbs and flows, and the season's top moments</div>
+      <nav class="resources" id="resources-nav"></nav>
+    </div>
+  </header>
+
+  <div id="content">
+    <div class="empty-state">Loading the 2025 season...</div>
+  </div>
+
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+const SEASON = 2025;
+
+function teamLogo(t) { return t.logo || ''; }
+function ownerName(t) { return (t.owners || []).join(' & '); }
+
+function computeChampionshipPath(matchups, champId, teamsById) {
+  const playoffWeeks = [...new Set(matchups.filter(m => m.is_playoffs).map(m => m.week))].sort((a, b) => a - b);
+  const steps = [];
+  playoffWeeks.forEach((week, i) => {
+    const game = matchups.find(m => m.is_playoffs && m.week === week && (m.home_team_id === champId || m.away_team_id === champId));
+    const round = i === playoffWeeks.length - 1 ? 'Final' : `Round ${i + 1}`;
+    if (!game) {
+      steps.push({ round, bye: true });
+      return;
+    }
+    const isHome = game.home_team_id === champId;
+    const oppId = isHome ? game.away_team_id : game.home_team_id;
+    const champScore = isHome ? game.home_score : game.away_score;
+    const oppScore = isHome ? game.away_score : game.home_score;
+    steps.push({
+      round,
+      bye: false,
+      won: champScore > oppScore,
+      opp: teamsById[oppId],
+      champScore,
+      oppScore,
+    });
+  });
+  return steps;
+}
+
+function renderHero(champ, path) {
+  const pathHtml = path.map((step, i) => {
+    const stepHtml = step.bye
+      ? `<div class="path-round">${step.round}</div><div class="path-result bye">Bye</div>`
+      : `<div class="path-round">${step.round}</div>
+         <div class="path-result">${step.won ? 'Beat' : 'Lost to'} ${step.opp.name}</div>
+         <div class="path-score">${step.champScore.toFixed(1)} - ${step.oppScore.toFixed(1)}</div>`;
+    const arrow = i < path.length - 1 ? '<div class="path-arrow">&rarr;</div>' : '';
+    return `<div class="path-step">${stepHtml}</div>${arrow}`;
+  }).join('');
+
+  return `
+    <div class="hero">
+      <img class="team-logo" src="${teamLogo(champ)}" alt="">
+      <div class="hero-body">
+        <div class="hero-eyebrow">2025 Champion</div>
+        <h2>${champ.name}</h2>
+        <div class="hero-meta">${ownerName(champ)}</div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-value">${champ.wins}-${champ.losses}</div><div class="stat-label">Record</div></div>
+          <div class="stat"><div class="stat-value">${champ.points_for.toFixed(1)}</div><div class="stat-label">Points For</div></div>
+          <div class="stat"><div class="stat-value">${champ.playoff_seed}</div><div class="stat-label">Playoff Seed</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Championship Path</div>
+      <div class="path">${pathHtml}</div>
+    </div>
+  `;
+}
+
+function renderPodium(top3) {
+  return top3.map(t => `
+    <div class="podium-card rank-${t.final_rank}">
+      <div class="podium-rank">${t.final_rank === 1 ? 'Champion' : t.final_rank === 2 ? 'Runner-Up' : 'Third Place'}</div>
+      <img class="team-logo" src="${teamLogo(t)}" alt="">
+      <div class="podium-team">${t.name}</div>
+      <div class="podium-owner">${ownerName(t)}</div>
+      <div class="podium-record">${t.wins}-${t.losses} &middot; ${t.points_for.toFixed(1)} PF</div>
+    </div>
+  `).join('');
+}
+
+function renderStandings(rest) {
+  const rows = rest.map(t => `
+    <tr>
+      <td class="num">${t.final_rank}</td>
+      <td>${t.name}<div class="podium-owner">${ownerName(t)}</div></td>
+      <td class="num">${t.wins}-${t.losses}</td>
+      <td class="num">${t.points_for.toFixed(1)}</td>
+    </tr>
+  `).join('');
+  return `
+    <table class="standings">
+      <thead><tr><th class="num">Rank</th><th>Team</th><th class="num">Record</th><th class="num">PF</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
+function buildWeeklyArc(matchups, champId, ruId) {
+  const byWeek = {};
+  matchups.forEach(m => {
+    if (m.is_playoffs) return;
+    (byWeek[m.week] ??= []).push([m.home_team_id, m.home_score], [m.away_team_id, m.away_score]);
+  });
+  const weeks = Object.keys(byWeek).map(Number).sort((a, b) => a - b);
+  return weeks.map(week => {
+    const scores = byWeek[week];
+    const avg = scores.reduce((s, [, v]) => s + v, 0) / scores.length;
+    const champ = scores.find(([id]) => id === champId)?.[1];
+    const ru = scores.find(([id]) => id === ruId)?.[1];
+    return { week, avg, champ, ru };
+  });
+}
+
+function renderChart(arc, champ, ru) {
+  const W = 1000, H = 320, padL = 36, padR = 60, padT = 16, padB = 30;
+  const allVals = arc.flatMap(d => [d.avg, d.champ, d.ru]).filter(v => v != null);
+  const minV = Math.floor(Math.min(...allVals) / 10) * 10 - 5;
+  const maxV = Math.ceil(Math.max(...allVals) / 10) * 10 + 5;
+  const x = i => padL + (i / (arc.length - 1)) * (W - padL - padR);
+  const y = v => H - padB - ((v - minV) / (maxV - minV)) * (H - padT - padB);
+
+  const line = key => arc.map((d, i) => `${x(i)},${y(d[key])}`).join(' ');
+
+  const gridVals = [minV, (minV + maxV) / 2, maxV];
+  const gridlines = gridVals.map(v => `
+    <line class="gridline" x1="${padL}" x2="${W - padR}" y1="${y(v)}" y2="${y(v)}" />
+    <text class="axis-label" x="4" y="${y(v) + 3}">${Math.round(v)}</text>
+  `).join('');
+
+  const xTicks = arc.map((d, i) => (i % 2 === 0 || i === arc.length - 1)
+    ? `<text class="axis-label" x="${x(i)}" y="${H - 8}" text-anchor="middle">W${d.week}</text>` : '').join('');
+
+  const dots = (key, color) => arc.map((d, i) => `<circle class="end-dot" cx="${x(i)}" cy="${y(d[key])}" r="4" fill="${color}"><title>${d[key].toFixed(1)} pts - Week ${d.week}</title></circle>`).join('');
+
+  const lastI = arc.length - 1;
+  const champColor = 'var(--brand)', ruColor = 'var(--cat-1)';
+
+  return `
+    <div class="chart-legend">
+      <span><span class="swatch" style="background:${champColor}"></span>${champ.name}</span>
+      <span><span class="swatch" style="background:${ruColor}"></span>${ru.name}</span>
+      <span><span class="swatch" style="background:var(--text-mute)"></span>League average</span>
+    </div>
+    <svg class="chart-svg" viewBox="0 0 ${W} ${H}">
+      ${gridlines}
+      ${xTicks}
+      <polyline class="avg-line" points="${line('avg')}" />
+      <polyline class="series-line" points="${line('champ')}" stroke="${champColor}" />
+      <polyline class="series-line" points="${line('ru')}" stroke="${ruColor}" />
+      ${dots('champ', champColor)}
+      ${dots('ru', ruColor)}
+      <text class="end-label" x="${x(lastI) + 8}" y="${y(arc[lastI].champ) + 4}" fill="${champColor}">${champ.abbrev}</text>
+      <text class="end-label" x="${x(lastI) + 8}" y="${y(arc[lastI].ru) + 4}" fill="${ruColor}">${ru.abbrev}</text>
+    </svg>
+  `;
+}
+
+function renderTopPerformances(moments, teamsById) {
+  const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => `
+    <li>
+      <div class="rank-main">${teamsById[w.team_id].name}<div class="rank-sub">Week ${w.week}${w.is_playoffs ? ' (playoffs)' : ''}</div></div>
+      <div class="rank-value">${w.score.toFixed(1)}</div>
+    </li>
+  `).join('');
+
+  const playerWeeks = moments.player_extremes.best_performances.slice(0, 5).map(p => `
+    <li>
+      <div class="rank-main"><span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}
+        <div class="rank-sub">${teamsById[p.team_id].name} &middot; Week ${p.week}</div></div>
+      <div class="rank-value">${p.points.toFixed(1)}</div>
+    </li>
+  `).join('');
+
+  return `
+    <div class="tile-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+      <div class="card">
+        <div class="section-title">Top Team Weeks</div>
+        <ul class="rank-list">${teamWeeks}</ul>
+      </div>
+      <div class="card">
+        <div class="section-title">Top Player Weeks</div>
+        <ul class="rank-list">${playerWeeks}</ul>
+      </div>
+    </div>
+  `;
+}
+
+function renderSuperlatives(moments, teamsById) {
+  const upset = moments.upsets[0];
+  const bestWeek = moments.weekly_team_extremes.best_weeks[0];
+  const pickup = moments.best_waiver_pickups[0];
+  const benched = moments.bench_mistakes.worst_single_instances[0];
+  const closest = [...moments.rivalries].sort((a, b) => a.avg_margin - b.avg_margin)[0];
+  const wounded = moments.injury_burden[0];
+
+  // Best trade: biggest single-side point differential.
+  let bestTrade = null, bestDiff = -1;
+  moments.trades.forEach(t => {
+    if (t.sides.length !== 2) return;
+    const diff = Math.abs(t.sides[0].total_points - t.sides[1].total_points);
+    if (diff > bestDiff) {
+      bestDiff = diff;
+      const [winner, loser] = t.sides[0].total_points >= t.sides[1].total_points ? t.sides : [t.sides[1], t.sides[0]];
+      bestTrade = { winner, loser, week: t.week };
+    }
+  });
+  const tradeHeadliner = bestTrade.winner.players_received.slice().sort((a, b) => b.points_while_rostered - a.points_while_rostered)[0];
+
+  const tiles = [
+    {
+      label: 'Biggest Upset',
+      headline: `${teamsById[upset.winner_team_id].name} over ${teamsById[upset.loser_team_id].name}`,
+      detail: `Week ${upset.week} &middot; #${upset.winner_final_rank} finish beat #${upset.loser_final_rank}`,
+      value: `${upset.winner_score.toFixed(1)} - ${upset.loser_score.toFixed(1)}`,
+    },
+    {
+      label: 'Best Team Week',
+      headline: teamsById[bestWeek.team_id].name,
+      detail: `Week ${bestWeek.week}${bestWeek.is_playoffs ? ' &middot; playoffs' : ''}`,
+      value: bestWeek.score.toFixed(1),
+    },
+    {
+      label: 'Best Waiver Add',
+      headline: `${pickup.name} (${pickup.position})`,
+      detail: `Added by ${teamsById[pickup.team_id].name} in Week ${pickup.week_added}`,
+      value: `${pickup.points_while_rostered.toFixed(1)} pts`,
+    },
+    {
+      label: 'Best Trade',
+      headline: `${teamsById[bestTrade.winner.team_id].name} got ${tradeHeadliner.name}`,
+      detail: `From ${teamsById[bestTrade.loser.team_id].name} in Week ${bestTrade.week} &middot; ${bestTrade.winner.total_points.toFixed(1)} pts vs ${bestTrade.loser.total_points.toFixed(1)} pts`,
+      value: `+${bestDiff.toFixed(1)} pt edge`,
+    },
+    {
+      label: 'Worst Bench Mistake',
+      headline: `${benched.name} (${benched.position}) left on the bench`,
+      detail: `${teamsById[benched.team_id].name} &middot; Week ${benched.week}`,
+      value: `${benched.points.toFixed(1)} pts unused`,
+    },
+    {
+      label: 'Closest Game',
+      headline: `${teamsById[closest.team_ids[0]].name} vs ${teamsById[closest.team_ids[1]].name}`,
+      detail: `Week ${closest.games[0].week}`,
+      value: `${closest.avg_margin.toFixed(2)} pt margin`,
+    },
+    {
+      label: 'Walking Wounded',
+      headline: teamsById[wounded.team_id].name,
+      detail: `${wounded.distinct_players_on_ir.length} different players on IR over the season`,
+      value: `${wounded.player_weeks_on_ir} player-weeks lost`,
+    },
+  ];
+
+  return `
+    <div class="tile-grid">
+      ${tiles.map(t => `
+        <div class="tile">
+          <div class="tile-label">${t.label}</div>
+          <div class="tile-headline">${t.headline}</div>
+          <div class="tile-detail">${t.detail}</div>
+          <div class="tile-value">${t.value}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+
+  const meta = await (await fetch('data/meta.json')).json();
+  const resources = [
+    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
+    { label: 'Keeper Dossier', href: 'index.html', external: false },
+    { label: 'ADP Rankings', href: 'adp.html', external: false },
+    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
+  ];
+  document.getElementById('resources-nav').innerHTML = resources
+    .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
+    .join('');
+
+  const [teams, moments, matchups] = await Promise.all([
+    fetch(`data/${SEASON}/teams.json`).then(r => r.json()),
+    fetch(`data/${SEASON}/season_moments.json`).then(r => r.json()),
+    fetch(`data/${SEASON}/matchups.json`).then(r => r.json()),
+  ]);
+
+  const teamsById = Object.fromEntries(teams.map(t => [t.id, t]));
+  const byRank = [...teams].sort((a, b) => a.final_rank - b.final_rank);
+  const champ = byRank[0], ru = byRank[1];
+  const top3 = byRank.slice(0, 3);
+  const rest = byRank.slice(3);
+
+  const path = computeChampionshipPath(matchups, champ.id, teamsById);
+  const arc = buildWeeklyArc(matchups, champ.id, ru.id);
+
+  document.getElementById('content').innerHTML = `
+    ${renderHero(champ, path)}
+
+    <div class="section">
+      <div class="section-title">Final Standings</div>
+      <div class="podium">${renderPodium(top3)}</div>
+      <div class="card" style="margin-top:14px">${renderStandings(rest)}</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Season Arc &mdash; Championship Race</div>
+      <div class="card">${renderChart(arc, champ, ru)}</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Top Performances</div>
+      ${renderTopPerformances(moments, teamsById)}
+    </div>
+
+    <div class="section">
+      <div class="section-title">Superlatives</div>
+      ${renderSuperlatives(moments, teamsById)}
+    </div>
+  `;
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+</script>
+</body>
+</html>

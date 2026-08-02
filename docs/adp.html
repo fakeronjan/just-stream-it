@@ -5,47 +5,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Just Stream It - ADP Rankings</title>
 <meta name="description" content="SUPERFLEX-aware ADP rankings for the Just Stream It fantasy football league.">
-<link rel="stylesheet" href="terminal.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+  .adp-controls { margin-bottom: 14px; }
+  .adp-controls input {
+    width: 100%;
+    max-width: 320px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+  }
+  .adp-controls input:focus { border-color: var(--brand-dim); }
+  .table-scroll { overflow-x: auto; }
+  table.adp-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  table.adp-table th, table.adp-table td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  table.adp-table th { color: var(--text-mute); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
+  table.adp-table td { font-variant-numeric: tabular-nums; }
+  table.adp-table td.player-cell { font-weight: 600; white-space: normal; }
+  table.adp-table tbody tr:hover { background: var(--panel-2); }
+
+  /* Player column stays pinned while the rest scrolls horizontally on
+     mobile - same pattern as the keeper table on index.html. */
+  table.adp-table th.player-col,
+  table.adp-table td.player-cell {
+    position: sticky;
+    left: 0;
+    background: var(--panel);
+    box-shadow: 1px 0 0 var(--line);
+  }
+  table.adp-table tbody tr:hover td.player-cell { background: var(--panel-2); }
+  td.rank-gap.gap-up { color: var(--good); }
+  td.rank-gap.gap-down { color: var(--bad); }
+  td.rank-gap.gap-flat { color: var(--text-dim); }
+</style>
 </head>
 <body>
 
 <div id="lock-screen">
   <div class="lock-box">
-    <p class="glow">&gt; SYSTEM: JUST STREAM IT KEEPER DATABASE</p>
-    <p>&gt; STATUS: <span style="color:var(--alert)">ACCESS RESTRICTED</span></p>
-    <p>&gt; league members only. enter passphrase to continue:</p>
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Just Stream It</p>
+    <p>League members only. Enter the passphrase to continue:</p>
     <form id="auth-form" class="prompt-line">
       <span class="dollar">$</span>
       <input type="text" id="auth-input" autocomplete="off" autofocus>
     </form>
-    <p class="lock-error" id="auth-error">&gt; ACCESS DENIED. TRY AGAIN.</p>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
   </div>
 </div>
 
-<div id="app" style="display:none">
-  <div class="term-window">
-    <div class="term-titlebar">
-      <div class="dots"><span></span><span></span><span></span></div>
-      <span>user@just-stream-it: ~/adp</span>
+<div id="app" style="display:none" class="page">
+
+  <header class="site-header">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
+    <div>
+      <div class="tag">Reference</div>
+      <h1>ADP Rankings</h1>
+      <div class="subtitle">SUPERFLEX-ranked - this league starts a QB + a superflex slot, so standard/PPR ADP badly undervalues QBs</div>
+      <nav class="resources" id="resources-nav"></nav>
     </div>
-    <div class="term-body">
-      <header class="masthead">
-        <div class="tag">Reference</div>
-        <h1 class="glow">ADP Rankings<span class="cursor"></span></h1>
-        <div class="subtitle">SUPERFLEX-ranked - this league starts a QB + a superflex slot, so standard/PPR ADP badly undervalues QBs</div>
-        <nav class="resources" id="resources-nav"></nav>
-      </header>
+  </header>
 
-      <div class="adp-controls">
-        <input type="text" id="filter-input" placeholder="filter by name or position...">
-      </div>
+  <div class="section">
+    <div class="adp-controls">
+      <input type="text" id="filter-input" placeholder="filter by name or position...">
+    </div>
 
+    <div class="card">
       <div class="table-scroll">
         <table class="adp-table">
           <thead>
             <tr>
               <th>SF Rank</th>
-              <th>Player</th>
+              <th class="player-col">Player</th>
               <th>Pos</th>
               <th>NFL</th>
               <th>Standard Rank</th>
@@ -59,7 +96,7 @@
     </div>
   </div>
 
-  <p class="rules-note">
+  <p class="subtitle" style="margin-top:20px; font-size:0.85rem; line-height:1.6;">
     SF Rank = ESPN's SUPERFLEX-specific consensus rank (accounts for this league's QB + superflex roster
     slot). Standard Rank = ESPN's default 1-QB rank, shown for comparison. Gap = how many spots a player
     moves up under superflex rules - QBs typically show the biggest gaps, since standard rankings assume
@@ -89,6 +126,7 @@ function renderTable(filterText) {
   body.innerHTML = filtered.map(p => {
     const gap = p.standard_rank != null ? p.standard_rank - p.superflex_rank : null;
     const gapText = gap == null ? '-' : (gap > 0 ? `+${gap}` : gap);
+    const gapClass = gap == null ? '' : (gap > 0 ? 'gap-up' : gap < 0 ? 'gap-down' : 'gap-flat');
     return `
     <tr>
       <td>${p.superflex_rank}</td>
@@ -96,7 +134,7 @@ function renderTable(filterText) {
       <td>${p.position}</td>
       <td>${p.pro_team}</td>
       <td>${p.standard_rank ?? '-'}</td>
-      <td class="rank-gap">${gapText}</td>
+      <td class="rank-gap ${gapClass}">${gapText}</td>
     </tr>`;
   }).join('');
 }
@@ -109,6 +147,7 @@ async function loadApp() {
   const resources = [
     { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
     { label: 'Keeper Dossier', href: 'index.html', external: false },
+    { label: '2025 Season Recap', href: 'season-2025.html', external: false },
     { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
   ];
   document.getElementById('resources-nav').innerHTML = resources

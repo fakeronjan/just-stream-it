@@ -164,8 +164,21 @@ def custody_points(timeline, weekly_boxscores, player_id, team_id, week_start, t
     return round(total, 2), week_end - 1
 
 
+def build_player_lookup(weekly_boxscores):
+    """player_id -> {name, position}, from any week/team they appear in -
+    name and position don't change mid-season, so last-seen is fine.
+    """
+    lookup = {}
+    for teams in weekly_boxscores.values():
+        for players in teams.values():
+            for p in players:
+                lookup[p["player_id"]] = {"name": p["name"], "position": p["position"]}
+    return lookup
+
+
 def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total_weeks):
     timeline = build_arrival_timeline(draft_picks, transactions)
+    player_lookup = build_player_lookup(weekly_boxscores)
 
     pickups = []
     for t in transactions:
@@ -177,9 +190,12 @@ def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total
             points, week_end = custody_points(
                 timeline, weekly_boxscores, item["player_id"], item["to_team_id"], t["week"], total_weeks
             )
+            info = player_lookup.get(item["player_id"], {"name": "Unknown", "position": "?"})
             pickups.append(
                 {
                     "player_id": item["player_id"],
+                    "name": info["name"],
+                    "position": info["position"],
                     "team_id": item["to_team_id"],
                     "week_added": t["week"],
                     "rostered_through_week": week_end,
@@ -199,8 +215,15 @@ def compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total
                 points, week_end = custody_points(
                     timeline, weekly_boxscores, item["player_id"], item["to_team_id"], t["week"], total_weeks
                 )
+                info = player_lookup.get(item["player_id"], {"name": "Unknown", "position": "?"})
                 by_team[item["to_team_id"]].append(
-                    {"player_id": item["player_id"], "points_while_rostered": points, "rostered_through_week": week_end}
+                    {
+                        "player_id": item["player_id"],
+                        "name": info["name"],
+                        "position": info["position"],
+                        "points_while_rostered": points,
+                        "rostered_through_week": week_end,
+                    }
                 )
         if not by_team:
             continue
