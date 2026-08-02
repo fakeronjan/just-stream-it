@@ -110,10 +110,11 @@ function computeTeamGamesPlayed(matchups) {
 /* Every started player's season totals, per team, unsliced - the base
    this page derives top-3 lists from (overall, by position, or filtered
    to a team's own draft picks) without re-scanning weeklyBoxscores each time. */
-function computeTeamPlayerTotals(weeklyBoxscores) {
+function computeTeamPlayerTotals(weeklyBoxscores, weekFilter) {
   const totals = {};
-  Object.values(weeklyBoxscores).forEach(week => {
-    Object.entries(week).forEach(([teamId, players]) => {
+  Object.entries(weeklyBoxscores).forEach(([week, teams]) => {
+    if (weekFilter && !weekFilter.has(Number(week))) return;
+    Object.entries(teams).forEach(([teamId, players]) => {
       totals[teamId] ??= {};
       players.forEach(p => {
         if (!p.started) return;
@@ -132,6 +133,10 @@ function computeTeamPlayerTotals(weeklyBoxscores) {
 
 function topN(players, n) {
   return [...players].sort((a, b) => b.points - a.points).slice(0, n);
+}
+
+function topNByPpg(players, n) {
+  return [...players].sort((a, b) => b.ppg - a.ppg).slice(0, n);
 }
 
 function findMatchup(matchups, week, teamId) {
@@ -753,7 +758,9 @@ async function loadApp() {
   const regularSeasonStats = computeRegularSeasonStats(matchups);
   const teamGamesPlayed = computeTeamGamesPlayed(matchups);
   const playerTotals = computeTeamPlayerTotals(weeklyBoxscores);
-  const teamTopScorers = Object.fromEntries(Object.entries(playerTotals).map(([id, players]) => [id, topN(players, 3)]));
+  const regularSeasonWeeks = new Set(matchups.filter(m => !m.is_playoffs).map(m => m.week));
+  const regularSeasonPlayerTotals = computeTeamPlayerTotals(weeklyBoxscores, regularSeasonWeeks);
+  const teamTopScorers = Object.fromEntries(Object.entries(regularSeasonPlayerTotals).map(([id, players]) => [id, topNByPpg(players, 3)]));
   const bracketRounds = computePlayoffBracket(matchups, standings, teamsById);
   const analyticsById = Object.fromEntries(teamAnalytics.map(a => [a.team_id, a]));
 
