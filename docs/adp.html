@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It - ADP Rankings</title>
+<meta name="description" content="SUPERFLEX-aware ADP rankings for the Just Stream It fantasy football league.">
+<link rel="stylesheet" href="terminal.css">
+</head>
+<body>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <p class="glow">&gt; SYSTEM: JUST STREAM IT KEEPER DATABASE</p>
+    <p>&gt; STATUS: <span style="color:var(--alert)">ACCESS RESTRICTED</span></p>
+    <p>&gt; league members only. enter passphrase to continue:</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">$</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">&gt; ACCESS DENIED. TRY AGAIN.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none">
+  <div class="term-window">
+    <div class="term-titlebar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span>user@just-stream-it: ~/adp</span>
+    </div>
+    <div class="term-body">
+      <header class="masthead">
+        <div class="tag">Reference</div>
+        <h1 class="glow">ADP Rankings<span class="cursor"></span></h1>
+        <div class="subtitle">SUPERFLEX-ranked - this league starts a QB + a superflex slot, so standard/PPR ADP badly undervalues QBs</div>
+        <nav class="resources" id="resources-nav"></nav>
+      </header>
+
+      <div class="adp-controls">
+        <input type="text" id="filter-input" placeholder="filter by name or position...">
+      </div>
+
+      <div class="table-scroll">
+        <table class="adp-table">
+          <thead>
+            <tr>
+              <th>SF Rank</th>
+              <th>Player</th>
+              <th>Pos</th>
+              <th>NFL</th>
+              <th>Standard Rank</th>
+              <th>Gap</th>
+            </tr>
+          </thead>
+          <tbody id="adp-body"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="empty-state" style="display:none">No players match that filter.</div>
+    </div>
+  </div>
+
+  <p class="rules-note">
+    SF Rank = ESPN's SUPERFLEX-specific consensus rank (accounts for this league's QB + superflex roster
+    slot). Standard Rank = ESPN's default 1-QB rank, shown for comparison. Gap = how many spots a player
+    moves up under superflex rules - QBs typically show the biggest gaps, since standard rankings assume
+    you can only start one.
+  </p>
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+let players = [];
+
+function renderTable(filterText) {
+  const body = document.getElementById('adp-body');
+  const empty = document.getElementById('empty-state');
+  const needle = (filterText || '').trim().toLowerCase();
+  const filtered = players.filter(p =>
+    !needle || p.name.toLowerCase().includes(needle) || p.position.toLowerCase().includes(needle) || p.pro_team.toLowerCase().includes(needle)
+  );
+
+  if (!filtered.length) {
+    body.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  body.innerHTML = filtered.map(p => {
+    const gap = p.standard_rank != null ? p.standard_rank - p.superflex_rank : null;
+    const gapText = gap == null ? '-' : (gap > 0 ? `+${gap}` : gap);
+    return `
+    <tr>
+      <td>${p.superflex_rank}</td>
+      <td class="player-cell">${p.name}</td>
+      <td>${p.position}</td>
+      <td>${p.pro_team}</td>
+      <td>${p.standard_rank ?? '-'}</td>
+      <td class="rank-gap">${gapText}</td>
+    </tr>`;
+  }).join('');
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+
+  const meta = await (await fetch('data/meta.json')).json();
+  const resources = [
+    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
+    { label: 'Keeper Dossier', href: 'index.html', external: false },
+    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
+  ];
+  document.getElementById('resources-nav').innerHTML = resources
+    .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
+    .join('');
+
+  if (!players.length) {
+    players = await (await fetch('data/adp_rankings.json')).json();
+  }
+  renderTable('');
+  document.getElementById('filter-input').addEventListener('input', (e) => renderTable(e.target.value));
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+</script>
+</body>
+</html>

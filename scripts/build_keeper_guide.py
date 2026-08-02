@@ -40,6 +40,7 @@ from pathlib import Path
 
 from config import CURRENT_SEASON, LEAGUE_ID
 from espn_client import fetch_player_pool, fetch_players_by_id
+from espn_maps import POSITION_MAP, PRO_TEAM_MAP
 
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
 NUM_TEAMS = 12
@@ -233,6 +234,26 @@ def main():
     guide.sort(key=lambda g: " & ".join(g["owners"]))
     (DOCS_DATA / "keeper_guide_2026.json").write_text(json.dumps(guide, indent=2))
     print(f"Wrote keeper_guide_2026.json for {len(guide)} teams")
+
+    adp = []
+    for pid, player in pool.items():
+        ranks = player.get("draftRanksByRankType", {})
+        superflex_rank = ranks.get("SUPERFLEX", {}).get("rank")
+        if superflex_rank is None:
+            continue
+        adp.append(
+            {
+                "player_id": pid,
+                "name": player["fullName"],
+                "position": POSITION_MAP.get(player["defaultPositionId"], player["defaultPositionId"]),
+                "pro_team": PRO_TEAM_MAP.get(player["proTeamId"], player["proTeamId"]),
+                "superflex_rank": superflex_rank,
+                "standard_rank": ranks.get("STANDARD", {}).get("rank"),
+            }
+        )
+    adp.sort(key=lambda p: p["superflex_rank"])
+    (DOCS_DATA / "adp_rankings.json").write_text(json.dumps(adp, indent=2))
+    print(f"Wrote adp_rankings.json ({len(adp)} players)")
 
 
 if __name__ == "__main__":
