@@ -180,18 +180,34 @@ def main():
 
         candidates.sort(key=lambda c: c["drafted_round_2025"])
 
-        # Suggested keeper spread: one premium (costs round 1-2), one mid
-        # (round 3-6), one cheap flier (round 7+), each the best-value
-        # (highest vig) candidate available in that price band. This is a
-        # portfolio heuristic, not a rule - won't always have a fit in every
-        # band, and doesn't override the round-1-exclusivity conflicts above
-        # (each band only ever contributes at most one recommended keeper,
-        # so it can't recommend two players who'd both need the round-1 slot).
-        def best_in_band(lo, hi):
-            band = [c for c in candidates if c["vig"] is not None and lo <= c["keeper_cost_round_2026"] <= hi]
-            return max(band, key=lambda c: c["vig"]) if band else None
+        # Suggested keeper spread: shortlist of premium (costs round 1-2),
+        # mid (round 3-6), and value (round 7+) candidates, best-value
+        # (highest vig) first within each band. This is a portfolio
+        # heuristic, not a rule - won't always have a fit in every band.
+        #
+        # Keepers are never mandatory - if nobody in a band is a good deal,
+        # it's better to let those slots go back into the draft pool than
+        # keep a bad price. So anything worse than a full round's overpay
+        # (vig < -NUM_TEAMS picks) is excluded from the shortlist entirely.
+        NEGATIVE_VIG_FLOOR = -NUM_TEAMS
 
-        best_overall = best_in_band(1, 99)
+        def shortlist_in_band(lo, hi, n=3):
+            band = [
+                c
+                for c in candidates
+                if c["vig"] is not None
+                and c["vig"] >= NEGATIVE_VIG_FLOOR
+                and lo <= c["keeper_cost_round_2026"] <= hi
+            ]
+            band.sort(key=lambda c: -c["vig"])
+            return band[:n]
+
+        premium = shortlist_in_band(1, 2)
+        mid = shortlist_in_band(3, 6)
+        value = shortlist_in_band(7, 99)
+
+        qualifying = premium + mid + value
+        best_overall = max(qualifying, key=lambda c: c["vig"]) if qualifying else None
         for c in candidates:
             c["is_top_value"] = bool(best_overall and c["player_id"] == best_overall["player_id"])
 
@@ -207,9 +223,9 @@ def main():
                 "cannot_keep_multiple_round1": len(round1_candidates) > 1,
                 "round1_candidates": round1_candidates,
                 "suggested_plan": {
-                    "premium": best_in_band(1, 2),
-                    "mid": best_in_band(3, 6),
-                    "value": best_in_band(7, 99),
+                    "premium": premium,
+                    "mid": mid,
+                    "value": value,
                 },
             }
         )

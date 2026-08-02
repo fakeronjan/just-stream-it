@@ -328,7 +328,7 @@
     <p>&gt; league members only. enter passphrase to continue:</p>
     <form id="auth-form" class="prompt-line">
       <span class="dollar">$</span>
-      <input type="password" id="auth-input" autocomplete="off" autofocus>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
     </form>
     <p class="lock-error" id="auth-error">&gt; ACCESS DENIED. TRY AGAIN.</p>
   </div>
@@ -360,8 +360,10 @@
     slot - only the round is enforced, not an exact pick). ADP uses ESPN's SUPERFLEX rank (this league
     starts a QB + a superflex slot, so standard/PPR rank badly undervalues QBs). Keeper Value compares
     keeper cost to current SUPERFLEX market value, in picks - positive is a bargain, negative is an overpay.
-    The suggested plan (one premium, one mid, one value keeper) is just a portfolio heuristic ranked by
-    Keeper Value within each price band - not a rule, and it won't always make sense for your roster.
+    The suggested plan shortlists a few options per price band (premium/mid/value), best Keeper Value
+    first - a portfolio heuristic, not a rule, and it won't always make sense for your roster. Options
+    worse than a full round's overpay are left off the shortlist entirely - keepers aren't mandatory, and
+    it's often better to let a bad-value slot go back into the draft pool than keep it.
   </p>
 </div>
 
@@ -420,12 +422,13 @@ function renderDossier() {
   }
 
   const plan = team.suggested_plan;
-  const planRow = (label, c) => `
+  const planItem = (c) => `${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name} (Rd ${c.keeper_cost_round_2026}, ${keeperValueCell(c.vig)})`;
+  const planRow = (label, list) => `
     <div class="suggest-row">
       <span class="tier-label">${label}</span>
-      ${c
-        ? `<span>${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name} - cost Round ${c.keeper_cost_round_2026} - value ${keeperValueCell(c.vig)}</span>`
-        : '<span class="none">no strong option in this range</span>'}
+      ${list.length
+        ? `<span>${list.map(planItem).join(' &nbsp;&middot;&nbsp; ')}</span>`
+        : '<span class="none">no strong option in this range - fine to let this slot go back to the draft pool</span>'}
     </div>`;
   const suggestBox = `
     <div class="suggest-box">
