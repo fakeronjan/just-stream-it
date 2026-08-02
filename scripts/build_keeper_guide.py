@@ -180,6 +180,21 @@ def main():
 
         candidates.sort(key=lambda c: c["drafted_round_2025"])
 
+        # Suggested keeper spread: one premium (costs round 1-2), one mid
+        # (round 3-6), one cheap flier (round 7+), each the best-value
+        # (highest vig) candidate available in that price band. This is a
+        # portfolio heuristic, not a rule - won't always have a fit in every
+        # band, and doesn't override the round-1-exclusivity conflicts above
+        # (each band only ever contributes at most one recommended keeper,
+        # so it can't recommend two players who'd both need the round-1 slot).
+        def best_in_band(lo, hi):
+            band = [c for c in candidates if c["vig"] is not None and lo <= c["keeper_cost_round_2026"] <= hi]
+            return max(band, key=lambda c: c["vig"]) if band else None
+
+        best_overall = best_in_band(1, 99)
+        for c in candidates:
+            c["is_top_value"] = bool(best_overall and c["player_id"] == best_overall["player_id"])
+
         guide.append(
             {
                 "team_id": team_id,
@@ -191,6 +206,11 @@ def main():
                 "cannot_keep_both_round1_and_round2": len(round1_candidates) == 1 and has_round2,
                 "cannot_keep_multiple_round1": len(round1_candidates) > 1,
                 "round1_candidates": round1_candidates,
+                "suggested_plan": {
+                    "premium": best_in_band(1, 2),
+                    "mid": best_in_band(3, 6),
+                    "value": best_in_band(7, 99),
+                },
             }
         )
 

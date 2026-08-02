@@ -226,6 +226,22 @@
     font-size: 0.8rem;
   }
 
+  .suggest-box {
+    border: 1px solid var(--line);
+    padding: 0.6rem 0.85rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+  .suggest-box .cmd { color: var(--dim); margin: 0 0 0.4rem; }
+  .suggest-row { display: flex; gap: 0.6rem; padding: 0.15rem 0; flex-wrap: wrap; }
+  .suggest-row .tier-label {
+    color: var(--dim);
+    width: 8.5rem;
+    flex-shrink: 0;
+  }
+  .suggest-row .none { color: var(--dim); font-style: italic; }
+  .star { color: var(--bright); }
+
   .table-scroll { overflow-x: auto; }
   table.dossier-table {
     width: 100%;
@@ -344,6 +360,8 @@
     slot - only the round is enforced, not an exact pick). ADP uses ESPN's SUPERFLEX rank (this league
     starts a QB + a superflex slot, so standard/PPR rank badly undervalues QBs). Keeper Value compares
     keeper cost to current SUPERFLEX market value, in picks - positive is a bargain, negative is an overpay.
+    The suggested plan (one premium, one mid, one value keeper) is just a portfolio heuristic ranked by
+    Keeper Value within each price band - not a rule, and it won't always make sense for your roster.
   </p>
 </div>
 
@@ -401,9 +419,25 @@ function renderDossier() {
     warnings += `<div class="warning-box">!! Cannot keep both the round-1 and round-2 picks below - both would cost a round-1 pick, and there's only one round-1 slot.</div>`;
   }
 
+  const plan = team.suggested_plan;
+  const planRow = (label, c) => `
+    <div class="suggest-row">
+      <span class="tier-label">${label}</span>
+      ${c
+        ? `<span>${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name} - cost Round ${c.keeper_cost_round_2026} - value ${keeperValueCell(c.vig)}</span>`
+        : '<span class="none">no strong option in this range</span>'}
+    </div>`;
+  const suggestBox = `
+    <div class="suggest-box">
+      <p class="cmd">$ ./suggest_keepers.sh --team="${team.team_name}"</p>
+      ${planRow('PREMIUM (Rd 1-2)', plan.premium)}
+      ${planRow('MID (Rd 3-6)', plan.mid)}
+      ${planRow('VALUE (Rd 7+)', plan.value)}
+    </div>`;
+
   const rows = team.candidates.map(c => `
     <tr>
-      <td class="player-cell">${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
+      <td class="player-cell">${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
       <td>${c.drafted_pick_2025} <span class="meta-chip">(#${c.drafted_overall_2025})</span></td>
       <td class="meta-chip">${c.acquisition_type}</td>
       <td>${c.points_actual_2025 != null ? c.points_actual_2025.toFixed(1) : '-'}</td>
@@ -434,6 +468,7 @@ function renderDossier() {
     </div>
 
     ${warnings}
+    ${suggestBox}
 
     <div class="table-scroll">
       <table class="dossier-table">
