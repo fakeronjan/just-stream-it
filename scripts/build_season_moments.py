@@ -165,6 +165,7 @@ def compute_player_extremes(weekly_boxscores, nfl_schedule):
                         "pro_home": game["home"] if game else None,
                         "pro_team_score": game["team_score"] if game else None,
                         "pro_opponent_score": game["opponent_score"] if game else None,
+                        "stat_line": p.get("stat_line", ""),
                     }
                 )
     performances.sort(key=lambda p: -p["points"])

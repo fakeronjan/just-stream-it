@@ -338,6 +338,9 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 }
 .bracket-team.winner { opacity: 1; }
 
+.bracket-chip-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.bracket-seed { font-size: 0.75rem; color: var(--text-mute); flex-shrink: 0; }
+
 .bracket-score {
   font-weight: 800;
   font-variant-numeric: tabular-nums;

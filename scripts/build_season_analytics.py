@@ -103,6 +103,45 @@ def attribution_for(timeline, player_id, week):
     return applicable[-1][1]
 
 
+# ESPN's numeric stat-category IDs, empirically confirmed against real
+# games (raw count x standard scoring formula == the appliedStats point
+# contribution ESPN reports for that category) rather than assumed from a
+# public mapping - see conversation history for the cross-checks. Only
+# covers QB/RB/WR/TE (passing/rushing/receiving) - the stat categories a
+# skill-position player's box score actually needs; K/D-ST use a different,
+# unverified set of IDs and are deliberately left out rather than guessed.
+STAT_IDS = {
+    "pass_yds": 3,
+    "pass_td": 4,
+    "pass_int": 20,
+    "rush_yds": 24,
+    "rush_td": 25,
+    "rec": 53,
+    "rec_yds": 42,
+    "rec_td": 43,
+}
+
+
+def format_stat_line(raw_stats):
+    """Human-readable "223 rush yds, 2 rush TD, 4 rec, 45 rec yds" line
+    from a player's raw per-week stat dict - only the categories that are
+    actually nonzero, in passing/rushing/receiving order.
+    """
+    if not raw_stats:
+        return ""
+    order = [
+        ("pass_yds", "pass yds"), ("pass_td", "pass TD"), ("pass_int", "INT"),
+        ("rush_yds", "rush yds"), ("rush_td", "rush TD"),
+        ("rec", "rec"), ("rec_yds", "rec yds"), ("rec_td", "rec TD"),
+    ]
+    parts = []
+    for key, label in order:
+        val = raw_stats.get(str(STAT_IDS[key]))
+        if val:
+            parts.append(f"{round(val)} {label}")
+    return ", ".join(parts)
+
+
 def build_weekly_boxscores(season, num_weeks):
     weeks = {}
     for week in range(1, num_weeks + 1):
@@ -120,6 +159,10 @@ def build_weekly_boxscores(season, num_weeks):
                 players = []
                 for e in roster:
                     p = e["playerPoolEntry"]["player"]
+                    actual_stats = next(
+                        (s["stats"] for s in p.get("stats", []) if s.get("statSourceId") == 0 and s.get("scoringPeriodId") == week),
+                        {},
+                    )
                     players.append(
                         {
                             "player_id": e["playerId"],
@@ -129,6 +172,7 @@ def build_weekly_boxscores(season, num_weeks):
                             "lineup_slot_id": e["lineupSlotId"],
                             "started": e["lineupSlotId"] not in BENCH_IR_SLOTS,
                             "points": e["playerPoolEntry"].get("appliedStatTotal", 0.0),
+                            "stat_line": format_stat_line(actual_stats),
                         }
                     )
                 team_rosters[team_id] = players

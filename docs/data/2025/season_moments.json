@@ -1426,7 +1426,8 @@
         "pro_opponent": "NYG",
         "pro_home": true,
         "pro_team_score": 34.0,
-        "pro_opponent_score": 27.0
+        "pro_opponent_score": 27.0,
+        "stat_line": "219 rush yds, 2 rush TD, 11 rec, 45 rec yds, 1 rec TD"
       },
       {
         "week": 10,
@@ -1439,7 +1440,8 @@
         "pro_opponent": "ATL",
         "pro_home": true,
         "pro_team_score": 31.0,
-        "pro_opponent_score": 25.0
+        "pro_opponent_score": 25.0,
+        "stat_line": "244 rush yds, 3 rush TD, 3 rec, 42 rec yds"
       },
       {
         "week": 17,
@@ -1452,7 +1454,8 @@
         "pro_opponent": "GB",
         "pro_home": false,
         "pro_team_score": 41.0,
-        "pro_opponent_score": 24.0
+        "pro_opponent_score": 24.0,
+        "stat_line": "216 rush yds, 4 rush TD"
       },
       {
         "week": 15,
@@ -1465,7 +1468,8 @@
         "pro_opponent": "NYJ",
         "pro_home": true,
         "pro_team_score": 48.0,
-        "pro_opponent_score": 20.0
+        "pro_opponent_score": 20.0,
+        "stat_line": "330 pass yds, 5 pass TD, 51 rush yds, 1 rush TD"
       },
       {
         "week": 11,
@@ -1478,7 +1482,8 @@
         "pro_opponent": "TB",
         "pro_home": true,
         "pro_team_score": 44.0,
-        "pro_opponent_score": 32.0
+        "pro_opponent_score": 32.0,
+        "stat_line": "317 pass yds, 3 pass TD, 2 INT, 40 rush yds, 3 rush TD"
       },
       {
         "week": 16,
@@ -1491,7 +1496,8 @@
         "pro_opponent": "SEA",
         "pro_home": false,
         "pro_team_score": 37.0,
-        "pro_opponent_score": 38.0
+        "pro_opponent_score": 38.0,
+        "stat_line": "12 rec, 225 rec yds, 2 rec TD"
       },
       {
         "week": 1,
@@ -1504,7 +1510,8 @@
         "pro_opponent": "BAL",
         "pro_home": true,
         "pro_team_score": 41.0,
-        "pro_opponent_score": 40.0
+        "pro_opponent_score": 40.0,
+        "stat_line": "394 pass yds, 2 pass TD, 30 rush yds, 2 rush TD"
       },
       {
         "week": 14,
@@ -1517,7 +1524,8 @@
         "pro_opponent": "CIN",
         "pro_home": true,
         "pro_team_score": 39.0,
-        "pro_opponent_score": 34.0
+        "pro_opponent_score": 34.0,
+        "stat_line": "251 pass yds, 3 pass TD, 78 rush yds, 1 rush TD"
       },
       {
         "week": 9,
@@ -1530,7 +1538,8 @@
         "pro_opponent": "CIN",
         "pro_home": false,
         "pro_team_score": 47.0,
-        "pro_opponent_score": 42.0
+        "pro_opponent_score": 42.0,
+        "stat_line": "280 pass yds, 3 pass TD, 53 rush yds, 2 rec, 22 rec yds, 1 rec TD"
       },
       {
         "week": 10,
@@ -1543,7 +1552,8 @@
         "pro_opponent": "BUF",
         "pro_home": true,
         "pro_team_score": 30.0,
-        "pro_opponent_score": 13.0
+        "pro_opponent_score": 13.0,
+        "stat_line": "174 rush yds, 2 rush TD, 6 rec, 51 rec yds"
       }
     ],
     "worst_performances": [
@@ -1558,7 +1568,8 @@
         "pro_opponent": "JAX",
         "pro_home": false,
         "pro_team_score": 20.0,
-        "pro_opponent_score": 48.0
+        "pro_opponent_score": 48.0,
+        "stat_line": ""
       },
       {
         "week": 4,
@@ -1571,7 +1582,8 @@
         "pro_opponent": "DAL",
         "pro_home": false,
         "pro_team_score": 40.0,
-        "pro_opponent_score": 40.0
+        "pro_opponent_score": 40.0,
+        "stat_line": ""
       },
       {
         "week": 2,
@@ -1584,7 +1596,8 @@
         "pro_opponent": "NYG",
         "pro_home": true,
         "pro_team_score": 40.0,
-        "pro_opponent_score": 37.0
+        "pro_opponent_score": 37.0,
+        "stat_line": ""
       },
       {
         "week": 7,
@@ -1597,7 +1610,8 @@
         "pro_opponent": "CIN",
         "pro_home": false,
         "pro_team_score": 31.0,
-        "pro_opponent_score": 33.0
+        "pro_opponent_score": 33.0,
+        "stat_line": ""
       },
       {
         "week": 16,
@@ -1610,7 +1624,8 @@
         "pro_opponent": "LAR",
         "pro_home": true,
         "pro_team_score": 38.0,
-        "pro_opponent_score": 37.0
+        "pro_opponent_score": 37.0,
+        "stat_line": ""
       },
       {
         "week": 1,
@@ -1623,7 +1638,8 @@
         "pro_opponent": "IND",
         "pro_home": false,
         "pro_team_score": 8.0,
-        "pro_opponent_score": 33.0
+        "pro_opponent_score": 33.0,
+        "stat_line": ""
       },
       {
         "week": 8,
@@ -1636,7 +1652,8 @@
         "pro_opponent": "HOU",
         "pro_home": false,
         "pro_team_score": 15.0,
-        "pro_opponent_score": 26.0
+        "pro_opponent_score": 26.0,
+        "stat_line": ""
       },
       {
         "week": 8,
@@ -1649,7 +1666,8 @@
         "pro_opponent": "IND",
         "pro_home": false,
         "pro_team_score": 14.0,
-        "pro_opponent_score": 38.0
+        "pro_opponent_score": 38.0,
+        "stat_line": ""
       },
       {
         "week": 12,
@@ -1662,7 +1680,8 @@
         "pro_opponent": "NYG",
         "pro_home": true,
         "pro_team_score": 34.0,
-        "pro_opponent_score": 27.0
+        "pro_opponent_score": 27.0,
+        "stat_line": ""
       },
       {
         "week": 5,
@@ -1675,7 +1694,8 @@
         "pro_opponent": "SF",
         "pro_home": true,
         "pro_team_score": 23.0,
-        "pro_opponent_score": 26.0
+        "pro_opponent_score": 26.0,
+        "stat_line": ""
       }
     ]
   },

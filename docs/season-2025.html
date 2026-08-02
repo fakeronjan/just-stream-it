@@ -29,7 +29,6 @@
     <div>
       <div class="tag">2025 Recap</div>
       <h1>Season in Review</h1>
-      <div class="subtitle">The champion's run, the ebbs and flows, and the season's top moments</div>
       <nav class="resources" id="resources-nav"></nav>
     </div>
   </header>
@@ -226,6 +225,7 @@ function scorerListHtml(teamId, teamTopScorers, extraClass) {
 }
 
 function renderBracket(rounds) {
+  const seededChip = t => `<div class="bracket-chip-row">${teamChip(t, 'sm')}<span class="bracket-seed">(${t.playoff_seed})</span></div>`;
   return `
     <div class="bracket">
       ${rounds.map(round => `
@@ -233,16 +233,16 @@ function renderBracket(rounds) {
           <div class="bracket-round-title">${round.title}</div>
           ${round.slots.map(slot => slot.type === 'bye' ? `
             <div class="bracket-match bracket-bye">
-              ${teamChip(slot.team, 'sm')}
+              ${seededChip(slot.team)}
               <div class="bracket-bye-label">Bye</div>
             </div>
           ` : `
             <div class="bracket-match">
               <div class="bracket-team ${slot.winnerId === slot.teamA.id ? 'winner' : ''}">
-                ${teamChip(slot.teamA, 'sm')}<span class="bracket-score">${fmt1(slot.scoreA)}</span>
+                ${seededChip(slot.teamA)}<span class="bracket-score">${fmt1(slot.scoreA)}</span>
               </div>
               <div class="bracket-team ${slot.winnerId === slot.teamB.id ? 'winner' : ''}">
-                ${teamChip(slot.teamB, 'sm')}<span class="bracket-score">${fmt1(slot.scoreB)}</span>
+                ${seededChip(slot.teamB)}<span class="bracket-score">${fmt1(slot.scoreB)}</span>
               </div>
             </div>
           `).join('')}
@@ -390,7 +390,8 @@ function renderTopPerformances(moments, teamsById, weeklyBoxscores) {
   const playerWeeks = moments.player_extremes.best_performances.slice(0, 5).map(p => {
     const nflHtml = p.pro_opponent ? `
       <div class="rank-detail-full">
-        <span class="nfl-detail">${p.pro_team} ${p.pro_home ? 'vs' : '@'} ${p.pro_opponent} &middot; Final ${fmt1(p.pro_team_score)}-${fmt1(p.pro_opponent_score)}</span>
+        <span class="nfl-detail">${p.pro_team} ${p.pro_home ? 'vs' : '@'} ${p.pro_opponent} &middot; Final ${Math.round(p.pro_team_score)}-${Math.round(p.pro_opponent_score)}</span>
+        ${p.stat_line ? `<span class="nfl-detail">&middot; ${p.stat_line}</span>` : ''}
       </div>
     ` : '';
     return `
