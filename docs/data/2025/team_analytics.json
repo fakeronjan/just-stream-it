@@ -1,0 +1,557 @@
+[
+  {
+    "team_id": 4,
+    "owners": [
+      "Ben Porter"
+    ],
+    "transactions_count": 71,
+    "trades_count": 1,
+    "waiver_pickups": 20,
+    "free_agent_pickups": 33,
+    "drops": 31,
+    "players_started_count": 40,
+    "started_points_total": 2115.66,
+    "started_points_by_source": {
+      "DRAFT": 1208.58,
+      "PICKUP": 765.68,
+      "TRADE": 141.4
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 57.1,
+      "PICKUP": 36.2,
+      "TRADE": 6.7
+    },
+    "started_points_by_position": {
+      "QB": 522.96,
+      "RB": 481.2,
+      "WR": 705.9,
+      "TE": 152.6,
+      "D/ST": 139.0,
+      "K": 114.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 24.7,
+      "RB": 22.7,
+      "WR": 33.4,
+      "TE": 7.2,
+      "D/ST": 6.6,
+      "K": 5.4
+    },
+    "actual_wins": 9,
+    "all_play_wins": 71,
+    "all_play_games": 154,
+    "expected_wins": 6.45,
+    "luck_index": 2.55,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": [
+      1
+    ]
+  },
+  {
+    "team_id": 5,
+    "owners": [
+      "Cara Kantrowitz"
+    ],
+    "transactions_count": 9,
+    "trades_count": 0,
+    "waiver_pickups": 2,
+    "free_agent_pickups": 7,
+    "drops": 0,
+    "players_started_count": 23,
+    "started_points_total": 2482.46,
+    "started_points_by_source": {
+      "DRAFT": 2268.86,
+      "PICKUP": 213.6
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 91.4,
+      "PICKUP": 8.6
+    },
+    "started_points_by_position": {
+      "RB": 913.9,
+      "WR": 523.92,
+      "QB": 640.04,
+      "TE": 137.6,
+      "D/ST": 100.0,
+      "K": 167.0
+    },
+    "started_points_pct_by_position": {
+      "RB": 36.8,
+      "WR": 21.1,
+      "QB": 25.8,
+      "TE": 5.5,
+      "D/ST": 4.0,
+      "K": 6.7
+    },
+    "actual_wins": 10,
+    "all_play_wins": 114,
+    "all_play_games": 154,
+    "expected_wins": 10.36,
+    "luck_index": -0.36,
+    "bad_luck_loss_weeks": [
+      4
+    ],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 1,
+    "owners": [
+      "Imran Hirani"
+    ],
+    "transactions_count": 82,
+    "trades_count": 0,
+    "waiver_pickups": 21,
+    "free_agent_pickups": 45,
+    "drops": 34,
+    "players_started_count": 46,
+    "started_points_total": 2043.42,
+    "started_points_by_source": {
+      "DRAFT": 1434.1,
+      "PICKUP": 609.32
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 70.2,
+      "PICKUP": 29.8
+    },
+    "started_points_by_position": {
+      "QB": 477.5,
+      "WR": 521.3,
+      "RB": 578.82,
+      "TE": 189.8,
+      "D/ST": 133.0,
+      "K": 143.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 23.4,
+      "WR": 25.5,
+      "RB": 28.3,
+      "TE": 9.3,
+      "D/ST": 6.5,
+      "K": 7.0
+    },
+    "actual_wins": 9,
+    "all_play_wins": 65,
+    "all_play_games": 154,
+    "expected_wins": 5.91,
+    "luck_index": 3.09,
+    "bad_luck_loss_weeks": [
+      9
+    ],
+    "good_luck_win_weeks": [
+      7
+    ]
+  },
+  {
+    "team_id": 8,
+    "owners": [
+      "Joseph Sebranek"
+    ],
+    "transactions_count": 17,
+    "trades_count": 0,
+    "waiver_pickups": 9,
+    "free_agent_pickups": 6,
+    "drops": 10,
+    "players_started_count": 23,
+    "started_points_total": 2225.74,
+    "started_points_by_source": {
+      "DRAFT": 1893.16,
+      "PICKUP": 332.58
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 85.1,
+      "PICKUP": 14.9
+    },
+    "started_points_by_position": {
+      "WR": 740.2,
+      "RB": 534.9,
+      "QB": 512.74,
+      "TE": 149.9,
+      "D/ST": 131.0,
+      "K": 157.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 33.3,
+      "RB": 24.0,
+      "QB": 23.0,
+      "TE": 6.7,
+      "D/ST": 5.9,
+      "K": 7.1
+    },
+    "actual_wins": 10,
+    "all_play_wins": 97,
+    "all_play_games": 154,
+    "expected_wins": 8.82,
+    "luck_index": 1.18,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 10,
+    "owners": [
+      "Karlos Abel"
+    ],
+    "transactions_count": 17,
+    "trades_count": 0,
+    "waiver_pickups": 6,
+    "free_agent_pickups": 9,
+    "drops": 8,
+    "players_started_count": 20,
+    "started_points_total": 2106.3,
+    "started_points_by_source": {
+      "DRAFT": 1906.4,
+      "PICKUP": 199.9
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 90.5,
+      "PICKUP": 9.5
+    },
+    "started_points_by_position": {
+      "RB": 591.5,
+      "QB": 485.3,
+      "WR": 620.4,
+      "TE": 83.5,
+      "D/ST": 145.0,
+      "K": 180.6
+    },
+    "started_points_pct_by_position": {
+      "RB": 28.1,
+      "QB": 23.0,
+      "WR": 29.5,
+      "TE": 4.0,
+      "D/ST": 6.9,
+      "K": 8.6
+    },
+    "actual_wins": 5,
+    "all_play_wins": 65,
+    "all_play_games": 154,
+    "expected_wins": 5.91,
+    "luck_index": -0.91,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 11,
+    "owners": [
+      "Kris Wikstrom"
+    ],
+    "transactions_count": 22,
+    "trades_count": 1,
+    "waiver_pickups": 6,
+    "free_agent_pickups": 14,
+    "drops": 6,
+    "players_started_count": 35,
+    "started_points_total": 1932.36,
+    "started_points_by_source": {
+      "DRAFT": 1326.14,
+      "PICKUP": 513.52,
+      "TRADE": 92.7
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 68.6,
+      "PICKUP": 26.6,
+      "TRADE": 4.8
+    },
+    "started_points_by_position": {
+      "RB": 372.9,
+      "QB": 618.36,
+      "WR": 508.8,
+      "TE": 181.3,
+      "K": 141.0,
+      "D/ST": 110.0
+    },
+    "started_points_pct_by_position": {
+      "RB": 19.3,
+      "QB": 32.0,
+      "WR": 26.3,
+      "TE": 9.4,
+      "K": 7.3,
+      "D/ST": 5.7
+    },
+    "actual_wins": 2,
+    "all_play_wins": 56,
+    "all_play_games": 154,
+    "expected_wins": 5.09,
+    "luck_index": -3.09,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 6,
+    "owners": [
+      "Lisette Bruens"
+    ],
+    "transactions_count": 47,
+    "trades_count": 0,
+    "waiver_pickups": 22,
+    "free_agent_pickups": 14,
+    "drops": 28,
+    "players_started_count": 43,
+    "started_points_total": 2170.92,
+    "started_points_by_source": {
+      "DRAFT": 1813.58,
+      "PICKUP": 357.34
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 83.5,
+      "PICKUP": 16.5
+    },
+    "started_points_by_position": {
+      "QB": 598.92,
+      "RB": 729.1,
+      "WR": 438.8,
+      "TE": 109.1,
+      "K": 174.0,
+      "D/ST": 121.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 27.6,
+      "RB": 33.6,
+      "WR": 20.2,
+      "TE": 5.0,
+      "K": 8.0,
+      "D/ST": 5.6
+    },
+    "actual_wins": 6,
+    "all_play_wins": 81,
+    "all_play_games": 154,
+    "expected_wins": 7.36,
+    "luck_index": -1.36,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 12,
+    "owners": [
+      "Melinda Thomas"
+    ],
+    "transactions_count": 16,
+    "trades_count": 0,
+    "waiver_pickups": 2,
+    "free_agent_pickups": 11,
+    "drops": 3,
+    "players_started_count": 27,
+    "started_points_total": 2161.42,
+    "started_points_by_source": {
+      "DRAFT": 1882.48,
+      "PICKUP": 278.94
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 87.1,
+      "PICKUP": 12.9
+    },
+    "started_points_by_position": {
+      "WR": 784.6,
+      "QB": 366.52,
+      "RB": 510.8,
+      "TE": 226.5,
+      "K": 133.0,
+      "D/ST": 140.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 36.3,
+      "QB": 17.0,
+      "RB": 23.6,
+      "TE": 10.5,
+      "K": 6.2,
+      "D/ST": 6.5
+    },
+    "actual_wins": 4,
+    "all_play_wins": 60,
+    "all_play_games": 154,
+    "expected_wins": 5.45,
+    "luck_index": -1.45,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": [
+      10
+    ]
+  },
+  {
+    "team_id": 7,
+    "owners": [
+      "Michael Higgins"
+    ],
+    "transactions_count": 31,
+    "trades_count": 1,
+    "waiver_pickups": 8,
+    "free_agent_pickups": 14,
+    "drops": 12,
+    "players_started_count": 31,
+    "started_points_total": 1735.54,
+    "started_points_by_source": {
+      "DRAFT": 916.4,
+      "PICKUP": 685.4,
+      "TRADE": 133.74
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 52.8,
+      "PICKUP": 39.5,
+      "TRADE": 7.7
+    },
+    "started_points_by_position": {
+      "QB": 501.74,
+      "WR": 555.8,
+      "RB": 341.2,
+      "TE": 110.8,
+      "K": 139.0,
+      "D/ST": 87.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 28.9,
+      "WR": 32.0,
+      "RB": 19.7,
+      "TE": 6.4,
+      "K": 8.0,
+      "D/ST": 5.0
+    },
+    "actual_wins": 4,
+    "all_play_wins": 38,
+    "all_play_games": 154,
+    "expected_wins": 3.45,
+    "luck_index": 0.55,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 3,
+    "owners": [
+      "Pete Gallagher"
+    ],
+    "transactions_count": 52,
+    "trades_count": 0,
+    "waiver_pickups": 9,
+    "free_agent_pickups": 27,
+    "drops": 24,
+    "players_started_count": 22,
+    "started_points_total": 2362.12,
+    "started_points_by_source": {
+      "DRAFT": 2172.84,
+      "PICKUP": 189.28
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 92.0,
+      "PICKUP": 8.0
+    },
+    "started_points_by_position": {
+      "QB": 606.34,
+      "RB": 703.2,
+      "WR": 484.38,
+      "TE": 250.2,
+      "D/ST": 181.0,
+      "K": 137.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 25.7,
+      "RB": 29.8,
+      "WR": 20.5,
+      "TE": 10.6,
+      "D/ST": 7.7,
+      "K": 5.8
+    },
+    "actual_wins": 10,
+    "all_play_wins": 108,
+    "all_play_games": 154,
+    "expected_wins": 9.82,
+    "luck_index": 0.18,
+    "bad_luck_loss_weeks": [
+      10,
+      14
+    ],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 9,
+    "owners": [
+      "Ronjan Sikdar"
+    ],
+    "transactions_count": 27,
+    "trades_count": 4,
+    "waiver_pickups": 7,
+    "free_agent_pickups": 12,
+    "drops": 8,
+    "players_started_count": 36,
+    "started_points_total": 2323.12,
+    "started_points_by_source": {
+      "DRAFT": 1367.08,
+      "PICKUP": 384.4,
+      "TRADE": 571.64
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 58.8,
+      "PICKUP": 16.5,
+      "TRADE": 24.6
+    },
+    "started_points_by_position": {
+      "QB": 657.26,
+      "WR": 717.7,
+      "TE": 106.8,
+      "RB": 540.36,
+      "D/ST": 134.0,
+      "K": 167.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 28.3,
+      "WR": 30.9,
+      "TE": 4.6,
+      "RB": 23.3,
+      "D/ST": 5.8,
+      "K": 7.2
+    },
+    "actual_wins": 6,
+    "all_play_wins": 94,
+    "all_play_games": 154,
+    "expected_wins": 8.55,
+    "luck_index": -2.55,
+    "bad_luck_loss_weeks": [
+      13
+    ],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 2,
+    "owners": [
+      "mariss mednis"
+    ],
+    "transactions_count": 46,
+    "trades_count": 1,
+    "waiver_pickups": 19,
+    "free_agent_pickups": 18,
+    "drops": 23,
+    "players_started_count": 36,
+    "started_points_total": 2211.08,
+    "started_points_by_source": {
+      "DRAFT": 1768.82,
+      "PICKUP": 345.88,
+      "TRADE": 96.38
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 80.0,
+      "PICKUP": 15.6,
+      "TRADE": 4.4
+    },
+    "started_points_by_position": {
+      "WR": 727.7,
+      "RB": 450.1,
+      "QB": 503.08,
+      "TE": 189.2,
+      "D/ST": 162.0,
+      "K": 179.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 32.9,
+      "RB": 20.4,
+      "QB": 22.8,
+      "TE": 8.6,
+      "D/ST": 7.3,
+      "K": 8.1
+    },
+    "actual_wins": 9,
+    "all_play_wins": 75,
+    "all_play_games": 154,
+    "expected_wins": 6.82,
+    "luck_index": 2.18,
+    "bad_luck_loss_weeks": [],
+    "good_luck_win_weeks": [
+      9
+    ]
+  }
+]

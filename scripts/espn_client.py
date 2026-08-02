@@ -73,6 +73,47 @@ def fetch_players_by_id(league_id, season, player_ids):
     return {p["id"]: p["player"] for p in players}
 
 
+def fetch_transactions(league_id, season):
+    """All executed transactions for a season (drafts, waiver/FA adds,
+    drops, trades). The API scopes each call to one scoringPeriodId - there
+    is no single "give me the whole season" call, so this loops weeks 0
+    (pre-season) through 18 and de-dupes by transaction id.
+    """
+    s2, swid = _load_credentials()
+    cookies = {"espn_s2": s2, "SWID": swid}
+    url = f"{BASE_URL}/seasons/{season}/segments/0/leagues/{league_id}/transactions/"
+    all_txns = {}
+    for scoring_period in range(0, 19):
+        resp = requests.get(
+            url,
+            cookies=cookies,
+            params=[("view", "mTransactions2"), ("scoringPeriodId", str(scoring_period))],
+            timeout=30,
+        )
+        if resp.status_code != 200 or not resp.text.strip():
+            continue
+        for t in resp.json():
+            all_txns[t["id"]] = t
+    return list(all_txns.values())
+
+
+def fetch_boxscore_week(league_id, season, scoring_period_id):
+    """Every team's roster (with that week's lineup slot + points scored)
+    for a single scoring period.
+    """
+    s2, swid = _load_credentials()
+    cookies = {"espn_s2": s2, "SWID": swid}
+    url = f"{BASE_URL}/seasons/{season}/segments/0/leagues/{league_id}"
+    resp = requests.get(
+        url,
+        cookies=cookies,
+        params=[("view", "mBoxscore"), ("scoringPeriodId", str(scoring_period_id))],
+        timeout=30,
+    )
+    resp.raise_for_status()
+    return resp.json()
+
+
 def fetch_player_pool(league_id, season, limit=600):
     """Bulk-fetch the top `limit` fantasy-relevant players (by ownership%),
     with full stats/projections - used to compute position rank against the
