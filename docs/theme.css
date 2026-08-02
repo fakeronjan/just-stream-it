@@ -2,10 +2,14 @@
   "Broadcast" theme - navy/chrome/teal, taken from the league logo. Used by
   the season recap and ADP pages. The keeper page stays on terminal.css - a
   deliberately different, single-purpose look for a different job (a private
-  working tool vs. a page meant to be shared around).
+  working tool vs. a page meant to be shared around), where a CRT terminal
+  going light doesn't make sense.
 
-  Single dark theme by design (matches the logo's baked-in navy background,
-  same reasoning as terminal.css not adapting to prefers-color-scheme).
+  Dark by default (matches the logo's baked-in navy background), but with a
+  real light mode behind a toggle - unreadable outdoors otherwise. Both
+  modes share the same --cat-1..6 chart colors: validated (node
+  validate_palette.js) against BOTH the dark and light surface below, so no
+  separate light-mode categorical set was needed.
 */
 :root {
   color-scheme: dark;
@@ -21,11 +25,13 @@
 
   --brand:     #2dd0d6;  /* headline/link/glow accent - the logo's brush-stroke teal */
   --brand-dim: #185a5f;
+  --brand-tint: rgba(45, 208, 214, 0.08);
 
-  /* Categorical - validated (node validate_palette.js, dark mode): all six
-     checks pass (protan/orange<->green sits in the legal 6-8 CVD floor band,
-     which is fine because every use here is paired with a direct label).
-     Fixed order, never cycled or reassigned per-filter. */
+  /* Categorical - validated (node validate_palette.js): all six checks pass
+     in both dark (surface #00030c) and light (surface #ffffff) mode
+     (protan/orange<->green sits in the legal 6-8 CVD floor band, which is
+     fine because every use here is paired with a direct label). Fixed
+     order, never cycled or reassigned per-filter. */
   --cat-1: #1c95dc;  /* blue */
   --cat-2: #f2404c;  /* red */
   --cat-3: #7c52d6;  /* purple */
@@ -35,6 +41,26 @@
 
   --good:  #2c9a58;
   --bad:   #f2404c;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg:        #f4f6f9;
+  --panel:     #ffffff;
+  --panel-2:   #edf0f5;
+  --line:      #dde2ea;
+
+  --text:      #12151c;
+  --text-dim:  #4b5566;
+  --text-mute: #6b7688;
+
+  --brand:     #086d73;
+  --brand-dim: #bfe6e8;
+  --brand-tint: rgba(8, 109, 115, 0.08);
+
+  --good:  #217a45;
+  --bad:   #c22f3a;
 }
 
 * { box-sizing: border-box; }
@@ -132,6 +158,28 @@ a:hover { text-decoration: underline; }
   padding: 32px 0 28px;
 }
 
+/* Fixed, not a header child - so it's reachable from the lock screen too
+   (readability outdoors is exactly as much a problem before login). */
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-toggle:hover { border-color: var(--brand-dim); }
+
 .site-header img.logo {
   width: 84px;
   height: 84px;
@@ -154,7 +202,7 @@ a:hover { text-decoration: underline; }
   text-transform: uppercase;
   color: var(--brand);
   border: 1px solid var(--brand-dim);
-  background: rgba(45, 208, 214, 0.08);
+  background: var(--brand-tint);
   border-radius: 999px;
   padding: 3px 10px;
   margin-bottom: 8px;
@@ -338,8 +386,7 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 }
 .bracket-team.winner { opacity: 1; }
 
-.bracket-chip-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
-.bracket-seed { font-size: 0.75rem; color: var(--text-mute); flex-shrink: 0; }
+.bracket-seed { font-size: 0.85em; font-weight: 600; color: var(--text-mute); }
 
 .bracket-score {
   font-weight: 800;
@@ -575,7 +622,6 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 .rank-list .rank-main { flex: 1; font-weight: 600; }
 .rank-list .rank-main .rank-chip-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .rank-list .rank-sub { color: var(--text-dim); font-size: 0.82rem; margin-top: 4px; }
-.rank-list .rank-sub-row { display: flex; align-items: center; gap: 6px; margin-top: 5px; flex-wrap: wrap; }
 .rank-list .rank-value { font-weight: 800; color: var(--brand); font-variant-numeric: tabular-nums; }
 
 /* Forces onto its own line within the li (flex-wrap trick) - extra detail
@@ -636,18 +682,6 @@ nav.resources a:hover { color: var(--brand); text-decoration: none; }
 }
 .flip-matchup .flip-row.flip-winner .flip-pts { color: var(--good); }
 .flip-matchup .flip-row .flip-pts { font-weight: 800; font-variant-numeric: tabular-nums; }
-
-.result-pill {
-  display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 999px;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-.result-pill.win { background: rgba(44,154,88,0.18); color: var(--good); }
-.result-pill.loss { background: rgba(242,64,76,0.18); color: var(--bad); }
 
 .round-tag {
   font-size: 0.72rem;

@@ -6,8 +6,17 @@
 <title>Just Stream It - 2025 Season Recap</title>
 <meta name="description" content="2025 season highlight reel for the Just Stream It fantasy football league - the champion's run, the season's ebbs and flows, top performances, and superlatives.">
 <link rel="stylesheet" href="theme.css">
+<script>
+(function() {
+  var saved = localStorage.getItem('jsi_theme');
+  var light = saved ? saved === 'light' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+  if (light) document.documentElement.setAttribute('data-theme', 'light');
+})();
+</script>
 </head>
 <body>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode"></button>
 
 <div id="lock-screen">
   <div class="lock-box">
@@ -51,9 +60,14 @@ function ppgHtml(ppg, total, unit) { return `${fmt1(ppg)}${unit ? ' ' + unit : '
 /* Logo + name + manager - the standard way a team is referenced anywhere
    on this page (headlines, lists, chart legend, path steps, tiles), so a
    team name is never shown bare without who runs it. */
-function teamChip(team, size) {
+/* nameSuffix/ownerSuffix ride inline in the same text line as the name or
+   owner (e.g. a seed marker, a "Week N" note) - NOT as a separate flex
+   sibling next to the whole two-line chip, which vertically centers
+   against the full chip height and lands next to the wrong line the
+   moment a team name wraps to two lines. */
+function teamChip(team, size, nameSuffix, ownerSuffix) {
   const cls = size ? `team-chip team-chip-${size}` : 'team-chip';
-  return `<span class="${cls}"><img class="chip-logo" src="${teamLogo(team)}" alt=""><span class="chip-text"><span class="chip-name">${team.name}</span><span class="chip-owner">${ownerName(team)}</span></span></span>`;
+  return `<span class="${cls}"><img class="chip-logo" src="${teamLogo(team)}" alt=""><span class="chip-text"><span class="chip-name">${team.name}${nameSuffix ? ' ' + nameSuffix : ''}</span><span class="chip-owner">${ownerName(team)}${ownerSuffix ? ' ' + ownerSuffix : ''}</span></span></span>`;
 }
 
 function matchupHtml(teamA, teamB, connector) {
@@ -225,7 +239,7 @@ function scorerListHtml(teamId, teamTopScorers, extraClass) {
 }
 
 function renderBracket(rounds) {
-  const seededChip = t => `<div class="bracket-chip-row">${teamChip(t, 'sm')}<span class="bracket-seed">(${t.playoff_seed})</span></div>`;
+  const seededChip = t => teamChip(t, 'sm', `<span class="bracket-seed">(${t.playoff_seed})</span>`);
   return `
     <div class="bracket">
       ${rounds.map(round => `
@@ -398,7 +412,7 @@ function renderTopPerformances(moments, teamsById, weeklyBoxscores) {
     <li>
       <div class="rank-main">
         <span class="pos-badge pos-${p.position}">${p.position}</span> ${p.name}
-        <div class="rank-sub-row">${teamChip(teamsById[p.team_id], 'xs')}<span class="rank-sub">&middot; Week ${p.week}</span></div>
+        <div class="rank-chip-row">${teamChip(teamsById[p.team_id], 'xs', null, `<span class="rank-sub">&middot; Week ${p.week}</span>`)}</div>
       </div>
       <div class="rank-value">${fmt1(p.points)}</div>
       ${nflHtml}
@@ -472,12 +486,19 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
     </div>
   `;
 
-  // Worst Bench Mistake: did the team win or lose that week anyway?
+  // Worst Bench Mistake: did the team win or lose that week anyway, and
+  // against whom - shown as its own line below "Bench of", not crammed
+  // into the detail text.
   const benchGame = findMatchup(matchups, benched.week, benched.team_id);
   const benchResult = benchGame ? teamResultInGame(benchGame, benched.team_id) : null;
-  const benchResultHtml = benchResult
-    ? `<span class="result-pill ${benchResult.won ? 'win' : 'loss'}">${benchResult.won ? 'Won anyway' : 'Lost'} ${fmt1(benchResult.teamScore)}-${fmt1(benchResult.oppScore)}</span>`
-    : '';
+  const benchOppId = benchGame ? (benchGame.home_team_id === benched.team_id ? benchGame.away_team_id : benchGame.home_team_id) : null;
+  const benchResultSub = benchResult && benchOppId ? `
+    <div class="tile-team-byline" style="margin-top:8px">
+      <span class="byline-label">${benchResult.won ? 'Beat' : 'Lost to'}</span>
+      ${teamChip(teamsById[benchOppId], 'sm')}
+      <span class="bracket-score" style="margin-left:auto">${fmt1(benchResult.teamScore)}-${fmt1(benchResult.oppScore)}</span>
+    </div>
+  ` : '';
 
   // Closest Game: full score (in the same team order as the matchup block,
   // not raw home/away order - those don't necessarily match) + biggest
@@ -567,9 +588,10 @@ function renderSuperlatives(moments, teamsById, matchups, weeklyBoxscores, teamA
     {
       label: 'Worst Bench Mistake',
       headline: `${benched.name} (${benched.position}) left on the bench`,
-      detail: `Week ${benched.week} ${benchResultHtml}`,
+      detail: `Week ${benched.week}`,
       value: `${fmt1(benched.points)} pts unused`,
       teamByline: { label: 'Bench of', team: teamsById[benched.team_id] },
+      sub: benchResultSub,
     },
     {
       label: 'Closest Game',
@@ -725,6 +747,23 @@ document.getElementById('auth-form').addEventListener('submit', (e) => {
 if (localStorage.getItem('jsi_auth') === 'granted') {
   loadApp();
 }
+
+function updateThemeToggleIcon() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.getElementById('theme-toggle').textContent = isLight ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+}
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jsi_theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('jsi_theme', 'light');
+  }
+  updateThemeToggleIcon();
+});
+updateThemeToggleIcon();
 </script>
 </body>
 </html>
