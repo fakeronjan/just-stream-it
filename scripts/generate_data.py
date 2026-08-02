@@ -71,11 +71,19 @@ def build_teams(league, season):
     # NOTE for future scripts: team_id is a per-season ESPN roster SLOT, not
     # a stable franchise identity - it's just "whoever holds this draft
     # position this season." The thing that actually persists across
-    # seasons is the MANAGER (owners[], i.e. ESPN member displayName). If a
+    # seasons is the MANAGER (owners[], i.e. the member's real name). If a
     # slot's ownership ever changes hands, don't attribute the outgoing
     # owner's history (team name, logo, keeper decisions) to the new one
     # based on team_id alone - compare by owners[] for cross-season identity.
-    members = {m["id"]: m["displayName"] for m in league.get("members", [])}
+    #
+    # Use firstName/lastName, not displayName - members who never set an
+    # ESPN nickname get an auto-generated placeholder there (e.g.
+    # "ESPNFAN9142563318"), which is useless as a person's name.
+    def member_name(m):
+        name = f"{m.get('firstName', '').strip()} {m.get('lastName', '').strip()}".strip()
+        return name or m["displayName"]
+
+    members = {m["id"]: member_name(m) for m in league.get("members", [])}
     teams = []
     for t in league["teams"]:
         record = t["record"]["overall"]
