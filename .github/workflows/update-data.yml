@@ -31,6 +31,13 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: python generate_data.py
 
+      - name: Build keeper guide
+        working-directory: scripts
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python build_keeper_guide.py
+
       - name: Commit and push updated data
         run: |
           git config user.name  "Just Stream It Bot"
