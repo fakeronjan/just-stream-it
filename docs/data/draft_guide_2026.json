@@ -181,6 +181,26 @@
             "keeper_cost_round_2026": 1
           }
         }
+      ],
+      "example_players": [
+        {
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "pro_team": "BAL",
+          "adjusted_rank": 1
+        },
+        {
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "pro_team": "ATL",
+          "adjusted_rank": 2
+        },
+        {
+          "name": "Puka Nacua",
+          "position": "WR",
+          "pro_team": "LAR",
+          "adjusted_rank": 3
+        }
       ]
     },
     {
@@ -329,6 +349,26 @@
           ],
           "logo": "logos/2026/10.png",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Joe Burrow",
+          "position": "QB",
+          "pro_team": "CIN",
+          "adjusted_rank": 8
+        },
+        {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "pro_team": "MIN",
+          "adjusted_rank": 9
+        },
+        {
+          "name": "Drake London",
+          "position": "WR",
+          "pro_team": "ATL",
+          "adjusted_rank": 10
         }
       ]
     },
@@ -485,6 +525,26 @@
           "logo": "logos/2026/7.jpg",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Brock Bowers",
+          "position": "TE",
+          "pro_team": "LV",
+          "adjusted_rank": 18
+        },
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "pro_team": "SF",
+          "adjusted_rank": 19
+        },
+        {
+          "name": "A.J. Brown",
+          "position": "WR",
+          "pro_team": "NE",
+          "adjusted_rank": 20
+        }
       ]
     },
     {
@@ -627,6 +687,26 @@
           ],
           "logo": "logos/2026/10.png",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "pro_team": "GB",
+          "adjusted_rank": 27
+        },
+        {
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "pro_team": "KC",
+          "adjusted_rank": 28
+        },
+        {
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "pro_team": "NO",
+          "adjusted_rank": 29
         }
       ]
     },
@@ -777,6 +857,26 @@
           "logo": "logos/2026/7.jpg",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "pro_team": "TB",
+          "adjusted_rank": 38
+        },
+        {
+          "name": "Kyler Murray",
+          "position": "QB",
+          "pro_team": "MIN",
+          "adjusted_rank": 39
+        },
+        {
+          "name": "Tyler Warren",
+          "position": "TE",
+          "pro_team": "IND",
+          "adjusted_rank": 40
+        }
       ]
     },
     {
@@ -913,6 +1013,26 @@
           ],
           "logo": "logos/2026/10.png",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "pro_team": "HOU",
+          "adjusted_rank": 48
+        },
+        {
+          "name": "Jadarian Price",
+          "position": "RB",
+          "pro_team": "SEA",
+          "adjusted_rank": 49
+        },
+        {
+          "name": "Harold Fannin Jr.",
+          "position": "TE",
+          "pro_team": "CLE",
+          "adjusted_rank": 50
         }
       ]
     },
@@ -1056,6 +1176,26 @@
           ],
           "logo": "logos/2026/7.jpg",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Parker Washington",
+          "position": "WR",
+          "pro_team": "JAX",
+          "adjusted_rank": 60
+        },
+        {
+          "name": "Alec Pierce",
+          "position": "WR",
+          "pro_team": "IND",
+          "adjusted_rank": 61
+        },
+        {
+          "name": "Jaylen Warren",
+          "position": "RB",
+          "pro_team": "PIT",
+          "adjusted_rank": 62
         }
       ]
     },
@@ -1206,6 +1346,26 @@
           "logo": "logos/2026/10.png",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Tony Pollard",
+          "position": "RB",
+          "pro_team": "TEN",
+          "adjusted_rank": 71
+        },
+        {
+          "name": "Kenny Gainwell",
+          "position": "RB",
+          "pro_team": "TB",
+          "adjusted_rank": 72
+        },
+        {
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "pro_team": "CAR",
+          "adjusted_rank": 73
+        }
       ]
     },
     {
@@ -1348,6 +1508,26 @@
           ],
           "logo": "logos/2026/7.jpg",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Sam Darnold",
+          "position": "QB",
+          "pro_team": "SEA",
+          "adjusted_rank": 81
+        },
+        {
+          "name": "Jordan Addison",
+          "position": "WR",
+          "pro_team": "MIN",
+          "adjusted_rank": 82
+        },
+        {
+          "name": "De'Zhaun Stribling",
+          "position": "WR",
+          "pro_team": "SF",
+          "adjusted_rank": 83
         }
       ]
     },
@@ -1504,6 +1684,26 @@
           "logo": "logos/2026/10.png",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Cam Ward",
+          "position": "QB",
+          "pro_team": "TEN",
+          "adjusted_rank": 92
+        },
+        {
+          "name": "Jacoby Brissett",
+          "position": "QB",
+          "pro_team": "ARI",
+          "adjusted_rank": 93
+        },
+        {
+          "name": "Xavier Worthy",
+          "position": "WR",
+          "pro_team": "KC",
+          "adjusted_rank": 94
+        }
       ]
     },
     {
@@ -1653,6 +1853,26 @@
           "logo": "logos/2026/7.jpg",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Rachaad White",
+          "position": "RB",
+          "pro_team": "WSH",
+          "adjusted_rank": 101
+        },
+        {
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "pro_team": "BUF",
+          "adjusted_rank": 102
+        },
+        {
+          "name": "T.J. Hockenson",
+          "position": "TE",
+          "pro_team": "MIN",
+          "adjusted_rank": 103
+        }
       ]
     },
     {
@@ -1795,6 +2015,26 @@
           ],
           "logo": "logos/2026/10.png",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "KC Concepcion",
+          "position": "WR",
+          "pro_team": "CLE",
+          "adjusted_rank": 111
+        },
+        {
+          "name": "Makai Lemon",
+          "position": "WR",
+          "pro_team": "PHI",
+          "adjusted_rank": 112
+        },
+        {
+          "name": "Chris Godwin Jr.",
+          "position": "WR",
+          "pro_team": "TB",
+          "adjusted_rank": 113
         }
       ]
     },
@@ -1945,6 +2185,26 @@
           "logo": "logos/2026/7.jpg",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Brian Robinson Jr.",
+          "position": "RB",
+          "pro_team": "ATL",
+          "adjusted_rank": 122
+        },
+        {
+          "name": "Geno Smith",
+          "position": "QB",
+          "pro_team": "NYJ",
+          "adjusted_rank": 123
+        },
+        {
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "pro_team": "ARI",
+          "adjusted_rank": 124
+        }
       ]
     },
     {
@@ -2094,6 +2354,26 @@
           "logo": "logos/2026/10.png",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Tre Tucker",
+          "position": "WR",
+          "pro_team": "LV",
+          "adjusted_rank": 132
+        },
+        {
+          "name": "Jalen Nailor",
+          "position": "WR",
+          "pro_team": "LV",
+          "adjusted_rank": 133
+        },
+        {
+          "name": "Keaton Mitchell",
+          "position": "RB",
+          "pro_team": "LAC",
+          "adjusted_rank": 134
+        }
       ]
     },
     {
@@ -2230,6 +2510,26 @@
           ],
           "logo": "logos/2026/7.jpg",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Texans D/ST",
+          "position": "D/ST",
+          "pro_team": "HOU",
+          "adjusted_rank": 142
+        },
+        {
+          "name": "Broncos D/ST",
+          "position": "D/ST",
+          "pro_team": "DEN",
+          "adjusted_rank": 143
+        },
+        {
+          "name": "Steelers D/ST",
+          "position": "D/ST",
+          "pro_team": "PIT",
+          "adjusted_rank": 144
         }
       ]
     },
@@ -2368,6 +2668,26 @@
           "logo": "logos/2026/10.png",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Brandon Aubrey",
+          "position": "K",
+          "pro_team": "DAL",
+          "adjusted_rank": 154
+        },
+        {
+          "name": "Cameron Dicker",
+          "position": "K",
+          "pro_team": "LAC",
+          "adjusted_rank": 155
+        },
+        {
+          "name": "Jason Myers",
+          "position": "K",
+          "pro_team": "SEA",
+          "adjusted_rank": 156
+        }
       ]
     },
     {
@@ -2504,6 +2824,26 @@
           ],
           "logo": "logos/2026/7.jpg",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Keenan Allen",
+          "position": "WR",
+          "pro_team": "IND",
+          "adjusted_rank": 166
+        },
+        {
+          "name": "Mike Washington Jr.",
+          "position": "RB",
+          "pro_team": "LV",
+          "adjusted_rank": 167
+        },
+        {
+          "name": "Braelon Allen",
+          "position": "RB",
+          "pro_team": "NYJ",
+          "adjusted_rank": 168
         }
       ]
     },
@@ -2642,6 +2982,26 @@
           "logo": "logos/2026/10.png",
           "keeper": null
         }
+      ],
+      "example_players": [
+        {
+          "name": "Jaylin Noel",
+          "position": "WR",
+          "pro_team": "HOU",
+          "adjusted_rank": 178
+        },
+        {
+          "name": "Shedeur Sanders",
+          "position": "QB",
+          "pro_team": "CLE",
+          "adjusted_rank": 179
+        },
+        {
+          "name": "Kirk Cousins",
+          "position": "QB",
+          "pro_team": "LV",
+          "adjusted_rank": 180
+        }
       ]
     },
     {
@@ -2778,6 +3138,26 @@
           ],
           "logo": "logos/2026/7.jpg",
           "keeper": null
+        }
+      ],
+      "example_players": [
+        {
+          "name": "Ollie Gordon II",
+          "position": "RB",
+          "pro_team": "MIA",
+          "adjusted_rank": 190
+        },
+        {
+          "name": "Samaje Perine",
+          "position": "RB",
+          "pro_team": "CIN",
+          "adjusted_rank": 191
+        },
+        {
+          "name": "Ty Johnson",
+          "position": "RB",
+          "pro_team": "BUF",
+          "adjusted_rank": 192
         }
       ]
     }

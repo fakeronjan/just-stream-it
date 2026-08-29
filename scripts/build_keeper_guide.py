@@ -138,9 +138,17 @@ def mark_kept_2026(guide):
         raise ValueError(f"keeper_selections_2026.json has owners with no matching team: {unmatched}")
 
 
-def build_draft_guide(guide):
+def build_draft_guide(guide, adp_unkept):
     """19-round x 12-team snake grid for the confirmed 2026 draft order,
     with each team's locked keepers pre-slotted into their cost round.
+
+    Each round also gets a few "still on the board entering this round"
+    example players, illustrative only - drawn from `adp_unkept` (already
+    filtered to exclude every kept player) by tracking how many OPEN
+    (non-keeper) picks have been consumed by prior rounds. Keeper picks
+    don't draw from this pool at all, so a round's window starts after
+    only the live picks before it - not the raw overall pick count, which
+    would overstate how deep the board has been drafted.
     """
     order_data = _load_league_rules_json("draft_order_2026.json")
     round1_order = order_data["round_1_order"]
@@ -152,17 +160,22 @@ def build_draft_guide(guide):
         raise ValueError(f"draft_order_2026.json names not found among teams: {missing}")
     teams_in_order = [by_first_name[o.lower()] for o in round1_order]
 
+    EXAMPLES_PER_ROUND = 3
     rounds = []
     overall = 0
+    open_pick_cursor = 0
     for round_num in range(1, num_rounds + 1):
         order = teams_in_order if round_num % 2 == 1 else list(reversed(teams_in_order))
         picks = []
+        num_keepers_this_round = 0
         for slot, team in enumerate(order, start=1):
             overall += 1
             keeper = next(
                 (k for k in team["locked_keepers_2026"] if k["keeper_cost_round_2026"] == round_num),
                 None,
             )
+            if keeper:
+                num_keepers_this_round += 1
             picks.append(
                 {
                     "overall_pick": overall,
@@ -174,7 +187,20 @@ def build_draft_guide(guide):
                     "keeper": keeper,
                 }
             )
-        rounds.append({"round": round_num, "picks": picks})
+
+        example_players = [
+            {
+                "name": p["name"],
+                "position": p["position"],
+                "pro_team": p["pro_team"],
+                "adjusted_rank": p["adjusted_rank"],
+            }
+            for p in adp_unkept[open_pick_cursor : open_pick_cursor + EXAMPLES_PER_ROUND]
+        ]
+        rounds.append({"round": round_num, "picks": picks, "example_players": example_players})
+
+        num_open_picks_this_round = len(order) - num_keepers_this_round
+        open_pick_cursor += num_open_picks_this_round
 
     teams_summary = []
     for team in teams_in_order:
@@ -364,10 +390,6 @@ def main():
     (DOCS_DATA / "keeper_guide_2026.json").write_text(json.dumps(guide, indent=2))
     print(f"Wrote keeper_guide_2026.json for {len(guide)} teams")
 
-    draft_guide = build_draft_guide(guide)
-    (DOCS_DATA / "draft_guide_2026.json").write_text(json.dumps(draft_guide, indent=2))
-    print(f"Wrote draft_guide_2026.json ({draft_guide['num_rounds']} rounds x {draft_guide['num_teams']} teams)")
-
     adp = []
     for pid, player in pool.items():
         ranks = player.get("draftRanksByRankType", {})
@@ -387,6 +409,19 @@ def main():
     adp.sort(key=lambda p: p["superflex_rank"])
     (DOCS_DATA / "adp_rankings.json").write_text(json.dumps(adp, indent=2))
     print(f"Wrote adp_rankings.json ({len(adp)} players)")
+
+    kept_player_ids = {
+        c["player_id"] for t in guide for c in t["candidates"] if c.get("kept_2026")
+    }
+    adp_unkept = [p for p in adp if p["player_id"] not in kept_player_ids]
+    for i, p in enumerate(adp_unkept, 1):
+        p["adjusted_rank"] = i
+    (DOCS_DATA / "adp_unkept_2026.json").write_text(json.dumps(adp_unkept, indent=2))
+    print(f"Wrote adp_unkept_2026.json ({len(adp_unkept)} players, {len(kept_player_ids)} kept players removed)")
+
+    draft_guide = build_draft_guide(guide, adp_unkept)
+    (DOCS_DATA / "draft_guide_2026.json").write_text(json.dumps(draft_guide, indent=2))
+    print(f"Wrote draft_guide_2026.json ({draft_guide['num_rounds']} rounds x {draft_guide['num_teams']} teams)")
 
 
 if __name__ == "__main__":

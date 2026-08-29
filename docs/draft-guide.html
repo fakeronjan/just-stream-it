@@ -47,13 +47,24 @@
     font-size: 0.68rem;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    text-align: center;
   }
+  /* Header team-chip: name stacked above the logo, not beside it - a
+     side-by-side chip clips against these narrow columns. */
+  table.draft-grid th .team-chip {
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+  table.draft-grid th .team-chip .chip-logo { width: 26px; height: 26px; }
   table.draft-grid td.round-col, table.draft-grid th.round-col {
     position: sticky;
     left: 0;
     background: var(--panel);
     z-index: 1;
     font-weight: 700;
+    min-width: 130px;
+    white-space: normal;
   }
   table.draft-grid th.round-col { background: var(--panel-2); z-index: 2; }
   table.draft-grid td.cell-keeper { background: var(--brand-tint); }
@@ -61,6 +72,29 @@
   table.draft-grid td.col-active { box-shadow: inset 0 0 0 2px var(--brand); }
   .cell-player { font-weight: 700; color: var(--text); }
   .cell-meta { font-size: 0.68rem; color: var(--text-mute); }
+  .round-num { font-weight: 700; }
+  .round-hint {
+    font-weight: 400;
+    font-size: 0.62rem;
+    color: var(--text-mute);
+    margin-top: 3px;
+    line-height: 1.4;
+  }
+
+  .top50-scroll { max-height: 480px; overflow-y: auto; }
+  table.top50-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.top50-table th, table.top50-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+  table.top50-table th {
+    position: sticky;
+    top: 0;
+    background: var(--panel);
+    color: var(--text-mute);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  table.top50-table td.player-cell { font-weight: 600; }
+  table.top50-table tbody tr:hover { background: var(--panel-2); }
 </style>
 <script>
 (function() {
@@ -106,6 +140,20 @@
   </div>
 
   <div class="section">
+    <div class="section-title">Top 50 available (not kept)</div>
+    <div class="card">
+      <div class="top50-scroll">
+        <table class="top50-table">
+          <thead>
+            <tr><th>Rank</th><th>Player</th><th>Pos</th><th>NFL</th></tr>
+          </thead>
+          <tbody id="top50-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
     <div class="section-title">Full draft board</div>
     <div class="card">
       <div class="table-scroll">
@@ -117,7 +165,10 @@
   <p class="subtitle" style="margin-top:20px; font-size:0.85rem; line-height:1.6;">
     Snake order per the confirmed round-1 order (also matches ESPN's own draft settings). A keeper takes
     its owner's pick automatically in its cost round - that slot never reaches the live draft board. Every
-    other cell is an open pick, to be filled in as the real draft happens.
+    other cell is an open pick, to be filled in as the real draft happens. "On board" per round and the
+    Top 50 list are both ESPN's SUPERFLEX ADP with every kept player already removed - illustrative of the
+    caliber of player still around by then, not a prediction of who'll actually be there (real drafts never
+    run in pure ADP order).
   </p>
 
 </div>
@@ -125,6 +176,7 @@
 <script>
 const PASSWORD = 'cockroach';
 let guide = null;
+let adpUnkept = null;
 let selectedTeamId = null;
 
 function posBadge(position) {
@@ -171,6 +223,18 @@ function renderTeamSummary() {
   `;
 }
 
+function renderTop50() {
+  const tbody = document.getElementById('top50-body');
+  tbody.innerHTML = adpUnkept.slice(0, 50).map(p => `
+    <tr>
+      <td>${p.adjusted_rank}</td>
+      <td class="player-cell">${p.name}</td>
+      <td>${posBadge(p.position)}</td>
+      <td>${p.pro_team}</td>
+    </tr>
+  `).join('');
+}
+
 function renderGrid() {
   const el = document.getElementById('draft-grid');
   const headerTeams = guide.rounds[0].picks.map((p, i) => ({
@@ -204,7 +268,10 @@ function renderGrid() {
       }
       return `<td class="cell-open ${activeCls}"><span class="cell-meta">open &middot; pick ${pick.overall_pick}</span></td>`;
     }).join('');
-    return `<tr><td class="round-col">${r.round}</td>${cells}</tr>`;
+    const hint = r.example_players.length
+      ? `<div class="round-hint">On board: ${r.example_players.map(e => e.name).join(', ')}</div>`
+      : '';
+    return `<tr><td class="round-col"><div class="round-num">Rd ${r.round}</div>${hint}</td>${cells}</tr>`;
   }).join('');
 
   el.innerHTML = theadHtml + `<tbody>${rowsHtml}</tbody>`;
@@ -229,8 +296,12 @@ async function loadApp() {
   if (!guide) {
     guide = await (await fetch('data/draft_guide_2026.json')).json();
   }
+  if (!adpUnkept) {
+    adpUnkept = await (await fetch('data/adp_unkept_2026.json')).json();
+  }
   renderTeamPicker();
   renderTeamSummary();
+  renderTop50();
   renderGrid();
 }
 
