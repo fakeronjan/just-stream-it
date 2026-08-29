@@ -119,6 +119,15 @@ function renderDossier() {
     warnings += `<div class="warning-box">!! Cannot keep both the round-1 and round-2 picks below - both would cost a round-1 pick, and there's only one round-1 slot.</div>`;
   }
 
+  const locked = team.locked_keepers_2026 || [];
+  const lockedBox = `
+    <div class="locked-box">
+      <p class="cmd">$ ./keepers.sh --team="${team.team_name}" --status=FINAL</p>
+      ${locked.length
+        ? `<div class="locked-row">${locked.map(k => `<span class="locked-chip">${k.name} <span class="meta-chip">Rd ${k.keeper_cost_round_2026}</span></span>`).join('')}</div>`
+        : '<div class="locked-row"><span class="none">no keepers - full draft pool, all 19 rounds open</span></div>'}
+    </div>`;
+
   const plan = team.suggested_plan;
   const planItem = (c) => `${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name} (Rd ${c.keeper_cost_round_2026}, ${keeperValueCell(c.vig)})`;
   const planRow = (label, list) => `
@@ -129,16 +138,18 @@ function renderDossier() {
         : '<span class="none">no strong option in this range - fine to let this slot go back to the draft pool</span>'}
     </div>`;
   const suggestBox = `
-    <div class="suggest-box">
-      <p class="cmd">$ ./suggest_keepers.sh --team="${team.team_name}"</p>
-      ${planRow('PREMIUM (Rd 1-2)', plan.premium)}
-      ${planRow('MID (Rd 3-6)', plan.mid)}
-      ${planRow('VALUE (Rd 7+)', plan.value)}
-    </div>`;
+    <details class="suggest-details">
+      <summary>Pre-decision suggested plan (for reference - keepers above are final)</summary>
+      <div class="suggest-box">
+        ${planRow('PREMIUM (Rd 1-2)', plan.premium)}
+        ${planRow('MID (Rd 3-6)', plan.mid)}
+        ${planRow('VALUE (Rd 7+)', plan.value)}
+      </div>
+    </details>`;
 
   const rows = team.candidates.map(c => `
-    <tr>
-      <td class="player-cell">${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
+    <tr class="${c.kept_2026 ? 'is-kept' : ''}">
+      <td class="player-cell">${c.kept_2026 ? '<span class="kept-tag">KEPT</span> ' : ''}${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
       <td>Round ${c.keeper_cost_round_2026}${c.is_first_round_pick ? ' <span class="meta-chip">(+1 slot)</span>' : ''}</td>
       <td>${keeperValueCell(c.vig)}</td>
       <td>${c.drafted_pick_2025} <span class="meta-chip">(#${c.drafted_overall_2025})</span></td>
@@ -169,6 +180,7 @@ function renderDossier() {
     </div>
 
     ${warnings}
+    ${lockedBox}
     ${suggestBox}
 
     <div class="table-scroll">
@@ -206,6 +218,7 @@ async function loadApp() {
   const meta = await (await fetch('data/meta.json')).json();
   const resources = [
     { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
+    { label: 'Draft Guide', href: 'draft-guide.html', external: false },
     { label: 'ADP Rankings', href: 'adp.html', external: false },
     { label: '2025 Season Recap', href: 'season-2025.html', external: false },
     { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },

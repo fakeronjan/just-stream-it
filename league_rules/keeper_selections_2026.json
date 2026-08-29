@@ -1,0 +1,15 @@
+{
+  "_comment": "Final 2026 keeper picks, transcribed from 'Just Stream It Keeper Board.xlsx' (2026 Keepers tab) after all owners locked in. Player names here are normalized to match the exact 'name' field in keeper_guide_2026.json candidates (a few source-sheet spellings/suffixes were corrected: Kyle Pitts -> Kyle Pitts Sr., James Cook -> James Cook III, Cam Skateboo -> Cam Skattebo, Ja'mar Chase -> Ja'Marr Chase). Keyed by owner first name, matching build_keeper_guide.py's owner_first_name() derivation.",
+  "Karl": [],
+  "Kris": ["Quinshon Judkins", "Tyler Shough"],
+  "Lisette": ["Christian McCaffrey", "Bo Nix", "Tetairoa McMillan"],
+  "Ronjan": ["Jahmyr Gibbs", "Trevor Lawrence"],
+  "Ben": ["Kenneth Walker III", "Emeka Egbuka", "Colston Loveland"],
+  "Joe": ["Jaxon Smith-Njigba", "Chris Olave", "Javonte Williams"],
+  "Mariss": ["Wan'Dale Robinson", "Cam Skattebo"],
+  "Pete": ["Josh Allen", "Trey McBride"],
+  "Imran": ["Daniel Jones", "Kyle Pitts Sr.", "Luther Burden III"],
+  "Cara": ["Jonathan Taylor", "Drake Maye", "Matthew Stafford"],
+  "Melinda": ["Ja'Marr Chase", "James Cook III"],
+  "Mike": ["Jayden Daniels", "Jaxson Dart"]
+}

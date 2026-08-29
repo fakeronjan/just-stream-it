@@ -1,0 +1,3320 @@
+{
+  "num_rounds": 19,
+  "num_teams": 12,
+  "round_1_order": [
+    "Karl",
+    "Kris",
+    "Lisette",
+    "Ronjan",
+    "Ben",
+    "Joe",
+    "Mariss",
+    "Pete",
+    "Imran",
+    "Cara",
+    "Melinda",
+    "Mike"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "picks": [
+        {
+          "overall_pick": 1,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 2,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 3,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": {
+            "player_id": 3117251,
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "pro_team": "SF",
+            "keeper_cost_round_2026": 1
+          }
+        },
+        {
+          "overall_pick": 4,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": {
+            "player_id": 4429795,
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "pro_team": "DET",
+            "keeper_cost_round_2026": 1
+          }
+        },
+        {
+          "overall_pick": 5,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 6,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 7,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 8,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": {
+            "player_id": 3918298,
+            "name": "Josh Allen",
+            "position": "QB",
+            "pro_team": "BUF",
+            "keeper_cost_round_2026": 1
+          }
+        },
+        {
+          "overall_pick": 9,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 10,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 11,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": {
+            "player_id": 4362628,
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "pro_team": "CIN",
+            "keeper_cost_round_2026": 1
+          }
+        },
+        {
+          "overall_pick": 12,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": {
+            "player_id": 4426348,
+            "name": "Jayden Daniels",
+            "position": "QB",
+            "pro_team": "WSH",
+            "keeper_cost_round_2026": 1
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "picks": [
+        {
+          "overall_pick": 13,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 14,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 15,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": {
+            "player_id": 4242335,
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "pro_team": "IND",
+            "keeper_cost_round_2026": 2
+          }
+        },
+        {
+          "overall_pick": 16,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 17,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 18,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 19,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 20,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 21,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 22,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": {
+            "player_id": 4426338,
+            "name": "Bo Nix",
+            "position": "QB",
+            "pro_team": "DEN",
+            "keeper_cost_round_2026": 2
+          }
+        },
+        {
+          "overall_pick": 23,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 24,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "picks": [
+        {
+          "overall_pick": 25,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 26,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 27,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 28,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 29,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 30,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 31,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 32,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": {
+            "player_id": 4361307,
+            "name": "Trey McBride",
+            "position": "TE",
+            "pro_team": "ARI",
+            "keeper_cost_round_2026": 3
+          }
+        },
+        {
+          "overall_pick": 33,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 34,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": {
+            "player_id": 4431452,
+            "name": "Drake Maye",
+            "position": "QB",
+            "pro_team": "NE",
+            "keeper_cost_round_2026": 3
+          }
+        },
+        {
+          "overall_pick": 35,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": {
+            "player_id": 4379399,
+            "name": "James Cook III",
+            "position": "RB",
+            "pro_team": "BUF",
+            "keeper_cost_round_2026": 3
+          }
+        },
+        {
+          "overall_pick": 36,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "picks": [
+        {
+          "overall_pick": 37,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 38,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 39,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 40,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 41,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 42,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 43,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": {
+            "player_id": 4430878,
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "pro_team": "SEA",
+            "keeper_cost_round_2026": 4
+          }
+        },
+        {
+          "overall_pick": 44,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 45,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 46,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 47,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 48,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "picks": [
+        {
+          "overall_pick": 49,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 50,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 51,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 52,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": {
+            "player_id": 4360310,
+            "name": "Trevor Lawrence",
+            "position": "QB",
+            "pro_team": "JAX",
+            "keeper_cost_round_2026": 5
+          }
+        },
+        {
+          "overall_pick": 53,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": {
+            "player_id": 4567048,
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "pro_team": "KC",
+            "keeper_cost_round_2026": 5
+          }
+        },
+        {
+          "overall_pick": 54,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 55,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 56,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 57,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 58,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 59,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 60,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "picks": [
+        {
+          "overall_pick": 61,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 62,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 63,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 64,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 65,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 66,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 67,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 68,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 69,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 70,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 71,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 72,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "picks": [
+        {
+          "overall_pick": 73,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 74,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 75,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": {
+            "player_id": 4685472,
+            "name": "Tetairoa McMillan",
+            "position": "WR",
+            "pro_team": "CAR",
+            "keeper_cost_round_2026": 7
+          }
+        },
+        {
+          "overall_pick": 76,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 77,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 78,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 79,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 80,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 81,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 82,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 83,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 84,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "picks": [
+        {
+          "overall_pick": 85,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 86,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 87,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 88,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 89,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 90,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 91,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": {
+            "player_id": 4361370,
+            "name": "Chris Olave",
+            "position": "WR",
+            "pro_team": "NO",
+            "keeper_cost_round_2026": 8
+          }
+        },
+        {
+          "overall_pick": 92,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": {
+            "player_id": 4567750,
+            "name": "Emeka Egbuka",
+            "position": "WR",
+            "pro_team": "TB",
+            "keeper_cost_round_2026": 8
+          }
+        },
+        {
+          "overall_pick": 93,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 94,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 95,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 96,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "picks": [
+        {
+          "overall_pick": 97,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 98,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": {
+            "player_id": 4685702,
+            "name": "Quinshon Judkins",
+            "position": "RB",
+            "pro_team": "CLE",
+            "keeper_cost_round_2026": 9
+          }
+        },
+        {
+          "overall_pick": 99,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 100,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 101,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 102,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 103,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 104,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 105,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 106,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 107,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 108,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "picks": [
+        {
+          "overall_pick": 109,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 110,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 111,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": {
+            "player_id": 12483,
+            "name": "Matthew Stafford",
+            "position": "QB",
+            "pro_team": "LAR",
+            "keeper_cost_round_2026": 10
+          }
+        },
+        {
+          "overall_pick": 112,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 113,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 114,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": {
+            "player_id": 4696981,
+            "name": "Cam Skattebo",
+            "position": "RB",
+            "pro_team": "NYG",
+            "keeper_cost_round_2026": 10
+          }
+        },
+        {
+          "overall_pick": 115,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 116,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": {
+            "player_id": 4723086,
+            "name": "Colston Loveland",
+            "position": "TE",
+            "pro_team": "CHI",
+            "keeper_cost_round_2026": 10
+          }
+        },
+        {
+          "overall_pick": 117,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 118,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 119,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 120,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "picks": [
+        {
+          "overall_pick": 121,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 122,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 123,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 124,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 125,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 126,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": {
+            "player_id": 4361579,
+            "name": "Javonte Williams",
+            "position": "RB",
+            "pro_team": "DAL",
+            "keeper_cost_round_2026": 11
+          }
+        },
+        {
+          "overall_pick": 127,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 128,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 129,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": {
+            "player_id": 3917792,
+            "name": "Daniel Jones",
+            "position": "QB",
+            "pro_team": "IND",
+            "keeper_cost_round_2026": 11
+          }
+        },
+        {
+          "overall_pick": 130,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 131,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 132,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "picks": [
+        {
+          "overall_pick": 133,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": {
+            "player_id": 4689114,
+            "name": "Jaxson Dart",
+            "position": "QB",
+            "pro_team": "NYG",
+            "keeper_cost_round_2026": 12
+          }
+        },
+        {
+          "overall_pick": 134,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 135,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 136,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 137,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 138,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 139,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 140,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 141,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 142,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 143,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 144,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "picks": [
+        {
+          "overall_pick": 145,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 146,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": {
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "pro_team": "NO",
+            "keeper_cost_round_2026": 13
+          }
+        },
+        {
+          "overall_pick": 147,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 148,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 149,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 150,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 151,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 152,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 153,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": {
+            "player_id": 4360248,
+            "name": "Kyle Pitts Sr.",
+            "position": "TE",
+            "pro_team": "ATL",
+            "keeper_cost_round_2026": 13
+          }
+        },
+        {
+          "overall_pick": 154,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 155,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 156,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "picks": [
+        {
+          "overall_pick": 157,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 158,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 159,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 160,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": {
+            "player_id": 4685278,
+            "name": "Luther Burden III",
+            "position": "WR",
+            "pro_team": "CHI",
+            "keeper_cost_round_2026": 14
+          }
+        },
+        {
+          "overall_pick": 161,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 162,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": {
+            "player_id": 4569587,
+            "name": "Wan'Dale Robinson",
+            "position": "WR",
+            "pro_team": "TEN",
+            "keeper_cost_round_2026": 14
+          }
+        },
+        {
+          "overall_pick": 163,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 164,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 165,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 166,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 167,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 168,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "picks": [
+        {
+          "overall_pick": 169,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 170,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 171,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 172,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 173,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 174,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 175,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 176,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 177,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 178,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 179,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 180,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "picks": [
+        {
+          "overall_pick": 181,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 182,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 183,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 184,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 185,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 186,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 187,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 188,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 189,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 190,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 191,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 192,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 17,
+      "picks": [
+        {
+          "overall_pick": 193,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 194,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 195,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 196,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 197,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 198,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 199,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 200,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 201,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 202,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 203,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 204,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 18,
+      "picks": [
+        {
+          "overall_pick": 205,
+          "slot_in_round": 1,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 206,
+          "slot_in_round": 2,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 207,
+          "slot_in_round": 3,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 208,
+          "slot_in_round": 4,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 209,
+          "slot_in_round": 5,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 210,
+          "slot_in_round": 6,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 211,
+          "slot_in_round": 7,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 212,
+          "slot_in_round": 8,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 213,
+          "slot_in_round": 9,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 214,
+          "slot_in_round": 10,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 215,
+          "slot_in_round": 11,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 216,
+          "slot_in_round": 12,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        }
+      ]
+    },
+    {
+      "round": 19,
+      "picks": [
+        {
+          "overall_pick": 217,
+          "slot_in_round": 1,
+          "team_id": 10,
+          "team_name": "Baker's Dirty Dozen",
+          "owners": [
+            "Karlos Abel"
+          ],
+          "logo": "logos/2026/10.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 218,
+          "slot_in_round": 2,
+          "team_id": 11,
+          "team_name": "Keep 'em and weep",
+          "owners": [
+            "Kris Wikstrom"
+          ],
+          "logo": "logos/2026/11.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 219,
+          "slot_in_round": 3,
+          "team_id": 6,
+          "team_name": "Mahomes is where the heart is \u2764",
+          "owners": [
+            "Lisette Bruens"
+          ],
+          "logo": "logos/2026/6.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 220,
+          "slot_in_round": 4,
+          "team_id": 9,
+          "team_name": "McConkey Kong Country",
+          "owners": [
+            "Ronjan Sikdar"
+          ],
+          "logo": "logos/2026/9.png",
+          "keeper": null
+        },
+        {
+          "overall_pick": 221,
+          "slot_in_round": 5,
+          "team_id": 4,
+          "team_name": "Conquering Heroes",
+          "owners": [
+            "Ben Porter"
+          ],
+          "logo": "logos/2026/4.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 222,
+          "slot_in_round": 6,
+          "team_id": 8,
+          "team_name": "Daddy Nielsen ",
+          "owners": [
+            "Joseph Sebranek"
+          ],
+          "logo": "logos/2026/8.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 223,
+          "slot_in_round": 7,
+          "team_id": 2,
+          "team_name": "Mednis Madness",
+          "owners": [
+            "mariss mednis"
+          ],
+          "logo": "logos/2026/2.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 224,
+          "slot_in_round": 8,
+          "team_id": 3,
+          "team_name": "Illusions Michael",
+          "owners": [
+            "Pete Gallagher"
+          ],
+          "logo": "logos/2026/3.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 225,
+          "slot_in_round": 9,
+          "team_id": 1,
+          "team_name": "Lamar and Drake's Grahamy's",
+          "owners": [
+            "Imran Hirani"
+          ],
+          "logo": "logos/2026/1.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 226,
+          "slot_in_round": 10,
+          "team_id": 5,
+          "team_name": "Team Kantastrophe",
+          "owners": [
+            "Cara Kantrowitz"
+          ],
+          "logo": "logos/2026/5.svg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 227,
+          "slot_in_round": 11,
+          "team_id": 12,
+          "team_name": "Buffalo Abusement Park",
+          "owners": [
+            "Melinda Thomas"
+          ],
+          "logo": "logos/2026/12.jpg",
+          "keeper": null
+        },
+        {
+          "overall_pick": 228,
+          "slot_in_round": 12,
+          "team_id": 7,
+          "team_name": "Terrible Towels",
+          "owners": [
+            "Michael Higgins"
+          ],
+          "logo": "logos/2026/7.jpg",
+          "keeper": null
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "team_id": 10,
+      "team_name": "Baker's Dirty Dozen",
+      "owners": [
+        "Karlos Abel"
+      ],
+      "logo": "logos/2026/10.png",
+      "locked_keepers_2026": [],
+      "open_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 11,
+      "team_name": "Keep 'em and weep",
+      "owners": [
+        "Kris Wikstrom"
+      ],
+      "logo": "logos/2026/11.png",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4685702,
+          "name": "Quinshon Judkins",
+          "position": "RB",
+          "pro_team": "CLE",
+          "keeper_cost_round_2026": 9
+        },
+        {
+          "player_id": 4360689,
+          "name": "Tyler Shough",
+          "position": "QB",
+          "pro_team": "NO",
+          "keeper_cost_round_2026": 13
+        }
+      ],
+      "open_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 6,
+      "team_name": "Mahomes is where the heart is \u2764",
+      "owners": [
+        "Lisette Bruens"
+      ],
+      "logo": "logos/2026/6.jpg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 3117251,
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "pro_team": "SF",
+          "keeper_cost_round_2026": 1
+        },
+        {
+          "player_id": 4426338,
+          "name": "Bo Nix",
+          "position": "QB",
+          "pro_team": "DEN",
+          "keeper_cost_round_2026": 2
+        },
+        {
+          "player_id": 4685472,
+          "name": "Tetairoa McMillan",
+          "position": "WR",
+          "pro_team": "CAR",
+          "keeper_cost_round_2026": 7
+        }
+      ],
+      "open_rounds": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 9,
+      "team_name": "McConkey Kong Country",
+      "owners": [
+        "Ronjan Sikdar"
+      ],
+      "logo": "logos/2026/9.png",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4429795,
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "pro_team": "DET",
+          "keeper_cost_round_2026": 1
+        },
+        {
+          "player_id": 4360310,
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "pro_team": "JAX",
+          "keeper_cost_round_2026": 5
+        }
+      ],
+      "open_rounds": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 4,
+      "team_name": "Conquering Heroes",
+      "owners": [
+        "Ben Porter"
+      ],
+      "logo": "logos/2026/4.jpg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4567048,
+          "name": "Kenneth Walker III",
+          "position": "RB",
+          "pro_team": "KC",
+          "keeper_cost_round_2026": 5
+        },
+        {
+          "player_id": 4567750,
+          "name": "Emeka Egbuka",
+          "position": "WR",
+          "pro_team": "TB",
+          "keeper_cost_round_2026": 8
+        },
+        {
+          "player_id": 4723086,
+          "name": "Colston Loveland",
+          "position": "TE",
+          "pro_team": "CHI",
+          "keeper_cost_round_2026": 10
+        }
+      ],
+      "open_rounds": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 8,
+      "team_name": "Daddy Nielsen ",
+      "owners": [
+        "Joseph Sebranek"
+      ],
+      "logo": "logos/2026/8.svg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4430878,
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "pro_team": "SEA",
+          "keeper_cost_round_2026": 4
+        },
+        {
+          "player_id": 4361370,
+          "name": "Chris Olave",
+          "position": "WR",
+          "pro_team": "NO",
+          "keeper_cost_round_2026": 8
+        },
+        {
+          "player_id": 4361579,
+          "name": "Javonte Williams",
+          "position": "RB",
+          "pro_team": "DAL",
+          "keeper_cost_round_2026": 11
+        }
+      ],
+      "open_rounds": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 2,
+      "team_name": "Mednis Madness",
+      "owners": [
+        "mariss mednis"
+      ],
+      "logo": "logos/2026/2.svg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4696981,
+          "name": "Cam Skattebo",
+          "position": "RB",
+          "pro_team": "NYG",
+          "keeper_cost_round_2026": 10
+        },
+        {
+          "player_id": 4569587,
+          "name": "Wan'Dale Robinson",
+          "position": "WR",
+          "pro_team": "TEN",
+          "keeper_cost_round_2026": 14
+        }
+      ],
+      "open_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 3,
+      "team_name": "Illusions Michael",
+      "owners": [
+        "Pete Gallagher"
+      ],
+      "logo": "logos/2026/3.jpg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 3918298,
+          "name": "Josh Allen",
+          "position": "QB",
+          "pro_team": "BUF",
+          "keeper_cost_round_2026": 1
+        },
+        {
+          "player_id": 4361307,
+          "name": "Trey McBride",
+          "position": "TE",
+          "pro_team": "ARI",
+          "keeper_cost_round_2026": 3
+        }
+      ],
+      "open_rounds": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 1,
+      "team_name": "Lamar and Drake's Grahamy's",
+      "owners": [
+        "Imran Hirani"
+      ],
+      "logo": "logos/2026/1.jpg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 3917792,
+          "name": "Daniel Jones",
+          "position": "QB",
+          "pro_team": "IND",
+          "keeper_cost_round_2026": 11
+        },
+        {
+          "player_id": 4360248,
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "pro_team": "ATL",
+          "keeper_cost_round_2026": 13
+        },
+        {
+          "player_id": 4685278,
+          "name": "Luther Burden III",
+          "position": "WR",
+          "pro_team": "CHI",
+          "keeper_cost_round_2026": 14
+        }
+      ],
+      "open_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 5,
+      "team_name": "Team Kantastrophe",
+      "owners": [
+        "Cara Kantrowitz"
+      ],
+      "logo": "logos/2026/5.svg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4242335,
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "pro_team": "IND",
+          "keeper_cost_round_2026": 2
+        },
+        {
+          "player_id": 4431452,
+          "name": "Drake Maye",
+          "position": "QB",
+          "pro_team": "NE",
+          "keeper_cost_round_2026": 3
+        },
+        {
+          "player_id": 12483,
+          "name": "Matthew Stafford",
+          "position": "QB",
+          "pro_team": "LAR",
+          "keeper_cost_round_2026": 10
+        }
+      ],
+      "open_rounds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 12,
+      "team_name": "Buffalo Abusement Park",
+      "owners": [
+        "Melinda Thomas"
+      ],
+      "logo": "logos/2026/12.jpg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4362628,
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "pro_team": "CIN",
+          "keeper_cost_round_2026": 1
+        },
+        {
+          "player_id": 4379399,
+          "name": "James Cook III",
+          "position": "RB",
+          "pro_team": "BUF",
+          "keeper_cost_round_2026": 3
+        }
+      ],
+      "open_rounds": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "team_id": 7,
+      "team_name": "Terrible Towels",
+      "owners": [
+        "Michael Higgins"
+      ],
+      "logo": "logos/2026/7.jpg",
+      "locked_keepers_2026": [
+        {
+          "player_id": 4426348,
+          "name": "Jayden Daniels",
+          "position": "QB",
+          "pro_team": "WSH",
+          "keeper_cost_round_2026": 1
+        },
+        {
+          "player_id": 4689114,
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "pro_team": "NYG",
+          "keeper_cost_round_2026": 12
+        }
+      ],
+      "open_rounds": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ]
+}

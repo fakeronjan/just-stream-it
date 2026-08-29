@@ -1,0 +1,8 @@
+{
+  "_comment": "Confirmed 2026 snake draft order (round 1 pick order, owner first names). Cross-checked against ESPN's own draftSettings.pickOrder for the league - matches exactly.",
+  "round_1_order": [
+    "Karl", "Kris", "Lisette", "Ronjan", "Ben", "Joe",
+    "Mariss", "Pete", "Imran", "Cara", "Melinda", "Mike"
+  ],
+  "num_rounds": 19
+}

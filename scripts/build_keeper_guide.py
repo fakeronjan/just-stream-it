@@ -43,7 +43,21 @@ from espn_client import fetch_player_pool, fetch_players_by_id
 from espn_maps import POSITION_MAP, PRO_TEAM_MAP
 
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
+LEAGUE_RULES = Path(__file__).parent.parent / "league_rules"
 NUM_TEAMS = 12
+
+# A couple of owners go by a nickname in league chatter/spreadsheets that
+# isn't their ESPN account's first name.
+OWNER_NICKNAMES = {
+    "Michael Higgins": "Mike",
+    "Joseph Sebranek": "Joe",
+    "Karlos Abel": "Karl",
+}
+
+
+def owner_first_name(owners):
+    full = owners[0] if owners else ""
+    return OWNER_NICKNAMES.get(full, full.split()[0])
 
 
 def load(season, name):
@@ -70,6 +84,119 @@ def get_points(player, stat_source_id, season_id):
         ):
             return s.get("appliedTotal")
     return None
+
+
+def _load_league_rules_json(name):
+    data = json.loads((LEAGUE_RULES / name).read_text())
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def mark_kept_2026(guide):
+    """Stamp `kept_2026` onto each candidate and a `locked_keepers_2026`
+    summary onto each team, from league_rules/keeper_selections_2026.json
+    (the finalized picks, transcribed from the keeper board spreadsheet
+    once everyone locked in - not derivable from the ESPN API).
+    """
+    selections = {k.lower(): v for k, v in _load_league_rules_json("keeper_selections_2026.json").items()}
+
+    matched = set()
+    for team in guide:
+        first = owner_first_name(team["owners"])
+        kept_names = selections.get(first.lower())
+        if kept_names is None:
+            raise ValueError(
+                f"No keeper_selections_2026.json entry for owner '{first}' (team {team['team_name']!r})"
+            )
+        matched.add(first.lower())
+
+        by_name = {c["name"]: c for c in team["candidates"]}
+        locked = []
+        for name in kept_names:
+            cand = by_name.get(name)
+            if cand is None:
+                raise ValueError(
+                    f"{first}: keeper selection {name!r} not found among "
+                    f"{team['team_name']!r}'s candidates - check for a name mismatch"
+                )
+            cand["kept_2026"] = True
+            locked.append(
+                {
+                    "player_id": cand["player_id"],
+                    "name": cand["name"],
+                    "position": cand["position"],
+                    "pro_team": cand["pro_team"],
+                    "keeper_cost_round_2026": cand["keeper_cost_round_2026"],
+                }
+            )
+        for c in team["candidates"]:
+            c.setdefault("kept_2026", False)
+        locked.sort(key=lambda k: k["keeper_cost_round_2026"])
+        team["locked_keepers_2026"] = locked
+
+    unmatched = set(selections) - matched
+    if unmatched:
+        raise ValueError(f"keeper_selections_2026.json has owners with no matching team: {unmatched}")
+
+
+def build_draft_guide(guide):
+    """19-round x 12-team snake grid for the confirmed 2026 draft order,
+    with each team's locked keepers pre-slotted into their cost round.
+    """
+    order_data = _load_league_rules_json("draft_order_2026.json")
+    round1_order = order_data["round_1_order"]
+    num_rounds = order_data["num_rounds"]
+
+    by_first_name = {owner_first_name(t["owners"]).lower(): t for t in guide}
+    missing = [o for o in round1_order if o.lower() not in by_first_name]
+    if missing:
+        raise ValueError(f"draft_order_2026.json names not found among teams: {missing}")
+    teams_in_order = [by_first_name[o.lower()] for o in round1_order]
+
+    rounds = []
+    overall = 0
+    for round_num in range(1, num_rounds + 1):
+        order = teams_in_order if round_num % 2 == 1 else list(reversed(teams_in_order))
+        picks = []
+        for slot, team in enumerate(order, start=1):
+            overall += 1
+            keeper = next(
+                (k for k in team["locked_keepers_2026"] if k["keeper_cost_round_2026"] == round_num),
+                None,
+            )
+            picks.append(
+                {
+                    "overall_pick": overall,
+                    "slot_in_round": slot,
+                    "team_id": team["team_id"],
+                    "team_name": team["team_name"],
+                    "owners": team["owners"],
+                    "logo": team.get("logo"),
+                    "keeper": keeper,
+                }
+            )
+        rounds.append({"round": round_num, "picks": picks})
+
+    teams_summary = []
+    for team in teams_in_order:
+        kept_rounds = {k["keeper_cost_round_2026"] for k in team["locked_keepers_2026"]}
+        teams_summary.append(
+            {
+                "team_id": team["team_id"],
+                "team_name": team["team_name"],
+                "owners": team["owners"],
+                "logo": team.get("logo"),
+                "locked_keepers_2026": team["locked_keepers_2026"],
+                "open_rounds": [r for r in range(1, num_rounds + 1) if r not in kept_rounds],
+            }
+        )
+
+    return {
+        "num_rounds": num_rounds,
+        "num_teams": len(teams_in_order),
+        "round_1_order": round1_order,
+        "rounds": rounds,
+        "teams": teams_summary,
+    }
 
 
 def main():
@@ -231,9 +358,15 @@ def main():
             }
         )
 
+    mark_kept_2026(guide)
+
     guide.sort(key=lambda g: " & ".join(g["owners"]))
     (DOCS_DATA / "keeper_guide_2026.json").write_text(json.dumps(guide, indent=2))
     print(f"Wrote keeper_guide_2026.json for {len(guide)} teams")
+
+    draft_guide = build_draft_guide(guide)
+    (DOCS_DATA / "draft_guide_2026.json").write_text(json.dumps(draft_guide, indent=2))
+    print(f"Wrote draft_guide_2026.json ({draft_guide['num_rounds']} rounds x {draft_guide['num_teams']} teams)")
 
     adp = []
     for pid, player in pool.items():
