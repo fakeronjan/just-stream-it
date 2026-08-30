@@ -92,7 +92,7 @@
   }
   .adp-line .pos-badge { transform: scale(0.85); transform-origin: left center; }
 
-  .top200-scroll { max-height: 480px; overflow-y: auto; }
+  .top200-scroll { max-height: 480px; overflow-y: auto; overflow-x: auto; }
   table.top200-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
   table.top200-table th, table.top200-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
   table.top200-table th {
@@ -164,7 +164,7 @@
       <div class="top200-scroll">
         <table class="top200-table">
           <thead>
-            <tr><th>Rank</th><th>Player</th><th>Pos</th><th>NFL</th></tr>
+            <tr><th>Rank</th><th>Player</th><th>Pos</th><th>Pos Rank</th><th>NFL</th></tr>
           </thead>
           <tbody id="top200-body"></tbody>
         </table>
@@ -189,7 +189,33 @@
 const PASSWORD = 'cockroach';
 let guide = null;
 let adpUnkept = null;
+let posRankById = null;
 let selectedTeamId = null;
+
+// Position rank among the FULL player pool - kept players included - so
+// e.g. a WR's "position rank" accounts for every kept WR ranked above them,
+// even though kept players don't appear as rows in the available-players
+// table below. keeperGuide is only used for this (position + ADP rank of
+// the 27 kept players); everything else on this page already comes from
+// adpUnkept, which excludes them.
+function computePositionRanks(unkept, keeperGuide) {
+  const kept = keeperGuide
+    .flatMap(team => team.candidates)
+    .filter(c => c.kept_2026)
+    .map(c => ({ id: c.player_id, position: c.position, rank: c.adp_superflex_rank }));
+  const pool = unkept
+    .map(p => ({ id: p.player_id, position: p.position, rank: p.superflex_rank }))
+    .concat(kept)
+    .sort((a, b) => a.rank - b.rank);
+
+  const counts = {};
+  const byId = {};
+  for (const p of pool) {
+    counts[p.position] = (counts[p.position] || 0) + 1;
+    byId[p.id] = counts[p.position];
+  }
+  return byId;
+}
 
 function posBadge(position) {
   return `<span class="pos-badge pos-${position}">${position}</span>`;
@@ -242,6 +268,7 @@ function renderTop50() {
       <td>${p.adjusted_rank}</td>
       <td class="player-cell">${p.name}</td>
       <td>${posBadge(p.position)}</td>
+      <td>${posRankById[p.player_id] ?? '-'}</td>
       <td>${p.pro_team}</td>
     </tr>
   `).join('');
@@ -304,6 +331,10 @@ async function loadApp() {
   }
   if (!adpUnkept) {
     adpUnkept = await (await fetch('data/adp_unkept_2026.json')).json();
+  }
+  if (!posRankById) {
+    const keeperGuide = await (await fetch('data/keeper_guide_2026.json')).json();
+    posRankById = computePositionRanks(adpUnkept, keeperGuide);
   }
   renderTeamPicker();
   renderTeamSummary();
