@@ -19,10 +19,10 @@ const NAV_EXTERNAL = [
 function renderNav(currentKey, leagueId) {
   const internal = NAV_INTERNAL.map(item =>
     `<a href="${item.href}"${item.key === currentKey ? ' class="active"' : ''}>${item.label}</a>`
-  ).join('');
+  );
   const external = NAV_EXTERNAL.map(item => {
     const href = item.hrefFn ? item.hrefFn(leagueId) : item.href;
     return `<a href="${href}" target="_blank" rel="noopener">${item.label}<span class="nav-arrow">&#8599;</span></a>`;
-  }).join('');
-  return internal + external;
+  });
+  return [...internal, ...external].join('<span class="nav-sep">&middot;</span>');
 }
