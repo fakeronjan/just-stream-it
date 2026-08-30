@@ -138,6 +138,55 @@ def mark_kept_2026(guide):
         raise ValueError(f"keeper_selections_2026.json has owners with no matching team: {unmatched}")
 
 
+ADP_CONTEXT_SKILL_POSITIONS = {"QB", "RB", "WR", "TE"}
+ADP_CONTEXT_SIZE = 5
+ADP_CONTEXT_MIN_POSITIONS = 3
+ADP_CONTEXT_LOOKAHEAD = 20
+
+
+def _pick_adp_context(pool, cursor):
+    """The `ADP_CONTEXT_SIZE` players shown for one open pick, biased to
+    cover at least `ADP_CONTEXT_MIN_POSITIONS` distinct skill positions
+    rather than whatever the next N players by rank happen to be - a run
+    of same-position ADP neighbors (common; RBs and WRs both go in
+    streaks) would otherwise show a pick's context as e.g. 5 straight
+    WRs, which undersells how open that pick actually is.
+
+    Only QB/RB/WR/TE count toward the position-diversity floor. K/D-ST
+    intentionally don't: real ~2026 ADP data has a hard ~60-player dead
+    zone (rank ~142-205) that's ALL 32 D/ST then ALL kickers, zero
+    skill positions in between - counting those toward diversity would
+    make the floor trivially satisfiable there without actually
+    reflecting draftable variety.
+
+    For the ~12% of picks whose lookahead window has no way to reach 3
+    skill positions (that same dead zone, landing around rounds 14-17
+    of this draft) there's no good answer - showing a WR ranked 200
+    spots below the window just to hit a quota would be a worse
+    suggestion than an honest "here's what's actually next", so this
+    falls back to a plain next-N-by-rank slice for exactly those picks.
+    """
+    window = pool[cursor : cursor + ADP_CONTEXT_LOOKAHEAD]
+
+    secured = []
+    seen_positions = set()
+    for p in window:
+        if p["position"] in ADP_CONTEXT_SKILL_POSITIONS and p["position"] not in seen_positions:
+            secured.append(p)
+            seen_positions.add(p["position"])
+        if len(seen_positions) >= ADP_CONTEXT_MIN_POSITIONS:
+            break
+
+    if len(seen_positions) < ADP_CONTEXT_MIN_POSITIONS:
+        return window[:ADP_CONTEXT_SIZE]
+
+    secured_ids = {p["player_id"] for p in secured}
+    fill = [p for p in window if p["player_id"] not in secured_ids][: ADP_CONTEXT_SIZE - len(secured)]
+    chosen = secured + fill
+    chosen.sort(key=lambda p: p["adjusted_rank"])
+    return chosen
+
+
 def build_draft_guide(guide, adp_unkept):
     """19-round x 12-team snake grid for the confirmed 2026 draft order,
     with each team's locked keepers pre-slotted into their cost round.
@@ -145,12 +194,14 @@ def build_draft_guide(guide, adp_unkept):
     This is a static reference, not a live tool - nobody can feed it real
     picks as the draft happens. So the ADP context has to carry the whole
     load per pick, not just per round: every OPEN pick gets its own window
-    of a few example players from `adp_unkept` (already excludes every
-    kept player), advancing a single cursor through the ADP-sorted pool
-    one player per open pick - in true overall-pick order, not reset each
-    round. A round-level window would collapse pick 25 and pick 36 (huge
-    ADP gap) into the same generic answer; keeper picks don't draw from
-    the pool at all, so they don't advance the cursor either.
+    of `ADP_CONTEXT_SIZE` example players from `adp_unkept` (already
+    excludes every kept player; see `_pick_adp_context` for how those
+    players are actually chosen), advancing a single cursor through the
+    ADP-sorted pool one player per open pick - in true overall-pick order,
+    not reset each round. A round-level window would collapse pick 25 and
+    pick 36 (huge ADP gap) into the same generic answer; keeper picks
+    don't draw from the pool at all, so they don't advance the cursor
+    either.
     """
     order_data = _load_league_rules_json("draft_order_2026.json")
     round1_order = order_data["round_1_order"]
@@ -162,7 +213,6 @@ def build_draft_guide(guide, adp_unkept):
         raise ValueError(f"draft_order_2026.json names not found among teams: {missing}")
     teams_in_order = [by_first_name[o.lower()] for o in round1_order]
 
-    EXAMPLES_PER_PICK = 3
     rounds = []
     overall = 0
     open_cursor = 0
@@ -184,7 +234,7 @@ def build_draft_guide(guide, adp_unkept):
                         "pro_team": p["pro_team"],
                         "adjusted_rank": p["adjusted_rank"],
                     }
-                    for p in adp_unkept[open_cursor : open_cursor + EXAMPLES_PER_PICK]
+                    for p in _pick_adp_context(adp_unkept, open_cursor)
                 ]
                 open_cursor += 1
             picks.append(

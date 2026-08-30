@@ -47,6 +47,18 @@
               "position": "WR",
               "pro_team": "LAR",
               "adjusted_rank": 3
+            },
+            {
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "pro_team": "PHI",
+              "adjusted_rank": 4
+            },
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 5
             }
           ]
         },
@@ -78,6 +90,18 @@
               "position": "QB",
               "pro_team": "PHI",
               "adjusted_rank": 4
+            },
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 5
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 6
             }
           ]
         },
@@ -145,6 +169,18 @@
               "position": "WR",
               "pro_team": "DET",
               "adjusted_rank": 5
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 6
+            },
+            {
+              "name": "De'Von Achane",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 7
             }
           ]
         },
@@ -176,6 +212,18 @@
               "position": "WR",
               "pro_team": "DAL",
               "adjusted_rank": 6
+            },
+            {
+              "name": "De'Von Achane",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 7
+            },
+            {
+              "name": "Joe Burrow",
+              "position": "QB",
+              "pro_team": "CIN",
+              "adjusted_rank": 8
             }
           ]
         },
@@ -207,6 +255,18 @@
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 7
+            },
+            {
+              "name": "Joe Burrow",
+              "position": "QB",
+              "pro_team": "CIN",
+              "adjusted_rank": 8
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 9
             }
           ]
         },
@@ -256,6 +316,18 @@
               "position": "QB",
               "pro_team": "CIN",
               "adjusted_rank": 8
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 9
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "adjusted_rank": 10
             }
           ]
         },
@@ -287,6 +359,18 @@
               "position": "WR",
               "pro_team": "MIN",
               "adjusted_rank": 9
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "adjusted_rank": 10
+            },
+            {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 11
             }
           ]
         },
@@ -359,6 +443,18 @@
               "position": "WR",
               "pro_team": "ATL",
               "adjusted_rank": 10
+            },
+            {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 11
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 12
             }
           ]
         },
@@ -390,6 +486,18 @@
               "position": "RB",
               "pro_team": "ARI",
               "adjusted_rank": 11
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 12
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "adjusted_rank": 14
             }
           ]
         },
@@ -439,6 +547,18 @@
               "position": "WR",
               "pro_team": "KC",
               "adjusted_rank": 12
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 13
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "adjusted_rank": 14
             }
           ]
         },
@@ -470,6 +590,18 @@
               "position": "WR",
               "pro_team": "HOU",
               "adjusted_rank": 13
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "adjusted_rank": 14
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 15
             }
           ]
         },
@@ -501,6 +633,18 @@
               "position": "QB",
               "pro_team": "DAL",
               "adjusted_rank": 14
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 15
+            },
+            {
+              "name": "Derrick Henry",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 16
             }
           ]
         },
@@ -532,6 +676,18 @@
               "position": "RB",
               "pro_team": "PHI",
               "adjusted_rank": 15
+            },
+            {
+              "name": "Derrick Henry",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 16
+            },
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 17
             }
           ]
         },
@@ -563,6 +719,18 @@
               "position": "RB",
               "pro_team": "BAL",
               "adjusted_rank": 16
+            },
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 17
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "adjusted_rank": 18
             }
           ]
         },
@@ -594,6 +762,18 @@
               "position": "RB",
               "pro_team": "LV",
               "adjusted_rank": 17
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "adjusted_rank": 18
+            },
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "adjusted_rank": 19
             }
           ]
         },
@@ -643,6 +823,18 @@
               "position": "TE",
               "pro_team": "LV",
               "adjusted_rank": 18
+            },
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "adjusted_rank": 19
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 20
             }
           ]
         },
@@ -674,6 +866,18 @@
               "position": "QB",
               "pro_team": "SF",
               "adjusted_rank": 19
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 20
+            },
+            {
+              "name": "Malik Nabers",
+              "position": "WR",
+              "pro_team": "NYG",
+              "adjusted_rank": 21
             }
           ]
         }
@@ -710,6 +914,18 @@
               "position": "WR",
               "pro_team": "NE",
               "adjusted_rank": 20
+            },
+            {
+              "name": "Malik Nabers",
+              "position": "WR",
+              "pro_team": "NYG",
+              "adjusted_rank": 21
+            },
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "adjusted_rank": 22
             }
           ]
         },
@@ -741,6 +957,18 @@
               "position": "WR",
               "pro_team": "NYG",
               "adjusted_rank": 21
+            },
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "adjusted_rank": 22
+            },
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 24
             }
           ]
         },
@@ -772,6 +1000,18 @@
               "position": "QB",
               "pro_team": "CHI",
               "adjusted_rank": 22
+            },
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "adjusted_rank": 23
+            },
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 24
             }
           ]
         },
@@ -803,6 +1043,18 @@
               "position": "QB",
               "pro_team": "LAC",
               "adjusted_rank": 23
+            },
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 24
+            },
+            {
+              "name": "Omarion Hampton",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 25
             }
           ]
         },
@@ -834,6 +1086,18 @@
               "position": "RB",
               "pro_team": "CIN",
               "adjusted_rank": 24
+            },
+            {
+              "name": "Omarion Hampton",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 25
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
             }
           ]
         },
@@ -865,6 +1129,18 @@
               "position": "RB",
               "pro_team": "LAC",
               "adjusted_rank": 25
+            },
+            {
+              "name": "Breece Hall",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 26
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
             }
           ]
         },
@@ -896,6 +1172,18 @@
               "position": "RB",
               "pro_team": "NYJ",
               "adjusted_rank": 26
+            },
+            {
+              "name": "Patrick Mahomes",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
             }
           ]
         },
@@ -945,6 +1233,18 @@
               "position": "RB",
               "pro_team": "GB",
               "adjusted_rank": 27
+            },
+            {
+              "name": "Patrick Mahomes",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
             }
           ]
         },
@@ -1012,6 +1312,18 @@
               "position": "QB",
               "pro_team": "KC",
               "adjusted_rank": 28
+            },
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 29
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
             }
           ]
         }
@@ -1048,6 +1360,18 @@
               "position": "RB",
               "pro_team": "NO",
               "adjusted_rank": 29
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
+            },
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 31
             }
           ]
         },
@@ -1079,6 +1403,18 @@
               "position": "WR",
               "pro_team": "NYJ",
               "adjusted_rank": 30
+            },
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 31
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 32
             }
           ]
         },
@@ -1110,6 +1446,18 @@
               "position": "WR",
               "pro_team": "DAL",
               "adjusted_rank": 31
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 32
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1141,6 +1489,18 @@
               "position": "WR",
               "pro_team": "BAL",
               "adjusted_rank": 32
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1172,6 +1532,18 @@
               "position": "WR",
               "pro_team": "PHI",
               "adjusted_rank": 33
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1203,6 +1575,18 @@
               "position": "WR",
               "pro_team": "LAR",
               "adjusted_rank": 34
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1252,6 +1636,18 @@
               "position": "WR",
               "pro_team": "LAC",
               "adjusted_rank": 35
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1283,6 +1679,18 @@
               "position": "WR",
               "pro_team": "WSH",
               "adjusted_rank": 36
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1314,6 +1722,18 @@
               "position": "RB",
               "pro_team": "LAR",
               "adjusted_rank": 37
+            },
+            {
+              "name": "Bucky Irving",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 38
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1345,6 +1765,18 @@
               "position": "RB",
               "pro_team": "TB",
               "adjusted_rank": 38
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
+            },
+            {
+              "name": "Tyler Warren",
+              "position": "TE",
+              "pro_team": "IND",
+              "adjusted_rank": 40
             }
           ]
         },
@@ -1376,6 +1808,18 @@
               "position": "QB",
               "pro_team": "MIN",
               "adjusted_rank": 39
+            },
+            {
+              "name": "Tyler Warren",
+              "position": "TE",
+              "pro_team": "IND",
+              "adjusted_rank": 40
+            },
+            {
+              "name": "Tee Higgins",
+              "position": "WR",
+              "pro_team": "CIN",
+              "adjusted_rank": 41
             }
           ]
         }
@@ -1412,6 +1856,18 @@
               "position": "TE",
               "pro_team": "IND",
               "adjusted_rank": 40
+            },
+            {
+              "name": "Tee Higgins",
+              "position": "WR",
+              "pro_team": "CIN",
+              "adjusted_rank": 41
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 42
             }
           ]
         },
@@ -1443,6 +1899,18 @@
               "position": "WR",
               "pro_team": "CIN",
               "adjusted_rank": 41
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 42
+            },
+            {
+              "name": "Rome Odunze",
+              "position": "WR",
+              "pro_team": "CHI",
+              "adjusted_rank": 43
             }
           ]
         },
@@ -1474,6 +1942,18 @@
               "position": "WR",
               "pro_team": "DEN",
               "adjusted_rank": 42
+            },
+            {
+              "name": "Rome Odunze",
+              "position": "WR",
+              "pro_team": "CHI",
+              "adjusted_rank": 43
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
             }
           ]
         },
@@ -1541,6 +2021,18 @@
               "position": "WR",
               "pro_team": "CHI",
               "adjusted_rank": 43
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
             }
           ]
         },
@@ -1572,6 +2064,18 @@
               "position": "WR",
               "pro_team": "DET",
               "adjusted_rank": 44
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
             }
           ]
         },
@@ -1603,6 +2107,18 @@
               "position": "WR",
               "pro_team": "BUF",
               "adjusted_rank": 45
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
             }
           ]
         },
@@ -1634,6 +2150,18 @@
               "position": "RB",
               "pro_team": "CHI",
               "adjusted_rank": 46
+            },
+            {
+              "name": "Bhayshul Tuten",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 47
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
             }
           ]
         },
@@ -1665,6 +2193,18 @@
               "position": "RB",
               "pro_team": "JAX",
               "adjusted_rank": 47
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 48
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
             }
           ]
         },
@@ -1696,6 +2236,18 @@
               "position": "RB",
               "pro_team": "HOU",
               "adjusted_rank": 48
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
             }
           ]
         },
@@ -1727,6 +2279,18 @@
               "position": "RB",
               "pro_team": "SEA",
               "adjusted_rank": 49
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
             }
           ]
         }
@@ -1763,6 +2327,18 @@
               "position": "TE",
               "pro_team": "CLE",
               "adjusted_rank": 50
+            },
+            {
+              "name": "Sam LaPorta",
+              "position": "TE",
+              "pro_team": "DET",
+              "adjusted_rank": 51
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
             }
           ]
         },
@@ -1794,6 +2370,18 @@
               "position": "TE",
               "pro_team": "DET",
               "adjusted_rank": 51
+            },
+            {
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 52
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
             }
           ]
         },
@@ -1825,6 +2413,18 @@
               "position": "RB",
               "pro_team": "NE",
               "adjusted_rank": 52
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
+            },
+            {
+              "name": "Jared Goff",
+              "position": "QB",
+              "pro_team": "DET",
+              "adjusted_rank": 54
             }
           ]
         },
@@ -1856,6 +2456,18 @@
               "position": "WR",
               "pro_team": "TEN",
               "adjusted_rank": 53
+            },
+            {
+              "name": "Jared Goff",
+              "position": "QB",
+              "pro_team": "DET",
+              "adjusted_rank": 54
+            },
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "adjusted_rank": 55
             }
           ]
         },
@@ -1887,6 +2499,18 @@
               "position": "QB",
               "pro_team": "DET",
               "adjusted_rank": 54
+            },
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "adjusted_rank": 55
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 56
             }
           ]
         },
@@ -1918,6 +2542,18 @@
               "position": "QB",
               "pro_team": "TB",
               "adjusted_rank": 55
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 56
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
             }
           ]
         },
@@ -1949,6 +2585,18 @@
               "position": "WR",
               "pro_team": "DEN",
               "adjusted_rank": 56
+            },
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 57
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
             }
           ]
         },
@@ -1980,6 +2628,18 @@
               "position": "WR",
               "pro_team": "PIT",
               "adjusted_rank": 57
+            },
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 58
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
             }
           ]
         },
@@ -2011,6 +2671,18 @@
               "position": "WR",
               "pro_team": "ARI",
               "adjusted_rank": 58
+            },
+            {
+              "name": "DK Metcalf",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 59
+            },
+            {
+              "name": "Parker Washington",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 60
             }
           ]
         },
@@ -2042,6 +2714,18 @@
               "position": "WR",
               "pro_team": "PIT",
               "adjusted_rank": 59
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2073,6 +2757,18 @@
               "position": "WR",
               "pro_team": "JAX",
               "adjusted_rank": 60
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2104,6 +2800,18 @@
               "position": "WR",
               "pro_team": "IND",
               "adjusted_rank": 61
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         }
@@ -2140,6 +2848,18 @@
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
+            },
+            {
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 63
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2171,6 +2891,18 @@
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 63
+            },
+            {
+              "name": "Jonathon Brooks",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2220,6 +2952,18 @@
               "position": "RB",
               "pro_team": "CAR",
               "adjusted_rank": 64
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 65
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2251,6 +2995,18 @@
               "position": "WR",
               "pro_team": "JAX",
               "adjusted_rank": 65
+            },
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 66
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2282,6 +3038,18 @@
               "position": "WR",
               "pro_team": "GB",
               "adjusted_rank": 66
+            },
+            {
+              "name": "Mike Evans",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 67
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2313,6 +3081,18 @@
               "position": "WR",
               "pro_team": "SF",
               "adjusted_rank": 67
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2344,6 +3124,18 @@
               "position": "WR",
               "pro_team": "GB",
               "adjusted_rank": 68
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2375,6 +3167,18 @@
               "position": "WR",
               "pro_team": "JAX",
               "adjusted_rank": 69
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2406,6 +3210,18 @@
               "position": "RB",
               "pro_team": "NE",
               "adjusted_rank": 70
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2437,6 +3253,18 @@
               "position": "RB",
               "pro_team": "TEN",
               "adjusted_rank": 71
+            },
+            {
+              "name": "Kenny Gainwell",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 72
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2468,6 +3296,18 @@
               "position": "RB",
               "pro_team": "TB",
               "adjusted_rank": 72
+            },
+            {
+              "name": "Michael Wilson",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 74
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         }
@@ -2504,6 +3344,18 @@
               "position": "RB",
               "pro_team": "CAR",
               "adjusted_rank": 73
+            },
+            {
+              "name": "Michael Wilson",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 74
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2535,6 +3387,18 @@
               "position": "WR",
               "pro_team": "ARI",
               "adjusted_rank": 74
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 75
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -2566,6 +3430,18 @@
               "position": "WR",
               "pro_team": "JAX",
               "adjusted_rank": 75
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "adjusted_rank": 77
             }
           ]
         },
@@ -2597,6 +3473,18 @@
               "position": "TE",
               "pro_team": "SF",
               "adjusted_rank": 76
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "adjusted_rank": 77
+            },
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "MIA",
+              "adjusted_rank": 78
             }
           ]
         },
@@ -2628,6 +3516,18 @@
               "position": "TE",
               "pro_team": "GB",
               "adjusted_rank": 77
+            },
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "MIA",
+              "adjusted_rank": 78
+            },
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "adjusted_rank": 79
             }
           ]
         },
@@ -2659,6 +3559,18 @@
               "position": "QB",
               "pro_team": "MIA",
               "adjusted_rank": 78
+            },
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "adjusted_rank": 79
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
             }
           ]
         },
@@ -2726,6 +3638,18 @@
               "position": "QB",
               "pro_team": "GB",
               "adjusted_rank": 79
+            },
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "adjusted_rank": 80
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
             }
           ]
         },
@@ -2757,6 +3681,18 @@
               "position": "QB",
               "pro_team": "HOU",
               "adjusted_rank": 80
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
             }
           ]
         },
@@ -2788,6 +3724,18 @@
               "position": "QB",
               "pro_team": "SEA",
               "adjusted_rank": 81
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
             }
           ]
         },
@@ -2819,6 +3767,18 @@
               "position": "WR",
               "pro_team": "MIN",
               "adjusted_rank": 82
+            },
+            {
+              "name": "De'Zhaun Stribling",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 83
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
             }
           ]
         }
@@ -2855,6 +3815,18 @@
               "position": "WR",
               "pro_team": "SF",
               "adjusted_rank": 83
+            },
+            {
+              "name": "Khalil Shakir",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 84
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
             }
           ]
         },
@@ -2904,6 +3876,18 @@
               "position": "WR",
               "pro_team": "BUF",
               "adjusted_rank": 84
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
             }
           ]
         },
@@ -2935,6 +3919,18 @@
               "position": "WR",
               "pro_team": "GB",
               "adjusted_rank": 85
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
             }
           ]
         },
@@ -2966,6 +3962,18 @@
               "position": "TE",
               "pro_team": "PHI",
               "adjusted_rank": 86
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "adjusted_rank": 87
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
             }
           ]
         },
@@ -2997,6 +4005,18 @@
               "position": "TE",
               "pro_team": "KC",
               "adjusted_rank": 87
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "adjusted_rank": 88
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
             }
           ]
         },
@@ -3028,6 +4048,18 @@
               "position": "TE",
               "pro_team": "DAL",
               "adjusted_rank": 88
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
             }
           ]
         },
@@ -3059,6 +4091,18 @@
               "position": "TE",
               "pro_team": "BAL",
               "adjusted_rank": 89
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
             }
           ]
         },
@@ -3090,6 +4134,18 @@
               "position": "TE",
               "pro_team": "NYG",
               "adjusted_rank": 90
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
             }
           ]
         },
@@ -3121,6 +4177,18 @@
               "position": "QB",
               "pro_team": "CAR",
               "adjusted_rank": 91
+            },
+            {
+              "name": "Cam Ward",
+              "position": "QB",
+              "pro_team": "TEN",
+              "adjusted_rank": 92
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
             }
           ]
         },
@@ -3152,6 +4220,18 @@
               "position": "QB",
               "pro_team": "TEN",
               "adjusted_rank": 92
+            },
+            {
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 93
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
             }
           ]
         },
@@ -3183,6 +4263,18 @@
               "position": "QB",
               "pro_team": "ARI",
               "adjusted_rank": 93
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
             }
           ]
         }
@@ -3219,6 +4311,18 @@
               "position": "WR",
               "pro_team": "KC",
               "adjusted_rank": 94
+            },
+            {
+              "name": "Quentin Johnston",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 95
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
             }
           ]
         },
@@ -3250,6 +4354,18 @@
               "position": "WR",
               "pro_team": "LAC",
               "adjusted_rank": 95
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 96
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
             }
           ]
         },
@@ -3299,6 +4415,18 @@
               "position": "WR",
               "pro_team": "WSH",
               "adjusted_rank": 96
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
             }
           ]
         },
@@ -3330,6 +4458,18 @@
               "position": "RB",
               "pro_team": "DEN",
               "adjusted_rank": 97
+            },
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 98
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
             }
           ]
         },
@@ -3379,6 +4519,18 @@
               "position": "RB",
               "pro_team": "CHI",
               "adjusted_rank": 98
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 99
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
             }
           ]
         },
@@ -3428,6 +4580,18 @@
               "position": "RB",
               "pro_team": "WSH",
               "adjusted_rank": 99
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3459,6 +4623,18 @@
               "position": "RB",
               "pro_team": "MIN",
               "adjusted_rank": 100
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3490,6 +4666,18 @@
               "position": "RB",
               "pro_team": "WSH",
               "adjusted_rank": 101
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3521,6 +4709,18 @@
               "position": "TE",
               "pro_team": "BUF",
               "adjusted_rank": 102
+            },
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "pro_team": "MIN",
+              "adjusted_rank": 103
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         }
@@ -3557,6 +4757,18 @@
               "position": "TE",
               "pro_team": "MIN",
               "adjusted_rank": 103
+            },
+            {
+              "name": "Hunter Henry",
+              "position": "TE",
+              "pro_team": "NE",
+              "adjusted_rank": 104
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3588,6 +4800,18 @@
               "position": "TE",
               "pro_team": "NE",
               "adjusted_rank": 104
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 106
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3619,6 +4843,18 @@
               "position": "TE",
               "pro_team": "LAR",
               "adjusted_rank": 105
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 106
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3650,6 +4886,18 @@
               "position": "RB",
               "pro_team": "MIN",
               "adjusted_rank": 106
+            },
+            {
+              "name": "Blake Corum",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 107
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3681,6 +4929,18 @@
               "position": "RB",
               "pro_team": "LAR",
               "adjusted_rank": 107
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 108
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
             }
           ]
         },
@@ -3730,6 +4990,18 @@
               "position": "RB",
               "pro_team": "DEN",
               "adjusted_rank": 108
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -3761,6 +5033,18 @@
               "position": "RB",
               "pro_team": "HOU",
               "adjusted_rank": 109
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -3810,6 +5094,18 @@
               "position": "WR",
               "pro_team": "IND",
               "adjusted_rank": 110
+            },
+            {
+              "name": "KC Concepcion",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 111
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -3841,6 +5137,18 @@
               "position": "WR",
               "pro_team": "CLE",
               "adjusted_rank": 111
+            },
+            {
+              "name": "Makai Lemon",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 112
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -3872,6 +5180,18 @@
               "position": "WR",
               "pro_team": "PHI",
               "adjusted_rank": 112
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         }
@@ -3926,6 +5246,18 @@
               "position": "WR",
               "pro_team": "TB",
               "adjusted_rank": 113
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -3957,6 +5289,18 @@
               "position": "WR",
               "pro_team": "SF",
               "adjusted_rank": 114
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -3988,6 +5332,18 @@
               "position": "WR",
               "pro_team": "NE",
               "adjusted_rank": 115
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -4019,6 +5375,18 @@
               "position": "WR",
               "pro_team": "CAR",
               "adjusted_rank": 116
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -4050,6 +5418,18 @@
               "position": "WR",
               "pro_team": "SEA",
               "adjusted_rank": 117
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -4081,6 +5461,18 @@
               "position": "WR",
               "pro_team": "TB",
               "adjusted_rank": 118
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -4112,6 +5504,18 @@
               "position": "RB",
               "pro_team": "SEA",
               "adjusted_rank": 119
+            },
+            {
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 120
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -4143,6 +5547,18 @@
               "position": "RB",
               "pro_team": "TEN",
               "adjusted_rank": 120
+            },
+            {
+              "name": "Chris Rodriguez Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 121
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -4174,6 +5590,18 @@
               "position": "RB",
               "pro_team": "JAX",
               "adjusted_rank": 121
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
             }
           ]
         },
@@ -4205,6 +5633,18 @@
               "position": "RB",
               "pro_team": "ATL",
               "adjusted_rank": 122
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
             }
           ]
         },
@@ -4236,6 +5676,18 @@
               "position": "QB",
               "pro_team": "NYJ",
               "adjusted_rank": 123
+            },
+            {
+              "name": "Tyler Allgeier",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 124
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
             }
           ]
         }
@@ -4272,6 +5724,18 @@
               "position": "RB",
               "pro_team": "ARI",
               "adjusted_rank": 124
+            },
+            {
+              "name": "MarShawn Lloyd",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 125
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
             }
           ]
         },
@@ -4321,6 +5785,18 @@
               "position": "RB",
               "pro_team": "GB",
               "adjusted_rank": 125
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
+            },
+            {
+              "name": "Jerry Jeudy",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 127
             }
           ]
         },
@@ -4352,6 +5828,18 @@
               "position": "WR",
               "pro_team": "CLE",
               "adjusted_rank": 126
+            },
+            {
+              "name": "Jerry Jeudy",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 127
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4383,6 +5871,18 @@
               "position": "WR",
               "pro_team": "CLE",
               "adjusted_rank": 127
+            },
+            {
+              "name": "Calvin Ridley",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 128
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4414,6 +5914,18 @@
               "position": "WR",
               "pro_team": "TEN",
               "adjusted_rank": 128
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4445,6 +5957,18 @@
               "position": "WR",
               "pro_team": "NYJ",
               "adjusted_rank": 129
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4476,6 +6000,18 @@
               "position": "WR",
               "pro_team": "MIA",
               "adjusted_rank": 130
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4525,6 +6061,18 @@
               "position": "WR",
               "pro_team": "NO",
               "adjusted_rank": 131
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4556,6 +6104,18 @@
               "position": "WR",
               "pro_team": "LV",
               "adjusted_rank": 132
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4587,6 +6147,18 @@
               "position": "WR",
               "pro_team": "LV",
               "adjusted_rank": 133
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         }
@@ -4623,6 +6195,18 @@
               "position": "RB",
               "pro_team": "LAC",
               "adjusted_rank": 134
+            },
+            {
+              "name": "Isiah Pacheco",
+              "position": "RB",
+              "pro_team": "DET",
+              "adjusted_rank": 135
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4654,6 +6238,18 @@
               "position": "RB",
               "pro_team": "DET",
               "adjusted_rank": 135
+            },
+            {
+              "name": "Jonah Coleman",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 136
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
@@ -4685,6 +6281,18 @@
               "position": "RB",
               "pro_team": "DEN",
               "adjusted_rank": 136
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
+            },
+            {
+              "name": "Fernando Mendoza",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 138
             }
           ]
         },
@@ -4734,6 +6342,18 @@
               "position": "TE",
               "pro_team": "NYJ",
               "adjusted_rank": 137
+            },
+            {
+              "name": "Fernando Mendoza",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 138
+            },
+            {
+              "name": "Aaron Rodgers",
+              "position": "QB",
+              "pro_team": "PIT",
+              "adjusted_rank": 139
             }
           ]
         },
@@ -4783,6 +6403,18 @@
               "position": "QB",
               "pro_team": "LV",
               "adjusted_rank": 138
+            },
+            {
+              "name": "Aaron Rodgers",
+              "position": "QB",
+              "pro_team": "PIT",
+              "adjusted_rank": 139
+            },
+            {
+              "name": "Deshaun Watson",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 140
             }
           ]
         },
@@ -4814,6 +6446,18 @@
               "position": "QB",
               "pro_team": "PIT",
               "adjusted_rank": 139
+            },
+            {
+              "name": "Deshaun Watson",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 140
+            },
+            {
+              "name": "Tua Tagovailoa",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 141
             }
           ]
         },
@@ -4845,6 +6489,18 @@
               "position": "QB",
               "pro_team": "CLE",
               "adjusted_rank": 140
+            },
+            {
+              "name": "Tua Tagovailoa",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 141
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "adjusted_rank": 142
             }
           ]
         },
@@ -4876,6 +6532,18 @@
               "position": "QB",
               "pro_team": "ATL",
               "adjusted_rank": 141
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "adjusted_rank": 142
+            },
+            {
+              "name": "Broncos D/ST",
+              "position": "D/ST",
+              "pro_team": "DEN",
+              "adjusted_rank": 143
             }
           ]
         },
@@ -4907,6 +6575,18 @@
               "position": "D/ST",
               "pro_team": "HOU",
               "adjusted_rank": 142
+            },
+            {
+              "name": "Broncos D/ST",
+              "position": "D/ST",
+              "pro_team": "DEN",
+              "adjusted_rank": 143
+            },
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "adjusted_rank": 144
             }
           ]
         },
@@ -4938,6 +6618,18 @@
               "position": "D/ST",
               "pro_team": "DEN",
               "adjusted_rank": 143
+            },
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "adjusted_rank": 144
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "adjusted_rank": 145
             }
           ]
         }
@@ -4974,6 +6666,18 @@
               "position": "D/ST",
               "pro_team": "PIT",
               "adjusted_rank": 144
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "adjusted_rank": 145
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "adjusted_rank": 146
             }
           ]
         },
@@ -5005,6 +6709,18 @@
               "position": "D/ST",
               "pro_team": "SEA",
               "adjusted_rank": 145
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "adjusted_rank": 146
+            },
+            {
+              "name": "Ravens D/ST",
+              "position": "D/ST",
+              "pro_team": "BAL",
+              "adjusted_rank": 147
             }
           ]
         },
@@ -5036,6 +6752,18 @@
               "position": "D/ST",
               "pro_team": "LAR",
               "adjusted_rank": 146
+            },
+            {
+              "name": "Ravens D/ST",
+              "position": "D/ST",
+              "pro_team": "BAL",
+              "adjusted_rank": 147
+            },
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "adjusted_rank": 148
             }
           ]
         },
@@ -5067,6 +6795,18 @@
               "position": "D/ST",
               "pro_team": "BAL",
               "adjusted_rank": 147
+            },
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "adjusted_rank": 148
+            },
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "adjusted_rank": 149
             }
           ]
         },
@@ -5098,6 +6838,18 @@
               "position": "D/ST",
               "pro_team": "PHI",
               "adjusted_rank": 148
+            },
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "adjusted_rank": 149
+            },
+            {
+              "name": "Patriots D/ST",
+              "position": "D/ST",
+              "pro_team": "NE",
+              "adjusted_rank": 150
             }
           ]
         },
@@ -5129,6 +6881,18 @@
               "position": "D/ST",
               "pro_team": "CLE",
               "adjusted_rank": 149
+            },
+            {
+              "name": "Patriots D/ST",
+              "position": "D/ST",
+              "pro_team": "NE",
+              "adjusted_rank": 150
+            },
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "adjusted_rank": 151
             }
           ]
         },
@@ -5160,6 +6924,18 @@
               "position": "D/ST",
               "pro_team": "NE",
               "adjusted_rank": 150
+            },
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "adjusted_rank": 151
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "adjusted_rank": 152
             }
           ]
         },
@@ -5191,6 +6967,18 @@
               "position": "D/ST",
               "pro_team": "DET",
               "adjusted_rank": 151
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "adjusted_rank": 152
+            },
+            {
+              "name": "Chargers D/ST",
+              "position": "D/ST",
+              "pro_team": "LAC",
+              "adjusted_rank": 153
             }
           ]
         },
@@ -5222,6 +7010,18 @@
               "position": "D/ST",
               "pro_team": "KC",
               "adjusted_rank": 152
+            },
+            {
+              "name": "Chargers D/ST",
+              "position": "D/ST",
+              "pro_team": "LAC",
+              "adjusted_rank": 153
+            },
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "adjusted_rank": 154
             }
           ]
         },
@@ -5253,6 +7053,18 @@
               "position": "D/ST",
               "pro_team": "LAC",
               "adjusted_rank": 153
+            },
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "adjusted_rank": 154
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "adjusted_rank": 155
             }
           ]
         },
@@ -5284,6 +7096,18 @@
               "position": "K",
               "pro_team": "DAL",
               "adjusted_rank": 154
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "adjusted_rank": 155
+            },
+            {
+              "name": "Jason Myers",
+              "position": "K",
+              "pro_team": "SEA",
+              "adjusted_rank": 156
             }
           ]
         },
@@ -5315,6 +7139,18 @@
               "position": "K",
               "pro_team": "LAC",
               "adjusted_rank": 155
+            },
+            {
+              "name": "Jason Myers",
+              "position": "K",
+              "pro_team": "SEA",
+              "adjusted_rank": 156
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "adjusted_rank": 157
             }
           ]
         }
@@ -5351,6 +7187,18 @@
               "position": "K",
               "pro_team": "SEA",
               "adjusted_rank": 156
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "adjusted_rank": 157
+            },
+            {
+              "name": "Ka'imi Fairbairn",
+              "position": "K",
+              "pro_team": "HOU",
+              "adjusted_rank": 158
             }
           ]
         },
@@ -5382,6 +7230,18 @@
               "position": "K",
               "pro_team": "LAR",
               "adjusted_rank": 157
+            },
+            {
+              "name": "Ka'imi Fairbairn",
+              "position": "K",
+              "pro_team": "HOU",
+              "adjusted_rank": 158
+            },
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "pro_team": "SF",
+              "adjusted_rank": 159
             }
           ]
         },
@@ -5413,6 +7273,18 @@
               "position": "K",
               "pro_team": "HOU",
               "adjusted_rank": 158
+            },
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "pro_team": "SF",
+              "adjusted_rank": 159
+            },
+            {
+              "name": "Harrison Butker",
+              "position": "K",
+              "pro_team": "KC",
+              "adjusted_rank": 160
             }
           ]
         },
@@ -5444,6 +7316,18 @@
               "position": "K",
               "pro_team": "SF",
               "adjusted_rank": 159
+            },
+            {
+              "name": "Harrison Butker",
+              "position": "K",
+              "pro_team": "KC",
+              "adjusted_rank": 160
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "adjusted_rank": 161
             }
           ]
         },
@@ -5475,6 +7359,18 @@
               "position": "K",
               "pro_team": "KC",
               "adjusted_rank": 160
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "adjusted_rank": 161
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "adjusted_rank": 162
             }
           ]
         },
@@ -5506,6 +7402,18 @@
               "position": "K",
               "pro_team": "JAX",
               "adjusted_rank": 161
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "adjusted_rank": 162
+            },
+            {
+              "name": "Tyler Loop",
+              "position": "K",
+              "pro_team": "BAL",
+              "adjusted_rank": 163
             }
           ]
         },
@@ -5533,10 +7441,22 @@
               "adjusted_rank": 161
             },
             {
-              "name": "Jake Bates",
-              "position": "K",
-              "pro_team": "DET",
-              "adjusted_rank": 162
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5564,10 +7484,22 @@
               "adjusted_rank": 162
             },
             {
-              "name": "Tyler Loop",
-              "position": "K",
-              "pro_team": "BAL",
-              "adjusted_rank": 163
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5595,10 +7527,22 @@
               "adjusted_rank": 163
             },
             {
-              "name": "Cairo Santos",
-              "position": "K",
-              "pro_team": "CHI",
-              "adjusted_rank": 164
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5626,10 +7570,22 @@
               "adjusted_rank": 164
             },
             {
-              "name": "Will Reichard",
-              "position": "K",
-              "pro_team": "MIN",
-              "adjusted_rank": 165
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5661,6 +7617,18 @@
               "position": "WR",
               "pro_team": "IND",
               "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5692,6 +7660,18 @@
               "position": "RB",
               "pro_team": "LV",
               "adjusted_rank": 167
+            },
+            {
+              "name": "Braelon Allen",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 168
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         }
@@ -5728,6 +7708,18 @@
               "position": "RB",
               "pro_team": "NYJ",
               "adjusted_rank": 168
+            },
+            {
+              "name": "Tank Bigsby",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 169
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5759,6 +7751,18 @@
               "position": "RB",
               "pro_team": "PHI",
               "adjusted_rank": 169
+            },
+            {
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 171
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5790,6 +7794,18 @@
               "position": "RB",
               "pro_team": "BUF",
               "adjusted_rank": 170
+            },
+            {
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 171
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5821,6 +7837,18 @@
               "position": "WR",
               "pro_team": "BAL",
               "adjusted_rank": 171
+            },
+            {
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "pro_team": "CLE",
+              "adjusted_rank": 172
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5852,6 +7880,18 @@
               "position": "RB",
               "pro_team": "CLE",
               "adjusted_rank": 172
+            },
+            {
+              "name": "Najee Harris",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 173
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5883,6 +7923,18 @@
               "position": "RB",
               "pro_team": "NYG",
               "adjusted_rank": 173
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 174
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5914,6 +7966,18 @@
               "position": "RB",
               "pro_team": "NO",
               "adjusted_rank": 174
+            },
+            {
+              "name": "Dontayvion Wicks",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 176
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5945,6 +8009,18 @@
               "position": "RB",
               "pro_team": "BAL",
               "adjusted_rank": 175
+            },
+            {
+              "name": "Dontayvion Wicks",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 176
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -5976,6 +8052,18 @@
               "position": "WR",
               "pro_team": "PHI",
               "adjusted_rank": 176
+            },
+            {
+              "name": "Devaughn Vele",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 177
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -6007,6 +8095,18 @@
               "position": "WR",
               "pro_team": "NO",
               "adjusted_rank": 177
+            },
+            {
+              "name": "Jaylin Noel",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 178
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -6038,6 +8138,18 @@
               "position": "WR",
               "pro_team": "HOU",
               "adjusted_rank": 178
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         },
@@ -6069,6 +8181,18 @@
               "position": "QB",
               "pro_team": "CLE",
               "adjusted_rank": 179
+            },
+            {
+              "name": "Kirk Cousins",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 180
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         }
@@ -6105,6 +8229,18 @@
               "position": "QB",
               "pro_team": "LV",
               "adjusted_rank": 180
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 181
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         },
@@ -6136,6 +8272,18 @@
               "position": "QB",
               "pro_team": "ATL",
               "adjusted_rank": 181
+            },
+            {
+              "name": "Ja'Kobi Lane",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 183
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         },
@@ -6167,6 +8315,18 @@
               "position": "QB",
               "pro_team": "MIN",
               "adjusted_rank": 182
+            },
+            {
+              "name": "Ja'Kobi Lane",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 183
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         },
@@ -6198,6 +8358,18 @@
               "position": "WR",
               "pro_team": "BAL",
               "adjusted_rank": 183
+            },
+            {
+              "name": "Jauan Jennings",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 184
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         },
@@ -6229,6 +8401,18 @@
               "position": "WR",
               "pro_team": "MIN",
               "adjusted_rank": 184
+            },
+            {
+              "name": "Tank Dell",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 185
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
             }
           ]
         },
@@ -6260,6 +8444,18 @@
               "position": "WR",
               "pro_team": "HOU",
               "adjusted_rank": 185
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
             }
           ]
         },
@@ -6291,6 +8487,18 @@
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
+            },
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
             }
           ]
         },
@@ -6322,6 +8530,18 @@
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 187
+            },
+            {
+              "name": "Kimani Vidal",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 188
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
             }
           ]
         },
@@ -6353,6 +8573,18 @@
               "position": "RB",
               "pro_team": "LAC",
               "adjusted_rank": 188
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6384,6 +8616,18 @@
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 189
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6415,6 +8659,18 @@
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 190
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6446,6 +8702,18 @@
               "position": "RB",
               "pro_team": "CIN",
               "adjusted_rank": 191
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         }
@@ -6482,6 +8750,18 @@
               "position": "RB",
               "pro_team": "BUF",
               "adjusted_rank": 192
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6513,6 +8793,18 @@
               "position": "RB",
               "pro_team": "NYJ",
               "adjusted_rank": 193
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6544,6 +8836,18 @@
               "position": "RB",
               "pro_team": "DAL",
               "adjusted_rank": 194
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6575,6 +8879,18 @@
               "position": "RB",
               "pro_team": "WSH",
               "adjusted_rank": 195
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6606,6 +8922,18 @@
               "position": "RB",
               "pro_team": "NYG",
               "adjusted_rank": 196
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6637,6 +8965,18 @@
               "position": "RB",
               "pro_team": "TEN",
               "adjusted_rank": 197
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6668,6 +9008,18 @@
               "position": "TE",
               "pro_team": "NO",
               "adjusted_rank": 198
+            },
+            {
+              "name": "Brenton Strange",
+              "position": "TE",
+              "pro_team": "JAX",
+              "adjusted_rank": 199
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
             }
           ]
         },
@@ -6699,6 +9051,18 @@
               "position": "TE",
               "pro_team": "JAX",
               "adjusted_rank": 199
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 201
             }
           ]
         },
@@ -6730,6 +9094,18 @@
               "position": "WR",
               "pro_team": "PIT",
               "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 201
+            },
+            {
+              "name": "Carson Beck",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 202
             }
           ]
         },
@@ -6761,6 +9137,18 @@
               "position": "WR",
               "pro_team": "LAC",
               "adjusted_rank": 201
+            },
+            {
+              "name": "Carson Beck",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 202
+            },
+            {
+              "name": "Justin Fields",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 203
             }
           ]
         },
@@ -6792,6 +9180,18 @@
               "position": "QB",
               "pro_team": "ARI",
               "adjusted_rank": 202
+            },
+            {
+              "name": "Justin Fields",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 203
+            },
+            {
+              "name": "Pat Freiermuth",
+              "position": "TE",
+              "pro_team": "PIT",
+              "adjusted_rank": 208
             }
           ]
         },
@@ -6823,6 +9223,18 @@
               "position": "QB",
               "pro_team": "KC",
               "adjusted_rank": 203
+            },
+            {
+              "name": "Ryan Flournoy",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 204
+            },
+            {
+              "name": "Pat Freiermuth",
+              "position": "TE",
+              "pro_team": "PIT",
+              "adjusted_rank": 208
             }
           ]
         }
