@@ -5,9 +5,9 @@
 // page marked .active), external links after (marked with a nav-arrow and
 // opened in a new tab) - see fakeronjan-com/src/_includes/base.njk.
 const NAV_INTERNAL = [
-  { key: 'index', label: 'Keeper Dossier', href: 'index.html' },
-  { key: 'draft-guide', label: 'Draft Guide', href: 'draft-guide.html' },
-  { key: 'adp', label: 'ADP Rankings', href: 'adp.html' },
+  { key: 'draft-guide', label: '2026 Draft Guide', href: 'index.html' },
+  { key: 'keeper-dossier', label: '2026 Keeper Dossier', href: 'keeper-dossier.html' },
+  { key: 'adp', label: '2026 ADP Rankings', href: 'adp.html' },
   { key: 'season-2025', label: '2025 Season Recap', href: 'season-2025.html' },
 ];
 

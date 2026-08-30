@@ -3,10 +3,110 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Just Stream It - Keeper Dossier</title>
-<meta name="description" content="Confidential 2026 keeper decision terminal for the Just Stream It fantasy football league.">
-<link rel="stylesheet" href="terminal.css">
+<title>Just Stream It - Draft Guide</title>
+<meta name="description" content="2026 snake draft order and round-by-round board for the Just Stream It fantasy football league, with keeper picks pre-slotted into their cost round.">
+<link rel="stylesheet" href="theme.css">
 <script src="nav.js"></script>
+<style>
+  .team-picker {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .team-picker-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 12px;
+    cursor: pointer;
+    text-align: center;
+    font-family: inherit;
+    color: inherit;
+  }
+  .team-picker-btn:hover { border-color: var(--brand-dim); }
+  .team-picker-btn.active { border-color: var(--brand); background: var(--brand-tint); }
+  .team-picker-btn img.chip-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: var(--panel-2);
+    flex-shrink: 0;
+  }
+  .team-picker-btn .chip-text { display: flex; flex-direction: column; align-items: center; line-height: 1.3; }
+  .team-picker-btn .chip-name { font-weight: 700; font-size: 0.85rem; }
+  .team-picker-btn .chip-owner { font-size: 0.72rem; color: var(--text-dim); }
+
+  .open-rounds-line { margin-top: 8px; font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
+  .open-rounds-line b { color: var(--text); }
+
+  .table-scroll { overflow-x: auto; }
+  table.draft-grid { border-collapse: collapse; font-size: 0.8rem; min-width: 1700px; width: 100%; }
+  table.draft-grid th, table.draft-grid td {
+    border: 1px solid var(--line);
+    padding: 6px 9px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.draft-grid td { min-width: 128px; }
+  table.draft-grid th {
+    background: var(--panel-2);
+    color: var(--text-mute);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+  /* Header team-chip: name stacked above the logo, not beside it - a
+     side-by-side chip clips against these narrow columns. */
+  table.draft-grid th .team-chip {
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+  table.draft-grid th .team-chip .chip-logo { width: 26px; height: 26px; }
+  table.draft-grid td.round-col, table.draft-grid th.round-col {
+    position: sticky;
+    left: 0;
+    background: var(--panel);
+    z-index: 1;
+    font-weight: 700;
+    min-width: 56px;
+    white-space: nowrap;
+  }
+  table.draft-grid th.round-col { background: var(--panel-2); z-index: 2; }
+  table.draft-grid td.cell-keeper { background: var(--brand-tint); }
+  table.draft-grid td.col-active { box-shadow: inset 0 0 0 2px var(--brand); }
+  .cell-player { font-weight: 700; color: var(--text); white-space: nowrap; }
+  .cell-meta { font-size: 0.68rem; color: var(--text-mute); font-style: italic; }
+  .adp-line {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+  .adp-line .pos-badge { transform: scale(0.85); transform-origin: left center; }
+
+  .top50-scroll { max-height: 480px; overflow-y: auto; }
+  table.top50-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.top50-table th, table.top50-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+  table.top50-table th {
+    position: sticky;
+    top: 0;
+    background: var(--panel);
+    color: var(--text-mute);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  table.top50-table td.player-cell { font-weight: 600; }
+  table.top50-table tbody tr:hover { background: var(--panel-2); }
+</style>
 <script>
 (function() {
   var saved = localStorage.getItem('jsi_theme');
@@ -21,214 +121,195 @@
 
 <div id="lock-screen">
   <div class="lock-box">
-    <p class="glow">&gt; SYSTEM: JUST STREAM IT KEEPER DATABASE</p>
-    <p>&gt; STATUS: <span style="color:var(--alert)">ACCESS RESTRICTED</span></p>
-    <p>&gt; league members only. enter passphrase to continue:</p>
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Just Stream It</p>
+    <p>League members only. Enter the passphrase to continue:</p>
     <form id="auth-form" class="prompt-line">
       <span class="dollar">$</span>
       <input type="text" id="auth-input" autocomplete="off" autofocus>
     </form>
-    <p class="lock-error" id="auth-error">&gt; ACCESS DENIED. TRY AGAIN.</p>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
   </div>
 </div>
 
-<div id="app" style="display:none">
-  <div class="term-window">
-    <div class="term-titlebar">
-      <div class="dots"><span></span><span></span><span></span></div>
-      <span>user@just-stream-it: ~/keepers/2026</span>
+<div id="app" style="display:none" class="page">
+
+  <header class="site-header">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
+    <div>
+      <div class="tag">Reference</div>
+      <h1>Draft Guide</h1>
+      <nav class="resources" id="resources-nav"></nav>
+      <div class="subtitle">2026 snake draft order, 19 rounds - keeper picks are pre-slotted into their cost round</div>
     </div>
-    <div class="term-body">
-      <header class="masthead">
-        <div class="tag">Classified</div>
-        <h1 class="glow">Just Stream It - Keeper Terminal<span class="cursor"></span></h1>
-        <nav class="resources" id="resources-nav"></nav>
-        <div class="subtitle">2026 keeper decisions, compiled from 2025 league records</div>
-      </header>
+  </header>
 
-      <div class="team-grid" id="team-grid"></div>
+  <div class="section">
+    <div class="section-title">Pick your team</div>
+    <div class="team-picker" id="team-picker"></div>
+    <div class="card" id="team-summary"></div>
+  </div>
 
-      <main id="dossier-content">
-        <div class="empty-state">Loading records...</div>
-      </main>
+  <div class="section">
+    <div class="section-title">Full draft board</div>
+    <div class="card">
+      <div class="table-scroll">
+        <table class="draft-grid" id="draft-grid"></table>
+      </div>
     </div>
   </div>
 
-  <p class="rules-note">
-    Keeping a player costs one round earlier than you drafted them - a round-8 pick costs a round-7 pick to
-    keep. A round-1 pick is the exception: it still costs a round-1 pick, but uses up two of your keeper
-    slots instead of one.
+  <div class="section">
+    <div class="section-title">Top 50 available (not kept)</div>
+    <div class="card">
+      <div class="top50-scroll">
+        <table class="top50-table">
+          <thead>
+            <tr><th>Rank</th><th>Player</th><th>Pos</th><th>NFL</th></tr>
+          </thead>
+          <tbody id="top50-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <p class="subtitle" style="margin-top:20px; font-size:0.85rem; line-height:1.6;">
+    Draft order follows the league's confirmed round-1 order, which matches what's on file with ESPN. When
+    a keeper is locked in, it automatically fills that owner's pick in the round it costs, so that pick
+    never reaches the live draft.
   </p>
-  <p class="rules-note">
-    Rankings account for this league's QB + superflex format, since a normal ranking would undervalue
-    quarterbacks here. Keeper Value compares what you'd pay to keep a player against what it would cost to
-    draft them fresh - positive means a bargain, negative means an overpay.
+  <p class="subtitle" style="margin-top:8px; font-size:0.85rem; line-height:1.6;">
+    For every pick that's still open, we show a few names pulled from ESPN's ADP with all kept players
+    removed. That's a rough guide to who might be around at that point, not a prediction - real drafts
+    rarely follow ADP that closely. The Top 50 list below draws from the same pool.
   </p>
-  <p class="rules-note">
-    The suggested plan below is a starting point, not a rule. It's fine to keep nobody in a price range if
-    nothing there is a good deal.
-  </p>
+
 </div>
 
 <script>
 const PASSWORD = 'cockroach';
-
-function fmtSigned(n) {
-  if (n === null || n === undefined) return '-';
-  return (n > 0 ? '+' : '') + n;
-}
-
-function posLabel(position, rank) {
-  if (rank === null || rank === undefined) return `<span class="pos-chip">${position}</span>-`;
-  return `<span class="pos-chip">${position}</span>${rank}`;
-}
-
-function keeperValueCell(vig) {
-  if (vig === null || vig === undefined) return '-';
-  const cls = vig >= 0 ? 'good' : 'bad';
-  let tag = '';
-  if (vig >= 40) tag = '<span class="kv-tag good">BARGAIN</span>';
-  else if (vig <= -40) tag = '<span class="kv-tag bad">OVERPAY</span>';
-  return `<span class="kv ${cls}">${fmtSigned(vig)}</span>${tag}`;
-}
-
-let guide = [];
+let guide = null;
+let adpUnkept = null;
 let selectedTeamId = null;
 
-function renderTeamGrid() {
-  const grid = document.getElementById('team-grid');
-  grid.innerHTML = guide.map(t => `
-    <button class="team-box ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
-      <img src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
-      <span class="box-name">${t.owners.join(' & ')}<span class="box-owner">${t.team_name}</span></span>
+function posBadge(position) {
+  return `<span class="pos-badge pos-${position}">${position}</span>`;
+}
+
+function renderTeamPicker() {
+  const picker = document.getElementById('team-picker');
+  picker.innerHTML = guide.teams.map(t => `
+    <button class="team-picker-btn ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
+      <img class="chip-logo" src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
+      <div class="chip-text">
+        <span class="chip-name">${t.owners.join(' & ')}</span>
+        <span class="chip-owner">${t.team_name}</span>
+      </div>
     </button>
   `).join('');
-  grid.querySelectorAll('.team-box').forEach(el => {
+  picker.querySelectorAll('.team-picker-btn').forEach(el => {
     el.addEventListener('click', () => {
       selectedTeamId = Number(el.dataset.team);
-      renderTeamGrid();
-      renderDossier();
+      renderTeamPicker();
+      renderTeamSummary();
+      renderGrid();
     });
   });
 }
 
-function renderDossier() {
-  const team = guide.find(t => t.team_id === selectedTeamId);
-  const main = document.getElementById('dossier-content');
-  if (!team) { main.innerHTML = '<div class="empty-state">Select a team above.</div>'; return; }
-
-  let warnings = '';
-  if (team.cannot_keep_multiple_round1) {
-    warnings += `<div class="warning-box">!! Holds multiple round-1-drafted players (${team.round1_candidates.join(', ')}) - only one can be kept, since both would require the single round-1 slot.</div>`;
-  } else if (team.cannot_keep_both_round1_and_round2) {
-    warnings += `<div class="warning-box">!! Cannot keep both the round-1 and round-2 picks below - both would cost a round-1 pick, and there's only one round-1 slot.</div>`;
+function renderTeamSummary() {
+  const box = document.getElementById('team-summary');
+  const team = guide.teams.find(t => t.team_id === selectedTeamId);
+  if (!team) {
+    box.innerHTML = '<div class="empty-state">Pick your team above to see your locked keepers and open rounds.</div>';
+    return;
   }
 
-  const locked = team.locked_keepers_2026 || [];
-  const lockedBox = `
-    <div class="locked-box">
-      <p class="cmd">$ ./keepers.sh --team="${team.team_name}" --status=FINAL</p>
-      ${locked.length
-        ? `<div class="locked-row">${locked.map(k => `<span class="locked-chip">${k.name} <span class="meta-chip">Rd ${k.keeper_cost_round_2026}</span></span>`).join('')}</div>`
-        : '<div class="locked-row"><span class="none">no keepers - full draft pool, all 19 rounds open</span></div>'}
-    </div>`;
+  const keeperLine = team.locked_keepers_2026.length
+    ? team.locked_keepers_2026.map(k => `${k.name} ${posBadge(k.position)} <span class="cell-meta">Rd ${k.keeper_cost_round_2026}</span>`).join(' &nbsp;&middot;&nbsp; ')
+    : '<span class="cell-meta">no keepers this year - full draft pool, all 19 rounds are live picks</span>';
 
-  const plan = team.suggested_plan;
-  const planItem = (c) => `${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name} (Rd ${c.keeper_cost_round_2026}, ${keeperValueCell(c.vig)})`;
-  const planRow = (label, list) => `
-    <div class="suggest-row">
-      <span class="tier-label">${label}</span>
-      ${list.length
-        ? `<span>${list.map(planItem).join(' &nbsp;&middot;&nbsp; ')}</span>`
-        : '<span class="none">no strong option in this range - fine to let this slot go back to the draft pool</span>'}
-    </div>`;
-  const suggestBox = `
-    <details class="suggest-details">
-      <summary>Pre-decision suggested plan (for reference - keepers above are final)</summary>
-      <div class="suggest-box">
-        ${planRow('PREMIUM (Rd 1-2)', plan.premium)}
-        ${planRow('MID (Rd 3-6)', plan.mid)}
-        ${planRow('VALUE (Rd 7+)', plan.value)}
-      </div>
-    </details>`;
+  box.innerHTML = `
+    <div class="tile-label">${team.owners.join(' & ')} - ${team.team_name}</div>
+    <div class="open-rounds-line"><b>Locked keepers:</b> ${keeperLine}</div>
+    <div class="open-rounds-line"><b>Your live picks (${team.open_rounds.length} rounds):</b> ${team.open_rounds.join(', ')}</div>
+  `;
+}
 
-  const rows = team.candidates.map(c => `
-    <tr class="${c.kept_2026 ? 'is-kept' : ''}">
-      <td class="player-cell">${c.kept_2026 ? '<span class="kept-tag">KEPT</span> ' : ''}${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
-      <td>Round ${c.keeper_cost_round_2026}${c.is_first_round_pick ? ' <span class="meta-chip">(+1 slot)</span>' : ''}</td>
-      <td>${keeperValueCell(c.vig)}</td>
-      <td>${c.drafted_pick_2025} <span class="meta-chip">(#${c.drafted_overall_2025})</span></td>
-      <td class="meta-chip">${c.acquisition_type}</td>
-      <td>${c.adp_pick_estimate || '-'}</td>
-      <td>${c.points_actual_2025 != null ? c.points_actual_2025.toFixed(1) : '-'}</td>
-      <td>${posLabel(c.position, c.position_rank_actual_2025)}</td>
-      <td>${c.points_projected_2026 != null ? c.points_projected_2026.toFixed(1) : '-'}</td>
-      <td>${posLabel(c.position, c.position_rank_projected_2026)}</td>
+function renderTop50() {
+  const tbody = document.getElementById('top50-body');
+  tbody.innerHTML = adpUnkept.slice(0, 50).map(p => `
+    <tr>
+      <td>${p.adjusted_rank}</td>
+      <td class="player-cell">${p.name}</td>
+      <td>${posBadge(p.position)}</td>
+      <td>${p.pro_team}</td>
     </tr>
   `).join('');
+}
 
-  const ineligibleRows = team.ineligible.map(p => `
-    <div class="redacted-row">
-      <span>${p.name} <span class="meta-chip">${p.position}, ${p.pro_team}</span></span>
-      <span class="reason">${p.reason}</span>
-    </div>
-  `).join('');
+function renderGrid() {
+  const el = document.getElementById('draft-grid');
+  const headerTeams = guide.rounds[0].picks.map((p, i) => ({
+    team_id: p.team_id, team_name: p.team_name, owners: p.owners, logo: p.logo,
+    nickname: guide.round_1_order[i],
+  }));
 
-  main.innerHTML = `
-    <div class="dossier-header">
-      <img src="${team.logo}" alt="" onerror="this.style.visibility='hidden'">
-      <div>
-        <h2>${team.owners.join(' & ')}</h2>
-        <div class="owner-line">${team.team_name} (2026)</div>
-      </div>
-      <div class="access-tag">ACCESS: ${team.owners[0] || ''} ONLY</div>
-    </div>
+  const theadHtml = `
+    <thead>
+      <tr>
+        <th class="round-col">Rd</th>
+        ${headerTeams.map(t => `
+          <th class="${t.team_id === selectedTeamId ? 'col-active' : ''}">
+            <div class="team-chip team-chip-xs">
+              <img class="chip-logo" src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
+              <div class="chip-text"><span class="chip-name">${t.nickname}</span></div>
+            </div>
+          </th>`).join('')}
+      </tr>
+    </thead>`;
 
-    ${warnings}
-    ${lockedBox}
-    ${suggestBox}
+  const rowsHtml = guide.rounds.map(r => {
+    const cells = headerTeams.map(t => {
+      const pick = r.picks.find(p => p.team_id === t.team_id);
+      const activeCls = t.team_id === selectedTeamId ? 'col-active' : '';
+      if (pick.keeper) {
+        return `<td class="cell-keeper ${activeCls}">
+          <div class="cell-player">${pick.keeper.name}</div>
+          <div class="cell-meta">${posBadge(pick.keeper.position)} keeper &middot; pick ${pick.overall_pick}</div>
+        </td>`;
+      }
+      const context = (pick.adp_context || [])
+        .map(p => `<div class="adp-line">${p.name} ${posBadge(p.position)}</div>`)
+        .join('');
+      return `<td class="cell-open ${activeCls}">
+        <div class="cell-meta">pick ${pick.overall_pick}</div>
+        ${context}
+      </td>`;
+    }).join('');
+    return `<tr><td class="round-col">Rd ${r.round}</td>${cells}</tr>`;
+  }).join('');
 
-    <div class="table-scroll">
-      <table class="dossier-table">
-        <thead>
-          <tr>
-            <th class="player-col">Player</th>
-            <th>Keeper Cost</th>
-            <th>Keeper Value</th>
-            <th>Drafted</th>
-            <th>Acquired</th>
-            <th>ADP (SF)</th>
-            <th>'25 Pts</th>
-            <th>'25 Rank</th>
-            <th>'26 Proj Pts</th>
-            <th>'26 Proj Rank</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>
-
-    <details class="redacted">
-      <summary>Not keeper-eligible (${team.ineligible.length})</summary>
-      <div class="redacted-list">${ineligibleRows}</div>
-    </details>
-  `;
+  el.innerHTML = theadHtml + `<tbody>${rowsHtml}</tbody>`;
 }
 
 async function loadApp() {
   document.getElementById('lock-screen').style.display = 'none';
   document.getElementById('app').style.display = '';
-  if (guide.length) return; // already loaded once this session
 
   const meta = await (await fetch('data/meta.json')).json();
-  document.getElementById('resources-nav').innerHTML = renderNav('index', meta.league_id);
+  document.getElementById('resources-nav').innerHTML = renderNav('draft-guide', meta.league_id);
 
-  const res = await fetch('data/keeper_guide_2026.json');
-  guide = await res.json();
-  guide.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
-  selectedTeamId = guide[0].team_id;
-  renderTeamGrid();
-  renderDossier();
+  if (!guide) {
+    guide = await (await fetch('data/draft_guide_2026.json')).json();
+  }
+  if (!adpUnkept) {
+    adpUnkept = await (await fetch('data/adp_unkept_2026.json')).json();
+  }
+  renderTeamPicker();
+  renderTeamSummary();
+  renderTop50();
+  renderGrid();
 }
 
 document.getElementById('auth-form').addEventListener('submit', (e) => {

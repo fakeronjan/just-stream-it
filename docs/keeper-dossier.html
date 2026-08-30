@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It - Keeper Dossier</title>
+<meta name="description" content="Confidential 2026 keeper decision terminal for the Just Stream It fantasy football league.">
+<link rel="stylesheet" href="terminal.css">
+<script src="nav.js"></script>
+<script>
+(function() {
+  var saved = localStorage.getItem('jsi_theme');
+  var light = saved ? saved === 'light' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+  if (light) document.documentElement.setAttribute('data-theme', 'light');
+})();
+</script>
+</head>
+<body>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode"></button>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <p class="glow">&gt; SYSTEM: JUST STREAM IT KEEPER DATABASE</p>
+    <p>&gt; STATUS: <span style="color:var(--alert)">ACCESS RESTRICTED</span></p>
+    <p>&gt; league members only. enter passphrase to continue:</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">$</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">&gt; ACCESS DENIED. TRY AGAIN.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none">
+  <div class="term-window">
+    <div class="term-titlebar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span>user@just-stream-it: ~/keepers/2026</span>
+    </div>
+    <div class="term-body">
+      <header class="masthead">
+        <div class="tag">Classified</div>
+        <h1 class="glow">Just Stream It - Keeper Terminal<span class="cursor"></span></h1>
+        <nav class="resources" id="resources-nav"></nav>
+        <div class="subtitle">2026 keeper decisions, compiled from 2025 league records</div>
+      </header>
+
+      <div class="team-grid" id="team-grid"></div>
+
+      <main id="dossier-content">
+        <div class="empty-state">Loading records...</div>
+      </main>
+    </div>
+  </div>
+
+  <p class="rules-note">
+    Keeping a player costs one round earlier than you drafted them - a round-8 pick costs a round-7 pick to
+    keep. A round-1 pick is the exception: it still costs a round-1 pick, but uses up two of your keeper
+    slots instead of one.
+  </p>
+  <p class="rules-note">
+    Rankings account for this league's QB + superflex format, since a normal ranking would undervalue
+    quarterbacks here. Keeper Value compares what you'd pay to keep a player against what it would cost to
+    draft them fresh - positive means a bargain, negative means an overpay.
+  </p>
+  <p class="rules-note">
+    The suggested plan below is a starting point, not a rule. It's fine to keep nobody in a price range if
+    nothing there is a good deal.
+  </p>
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+
+function fmtSigned(n) {
+  if (n === null || n === undefined) return '-';
+  return (n > 0 ? '+' : '') + n;
+}
+
+function posLabel(position, rank) {
+  if (rank === null || rank === undefined) return `<span class="pos-chip">${position}</span>-`;
+  return `<span class="pos-chip">${position}</span>${rank}`;
+}
+
+function keeperValueCell(vig) {
+  if (vig === null || vig === undefined) return '-';
+  const cls = vig >= 0 ? 'good' : 'bad';
+  let tag = '';
+  if (vig >= 40) tag = '<span class="kv-tag good">BARGAIN</span>';
+  else if (vig <= -40) tag = '<span class="kv-tag bad">OVERPAY</span>';
+  return `<span class="kv ${cls}">${fmtSigned(vig)}</span>${tag}`;
+}
+
+let guide = [];
+let selectedTeamId = null;
+
+function renderTeamGrid() {
+  const grid = document.getElementById('team-grid');
+  grid.innerHTML = guide.map(t => `
+    <button class="team-box ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
+      <img src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
+      <span class="box-name">${t.owners.join(' & ')}<span class="box-owner">${t.team_name}</span></span>
+    </button>
+  `).join('');
+  grid.querySelectorAll('.team-box').forEach(el => {
+    el.addEventListener('click', () => {
+      selectedTeamId = Number(el.dataset.team);
+      renderTeamGrid();
+      renderDossier();
+    });
+  });
+}
+
+function renderDossier() {
+  const team = guide.find(t => t.team_id === selectedTeamId);
+  const main = document.getElementById('dossier-content');
+  if (!team) { main.innerHTML = '<div class="empty-state">Select a team above.</div>'; return; }
+
+  let warnings = '';
+  if (team.cannot_keep_multiple_round1) {
+    warnings += `<div class="warning-box">!! Holds multiple round-1-drafted players (${team.round1_candidates.join(', ')}) - only one can be kept, since both would require the single round-1 slot.</div>`;
+  } else if (team.cannot_keep_both_round1_and_round2) {
+    warnings += `<div class="warning-box">!! Cannot keep both the round-1 and round-2 picks below - both would cost a round-1 pick, and there's only one round-1 slot.</div>`;
+  }
+
+  const locked = team.locked_keepers_2026 || [];
+  const lockedBox = `
+    <div class="locked-box">
+      <p class="cmd">$ ./keepers.sh --team="${team.team_name}" --status=FINAL</p>
+      ${locked.length
+        ? `<div class="locked-row">${locked.map(k => `<span class="locked-chip">${k.name} <span class="meta-chip">Rd ${k.keeper_cost_round_2026}</span></span>`).join('')}</div>`
+        : '<div class="locked-row"><span class="none">no keepers - full draft pool, all 19 rounds open</span></div>'}
+    </div>`;
+
+  const plan = team.suggested_plan;
+  const planItem = (c) => `${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name} (Rd ${c.keeper_cost_round_2026}, ${keeperValueCell(c.vig)})`;
+  const planRow = (label, list) => `
+    <div class="suggest-row">
+      <span class="tier-label">${label}</span>
+      ${list.length
+        ? `<span>${list.map(planItem).join(' &nbsp;&middot;&nbsp; ')}</span>`
+        : '<span class="none">no strong option in this range - fine to let this slot go back to the draft pool</span>'}
+    </div>`;
+  const suggestBox = `
+    <details class="suggest-details">
+      <summary>Pre-decision suggested plan (for reference - keepers above are final)</summary>
+      <div class="suggest-box">
+        ${planRow('PREMIUM (Rd 1-2)', plan.premium)}
+        ${planRow('MID (Rd 3-6)', plan.mid)}
+        ${planRow('VALUE (Rd 7+)', plan.value)}
+      </div>
+    </details>`;
+
+  const rows = team.candidates.map(c => `
+    <tr class="${c.kept_2026 ? 'is-kept' : ''}">
+      <td class="player-cell">${c.kept_2026 ? '<span class="kept-tag">KEPT</span> ' : ''}${c.is_top_value ? '<span class="star">&#9733;</span> ' : ''}${c.name}<br><span class="meta-chip">${c.pro_team}</span></td>
+      <td>Round ${c.keeper_cost_round_2026}${c.is_first_round_pick ? ' <span class="meta-chip">(+1 slot)</span>' : ''}</td>
+      <td>${keeperValueCell(c.vig)}</td>
+      <td>${c.drafted_pick_2025} <span class="meta-chip">(#${c.drafted_overall_2025})</span></td>
+      <td class="meta-chip">${c.acquisition_type}</td>
+      <td>${c.adp_pick_estimate || '-'}</td>
+      <td>${c.points_actual_2025 != null ? c.points_actual_2025.toFixed(1) : '-'}</td>
+      <td>${posLabel(c.position, c.position_rank_actual_2025)}</td>
+      <td>${c.points_projected_2026 != null ? c.points_projected_2026.toFixed(1) : '-'}</td>
+      <td>${posLabel(c.position, c.position_rank_projected_2026)}</td>
+    </tr>
+  `).join('');
+
+  const ineligibleRows = team.ineligible.map(p => `
+    <div class="redacted-row">
+      <span>${p.name} <span class="meta-chip">${p.position}, ${p.pro_team}</span></span>
+      <span class="reason">${p.reason}</span>
+    </div>
+  `).join('');
+
+  main.innerHTML = `
+    <div class="dossier-header">
+      <img src="${team.logo}" alt="" onerror="this.style.visibility='hidden'">
+      <div>
+        <h2>${team.owners.join(' & ')}</h2>
+        <div class="owner-line">${team.team_name} (2026)</div>
+      </div>
+      <div class="access-tag">ACCESS: ${team.owners[0] || ''} ONLY</div>
+    </div>
+
+    ${warnings}
+    ${lockedBox}
+    ${suggestBox}
+
+    <div class="table-scroll">
+      <table class="dossier-table">
+        <thead>
+          <tr>
+            <th class="player-col">Player</th>
+            <th>Keeper Cost</th>
+            <th>Keeper Value</th>
+            <th>Drafted</th>
+            <th>Acquired</th>
+            <th>ADP (SF)</th>
+            <th>'25 Pts</th>
+            <th>'25 Rank</th>
+            <th>'26 Proj Pts</th>
+            <th>'26 Proj Rank</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+
+    <details class="redacted">
+      <summary>Not keeper-eligible (${team.ineligible.length})</summary>
+      <div class="redacted-list">${ineligibleRows}</div>
+    </details>
+  `;
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+  if (guide.length) return; // already loaded once this session
+
+  const meta = await (await fetch('data/meta.json')).json();
+  document.getElementById('resources-nav').innerHTML = renderNav('keeper-dossier', meta.league_id);
+
+  const res = await fetch('data/keeper_guide_2026.json');
+  guide = await res.json();
+  guide.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
+  selectedTeamId = guide[0].team_id;
+  renderTeamGrid();
+  renderDossier();
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+
+function updateThemeToggleIcon() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.getElementById('theme-toggle').textContent = isLight ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+}
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jsi_theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('jsi_theme', 'light');
+  }
+  updateThemeToggleIcon();
+});
+updateThemeToggleIcon();
+</script>
+</body>
+</html>
