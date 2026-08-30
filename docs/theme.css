@@ -268,6 +268,16 @@ nav.resources .nav-sep { color: var(--text-mute); }
   margin: 0 0 14px;
 }
 
+/* One-line caption directly under a .section-title, in place of the card
+   itself - for the rare case a section needs a sentence of context
+   (e.g. what the numbers in the table below actually mean). Not a
+   catch-all for prose; keep it to one short line. */
+.section-note {
+  margin: -8px 0 14px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
 .card {
   background: var(--panel);
   border: 1px solid var(--line);
