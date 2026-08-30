@@ -82,7 +82,7 @@ body {
   background-image: var(--bg-pattern);
   background-repeat: repeat;
   color: var(--text);
-  font-family: "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Karla", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
 }
 
