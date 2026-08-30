@@ -13,19 +13,19 @@
 <style>
   .team-picker {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
     margin-bottom: 20px;
   }
   .team-picker-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 12px;
-    padding: 14px 12px;
+    padding: 18px 14px;
     cursor: pointer;
     text-align: center;
     font-family: inherit;
@@ -34,16 +34,20 @@
   .team-picker-btn:hover { border-color: var(--brand-dim); }
   .team-picker-btn.active { border-color: var(--brand); background: var(--brand-tint); }
   .team-picker-btn img.chip-logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 10px;
+    width: 68px;
+    height: 68px;
+    border-radius: 12px;
     object-fit: cover;
     background: var(--panel-2);
     flex-shrink: 0;
   }
   .team-picker-btn .chip-text { display: flex; flex-direction: column; align-items: center; line-height: 1.3; }
-  .team-picker-btn .chip-name { font-weight: 700; font-size: 0.85rem; }
-  .team-picker-btn .chip-owner { font-size: 0.72rem; color: var(--text-dim); }
+  .team-picker-btn .chip-name { font-weight: 700; font-size: 1rem; }
+  .team-picker-btn .chip-owner { font-size: 0.82rem; color: var(--text-dim); }
+
+  @media (max-width: 640px) {
+    .team-picker { grid-template-columns: repeat(2, 1fr); }
+  }
 
   .open-rounds-line { margin-top: 8px; font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
   .open-rounds-line b { color: var(--text); }
@@ -321,6 +325,11 @@ async function loadApp() {
 
   if (!guide) {
     guide = await (await fetch('data/draft_guide_2026.json')).json();
+    // Pick-your-team grid reads alphabetically by owner first name, matching
+    // the Keeper Dossier's convention - the Full Draft Board below reads
+    // guide.rounds/round_1_order instead (untouched), which is correctly in
+    // draft-pick order, so this sort only ever affects guide.teams.
+    guide.teams.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
   }
   if (!adpUnkept) {
     adpUnkept = await (await fetch('data/adp_unkept_2026.json')).json();
