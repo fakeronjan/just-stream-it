@@ -248,7 +248,7 @@ function renderTeamSummary() {
     : '<span class="cell-meta">no keepers this year - full draft pool, all 19 rounds are live picks</span>';
 
   box.innerHTML = `
-    <div class="tile-label">${team.owners.join(' & ')} - ${team.team_name}</div>
+    <div class="tile-headline" style="margin-top:0;">${team.owners.join(' & ')} - ${team.team_name}</div>
     <div class="open-rounds-line"><b>Locked keepers:</b> ${keeperLine}</div>
     <div class="open-rounds-line"><b>Your live picks (${team.open_rounds.length} rounds):</b> ${team.open_rounds.join(', ')}</div>
   `;
