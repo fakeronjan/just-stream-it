@@ -6,6 +6,7 @@
 <title>Just Stream It - Draft Guide</title>
 <meta name="description" content="2026 snake draft order and round-by-round board for the Just Stream It fantasy football league, with keeper picks pre-slotted into their cost round.">
 <link rel="stylesheet" href="theme.css">
+<script src="nav.js"></script>
 <style>
   .team-picker {
     display: grid;
@@ -297,16 +298,7 @@ async function loadApp() {
   document.getElementById('app').style.display = '';
 
   const meta = await (await fetch('data/meta.json')).json();
-  const resources = [
-    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
-    { label: 'Keeper Dossier', href: 'index.html', external: false },
-    { label: 'ADP Rankings', href: 'adp.html', external: false },
-    { label: '2025 Season Recap', href: 'season-2025.html', external: false },
-    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
-  ];
-  document.getElementById('resources-nav').innerHTML = resources
-    .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
-    .join('');
+  document.getElementById('resources-nav').innerHTML = renderNav('draft-guide', meta.league_id);
 
   if (!guide) {
     guide = await (await fetch('data/draft_guide_2026.json')).json();

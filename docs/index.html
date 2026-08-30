@@ -6,6 +6,7 @@
 <title>Just Stream It - Keeper Dossier</title>
 <meta name="description" content="Confidential 2026 keeper decision terminal for the Just Stream It fantasy football league.">
 <link rel="stylesheet" href="terminal.css">
+<script src="nav.js"></script>
 <script>
 (function() {
   var saved = localStorage.getItem('jsi_theme');
@@ -216,16 +217,7 @@ async function loadApp() {
   if (guide.length) return; // already loaded once this session
 
   const meta = await (await fetch('data/meta.json')).json();
-  const resources = [
-    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
-    { label: 'Draft Guide', href: 'draft-guide.html', external: false },
-    { label: 'ADP Rankings', href: 'adp.html', external: false },
-    { label: '2025 Season Recap', href: 'season-2025.html', external: false },
-    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
-  ];
-  document.getElementById('resources-nav').innerHTML = resources
-    .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
-    .join('');
+  document.getElementById('resources-nav').innerHTML = renderNav('index', meta.league_id);
 
   const res = await fetch('data/keeper_guide_2026.json');
   guide = await res.json();

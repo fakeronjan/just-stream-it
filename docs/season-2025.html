@@ -6,6 +6,7 @@
 <title>Just Stream It - 2025 Season Recap</title>
 <meta name="description" content="2025 season highlight reel for the Just Stream It fantasy football league - the champion's run, the season's ebbs and flows, top performances, and superlatives.">
 <link rel="stylesheet" href="theme.css">
+<script src="nav.js"></script>
 <script>
 (function() {
   var saved = localStorage.getItem('jsi_theme');
@@ -717,16 +718,7 @@ async function loadApp() {
   document.getElementById('app').style.display = '';
 
   const meta = await (await fetch('data/meta.json')).json();
-  const resources = [
-    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
-    { label: 'Keeper Dossier', href: 'index.html', external: false },
-    { label: 'Draft Guide', href: 'draft-guide.html', external: false },
-    { label: 'ADP Rankings', href: 'adp.html', external: false },
-    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
-  ];
-  document.getElementById('resources-nav').innerHTML = resources
-    .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
-    .join('');
+  document.getElementById('resources-nav').innerHTML = renderNav('season-2025', meta.league_id);
 
   const [teams, moments, matchups, weeklyBoxscores, teamAnalytics, draftPicks] = await Promise.all([
     fetch(`data/${SEASON}/teams.json`).then(r => r.json()),

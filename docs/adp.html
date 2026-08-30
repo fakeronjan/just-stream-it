@@ -6,6 +6,7 @@
 <title>Just Stream It - ADP Rankings</title>
 <meta name="description" content="SUPERFLEX-aware ADP rankings for the Just Stream It fantasy football league.">
 <link rel="stylesheet" href="theme.css">
+<script src="nav.js"></script>
 <style>
   .adp-controls { margin-bottom: 14px; }
   .adp-controls input {
@@ -153,16 +154,7 @@ async function loadApp() {
   document.getElementById('app').style.display = '';
 
   const meta = await (await fetch('data/meta.json')).json();
-  const resources = [
-    { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0', external: true },
-    { label: 'Keeper Dossier', href: 'index.html', external: false },
-    { label: 'Draft Guide', href: 'draft-guide.html', external: false },
-    { label: '2025 Season Recap', href: 'season-2025.html', external: false },
-    { label: 'ESPN League Home', href: `https://fantasy.espn.com/football/league?leagueId=${meta.league_id}`, external: true },
-  ];
-  document.getElementById('resources-nav').innerHTML = resources
-    .map(r => `<a href="${r.href}"${r.external ? ' target="_blank" rel="noopener"' : ''}>${r.label}</a>`)
-    .join('');
+  document.getElementById('resources-nav').innerHTML = renderNav('adp', meta.league_id);
 
   if (!players.length) {
     players = await (await fetch('data/adp_rankings.json')).json();

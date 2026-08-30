@@ -198,6 +198,8 @@ nav.resources a {
 }
 nav.resources a:hover { color: var(--fg); border-color: var(--fg); }
 nav.resources a::before { content: "> "; }
+nav.resources a.active { color: var(--bright); border-color: var(--fg); font-weight: 700; }
+nav.resources .nav-arrow { font-size: 0.8em; margin-left: 0.15em; opacity: 0.7; }
 
 /* ---- team selection grid ---- */
 .team-grid {
