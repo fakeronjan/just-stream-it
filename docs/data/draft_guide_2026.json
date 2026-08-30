@@ -2673,16 +2673,16 @@
               "adjusted_rank": 58
             },
             {
-              "name": "DK Metcalf",
-              "position": "WR",
+              "name": "Jaylen Warren",
+              "position": "RB",
               "pro_team": "PIT",
-              "adjusted_rank": 59
+              "adjusted_rank": 62
             },
             {
-              "name": "Parker Washington",
-              "position": "WR",
-              "pro_team": "JAX",
-              "adjusted_rank": 60
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
             }
           ]
         },
@@ -6454,10 +6454,10 @@
               "adjusted_rank": 140
             },
             {
-              "name": "Tua Tagovailoa",
-              "position": "QB",
-              "pro_team": "ATL",
-              "adjusted_rank": 141
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             }
           ]
         },
@@ -6491,16 +6491,16 @@
               "adjusted_rank": 140
             },
             {
-              "name": "Tua Tagovailoa",
-              "position": "QB",
-              "pro_team": "ATL",
-              "adjusted_rank": 141
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Texans D/ST",
-              "position": "D/ST",
-              "pro_team": "HOU",
-              "adjusted_rank": 142
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             }
           ]
         },
@@ -6534,16 +6534,16 @@
               "adjusted_rank": 141
             },
             {
-              "name": "Texans D/ST",
-              "position": "D/ST",
-              "pro_team": "HOU",
-              "adjusted_rank": 142
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Broncos D/ST",
-              "position": "D/ST",
-              "pro_team": "DEN",
-              "adjusted_rank": 143
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             }
           ]
         },
@@ -6577,16 +6577,16 @@
               "adjusted_rank": 142
             },
             {
-              "name": "Broncos D/ST",
-              "position": "D/ST",
-              "pro_team": "DEN",
-              "adjusted_rank": 143
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Steelers D/ST",
-              "position": "D/ST",
-              "pro_team": "PIT",
-              "adjusted_rank": 144
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             }
           ]
         },
@@ -6620,16 +6620,16 @@
               "adjusted_rank": 143
             },
             {
-              "name": "Steelers D/ST",
-              "position": "D/ST",
-              "pro_team": "PIT",
-              "adjusted_rank": 144
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Seahawks D/ST",
-              "position": "D/ST",
-              "pro_team": "SEA",
-              "adjusted_rank": 145
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             }
           ]
         }
@@ -7006,22 +7006,22 @@
               "adjusted_rank": 151
             },
             {
-              "name": "Chiefs D/ST",
-              "position": "D/ST",
-              "pro_team": "KC",
-              "adjusted_rank": 152
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Chargers D/ST",
-              "position": "D/ST",
-              "pro_team": "LAC",
-              "adjusted_rank": 153
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Brandon Aubrey",
-              "position": "K",
-              "pro_team": "DAL",
-              "adjusted_rank": 154
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7049,22 +7049,22 @@
               "adjusted_rank": 152
             },
             {
-              "name": "Chargers D/ST",
-              "position": "D/ST",
-              "pro_team": "LAC",
-              "adjusted_rank": 153
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Brandon Aubrey",
-              "position": "K",
-              "pro_team": "DAL",
-              "adjusted_rank": 154
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Cameron Dicker",
-              "position": "K",
-              "pro_team": "LAC",
-              "adjusted_rank": 155
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7092,22 +7092,22 @@
               "adjusted_rank": 153
             },
             {
-              "name": "Brandon Aubrey",
-              "position": "K",
-              "pro_team": "DAL",
-              "adjusted_rank": 154
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Cameron Dicker",
-              "position": "K",
-              "pro_team": "LAC",
-              "adjusted_rank": 155
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Jason Myers",
-              "position": "K",
-              "pro_team": "SEA",
-              "adjusted_rank": 156
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7135,22 +7135,22 @@
               "adjusted_rank": 154
             },
             {
-              "name": "Cameron Dicker",
-              "position": "K",
-              "pro_team": "LAC",
-              "adjusted_rank": 155
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Jason Myers",
-              "position": "K",
-              "pro_team": "SEA",
-              "adjusted_rank": 156
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Harrison Mevis",
-              "position": "K",
-              "pro_team": "LAR",
-              "adjusted_rank": 157
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         }
@@ -7183,22 +7183,22 @@
               "adjusted_rank": 155
             },
             {
-              "name": "Jason Myers",
-              "position": "K",
-              "pro_team": "SEA",
-              "adjusted_rank": 156
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Harrison Mevis",
-              "position": "K",
-              "pro_team": "LAR",
-              "adjusted_rank": 157
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Ka'imi Fairbairn",
-              "position": "K",
-              "pro_team": "HOU",
-              "adjusted_rank": 158
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7226,22 +7226,22 @@
               "adjusted_rank": 156
             },
             {
-              "name": "Harrison Mevis",
-              "position": "K",
-              "pro_team": "LAR",
-              "adjusted_rank": 157
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Ka'imi Fairbairn",
-              "position": "K",
-              "pro_team": "HOU",
-              "adjusted_rank": 158
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Eddy Pineiro",
-              "position": "K",
-              "pro_team": "SF",
-              "adjusted_rank": 159
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7269,22 +7269,22 @@
               "adjusted_rank": 157
             },
             {
-              "name": "Ka'imi Fairbairn",
-              "position": "K",
-              "pro_team": "HOU",
-              "adjusted_rank": 158
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Eddy Pineiro",
-              "position": "K",
-              "pro_team": "SF",
-              "adjusted_rank": 159
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Harrison Butker",
-              "position": "K",
-              "pro_team": "KC",
-              "adjusted_rank": 160
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7312,22 +7312,22 @@
               "adjusted_rank": 158
             },
             {
-              "name": "Eddy Pineiro",
-              "position": "K",
-              "pro_team": "SF",
-              "adjusted_rank": 159
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Harrison Butker",
-              "position": "K",
-              "pro_team": "KC",
-              "adjusted_rank": 160
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Cam Little",
-              "position": "K",
-              "pro_team": "JAX",
-              "adjusted_rank": 161
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7355,22 +7355,22 @@
               "adjusted_rank": 159
             },
             {
-              "name": "Harrison Butker",
-              "position": "K",
-              "pro_team": "KC",
-              "adjusted_rank": 160
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Cam Little",
-              "position": "K",
-              "pro_team": "JAX",
-              "adjusted_rank": 161
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Jake Bates",
-              "position": "K",
-              "pro_team": "DET",
-              "adjusted_rank": 162
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },
@@ -7398,22 +7398,22 @@
               "adjusted_rank": 160
             },
             {
-              "name": "Cam Little",
-              "position": "K",
-              "pro_team": "JAX",
-              "adjusted_rank": 161
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
             },
             {
-              "name": "Jake Bates",
-              "position": "K",
-              "pro_team": "DET",
-              "adjusted_rank": 162
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
             },
             {
-              "name": "Tyler Loop",
-              "position": "K",
-              "pro_team": "BAL",
-              "adjusted_rank": 163
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
             }
           ]
         },

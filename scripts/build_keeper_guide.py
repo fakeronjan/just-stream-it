@@ -141,7 +141,7 @@ def mark_kept_2026(guide):
 ADP_CONTEXT_SKILL_POSITIONS = {"QB", "RB", "WR", "TE"}
 ADP_CONTEXT_SIZE = 5
 ADP_CONTEXT_MIN_POSITIONS = 3
-ADP_CONTEXT_LOOKAHEAD = 20
+ADP_CONTEXT_LOOKAHEAD = 30
 
 
 def _pick_adp_context(pool, cursor):
@@ -150,7 +150,9 @@ def _pick_adp_context(pool, cursor):
     rather than whatever the next N players by rank happen to be - a run
     of same-position ADP neighbors (common; RBs and WRs both go in
     streaks) would otherwise show a pick's context as e.g. 5 straight
-    WRs, which undersells how open that pick actually is.
+    WRs, which undersells how open that pick actually is. This matters
+    most in the early-mid rounds, where real roster-construction
+    decisions ("do I need a TE here or can it wait") actually happen.
 
     Only QB/RB/WR/TE count toward the position-diversity floor. K/D-ST
     intentionally don't: real ~2026 ADP data has a hard ~60-player dead
@@ -159,12 +161,20 @@ def _pick_adp_context(pool, cursor):
     make the floor trivially satisfiable there without actually
     reflecting draftable variety.
 
-    For the ~12% of picks whose lookahead window has no way to reach 3
-    skill positions (that same dead zone, landing around rounds 14-17
-    of this draft) there's no good answer - showing a WR ranked 200
-    spots below the window just to hit a quota would be a worse
-    suggestion than an honest "here's what's actually next", so this
-    falls back to a plain next-N-by-rank slice for exactly those picks.
+    The lookahead is 30, not something tighter like 20: checked against
+    the real pool, a 20-cap falsely failed picks nowhere near the actual
+    dead zone (e.g. pick 69/round 6, where TE and QB both sit only
+    ~20-25 ranks past a WR/RB cluster - a totally normal reach, not a
+    stretch) while 40+ starts reaching all the way through the real
+    dead zone too, which produces a WORSE answer there (implying a
+    skill player is realistically "around" during what's actually a
+    guaranteed K/D-ST run). 30 is the point where every remaining
+    failure is inside that real dead zone (rounds ~14-17) and nothing
+    earlier.
+    For those genuine dead-zone picks there's no good answer - showing a
+    WR ranked 150+ spots below the window just to hit a quota would be
+    a worse suggestion than an honest "here's what's actually next", so
+    this falls back to a plain next-N-by-rank slice for exactly those.
     """
     window = pool[cursor : cursor + ADP_CONTEXT_LOOKAHEAD]
 
