@@ -185,12 +185,18 @@ header.masthead h1 {
 header.masthead .subtitle { color: var(--dim); font-size: 0.85rem; }
 nav.resources {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.5rem 1rem;
   margin-top: 0.75rem;
   font-size: 0.75rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+nav.resources::-webkit-scrollbar { display: none; }
 nav.resources a {
+  flex: 0 0 auto;
+  white-space: nowrap;
   color: var(--dim);
   text-decoration: none;
   border: 1px solid var(--line);
