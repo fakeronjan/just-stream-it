@@ -92,10 +92,10 @@
   }
   .adp-line .pos-badge { transform: scale(0.85); transform-origin: left center; }
 
-  .top50-scroll { max-height: 480px; overflow-y: auto; }
-  table.top50-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-  table.top50-table th, table.top50-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
-  table.top50-table th {
+  .top200-scroll { max-height: 480px; overflow-y: auto; }
+  table.top200-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table.top200-table th, table.top200-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+  table.top200-table th {
     position: sticky;
     top: 0;
     background: var(--panel);
@@ -104,8 +104,8 @@
     text-transform: uppercase;
     letter-spacing: 0.04em;
   }
-  table.top50-table td.player-cell { font-weight: 600; }
-  table.top50-table tbody tr:hover { background: var(--panel-2); }
+  table.top200-table td.player-cell { font-weight: 600; }
+  table.top200-table tbody tr:hover { background: var(--panel-2); }
 </style>
 <script>
 (function() {
@@ -159,14 +159,14 @@
   </div>
 
   <div class="section">
-    <div class="section-title">Top 50 available (not kept)</div>
+    <div class="section-title">Top 200 available (not kept)</div>
     <div class="card">
-      <div class="top50-scroll">
-        <table class="top50-table">
+      <div class="top200-scroll">
+        <table class="top200-table">
           <thead>
             <tr><th>Rank</th><th>Player</th><th>Pos</th><th>NFL</th></tr>
           </thead>
-          <tbody id="top50-body"></tbody>
+          <tbody id="top200-body"></tbody>
         </table>
       </div>
     </div>
@@ -180,7 +180,7 @@
   <p class="subtitle" style="margin-top:8px; font-size:0.85rem; line-height:1.6;">
     For every pick that's still open, we show a few names pulled from ESPN's ADP with all kept players
     removed. That's a rough guide to who might be around at that point, not a prediction - real drafts
-    rarely follow ADP that closely. The Top 50 list below draws from the same pool.
+    rarely follow ADP that closely. The Top 200 list below draws from the same pool.
   </p>
 
 </div>
@@ -236,8 +236,8 @@ function renderTeamSummary() {
 }
 
 function renderTop50() {
-  const tbody = document.getElementById('top50-body');
-  tbody.innerHTML = adpUnkept.slice(0, 50).map(p => `
+  const tbody = document.getElementById('top200-body');
+  tbody.innerHTML = adpUnkept.slice(0, 200).map(p => `
     <tr>
       <td>${p.adjusted_rank}</td>
       <td class="player-cell">${p.name}</td>

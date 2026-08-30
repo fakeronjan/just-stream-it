@@ -7,7 +7,6 @@
 const NAV_INTERNAL = [
   { key: 'draft-guide', label: '2026 Draft Guide', href: 'index.html' },
   { key: 'keeper-dossier', label: '2026 Keeper Dossier', href: 'keeper-dossier.html' },
-  { key: 'adp', label: '2026 ADP Rankings', href: 'adp.html' },
   { key: 'season-2025', label: '2025 Season Recap', href: 'season-2025.html' },
 ];
 

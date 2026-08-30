@@ -406,8 +406,6 @@ def main():
             }
         )
     adp.sort(key=lambda p: p["superflex_rank"])
-    (DOCS_DATA / "adp_rankings.json").write_text(json.dumps(adp, indent=2))
-    print(f"Wrote adp_rankings.json ({len(adp)} players)")
 
     kept_player_ids = {
         c["player_id"] for t in guide for c in t["candidates"] if c.get("kept_2026")
