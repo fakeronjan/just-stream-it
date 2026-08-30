@@ -164,7 +164,7 @@
       <div class="top200-scroll">
         <table class="top200-table">
           <thead>
-            <tr><th>Rank</th><th>Player</th><th>Pos</th><th>Pos Rank</th><th>NFL</th></tr>
+            <tr><th>Rank</th><th>Pos Rank</th><th>Pos</th><th>Player</th><th>NFL Team</th></tr>
           </thead>
           <tbody id="top200-body"></tbody>
         </table>
@@ -266,9 +266,9 @@ function renderTop50() {
   tbody.innerHTML = adpUnkept.slice(0, 200).map(p => `
     <tr>
       <td>${p.adjusted_rank}</td>
-      <td class="player-cell">${p.name}</td>
-      <td>${posBadge(p.position)}</td>
       <td>${posRankById[p.player_id] ?? '-'}</td>
+      <td>${posBadge(p.position)}</td>
+      <td class="player-cell">${p.name}</td>
       <td>${p.pro_team}</td>
     </tr>
   `).join('');
