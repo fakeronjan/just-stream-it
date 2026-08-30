@@ -82,8 +82,20 @@ body {
   background-image: var(--bg-pattern);
   background-repeat: repeat;
   color: var(--text);
-  font-family: -apple-system, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
+}
+
+/* Headline font (Oswald, loaded via Google Fonts in each page's <head>) -
+   the small-caps "eyebrow" labels (section headers, tile labels, bracket
+   round labels all share this same look already). The big H1 gets the
+   same treatment via .site-header h1 below. Body copy and tables stay on
+   Inter - a condensed display font on dense stat tables punishes
+   readability. */
+.section-title,
+.bracket-round-title,
+.tile-label {
+  font-family: "Oswald", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 a { color: var(--brand); text-decoration: none; }
@@ -202,9 +214,10 @@ a:hover { text-decoration: underline; }
 
 .site-header h1 {
   margin: 0;
-  font-size: 1.7rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
+  font-size: 1.85rem;
+  font-family: "Oswald", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .site-header .subtitle {
