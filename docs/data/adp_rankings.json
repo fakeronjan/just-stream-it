@@ -3416,6 +3416,14 @@
     "standard_rank": 1147
   },
   {
+    "player_id": 4372505,
+    "name": "Payne Durham",
+    "position": "TE",
+    "pro_team": "TB",
+    "superflex_rank": 1148,
+    "standard_rank": 1148
+  },
+  {
     "player_id": 4702559,
     "name": "Oscar Delp",
     "position": "TE",
@@ -3478,6 +3486,14 @@
     "pro_team": "NO",
     "superflex_rank": 1189,
     "standard_rank": 1189
+  },
+  {
+    "player_id": 4362477,
+    "name": "Derius Davis",
+    "position": "WR",
+    "pro_team": "LAC",
+    "superflex_rank": 1198,
+    "standard_rank": 1198
   },
   {
     "player_id": 4386544,
@@ -3614,6 +3630,14 @@
     "pro_team": "IND",
     "superflex_rank": 1235,
     "standard_rank": 1235
+  },
+  {
+    "player_id": 4040612,
+    "name": "Luke Farrell",
+    "position": "TE",
+    "pro_team": "SF",
+    "superflex_rank": 1236,
+    "standard_rank": 1236
   },
   {
     "player_id": 14163,
@@ -3835,7 +3859,7 @@
     "player_id": 4889929,
     "name": "Quinn Ewers",
     "position": "QB",
-    "pro_team": "MIA",
+    "pro_team": "JAX",
     "superflex_rank": 1291,
     "standard_rank": 1291
   },
@@ -3864,12 +3888,12 @@
     "standard_rank": 1322
   },
   {
-    "player_id": 4429105,
-    "name": "Arian Smith",
+    "player_id": 5097554,
+    "name": "Kameron Johnson",
     "position": "WR",
-    "pro_team": "NYJ",
-    "superflex_rank": 1329,
-    "standard_rank": 1329
+    "pro_team": "TB",
+    "superflex_rank": 1328,
+    "standard_rank": 1328
   },
   {
     "player_id": 3123075,
@@ -3952,14 +3976,6 @@
     "standard_rank": 1364
   },
   {
-    "player_id": 4036335,
-    "name": "Cedrick Wilson Jr.",
-    "position": "WR",
-    "pro_team": "FA",
-    "superflex_rank": 1365,
-    "standard_rank": 1365
-  },
-  {
     "player_id": 2983509,
     "name": "Dare Ogunbowale",
     "position": "RB",
@@ -3984,20 +4000,20 @@
     "standard_rank": 1371
   },
   {
+    "player_id": 4035222,
+    "name": "Trayveon Williams",
+    "position": "RB",
+    "pro_team": "DET",
+    "superflex_rank": 1374,
+    "standard_rank": 1374
+  },
+  {
     "player_id": 2576336,
     "name": "Ameer Abdullah",
     "position": "RB",
     "pro_team": "JAX",
     "superflex_rank": 1375,
     "standard_rank": 1375
-  },
-  {
-    "player_id": 3914397,
-    "name": "Scotty Miller",
-    "position": "WR",
-    "pro_team": "CHI",
-    "superflex_rank": 1377,
-    "standard_rank": 1377
   },
   {
     "player_id": 4035004,
@@ -4014,22 +4030,6 @@
     "pro_team": "NYG",
     "superflex_rank": 1380,
     "standard_rank": 1380
-  },
-  {
-    "player_id": 4212909,
-    "name": "David Moore",
-    "position": "WR",
-    "pro_team": "CAR",
-    "superflex_rank": 1382,
-    "standard_rank": 1382
-  },
-  {
-    "player_id": 3134353,
-    "name": "Tim Patrick",
-    "position": "WR",
-    "pro_team": "NYJ",
-    "superflex_rank": 1384,
-    "standard_rank": 1384
   },
   {
     "player_id": 3051738,
@@ -4192,6 +4192,14 @@
     "standard_rank": 1448
   },
   {
+    "player_id": 4241374,
+    "name": "Grant Calcaterra",
+    "position": "TE",
+    "pro_team": "PHI",
+    "superflex_rank": 1448,
+    "standard_rank": 1449
+  },
+  {
     "player_id": 4036032,
     "name": "Brittain Brown",
     "position": "RB",
@@ -4296,6 +4304,14 @@
     "standard_rank": 1524
   },
   {
+    "player_id": 4427985,
+    "name": "Bub Means",
+    "position": "WR",
+    "pro_team": "NO",
+    "superflex_rank": 1525,
+    "standard_rank": 1526
+  },
+  {
     "player_id": 4912274,
     "name": "Sione Vaki",
     "position": "RB",
@@ -4358,14 +4374,6 @@
     "pro_team": "MIA",
     "superflex_rank": 1566,
     "standard_rank": 1566
-  },
-  {
-    "player_id": 4708049,
-    "name": "Gavin Bartholomew",
-    "position": "TE",
-    "pro_team": "MIN",
-    "superflex_rank": 1567,
-    "standard_rank": 1567
   },
   {
     "player_id": 4683243,
@@ -4488,14 +4496,6 @@
     "standard_rank": 1639
   },
   {
-    "player_id": 4683159,
-    "name": "Lewis Bond",
-    "position": "WR",
-    "pro_team": "HOU",
-    "superflex_rank": 1643,
-    "standard_rank": 1629
-  },
-  {
     "player_id": 4594749,
     "name": "Michael Trigg",
     "position": "TE",
@@ -4510,6 +4510,22 @@
     "pro_team": "FA",
     "superflex_rank": 1854,
     "standard_rank": 1854
+  },
+  {
+    "player_id": 2576414,
+    "name": "Raheem Mostert",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 1880,
+    "standard_rank": 1880
+  },
+  {
+    "player_id": 3821683,
+    "name": "Austin Seibert",
+    "position": "K",
+    "pro_team": "FA",
+    "superflex_rank": 1885,
+    "standard_rank": 1885
   },
   {
     "player_id": 3116385,
@@ -4598,14 +4614,6 @@
     "pro_team": "FA",
     "superflex_rank": 1917,
     "standard_rank": 1920
-  },
-  {
-    "player_id": 2976499,
-    "name": "Amari Cooper",
-    "position": "WR",
-    "pro_team": "LV",
-    "superflex_rank": 1919,
-    "standard_rank": 1922
   },
   {
     "player_id": 15795,

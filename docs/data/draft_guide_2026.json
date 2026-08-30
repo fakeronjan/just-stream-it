@@ -28,7 +28,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "pro_team": "BAL",
+              "adjusted_rank": 1
+            },
+            {
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 2
+            },
+            {
+              "name": "Puka Nacua",
+              "position": "WR",
+              "pro_team": "LAR",
+              "adjusted_rank": 3
+            }
+          ]
         },
         {
           "overall_pick": 2,
@@ -39,7 +59,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 2
+            },
+            {
+              "name": "Puka Nacua",
+              "position": "WR",
+              "pro_team": "LAR",
+              "adjusted_rank": 3
+            },
+            {
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "pro_team": "PHI",
+              "adjusted_rank": 4
+            }
+          ]
         },
         {
           "overall_pick": 3,
@@ -56,7 +96,8 @@
             "position": "RB",
             "pro_team": "SF",
             "keeper_cost_round_2026": 1
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 4,
@@ -73,7 +114,8 @@
             "position": "RB",
             "pro_team": "DET",
             "keeper_cost_round_2026": 1
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 5,
@@ -84,7 +126,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Puka Nacua",
+              "position": "WR",
+              "pro_team": "LAR",
+              "adjusted_rank": 3
+            },
+            {
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "pro_team": "PHI",
+              "adjusted_rank": 4
+            },
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 5
+            }
+          ]
         },
         {
           "overall_pick": 6,
@@ -95,7 +157,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "pro_team": "PHI",
+              "adjusted_rank": 4
+            },
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 5
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 6
+            }
+          ]
         },
         {
           "overall_pick": 7,
@@ -106,7 +188,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 5
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 6
+            },
+            {
+              "name": "De'Von Achane",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 7
+            }
+          ]
         },
         {
           "overall_pick": 8,
@@ -123,7 +225,8 @@
             "position": "QB",
             "pro_team": "BUF",
             "keeper_cost_round_2026": 1
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 9,
@@ -134,7 +237,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 6
+            },
+            {
+              "name": "De'Von Achane",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 7
+            },
+            {
+              "name": "Joe Burrow",
+              "position": "QB",
+              "pro_team": "CIN",
+              "adjusted_rank": 8
+            }
+          ]
         },
         {
           "overall_pick": 10,
@@ -145,7 +268,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "De'Von Achane",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 7
+            },
+            {
+              "name": "Joe Burrow",
+              "position": "QB",
+              "pro_team": "CIN",
+              "adjusted_rank": 8
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 9
+            }
+          ]
         },
         {
           "overall_pick": 11,
@@ -162,7 +305,8 @@
             "position": "WR",
             "pro_team": "CIN",
             "keeper_cost_round_2026": 1
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 12,
@@ -179,27 +323,8 @@
             "position": "QB",
             "pro_team": "WSH",
             "keeper_cost_round_2026": 1
-          }
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Lamar Jackson",
-          "position": "QB",
-          "pro_team": "BAL",
-          "adjusted_rank": 1
-        },
-        {
-          "name": "Bijan Robinson",
-          "position": "RB",
-          "pro_team": "ATL",
-          "adjusted_rank": 2
-        },
-        {
-          "name": "Puka Nacua",
-          "position": "WR",
-          "pro_team": "LAR",
-          "adjusted_rank": 3
+          },
+          "adp_context": null
         }
       ]
     },
@@ -215,7 +340,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Joe Burrow",
+              "position": "QB",
+              "pro_team": "CIN",
+              "adjusted_rank": 8
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 9
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "adjusted_rank": 10
+            }
+          ]
         },
         {
           "overall_pick": 14,
@@ -226,7 +371,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 9
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "adjusted_rank": 10
+            },
+            {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 11
+            }
+          ]
         },
         {
           "overall_pick": 15,
@@ -243,7 +408,8 @@
             "position": "RB",
             "pro_team": "IND",
             "keeper_cost_round_2026": 2
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 16,
@@ -254,7 +420,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "adjusted_rank": 10
+            },
+            {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 11
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 12
+            }
+          ]
         },
         {
           "overall_pick": 17,
@@ -265,7 +451,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 11
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 12
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 13
+            }
+          ]
         },
         {
           "overall_pick": 18,
@@ -276,7 +482,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 12
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 13
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "adjusted_rank": 14
+            }
+          ]
         },
         {
           "overall_pick": 19,
@@ -287,7 +513,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 13
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "adjusted_rank": 14
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 15
+            }
+          ]
         },
         {
           "overall_pick": 20,
@@ -298,7 +544,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "adjusted_rank": 14
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 15
+            },
+            {
+              "name": "Derrick Henry",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 16
+            }
+          ]
         },
         {
           "overall_pick": 21,
@@ -309,7 +575,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 15
+            },
+            {
+              "name": "Derrick Henry",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 16
+            },
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 17
+            }
+          ]
         },
         {
           "overall_pick": 22,
@@ -326,7 +612,8 @@
             "position": "QB",
             "pro_team": "DEN",
             "keeper_cost_round_2026": 2
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 23,
@@ -337,7 +624,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Derrick Henry",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 16
+            },
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 17
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "adjusted_rank": 18
+            }
+          ]
         },
         {
           "overall_pick": 24,
@@ -348,27 +655,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Joe Burrow",
-          "position": "QB",
-          "pro_team": "CIN",
-          "adjusted_rank": 8
-        },
-        {
-          "name": "Justin Jefferson",
-          "position": "WR",
-          "pro_team": "MIN",
-          "adjusted_rank": 9
-        },
-        {
-          "name": "Drake London",
-          "position": "WR",
-          "pro_team": "ATL",
-          "adjusted_rank": 10
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 17
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "adjusted_rank": 18
+            },
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "adjusted_rank": 19
+            }
+          ]
         }
       ]
     },
@@ -384,7 +691,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "adjusted_rank": 18
+            },
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "adjusted_rank": 19
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 20
+            }
+          ]
         },
         {
           "overall_pick": 26,
@@ -395,7 +722,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "adjusted_rank": 19
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 20
+            },
+            {
+              "name": "Malik Nabers",
+              "position": "WR",
+              "pro_team": "NYG",
+              "adjusted_rank": 21
+            }
+          ]
         },
         {
           "overall_pick": 27,
@@ -406,7 +753,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 20
+            },
+            {
+              "name": "Malik Nabers",
+              "position": "WR",
+              "pro_team": "NYG",
+              "adjusted_rank": 21
+            },
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "adjusted_rank": 22
+            }
+          ]
         },
         {
           "overall_pick": 28,
@@ -417,7 +784,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Malik Nabers",
+              "position": "WR",
+              "pro_team": "NYG",
+              "adjusted_rank": 21
+            },
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "adjusted_rank": 22
+            },
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "adjusted_rank": 23
+            }
+          ]
         },
         {
           "overall_pick": 29,
@@ -428,7 +815,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "adjusted_rank": 22
+            },
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "adjusted_rank": 23
+            },
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 24
+            }
+          ]
         },
         {
           "overall_pick": 30,
@@ -439,7 +846,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "adjusted_rank": 23
+            },
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 24
+            },
+            {
+              "name": "Omarion Hampton",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 25
+            }
+          ]
         },
         {
           "overall_pick": 31,
@@ -450,7 +877,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 24
+            },
+            {
+              "name": "Omarion Hampton",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 25
+            },
+            {
+              "name": "Breece Hall",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 26
+            }
+          ]
         },
         {
           "overall_pick": 32,
@@ -467,7 +914,8 @@
             "position": "TE",
             "pro_team": "ARI",
             "keeper_cost_round_2026": 3
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 33,
@@ -478,7 +926,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Omarion Hampton",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 25
+            },
+            {
+              "name": "Breece Hall",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 26
+            },
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 27
+            }
+          ]
         },
         {
           "overall_pick": 34,
@@ -495,7 +963,8 @@
             "position": "QB",
             "pro_team": "NE",
             "keeper_cost_round_2026": 3
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 35,
@@ -512,7 +981,8 @@
             "position": "RB",
             "pro_team": "BUF",
             "keeper_cost_round_2026": 3
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 36,
@@ -523,27 +993,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Brock Bowers",
-          "position": "TE",
-          "pro_team": "LV",
-          "adjusted_rank": 18
-        },
-        {
-          "name": "Brock Purdy",
-          "position": "QB",
-          "pro_team": "SF",
-          "adjusted_rank": 19
-        },
-        {
-          "name": "A.J. Brown",
-          "position": "WR",
-          "pro_team": "NE",
-          "adjusted_rank": 20
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Breece Hall",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 26
+            },
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 27
+            },
+            {
+              "name": "Patrick Mahomes",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 28
+            }
+          ]
         }
       ]
     },
@@ -559,7 +1029,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 27
+            },
+            {
+              "name": "Patrick Mahomes",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 29
+            }
+          ]
         },
         {
           "overall_pick": 38,
@@ -570,7 +1060,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Patrick Mahomes",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 29
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
+            }
+          ]
         },
         {
           "overall_pick": 39,
@@ -581,7 +1091,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 29
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
+            },
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 31
+            }
+          ]
         },
         {
           "overall_pick": 40,
@@ -592,7 +1122,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 30
+            },
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 31
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 32
+            }
+          ]
         },
         {
           "overall_pick": 41,
@@ -603,7 +1153,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "adjusted_rank": 31
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 32
+            },
+            {
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 33
+            }
+          ]
         },
         {
           "overall_pick": 42,
@@ -614,7 +1184,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 32
+            },
+            {
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 33
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "adjusted_rank": 34
+            }
+          ]
         },
         {
           "overall_pick": 43,
@@ -631,7 +1221,8 @@
             "position": "WR",
             "pro_team": "SEA",
             "keeper_cost_round_2026": 4
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 44,
@@ -642,7 +1233,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 33
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "adjusted_rank": 34
+            },
+            {
+              "name": "Ladd McConkey",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 35
+            }
+          ]
         },
         {
           "overall_pick": 45,
@@ -653,7 +1264,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "adjusted_rank": 34
+            },
+            {
+              "name": "Ladd McConkey",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 35
+            },
+            {
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 36
+            }
+          ]
         },
         {
           "overall_pick": 46,
@@ -664,7 +1295,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ladd McConkey",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 35
+            },
+            {
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 36
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            }
+          ]
         },
         {
           "overall_pick": 47,
@@ -675,7 +1326,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 36
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Bucky Irving",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 38
+            }
+          ]
         },
         {
           "overall_pick": 48,
@@ -686,27 +1357,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Josh Jacobs",
-          "position": "RB",
-          "pro_team": "GB",
-          "adjusted_rank": 27
-        },
-        {
-          "name": "Patrick Mahomes",
-          "position": "QB",
-          "pro_team": "KC",
-          "adjusted_rank": 28
-        },
-        {
-          "name": "Travis Etienne Jr.",
-          "position": "RB",
-          "pro_team": "NO",
-          "adjusted_rank": 29
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "Bucky Irving",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 38
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
+            }
+          ]
         }
       ]
     },
@@ -722,7 +1393,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Bucky Irving",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 38
+            },
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
+            },
+            {
+              "name": "Tyler Warren",
+              "position": "TE",
+              "pro_team": "IND",
+              "adjusted_rank": 40
+            }
+          ]
         },
         {
           "overall_pick": 50,
@@ -733,7 +1424,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
+            },
+            {
+              "name": "Tyler Warren",
+              "position": "TE",
+              "pro_team": "IND",
+              "adjusted_rank": 40
+            },
+            {
+              "name": "Tee Higgins",
+              "position": "WR",
+              "pro_team": "CIN",
+              "adjusted_rank": 41
+            }
+          ]
         },
         {
           "overall_pick": 51,
@@ -744,7 +1455,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tyler Warren",
+              "position": "TE",
+              "pro_team": "IND",
+              "adjusted_rank": 40
+            },
+            {
+              "name": "Tee Higgins",
+              "position": "WR",
+              "pro_team": "CIN",
+              "adjusted_rank": 41
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 42
+            }
+          ]
         },
         {
           "overall_pick": 52,
@@ -761,7 +1492,8 @@
             "position": "QB",
             "pro_team": "JAX",
             "keeper_cost_round_2026": 5
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 53,
@@ -778,7 +1510,8 @@
             "position": "RB",
             "pro_team": "KC",
             "keeper_cost_round_2026": 5
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 54,
@@ -789,7 +1522,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tee Higgins",
+              "position": "WR",
+              "pro_team": "CIN",
+              "adjusted_rank": 41
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 42
+            },
+            {
+              "name": "Rome Odunze",
+              "position": "WR",
+              "pro_team": "CHI",
+              "adjusted_rank": 43
+            }
+          ]
         },
         {
           "overall_pick": 55,
@@ -800,7 +1553,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 42
+            },
+            {
+              "name": "Rome Odunze",
+              "position": "WR",
+              "pro_team": "CHI",
+              "adjusted_rank": 43
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 44
+            }
+          ]
         },
         {
           "overall_pick": 56,
@@ -811,7 +1584,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rome Odunze",
+              "position": "WR",
+              "pro_team": "CHI",
+              "adjusted_rank": 43
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 44
+            },
+            {
+              "name": "DJ Moore",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 45
+            }
+          ]
         },
         {
           "overall_pick": 57,
@@ -822,7 +1615,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jameson Williams",
+              "position": "WR",
+              "pro_team": "DET",
+              "adjusted_rank": 44
+            },
+            {
+              "name": "DJ Moore",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 45
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
+            }
+          ]
         },
         {
           "overall_pick": 58,
@@ -833,7 +1646,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "DJ Moore",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 45
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
+            },
+            {
+              "name": "Bhayshul Tuten",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 47
+            }
+          ]
         },
         {
           "overall_pick": 59,
@@ -844,7 +1677,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 46
+            },
+            {
+              "name": "Bhayshul Tuten",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 47
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 48
+            }
+          ]
         },
         {
           "overall_pick": 60,
@@ -855,27 +1708,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Bucky Irving",
-          "position": "RB",
-          "pro_team": "TB",
-          "adjusted_rank": 38
-        },
-        {
-          "name": "Kyler Murray",
-          "position": "QB",
-          "pro_team": "MIN",
-          "adjusted_rank": 39
-        },
-        {
-          "name": "Tyler Warren",
-          "position": "TE",
-          "pro_team": "IND",
-          "adjusted_rank": 40
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Bhayshul Tuten",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 47
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 48
+            },
+            {
+              "name": "Jadarian Price",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 49
+            }
+          ]
         }
       ]
     },
@@ -891,7 +1744,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 48
+            },
+            {
+              "name": "Jadarian Price",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 49
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
+            }
+          ]
         },
         {
           "overall_pick": 62,
@@ -902,7 +1775,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jadarian Price",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 49
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
+            },
+            {
+              "name": "Sam LaPorta",
+              "position": "TE",
+              "pro_team": "DET",
+              "adjusted_rank": 51
+            }
+          ]
         },
         {
           "overall_pick": 63,
@@ -913,7 +1806,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "adjusted_rank": 50
+            },
+            {
+              "name": "Sam LaPorta",
+              "position": "TE",
+              "pro_team": "DET",
+              "adjusted_rank": 51
+            },
+            {
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 52
+            }
+          ]
         },
         {
           "overall_pick": 64,
@@ -924,7 +1837,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Sam LaPorta",
+              "position": "TE",
+              "pro_team": "DET",
+              "adjusted_rank": 51
+            },
+            {
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 52
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
+            }
+          ]
         },
         {
           "overall_pick": 65,
@@ -935,7 +1868,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 52
+            },
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
+            },
+            {
+              "name": "Jared Goff",
+              "position": "QB",
+              "pro_team": "DET",
+              "adjusted_rank": 54
+            }
+          ]
         },
         {
           "overall_pick": 66,
@@ -946,7 +1899,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Carnell Tate",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 53
+            },
+            {
+              "name": "Jared Goff",
+              "position": "QB",
+              "pro_team": "DET",
+              "adjusted_rank": 54
+            },
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "adjusted_rank": 55
+            }
+          ]
         },
         {
           "overall_pick": 67,
@@ -957,7 +1930,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jared Goff",
+              "position": "QB",
+              "pro_team": "DET",
+              "adjusted_rank": 54
+            },
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "adjusted_rank": 55
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 56
+            }
+          ]
         },
         {
           "overall_pick": 68,
@@ -968,7 +1961,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "adjusted_rank": 55
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 56
+            },
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 57
+            }
+          ]
         },
         {
           "overall_pick": 69,
@@ -979,7 +1992,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "adjusted_rank": 56
+            },
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 57
+            },
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 58
+            }
+          ]
         },
         {
           "overall_pick": 70,
@@ -990,7 +2023,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 57
+            },
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 58
+            },
+            {
+              "name": "DK Metcalf",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 59
+            }
+          ]
         },
         {
           "overall_pick": 71,
@@ -1001,7 +2054,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 58
+            },
+            {
+              "name": "DK Metcalf",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 59
+            },
+            {
+              "name": "Parker Washington",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 60
+            }
+          ]
         },
         {
           "overall_pick": 72,
@@ -1012,27 +2085,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "David Montgomery",
-          "position": "RB",
-          "pro_team": "HOU",
-          "adjusted_rank": 48
-        },
-        {
-          "name": "Jadarian Price",
-          "position": "RB",
-          "pro_team": "SEA",
-          "adjusted_rank": 49
-        },
-        {
-          "name": "Harold Fannin Jr.",
-          "position": "TE",
-          "pro_team": "CLE",
-          "adjusted_rank": 50
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "DK Metcalf",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 59
+            },
+            {
+              "name": "Parker Washington",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 60
+            },
+            {
+              "name": "Alec Pierce",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 61
+            }
+          ]
         }
       ]
     },
@@ -1048,7 +2121,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Parker Washington",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 60
+            },
+            {
+              "name": "Alec Pierce",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 61
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
+            }
+          ]
         },
         {
           "overall_pick": 74,
@@ -1059,7 +2152,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Alec Pierce",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 61
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
+            },
+            {
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 63
+            }
+          ]
         },
         {
           "overall_pick": 75,
@@ -1076,7 +2189,8 @@
             "position": "WR",
             "pro_team": "CAR",
             "keeper_cost_round_2026": 7
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 76,
@@ -1087,7 +2201,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 62
+            },
+            {
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 63
+            },
+            {
+              "name": "Jonathon Brooks",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 64
+            }
+          ]
         },
         {
           "overall_pick": 77,
@@ -1098,7 +2232,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "pro_team": "PIT",
+              "adjusted_rank": 63
+            },
+            {
+              "name": "Jonathon Brooks",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 65
+            }
+          ]
         },
         {
           "overall_pick": 78,
@@ -1109,7 +2263,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jonathon Brooks",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 65
+            },
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 66
+            }
+          ]
         },
         {
           "overall_pick": 79,
@@ -1120,7 +2294,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 65
+            },
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 66
+            },
+            {
+              "name": "Mike Evans",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 67
+            }
+          ]
         },
         {
           "overall_pick": 80,
@@ -1131,7 +2325,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 66
+            },
+            {
+              "name": "Mike Evans",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 67
+            },
+            {
+              "name": "Matthew Golden",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 68
+            }
+          ]
         },
         {
           "overall_pick": 81,
@@ -1142,7 +2356,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Mike Evans",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 67
+            },
+            {
+              "name": "Matthew Golden",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 68
+            },
+            {
+              "name": "Brian Thomas Jr.",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 69
+            }
+          ]
         },
         {
           "overall_pick": 82,
@@ -1153,7 +2387,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Matthew Golden",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 68
+            },
+            {
+              "name": "Brian Thomas Jr.",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 69
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 70
+            }
+          ]
         },
         {
           "overall_pick": 83,
@@ -1164,7 +2418,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Brian Thomas Jr.",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 69
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 71
+            }
+          ]
         },
         {
           "overall_pick": 84,
@@ -1175,27 +2449,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Parker Washington",
-          "position": "WR",
-          "pro_team": "JAX",
-          "adjusted_rank": 60
-        },
-        {
-          "name": "Alec Pierce",
-          "position": "WR",
-          "pro_team": "IND",
-          "adjusted_rank": 61
-        },
-        {
-          "name": "Jaylen Warren",
-          "position": "RB",
-          "pro_team": "PIT",
-          "adjusted_rank": 62
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "Kenny Gainwell",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 72
+            }
+          ]
         }
       ]
     },
@@ -1211,7 +2485,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tony Pollard",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "Kenny Gainwell",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 72
+            },
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 73
+            }
+          ]
         },
         {
           "overall_pick": 86,
@@ -1222,7 +2516,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kenny Gainwell",
+              "position": "RB",
+              "pro_team": "TB",
+              "adjusted_rank": 72
+            },
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 73
+            },
+            {
+              "name": "Michael Wilson",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 74
+            }
+          ]
         },
         {
           "overall_pick": 87,
@@ -1233,7 +2547,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 73
+            },
+            {
+              "name": "Michael Wilson",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 74
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 75
+            }
+          ]
         },
         {
           "overall_pick": 88,
@@ -1244,7 +2578,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Michael Wilson",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 74
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 75
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
+            }
+          ]
         },
         {
           "overall_pick": 89,
@@ -1255,7 +2609,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "adjusted_rank": 75
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "adjusted_rank": 77
+            }
+          ]
         },
         {
           "overall_pick": 90,
@@ -1266,7 +2640,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "adjusted_rank": 76
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "adjusted_rank": 77
+            },
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "MIA",
+              "adjusted_rank": 78
+            }
+          ]
         },
         {
           "overall_pick": 91,
@@ -1283,7 +2677,8 @@
             "position": "WR",
             "pro_team": "NO",
             "keeper_cost_round_2026": 8
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 92,
@@ -1300,7 +2695,8 @@
             "position": "WR",
             "pro_team": "TB",
             "keeper_cost_round_2026": 8
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 93,
@@ -1311,7 +2707,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "adjusted_rank": 77
+            },
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "MIA",
+              "adjusted_rank": 78
+            },
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "adjusted_rank": 79
+            }
+          ]
         },
         {
           "overall_pick": 94,
@@ -1322,7 +2738,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "MIA",
+              "adjusted_rank": 78
+            },
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "adjusted_rank": 79
+            },
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "adjusted_rank": 80
+            }
+          ]
         },
         {
           "overall_pick": 95,
@@ -1333,7 +2769,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "adjusted_rank": 79
+            },
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "adjusted_rank": 80
+            },
+            {
+              "name": "Sam Darnold",
+              "position": "QB",
+              "pro_team": "SEA",
+              "adjusted_rank": 81
+            }
+          ]
         },
         {
           "overall_pick": 96,
@@ -1344,27 +2800,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Tony Pollard",
-          "position": "RB",
-          "pro_team": "TEN",
-          "adjusted_rank": 71
-        },
-        {
-          "name": "Kenny Gainwell",
-          "position": "RB",
-          "pro_team": "TB",
-          "adjusted_rank": 72
-        },
-        {
-          "name": "Chuba Hubbard",
-          "position": "RB",
-          "pro_team": "CAR",
-          "adjusted_rank": 73
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "adjusted_rank": 80
+            },
+            {
+              "name": "Sam Darnold",
+              "position": "QB",
+              "pro_team": "SEA",
+              "adjusted_rank": 81
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
+            }
+          ]
         }
       ]
     },
@@ -1380,7 +2836,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Sam Darnold",
+              "position": "QB",
+              "pro_team": "SEA",
+              "adjusted_rank": 81
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
+            },
+            {
+              "name": "De'Zhaun Stribling",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 83
+            }
+          ]
         },
         {
           "overall_pick": 98,
@@ -1397,7 +2873,8 @@
             "position": "RB",
             "pro_team": "CLE",
             "keeper_cost_round_2026": 9
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 99,
@@ -1408,7 +2885,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 82
+            },
+            {
+              "name": "De'Zhaun Stribling",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 83
+            },
+            {
+              "name": "Khalil Shakir",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 84
+            }
+          ]
         },
         {
           "overall_pick": 100,
@@ -1419,7 +2916,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "De'Zhaun Stribling",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 83
+            },
+            {
+              "name": "Khalil Shakir",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 84
+            },
+            {
+              "name": "Jayden Reed",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 85
+            }
+          ]
         },
         {
           "overall_pick": 101,
@@ -1430,7 +2947,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Khalil Shakir",
+              "position": "WR",
+              "pro_team": "BUF",
+              "adjusted_rank": 84
+            },
+            {
+              "name": "Jayden Reed",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 85
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
+            }
+          ]
         },
         {
           "overall_pick": 102,
@@ -1441,7 +2978,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jayden Reed",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 85
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "adjusted_rank": 87
+            }
+          ]
         },
         {
           "overall_pick": 103,
@@ -1452,7 +3009,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 86
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "adjusted_rank": 87
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "adjusted_rank": 88
+            }
+          ]
         },
         {
           "overall_pick": 104,
@@ -1463,7 +3040,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "adjusted_rank": 87
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "adjusted_rank": 88
+            },
+            {
+              "name": "Mark Andrews",
+              "position": "TE",
+              "pro_team": "BAL",
+              "adjusted_rank": 89
+            }
+          ]
         },
         {
           "overall_pick": 105,
@@ -1474,7 +3071,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "adjusted_rank": 88
+            },
+            {
+              "name": "Mark Andrews",
+              "position": "TE",
+              "pro_team": "BAL",
+              "adjusted_rank": 89
+            },
+            {
+              "name": "Isaiah Likely",
+              "position": "TE",
+              "pro_team": "NYG",
+              "adjusted_rank": 90
+            }
+          ]
         },
         {
           "overall_pick": 106,
@@ -1485,7 +3102,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Mark Andrews",
+              "position": "TE",
+              "pro_team": "BAL",
+              "adjusted_rank": 89
+            },
+            {
+              "name": "Isaiah Likely",
+              "position": "TE",
+              "pro_team": "NYG",
+              "adjusted_rank": 90
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
+            }
+          ]
         },
         {
           "overall_pick": 107,
@@ -1496,7 +3133,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Isaiah Likely",
+              "position": "TE",
+              "pro_team": "NYG",
+              "adjusted_rank": 90
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
+            },
+            {
+              "name": "Cam Ward",
+              "position": "QB",
+              "pro_team": "TEN",
+              "adjusted_rank": 92
+            }
+          ]
         },
         {
           "overall_pick": 108,
@@ -1507,27 +3164,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Sam Darnold",
-          "position": "QB",
-          "pro_team": "SEA",
-          "adjusted_rank": 81
-        },
-        {
-          "name": "Jordan Addison",
-          "position": "WR",
-          "pro_team": "MIN",
-          "adjusted_rank": 82
-        },
-        {
-          "name": "De'Zhaun Stribling",
-          "position": "WR",
-          "pro_team": "SF",
-          "adjusted_rank": 83
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 91
+            },
+            {
+              "name": "Cam Ward",
+              "position": "QB",
+              "pro_team": "TEN",
+              "adjusted_rank": 92
+            },
+            {
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 93
+            }
+          ]
         }
       ]
     },
@@ -1543,7 +3200,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Cam Ward",
+              "position": "QB",
+              "pro_team": "TEN",
+              "adjusted_rank": 92
+            },
+            {
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 93
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
+            }
+          ]
         },
         {
           "overall_pick": 110,
@@ -1554,7 +3231,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 93
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
+            },
+            {
+              "name": "Quentin Johnston",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 95
+            }
+          ]
         },
         {
           "overall_pick": 111,
@@ -1571,7 +3268,8 @@
             "position": "QB",
             "pro_team": "LAR",
             "keeper_cost_round_2026": 10
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 112,
@@ -1582,7 +3280,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 94
+            },
+            {
+              "name": "Quentin Johnston",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 95
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 96
+            }
+          ]
         },
         {
           "overall_pick": 113,
@@ -1593,7 +3311,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Quentin Johnston",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 95
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 96
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
+            }
+          ]
         },
         {
           "overall_pick": 114,
@@ -1610,7 +3348,8 @@
             "position": "RB",
             "pro_team": "NYG",
             "keeper_cost_round_2026": 10
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 115,
@@ -1621,7 +3360,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "WSH",
+              "adjusted_rank": 96
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
+            },
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 98
+            }
+          ]
         },
         {
           "overall_pick": 116,
@@ -1638,7 +3397,8 @@
             "position": "TE",
             "pro_team": "CHI",
             "keeper_cost_round_2026": 10
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 117,
@@ -1649,7 +3409,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 97
+            },
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 98
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 99
+            }
+          ]
         },
         {
           "overall_pick": 118,
@@ -1660,7 +3440,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 98
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 99
+            },
+            {
+              "name": "Aaron Jones Sr.",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 100
+            }
+          ]
         },
         {
           "overall_pick": 119,
@@ -1671,7 +3471,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 99
+            },
+            {
+              "name": "Aaron Jones Sr.",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 100
+            },
+            {
+              "name": "Rachaad White",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 101
+            }
+          ]
         },
         {
           "overall_pick": 120,
@@ -1682,27 +3502,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Cam Ward",
-          "position": "QB",
-          "pro_team": "TEN",
-          "adjusted_rank": 92
-        },
-        {
-          "name": "Jacoby Brissett",
-          "position": "QB",
-          "pro_team": "ARI",
-          "adjusted_rank": 93
-        },
-        {
-          "name": "Xavier Worthy",
-          "position": "WR",
-          "pro_team": "KC",
-          "adjusted_rank": 94
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Aaron Jones Sr.",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 100
+            },
+            {
+              "name": "Rachaad White",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 101
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
+            }
+          ]
         }
       ]
     },
@@ -1718,7 +3538,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rachaad White",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 101
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
+            },
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "pro_team": "MIN",
+              "adjusted_rank": 103
+            }
+          ]
         },
         {
           "overall_pick": 122,
@@ -1729,7 +3569,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 102
+            },
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "pro_team": "MIN",
+              "adjusted_rank": 103
+            },
+            {
+              "name": "Hunter Henry",
+              "position": "TE",
+              "pro_team": "NE",
+              "adjusted_rank": 104
+            }
+          ]
         },
         {
           "overall_pick": 123,
@@ -1740,7 +3600,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "pro_team": "MIN",
+              "adjusted_rank": 103
+            },
+            {
+              "name": "Hunter Henry",
+              "position": "TE",
+              "pro_team": "NE",
+              "adjusted_rank": 104
+            },
+            {
+              "name": "Terrance Ferguson",
+              "position": "TE",
+              "pro_team": "LAR",
+              "adjusted_rank": 105
+            }
+          ]
         },
         {
           "overall_pick": 124,
@@ -1751,7 +3631,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Hunter Henry",
+              "position": "TE",
+              "pro_team": "NE",
+              "adjusted_rank": 104
+            },
+            {
+              "name": "Terrance Ferguson",
+              "position": "TE",
+              "pro_team": "LAR",
+              "adjusted_rank": 105
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 106
+            }
+          ]
         },
         {
           "overall_pick": 125,
@@ -1762,7 +3662,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Terrance Ferguson",
+              "position": "TE",
+              "pro_team": "LAR",
+              "adjusted_rank": 105
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 106
+            },
+            {
+              "name": "Blake Corum",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 107
+            }
+          ]
         },
         {
           "overall_pick": 126,
@@ -1779,7 +3699,8 @@
             "position": "RB",
             "pro_team": "DAL",
             "keeper_cost_round_2026": 11
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 127,
@@ -1790,7 +3711,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 106
+            },
+            {
+              "name": "Blake Corum",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 107
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 108
+            }
+          ]
         },
         {
           "overall_pick": 128,
@@ -1801,7 +3742,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Blake Corum",
+              "position": "RB",
+              "pro_team": "LAR",
+              "adjusted_rank": 107
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 108
+            },
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 109
+            }
+          ]
         },
         {
           "overall_pick": 129,
@@ -1818,7 +3779,8 @@
             "position": "QB",
             "pro_team": "IND",
             "keeper_cost_round_2026": 11
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 130,
@@ -1829,7 +3791,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 108
+            },
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 109
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
+            }
+          ]
         },
         {
           "overall_pick": 131,
@@ -1840,7 +3822,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 109
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
+            },
+            {
+              "name": "KC Concepcion",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 111
+            }
+          ]
         },
         {
           "overall_pick": 132,
@@ -1851,27 +3853,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Rachaad White",
-          "position": "RB",
-          "pro_team": "WSH",
-          "adjusted_rank": 101
-        },
-        {
-          "name": "Dalton Kincaid",
-          "position": "TE",
-          "pro_team": "BUF",
-          "adjusted_rank": 102
-        },
-        {
-          "name": "T.J. Hockenson",
-          "position": "TE",
-          "pro_team": "MIN",
-          "adjusted_rank": 103
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 110
+            },
+            {
+              "name": "KC Concepcion",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 111
+            },
+            {
+              "name": "Makai Lemon",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 112
+            }
+          ]
         }
       ]
     },
@@ -1893,7 +3895,8 @@
             "position": "QB",
             "pro_team": "NYG",
             "keeper_cost_round_2026": 12
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 134,
@@ -1904,7 +3907,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "KC Concepcion",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 111
+            },
+            {
+              "name": "Makai Lemon",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 112
+            },
+            {
+              "name": "Chris Godwin Jr.",
+              "position": "WR",
+              "pro_team": "TB",
+              "adjusted_rank": 113
+            }
+          ]
         },
         {
           "overall_pick": 135,
@@ -1915,7 +3938,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Makai Lemon",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 112
+            },
+            {
+              "name": "Chris Godwin Jr.",
+              "position": "WR",
+              "pro_team": "TB",
+              "adjusted_rank": 113
+            },
+            {
+              "name": "Deebo Samuel Sr.",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 114
+            }
+          ]
         },
         {
           "overall_pick": 136,
@@ -1926,7 +3969,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Chris Godwin Jr.",
+              "position": "WR",
+              "pro_team": "TB",
+              "adjusted_rank": 113
+            },
+            {
+              "name": "Deebo Samuel Sr.",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 114
+            },
+            {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 115
+            }
+          ]
         },
         {
           "overall_pick": 137,
@@ -1937,7 +4000,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Deebo Samuel Sr.",
+              "position": "WR",
+              "pro_team": "SF",
+              "adjusted_rank": 114
+            },
+            {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 115
+            },
+            {
+              "name": "Jalen Coker",
+              "position": "WR",
+              "pro_team": "CAR",
+              "adjusted_rank": 116
+            }
+          ]
         },
         {
           "overall_pick": 138,
@@ -1948,7 +4031,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "pro_team": "NE",
+              "adjusted_rank": 115
+            },
+            {
+              "name": "Jalen Coker",
+              "position": "WR",
+              "pro_team": "CAR",
+              "adjusted_rank": 116
+            },
+            {
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "pro_team": "SEA",
+              "adjusted_rank": 117
+            }
+          ]
         },
         {
           "overall_pick": 139,
@@ -1959,7 +4062,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jalen Coker",
+              "position": "WR",
+              "pro_team": "CAR",
+              "adjusted_rank": 116
+            },
+            {
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "pro_team": "SEA",
+              "adjusted_rank": 117
+            },
+            {
+              "name": "Jalen McMillan",
+              "position": "WR",
+              "pro_team": "TB",
+              "adjusted_rank": 118
+            }
+          ]
         },
         {
           "overall_pick": 140,
@@ -1970,7 +4093,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "pro_team": "SEA",
+              "adjusted_rank": 117
+            },
+            {
+              "name": "Jalen McMillan",
+              "position": "WR",
+              "pro_team": "TB",
+              "adjusted_rank": 118
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            }
+          ]
         },
         {
           "overall_pick": 141,
@@ -1981,7 +4124,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jalen McMillan",
+              "position": "WR",
+              "pro_team": "TB",
+              "adjusted_rank": 118
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 120
+            }
+          ]
         },
         {
           "overall_pick": 142,
@@ -1992,7 +4155,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 120
+            },
+            {
+              "name": "Chris Rodriguez Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 121
+            }
+          ]
         },
         {
           "overall_pick": 143,
@@ -2003,7 +4186,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 120
+            },
+            {
+              "name": "Chris Rodriguez Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 121
+            },
+            {
+              "name": "Brian Robinson Jr.",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 122
+            }
+          ]
         },
         {
           "overall_pick": 144,
@@ -2014,27 +4217,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "KC Concepcion",
-          "position": "WR",
-          "pro_team": "CLE",
-          "adjusted_rank": 111
-        },
-        {
-          "name": "Makai Lemon",
-          "position": "WR",
-          "pro_team": "PHI",
-          "adjusted_rank": 112
-        },
-        {
-          "name": "Chris Godwin Jr.",
-          "position": "WR",
-          "pro_team": "TB",
-          "adjusted_rank": 113
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Chris Rodriguez Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
+              "adjusted_rank": 121
+            },
+            {
+              "name": "Brian Robinson Jr.",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 122
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
+            }
+          ]
         }
       ]
     },
@@ -2050,7 +4253,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Brian Robinson Jr.",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 122
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
+            },
+            {
+              "name": "Tyler Allgeier",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 124
+            }
+          ]
         },
         {
           "overall_pick": 146,
@@ -2067,7 +4290,8 @@
             "position": "QB",
             "pro_team": "NO",
             "keeper_cost_round_2026": 13
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 147,
@@ -2078,7 +4302,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 123
+            },
+            {
+              "name": "Tyler Allgeier",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 124
+            },
+            {
+              "name": "MarShawn Lloyd",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 125
+            }
+          ]
         },
         {
           "overall_pick": 148,
@@ -2089,7 +4333,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tyler Allgeier",
+              "position": "RB",
+              "pro_team": "ARI",
+              "adjusted_rank": 124
+            },
+            {
+              "name": "MarShawn Lloyd",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 125
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
+            }
+          ]
         },
         {
           "overall_pick": 149,
@@ -2100,7 +4364,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "MarShawn Lloyd",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 125
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
+            },
+            {
+              "name": "Jerry Jeudy",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 127
+            }
+          ]
         },
         {
           "overall_pick": 150,
@@ -2111,7 +4395,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 126
+            },
+            {
+              "name": "Jerry Jeudy",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 127
+            },
+            {
+              "name": "Calvin Ridley",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 128
+            }
+          ]
         },
         {
           "overall_pick": 151,
@@ -2122,7 +4426,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jerry Jeudy",
+              "position": "WR",
+              "pro_team": "CLE",
+              "adjusted_rank": 127
+            },
+            {
+              "name": "Calvin Ridley",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 128
+            },
+            {
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 129
+            }
+          ]
         },
         {
           "overall_pick": 152,
@@ -2133,7 +4457,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Calvin Ridley",
+              "position": "WR",
+              "pro_team": "TEN",
+              "adjusted_rank": 128
+            },
+            {
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 129
+            },
+            {
+              "name": "Caleb Douglas",
+              "position": "WR",
+              "pro_team": "MIA",
+              "adjusted_rank": 130
+            }
+          ]
         },
         {
           "overall_pick": 153,
@@ -2150,7 +4494,8 @@
             "position": "TE",
             "pro_team": "ATL",
             "keeper_cost_round_2026": 13
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 154,
@@ -2161,7 +4506,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "adjusted_rank": 129
+            },
+            {
+              "name": "Caleb Douglas",
+              "position": "WR",
+              "pro_team": "MIA",
+              "adjusted_rank": 130
+            },
+            {
+              "name": "Jordyn Tyson",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 131
+            }
+          ]
         },
         {
           "overall_pick": 155,
@@ -2172,7 +4537,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Caleb Douglas",
+              "position": "WR",
+              "pro_team": "MIA",
+              "adjusted_rank": 130
+            },
+            {
+              "name": "Jordyn Tyson",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 131
+            },
+            {
+              "name": "Tre Tucker",
+              "position": "WR",
+              "pro_team": "LV",
+              "adjusted_rank": 132
+            }
+          ]
         },
         {
           "overall_pick": 156,
@@ -2183,27 +4568,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Brian Robinson Jr.",
-          "position": "RB",
-          "pro_team": "ATL",
-          "adjusted_rank": 122
-        },
-        {
-          "name": "Geno Smith",
-          "position": "QB",
-          "pro_team": "NYJ",
-          "adjusted_rank": 123
-        },
-        {
-          "name": "Tyler Allgeier",
-          "position": "RB",
-          "pro_team": "ARI",
-          "adjusted_rank": 124
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jordyn Tyson",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 131
+            },
+            {
+              "name": "Tre Tucker",
+              "position": "WR",
+              "pro_team": "LV",
+              "adjusted_rank": 132
+            },
+            {
+              "name": "Jalen Nailor",
+              "position": "WR",
+              "pro_team": "LV",
+              "adjusted_rank": 133
+            }
+          ]
         }
       ]
     },
@@ -2219,7 +4604,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tre Tucker",
+              "position": "WR",
+              "pro_team": "LV",
+              "adjusted_rank": 132
+            },
+            {
+              "name": "Jalen Nailor",
+              "position": "WR",
+              "pro_team": "LV",
+              "adjusted_rank": 133
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            }
+          ]
         },
         {
           "overall_pick": 158,
@@ -2230,7 +4635,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jalen Nailor",
+              "position": "WR",
+              "pro_team": "LV",
+              "adjusted_rank": 133
+            },
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Isiah Pacheco",
+              "position": "RB",
+              "pro_team": "DET",
+              "adjusted_rank": 135
+            }
+          ]
         },
         {
           "overall_pick": 159,
@@ -2241,7 +4666,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Keaton Mitchell",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 134
+            },
+            {
+              "name": "Isiah Pacheco",
+              "position": "RB",
+              "pro_team": "DET",
+              "adjusted_rank": 135
+            },
+            {
+              "name": "Jonah Coleman",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 136
+            }
+          ]
         },
         {
           "overall_pick": 160,
@@ -2258,7 +4703,8 @@
             "position": "WR",
             "pro_team": "CHI",
             "keeper_cost_round_2026": 14
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 161,
@@ -2269,7 +4715,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Isiah Pacheco",
+              "position": "RB",
+              "pro_team": "DET",
+              "adjusted_rank": 135
+            },
+            {
+              "name": "Jonah Coleman",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 136
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
+            }
+          ]
         },
         {
           "overall_pick": 162,
@@ -2286,7 +4752,8 @@
             "position": "WR",
             "pro_team": "TEN",
             "keeper_cost_round_2026": 14
-          }
+          },
+          "adp_context": null
         },
         {
           "overall_pick": 163,
@@ -2297,7 +4764,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jonah Coleman",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 136
+            },
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
+            },
+            {
+              "name": "Fernando Mendoza",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 138
+            }
+          ]
         },
         {
           "overall_pick": 164,
@@ -2308,7 +4795,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
+            },
+            {
+              "name": "Fernando Mendoza",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 138
+            },
+            {
+              "name": "Aaron Rodgers",
+              "position": "QB",
+              "pro_team": "PIT",
+              "adjusted_rank": 139
+            }
+          ]
         },
         {
           "overall_pick": 165,
@@ -2319,7 +4826,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Fernando Mendoza",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 138
+            },
+            {
+              "name": "Aaron Rodgers",
+              "position": "QB",
+              "pro_team": "PIT",
+              "adjusted_rank": 139
+            },
+            {
+              "name": "Deshaun Watson",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 140
+            }
+          ]
         },
         {
           "overall_pick": 166,
@@ -2330,7 +4857,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Aaron Rodgers",
+              "position": "QB",
+              "pro_team": "PIT",
+              "adjusted_rank": 139
+            },
+            {
+              "name": "Deshaun Watson",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 140
+            },
+            {
+              "name": "Tua Tagovailoa",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 141
+            }
+          ]
         },
         {
           "overall_pick": 167,
@@ -2341,7 +4888,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Deshaun Watson",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 140
+            },
+            {
+              "name": "Tua Tagovailoa",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 141
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "adjusted_rank": 142
+            }
+          ]
         },
         {
           "overall_pick": 168,
@@ -2352,27 +4919,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Tre Tucker",
-          "position": "WR",
-          "pro_team": "LV",
-          "adjusted_rank": 132
-        },
-        {
-          "name": "Jalen Nailor",
-          "position": "WR",
-          "pro_team": "LV",
-          "adjusted_rank": 133
-        },
-        {
-          "name": "Keaton Mitchell",
-          "position": "RB",
-          "pro_team": "LAC",
-          "adjusted_rank": 134
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tua Tagovailoa",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 141
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "adjusted_rank": 142
+            },
+            {
+              "name": "Broncos D/ST",
+              "position": "D/ST",
+              "pro_team": "DEN",
+              "adjusted_rank": 143
+            }
+          ]
         }
       ]
     },
@@ -2388,7 +4955,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "adjusted_rank": 142
+            },
+            {
+              "name": "Broncos D/ST",
+              "position": "D/ST",
+              "pro_team": "DEN",
+              "adjusted_rank": 143
+            },
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "adjusted_rank": 144
+            }
+          ]
         },
         {
           "overall_pick": 170,
@@ -2399,7 +4986,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Broncos D/ST",
+              "position": "D/ST",
+              "pro_team": "DEN",
+              "adjusted_rank": 143
+            },
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "adjusted_rank": 144
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "adjusted_rank": 145
+            }
+          ]
         },
         {
           "overall_pick": 171,
@@ -2410,7 +5017,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "adjusted_rank": 144
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "adjusted_rank": 145
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "adjusted_rank": 146
+            }
+          ]
         },
         {
           "overall_pick": 172,
@@ -2421,7 +5048,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "adjusted_rank": 145
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "adjusted_rank": 146
+            },
+            {
+              "name": "Ravens D/ST",
+              "position": "D/ST",
+              "pro_team": "BAL",
+              "adjusted_rank": 147
+            }
+          ]
         },
         {
           "overall_pick": 173,
@@ -2432,7 +5079,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "adjusted_rank": 146
+            },
+            {
+              "name": "Ravens D/ST",
+              "position": "D/ST",
+              "pro_team": "BAL",
+              "adjusted_rank": 147
+            },
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "adjusted_rank": 148
+            }
+          ]
         },
         {
           "overall_pick": 174,
@@ -2443,7 +5110,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ravens D/ST",
+              "position": "D/ST",
+              "pro_team": "BAL",
+              "adjusted_rank": 147
+            },
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "adjusted_rank": 148
+            },
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "adjusted_rank": 149
+            }
+          ]
         },
         {
           "overall_pick": 175,
@@ -2454,7 +5141,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "adjusted_rank": 148
+            },
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "adjusted_rank": 149
+            },
+            {
+              "name": "Patriots D/ST",
+              "position": "D/ST",
+              "pro_team": "NE",
+              "adjusted_rank": 150
+            }
+          ]
         },
         {
           "overall_pick": 176,
@@ -2465,7 +5172,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "adjusted_rank": 149
+            },
+            {
+              "name": "Patriots D/ST",
+              "position": "D/ST",
+              "pro_team": "NE",
+              "adjusted_rank": 150
+            },
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "adjusted_rank": 151
+            }
+          ]
         },
         {
           "overall_pick": 177,
@@ -2476,7 +5203,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Patriots D/ST",
+              "position": "D/ST",
+              "pro_team": "NE",
+              "adjusted_rank": 150
+            },
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "adjusted_rank": 151
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "adjusted_rank": 152
+            }
+          ]
         },
         {
           "overall_pick": 178,
@@ -2487,7 +5234,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "adjusted_rank": 151
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "adjusted_rank": 152
+            },
+            {
+              "name": "Chargers D/ST",
+              "position": "D/ST",
+              "pro_team": "LAC",
+              "adjusted_rank": 153
+            }
+          ]
         },
         {
           "overall_pick": 179,
@@ -2498,7 +5265,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "adjusted_rank": 152
+            },
+            {
+              "name": "Chargers D/ST",
+              "position": "D/ST",
+              "pro_team": "LAC",
+              "adjusted_rank": 153
+            },
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "adjusted_rank": 154
+            }
+          ]
         },
         {
           "overall_pick": 180,
@@ -2509,27 +5296,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Texans D/ST",
-          "position": "D/ST",
-          "pro_team": "HOU",
-          "adjusted_rank": 142
-        },
-        {
-          "name": "Broncos D/ST",
-          "position": "D/ST",
-          "pro_team": "DEN",
-          "adjusted_rank": 143
-        },
-        {
-          "name": "Steelers D/ST",
-          "position": "D/ST",
-          "pro_team": "PIT",
-          "adjusted_rank": 144
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Chargers D/ST",
+              "position": "D/ST",
+              "pro_team": "LAC",
+              "adjusted_rank": 153
+            },
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "adjusted_rank": 154
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "adjusted_rank": 155
+            }
+          ]
         }
       ]
     },
@@ -2545,7 +5332,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "adjusted_rank": 154
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "adjusted_rank": 155
+            },
+            {
+              "name": "Jason Myers",
+              "position": "K",
+              "pro_team": "SEA",
+              "adjusted_rank": 156
+            }
+          ]
         },
         {
           "overall_pick": 182,
@@ -2556,7 +5363,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "adjusted_rank": 155
+            },
+            {
+              "name": "Jason Myers",
+              "position": "K",
+              "pro_team": "SEA",
+              "adjusted_rank": 156
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "adjusted_rank": 157
+            }
+          ]
         },
         {
           "overall_pick": 183,
@@ -2567,7 +5394,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jason Myers",
+              "position": "K",
+              "pro_team": "SEA",
+              "adjusted_rank": 156
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "adjusted_rank": 157
+            },
+            {
+              "name": "Ka'imi Fairbairn",
+              "position": "K",
+              "pro_team": "HOU",
+              "adjusted_rank": 158
+            }
+          ]
         },
         {
           "overall_pick": 184,
@@ -2578,7 +5425,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "adjusted_rank": 157
+            },
+            {
+              "name": "Ka'imi Fairbairn",
+              "position": "K",
+              "pro_team": "HOU",
+              "adjusted_rank": 158
+            },
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "pro_team": "SF",
+              "adjusted_rank": 159
+            }
+          ]
         },
         {
           "overall_pick": 185,
@@ -2589,7 +5456,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ka'imi Fairbairn",
+              "position": "K",
+              "pro_team": "HOU",
+              "adjusted_rank": 158
+            },
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "pro_team": "SF",
+              "adjusted_rank": 159
+            },
+            {
+              "name": "Harrison Butker",
+              "position": "K",
+              "pro_team": "KC",
+              "adjusted_rank": 160
+            }
+          ]
         },
         {
           "overall_pick": 186,
@@ -2600,7 +5487,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "pro_team": "SF",
+              "adjusted_rank": 159
+            },
+            {
+              "name": "Harrison Butker",
+              "position": "K",
+              "pro_team": "KC",
+              "adjusted_rank": 160
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "adjusted_rank": 161
+            }
+          ]
         },
         {
           "overall_pick": 187,
@@ -2611,7 +5518,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Harrison Butker",
+              "position": "K",
+              "pro_team": "KC",
+              "adjusted_rank": 160
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "adjusted_rank": 161
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "adjusted_rank": 162
+            }
+          ]
         },
         {
           "overall_pick": 188,
@@ -2622,7 +5549,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "adjusted_rank": 161
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "adjusted_rank": 162
+            },
+            {
+              "name": "Tyler Loop",
+              "position": "K",
+              "pro_team": "BAL",
+              "adjusted_rank": 163
+            }
+          ]
         },
         {
           "overall_pick": 189,
@@ -2633,7 +5580,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "adjusted_rank": 162
+            },
+            {
+              "name": "Tyler Loop",
+              "position": "K",
+              "pro_team": "BAL",
+              "adjusted_rank": 163
+            },
+            {
+              "name": "Cairo Santos",
+              "position": "K",
+              "pro_team": "CHI",
+              "adjusted_rank": 164
+            }
+          ]
         },
         {
           "overall_pick": 190,
@@ -2644,7 +5611,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tyler Loop",
+              "position": "K",
+              "pro_team": "BAL",
+              "adjusted_rank": 163
+            },
+            {
+              "name": "Cairo Santos",
+              "position": "K",
+              "pro_team": "CHI",
+              "adjusted_rank": 164
+            },
+            {
+              "name": "Will Reichard",
+              "position": "K",
+              "pro_team": "MIN",
+              "adjusted_rank": 165
+            }
+          ]
         },
         {
           "overall_pick": 191,
@@ -2655,7 +5642,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Cairo Santos",
+              "position": "K",
+              "pro_team": "CHI",
+              "adjusted_rank": 164
+            },
+            {
+              "name": "Will Reichard",
+              "position": "K",
+              "pro_team": "MIN",
+              "adjusted_rank": 165
+            },
+            {
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            }
+          ]
         },
         {
           "overall_pick": 192,
@@ -2666,27 +5673,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Brandon Aubrey",
-          "position": "K",
-          "pro_team": "DAL",
-          "adjusted_rank": 154
-        },
-        {
-          "name": "Cameron Dicker",
-          "position": "K",
-          "pro_team": "LAC",
-          "adjusted_rank": 155
-        },
-        {
-          "name": "Jason Myers",
-          "position": "K",
-          "pro_team": "SEA",
-          "adjusted_rank": 156
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Will Reichard",
+              "position": "K",
+              "pro_team": "MIN",
+              "adjusted_rank": 165
+            },
+            {
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            }
+          ]
         }
       ]
     },
@@ -2702,7 +5709,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 166
+            },
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Braelon Allen",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 168
+            }
+          ]
         },
         {
           "overall_pick": 194,
@@ -2713,7 +5740,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Braelon Allen",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 168
+            },
+            {
+              "name": "Tank Bigsby",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 169
+            }
+          ]
         },
         {
           "overall_pick": 195,
@@ -2724,7 +5771,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Braelon Allen",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 168
+            },
+            {
+              "name": "Tank Bigsby",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 169
+            },
+            {
+              "name": "Ray Davis",
+              "position": "RB",
+              "pro_team": "BUF",
+              "adjusted_rank": 170
+            }
+          ]
         },
         {
           "overall_pick": 196,
@@ -2735,7 +5802,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tank Bigsby",
+              "position": "RB",
+              "pro_team": "PHI",
+              "adjusted_rank": 169
+            },
+            {
+              "name": "Ray Davis",
+              "position": "RB",
+              "pro_team": "BUF",
+              "adjusted_rank": 170
+            },
+            {
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 171
+            }
+          ]
         },
         {
           "overall_pick": 197,
@@ -2746,7 +5833,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ray Davis",
+              "position": "RB",
+              "pro_team": "BUF",
+              "adjusted_rank": 170
+            },
+            {
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 171
+            },
+            {
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "pro_team": "CLE",
+              "adjusted_rank": 172
+            }
+          ]
         },
         {
           "overall_pick": 198,
@@ -2757,7 +5864,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 171
+            },
+            {
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "pro_team": "CLE",
+              "adjusted_rank": 172
+            },
+            {
+              "name": "Najee Harris",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 173
+            }
+          ]
         },
         {
           "overall_pick": 199,
@@ -2768,7 +5895,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "pro_team": "CLE",
+              "adjusted_rank": 172
+            },
+            {
+              "name": "Najee Harris",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 173
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 174
+            }
+          ]
         },
         {
           "overall_pick": 200,
@@ -2779,7 +5926,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Najee Harris",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 173
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 174
+            },
+            {
+              "name": "Justice Hill",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 175
+            }
+          ]
         },
         {
           "overall_pick": 201,
@@ -2790,7 +5957,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
+              "adjusted_rank": 174
+            },
+            {
+              "name": "Justice Hill",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 175
+            },
+            {
+              "name": "Dontayvion Wicks",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 176
+            }
+          ]
         },
         {
           "overall_pick": 202,
@@ -2801,7 +5988,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Justice Hill",
+              "position": "RB",
+              "pro_team": "BAL",
+              "adjusted_rank": 175
+            },
+            {
+              "name": "Dontayvion Wicks",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 176
+            },
+            {
+              "name": "Devaughn Vele",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 177
+            }
+          ]
         },
         {
           "overall_pick": 203,
@@ -2812,7 +6019,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Dontayvion Wicks",
+              "position": "WR",
+              "pro_team": "PHI",
+              "adjusted_rank": 176
+            },
+            {
+              "name": "Devaughn Vele",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 177
+            },
+            {
+              "name": "Jaylin Noel",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 178
+            }
+          ]
         },
         {
           "overall_pick": 204,
@@ -2823,27 +6050,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Keenan Allen",
-          "position": "WR",
-          "pro_team": "IND",
-          "adjusted_rank": 166
-        },
-        {
-          "name": "Mike Washington Jr.",
-          "position": "RB",
-          "pro_team": "LV",
-          "adjusted_rank": 167
-        },
-        {
-          "name": "Braelon Allen",
-          "position": "RB",
-          "pro_team": "NYJ",
-          "adjusted_rank": 168
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Devaughn Vele",
+              "position": "WR",
+              "pro_team": "NO",
+              "adjusted_rank": 177
+            },
+            {
+              "name": "Jaylin Noel",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 178
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
+            }
+          ]
         }
       ]
     },
@@ -2859,7 +6086,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jaylin Noel",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 178
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
+            },
+            {
+              "name": "Kirk Cousins",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 180
+            }
+          ]
         },
         {
           "overall_pick": 206,
@@ -2870,7 +6117,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "adjusted_rank": 179
+            },
+            {
+              "name": "Kirk Cousins",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 180
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 181
+            }
+          ]
         },
         {
           "overall_pick": 207,
@@ -2881,7 +6148,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kirk Cousins",
+              "position": "QB",
+              "pro_team": "LV",
+              "adjusted_rank": 180
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 181
+            },
+            {
+              "name": "J.J. McCarthy",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 182
+            }
+          ]
         },
         {
           "overall_pick": 208,
@@ -2892,7 +6179,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "adjusted_rank": 181
+            },
+            {
+              "name": "J.J. McCarthy",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 182
+            },
+            {
+              "name": "Ja'Kobi Lane",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 183
+            }
+          ]
         },
         {
           "overall_pick": 209,
@@ -2903,7 +6210,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "J.J. McCarthy",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 182
+            },
+            {
+              "name": "Ja'Kobi Lane",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 183
+            },
+            {
+              "name": "Jauan Jennings",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 184
+            }
+          ]
         },
         {
           "overall_pick": 210,
@@ -2914,7 +6241,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ja'Kobi Lane",
+              "position": "WR",
+              "pro_team": "BAL",
+              "adjusted_rank": 183
+            },
+            {
+              "name": "Jauan Jennings",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 184
+            },
+            {
+              "name": "Tank Dell",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 185
+            }
+          ]
         },
         {
           "overall_pick": 211,
@@ -2925,7 +6272,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jauan Jennings",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 184
+            },
+            {
+              "name": "Tank Dell",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 185
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
+            }
+          ]
         },
         {
           "overall_pick": 212,
@@ -2936,7 +6303,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tank Dell",
+              "position": "WR",
+              "pro_team": "HOU",
+              "adjusted_rank": 185
+            },
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
+            },
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 187
+            }
+          ]
         },
         {
           "overall_pick": 213,
@@ -2947,7 +6334,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jordan James",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 186
+            },
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Kimani Vidal",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 188
+            }
+          ]
         },
         {
           "overall_pick": 214,
@@ -2958,7 +6365,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "pro_team": "SF",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Kimani Vidal",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 188
+            },
+            {
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 189
+            }
+          ]
         },
         {
           "overall_pick": 215,
@@ -2969,7 +6396,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kimani Vidal",
+              "position": "RB",
+              "pro_team": "LAC",
+              "adjusted_rank": 188
+            },
+            {
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 189
+            },
+            {
+              "name": "Ollie Gordon II",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 190
+            }
+          ]
         },
         {
           "overall_pick": 216,
@@ -2980,27 +6427,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Jaylin Noel",
-          "position": "WR",
-          "pro_team": "HOU",
-          "adjusted_rank": 178
-        },
-        {
-          "name": "Shedeur Sanders",
-          "position": "QB",
-          "pro_team": "CLE",
-          "adjusted_rank": 179
-        },
-        {
-          "name": "Kirk Cousins",
-          "position": "QB",
-          "pro_team": "LV",
-          "adjusted_rank": 180
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 189
+            },
+            {
+              "name": "Ollie Gordon II",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 190
+            },
+            {
+              "name": "Samaje Perine",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 191
+            }
+          ]
         }
       ]
     },
@@ -3016,7 +6463,27 @@
             "Karlos Abel"
           ],
           "logo": "logos/2026/10.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ollie Gordon II",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 190
+            },
+            {
+              "name": "Samaje Perine",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 191
+            },
+            {
+              "name": "Ty Johnson",
+              "position": "RB",
+              "pro_team": "BUF",
+              "adjusted_rank": 192
+            }
+          ]
         },
         {
           "overall_pick": 218,
@@ -3027,7 +6494,27 @@
             "Kris Wikstrom"
           ],
           "logo": "logos/2026/11.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Samaje Perine",
+              "position": "RB",
+              "pro_team": "CIN",
+              "adjusted_rank": 191
+            },
+            {
+              "name": "Ty Johnson",
+              "position": "RB",
+              "pro_team": "BUF",
+              "adjusted_rank": 192
+            },
+            {
+              "name": "Isaiah Davis",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 193
+            }
+          ]
         },
         {
           "overall_pick": 219,
@@ -3038,7 +6525,27 @@
             "Lisette Bruens"
           ],
           "logo": "logos/2026/6.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Ty Johnson",
+              "position": "RB",
+              "pro_team": "BUF",
+              "adjusted_rank": 192
+            },
+            {
+              "name": "Isaiah Davis",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 193
+            },
+            {
+              "name": "Jaydon Blue",
+              "position": "RB",
+              "pro_team": "DAL",
+              "adjusted_rank": 194
+            }
+          ]
         },
         {
           "overall_pick": 220,
@@ -3049,7 +6556,27 @@
             "Ronjan Sikdar"
           ],
           "logo": "logos/2026/9.png",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Isaiah Davis",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 193
+            },
+            {
+              "name": "Jaydon Blue",
+              "position": "RB",
+              "pro_team": "DAL",
+              "adjusted_rank": 194
+            },
+            {
+              "name": "Kaytron Allen",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 195
+            }
+          ]
         },
         {
           "overall_pick": 221,
@@ -3060,7 +6587,27 @@
             "Ben Porter"
           ],
           "logo": "logos/2026/4.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Jaydon Blue",
+              "position": "RB",
+              "pro_team": "DAL",
+              "adjusted_rank": 194
+            },
+            {
+              "name": "Kaytron Allen",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 195
+            },
+            {
+              "name": "Tyrone Tracy Jr.",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 196
+            }
+          ]
         },
         {
           "overall_pick": 222,
@@ -3071,7 +6618,27 @@
             "Joseph Sebranek"
           ],
           "logo": "logos/2026/8.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Kaytron Allen",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 195
+            },
+            {
+              "name": "Tyrone Tracy Jr.",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 196
+            },
+            {
+              "name": "Nicholas Singleton",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 197
+            }
+          ]
         },
         {
           "overall_pick": 223,
@@ -3082,7 +6649,27 @@
             "mariss mednis"
           ],
           "logo": "logos/2026/2.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tyrone Tracy Jr.",
+              "position": "RB",
+              "pro_team": "NYG",
+              "adjusted_rank": 196
+            },
+            {
+              "name": "Nicholas Singleton",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 197
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            }
+          ]
         },
         {
           "overall_pick": 224,
@@ -3093,7 +6680,27 @@
             "Pete Gallagher"
           ],
           "logo": "logos/2026/3.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Nicholas Singleton",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 197
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Brenton Strange",
+              "position": "TE",
+              "pro_team": "JAX",
+              "adjusted_rank": 199
+            }
+          ]
         },
         {
           "overall_pick": 225,
@@ -3104,7 +6711,27 @@
             "Imran Hirani"
           ],
           "logo": "logos/2026/1.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "adjusted_rank": 198
+            },
+            {
+              "name": "Brenton Strange",
+              "position": "TE",
+              "pro_team": "JAX",
+              "adjusted_rank": 199
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
+            }
+          ]
         },
         {
           "overall_pick": 226,
@@ -3115,7 +6742,27 @@
             "Cara Kantrowitz"
           ],
           "logo": "logos/2026/5.svg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Brenton Strange",
+              "position": "TE",
+              "pro_team": "JAX",
+              "adjusted_rank": 199
+            },
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 201
+            }
+          ]
         },
         {
           "overall_pick": 227,
@@ -3126,7 +6773,27 @@
             "Melinda Thomas"
           ],
           "logo": "logos/2026/12.jpg",
-          "keeper": null
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Germie Bernard",
+              "position": "WR",
+              "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 201
+            },
+            {
+              "name": "Carson Beck",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 202
+            }
+          ]
         },
         {
           "overall_pick": 228,
@@ -3137,27 +6804,27 @@
             "Michael Higgins"
           ],
           "logo": "logos/2026/7.jpg",
-          "keeper": null
-        }
-      ],
-      "example_players": [
-        {
-          "name": "Ollie Gordon II",
-          "position": "RB",
-          "pro_team": "MIA",
-          "adjusted_rank": 190
-        },
-        {
-          "name": "Samaje Perine",
-          "position": "RB",
-          "pro_team": "CIN",
-          "adjusted_rank": 191
-        },
-        {
-          "name": "Ty Johnson",
-          "position": "RB",
-          "pro_team": "BUF",
-          "adjusted_rank": 192
+          "keeper": null,
+          "adp_context": [
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
+              "adjusted_rank": 201
+            },
+            {
+              "name": "Carson Beck",
+              "position": "QB",
+              "pro_team": "ARI",
+              "adjusted_rank": 202
+            },
+            {
+              "name": "Justin Fields",
+              "position": "QB",
+              "pro_team": "KC",
+              "adjusted_rank": 203
+            }
+          ]
         }
       ]
     }

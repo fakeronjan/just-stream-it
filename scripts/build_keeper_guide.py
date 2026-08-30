@@ -142,13 +142,15 @@ def build_draft_guide(guide, adp_unkept):
     """19-round x 12-team snake grid for the confirmed 2026 draft order,
     with each team's locked keepers pre-slotted into their cost round.
 
-    Each round also gets a few "still on the board entering this round"
-    example players, illustrative only - drawn from `adp_unkept` (already
-    filtered to exclude every kept player) by tracking how many OPEN
-    (non-keeper) picks have been consumed by prior rounds. Keeper picks
-    don't draw from this pool at all, so a round's window starts after
-    only the live picks before it - not the raw overall pick count, which
-    would overstate how deep the board has been drafted.
+    This is a static reference, not a live tool - nobody can feed it real
+    picks as the draft happens. So the ADP context has to carry the whole
+    load per pick, not just per round: every OPEN pick gets its own window
+    of a few example players from `adp_unkept` (already excludes every
+    kept player), advancing a single cursor through the ADP-sorted pool
+    one player per open pick - in true overall-pick order, not reset each
+    round. A round-level window would collapse pick 25 and pick 36 (huge
+    ADP gap) into the same generic answer; keeper picks don't draw from
+    the pool at all, so they don't advance the cursor either.
     """
     order_data = _load_league_rules_json("draft_order_2026.json")
     round1_order = order_data["round_1_order"]
@@ -160,22 +162,31 @@ def build_draft_guide(guide, adp_unkept):
         raise ValueError(f"draft_order_2026.json names not found among teams: {missing}")
     teams_in_order = [by_first_name[o.lower()] for o in round1_order]
 
-    EXAMPLES_PER_ROUND = 3
+    EXAMPLES_PER_PICK = 3
     rounds = []
     overall = 0
-    open_pick_cursor = 0
+    open_cursor = 0
     for round_num in range(1, num_rounds + 1):
         order = teams_in_order if round_num % 2 == 1 else list(reversed(teams_in_order))
         picks = []
-        num_keepers_this_round = 0
         for slot, team in enumerate(order, start=1):
             overall += 1
             keeper = next(
                 (k for k in team["locked_keepers_2026"] if k["keeper_cost_round_2026"] == round_num),
                 None,
             )
-            if keeper:
-                num_keepers_this_round += 1
+            adp_context = None
+            if not keeper:
+                adp_context = [
+                    {
+                        "name": p["name"],
+                        "position": p["position"],
+                        "pro_team": p["pro_team"],
+                        "adjusted_rank": p["adjusted_rank"],
+                    }
+                    for p in adp_unkept[open_cursor : open_cursor + EXAMPLES_PER_PICK]
+                ]
+                open_cursor += 1
             picks.append(
                 {
                     "overall_pick": overall,
@@ -185,22 +196,10 @@ def build_draft_guide(guide, adp_unkept):
                     "owners": team["owners"],
                     "logo": team.get("logo"),
                     "keeper": keeper,
+                    "adp_context": adp_context,
                 }
             )
-
-        example_players = [
-            {
-                "name": p["name"],
-                "position": p["position"],
-                "pro_team": p["pro_team"],
-                "adjusted_rank": p["adjusted_rank"],
-            }
-            for p in adp_unkept[open_pick_cursor : open_pick_cursor + EXAMPLES_PER_ROUND]
-        ]
-        rounds.append({"round": round_num, "picks": picks, "example_players": example_players})
-
-        num_open_picks_this_round = len(order) - num_keepers_this_round
-        open_pick_cursor += num_open_picks_this_round
+        rounds.append({"round": round_num, "picks": picks})
 
     teams_summary = []
     for team in teams_in_order:
