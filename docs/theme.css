@@ -260,11 +260,11 @@ nav.resources .nav-sep { color: var(--text-mute); }
 }
 
 .section-title {
-  font-size: 0.78rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-mute);
+  color: var(--text);
   margin: 0 0 14px;
 }
 
