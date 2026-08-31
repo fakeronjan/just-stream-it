@@ -1,0 +1,660 @@
+[
+  {
+    "week": 1,
+    "matchups": [
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 6,
+        "winner_score": 153.52,
+        "loser_score": 108.26,
+        "text": "Daddy Nielsen (Joe) beat Mahomes is where the heart is \u2764 (Lisette) 153.5-108.3 (blowout) - plot twist: Joe, a Packers fan, has been starting Justin Jefferson (MIN), Caleb Williams (CHI), and Aaron Jones Sr. (MIN) all along"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 5,
+        "winner_score": 134.0,
+        "loser_score": 122.28,
+        "text": "Buffalo Abusement Park (Melinda) beat Team Kantastrophe (Cara) 134.0-122.3"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 2,
+        "winner_score": 139.98,
+        "loser_score": 111.92,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Mednis Madness (mariss) 140.0-111.9"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 10,
+        "winner_score": 159.04,
+        "loser_score": 111.88,
+        "text": "Illusions Michael (Pete) beat Baker's Dirty Dozen (Karl) 159.0-111.9 (blowout) - league-best performance: Josh Allen (38.8 pts); plot twist: Pete, a Bills fan, has been starting De'Von Achane (MIA) and TreVeyon Henderson (NE) all along"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 7,
+        "winner_score": 100.44,
+        "loser_score": 86.88,
+        "text": "Conquering Heroes (Ben) beat Terrible Towels (Mike) 100.4-86.9 - plot twist: Mike, a Steelers fan, has been starting Mark Andrews (BAL) and Jerome Ford (CLE) all along"
+      },
+      {
+        "winner_team_id": 11,
+        "loser_team_id": 9,
+        "winner_score": 143.04,
+        "loser_score": 115.9,
+        "text": "Keep 'em and weep (Kris) beat McConkey Kong Country (Ronjan) 143.0-115.9"
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "matchups": [
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 6,
+        "winner_score": 182.86,
+        "loser_score": 112.82,
+        "text": "Buffalo Abusement Park (Melinda) beat Mahomes is where the heart is \u2764 (Lisette) 182.9-112.8 (blowout)"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 8,
+        "winner_score": 189.2,
+        "loser_score": 121.06,
+        "text": "Mednis Madness (mariss) beat Daddy Nielsen (Joe) 189.2-121.1 (blowout) - upset alert: Mednis Madness (mariss) came in ranked #9 to Daddy Nielsen (Joe)'s #2; league-best performance: Amon-Ra St. Brown (34.7 pts); division-rival salt: Amon-Ra St. Brown (DET, 34.7 pts) and Jared Goff (DET, 34.0 pts) went off on Joe, a Packers fan"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 10,
+        "winner_score": 142.12,
+        "loser_score": 114.5,
+        "text": "Team Kantastrophe (Cara) beat Baker's Dirty Dozen (Karl) 142.1-114.5"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 7,
+        "winner_score": 138.7,
+        "loser_score": 119.1,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Terrible Towels (Mike) 138.7-119.1 - division-rival salt: Lamar Jackson (BAL, 26.3 pts) went off on Mike, a Steelers fan"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 9,
+        "winner_score": 139.56,
+        "loser_score": 112.22,
+        "text": "Illusions Michael (Pete) beat McConkey Kong Country (Ronjan) 139.6-112.2"
+      },
+      {
+        "winner_team_id": 11,
+        "loser_team_id": 4,
+        "winner_score": 127.12,
+        "loser_score": 73.16,
+        "text": "Keep 'em and weep (Kris) beat Conquering Heroes (Ben) 127.1-73.2 (blowout)"
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "matchups": [
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 6,
+        "winner_score": 131.16,
+        "loser_score": 110.98,
+        "text": "Mednis Madness (mariss) beat Mahomes is where the heart is \u2764 (Lisette) 131.2-111.0 - league-best performance: Vikings D/ST (32.0 pts)"
+      },
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 12,
+        "winner_score": 131.64,
+        "loser_score": 87.12,
+        "text": "Baker's Dirty Dozen (Karl) beat Buffalo Abusement Park (Melinda) 131.6-87.1 (blowout) - upset alert: Baker's Dirty Dozen (Karl) came in ranked #10 to Buffalo Abusement Park (Melinda)'s #1"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 7,
+        "winner_score": 132.82,
+        "loser_score": 98.96,
+        "text": "Daddy Nielsen (Joe) beat Terrible Towels (Mike) 132.8-99.0 - plot twist: Mike, a Steelers fan, has been starting Jake Browning (CIN) all along"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 9,
+        "winner_score": 156.36,
+        "loser_score": 128.5,
+        "text": "Team Kantastrophe (Cara) beat McConkey Kong Country (Ronjan) 156.4-128.5"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 11,
+        "winner_score": 119.0,
+        "loser_score": 116.64,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Keep 'em and weep (Kris) 119.0-116.6 (nail-biter)"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 4,
+        "winner_score": 161.44,
+        "loser_score": 106.3,
+        "text": "Illusions Michael (Pete) beat Conquering Heroes (Ben) 161.4-106.3 (blowout)"
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "matchups": [
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 6,
+        "winner_score": 152.84,
+        "loser_score": 140.24,
+        "text": "Baker's Dirty Dozen (Karl) beat Mahomes is where the heart is \u2764 (Lisette) 152.8-140.2"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 7,
+        "winner_score": 140.98,
+        "loser_score": 89.28,
+        "text": "Mednis Madness (mariss) beat Terrible Towels (Mike) 141.0-89.3 (blowout)"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 12,
+        "winner_score": 140.72,
+        "loser_score": 132.86,
+        "text": "McConkey Kong Country (Ronjan) beat Buffalo Abusement Park (Melinda) 140.7-132.9 - plot twist: Ronjan, a Bengals fan, has been starting Quinshon Judkins (CLE) and Rashod Bateman (BAL) all along"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 11,
+        "winner_score": 139.92,
+        "loser_score": 99.4,
+        "text": "Daddy Nielsen (Joe) beat Keep 'em and weep (Kris) 139.9-99.4 (blowout)"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 5,
+        "winner_score": 160.82,
+        "loser_score": 152.02,
+        "text": "Conquering Heroes (Ben) beat Team Kantastrophe (Cara) 160.8-152.0 - upset alert: Conquering Heroes (Ben) came in ranked #9 to Team Kantastrophe (Cara)'s #4; league-best performance: Ashton Jeanty (32.5 pts)"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 1,
+        "winner_score": 139.04,
+        "loser_score": 111.3,
+        "text": "Illusions Michael (Pete) beat Lamar and Drake's Grahamy's (Imran) 139.0-111.3"
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "matchups": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 7,
+        "winner_score": 165.3,
+        "loser_score": 84.86,
+        "text": "Mahomes is where the heart is \u2764 (Lisette) beat Terrible Towels (Mike) 165.3-84.9 (blowout) - league-best performance: Rico Dowdle (30.9 pts)"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 10,
+        "winner_score": 139.06,
+        "loser_score": 131.7,
+        "text": "McConkey Kong Country (Ronjan) beat Baker's Dirty Dozen (Karl) 139.1-131.7"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 11,
+        "winner_score": 143.56,
+        "loser_score": 139.82,
+        "text": "Mednis Madness (mariss) beat Keep 'em and weep (Kris) 143.6-139.8"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 12,
+        "winner_score": 119.14,
+        "loser_score": 117.38,
+        "text": "Conquering Heroes (Ben) beat Buffalo Abusement Park (Melinda) 119.1-117.4 (nail-biter) - plot twist: Melinda, a Bills fan, has been starting Hunter Henry (NE) all along"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 3,
+        "winner_score": 159.92,
+        "loser_score": 129.5,
+        "text": "Daddy Nielsen (Joe) beat Illusions Michael (Pete) 159.9-129.5 - division-rival salt: Justin Fields (NYJ, 25.9 pts) went off on Pete, a Bills fan; plot twist: Pete, a Bills fan, has been starting Rhamondre Stevenson (NE) all along"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 1,
+        "winner_score": 158.98,
+        "loser_score": 93.28,
+        "text": "Team Kantastrophe (Cara) beat Lamar and Drake's Grahamy's (Imran) 159.0-93.3 (blowout)"
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "matchups": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 9,
+        "winner_score": 178.34,
+        "loser_score": 117.22,
+        "text": "Mahomes is where the heart is \u2764 (Lisette) beat McConkey Kong Country (Ronjan) 178.3-117.2 (blowout)"
+      },
+      {
+        "winner_team_id": 7,
+        "loser_team_id": 11,
+        "winner_score": 108.5,
+        "loser_score": 106.8,
+        "text": "Terrible Towels (Mike) beat Keep 'em and weep (Kris) 108.5-106.8 (nail-biter)"
+      },
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 4,
+        "winner_score": 166.04,
+        "loser_score": 81.06,
+        "text": "Baker's Dirty Dozen (Karl) beat Conquering Heroes (Ben) 166.0-81.1 (blowout)"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 3,
+        "winner_score": 164.54,
+        "loser_score": 120.48,
+        "text": "Mednis Madness (mariss) beat Illusions Michael (Pete) 164.5-120.5 (blowout)"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 12,
+        "winner_score": 107.08,
+        "loser_score": 93.38,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Buffalo Abusement Park (Melinda) 107.1-93.4"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 8,
+        "winner_score": 173.2,
+        "loser_score": 110.38,
+        "text": "Team Kantastrophe (Cara) beat Daddy Nielsen (Joe) 173.2-110.4 (blowout) - league-best performance: Bijan Robinson (32.8 pts)"
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "matchups": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 11,
+        "winner_score": 145.9,
+        "loser_score": 144.76,
+        "text": "Mahomes is where the heart is \u2764 (Lisette) beat Keep 'em and weep (Kris) 145.9-144.8 (nail-biter) - league-best performance: Christian McCaffrey (35.6 pts)"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 4,
+        "winner_score": 161.5,
+        "loser_score": 103.88,
+        "text": "McConkey Kong Country (Ronjan) beat Conquering Heroes (Ben) 161.5-103.9 (blowout)"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 7,
+        "winner_score": 136.52,
+        "loser_score": 127.26,
+        "text": "Illusions Michael (Pete) beat Terrible Towels (Mike) 136.5-127.3"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 10,
+        "winner_score": 94.06,
+        "loser_score": 93.74,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Baker's Dirty Dozen (Karl) 94.1-93.7 (nail-biter)"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 5,
+        "winner_score": 144.58,
+        "loser_score": 127.76,
+        "text": "Mednis Madness (mariss) beat Team Kantastrophe (Cara) 144.6-127.8"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 12,
+        "winner_score": 159.82,
+        "loser_score": 102.68,
+        "text": "Daddy Nielsen (Joe) beat Buffalo Abusement Park (Melinda) 159.8-102.7 (blowout)"
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "matchups": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 4,
+        "winner_score": 115.84,
+        "loser_score": 113.16,
+        "text": "Mahomes is where the heart is \u2764 (Lisette) beat Conquering Heroes (Ben) 115.8-113.2 (nail-biter)"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 11,
+        "winner_score": 123.8,
+        "loser_score": 115.1,
+        "text": "Illusions Michael (Pete) beat Keep 'em and weep (Kris) 123.8-115.1"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 1,
+        "winner_score": 145.88,
+        "loser_score": 90.06,
+        "text": "McConkey Kong Country (Ronjan) beat Lamar and Drake's Grahamy's (Imran) 145.9-90.1 (blowout)"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 7,
+        "winner_score": 138.98,
+        "loser_score": 104.54,
+        "text": "Team Kantastrophe (Cara) beat Terrible Towels (Mike) 139.0-104.5 - league-best performance: Jonathan Taylor (36.4 pts)"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 10,
+        "winner_score": 147.26,
+        "loser_score": 114.68,
+        "text": "Daddy Nielsen (Joe) beat Baker's Dirty Dozen (Karl) 147.3-114.7 - division-rival salt: Saquon Barkley (PHI, 31.4 pts) went off on Karl, a Cowboys fan"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 2,
+        "winner_score": 161.92,
+        "loser_score": 95.32,
+        "text": "Buffalo Abusement Park (Melinda) beat Mednis Madness (mariss) 161.9-95.3 (blowout) - upset alert: Buffalo Abusement Park (Melinda) came in ranked #11 to Mednis Madness (mariss)'s #1"
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "matchups": [
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 6,
+        "winner_score": 137.78,
+        "loser_score": 127.92,
+        "text": "Illusions Michael (Pete) beat Mahomes is where the heart is \u2764 (Lisette) 137.8-127.9"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 1,
+        "winner_score": 178.56,
+        "loser_score": 150.0,
+        "text": "Conquering Heroes (Ben) beat Lamar and Drake's Grahamy's (Imran) 178.6-150.0 - upset alert: Conquering Heroes (Ben) came in ranked #10 to Lamar and Drake's Grahamy's (Imran)'s #5"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 11,
+        "winner_score": 146.9,
+        "loser_score": 143.9,
+        "text": "Team Kantastrophe (Cara) beat Keep 'em and weep (Kris) 146.9-143.9 (nail-biter)"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 9,
+        "winner_score": 146.2,
+        "loser_score": 138.96,
+        "text": "Daddy Nielsen (Joe) beat McConkey Kong Country (Ronjan) 146.2-139.0 - league-best performance: Caleb Williams (37.7 pts)"
+      },
+      {
+        "winner_team_id": 7,
+        "loser_team_id": 12,
+        "winner_score": 133.76,
+        "loser_score": 110.6,
+        "text": "Terrible Towels (Mike) beat Buffalo Abusement Park (Melinda) 133.8-110.6"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 10,
+        "winner_score": 106.32,
+        "loser_score": 90.5,
+        "text": "Mednis Madness (mariss) beat Baker's Dirty Dozen (Karl) 106.3-90.5"
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "matchups": [
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 6,
+        "winner_score": 122.62,
+        "loser_score": 97.74,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Mahomes is where the heart is \u2764 (Lisette) 122.6-97.7 - plot twist: Imran, a Bears fan, has been starting Will Reichard (MIN) all along"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 3,
+        "winner_score": 186.1,
+        "loser_score": 167.74,
+        "text": "Team Kantastrophe (Cara) beat Illusions Michael (Pete) 186.1-167.7 - league-best performance: Jonathan Taylor (48.1 pts)"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 8,
+        "winner_score": 121.46,
+        "loser_score": 121.36,
+        "text": "Conquering Heroes (Ben) beat Daddy Nielsen (Joe) 121.5-121.4 (nail-biter) - upset alert: Conquering Heroes (Ben) came in ranked #8 to Daddy Nielsen (Joe)'s #1"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 11,
+        "winner_score": 96.5,
+        "loser_score": 93.38,
+        "text": "Buffalo Abusement Park (Melinda) beat Keep 'em and weep (Kris) 96.5-93.4"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 2,
+        "winner_score": 155.54,
+        "loser_score": 114.5,
+        "text": "McConkey Kong Country (Ronjan) beat Mednis Madness (mariss) 155.5-114.5 (blowout)"
+      },
+      {
+        "winner_team_id": 7,
+        "loser_team_id": 10,
+        "winner_score": 117.3,
+        "loser_score": 105.14,
+        "text": "Terrible Towels (Mike) beat Baker's Dirty Dozen (Karl) 117.3-105.1 - division-rival salt: Jaxson Dart (NYG, 26.3 pts) went off on Karl, a Cowboys fan"
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "matchups": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 5,
+        "winner_score": 137.64,
+        "loser_score": 127.04,
+        "text": "Mahomes is where the heart is \u2764 (Lisette) beat Team Kantastrophe (Cara) 137.6-127.0 - upset alert: Mahomes is where the heart is \u2764 (Lisette) came in ranked #8 to Team Kantastrophe (Cara)'s #1"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 8,
+        "winner_score": 112.06,
+        "loser_score": 110.66,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Daddy Nielsen (Joe) 112.1-110.7 (nail-biter)"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 12,
+        "winner_score": 149.78,
+        "loser_score": 126.7,
+        "text": "Illusions Michael (Pete) beat Buffalo Abusement Park (Melinda) 149.8-126.7 - league-best performance: Josh Allen (42.7 pts); division-rival salt: TreVeyon Henderson (NE, 29.8 pts) went off on Melinda, a Bills fan"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 2,
+        "winner_score": 124.18,
+        "loser_score": 96.2,
+        "text": "Conquering Heroes (Ben) beat Mednis Madness (mariss) 124.2-96.2"
+      },
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 11,
+        "winner_score": 137.38,
+        "loser_score": 94.76,
+        "text": "Baker's Dirty Dozen (Karl) beat Keep 'em and weep (Kris) 137.4-94.8 (blowout)"
+      },
+      {
+        "winner_team_id": 7,
+        "loser_team_id": 9,
+        "winner_score": 139.34,
+        "loser_score": 99.52,
+        "text": "Terrible Towels (Mike) beat McConkey Kong Country (Ronjan) 139.3-99.5 - upset alert: Terrible Towels (Mike) came in ranked #11 to McConkey Kong Country (Ronjan)'s #6"
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "matchups": [
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 6,
+        "winner_score": 163.36,
+        "loser_score": 122.62,
+        "text": "Daddy Nielsen (Joe) beat Mahomes is where the heart is \u2764 (Lisette) 163.4-122.6 (blowout)"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 12,
+        "winner_score": 132.08,
+        "loser_score": 104.72,
+        "text": "Team Kantastrophe (Cara) beat Buffalo Abusement Park (Melinda) 132.1-104.7"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 1,
+        "winner_score": 171.34,
+        "loser_score": 103.66,
+        "text": "Mednis Madness (mariss) beat Lamar and Drake's Grahamy's (Imran) 171.3-103.7 (blowout) - division-rival salt: Amon-Ra St. Brown (DET, 25.4 pts) and Emanuel Wilson (GB, 25.5 pts) went off on Imran, a Bears fan"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 10,
+        "winner_score": 119.26,
+        "loser_score": 116.5,
+        "text": "Illusions Michael (Pete) beat Baker's Dirty Dozen (Karl) 119.3-116.5 (nail-biter)"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 7,
+        "winner_score": 137.04,
+        "loser_score": 67.26,
+        "text": "Conquering Heroes (Ben) beat Terrible Towels (Mike) 137.0-67.3 (blowout)"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 11,
+        "winner_score": 189.4,
+        "loser_score": 120.78,
+        "text": "McConkey Kong Country (Ronjan) beat Keep 'em and weep (Kris) 189.4-120.8 (blowout) - league-best performance: Jahmyr Gibbs (49.9 pts)"
+      }
+    ]
+  },
+  {
+    "week": 13,
+    "matchups": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 12,
+        "winner_score": 149.98,
+        "loser_score": 126.82,
+        "text": "Mahomes is where the heart is \u2764 (Lisette) beat Buffalo Abusement Park (Melinda) 150.0-126.8"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 2,
+        "winner_score": 101.82,
+        "loser_score": 100.28,
+        "text": "Daddy Nielsen (Joe) beat Mednis Madness (mariss) 101.8-100.3 (nail-biter)"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 10,
+        "winner_score": 122.9,
+        "loser_score": 97.98,
+        "text": "Team Kantastrophe (Cara) beat Baker's Dirty Dozen (Karl) 122.9-98.0"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 7,
+        "winner_score": 119.92,
+        "loser_score": 106.5,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Terrible Towels (Mike) 119.9-106.5"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 9,
+        "winner_score": 157.56,
+        "loser_score": 137.06,
+        "text": "Illusions Michael (Pete) beat McConkey Kong Country (Ronjan) 157.6-137.1 - league-best performance: A.J. Brown (30.2 pts)"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 11,
+        "winner_score": 120.68,
+        "loser_score": 87.64,
+        "text": "Conquering Heroes (Ben) beat Keep 'em and weep (Kris) 120.7-87.6"
+      }
+    ]
+  },
+  {
+    "week": 14,
+    "matchups": [
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 6,
+        "winner_score": 101.28,
+        "loser_score": 70.98,
+        "text": "Mednis Madness (mariss) beat Mahomes is where the heart is \u2764 (Lisette) 101.3-71.0"
+      },
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 12,
+        "winner_score": 139.24,
+        "loser_score": 109.9,
+        "text": "Baker's Dirty Dozen (Karl) beat Buffalo Abusement Park (Melinda) 139.2-109.9"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 7,
+        "winner_score": 109.22,
+        "loser_score": 60.02,
+        "text": "Daddy Nielsen (Joe) beat Terrible Towels (Mike) 109.2-60.0 (blowout)"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 9,
+        "winner_score": 131.14,
+        "loser_score": 128.26,
+        "text": "Team Kantastrophe (Cara) beat McConkey Kong Country (Ronjan) 131.1-128.3 (nail-biter)"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 11,
+        "winner_score": 164.82,
+        "loser_score": 97.0,
+        "text": "Lamar and Drake's Grahamy's (Imran) beat Keep 'em and weep (Kris) 164.8-97.0 (blowout)"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 3,
+        "winner_score": 167.62,
+        "loser_score": 148.34,
+        "text": "Conquering Heroes (Ben) beat Illusions Michael (Pete) 167.6-148.3 - league-best performance: Josh Allen (37.8 pts)"
+      }
+    ]
+  }
+]

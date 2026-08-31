@@ -1,0 +1,341 @@
+<!--
+  UNLISTED preview - not linked from nav.js or any other page on purpose.
+  Testing the newspaper visual treatment + build_weekly_recap.py's real
+  output against the full 2025 season before this becomes season-2026.html
+  for real. Reachable only by direct URL.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It - 2025 Recap Preview (unlisted)</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<script src="nav.js"></script>
+<style>
+  :root {
+    --paper:      #ddd7c8;
+    --paper-2:    #d3ccba;
+    --ink:        #1c1a16;
+    --ink-dim:    #4a463c;
+    --meta:       #8a8571;
+    --rule:       #1c1a16;
+    --red:        #a3241c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image:
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 2px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.012) 0px, transparent 1px, transparent 2px);
+    color: var(--ink);
+    font-family: "Vollkorn", Georgia, "Times New Roman", serif;
+    line-height: 1.55;
+  }
+
+  a { color: var(--red); }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+
+  /* ---------- lock screen ---------- */
+  #lock-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .lock-box {
+    width: 100%; max-width: 420px;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+    padding: 32px 28px;
+    text-align: center;
+  }
+  .lock-box img.logo { width: 64px; height: 64px; border-radius: 10px; margin-bottom: 12px; }
+  .lock-title { font-family: "Rozha One", serif; font-size: 1.6rem; margin: 0 0 6px; }
+  .lock-box p { color: var(--ink-dim); font-size: 0.9rem; margin: 0 0 16px; }
+  .prompt-line { display: flex; align-items: center; gap: 8px; border: 1px solid var(--ink); background: #fff8; padding: 8px 10px; }
+  .prompt-line .dollar { font-family: "Special Elite", monospace; color: var(--red); }
+  .prompt-line input {
+    flex: 1; border: none; background: transparent; outline: none;
+    font-family: "Special Elite", monospace; font-size: 0.95rem; color: var(--ink);
+  }
+  .lock-error { color: var(--red); font-size: 0.82rem; margin-top: 10px; visibility: hidden; }
+  .lock-error.show { visibility: visible; }
+
+  /* ---------- masthead ---------- */
+  header.masthead { padding-top: 28px; text-align: center; }
+  .masthead-meta {
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  h1.nameplate {
+    font-family: "Rozha One", serif;
+    font-size: clamp(2.1rem, 9.5vw, 3.6rem);
+    margin: 0;
+    letter-spacing: 0.005em;
+    line-height: 1.05;
+  }
+  .tagline {
+    font-family: "Special Elite", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-dim);
+    margin: 4px 0 0;
+  }
+  .masthead-rule {
+    border: 0; border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink);
+    height: 4px; margin: 14px 0 6px;
+  }
+
+  nav.resources {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    font-family: "Special Elite", monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 8px 0 18px;
+  }
+  nav.resources::-webkit-scrollbar { display: none; }
+  nav.resources a { flex: 0 0 auto; white-space: nowrap; color: var(--ink-dim); text-decoration: none; }
+  nav.resources a:hover { color: var(--red); }
+  nav.resources a.active { color: var(--red); font-weight: 700; }
+  nav.resources .nav-arrow { font-size: 0.9em; margin-left: 0.1em; }
+  nav.resources .nav-sep { color: var(--meta); }
+
+  /* ---------- editions ---------- */
+  .edition { margin-top: 40px; }
+  .edition + .edition { border-top: 3px double var(--ink); padding-top: 32px; }
+
+  .kicker {
+    font-family: "Special Elite", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 4px;
+  }
+  h2.edition-head {
+    font-family: "Rozha One", serif;
+    font-size: 2rem;
+    margin: 0 0 4px;
+    text-wrap: balance;
+  }
+  .dateline {
+    font-family: "Special Elite", monospace;
+    font-size: 0.7rem;
+    color: var(--meta);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 18px;
+  }
+
+  .pullquote {
+    background: var(--paper-2);
+    border-top: 3px solid var(--ink);
+    border-bottom: 3px solid var(--ink);
+    padding: 14px 4px;
+    margin: 0 0 20px;
+    font-family: "Rozha One", serif;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .pullquote .attr {
+    display: block;
+    font-family: "Special Elite", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-top: 8px;
+  }
+
+  .dispatch {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(28,26,22,0.18);
+    font-size: 0.98rem;
+  }
+  .dispatch:last-child { border-bottom: none; }
+  .dispatch .crest {
+    flex: 0 0 auto;
+    display: flex;
+    gap: -6px;
+  }
+  .dispatch .crest img {
+    width: 26px; height: 26px; border-radius: 4px; object-fit: cover;
+    border: 1px solid var(--ink);
+    filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
+  }
+  .dispatch .crest img + img { margin-left: -8px; }
+  .dispatch p { margin: 0; }
+  .dispatch b { font-weight: 700; }
+
+  .empty-state { text-align: center; padding: 60px 20px; color: var(--ink-dim); font-family: "Special Elite", monospace; }
+
+  footer.masthead-footer {
+    margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
+    text-align: center; font-family: "Special Elite", monospace; font-size: 0.65rem;
+    color: var(--meta); text-transform: uppercase; letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Subscribers Only</p>
+    <p>Enter the passphrase to read today's edition.</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">&gt;</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none" class="page">
+
+  <header class="masthead">
+    <div class="masthead-meta">
+      <span>Est. 2025</span>
+      <span>Unlisted Preview Edition</span>
+      <span>Price: One Waiver Claim</span>
+    </div>
+    <h1 class="nameplate">The Just Stream It<br>Gazette</h1>
+    <p class="tagline">&ldquo;All the Fantasy That's Fit to Print&rdquo;</p>
+    <hr class="masthead-rule">
+    <nav class="resources" id="resources-nav"></nav>
+  </header>
+
+  <div id="editions"></div>
+
+  <footer class="masthead-footer">2025 Season, Complete Run &middot; Generated by build_weekly_recap.py</footer>
+
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+
+function teamLogo(t) { return (t && t.logo) || ''; }
+
+function renderCrests(teams, teamId1, teamId2) {
+  const t1 = teams[teamId1], t2 = teams[teamId2];
+  return `<span class="crest">
+    <img src="${teamLogo(t1)}" alt="" onerror="this.style.visibility='hidden'">
+    <img src="${teamLogo(t2)}" alt="" onerror="this.style.visibility='hidden'">
+  </span>`;
+}
+
+// Rarer/funnier clause types make better headlines than routine ones -
+// every week has a "league-best performance", so it's the weakest pick
+// when something rarer is also on offer that week.
+const CLAUSE_PRIORITY = ['plot twist', 'division-rival salt', 'upset alert', 'league-best performance'];
+
+function findPullquote(weekMatchups) {
+  // The single best INDIVIDUAL clause this week, not the longest combined
+  // clause blob from one matchup - a matchup can carry 2+ semicolon-joined
+  // clauses (e.g. a stud AND a rival callout in the same game), and
+  // mashing those together read as an incoherent run-on headline.
+  let best = null;
+  for (const m of weekMatchups) {
+    const dashIdx = m.text.indexOf(' - ');
+    if (dashIdx === -1) continue;
+    const clauses = m.text.slice(dashIdx + 3).split('; ');
+    for (const clause of clauses) {
+      const priority = CLAUSE_PRIORITY.findIndex(p => clause.startsWith(p));
+      const rank = priority === -1 ? CLAUSE_PRIORITY.length : priority;
+      if (!best || rank < best.rank) best = { m, clause, rank };
+    }
+  }
+  return best;
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+
+  const meta = await (await fetch('data/meta.json')).json();
+  document.getElementById('resources-nav').innerHTML = renderNav('recap-preview', meta.league_id);
+
+  const [weeklyRecap, teamsList] = await Promise.all([
+    fetch('data/2025/weekly_recap.json').then(r => r.json()),
+    fetch('data/2025/teams.json').then(r => r.json()),
+  ]);
+  const teams = {};
+  teamsList.forEach(t => { teams[t.id] = t; });
+
+  const editionsEl = document.getElementById('editions');
+  if (!weeklyRecap.length) {
+    editionsEl.innerHTML = '<div class="empty-state">No editions yet.</div>';
+    return;
+  }
+
+  // Newest week first.
+  const weeksDesc = [...weeklyRecap].sort((a, b) => b.week - a.week);
+
+  editionsEl.innerHTML = weeksDesc.map(w => {
+    const pull = findPullquote(w.matchups);
+    const pullHtml = pull ? `
+      <div class="pullquote">
+        &ldquo;${pull.clause.charAt(0).toUpperCase() + pull.clause.slice(1)}&rdquo;
+        <span class="attr">This week's headline, Week ${w.week}</span>
+      </div>` : '';
+
+    const dispatches = w.matchups.map(m => `
+      <div class="dispatch">
+        ${renderCrests(teams, m.winner_team_id, m.loser_team_id)}
+        <p>${m.text}.</p>
+      </div>
+    `).join('');
+
+    return `
+      <section class="edition">
+        <p class="kicker">Week ${w.week} Edition</p>
+        <h2 class="edition-head">This Week Around the League</h2>
+        <p class="dateline">2025 Regular Season &middot; Week ${w.week} of 14</p>
+        ${pullHtml}
+        ${dispatches}
+      </section>
+    `;
+  }).join('');
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+</script>
+
+</body>
+</html>
