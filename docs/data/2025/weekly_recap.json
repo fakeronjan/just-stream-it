@@ -8,7 +8,7 @@
           12,
           5
         ],
-        "text": "This week's nail-biter: Buffalo Abusement Park (Melinda) squeaked past Team Kantastrophe (Cara) 134.0-122.3, a margin of just 11.7.",
+        "text": "Buffalo Abusement Park (Melinda) survived a scare from Team Kantastrophe (Cara), escaping with a 11.7-point win, 134.0-122.3.",
         "lineups": {
           "12": [
             {
@@ -154,42 +154,21 @@
           3,
           10
         ],
-        "text": "Illusions Michael (Pete) had no mercy for Baker's Dirty Dozen (Karl), winning 159.0-111.9 - a 47.2-point beatdown."
+        "text": "Blowout of the week: Illusions Michael (Pete) demolished Baker's Dirty Dozen (Karl) by 47.2, 159.0-111.9."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           3
         ],
-        "text": "Nobody topped Josh Allen (Illusions Michael (Pete)) this week - 38.8 points to lead all starters."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          3
-        ],
-        "text": "Plot twist: Pete, a Bills fan, has been starting De'Von Achane (MIA) and TreVeyon Henderson (NE) all along."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          7
-        ],
-        "text": "Buried lede: Mike (Steelers fan) is rostering Mark Andrews (BAL) and Jerome Ford (CLE), and has been for a while."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          8
-        ],
-        "text": "Buried lede: Joe (Packers fan) is rostering Justin Jefferson (MIN), Caleb Williams (CHI), and Aaron Jones Sr. (MIN), and has been for a while."
+        "text": "Stud of the week: Josh Allen (Illusions Michael (Pete)) dropped 38.8 points, best of anyone in the league."
       },
       {
         "type": "plot_twist",
         "team_ids": [
           11
         ],
-        "text": "Buried lede: Kris (Chiefs fan) is rostering Justin Herbert (LAC), and has been for a while."
+        "text": "Kris (Chiefs fan) will take the win, even if Justin Herbert (LAC, 27.9 pts) did the heavy lifting."
       }
     ],
     "briefs": [
@@ -251,7 +230,7 @@
             2,
             8
           ],
-          "text": "Mednis Madness (mariss, #9, 0-1) faces Daddy Nielsen (Joe, #2, 1-0)"
+          "text": "Mednis Madness (mariss, #9, 0-1) squares off against Daddy Nielsen (Joe, #2, 1-0)"
         },
         {
           "team_ids": [
@@ -265,14 +244,14 @@
             7,
             1
           ],
-          "text": "Terrible Towels (Mike, #12, 0-1) squares off against Lamar and Drake's Grahamy's (Imran, #4, 1-0)"
+          "text": "Terrible Towels (Mike, #12, 0-1) and Lamar and Drake's Grahamy's (Imran, #4, 1-0) go head-to-head"
         },
         {
           "team_ids": [
             9,
             3
           ],
-          "text": "McConkey Kong Country (Ronjan, #8, 0-1) faces Illusions Michael (Pete, #1, 1-0)"
+          "text": "Next up: McConkey Kong Country (Ronjan, #8, 0-1) vs. Illusions Michael (Pete, #1, 1-0)"
         },
         {
           "team_ids": [
@@ -600,7 +579,7 @@
           2,
           8
         ],
-        "text": "Mednis Madness (mariss) (#9 entering the week) had no business beating Daddy Nielsen (Joe) (#2) - but here we are."
+        "text": "Chalk got tossed out the window: #9 Mednis Madness (mariss) took down #2 Daddy Nielsen (Joe)."
       },
       {
         "type": "division_rival_salt",
@@ -608,7 +587,7 @@
           7,
           1
         ],
-        "text": "Division-rival salt: Lamar Jackson (BAL, 26.3 pts) went off on Mike, a Steelers fan."
+        "text": "Rough week to be a Steelers fan: Lamar Jackson (BAL, 26.3 pts) torched Mike's lineup."
       },
       {
         "type": "division_rival_salt",
@@ -616,7 +595,7 @@
           8,
           2
         ],
-        "text": "Rough week to be a Packers fan: Amon-Ra St. Brown (DET, 34.7 pts) and Jared Goff (DET, 34.0 pts) torched Joe's lineup."
+        "text": "Amon-Ra St. Brown (DET, 34.7 pts) and Jared Goff (DET, 34.0 pts) made Joe's week miserable - and Joe roots for the Packers."
       }
     ],
     "briefs": [
@@ -671,21 +650,21 @@
             2,
             6
           ],
-          "text": "Mednis Madness (mariss, #5, 1-1) faces Mahomes is where the heart is \u2764 (Lisette, #11, 0-2)"
+          "text": "Mednis Madness (mariss, #5, 1-1) and Mahomes is where the heart is \u2764 (Lisette, #11, 0-2) go head-to-head"
         },
         {
           "team_ids": [
             12,
             10
           ],
-          "text": "Buffalo Abusement Park (Melinda, #1, 2-0) squares off against Baker's Dirty Dozen (Karl, #10, 0-2)"
+          "text": "Buffalo Abusement Park (Melinda, #1, 2-0) faces Baker's Dirty Dozen (Karl, #10, 0-2)"
         },
         {
           "team_ids": [
             8,
             7
           ],
-          "text": "Daddy Nielsen (Joe, #6, 1-1) faces Terrible Towels (Mike, #12, 0-2)"
+          "text": "Daddy Nielsen (Joe, #6, 1-1) takes on Terrible Towels (Mike, #12, 0-2)"
         },
         {
           "team_ids": [
@@ -706,7 +685,7 @@
             3,
             4
           ],
-          "text": "Illusions Michael (Pete, #2, 2-0) faces Conquering Heroes (Ben, #8, 1-1)"
+          "text": "Illusions Michael (Pete, #2, 2-0) and Conquering Heroes (Ben, #8, 1-1) go head-to-head"
         }
       ]
     },
@@ -866,7 +845,7 @@
           1,
           11
         ],
-        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Keep 'em and weep (Kris) 119.0-116.6, a margin of just 2.4.",
+        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Keep 'em and weep (Kris), escaping with a 2.4-point win, 119.0-116.6.",
         "lineups": {
           "1": [
             {
@@ -1012,14 +991,14 @@
           3,
           4
         ],
-        "text": "Illusions Michael (Pete) had no mercy for Conquering Heroes (Ben), winning 161.4-106.3 - a 55.1-point beatdown."
+        "text": "Blowout of the week: Illusions Michael (Pete) demolished Conquering Heroes (Ben) by 55.1, 161.4-106.3."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           2
         ],
-        "text": "Nobody topped Vikings D/ST (Mednis Madness (mariss)) this week - 32.0 points to lead all starters."
+        "text": "Vikings D/ST (Mednis Madness (mariss)) went off for 32.0 points - nobody else in the league was close."
       },
       {
         "type": "upset_alert",
@@ -1032,9 +1011,9 @@
       {
         "type": "plot_twist",
         "team_ids": [
-          7
+          8
         ],
-        "text": "Plot twist: Mike, a Steelers fan, has been starting Jake Browning (CIN) all along."
+        "text": "Joe (Packers fan) will take the win, even if Caleb Williams (CHI, 29.1 pts) did the heavy lifting."
       }
     ],
     "briefs": [
@@ -1089,42 +1068,42 @@
             6,
             10
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 0-3) squares off against Baker's Dirty Dozen (Karl, #8, 1-2); Play every week and it's Lisette 0-3 Karl"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 0-3) takes on Baker's Dirty Dozen (Karl, #8, 1-2); All-play says Lisette 0-3 Karl"
         },
         {
           "team_ids": [
             7,
             2
           ],
-          "text": "Terrible Towels (Mike, #12, 0-3) faces Mednis Madness (mariss, #3, 2-1); Play every week and it's Mike 0-3 mariss"
+          "text": "Terrible Towels (Mike, #12, 0-3) squares off against Mednis Madness (mariss, #3, 2-1); By weekly scoring alone, Mike has the edge, 0-3 over mariss"
         },
         {
           "team_ids": [
             9,
             12
           ],
-          "text": "McConkey Kong Country (Ronjan, #10, 0-3) faces Buffalo Abusement Park (Melinda, #6, 2-1); Play every week and it's Ronjan 1-2 Melinda"
+          "text": "McConkey Kong Country (Ronjan, #10, 0-3) squares off against Buffalo Abusement Park (Melinda, #6, 2-1); By weekly scoring alone, Ronjan has the edge, 1-2 over Melinda"
         },
         {
           "team_ids": [
             11,
             8
           ],
-          "text": "Keep 'em and weep (Kris, #7, 2-1) squares off against Daddy Nielsen (Joe, #5, 2-1); Play every week and it's Kris 1-2 Joe"
+          "text": "Keep 'em and weep (Kris, #7, 2-1) takes on Daddy Nielsen (Joe, #5, 2-1); By weekly scoring alone, Kris has the edge, 1-2 over Joe"
         },
         {
           "team_ids": [
             4,
             5
           ],
-          "text": "Conquering Heroes (Ben, #9, 1-2) squares off against Team Kantastrophe (Cara, #4, 2-1); Play every week and it's Ben 0-3 Cara"
+          "text": "Next up: Conquering Heroes (Ben, #9, 1-2) vs. Team Kantastrophe (Cara, #4, 2-1); By weekly scoring alone, Ben has the edge, 0-3 over Cara"
         },
         {
           "team_ids": [
             3,
             1
           ],
-          "text": "Illusions Michael (Pete, #1, 3-0) squares off against Lamar and Drake's Grahamy's (Imran, #2, 3-0); Play every week and it's Pete 3-0 Imran"
+          "text": "Next up: Illusions Michael (Pete, #1, 3-0) vs. Lamar and Drake's Grahamy's (Imran, #2, 3-0); By weekly scoring alone, Pete has the edge, 3-0 over Imran"
         }
       ]
     },
@@ -1284,7 +1263,7 @@
           9,
           12
         ],
-        "text": "This week's nail-biter: McConkey Kong Country (Ronjan) squeaked past Buffalo Abusement Park (Melinda) 140.7-132.9, a margin of just 7.9.",
+        "text": "McConkey Kong Country (Ronjan) survived a scare from Buffalo Abusement Park (Melinda), escaping with a 7.9-point win, 140.7-132.9.",
         "lineups": {
           "9": [
             {
@@ -1430,7 +1409,7 @@
           2,
           7
         ],
-        "text": "Not so close: Mednis Madness (mariss) ran up the score on Terrible Towels (Mike), 141.0-89.3."
+        "text": "Mednis Madness (mariss) embarrassed Terrible Towels (Mike) 141.0-89.3, a 51.7-point statement."
       },
       {
         "type": "stud_of_the_week",
@@ -1445,14 +1424,7 @@
           4,
           5
         ],
-        "text": "Conquering Heroes (Ben) (#9 entering the week) had no business beating Team Kantastrophe (Cara) (#4) - but here we are."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          9
-        ],
-        "text": "Buried lede: Ronjan (Bengals fan) is rostering Quinshon Judkins (CLE) and Rashod Bateman (BAL), and has been for a while."
+        "text": "#9 Conquering Heroes (Ben) over #4 Team Kantastrophe (Cara) - the standings didn't see that coming."
       }
     ],
     "briefs": [
@@ -1507,42 +1479,42 @@
             7,
             6
           ],
-          "text": "Terrible Towels (Mike, #12, 0-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #11, 0-4); Over a full season of head-to-head, Mike would be 1-3 against Lisette"
+          "text": "Next up: Terrible Towels (Mike, #12, 0-4) vs. Mahomes is where the heart is \u2764 (Lisette, #11, 0-4); Play every week and it's Mike 1-3 Lisette"
         },
         {
           "team_ids": [
             10,
             9
           ],
-          "text": "Baker's Dirty Dozen (Karl, #7, 2-2) squares off against McConkey Kong Country (Ronjan, #10, 1-3); Over a full season of head-to-head, Karl would be 3-1 against Ronjan"
+          "text": "Next up: Baker's Dirty Dozen (Karl, #7, 2-2) vs. McConkey Kong Country (Ronjan, #10, 1-3); Play every week and it's Karl 3-1 Ronjan"
         },
         {
           "team_ids": [
             2,
             11
           ],
-          "text": "Mednis Madness (mariss, #2, 3-1) squares off against Keep 'em and weep (Kris, #8, 2-2); Play every week and it's mariss 3-1 Kris"
+          "text": "Next up: Mednis Madness (mariss, #2, 3-1) vs. Keep 'em and weep (Kris, #8, 2-2); All-play says mariss 3-1 Kris"
         },
         {
           "team_ids": [
             12,
             4
           ],
-          "text": "Buffalo Abusement Park (Melinda, #6, 2-2) squares off against Conquering Heroes (Ben, #9, 2-2); Over a full season of head-to-head, Melinda would be 2-2 against Ben"
+          "text": "Next up: Buffalo Abusement Park (Melinda, #6, 2-2) vs. Conquering Heroes (Ben, #9, 2-2); Play every week and it's Melinda 2-2 Ben"
         },
         {
           "team_ids": [
             8,
             3
           ],
-          "text": "Daddy Nielsen (Joe, #3, 3-1) squares off against Illusions Michael (Pete, #1, 4-0); Play every week and it's Joe 1-3 Pete"
+          "text": "Daddy Nielsen (Joe, #3, 3-1) takes on Illusions Michael (Pete, #1, 4-0); All-play says Joe 1-3 Pete"
         },
         {
           "team_ids": [
             5,
             1
           ],
-          "text": "Team Kantastrophe (Cara, #5, 2-2) squares off against Lamar and Drake's Grahamy's (Imran, #4, 3-1); Play every week and it's Cara 3-1 Imran"
+          "text": "Next up: Team Kantastrophe (Cara, #5, 2-2) vs. Lamar and Drake's Grahamy's (Imran, #4, 3-1); By weekly scoring alone, Cara has the edge, 3-1 over Imran"
         }
       ]
     },
@@ -1702,7 +1674,7 @@
           4,
           12
         ],
-        "text": "Conquering Heroes (Ben) survived a scare from Buffalo Abusement Park (Melinda), escaping with a 1.8-point win, 119.1-117.4.",
+        "text": "It came down to the last stat line: Conquering Heroes (Ben) over Buffalo Abusement Park (Melinda), 119.1-117.4.",
         "lineups": {
           "4": [
             {
@@ -1848,14 +1820,14 @@
           6,
           7
         ],
-        "text": "Not so close: Mahomes is where the heart is \u2764 (Lisette) ran up the score on Terrible Towels (Mike), 165.3-84.9."
+        "text": "Mahomes is where the heart is \u2764 (Lisette) embarrassed Terrible Towels (Mike) 165.3-84.9, a 80.4-point statement."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           6
         ],
-        "text": "Stud of the week: Rico Dowdle (Mahomes is where the heart is \u2764 (Lisette)) dropped 30.9 points, best of anyone in the league."
+        "text": "The stat sheet belonged to Rico Dowdle (Mahomes is where the heart is \u2764 (Lisette)) this week: 30.9 points."
       },
       {
         "type": "division_rival_salt",
@@ -1863,28 +1835,7 @@
           3,
           8
         ],
-        "text": "Rough week to be a Bills fan: Justin Fields (NYJ, 25.9 pts) torched Pete's lineup."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          3
-        ],
-        "text": "Plot twist: Pete, a Bills fan, has been starting Rhamondre Stevenson (NE) all along."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          11
-        ],
-        "text": "Plot twist: Kris, a Chiefs fan, has been starting Marvin Mims Jr. (DEN) all along."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          12
-        ],
-        "text": "Plot twist: Melinda, a Bills fan, has been starting Hunter Henry (NE) all along."
+        "text": "Pete (Bills fan) just got cooked by a division rival - Justin Fields (NYJ, 25.9 pts)."
       }
     ],
     "briefs": [
@@ -1939,42 +1890,42 @@
             6,
             9
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 1-4) squares off against McConkey Kong Country (Ronjan, #9, 2-3); Play every week and it's Lisette 2-3 Ronjan"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 1-4) and McConkey Kong Country (Ronjan, #9, 2-3) go head-to-head; By weekly scoring alone, Lisette has the edge, 2-3 over Ronjan"
         },
         {
           "team_ids": [
             11,
             7
           ],
-          "text": "Keep 'em and weep (Kris, #10, 2-3) faces Terrible Towels (Mike, #12, 0-5); Over a full season of head-to-head, Kris would be 5-0 against Mike"
+          "text": "Next up: Keep 'em and weep (Kris, #10, 2-3) vs. Terrible Towels (Mike, #12, 0-5); Over a full season of head-to-head, Kris would be 5-0 against Mike"
         },
         {
           "team_ids": [
             4,
             10
           ],
-          "text": "Conquering Heroes (Ben, #6, 3-2) faces Baker's Dirty Dozen (Karl, #8, 2-3); Over a full season of head-to-head, Ben would be 1-4 against Karl"
+          "text": "Conquering Heroes (Ben, #6, 3-2) faces Baker's Dirty Dozen (Karl, #8, 2-3); Play every week and it's Ben 1-4 Karl"
         },
         {
           "team_ids": [
             3,
             2
           ],
-          "text": "Illusions Michael (Pete, #1, 4-1) squares off against Mednis Madness (mariss, #2, 4-1); Play every week and it's Pete 2-3 mariss"
+          "text": "Illusions Michael (Pete, #1, 4-1) and Mednis Madness (mariss, #2, 4-1) go head-to-head; Play every week and it's Pete 2-3 mariss"
         },
         {
           "team_ids": [
             1,
             12
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #5, 3-2) squares off against Buffalo Abusement Park (Melinda, #7, 2-3); Over a full season of head-to-head, Imran would be 2-3 against Melinda"
+          "text": "Lamar and Drake's Grahamy's (Imran, #5, 3-2) and Buffalo Abusement Park (Melinda, #7, 2-3) go head-to-head; All-play says Imran 2-3 Melinda"
         },
         {
           "team_ids": [
             5,
             8
           ],
-          "text": "Team Kantastrophe (Cara, #4, 3-2) squares off against Daddy Nielsen (Joe, #3, 4-1); Play every week and it's Cara 3-2 Joe"
+          "text": "Next up: Team Kantastrophe (Cara, #4, 3-2) vs. Daddy Nielsen (Joe, #3, 4-1); All-play says Cara 3-2 Joe"
         }
       ]
     },
@@ -2134,7 +2085,7 @@
           7,
           11
         ],
-        "text": "This week's nail-biter: Terrible Towels (Mike) squeaked past Keep 'em and weep (Kris) 108.5-106.8, a margin of just 1.7.",
+        "text": "It came down to the last stat line: Terrible Towels (Mike) over Keep 'em and weep (Kris), 108.5-106.8.",
         "lineups": {
           "7": [
             {
@@ -2280,21 +2231,21 @@
           10,
           4
         ],
-        "text": "Not so close: Baker's Dirty Dozen (Karl) ran up the score on Conquering Heroes (Ben), 166.0-81.1."
+        "text": "Baker's Dirty Dozen (Karl) had no mercy for Conquering Heroes (Ben), winning 166.0-81.1 - a 85.0-point beatdown."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           5
         ],
-        "text": "Nobody topped Bijan Robinson (Team Kantastrophe (Cara)) this week - 32.8 points to lead all starters."
+        "text": "Top scorer this week: Bijan Robinson (Team Kantastrophe (Cara)), 32.8 points."
       },
       {
         "type": "plot_twist",
         "team_ids": [
-          4
+          3
         ],
-        "text": "Plot twist: Ben, a Patriots fan, has been starting Mason Taylor (NYJ) all along."
+        "text": "Pete (Bills fan) will take the win, even if De'Von Achane (MIA, 29.0 pts) did the heavy lifting."
       }
     ],
     "briefs": [
@@ -2349,42 +2300,42 @@
             11,
             6
           ],
-          "text": "Keep 'em and weep (Kris, #11, 2-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 2-4); Over a full season of head-to-head, Kris would be 3-3 against Lisette"
+          "text": "Keep 'em and weep (Kris, #11, 2-4) takes on Mahomes is where the heart is \u2764 (Lisette, #8, 2-4); Play every week and it's Kris 3-3 Lisette"
         },
         {
           "team_ids": [
             9,
             4
           ],
-          "text": "McConkey Kong Country (Ronjan, #9, 2-4) faces Conquering Heroes (Ben, #7, 3-3); Play every week and it's Ronjan 5-1 Ben"
+          "text": "McConkey Kong Country (Ronjan, #9, 2-4) faces Conquering Heroes (Ben, #7, 3-3); All-play says Ronjan 5-1 Ben"
         },
         {
           "team_ids": [
             7,
             3
           ],
-          "text": "Terrible Towels (Mike, #12, 1-5) faces Illusions Michael (Pete, #3, 4-2); Play every week and it's Mike 0-6 Pete"
+          "text": "Terrible Towels (Mike, #12, 1-5) squares off against Illusions Michael (Pete, #3, 4-2); By weekly scoring alone, Mike has the edge, 0-6 over Pete"
         },
         {
           "team_ids": [
             10,
             1
           ],
-          "text": "Baker's Dirty Dozen (Karl, #6, 3-3) squares off against Lamar and Drake's Grahamy's (Imran, #5, 4-2); Over a full season of head-to-head, Karl would be 4-2 against Imran"
+          "text": "Baker's Dirty Dozen (Karl, #6, 3-3) takes on Lamar and Drake's Grahamy's (Imran, #5, 4-2); Play every week and it's Karl 4-2 Imran"
         },
         {
           "team_ids": [
             2,
             5
           ],
-          "text": "Mednis Madness (mariss, #1, 5-1) squares off against Team Kantastrophe (Cara, #2, 4-2); Play every week and it's mariss 1-5 Cara"
+          "text": "Next up: Mednis Madness (mariss, #1, 5-1) vs. Team Kantastrophe (Cara, #2, 4-2); All-play says mariss 1-5 Cara"
         },
         {
           "team_ids": [
             12,
             8
           ],
-          "text": "Buffalo Abusement Park (Melinda, #10, 2-4) squares off against Daddy Nielsen (Joe, #4, 4-2); Over a full season of head-to-head, Melinda would be 1-5 against Joe"
+          "text": "Buffalo Abusement Park (Melinda, #10, 2-4) and Daddy Nielsen (Joe, #4, 4-2) go head-to-head; All-play says Melinda 1-5 Joe"
         }
       ]
     },
@@ -2544,7 +2495,7 @@
           1,
           10
         ],
-        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Baker's Dirty Dozen (Karl), escaping with a 0.3-point win, 94.1-93.7.",
+        "text": "Down to the wire: Lamar and Drake's Grahamy's (Imran) edged Baker's Dirty Dozen (Karl) 94.1-93.7.",
         "lineups": {
           "1": [
             {
@@ -2690,14 +2641,28 @@
           9,
           4
         ],
-        "text": "McConkey Kong Country (Ronjan) had no mercy for Conquering Heroes (Ben), winning 161.5-103.9 - a 57.6-point beatdown."
+        "text": "Not so close: McConkey Kong Country (Ronjan) ran up the score on Conquering Heroes (Ben), 161.5-103.9."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           6
         ],
-        "text": "Nobody topped Christian McCaffrey (Mahomes is where the heart is \u2764 (Lisette)) this week - 35.6 points to lead all starters."
+        "text": "Top scorer this week: Christian McCaffrey (Mahomes is where the heart is \u2764 (Lisette)), 35.6 points."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          9
+        ],
+        "text": "Ronjan (Bengals fan) got bailed out by a division rival: Quinshon Judkins (CLE, 26.4 pts)."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          11
+        ],
+        "text": "Plot twist: Justin Herbert (LAC, 27.9 pts) carried Kris (Chiefs fan) to a big week - a division rival doing the heavy lifting."
       }
     ],
     "briefs": [
@@ -2752,42 +2717,42 @@
             6,
             4
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 3-4) faces Conquering Heroes (Ben, #9, 3-4); Play every week and it's Lisette 6-1 Ben"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 3-4) faces Conquering Heroes (Ben, #9, 3-4); By weekly scoring alone, Lisette has the edge, 6-1 over Ben"
         },
         {
           "team_ids": [
             3,
             11
           ],
-          "text": "Illusions Michael (Pete, #2, 5-2) squares off against Keep 'em and weep (Kris, #10, 2-5); Over a full season of head-to-head, Pete would be 5-2 against Kris"
+          "text": "Illusions Michael (Pete, #2, 5-2) takes on Keep 'em and weep (Kris, #10, 2-5); Play every week and it's Pete 5-2 Kris"
         },
         {
           "team_ids": [
             1,
             9
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #4, 5-2) squares off against McConkey Kong Country (Ronjan, #7, 3-4); Over a full season of head-to-head, Imran would be 2-5 against Ronjan"
+          "text": "Lamar and Drake's Grahamy's (Imran, #4, 5-2) takes on McConkey Kong Country (Ronjan, #7, 3-4); Over a full season of head-to-head, Imran would be 2-5 against Ronjan"
         },
         {
           "team_ids": [
             5,
             7
           ],
-          "text": "Team Kantastrophe (Cara, #5, 4-3) squares off against Terrible Towels (Mike, #12, 1-6); Over a full season of head-to-head, Cara would be 7-0 against Mike"
+          "text": "Team Kantastrophe (Cara, #5, 4-3) takes on Terrible Towels (Mike, #12, 1-6); Play every week and it's Cara 7-0 Mike"
         },
         {
           "team_ids": [
             8,
             10
           ],
-          "text": "Daddy Nielsen (Joe, #3, 5-2) squares off against Baker's Dirty Dozen (Karl, #8, 3-4); Over a full season of head-to-head, Joe would be 5-2 against Karl"
+          "text": "Next up: Daddy Nielsen (Joe, #3, 5-2) vs. Baker's Dirty Dozen (Karl, #8, 3-4); Play every week and it's Joe 5-2 Karl"
         },
         {
           "team_ids": [
             12,
             2
           ],
-          "text": "Buffalo Abusement Park (Melinda, #11, 2-5) faces Mednis Madness (mariss, #1, 6-1); Play every week and it's Melinda 1-6 mariss"
+          "text": "Buffalo Abusement Park (Melinda, #11, 2-5) squares off against Mednis Madness (mariss, #1, 6-1); By weekly scoring alone, Melinda has the edge, 1-6 over mariss"
         }
       ]
     },
@@ -2947,7 +2912,7 @@
           6,
           4
         ],
-        "text": "This week's nail-biter: Mahomes is where the heart is \u2764 (Lisette) squeaked past Conquering Heroes (Ben) 115.8-113.2, a margin of just 2.7.",
+        "text": "Mahomes is where the heart is \u2764 (Lisette) survived a scare from Conquering Heroes (Ben), escaping with a 2.7-point win, 115.8-113.2.",
         "lineups": {
           "6": [
             {
@@ -3093,14 +3058,14 @@
           12,
           2
         ],
-        "text": "Not so close: Buffalo Abusement Park (Melinda) ran up the score on Mednis Madness (mariss), 161.9-95.3."
+        "text": "Buffalo Abusement Park (Melinda) embarrassed Mednis Madness (mariss) 161.9-95.3, a 66.6-point statement."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           5
         ],
-        "text": "Nobody topped Jonathan Taylor (Team Kantastrophe (Cara)) this week - 36.4 points to lead all starters."
+        "text": "Top scorer this week: Jonathan Taylor (Team Kantastrophe (Cara)), 36.4 points."
       },
       {
         "type": "upset_alert",
@@ -3108,7 +3073,7 @@
           12,
           2
         ],
-        "text": "Upset alert: Buffalo Abusement Park (Melinda) came in ranked #11 and knocked off Mednis Madness (mariss)'s #1."
+        "text": "Buffalo Abusement Park (Melinda) (#11 entering the week) had no business beating Mednis Madness (mariss) (#1) - but here we are."
       },
       {
         "type": "division_rival_salt",
@@ -3116,14 +3081,14 @@
           10,
           8
         ],
-        "text": "Division-rival salt: Saquon Barkley (PHI, 31.4 pts) went off on Karl, a Cowboys fan."
+        "text": "Rough week to be a Cowboys fan: Saquon Barkley (PHI, 31.4 pts) torched Karl's lineup."
       },
       {
         "type": "plot_twist",
         "team_ids": [
           11
         ],
-        "text": "Plot twist: Kris, a Chiefs fan, has been starting Wil Lutz (DEN) all along."
+        "text": "Kris (Chiefs fan) got bailed out by a division rival: Justin Herbert (LAC, 25.3 pts)."
       }
     ],
     "briefs": [
@@ -3178,42 +3143,42 @@
             3,
             6
           ],
-          "text": "Illusions Michael (Pete, #3, 6-2) squares off against Mahomes is where the heart is \u2764 (Lisette, #6, 4-4); Over a full season of head-to-head, Pete would be 4-4 against Lisette"
+          "text": "Illusions Michael (Pete, #3, 6-2) and Mahomes is where the heart is \u2764 (Lisette, #6, 4-4) go head-to-head; By weekly scoring alone, Pete has the edge, 4-4 over Lisette"
         },
         {
           "team_ids": [
             4,
             1
           ],
-          "text": "Conquering Heroes (Ben, #10, 3-5) squares off against Lamar and Drake's Grahamy's (Imran, #5, 5-3); Play every week and it's Ben 4-4 Imran"
+          "text": "Conquering Heroes (Ben, #10, 3-5) squares off against Lamar and Drake's Grahamy's (Imran, #5, 5-3); All-play says Ben 4-4 Imran"
         },
         {
           "team_ids": [
             11,
             5
           ],
-          "text": "Keep 'em and weep (Kris, #11, 2-6) faces Team Kantastrophe (Cara, #4, 5-3); Play every week and it's Kris 2-6 Cara"
+          "text": "Next up: Keep 'em and weep (Kris, #11, 2-6) vs. Team Kantastrophe (Cara, #4, 5-3); Play every week and it's Kris 2-6 Cara"
         },
         {
           "team_ids": [
             9,
             8
           ],
-          "text": "McConkey Kong Country (Ronjan, #7, 4-4) faces Daddy Nielsen (Joe, #1, 6-2); Over a full season of head-to-head, Ronjan would be 3-5 against Joe"
+          "text": "McConkey Kong Country (Ronjan, #7, 4-4) takes on Daddy Nielsen (Joe, #1, 6-2); Over a full season of head-to-head, Ronjan would be 3-5 against Joe"
         },
         {
           "team_ids": [
             7,
             12
           ],
-          "text": "Terrible Towels (Mike, #12, 1-7) faces Buffalo Abusement Park (Melinda, #9, 3-5); Over a full season of head-to-head, Mike would be 3-5 against Melinda"
+          "text": "Terrible Towels (Mike, #12, 1-7) faces Buffalo Abusement Park (Melinda, #9, 3-5); Play every week and it's Mike 3-5 Melinda"
         },
         {
           "team_ids": [
             10,
             2
           ],
-          "text": "Baker's Dirty Dozen (Karl, #8, 3-5) faces Mednis Madness (mariss, #2, 6-2); Play every week and it's Karl 4-4 mariss"
+          "text": "Baker's Dirty Dozen (Karl, #8, 3-5) faces Mednis Madness (mariss, #2, 6-2); Over a full season of head-to-head, Karl would be 4-4 against mariss"
         }
       ]
     },
@@ -3373,7 +3338,7 @@
           5,
           11
         ],
-        "text": "Team Kantastrophe (Cara) survived a scare from Keep 'em and weep (Kris), escaping with a 3.0-point win, 146.9-143.9.",
+        "text": "Keep 'em and weep (Kris) pushed Team Kantastrophe (Cara) to the brink, falling 3.0 points short, 146.9-143.9.",
         "lineups": {
           "5": [
             {
@@ -3518,7 +3483,7 @@
         "team_ids": [
           8
         ],
-        "text": "Nobody topped Caleb Williams (Daddy Nielsen (Joe)) this week - 37.7 points to lead all starters."
+        "text": "Caleb Williams (Daddy Nielsen (Joe)) went off for 37.7 points - nobody else in the league was close."
       },
       {
         "type": "upset_alert",
@@ -3526,7 +3491,21 @@
           4,
           1
         ],
-        "text": "Conquering Heroes (Ben) (#10 entering the week) had no business beating Lamar and Drake's Grahamy's (Imran) (#5) - but here we are."
+        "text": "Chalk got tossed out the window: #10 Conquering Heroes (Ben) took down #5 Lamar and Drake's Grahamy's (Imran)."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          8
+        ],
+        "text": "Joe (Packers fan) will take the win, even if Caleb Williams (CHI, 37.7 pts) did the heavy lifting."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          11
+        ],
+        "text": "The irony: Justin Herbert (LAC, 27.7 pts) led the way for Kris this week, and Kris roots for the Chiefs."
       }
     ],
     "briefs": [
@@ -3581,42 +3560,42 @@
             6,
             1
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 4-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-4); Play every week and it's Lisette 5-4 Imran"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 4-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-4); By weekly scoring alone, Lisette has the edge, 5-4 over Imran"
         },
         {
           "team_ids": [
             5,
             3
           ],
-          "text": "Team Kantastrophe (Cara, #4, 6-3) squares off against Illusions Michael (Pete, #2, 7-2); Over a full season of head-to-head, Cara would be 6-3 against Pete"
+          "text": "Team Kantastrophe (Cara, #4, 6-3) takes on Illusions Michael (Pete, #2, 7-2); Over a full season of head-to-head, Cara would be 6-3 against Pete"
         },
         {
           "team_ids": [
             8,
             4
           ],
-          "text": "Daddy Nielsen (Joe, #1, 7-2) squares off against Conquering Heroes (Ben, #8, 4-5); Over a full season of head-to-head, Joe would be 7-2 against Ben"
+          "text": "Daddy Nielsen (Joe, #1, 7-2) and Conquering Heroes (Ben, #8, 4-5) go head-to-head; By weekly scoring alone, Joe has the edge, 7-2 over Ben"
         },
         {
           "team_ids": [
             12,
             11
           ],
-          "text": "Buffalo Abusement Park (Melinda, #9, 3-6) squares off against Keep 'em and weep (Kris, #11, 2-7); Play every week and it's Melinda 3-6 Kris"
+          "text": "Buffalo Abusement Park (Melinda, #9, 3-6) and Keep 'em and weep (Kris, #11, 2-7) go head-to-head; Over a full season of head-to-head, Melinda would be 3-6 against Kris"
         },
         {
           "team_ids": [
             2,
             9
           ],
-          "text": "Mednis Madness (mariss, #3, 7-2) squares off against McConkey Kong Country (Ronjan, #7, 4-5); Over a full season of head-to-head, mariss would be 5-4 against Ronjan"
+          "text": "Mednis Madness (mariss, #3, 7-2) takes on McConkey Kong Country (Ronjan, #7, 4-5); By weekly scoring alone, mariss has the edge, 5-4 over Ronjan"
         },
         {
           "team_ids": [
             10,
             7
           ],
-          "text": "Baker's Dirty Dozen (Karl, #10, 3-6) squares off against Terrible Towels (Mike, #12, 2-7); Over a full season of head-to-head, Karl would be 6-3 against Mike"
+          "text": "Baker's Dirty Dozen (Karl, #10, 3-6) takes on Terrible Towels (Mike, #12, 2-7); Over a full season of head-to-head, Karl would be 6-3 against Mike"
         }
       ]
     },
@@ -3776,7 +3755,7 @@
           4,
           8
         ],
-        "text": "This week's nail-biter: Conquering Heroes (Ben) squeaked past Daddy Nielsen (Joe) 121.5-121.4, a margin of just 0.1.",
+        "text": "It came down to the last stat line: Conquering Heroes (Ben) over Daddy Nielsen (Joe), 121.5-121.4.",
         "lineups": {
           "4": [
             {
@@ -3922,14 +3901,14 @@
           9,
           2
         ],
-        "text": "Not so close: McConkey Kong Country (Ronjan) ran up the score on Mednis Madness (mariss), 155.5-114.5."
+        "text": "McConkey Kong Country (Ronjan) had no mercy for Mednis Madness (mariss), winning 155.5-114.5 - a 41.0-point beatdown."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           5
         ],
-        "text": "Nobody topped Jonathan Taylor (Team Kantastrophe (Cara)) this week - 48.1 points to lead all starters."
+        "text": "Top scorer this week: Jonathan Taylor (Team Kantastrophe (Cara)), 48.1 points."
       },
       {
         "type": "upset_alert",
@@ -3937,7 +3916,7 @@
           4,
           8
         ],
-        "text": "Upset alert: Conquering Heroes (Ben) came in ranked #8 and knocked off Daddy Nielsen (Joe)'s #1."
+        "text": "Daddy Nielsen (Joe) came in ranked #1 and still found a way to lose to #8 Conquering Heroes (Ben)."
       },
       {
         "type": "division_rival_salt",
@@ -3945,14 +3924,21 @@
           10,
           7
         ],
-        "text": "Division-rival salt: Jaxson Dart (NYG, 26.3 pts) went off on Karl, a Cowboys fan."
+        "text": "Karl's Cowboys allegiance took a beating this week, courtesy of Jaxson Dart (NYG, 26.3 pts)."
       },
       {
         "type": "plot_twist",
         "team_ids": [
-          1
+          3
         ],
-        "text": "Buried lede: Imran (Bears fan) is rostering Will Reichard (MIN), and has been for a while."
+        "text": "Plot twist: De'Von Achane (MIA, 37.5 pts) and TreVeyon Henderson (NE, 27.5 pts) carried Pete (Bills fan) to a big week - a division rival doing the heavy lifting."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          8
+        ],
+        "text": "The irony: Caleb Williams (CHI, 25.1 pts) led the way for Joe this week, and Joe roots for the Packers."
       }
     ],
     "briefs": [
@@ -4007,42 +3993,42 @@
             5,
             6
           ],
-          "text": "Team Kantastrophe (Cara, #1, 7-3) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 4-6); Over a full season of head-to-head, Cara would be 7-3 against Lisette"
+          "text": "Team Kantastrophe (Cara, #1, 7-3) takes on Mahomes is where the heart is \u2764 (Lisette, #8, 4-6); Over a full season of head-to-head, Cara would be 7-3 against Lisette"
         },
         {
           "team_ids": [
             1,
             8
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #5, 6-4) faces Daddy Nielsen (Joe, #3, 7-3); Play every week and it's Imran 3-7 Joe"
+          "text": "Lamar and Drake's Grahamy's (Imran, #5, 6-4) faces Daddy Nielsen (Joe, #3, 7-3); All-play says Imran 3-7 Joe"
         },
         {
           "team_ids": [
             3,
             12
           ],
-          "text": "Illusions Michael (Pete, #2, 7-3) squares off against Buffalo Abusement Park (Melinda, #9, 4-6); Over a full season of head-to-head, Pete would be 8-2 against Melinda"
+          "text": "Illusions Michael (Pete, #2, 7-3) and Buffalo Abusement Park (Melinda, #9, 4-6) go head-to-head; All-play says Pete 8-2 Melinda"
         },
         {
           "team_ids": [
             4,
             2
           ],
-          "text": "Conquering Heroes (Ben, #7, 5-5) squares off against Mednis Madness (mariss, #4, 7-3); Over a full season of head-to-head, Ben would be 4-6 against mariss"
+          "text": "Conquering Heroes (Ben, #7, 5-5) faces Mednis Madness (mariss, #4, 7-3); By weekly scoring alone, Ben has the edge, 4-6 over mariss"
         },
         {
           "team_ids": [
             11,
             10
           ],
-          "text": "Keep 'em and weep (Kris, #12, 2-8) faces Baker's Dirty Dozen (Karl, #10, 3-7); Play every week and it's Kris 6-4 Karl"
+          "text": "Keep 'em and weep (Kris, #12, 2-8) squares off against Baker's Dirty Dozen (Karl, #10, 3-7); Over a full season of head-to-head, Kris would be 6-4 against Karl"
         },
         {
           "team_ids": [
             9,
             7
           ],
-          "text": "McConkey Kong Country (Ronjan, #6, 5-5) faces Terrible Towels (Mike, #11, 3-7); Play every week and it's Ronjan 9-1 Mike"
+          "text": "McConkey Kong Country (Ronjan, #6, 5-5) takes on Terrible Towels (Mike, #11, 3-7); Over a full season of head-to-head, Ronjan would be 9-1 against Mike"
         }
       ]
     },
@@ -4202,7 +4188,7 @@
           1,
           8
         ],
-        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Daddy Nielsen (Joe), escaping with a 1.4-point win, 112.1-110.7.",
+        "text": "Daddy Nielsen (Joe) pushed Lamar and Drake's Grahamy's (Imran) to the brink, falling 1.4 points short, 112.1-110.7.",
         "lineups": {
           "1": [
             {
@@ -4348,14 +4334,14 @@
           10,
           11
         ],
-        "text": "Not so close: Baker's Dirty Dozen (Karl) ran up the score on Keep 'em and weep (Kris), 137.4-94.8."
+        "text": "Blowout of the week: Baker's Dirty Dozen (Karl) demolished Keep 'em and weep (Kris) by 42.6, 137.4-94.8."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           3
         ],
-        "text": "Nobody topped Josh Allen (Illusions Michael (Pete)) this week - 42.7 points to lead all starters."
+        "text": "Top scorer this week: Josh Allen (Illusions Michael (Pete)), 42.7 points."
       },
       {
         "type": "upset_alert",
@@ -4363,7 +4349,7 @@
           6,
           5
         ],
-        "text": "Upset alert: Mahomes is where the heart is \u2764 (Lisette) came in ranked #8 and knocked off Team Kantastrophe (Cara)'s #1."
+        "text": "Team Kantastrophe (Cara) came in ranked #1 and still found a way to lose to #8 Mahomes is where the heart is \u2764 (Lisette)."
       },
       {
         "type": "upset_alert",
@@ -4371,7 +4357,7 @@
           7,
           9
         ],
-        "text": "Upset alert: Terrible Towels (Mike) came in ranked #11 and knocked off McConkey Kong Country (Ronjan)'s #6."
+        "text": "Nobody saw this coming: Terrible Towels (Mike) (#11) beat McConkey Kong Country (Ronjan) (#6)."
       },
       {
         "type": "division_rival_salt",
@@ -4379,7 +4365,14 @@
           12,
           3
         ],
-        "text": "Rough week to be a Bills fan: TreVeyon Henderson (NE, 29.8 pts) torched Melinda's lineup."
+        "text": "Melinda's Bills allegiance took a beating this week, courtesy of TreVeyon Henderson (NE, 29.8 pts)."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          3
+        ],
+        "text": "The irony: TreVeyon Henderson (NE, 29.8 pts) led the way for Pete this week, and Pete roots for the Bills."
       }
     ],
     "briefs": [
@@ -4434,42 +4427,42 @@
             6,
             8
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #8, 5-6) faces Daddy Nielsen (Joe, #3, 7-4) again - Daddy Nielsen (Joe) won the first meeting 153.5-108.3; Over a full season of head-to-head, Lisette would be 4-7 against Joe"
+          "text": "Rematch: Mahomes is where the heart is \u2764 (Lisette, #8, 5-6) vs. Daddy Nielsen (Joe, #3, 7-4); Daddy Nielsen (Joe) took the first one 153.5-108.3; Play every week and it's Lisette 4-7 Joe"
         },
         {
           "team_ids": [
             12,
             5
           ],
-          "text": "Rematch: Buffalo Abusement Park (Melinda, #10, 4-7) vs. Team Kantastrophe (Cara, #2, 7-4); Buffalo Abusement Park (Melinda) took the first one 134.0-122.3; Over a full season of head-to-head, Melinda would be 3-8 against Cara"
+          "text": "Second helping: Buffalo Abusement Park (Melinda, #10, 4-7) vs. Team Kantastrophe (Cara, #2, 7-4) again, after Buffalo Abusement Park (Melinda) took the opener 134.0-122.3; Over a full season of head-to-head, Melinda would be 3-8 against Cara"
         },
         {
           "team_ids": [
             2,
             1
           ],
-          "text": "Rematch: Mednis Madness (mariss, #4, 7-4) vs. Lamar and Drake's Grahamy's (Imran, #5, 7-4); Lamar and Drake's Grahamy's (Imran) took the first one 140.0-111.9; Play every week and it's mariss 7-4 Imran"
+          "text": "Mednis Madness (mariss, #4, 7-4) and Lamar and Drake's Grahamy's (Imran, #5, 7-4) run it back - Lamar and Drake's Grahamy's (Imran) won the first go-round 140.0-111.9; By weekly scoring alone, mariss has the edge, 7-4 over Imran"
         },
         {
           "team_ids": [
             10,
             3
           ],
-          "text": "Baker's Dirty Dozen (Karl, #9, 4-7) faces Illusions Michael (Pete, #1, 8-3) again - Illusions Michael (Pete) won the first meeting 159.0-111.9; Over a full season of head-to-head, Karl would be 3-8 against Pete"
+          "text": "Rematch: Baker's Dirty Dozen (Karl, #9, 4-7) vs. Illusions Michael (Pete, #1, 8-3); Illusions Michael (Pete) took the first one 159.0-111.9; Over a full season of head-to-head, Karl would be 3-8 against Pete"
         },
         {
           "team_ids": [
             7,
             4
           ],
-          "text": "Terrible Towels (Mike, #11, 4-7) faces Conquering Heroes (Ben, #6, 6-5) again - Conquering Heroes (Ben) won the first meeting 100.4-86.9; Play every week and it's Mike 4-7 Ben"
+          "text": "Rematch: Terrible Towels (Mike, #11, 4-7) vs. Conquering Heroes (Ben, #6, 6-5); Conquering Heroes (Ben) took the first one 100.4-86.9; By weekly scoring alone, Mike has the edge, 4-7 over Ben"
         },
         {
           "team_ids": [
             9,
             11
           ],
-          "text": "Rematch: McConkey Kong Country (Ronjan, #7, 5-6) vs. Keep 'em and weep (Kris, #12, 2-9); Keep 'em and weep (Kris) took the first one 143.0-115.9; Over a full season of head-to-head, Ronjan would be 7-4 against Kris"
+          "text": "Second helping: McConkey Kong Country (Ronjan, #7, 5-6) vs. Keep 'em and weep (Kris, #12, 2-9) again, after Keep 'em and weep (Kris) took the opener 143.0-115.9; Over a full season of head-to-head, Ronjan would be 7-4 against Kris"
         }
       ]
     },
@@ -4629,7 +4622,7 @@
           3,
           10
         ],
-        "text": "Illusions Michael (Pete) survived a scare from Baker's Dirty Dozen (Karl), escaping with a 2.8-point win, 119.3-116.5.",
+        "text": "Baker's Dirty Dozen (Karl) pushed Illusions Michael (Pete) to the brink, falling 2.8 points short, 119.3-116.5.",
         "lineups": {
           "3": [
             {
@@ -4775,14 +4768,14 @@
           4,
           7
         ],
-        "text": "Not so close: Conquering Heroes (Ben) ran up the score on Terrible Towels (Mike), 137.0-67.3."
+        "text": "Conquering Heroes (Ben) embarrassed Terrible Towels (Mike) 137.0-67.3, a 69.8-point statement."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           9
         ],
-        "text": "Nobody topped Jahmyr Gibbs (McConkey Kong Country (Ronjan)) this week - 49.9 points to lead all starters."
+        "text": "The stat sheet belonged to Jahmyr Gibbs (McConkey Kong Country (Ronjan)) this week: 49.9 points."
       },
       {
         "type": "division_rival_salt",
@@ -4790,7 +4783,7 @@
           1,
           2
         ],
-        "text": "Division-rival salt: Amon-Ra St. Brown (DET, 25.4 pts) and Emanuel Wilson (GB, 25.5 pts) went off on Imran, a Bears fan."
+        "text": "Imran's Bears allegiance took a beating this week, courtesy of Amon-Ra St. Brown (DET, 25.4 pts) and Emanuel Wilson (GB, 25.5 pts)."
       }
     ],
     "briefs": [
@@ -4845,7 +4838,7 @@
             12,
             6
           ],
-          "text": "Buffalo Abusement Park (Melinda, #10, 4-8) faces Mahomes is where the heart is \u2764 (Lisette, #8, 5-7) again - Buffalo Abusement Park (Melinda) won the first meeting 182.9-112.8; Play every week and it's Melinda 3-9 Lisette"
+          "text": "Rematch: Buffalo Abusement Park (Melinda, #10, 4-8) vs. Mahomes is where the heart is \u2764 (Lisette, #8, 5-7); Buffalo Abusement Park (Melinda) took the first one 182.9-112.8; All-play says Melinda 3-9 Lisette"
         },
         {
           "team_ids": [
@@ -4859,28 +4852,28 @@
             5,
             10
           ],
-          "text": "Rematch: Team Kantastrophe (Cara, #2, 8-4) vs. Baker's Dirty Dozen (Karl, #9, 4-8); Team Kantastrophe (Cara) took the first one 142.1-114.5; Over a full season of head-to-head, Cara would be 10-2 against Karl"
+          "text": "Second helping: Team Kantastrophe (Cara, #2, 8-4) vs. Baker's Dirty Dozen (Karl, #9, 4-8) again, after Team Kantastrophe (Cara) took the opener 142.1-114.5; Play every week and it's Cara 10-2 Karl"
         },
         {
           "team_ids": [
             1,
             7
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #6, 7-5) faces Terrible Towels (Mike, #11, 4-8) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 138.7-119.1; Play every week and it's Imran 8-4 Mike"
+          "text": "Rematch: Lamar and Drake's Grahamy's (Imran, #6, 7-5) vs. Terrible Towels (Mike, #11, 4-8); Lamar and Drake's Grahamy's (Imran) took the first one 138.7-119.1; All-play says Imran 8-4 Mike"
         },
         {
           "team_ids": [
             3,
             9
           ],
-          "text": "Rematch: Illusions Michael (Pete, #1, 9-3) vs. McConkey Kong Country (Ronjan, #7, 6-6); Illusions Michael (Pete) took the first one 139.6-112.2; Over a full season of head-to-head, Pete would be 6-6 against Ronjan"
+          "text": "Illusions Michael (Pete, #1, 9-3) and McConkey Kong Country (Ronjan, #7, 6-6) run it back - Illusions Michael (Pete) won the first go-round 139.6-112.2; Play every week and it's Pete 6-6 Ronjan"
         },
         {
           "team_ids": [
             4,
             11
           ],
-          "text": "Rematch: Conquering Heroes (Ben, #5, 7-5) vs. Keep 'em and weep (Kris, #12, 2-10); Keep 'em and weep (Kris) took the first one 127.1-73.2; Over a full season of head-to-head, Ben would be 5-7 against Kris"
+          "text": "Conquering Heroes (Ben, #5, 7-5) and Keep 'em and weep (Kris, #12, 2-10) run it back - Keep 'em and weep (Kris) won the first go-round 127.1-73.2; Play every week and it's Ben 5-7 Kris"
         }
       ]
     },
@@ -5040,7 +5033,7 @@
           8,
           2
         ],
-        "text": "Daddy Nielsen (Joe) survived a scare from Mednis Madness (mariss), escaping with a 1.5-point win, 101.8-100.3.",
+        "text": "Down to the wire: Daddy Nielsen (Joe) edged Mednis Madness (mariss) 101.8-100.3.",
         "lineups": {
           "8": [
             {
@@ -5185,7 +5178,7 @@
         "team_ids": [
           3
         ],
-        "text": "Nobody topped A.J. Brown (Illusions Michael (Pete)) this week - 30.2 points to lead all starters."
+        "text": "A.J. Brown (Illusions Michael (Pete)) turned in the best lineup card of the week - 30.2 points."
       }
     ],
     "briefs": [
@@ -5240,42 +5233,42 @@
             6,
             2
           ],
-          "text": "Rematch: Mahomes is where the heart is \u2764 (Lisette, #8, 6-7) vs. Mednis Madness (mariss, #4, 8-5); Mednis Madness (mariss) took the first one 131.2-111.0; Over a full season of head-to-head, Lisette would be 7-6 against mariss"
+          "text": "Second helping: Mahomes is where the heart is \u2764 (Lisette, #8, 6-7) vs. Mednis Madness (mariss, #4, 8-5) again, after Mednis Madness (mariss) took the opener 131.2-111.0; Play every week and it's Lisette 7-6 mariss"
         },
         {
           "team_ids": [
             10,
             12
           ],
-          "text": "Baker's Dirty Dozen (Karl, #10, 4-9) faces Buffalo Abusement Park (Melinda, #9, 4-9) again - Baker's Dirty Dozen (Karl) won the first meeting 131.6-87.1; Over a full season of head-to-head, Karl would be 7-6 against Melinda"
+          "text": "Rematch: Baker's Dirty Dozen (Karl, #10, 4-9) vs. Buffalo Abusement Park (Melinda, #9, 4-9); Baker's Dirty Dozen (Karl) took the first one 131.6-87.1; Play every week and it's Karl 7-6 Melinda"
         },
         {
           "team_ids": [
             7,
             8
           ],
-          "text": "Terrible Towels (Mike, #11, 4-9) faces Daddy Nielsen (Joe, #3, 9-4) again - Daddy Nielsen (Joe) won the first meeting 132.8-99.0; Play every week and it's Mike 2-11 Joe"
+          "text": "Terrible Towels (Mike, #11, 4-9) faces Daddy Nielsen (Joe, #3, 9-4) again - Daddy Nielsen (Joe) won the first meeting 132.8-99.0; All-play says Mike 2-11 Joe"
         },
         {
           "team_ids": [
             9,
             5
           ],
-          "text": "McConkey Kong Country (Ronjan, #7, 6-7) faces Team Kantastrophe (Cara, #2, 9-4) again - Team Kantastrophe (Cara) won the first meeting 156.4-128.5; Play every week and it's Ronjan 4-9 Cara"
+          "text": "Rematch: McConkey Kong Country (Ronjan, #7, 6-7) vs. Team Kantastrophe (Cara, #2, 9-4); Team Kantastrophe (Cara) took the first one 156.4-128.5; All-play says Ronjan 4-9 Cara"
         },
         {
           "team_ids": [
             11,
             1
           ],
-          "text": "Rematch: Keep 'em and weep (Kris, #12, 2-11) vs. Lamar and Drake's Grahamy's (Imran, #6, 8-5); Lamar and Drake's Grahamy's (Imran) took the first one 119.0-116.6; Over a full season of head-to-head, Kris would be 5-8 against Imran"
+          "text": "Second helping: Keep 'em and weep (Kris, #12, 2-11) vs. Lamar and Drake's Grahamy's (Imran, #6, 8-5) again, after Lamar and Drake's Grahamy's (Imran) took the opener 119.0-116.6; Play every week and it's Kris 5-8 Imran"
         },
         {
           "team_ids": [
             4,
             3
           ],
-          "text": "Rematch: Conquering Heroes (Ben, #5, 8-5) vs. Illusions Michael (Pete, #1, 10-3); Illusions Michael (Pete) took the first one 161.4-106.3; Play every week and it's Ben 3-10 Pete"
+          "text": "Second helping: Conquering Heroes (Ben, #5, 8-5) vs. Illusions Michael (Pete, #1, 10-3) again, after Illusions Michael (Pete) took the opener 161.4-106.3; All-play says Ben 3-10 Pete"
         }
       ]
     },
@@ -5581,14 +5574,14 @@
           1,
           11
         ],
-        "text": "Lamar and Drake's Grahamy's (Imran) had no mercy for Keep 'em and weep (Kris), winning 164.8-97.0 - a 67.8-point beatdown."
+        "text": "Blowout of the week: Lamar and Drake's Grahamy's (Imran) demolished Keep 'em and weep (Kris) by 67.8, 164.8-97.0."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           3
         ],
-        "text": "Nobody topped Josh Allen (Illusions Michael (Pete)) this week - 37.8 points to lead all starters."
+        "text": "The stat sheet belonged to Josh Allen (Illusions Michael (Pete)) this week: 37.8 points."
       },
       {
         "type": "division_rival_salt",
@@ -5596,7 +5589,7 @@
           4,
           3
         ],
-        "text": "Rough week to be a Patriots fan: Josh Allen (BUF, 37.8 pts) torched Ben's lineup."
+        "text": "Josh Allen (BUF, 37.8 pts) made Ben's week miserable - and Ben roots for the Patriots."
       }
     ],
     "briefs": [
@@ -5802,7 +5795,7 @@
           1,
           8
         ],
-        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Daddy Nielsen (Joe) 132.7-129.7, a margin of just 3.0.",
+        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Daddy Nielsen (Joe), escaping with a 3.0-point win, 132.7-129.7.",
         "lineups": {
           "1": [
             {
@@ -5955,7 +5948,14 @@
         "team_ids": [
           2
         ],
-        "text": "Stud of the week: Amon-Ra St. Brown (Mednis Madness (mariss)) dropped 34.9 points, best of anyone in the league."
+        "text": "Amon-Ra St. Brown (Mednis Madness (mariss)) went off for 34.9 points - nobody else in the league was close."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          3
+        ],
+        "text": "Pete (Bills fan) got bailed out by a division rival: TreVeyon Henderson (NE, 29.1 pts)."
       }
     ],
     "briefs": [
@@ -6199,7 +6199,7 @@
           1,
           3
         ],
-        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Illusions Michael (Pete), escaping with a 13.8-point win, 115.4-101.6.",
+        "text": "Down to the wire: Lamar and Drake's Grahamy's (Imran) edged Illusions Michael (Pete) 115.4-101.6.",
         "lineups": {
           "1": [
             {
@@ -6345,21 +6345,21 @@
           5,
           2
         ],
-        "text": "Not so close: Team Kantastrophe (Cara) ran up the score on Mednis Madness (mariss), 176.1-100.5."
+        "text": "Mednis Madness (mariss) never had a chance - Team Kantastrophe (Cara) rolled to a 176.1-100.5 win."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           5
         ],
-        "text": "Nobody topped Chase Brown (Team Kantastrophe (Cara)) this week - 30.9 points to lead all starters."
+        "text": "Top scorer this week: Chase Brown (Team Kantastrophe (Cara)), 30.9 points."
       },
       {
         "type": "plot_twist",
         "team_ids": [
-          12
+          11
         ],
-        "text": "Buried lede: Melinda (Bills fan) is rostering Brady Cook (NYJ), and has been for a while."
+        "text": "Kris (Chiefs fan) will take the win, even if Justin Herbert (LAC, 30.2 pts) did the heavy lifting."
       }
     ],
     "briefs": [
@@ -6622,7 +6622,7 @@
           5,
           1
         ],
-        "text": "It's a title for Team Kantastrophe (Cara) - Lamar and Drake's Grahamy's (Imran) falls 156.2-128.8 in the championship.",
+        "text": "Champions: Team Kantastrophe (Cara), 156.2-128.8 over Lamar and Drake's Grahamy's (Imran).",
         "lineups": {
           "5": [
             {
@@ -6768,28 +6768,21 @@
           3,
           2
         ],
-        "text": "Consolation prize - Illusions Michael (Pete) took 3rd, beating Mednis Madness (mariss) 117.6-104.3."
+        "text": "Not nothing: Illusions Michael (Pete) closes with a 3rd-place win over Mednis Madness (mariss), 117.6-104.3."
       },
       {
         "type": "stud_of_the_week",
         "team_ids": [
           5
         ],
-        "text": "Nobody topped Bijan Robinson (Team Kantastrophe (Cara)) this week - 37.4 points to lead all starters."
+        "text": "Top scorer this week: Bijan Robinson (Team Kantastrophe (Cara)), 37.4 points."
       },
       {
         "type": "plot_twist",
         "team_ids": [
           1
         ],
-        "text": "Buried lede: Imran (Bears fan) is rostering Malik Willis (GB), and has been for a while."
-      },
-      {
-        "type": "plot_twist",
-        "team_ids": [
-          3
-        ],
-        "text": "Buried lede: Pete (Bills fan) is rostering Quinn Ewers (MIA), and has been for a while."
+        "text": "Imran (Bears fan) will take the win, even if Malik Willis (GB, 31.5 pts) did the heavy lifting."
       }
     ],
     "briefs": [

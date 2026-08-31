@@ -25,11 +25,17 @@ decisions came directly out of that:
   - Upset detection uses the standings ENTERING that week, not final
     season rank (which doesn't exist yet mid-season) - see
     standings_through_week().
-  - "Started a division rival" only fires ONCE per (owner, player), the
-    first week it's true - checked against real data, a handful of
-    owners roster a rival's player ALL SEASON, so re-announcing it every
-    week was the single most repetitive thing in an early draft of this.
-    It's a one-time reveal, not a weekly fact-check.
+  - The "rostering a division rival" bit went through 2 versions. v1
+    fired once per (owner, player) just for STARTING a rival's player -
+    Ronjan's read after a full season of real output: merely rostering
+    a rival isn't news, and a one-time reveal still meant a fresh "plot
+    twist" almost every week for different players, which read as
+    exactly as repetitive as re-announcing the same one weekly. v2 (see
+    PLOT_TWIST_TEMPLATES) only fires when that rostered rival player
+    actually scores big FOR the owner that week - real production, not
+    presence - which is the genuinely ironic thing worth calling out,
+    and naturally self-limits since it takes an actual good week to
+    trigger, not just a bench slot.
   - When multiple items of the same feature type happen in one week
     (e.g. 3 new rival reveals for the same owner in week 1, when
     everything is "new"), they're grouped into ONE item with proper
@@ -64,47 +70,85 @@ PLAYOFF_SPOTS = 6
 CLOSE_GAME_TEMPLATES = [
     "This week's nail-biter: {winner} squeaked past {loser} {wscore}-{lscore}, a margin of just {margin}.",
     "{winner} survived a scare from {loser}, escaping with a {margin}-point win, {wscore}-{lscore}.",
+    "Down to the wire: {winner} edged {loser} {wscore}-{lscore}.",
+    "{loser} pushed {winner} to the brink, falling {margin} points short, {wscore}-{lscore}.",
+    "It came down to the last stat line: {winner} over {loser}, {wscore}-{lscore}.",
+    "{winner} held off a late push from {loser} to win {wscore}-{lscore}.",
 ]
 BLOWOUT_TEMPLATES = [
     "{winner} had no mercy for {loser}, winning {wscore}-{lscore} - a {margin}-point beatdown.",
     "Not so close: {winner} ran up the score on {loser}, {wscore}-{lscore}.",
+    "{winner} embarrassed {loser} {wscore}-{lscore}, a {margin}-point statement.",
+    "{loser} never had a chance - {winner} rolled to a {wscore}-{lscore} win.",
+    "Blowout of the week: {winner} demolished {loser} by {margin}, {wscore}-{lscore}.",
+    "{winner} put {loser} away early, cruising to a {wscore}-{lscore} win.",
 ]
 STUD_TEMPLATES = [
     "Stud of the week: {name} ({team}) dropped {points} points, best of anyone in the league.",
     "Nobody topped {name} ({team}) this week - {points} points to lead all starters.",
+    "{name} ({team}) turned in the best lineup card of the week - {points} points.",
+    "Top scorer this week: {name} ({team}), {points} points.",
+    "{name} ({team}) went off for {points} points - nobody else in the league was close.",
+    "The stat sheet belonged to {name} ({team}) this week: {points} points.",
 ]
 UPSET_TEMPLATES = [
     "Upset alert: {winner} came in ranked #{wrank} and knocked off {loser}'s #{lrank}.",
     "{winner} (#{wrank} entering the week) had no business beating {loser} (#{lrank}) - but here we are.",
+    "Chalk got tossed out the window: #{wrank} {winner} took down #{lrank} {loser}.",
+    "{loser} came in ranked #{lrank} and still found a way to lose to #{wrank} {winner}.",
+    "Nobody saw this coming: {winner} (#{wrank}) beat {loser} (#{lrank}).",
+    "#{wrank} {winner} over #{lrank} {loser} - the standings didn't see that coming.",
 ]
 DIVISION_SALT_TEMPLATES = [
     "Division-rival salt: {hits} went off on {owner}, a {fan_team} fan.",
     "Rough week to be a {fan_team} fan: {hits} torched {owner}'s lineup.",
+    "{owner} ({fan_team} fan) just got cooked by a division rival - {hits}.",
+    "Nothing like getting beat by a rival: {hits} lit up {owner}'s week.",
+    "{owner}'s {fan_team} allegiance took a beating this week, courtesy of {hits}.",
+    "{hits} made {owner}'s week miserable - and {owner} roots for the {fan_team}.",
 ]
+# Fires when a rostered division rival scores BIG *for* the owner in a
+# given week - see build_week_features() for why this replaced an earlier
+# existence-only ("you're rostering a rival at all") version.
 PLOT_TWIST_TEMPLATES = [
-    "Plot twist: {owner}, a {fan_team} fan, has been starting {reveals} all along.",
-    "Buried lede: {owner} ({fan_team} fan) is rostering {reveals}, and has been for a while.",
+    "Plot twist: {hits} carried {owner} ({fan_team} fan) to a big week - a division rival doing the heavy lifting.",
+    "The irony: {hits} led the way for {owner} this week, and {owner} roots for the {fan_team}.",
+    "{owner} ({fan_team} fan) will take the win, even if {hits} did the heavy lifting.",
+    "Not exactly on-brand: {owner}'s {fan_team} loyalty didn't stop {hits} from carrying the week.",
+    "{hits} showed up big for {owner} this week - awkward, given the {fan_team} allegiance.",
+    "{owner} ({fan_team} fan) got bailed out by a division rival: {hits}.",
 ]
 CHAMPIONSHIP_TEMPLATES = [
     "{winner} is your champion, beating {loser} {wscore}-{lscore} to take the title.",
     "It's a title for {winner} - {loser} falls {wscore}-{lscore} in the championship.",
+    "{winner} closes it out: {wscore}-{lscore} over {loser} to win it all.",
+    "Champions: {winner}, {wscore}-{lscore} over {loser}.",
 ]
 THIRD_PLACE_TEMPLATES = [
     "3rd place: {winner} beat {loser} {wscore}-{lscore}.",
     "Consolation prize - {winner} took 3rd, beating {loser} {wscore}-{lscore}.",
+    "Not nothing: {winner} closes with a 3rd-place win over {loser}, {wscore}-{lscore}.",
+    "{winner} salvages 3rd place, beating {loser} {wscore}-{lscore}.",
 ]
 LOOKING_AHEAD_TEMPLATES_PLAIN = [
     "{a} faces {b}",
     "{a} squares off against {b}",
+    "{a} takes on {b}",
+    "Next up: {a} vs. {b}",
+    "{a} and {b} go head-to-head",
 ]
 LOOKING_AHEAD_TEMPLATES_REMATCH = [
     "{a} faces {b} again - {prior_winner} won the first meeting {prior_score}",
     "Rematch: {a} vs. {b}; {prior_winner} took the first one {prior_score}",
+    "{a} and {b} run it back - {prior_winner} won the first go-round {prior_score}",
+    "Second helping: {a} vs. {b} again, after {prior_winner} took the opener {prior_score}",
 ]
 ALL_PLAY_MIN_WEEKS = 3  # don't bother below this - too small a sample to mean anything
 ALL_PLAY_TEMPLATES = [
     "Over a full season of head-to-head, {a_owner} would be {aw}-{bw} against {b_owner}",
     "Play every week and it's {a_owner} {aw}-{bw} {b_owner}",
+    "By weekly scoring alone, {a_owner} has the edge, {aw}-{bw} over {b_owner}",
+    "All-play says {a_owner} {aw}-{bw} {b_owner}",
 ]
 
 
@@ -122,11 +166,7 @@ def join_list(items):
 
 class RecapContext:
     """Everything build_week_recap() needs, loaded once per season rather
-    than per week. revealed_rostered_rivals persists across weeks WITHIN
-    a run (a fresh instance each `main()` call) - that's what makes the
-    one-time-reveal logic work: it's a deterministic replay of the season
-    so far, not externally persisted state.
-    """
+    than per week."""
 
     def __init__(self, season):
         self.teams = {t["id"]: t for t in _load(season, "teams.json")}
@@ -140,7 +180,6 @@ class RecapContext:
             if fan_team
         }
         self.owner_by_team_id = {tid: owner_first_name(t["owners"]) for tid, t in self.teams.items()}
-        self.revealed_rostered_rivals = set()
         self.num_regular_weeks = max(m["week"] for m in self.matchups if not m["is_playoffs"])
 
     def team_short(self, team_id):
@@ -320,27 +359,25 @@ def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box)
                 ),
             })
 
-    # Fandom: owner is rostering a division rival - ONE-TIME reveal per
-    # (owner, player), grouped if multiple are new in the same week.
+    # Fandom: the mirror image of division_rival_salt above - a rostered
+    # division rival went OFF *for* the owner this week (not just "you
+    # happen to own a rival's player", which isn't news - see the module
+    # docstring for why this replaced the old one-time-reveal version).
     for team_id, owner in ctx.owner_by_team_id.items():
         rivals = ctx.rival_abbrevs_by_owner.get(owner)
         if not rivals:
             continue
-        new_reveals = []
-        for p in week_box.get(str(team_id), []):
-            if not (p["started"] and p["pro_team"] in rivals and p["position"] != "D/ST"):
-                continue
-            key = (owner, p["name"])
-            if key in ctx.revealed_rostered_rivals:
-                continue
-            ctx.revealed_rostered_rivals.add(key)
-            new_reveals.append(f"{p['name']} ({p['pro_team']})")
-        if new_reveals:
+        hits = [
+            f"{p['name']} ({p['pro_team']}, {p['points']:.1f} pts)"
+            for p in week_box.get(str(team_id), [])
+            if p["started"] and p["pro_team"] in rivals and p["points"] >= DIVISION_RIVAL_MIN_POINTS
+        ]
+        if hits:
             features.append({
                 "type": "plot_twist",
                 "team_ids": [team_id],
                 "text": rng.choice(PLOT_TWIST_TEMPLATES).format(
-                    owner=owner, fan_team=ctx.fandom[owner], reveals=join_list(new_reveals),
+                    owner=owner, fan_team=ctx.fandom[owner], hits=join_list(hits),
                 ),
             })
 
