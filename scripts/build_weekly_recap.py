@@ -86,12 +86,12 @@ PLOT_TWIST_TEMPLATES = [
     "Buried lede: {owner} ({fan_team} fan) is rostering {reveals}, and has been for a while.",
 ]
 LOOKING_AHEAD_TEMPLATES_PLAIN = [
-    "{a} (#{ra}, {reca}) faces {b} (#{rb}, {recb})",
-    "{a} (#{ra}, {reca}) squares off against {b} (#{rb}, {recb})",
+    "{a} faces {b}",
+    "{a} squares off against {b}",
 ]
 LOOKING_AHEAD_TEMPLATES_REMATCH = [
-    "{a} (#{ra}, {reca}) faces {b} (#{rb}, {recb}) again - {prior_winner} won the first meeting {prior_score}",
-    "Rematch: {a} (#{ra}, {reca}) vs. {b} (#{rb}, {recb}); {prior_winner} took the first one {prior_score}",
+    "{a} faces {b} again - {prior_winner} won the first meeting {prior_score}",
+    "Rematch: {a} vs. {b}; {prior_winner} took the first one {prior_score}",
 ]
 
 
@@ -133,6 +133,15 @@ class RecapContext:
         t = self.teams[team_id]
         return f"{t['name'].strip()} ({owner_first_name(t['owners'])})"
 
+    def team_with_meta(self, team_id, *meta):
+        """Team name with owner AND extra context (record, rank, ...) in
+        ONE parenthetical - "Illusions Michael (Pete, 10-3)" - rather than
+        stacking a second paren group after team_short(), which read as
+        "Illusions Michael (Pete) (10-3)."""
+        t = self.teams[team_id]
+        parts = ", ".join([owner_first_name(t["owners"]), *[str(m) for m in meta]])
+        return f"{t['name'].strip()} ({parts})"
+
 
 def _load(season, name):
     return json.loads((DOCS_DATA / str(season) / name).read_text())
@@ -161,7 +170,7 @@ def standings_through_week(ctx, through_week):
             losses[m["home_team_id"]] += 1
     ranked = sorted(ctx.teams, key=lambda tid: (-wins[tid], -pf[tid]))
     rank = {tid: i + 1 for i, tid in enumerate(ranked)}
-    record = {tid: (wins[tid], losses[tid]) for tid in ctx.teams}
+    record = {tid: (wins[tid], losses[tid], pf[tid]) for tid in ctx.teams}
     return rank, record
 
 
@@ -305,7 +314,7 @@ def build_week_briefs(ctx, week_matchups, record_after):
             "loser_team_id": loser_id,
             "winner_score": wscore,
             "loser_score": lscore,
-            "text": f"{ctx.team_short(winner_id)} ({rec_w}) beat {ctx.team_short(loser_id)} ({rec_l}) "
+            "text": f"{ctx.team_with_meta(winner_id, rec_w)} beat {ctx.team_with_meta(loser_id, rec_l)} "
                     f"{wscore:.1f}-{lscore:.1f}",
         })
     return briefs
@@ -316,18 +325,34 @@ def build_playoff_picture(ctx, week):
     bracket in season_moments.json. Same regular-season-only ranking as
     everything else here; no bracket tracing, since real playoffs haven't
     happened yet mid-season.
+
+    Includes cumulative points_for, both because it's the actual
+    tiebreaker (see standings_through_week()) and to surface "leap"
+    context: `points_back` is only set when a row is tied in wins with
+    the row directly above it - that's the one case where points_for is
+    literally the deciding gap to close, so it's the only case where
+    showing it as a "how far behind" number means something concrete.
     """
     rank, record = standings_through_week(ctx, week)
     ranked_ids = sorted(ctx.teams, key=lambda tid: rank[tid])
     rows = []
+    prev = None
     for tid in ranked_ids:
-        rows.append({
+        wins, losses, pf = record[tid]
+        points_back = None
+        if prev and prev["wins"] == wins:
+            points_back = round(prev["points_for"] - pf, 1)
+        row = {
             "team_id": tid,
             "rank": rank[tid],
-            "wins": record[tid][0],
-            "losses": record[tid][1],
+            "wins": wins,
+            "losses": losses,
+            "points_for": round(pf, 1),
+            "points_back": points_back,
             "in_playoffs": rank[tid] <= PLAYOFF_SPOTS,
-        })
+        }
+        rows.append(row)
+        prev = row
     return rows
 
 
@@ -359,20 +384,17 @@ def build_looking_ahead(ctx, week):
     previews = []
     for m in next_matchups:
         a, b = m["home_team_id"], m["away_team_id"]
-        ra, rb = rank.get(a), rank.get(b)
-        reca = f"{record[a][0]}-{record[a][1]}"
-        recb = f"{record[b][0]}-{record[b][1]}"
+        a_label = ctx.team_with_meta(a, f"#{rank.get(a)}", f"{record[a][0]}-{record[a][1]}")
+        b_label = ctx.team_with_meta(b, f"#{rank.get(b)}", f"{record[b][0]}-{record[b][1]}")
         prior = last_meeting.get(frozenset((a, b)))
         if prior:
             pw, pws, pl, pls = _winner_loser(prior)
             text = rng.choice(LOOKING_AHEAD_TEMPLATES_REMATCH).format(
-                a=ctx.team_short(a), ra=ra, reca=reca, b=ctx.team_short(b), rb=rb, recb=recb,
+                a=a_label, b=b_label,
                 prior_winner=ctx.team_short(pw), prior_score=f"{pws:.1f}-{pls:.1f}",
             )
         else:
-            text = rng.choice(LOOKING_AHEAD_TEMPLATES_PLAIN).format(
-                a=ctx.team_short(a), ra=ra, reca=reca, b=ctx.team_short(b), rb=rb, recb=recb,
-            )
+            text = rng.choice(LOOKING_AHEAD_TEMPLATES_PLAIN).format(a=a_label, b=b_label)
         previews.append({"team_ids": [a, b], "text": text})
     return {"week": next_week, "matchups": previews}
 

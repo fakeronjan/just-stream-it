@@ -60,42 +60,42 @@
         "loser_team_id": 6,
         "winner_score": 153.52,
         "loser_score": 108.26,
-        "text": "Daddy Nielsen (Joe) (1-0) beat Mahomes is where the heart is \u2764 (Lisette) (0-1) 153.5-108.3"
+        "text": "Daddy Nielsen (Joe, 1-0) beat Mahomes is where the heart is \u2764 (Lisette, 0-1) 153.5-108.3"
       },
       {
         "winner_team_id": 12,
         "loser_team_id": 5,
         "winner_score": 134.0,
         "loser_score": 122.28,
-        "text": "Buffalo Abusement Park (Melinda) (1-0) beat Team Kantastrophe (Cara) (0-1) 134.0-122.3"
+        "text": "Buffalo Abusement Park (Melinda, 1-0) beat Team Kantastrophe (Cara, 0-1) 134.0-122.3"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 2,
         "winner_score": 139.98,
         "loser_score": 111.92,
-        "text": "Lamar and Drake's Grahamy's (Imran) (1-0) beat Mednis Madness (mariss) (0-1) 140.0-111.9"
+        "text": "Lamar and Drake's Grahamy's (Imran, 1-0) beat Mednis Madness (mariss, 0-1) 140.0-111.9"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 10,
         "winner_score": 159.04,
         "loser_score": 111.88,
-        "text": "Illusions Michael (Pete) (1-0) beat Baker's Dirty Dozen (Karl) (0-1) 159.0-111.9"
+        "text": "Illusions Michael (Pete, 1-0) beat Baker's Dirty Dozen (Karl, 0-1) 159.0-111.9"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 7,
         "winner_score": 100.44,
         "loser_score": 86.88,
-        "text": "Conquering Heroes (Ben) (1-0) beat Terrible Towels (Mike) (0-1) 100.4-86.9"
+        "text": "Conquering Heroes (Ben, 1-0) beat Terrible Towels (Mike, 0-1) 100.4-86.9"
       },
       {
         "winner_team_id": 11,
         "loser_team_id": 9,
         "winner_score": 143.04,
         "loser_score": 115.9,
-        "text": "Keep 'em and weep (Kris) (1-0) beat McConkey Kong Country (Ronjan) (0-1) 143.0-115.9"
+        "text": "Keep 'em and weep (Kris, 1-0) beat McConkey Kong Country (Ronjan, 0-1) 143.0-115.9"
       }
     ],
     "looking_ahead": {
@@ -106,42 +106,42 @@
             6,
             12
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette) (#11, 0-1) faces Buffalo Abusement Park (Melinda) (#5, 1-0)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 0-1) faces Buffalo Abusement Park (Melinda, #5, 1-0)"
         },
         {
           "team_ids": [
             2,
             8
           ],
-          "text": "Mednis Madness (mariss) (#9, 0-1) faces Daddy Nielsen (Joe) (#2, 1-0)"
+          "text": "Mednis Madness (mariss, #9, 0-1) faces Daddy Nielsen (Joe, #2, 1-0)"
         },
         {
           "team_ids": [
             10,
             5
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#10, 0-1) faces Team Kantastrophe (Cara) (#7, 0-1)"
+          "text": "Baker's Dirty Dozen (Karl, #10, 0-1) faces Team Kantastrophe (Cara, #7, 0-1)"
         },
         {
           "team_ids": [
             7,
             1
           ],
-          "text": "Terrible Towels (Mike) (#12, 0-1) squares off against Lamar and Drake's Grahamy's (Imran) (#4, 1-0)"
+          "text": "Terrible Towels (Mike, #12, 0-1) squares off against Lamar and Drake's Grahamy's (Imran, #4, 1-0)"
         },
         {
           "team_ids": [
             9,
             3
           ],
-          "text": "McConkey Kong Country (Ronjan) (#8, 0-1) faces Illusions Michael (Pete) (#1, 1-0)"
+          "text": "McConkey Kong Country (Ronjan, #8, 0-1) faces Illusions Michael (Pete, #1, 1-0)"
         },
         {
           "team_ids": [
             11,
             4
           ],
-          "text": "Keep 'em and weep (Kris) (#3, 1-0) squares off against Conquering Heroes (Ben) (#6, 1-0)"
+          "text": "Keep 'em and weep (Kris, #3, 1-0) squares off against Conquering Heroes (Ben, #6, 1-0)"
         }
       ]
     },
@@ -151,6 +151,8 @@
         "rank": 1,
         "wins": 1,
         "losses": 0,
+        "points_for": 159.0,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -158,6 +160,8 @@
         "rank": 2,
         "wins": 1,
         "losses": 0,
+        "points_for": 153.5,
+        "points_back": 5.5,
         "in_playoffs": true
       },
       {
@@ -165,6 +169,8 @@
         "rank": 3,
         "wins": 1,
         "losses": 0,
+        "points_for": 143.0,
+        "points_back": 10.5,
         "in_playoffs": true
       },
       {
@@ -172,6 +178,8 @@
         "rank": 4,
         "wins": 1,
         "losses": 0,
+        "points_for": 140.0,
+        "points_back": 3.0,
         "in_playoffs": true
       },
       {
@@ -179,6 +187,8 @@
         "rank": 5,
         "wins": 1,
         "losses": 0,
+        "points_for": 134.0,
+        "points_back": 6.0,
         "in_playoffs": true
       },
       {
@@ -186,6 +196,8 @@
         "rank": 6,
         "wins": 1,
         "losses": 0,
+        "points_for": 100.4,
+        "points_back": 33.6,
         "in_playoffs": true
       },
       {
@@ -193,6 +205,8 @@
         "rank": 7,
         "wins": 0,
         "losses": 1,
+        "points_for": 122.3,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -200,6 +214,8 @@
         "rank": 8,
         "wins": 0,
         "losses": 1,
+        "points_for": 115.9,
+        "points_back": 6.4,
         "in_playoffs": false
       },
       {
@@ -207,6 +223,8 @@
         "rank": 9,
         "wins": 0,
         "losses": 1,
+        "points_for": 111.9,
+        "points_back": 4.0,
         "in_playoffs": false
       },
       {
@@ -214,6 +232,8 @@
         "rank": 10,
         "wins": 0,
         "losses": 1,
+        "points_for": 111.9,
+        "points_back": 0.0,
         "in_playoffs": false
       },
       {
@@ -221,6 +241,8 @@
         "rank": 11,
         "wins": 0,
         "losses": 1,
+        "points_for": 108.3,
+        "points_back": 3.6,
         "in_playoffs": false
       },
       {
@@ -228,6 +250,8 @@
         "rank": 12,
         "wins": 0,
         "losses": 1,
+        "points_for": 86.9,
+        "points_back": 21.4,
         "in_playoffs": false
       }
     ]
@@ -289,42 +313,42 @@
         "loser_team_id": 6,
         "winner_score": 182.86,
         "loser_score": 112.82,
-        "text": "Buffalo Abusement Park (Melinda) (2-0) beat Mahomes is where the heart is \u2764 (Lisette) (0-2) 182.9-112.8"
+        "text": "Buffalo Abusement Park (Melinda, 2-0) beat Mahomes is where the heart is \u2764 (Lisette, 0-2) 182.9-112.8"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 8,
         "winner_score": 189.2,
         "loser_score": 121.06,
-        "text": "Mednis Madness (mariss) (1-1) beat Daddy Nielsen (Joe) (1-1) 189.2-121.1"
+        "text": "Mednis Madness (mariss, 1-1) beat Daddy Nielsen (Joe, 1-1) 189.2-121.1"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 10,
         "winner_score": 142.12,
         "loser_score": 114.5,
-        "text": "Team Kantastrophe (Cara) (1-1) beat Baker's Dirty Dozen (Karl) (0-2) 142.1-114.5"
+        "text": "Team Kantastrophe (Cara, 1-1) beat Baker's Dirty Dozen (Karl, 0-2) 142.1-114.5"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 7,
         "winner_score": 138.7,
         "loser_score": 119.1,
-        "text": "Lamar and Drake's Grahamy's (Imran) (2-0) beat Terrible Towels (Mike) (0-2) 138.7-119.1"
+        "text": "Lamar and Drake's Grahamy's (Imran, 2-0) beat Terrible Towels (Mike, 0-2) 138.7-119.1"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 9,
         "winner_score": 139.56,
         "loser_score": 112.22,
-        "text": "Illusions Michael (Pete) (2-0) beat McConkey Kong Country (Ronjan) (0-2) 139.6-112.2"
+        "text": "Illusions Michael (Pete, 2-0) beat McConkey Kong Country (Ronjan, 0-2) 139.6-112.2"
       },
       {
         "winner_team_id": 11,
         "loser_team_id": 4,
         "winner_score": 127.12,
         "loser_score": 73.16,
-        "text": "Keep 'em and weep (Kris) (2-0) beat Conquering Heroes (Ben) (1-1) 127.1-73.2"
+        "text": "Keep 'em and weep (Kris, 2-0) beat Conquering Heroes (Ben, 1-1) 127.1-73.2"
       }
     ],
     "looking_ahead": {
@@ -335,42 +359,42 @@
             2,
             6
           ],
-          "text": "Mednis Madness (mariss) (#5, 1-1) faces Mahomes is where the heart is \u2764 (Lisette) (#11, 0-2)"
+          "text": "Mednis Madness (mariss, #5, 1-1) faces Mahomes is where the heart is \u2764 (Lisette, #11, 0-2)"
         },
         {
           "team_ids": [
             12,
             10
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#1, 2-0) squares off against Baker's Dirty Dozen (Karl) (#10, 0-2)"
+          "text": "Buffalo Abusement Park (Melinda, #1, 2-0) squares off against Baker's Dirty Dozen (Karl, #10, 0-2)"
         },
         {
           "team_ids": [
             8,
             7
           ],
-          "text": "Daddy Nielsen (Joe) (#6, 1-1) faces Terrible Towels (Mike) (#12, 0-2)"
+          "text": "Daddy Nielsen (Joe, #6, 1-1) faces Terrible Towels (Mike, #12, 0-2)"
         },
         {
           "team_ids": [
             5,
             9
           ],
-          "text": "Team Kantastrophe (Cara) (#7, 1-1) faces McConkey Kong Country (Ronjan) (#9, 0-2)"
+          "text": "Team Kantastrophe (Cara, #7, 1-1) faces McConkey Kong Country (Ronjan, #9, 0-2)"
         },
         {
           "team_ids": [
             1,
             11
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran) (#3, 2-0) faces Keep 'em and weep (Kris) (#4, 2-0)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #3, 2-0) faces Keep 'em and weep (Kris, #4, 2-0)"
         },
         {
           "team_ids": [
             3,
             4
           ],
-          "text": "Illusions Michael (Pete) (#2, 2-0) faces Conquering Heroes (Ben) (#8, 1-1)"
+          "text": "Illusions Michael (Pete, #2, 2-0) faces Conquering Heroes (Ben, #8, 1-1)"
         }
       ]
     },
@@ -380,6 +404,8 @@
         "rank": 1,
         "wins": 2,
         "losses": 0,
+        "points_for": 316.9,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -387,6 +413,8 @@
         "rank": 2,
         "wins": 2,
         "losses": 0,
+        "points_for": 298.6,
+        "points_back": 18.3,
         "in_playoffs": true
       },
       {
@@ -394,6 +422,8 @@
         "rank": 3,
         "wins": 2,
         "losses": 0,
+        "points_for": 278.7,
+        "points_back": 19.9,
         "in_playoffs": true
       },
       {
@@ -401,6 +431,8 @@
         "rank": 4,
         "wins": 2,
         "losses": 0,
+        "points_for": 270.2,
+        "points_back": 8.5,
         "in_playoffs": true
       },
       {
@@ -408,6 +440,8 @@
         "rank": 5,
         "wins": 1,
         "losses": 1,
+        "points_for": 301.1,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -415,6 +449,8 @@
         "rank": 6,
         "wins": 1,
         "losses": 1,
+        "points_for": 274.6,
+        "points_back": 26.5,
         "in_playoffs": true
       },
       {
@@ -422,6 +458,8 @@
         "rank": 7,
         "wins": 1,
         "losses": 1,
+        "points_for": 264.4,
+        "points_back": 10.2,
         "in_playoffs": false
       },
       {
@@ -429,6 +467,8 @@
         "rank": 8,
         "wins": 1,
         "losses": 1,
+        "points_for": 173.6,
+        "points_back": 90.8,
         "in_playoffs": false
       },
       {
@@ -436,6 +476,8 @@
         "rank": 9,
         "wins": 0,
         "losses": 2,
+        "points_for": 228.1,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -443,6 +485,8 @@
         "rank": 10,
         "wins": 0,
         "losses": 2,
+        "points_for": 226.4,
+        "points_back": 1.7,
         "in_playoffs": false
       },
       {
@@ -450,6 +494,8 @@
         "rank": 11,
         "wins": 0,
         "losses": 2,
+        "points_for": 221.1,
+        "points_back": 5.3,
         "in_playoffs": false
       },
       {
@@ -457,6 +503,8 @@
         "rank": 12,
         "wins": 0,
         "losses": 2,
+        "points_for": 206.0,
+        "points_back": 15.1,
         "in_playoffs": false
       }
     ]
@@ -509,42 +557,42 @@
         "loser_team_id": 6,
         "winner_score": 131.16,
         "loser_score": 110.98,
-        "text": "Mednis Madness (mariss) (2-1) beat Mahomes is where the heart is \u2764 (Lisette) (0-3) 131.2-111.0"
+        "text": "Mednis Madness (mariss, 2-1) beat Mahomes is where the heart is \u2764 (Lisette, 0-3) 131.2-111.0"
       },
       {
         "winner_team_id": 10,
         "loser_team_id": 12,
         "winner_score": 131.64,
         "loser_score": 87.12,
-        "text": "Baker's Dirty Dozen (Karl) (1-2) beat Buffalo Abusement Park (Melinda) (2-1) 131.6-87.1"
+        "text": "Baker's Dirty Dozen (Karl, 1-2) beat Buffalo Abusement Park (Melinda, 2-1) 131.6-87.1"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 7,
         "winner_score": 132.82,
         "loser_score": 98.96,
-        "text": "Daddy Nielsen (Joe) (2-1) beat Terrible Towels (Mike) (0-3) 132.8-99.0"
+        "text": "Daddy Nielsen (Joe, 2-1) beat Terrible Towels (Mike, 0-3) 132.8-99.0"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 9,
         "winner_score": 156.36,
         "loser_score": 128.5,
-        "text": "Team Kantastrophe (Cara) (2-1) beat McConkey Kong Country (Ronjan) (0-3) 156.4-128.5"
+        "text": "Team Kantastrophe (Cara, 2-1) beat McConkey Kong Country (Ronjan, 0-3) 156.4-128.5"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 11,
         "winner_score": 119.0,
         "loser_score": 116.64,
-        "text": "Lamar and Drake's Grahamy's (Imran) (3-0) beat Keep 'em and weep (Kris) (2-1) 119.0-116.6"
+        "text": "Lamar and Drake's Grahamy's (Imran, 3-0) beat Keep 'em and weep (Kris, 2-1) 119.0-116.6"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 4,
         "winner_score": 161.44,
         "loser_score": 106.3,
-        "text": "Illusions Michael (Pete) (3-0) beat Conquering Heroes (Ben) (1-2) 161.4-106.3"
+        "text": "Illusions Michael (Pete, 3-0) beat Conquering Heroes (Ben, 1-2) 161.4-106.3"
       }
     ],
     "looking_ahead": {
@@ -555,42 +603,42 @@
             6,
             10
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette) (#11, 0-3) squares off against Baker's Dirty Dozen (Karl) (#8, 1-2)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 0-3) squares off against Baker's Dirty Dozen (Karl, #8, 1-2)"
         },
         {
           "team_ids": [
             7,
             2
           ],
-          "text": "Terrible Towels (Mike) (#12, 0-3) squares off against Mednis Madness (mariss) (#3, 2-1)"
+          "text": "Terrible Towels (Mike, #12, 0-3) squares off against Mednis Madness (mariss, #3, 2-1)"
         },
         {
           "team_ids": [
             9,
             12
           ],
-          "text": "McConkey Kong Country (Ronjan) (#10, 0-3) faces Buffalo Abusement Park (Melinda) (#6, 2-1)"
+          "text": "McConkey Kong Country (Ronjan, #10, 0-3) faces Buffalo Abusement Park (Melinda, #6, 2-1)"
         },
         {
           "team_ids": [
             11,
             8
           ],
-          "text": "Keep 'em and weep (Kris) (#7, 2-1) squares off against Daddy Nielsen (Joe) (#5, 2-1)"
+          "text": "Keep 'em and weep (Kris, #7, 2-1) squares off against Daddy Nielsen (Joe, #5, 2-1)"
         },
         {
           "team_ids": [
             4,
             5
           ],
-          "text": "Conquering Heroes (Ben) (#9, 1-2) faces Team Kantastrophe (Cara) (#4, 2-1)"
+          "text": "Conquering Heroes (Ben, #9, 1-2) faces Team Kantastrophe (Cara, #4, 2-1)"
         },
         {
           "team_ids": [
             3,
             1
           ],
-          "text": "Illusions Michael (Pete) (#1, 3-0) squares off against Lamar and Drake's Grahamy's (Imran) (#2, 3-0)"
+          "text": "Illusions Michael (Pete, #1, 3-0) squares off against Lamar and Drake's Grahamy's (Imran, #2, 3-0)"
         }
       ]
     },
@@ -600,6 +648,8 @@
         "rank": 1,
         "wins": 3,
         "losses": 0,
+        "points_for": 460.0,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -607,6 +657,8 @@
         "rank": 2,
         "wins": 3,
         "losses": 0,
+        "points_for": 397.7,
+        "points_back": 62.3,
         "in_playoffs": true
       },
       {
@@ -614,6 +666,8 @@
         "rank": 3,
         "wins": 2,
         "losses": 1,
+        "points_for": 432.3,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -621,6 +675,8 @@
         "rank": 4,
         "wins": 2,
         "losses": 1,
+        "points_for": 420.8,
+        "points_back": 11.5,
         "in_playoffs": true
       },
       {
@@ -628,6 +684,8 @@
         "rank": 5,
         "wins": 2,
         "losses": 1,
+        "points_for": 407.4,
+        "points_back": 13.4,
         "in_playoffs": true
       },
       {
@@ -635,6 +693,8 @@
         "rank": 6,
         "wins": 2,
         "losses": 1,
+        "points_for": 404.0,
+        "points_back": 3.4,
         "in_playoffs": true
       },
       {
@@ -642,6 +702,8 @@
         "rank": 7,
         "wins": 2,
         "losses": 1,
+        "points_for": 386.8,
+        "points_back": 17.2,
         "in_playoffs": false
       },
       {
@@ -649,6 +711,8 @@
         "rank": 8,
         "wins": 1,
         "losses": 2,
+        "points_for": 358.0,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -656,6 +720,8 @@
         "rank": 9,
         "wins": 1,
         "losses": 2,
+        "points_for": 279.9,
+        "points_back": 78.1,
         "in_playoffs": false
       },
       {
@@ -663,6 +729,8 @@
         "rank": 10,
         "wins": 0,
         "losses": 3,
+        "points_for": 356.6,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -670,6 +738,8 @@
         "rank": 11,
         "wins": 0,
         "losses": 3,
+        "points_for": 332.1,
+        "points_back": 24.5,
         "in_playoffs": false
       },
       {
@@ -677,6 +747,8 @@
         "rank": 12,
         "wins": 0,
         "losses": 3,
+        "points_for": 304.9,
+        "points_back": 27.2,
         "in_playoffs": false
       }
     ]
@@ -729,42 +801,42 @@
         "loser_team_id": 6,
         "winner_score": 152.84,
         "loser_score": 140.24,
-        "text": "Baker's Dirty Dozen (Karl) (2-2) beat Mahomes is where the heart is \u2764 (Lisette) (0-4) 152.8-140.2"
+        "text": "Baker's Dirty Dozen (Karl, 2-2) beat Mahomes is where the heart is \u2764 (Lisette, 0-4) 152.8-140.2"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 7,
         "winner_score": 140.98,
         "loser_score": 89.28,
-        "text": "Mednis Madness (mariss) (3-1) beat Terrible Towels (Mike) (0-4) 141.0-89.3"
+        "text": "Mednis Madness (mariss, 3-1) beat Terrible Towels (Mike, 0-4) 141.0-89.3"
       },
       {
         "winner_team_id": 9,
         "loser_team_id": 12,
         "winner_score": 140.72,
         "loser_score": 132.86,
-        "text": "McConkey Kong Country (Ronjan) (1-3) beat Buffalo Abusement Park (Melinda) (2-2) 140.7-132.9"
+        "text": "McConkey Kong Country (Ronjan, 1-3) beat Buffalo Abusement Park (Melinda, 2-2) 140.7-132.9"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 11,
         "winner_score": 139.92,
         "loser_score": 99.4,
-        "text": "Daddy Nielsen (Joe) (3-1) beat Keep 'em and weep (Kris) (2-2) 139.9-99.4"
+        "text": "Daddy Nielsen (Joe, 3-1) beat Keep 'em and weep (Kris, 2-2) 139.9-99.4"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 5,
         "winner_score": 160.82,
         "loser_score": 152.02,
-        "text": "Conquering Heroes (Ben) (2-2) beat Team Kantastrophe (Cara) (2-2) 160.8-152.0"
+        "text": "Conquering Heroes (Ben, 2-2) beat Team Kantastrophe (Cara, 2-2) 160.8-152.0"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 1,
         "winner_score": 139.04,
         "loser_score": 111.3,
-        "text": "Illusions Michael (Pete) (4-0) beat Lamar and Drake's Grahamy's (Imran) (3-1) 139.0-111.3"
+        "text": "Illusions Michael (Pete, 4-0) beat Lamar and Drake's Grahamy's (Imran, 3-1) 139.0-111.3"
       }
     ],
     "looking_ahead": {
@@ -775,42 +847,42 @@
             7,
             6
           ],
-          "text": "Terrible Towels (Mike) (#12, 0-4) squares off against Mahomes is where the heart is \u2764 (Lisette) (#11, 0-4)"
+          "text": "Terrible Towels (Mike, #12, 0-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #11, 0-4)"
         },
         {
           "team_ids": [
             10,
             9
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#7, 2-2) faces McConkey Kong Country (Ronjan) (#10, 1-3)"
+          "text": "Baker's Dirty Dozen (Karl, #7, 2-2) faces McConkey Kong Country (Ronjan, #10, 1-3)"
         },
         {
           "team_ids": [
             2,
             11
           ],
-          "text": "Mednis Madness (mariss) (#2, 3-1) squares off against Keep 'em and weep (Kris) (#8, 2-2)"
+          "text": "Mednis Madness (mariss, #2, 3-1) squares off against Keep 'em and weep (Kris, #8, 2-2)"
         },
         {
           "team_ids": [
             12,
             4
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#6, 2-2) faces Conquering Heroes (Ben) (#9, 2-2)"
+          "text": "Buffalo Abusement Park (Melinda, #6, 2-2) faces Conquering Heroes (Ben, #9, 2-2)"
         },
         {
           "team_ids": [
             8,
             3
           ],
-          "text": "Daddy Nielsen (Joe) (#3, 3-1) squares off against Illusions Michael (Pete) (#1, 4-0)"
+          "text": "Daddy Nielsen (Joe, #3, 3-1) squares off against Illusions Michael (Pete, #1, 4-0)"
         },
         {
           "team_ids": [
             5,
             1
           ],
-          "text": "Team Kantastrophe (Cara) (#5, 2-2) squares off against Lamar and Drake's Grahamy's (Imran) (#4, 3-1)"
+          "text": "Team Kantastrophe (Cara, #5, 2-2) squares off against Lamar and Drake's Grahamy's (Imran, #4, 3-1)"
         }
       ]
     },
@@ -820,6 +892,8 @@
         "rank": 1,
         "wins": 4,
         "losses": 0,
+        "points_for": 599.1,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -827,6 +901,8 @@
         "rank": 2,
         "wins": 3,
         "losses": 1,
+        "points_for": 573.3,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -834,6 +910,8 @@
         "rank": 3,
         "wins": 3,
         "losses": 1,
+        "points_for": 547.3,
+        "points_back": 26.0,
         "in_playoffs": true
       },
       {
@@ -841,6 +919,8 @@
         "rank": 4,
         "wins": 3,
         "losses": 1,
+        "points_for": 509.0,
+        "points_back": 38.3,
         "in_playoffs": true
       },
       {
@@ -848,6 +928,8 @@
         "rank": 5,
         "wins": 2,
         "losses": 2,
+        "points_for": 572.8,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -855,6 +937,8 @@
         "rank": 6,
         "wins": 2,
         "losses": 2,
+        "points_for": 536.8,
+        "points_back": 36.0,
         "in_playoffs": true
       },
       {
@@ -862,6 +946,8 @@
         "rank": 7,
         "wins": 2,
         "losses": 2,
+        "points_for": 510.9,
+        "points_back": 25.9,
         "in_playoffs": false
       },
       {
@@ -869,6 +955,8 @@
         "rank": 8,
         "wins": 2,
         "losses": 2,
+        "points_for": 486.2,
+        "points_back": 24.7,
         "in_playoffs": false
       },
       {
@@ -876,6 +964,8 @@
         "rank": 9,
         "wins": 2,
         "losses": 2,
+        "points_for": 440.7,
+        "points_back": 45.5,
         "in_playoffs": false
       },
       {
@@ -883,6 +973,8 @@
         "rank": 10,
         "wins": 1,
         "losses": 3,
+        "points_for": 497.3,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -890,6 +982,8 @@
         "rank": 11,
         "wins": 0,
         "losses": 4,
+        "points_for": 472.3,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -897,6 +991,8 @@
         "rank": 12,
         "wins": 0,
         "losses": 4,
+        "points_for": 394.2,
+        "points_back": 78.1,
         "in_playoffs": false
       }
     ]
@@ -963,42 +1059,42 @@
         "loser_team_id": 7,
         "winner_score": 165.3,
         "loser_score": 84.86,
-        "text": "Mahomes is where the heart is \u2764 (Lisette) (1-4) beat Terrible Towels (Mike) (0-5) 165.3-84.9"
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 1-4) beat Terrible Towels (Mike, 0-5) 165.3-84.9"
       },
       {
         "winner_team_id": 9,
         "loser_team_id": 10,
         "winner_score": 139.06,
         "loser_score": 131.7,
-        "text": "McConkey Kong Country (Ronjan) (2-3) beat Baker's Dirty Dozen (Karl) (2-3) 139.1-131.7"
+        "text": "McConkey Kong Country (Ronjan, 2-3) beat Baker's Dirty Dozen (Karl, 2-3) 139.1-131.7"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 11,
         "winner_score": 143.56,
         "loser_score": 139.82,
-        "text": "Mednis Madness (mariss) (4-1) beat Keep 'em and weep (Kris) (2-3) 143.6-139.8"
+        "text": "Mednis Madness (mariss, 4-1) beat Keep 'em and weep (Kris, 2-3) 143.6-139.8"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 12,
         "winner_score": 119.14,
         "loser_score": 117.38,
-        "text": "Conquering Heroes (Ben) (3-2) beat Buffalo Abusement Park (Melinda) (2-3) 119.1-117.4"
+        "text": "Conquering Heroes (Ben, 3-2) beat Buffalo Abusement Park (Melinda, 2-3) 119.1-117.4"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 3,
         "winner_score": 159.92,
         "loser_score": 129.5,
-        "text": "Daddy Nielsen (Joe) (4-1) beat Illusions Michael (Pete) (4-1) 159.9-129.5"
+        "text": "Daddy Nielsen (Joe, 4-1) beat Illusions Michael (Pete, 4-1) 159.9-129.5"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 1,
         "winner_score": 158.98,
         "loser_score": 93.28,
-        "text": "Team Kantastrophe (Cara) (3-2) beat Lamar and Drake's Grahamy's (Imran) (3-2) 159.0-93.3"
+        "text": "Team Kantastrophe (Cara, 3-2) beat Lamar and Drake's Grahamy's (Imran, 3-2) 159.0-93.3"
       }
     ],
     "looking_ahead": {
@@ -1009,42 +1105,42 @@
             6,
             9
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette) (#11, 1-4) squares off against McConkey Kong Country (Ronjan) (#9, 2-3)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 1-4) squares off against McConkey Kong Country (Ronjan, #9, 2-3)"
         },
         {
           "team_ids": [
             11,
             7
           ],
-          "text": "Keep 'em and weep (Kris) (#10, 2-3) squares off against Terrible Towels (Mike) (#12, 0-5)"
+          "text": "Keep 'em and weep (Kris, #10, 2-3) squares off against Terrible Towels (Mike, #12, 0-5)"
         },
         {
           "team_ids": [
             4,
             10
           ],
-          "text": "Conquering Heroes (Ben) (#6, 3-2) faces Baker's Dirty Dozen (Karl) (#8, 2-3)"
+          "text": "Conquering Heroes (Ben, #6, 3-2) faces Baker's Dirty Dozen (Karl, #8, 2-3)"
         },
         {
           "team_ids": [
             3,
             2
           ],
-          "text": "Illusions Michael (Pete) (#1, 4-1) faces Mednis Madness (mariss) (#2, 4-1)"
+          "text": "Illusions Michael (Pete, #1, 4-1) faces Mednis Madness (mariss, #2, 4-1)"
         },
         {
           "team_ids": [
             1,
             12
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran) (#5, 3-2) faces Buffalo Abusement Park (Melinda) (#7, 2-3)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #5, 3-2) faces Buffalo Abusement Park (Melinda, #7, 2-3)"
         },
         {
           "team_ids": [
             5,
             8
           ],
-          "text": "Team Kantastrophe (Cara) (#4, 3-2) faces Daddy Nielsen (Joe) (#3, 4-1)"
+          "text": "Team Kantastrophe (Cara, #4, 3-2) faces Daddy Nielsen (Joe, #3, 4-1)"
         }
       ]
     },
@@ -1054,6 +1150,8 @@
         "rank": 1,
         "wins": 4,
         "losses": 1,
+        "points_for": 728.6,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1061,6 +1159,8 @@
         "rank": 2,
         "wins": 4,
         "losses": 1,
+        "points_for": 716.8,
+        "points_back": 11.8,
         "in_playoffs": true
       },
       {
@@ -1068,6 +1168,8 @@
         "rank": 3,
         "wins": 4,
         "losses": 1,
+        "points_for": 707.2,
+        "points_back": 9.6,
         "in_playoffs": true
       },
       {
@@ -1075,6 +1177,8 @@
         "rank": 4,
         "wins": 3,
         "losses": 2,
+        "points_for": 731.8,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1082,6 +1186,8 @@
         "rank": 5,
         "wins": 3,
         "losses": 2,
+        "points_for": 602.3,
+        "points_back": 129.5,
         "in_playoffs": true
       },
       {
@@ -1089,6 +1195,8 @@
         "rank": 6,
         "wins": 3,
         "losses": 2,
+        "points_for": 559.9,
+        "points_back": 42.4,
         "in_playoffs": true
       },
       {
@@ -1096,6 +1204,8 @@
         "rank": 7,
         "wins": 2,
         "losses": 3,
+        "points_for": 654.2,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1103,6 +1213,8 @@
         "rank": 8,
         "wins": 2,
         "losses": 3,
+        "points_for": 642.6,
+        "points_back": 11.6,
         "in_playoffs": false
       },
       {
@@ -1110,6 +1222,8 @@
         "rank": 9,
         "wins": 2,
         "losses": 3,
+        "points_for": 636.4,
+        "points_back": 6.2,
         "in_playoffs": false
       },
       {
@@ -1117,6 +1231,8 @@
         "rank": 10,
         "wins": 2,
         "losses": 3,
+        "points_for": 626.0,
+        "points_back": 10.4,
         "in_playoffs": false
       },
       {
@@ -1124,6 +1240,8 @@
         "rank": 11,
         "wins": 1,
         "losses": 4,
+        "points_for": 637.6,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1131,6 +1249,8 @@
         "rank": 12,
         "wins": 0,
         "losses": 5,
+        "points_for": 479.1,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -1175,42 +1295,42 @@
         "loser_team_id": 9,
         "winner_score": 178.34,
         "loser_score": 117.22,
-        "text": "Mahomes is where the heart is \u2764 (Lisette) (2-4) beat McConkey Kong Country (Ronjan) (2-4) 178.3-117.2"
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 2-4) beat McConkey Kong Country (Ronjan, 2-4) 178.3-117.2"
       },
       {
         "winner_team_id": 7,
         "loser_team_id": 11,
         "winner_score": 108.5,
         "loser_score": 106.8,
-        "text": "Terrible Towels (Mike) (1-5) beat Keep 'em and weep (Kris) (2-4) 108.5-106.8"
+        "text": "Terrible Towels (Mike, 1-5) beat Keep 'em and weep (Kris, 2-4) 108.5-106.8"
       },
       {
         "winner_team_id": 10,
         "loser_team_id": 4,
         "winner_score": 166.04,
         "loser_score": 81.06,
-        "text": "Baker's Dirty Dozen (Karl) (3-3) beat Conquering Heroes (Ben) (3-3) 166.0-81.1"
+        "text": "Baker's Dirty Dozen (Karl, 3-3) beat Conquering Heroes (Ben, 3-3) 166.0-81.1"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 3,
         "winner_score": 164.54,
         "loser_score": 120.48,
-        "text": "Mednis Madness (mariss) (5-1) beat Illusions Michael (Pete) (4-2) 164.5-120.5"
+        "text": "Mednis Madness (mariss, 5-1) beat Illusions Michael (Pete, 4-2) 164.5-120.5"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 12,
         "winner_score": 107.08,
         "loser_score": 93.38,
-        "text": "Lamar and Drake's Grahamy's (Imran) (4-2) beat Buffalo Abusement Park (Melinda) (2-4) 107.1-93.4"
+        "text": "Lamar and Drake's Grahamy's (Imran, 4-2) beat Buffalo Abusement Park (Melinda, 2-4) 107.1-93.4"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 8,
         "winner_score": 173.2,
         "loser_score": 110.38,
-        "text": "Team Kantastrophe (Cara) (4-2) beat Daddy Nielsen (Joe) (4-2) 173.2-110.4"
+        "text": "Team Kantastrophe (Cara, 4-2) beat Daddy Nielsen (Joe, 4-2) 173.2-110.4"
       }
     ],
     "looking_ahead": {
@@ -1221,42 +1341,42 @@
             11,
             6
           ],
-          "text": "Keep 'em and weep (Kris) (#11, 2-4) squares off against Mahomes is where the heart is \u2764 (Lisette) (#8, 2-4)"
+          "text": "Keep 'em and weep (Kris, #11, 2-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 2-4)"
         },
         {
           "team_ids": [
             9,
             4
           ],
-          "text": "McConkey Kong Country (Ronjan) (#9, 2-4) faces Conquering Heroes (Ben) (#7, 3-3)"
+          "text": "McConkey Kong Country (Ronjan, #9, 2-4) faces Conquering Heroes (Ben, #7, 3-3)"
         },
         {
           "team_ids": [
             7,
             3
           ],
-          "text": "Terrible Towels (Mike) (#12, 1-5) faces Illusions Michael (Pete) (#3, 4-2)"
+          "text": "Terrible Towels (Mike, #12, 1-5) faces Illusions Michael (Pete, #3, 4-2)"
         },
         {
           "team_ids": [
             10,
             1
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#6, 3-3) squares off against Lamar and Drake's Grahamy's (Imran) (#5, 4-2)"
+          "text": "Baker's Dirty Dozen (Karl, #6, 3-3) squares off against Lamar and Drake's Grahamy's (Imran, #5, 4-2)"
         },
         {
           "team_ids": [
             2,
             5
           ],
-          "text": "Mednis Madness (mariss) (#1, 5-1) faces Team Kantastrophe (Cara) (#2, 4-2)"
+          "text": "Mednis Madness (mariss, #1, 5-1) faces Team Kantastrophe (Cara, #2, 4-2)"
         },
         {
           "team_ids": [
             12,
             8
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#10, 2-4) squares off against Daddy Nielsen (Joe) (#4, 4-2)"
+          "text": "Buffalo Abusement Park (Melinda, #10, 2-4) squares off against Daddy Nielsen (Joe, #4, 4-2)"
         }
       ]
     },
@@ -1266,6 +1386,8 @@
         "rank": 1,
         "wins": 5,
         "losses": 1,
+        "points_for": 881.4,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1273,6 +1395,8 @@
         "rank": 2,
         "wins": 4,
         "losses": 2,
+        "points_for": 905.0,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1280,6 +1404,8 @@
         "rank": 3,
         "wins": 4,
         "losses": 2,
+        "points_for": 849.1,
+        "points_back": 55.9,
         "in_playoffs": true
       },
       {
@@ -1287,6 +1413,8 @@
         "rank": 4,
         "wins": 4,
         "losses": 2,
+        "points_for": 817.6,
+        "points_back": 31.5,
         "in_playoffs": true
       },
       {
@@ -1294,6 +1422,8 @@
         "rank": 5,
         "wins": 4,
         "losses": 2,
+        "points_for": 709.3,
+        "points_back": 108.3,
         "in_playoffs": true
       },
       {
@@ -1301,6 +1431,8 @@
         "rank": 6,
         "wins": 3,
         "losses": 3,
+        "points_for": 808.6,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1308,6 +1440,8 @@
         "rank": 7,
         "wins": 3,
         "losses": 3,
+        "points_for": 640.9,
+        "points_back": 167.7,
         "in_playoffs": false
       },
       {
@@ -1315,6 +1449,8 @@
         "rank": 8,
         "wins": 2,
         "losses": 4,
+        "points_for": 815.9,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1322,6 +1458,8 @@
         "rank": 9,
         "wins": 2,
         "losses": 4,
+        "points_for": 753.6,
+        "points_back": 62.3,
         "in_playoffs": false
       },
       {
@@ -1329,6 +1467,8 @@
         "rank": 10,
         "wins": 2,
         "losses": 4,
+        "points_for": 747.6,
+        "points_back": 6.0,
         "in_playoffs": false
       },
       {
@@ -1336,6 +1476,8 @@
         "rank": 11,
         "wins": 2,
         "losses": 4,
+        "points_for": 732.8,
+        "points_back": 14.8,
         "in_playoffs": false
       },
       {
@@ -1343,6 +1485,8 @@
         "rank": 12,
         "wins": 1,
         "losses": 5,
+        "points_for": 587.6,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -1380,42 +1524,42 @@
         "loser_team_id": 11,
         "winner_score": 145.9,
         "loser_score": 144.76,
-        "text": "Mahomes is where the heart is \u2764 (Lisette) (3-4) beat Keep 'em and weep (Kris) (2-5) 145.9-144.8"
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 3-4) beat Keep 'em and weep (Kris, 2-5) 145.9-144.8"
       },
       {
         "winner_team_id": 9,
         "loser_team_id": 4,
         "winner_score": 161.5,
         "loser_score": 103.88,
-        "text": "McConkey Kong Country (Ronjan) (3-4) beat Conquering Heroes (Ben) (3-4) 161.5-103.9"
+        "text": "McConkey Kong Country (Ronjan, 3-4) beat Conquering Heroes (Ben, 3-4) 161.5-103.9"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 7,
         "winner_score": 136.52,
         "loser_score": 127.26,
-        "text": "Illusions Michael (Pete) (5-2) beat Terrible Towels (Mike) (1-6) 136.5-127.3"
+        "text": "Illusions Michael (Pete, 5-2) beat Terrible Towels (Mike, 1-6) 136.5-127.3"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 10,
         "winner_score": 94.06,
         "loser_score": 93.74,
-        "text": "Lamar and Drake's Grahamy's (Imran) (5-2) beat Baker's Dirty Dozen (Karl) (3-4) 94.1-93.7"
+        "text": "Lamar and Drake's Grahamy's (Imran, 5-2) beat Baker's Dirty Dozen (Karl, 3-4) 94.1-93.7"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 5,
         "winner_score": 144.58,
         "loser_score": 127.76,
-        "text": "Mednis Madness (mariss) (6-1) beat Team Kantastrophe (Cara) (4-3) 144.6-127.8"
+        "text": "Mednis Madness (mariss, 6-1) beat Team Kantastrophe (Cara, 4-3) 144.6-127.8"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 12,
         "winner_score": 159.82,
         "loser_score": 102.68,
-        "text": "Daddy Nielsen (Joe) (5-2) beat Buffalo Abusement Park (Melinda) (2-5) 159.8-102.7"
+        "text": "Daddy Nielsen (Joe, 5-2) beat Buffalo Abusement Park (Melinda, 2-5) 159.8-102.7"
       }
     ],
     "looking_ahead": {
@@ -1426,42 +1570,42 @@
             6,
             4
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette) (#6, 3-4) faces Conquering Heroes (Ben) (#9, 3-4)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 3-4) faces Conquering Heroes (Ben, #9, 3-4)"
         },
         {
           "team_ids": [
             3,
             11
           ],
-          "text": "Illusions Michael (Pete) (#2, 5-2) squares off against Keep 'em and weep (Kris) (#10, 2-5)"
+          "text": "Illusions Michael (Pete, #2, 5-2) squares off against Keep 'em and weep (Kris, #10, 2-5)"
         },
         {
           "team_ids": [
             1,
             9
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran) (#4, 5-2) squares off against McConkey Kong Country (Ronjan) (#7, 3-4)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #4, 5-2) squares off against McConkey Kong Country (Ronjan, #7, 3-4)"
         },
         {
           "team_ids": [
             5,
             7
           ],
-          "text": "Team Kantastrophe (Cara) (#5, 4-3) faces Terrible Towels (Mike) (#12, 1-6)"
+          "text": "Team Kantastrophe (Cara, #5, 4-3) faces Terrible Towels (Mike, #12, 1-6)"
         },
         {
           "team_ids": [
             8,
             10
           ],
-          "text": "Daddy Nielsen (Joe) (#3, 5-2) squares off against Baker's Dirty Dozen (Karl) (#8, 3-4)"
+          "text": "Daddy Nielsen (Joe, #3, 5-2) squares off against Baker's Dirty Dozen (Karl, #8, 3-4)"
         },
         {
           "team_ids": [
             12,
             2
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#11, 2-5) faces Mednis Madness (mariss) (#1, 6-1)"
+          "text": "Buffalo Abusement Park (Melinda, #11, 2-5) faces Mednis Madness (mariss, #1, 6-1)"
         }
       ]
     },
@@ -1471,6 +1615,8 @@
         "rank": 1,
         "wins": 6,
         "losses": 1,
+        "points_for": 1025.9,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1478,6 +1624,8 @@
         "rank": 2,
         "wins": 5,
         "losses": 2,
+        "points_for": 985.6,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1485,6 +1633,8 @@
         "rank": 3,
         "wins": 5,
         "losses": 2,
+        "points_for": 977.4,
+        "points_back": 8.2,
         "in_playoffs": true
       },
       {
@@ -1492,6 +1642,8 @@
         "rank": 4,
         "wins": 5,
         "losses": 2,
+        "points_for": 803.4,
+        "points_back": 174.0,
         "in_playoffs": true
       },
       {
@@ -1499,6 +1651,8 @@
         "rank": 5,
         "wins": 4,
         "losses": 3,
+        "points_for": 1032.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1506,6 +1660,8 @@
         "rank": 6,
         "wins": 3,
         "losses": 4,
+        "points_for": 961.8,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1513,6 +1669,8 @@
         "rank": 7,
         "wins": 3,
         "losses": 4,
+        "points_for": 915.1,
+        "points_back": 46.7,
         "in_playoffs": false
       },
       {
@@ -1520,6 +1678,8 @@
         "rank": 8,
         "wins": 3,
         "losses": 4,
+        "points_for": 902.3,
+        "points_back": 12.8,
         "in_playoffs": false
       },
       {
@@ -1527,6 +1687,8 @@
         "rank": 9,
         "wins": 3,
         "losses": 4,
+        "points_for": 744.8,
+        "points_back": 157.5,
         "in_playoffs": false
       },
       {
@@ -1534,6 +1696,8 @@
         "rank": 10,
         "wins": 2,
         "losses": 5,
+        "points_for": 877.6,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1541,6 +1705,8 @@
         "rank": 11,
         "wins": 2,
         "losses": 5,
+        "points_for": 850.3,
+        "points_back": 27.3,
         "in_playoffs": false
       },
       {
@@ -1548,6 +1714,8 @@
         "rank": 12,
         "wins": 1,
         "losses": 6,
+        "points_for": 714.8,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -1608,42 +1776,42 @@
         "loser_team_id": 4,
         "winner_score": 115.84,
         "loser_score": 113.16,
-        "text": "Mahomes is where the heart is \u2764 (Lisette) (4-4) beat Conquering Heroes (Ben) (3-5) 115.8-113.2"
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 4-4) beat Conquering Heroes (Ben, 3-5) 115.8-113.2"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 11,
         "winner_score": 123.8,
         "loser_score": 115.1,
-        "text": "Illusions Michael (Pete) (6-2) beat Keep 'em and weep (Kris) (2-6) 123.8-115.1"
+        "text": "Illusions Michael (Pete, 6-2) beat Keep 'em and weep (Kris, 2-6) 123.8-115.1"
       },
       {
         "winner_team_id": 9,
         "loser_team_id": 1,
         "winner_score": 145.88,
         "loser_score": 90.06,
-        "text": "McConkey Kong Country (Ronjan) (4-4) beat Lamar and Drake's Grahamy's (Imran) (5-3) 145.9-90.1"
+        "text": "McConkey Kong Country (Ronjan, 4-4) beat Lamar and Drake's Grahamy's (Imran, 5-3) 145.9-90.1"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 7,
         "winner_score": 138.98,
         "loser_score": 104.54,
-        "text": "Team Kantastrophe (Cara) (5-3) beat Terrible Towels (Mike) (1-7) 139.0-104.5"
+        "text": "Team Kantastrophe (Cara, 5-3) beat Terrible Towels (Mike, 1-7) 139.0-104.5"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 10,
         "winner_score": 147.26,
         "loser_score": 114.68,
-        "text": "Daddy Nielsen (Joe) (6-2) beat Baker's Dirty Dozen (Karl) (3-5) 147.3-114.7"
+        "text": "Daddy Nielsen (Joe, 6-2) beat Baker's Dirty Dozen (Karl, 3-5) 147.3-114.7"
       },
       {
         "winner_team_id": 12,
         "loser_team_id": 2,
         "winner_score": 161.92,
         "loser_score": 95.32,
-        "text": "Buffalo Abusement Park (Melinda) (3-5) beat Mednis Madness (mariss) (6-2) 161.9-95.3"
+        "text": "Buffalo Abusement Park (Melinda, 3-5) beat Mednis Madness (mariss, 6-2) 161.9-95.3"
       }
     ],
     "looking_ahead": {
@@ -1654,42 +1822,42 @@
             3,
             6
           ],
-          "text": "Illusions Michael (Pete) (#3, 6-2) squares off against Mahomes is where the heart is \u2764 (Lisette) (#6, 4-4)"
+          "text": "Illusions Michael (Pete, #3, 6-2) squares off against Mahomes is where the heart is \u2764 (Lisette, #6, 4-4)"
         },
         {
           "team_ids": [
             4,
             1
           ],
-          "text": "Conquering Heroes (Ben) (#10, 3-5) faces Lamar and Drake's Grahamy's (Imran) (#5, 5-3)"
+          "text": "Conquering Heroes (Ben, #10, 3-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-3)"
         },
         {
           "team_ids": [
             11,
             5
           ],
-          "text": "Keep 'em and weep (Kris) (#11, 2-6) squares off against Team Kantastrophe (Cara) (#4, 5-3)"
+          "text": "Keep 'em and weep (Kris, #11, 2-6) squares off against Team Kantastrophe (Cara, #4, 5-3)"
         },
         {
           "team_ids": [
             9,
             8
           ],
-          "text": "McConkey Kong Country (Ronjan) (#7, 4-4) squares off against Daddy Nielsen (Joe) (#1, 6-2)"
+          "text": "McConkey Kong Country (Ronjan, #7, 4-4) squares off against Daddy Nielsen (Joe, #1, 6-2)"
         },
         {
           "team_ids": [
             7,
             12
           ],
-          "text": "Terrible Towels (Mike) (#12, 1-7) faces Buffalo Abusement Park (Melinda) (#9, 3-5)"
+          "text": "Terrible Towels (Mike, #12, 1-7) faces Buffalo Abusement Park (Melinda, #9, 3-5)"
         },
         {
           "team_ids": [
             10,
             2
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#8, 3-5) squares off against Mednis Madness (mariss) (#2, 6-2)"
+          "text": "Baker's Dirty Dozen (Karl, #8, 3-5) squares off against Mednis Madness (mariss, #2, 6-2)"
         }
       ]
     },
@@ -1699,6 +1867,8 @@
         "rank": 1,
         "wins": 6,
         "losses": 2,
+        "points_for": 1124.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1706,6 +1876,8 @@
         "rank": 2,
         "wins": 6,
         "losses": 2,
+        "points_for": 1121.3,
+        "points_back": 3.4,
         "in_playoffs": true
       },
       {
@@ -1713,6 +1885,8 @@
         "rank": 3,
         "wins": 6,
         "losses": 2,
+        "points_for": 1109.4,
+        "points_back": 11.9,
         "in_playoffs": true
       },
       {
@@ -1720,6 +1894,8 @@
         "rank": 4,
         "wins": 5,
         "losses": 3,
+        "points_for": 1171.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1727,6 +1903,8 @@
         "rank": 5,
         "wins": 5,
         "losses": 3,
+        "points_for": 893.5,
+        "points_back": 278.2,
         "in_playoffs": true
       },
       {
@@ -1734,6 +1912,8 @@
         "rank": 6,
         "wins": 4,
         "losses": 4,
+        "points_for": 1077.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1741,6 +1921,8 @@
         "rank": 7,
         "wins": 4,
         "losses": 4,
+        "points_for": 1061.0,
+        "points_back": 16.7,
         "in_playoffs": false
       },
       {
@@ -1748,6 +1930,8 @@
         "rank": 8,
         "wins": 3,
         "losses": 5,
+        "points_for": 1017.0,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1755,6 +1939,8 @@
         "rank": 9,
         "wins": 3,
         "losses": 5,
+        "points_for": 1012.2,
+        "points_back": 4.8,
         "in_playoffs": false
       },
       {
@@ -1762,6 +1948,8 @@
         "rank": 10,
         "wins": 3,
         "losses": 5,
+        "points_for": 858.0,
+        "points_back": 154.2,
         "in_playoffs": false
       },
       {
@@ -1769,6 +1957,8 @@
         "rank": 11,
         "wins": 2,
         "losses": 6,
+        "points_for": 992.7,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1776,6 +1966,8 @@
         "rank": 12,
         "wins": 1,
         "losses": 7,
+        "points_for": 819.4,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -1813,42 +2005,42 @@
         "loser_team_id": 6,
         "winner_score": 137.78,
         "loser_score": 127.92,
-        "text": "Illusions Michael (Pete) (7-2) beat Mahomes is where the heart is \u2764 (Lisette) (4-5) 137.8-127.9"
+        "text": "Illusions Michael (Pete, 7-2) beat Mahomes is where the heart is \u2764 (Lisette, 4-5) 137.8-127.9"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 1,
         "winner_score": 178.56,
         "loser_score": 150.0,
-        "text": "Conquering Heroes (Ben) (4-5) beat Lamar and Drake's Grahamy's (Imran) (5-4) 178.6-150.0"
+        "text": "Conquering Heroes (Ben, 4-5) beat Lamar and Drake's Grahamy's (Imran, 5-4) 178.6-150.0"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 11,
         "winner_score": 146.9,
         "loser_score": 143.9,
-        "text": "Team Kantastrophe (Cara) (6-3) beat Keep 'em and weep (Kris) (2-7) 146.9-143.9"
+        "text": "Team Kantastrophe (Cara, 6-3) beat Keep 'em and weep (Kris, 2-7) 146.9-143.9"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 9,
         "winner_score": 146.2,
         "loser_score": 138.96,
-        "text": "Daddy Nielsen (Joe) (7-2) beat McConkey Kong Country (Ronjan) (4-5) 146.2-139.0"
+        "text": "Daddy Nielsen (Joe, 7-2) beat McConkey Kong Country (Ronjan, 4-5) 146.2-139.0"
       },
       {
         "winner_team_id": 7,
         "loser_team_id": 12,
         "winner_score": 133.76,
         "loser_score": 110.6,
-        "text": "Terrible Towels (Mike) (2-7) beat Buffalo Abusement Park (Melinda) (3-6) 133.8-110.6"
+        "text": "Terrible Towels (Mike, 2-7) beat Buffalo Abusement Park (Melinda, 3-6) 133.8-110.6"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 10,
         "winner_score": 106.32,
         "loser_score": 90.5,
-        "text": "Mednis Madness (mariss) (7-2) beat Baker's Dirty Dozen (Karl) (3-6) 106.3-90.5"
+        "text": "Mednis Madness (mariss, 7-2) beat Baker's Dirty Dozen (Karl, 3-6) 106.3-90.5"
       }
     ],
     "looking_ahead": {
@@ -1859,42 +2051,42 @@
             6,
             1
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette) (#6, 4-5) faces Lamar and Drake's Grahamy's (Imran) (#5, 5-4)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 4-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-4)"
         },
         {
           "team_ids": [
             5,
             3
           ],
-          "text": "Team Kantastrophe (Cara) (#4, 6-3) squares off against Illusions Michael (Pete) (#2, 7-2)"
+          "text": "Team Kantastrophe (Cara, #4, 6-3) squares off against Illusions Michael (Pete, #2, 7-2)"
         },
         {
           "team_ids": [
             8,
             4
           ],
-          "text": "Daddy Nielsen (Joe) (#1, 7-2) squares off against Conquering Heroes (Ben) (#8, 4-5)"
+          "text": "Daddy Nielsen (Joe, #1, 7-2) squares off against Conquering Heroes (Ben, #8, 4-5)"
         },
         {
           "team_ids": [
             12,
             11
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#9, 3-6) faces Keep 'em and weep (Kris) (#11, 2-7)"
+          "text": "Buffalo Abusement Park (Melinda, #9, 3-6) faces Keep 'em and weep (Kris, #11, 2-7)"
         },
         {
           "team_ids": [
             2,
             9
           ],
-          "text": "Mednis Madness (mariss) (#3, 7-2) squares off against McConkey Kong Country (Ronjan) (#7, 4-5)"
+          "text": "Mednis Madness (mariss, #3, 7-2) squares off against McConkey Kong Country (Ronjan, #7, 4-5)"
         },
         {
           "team_ids": [
             10,
             7
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#10, 3-6) faces Terrible Towels (Mike) (#12, 2-7)"
+          "text": "Baker's Dirty Dozen (Karl, #10, 3-6) faces Terrible Towels (Mike, #12, 2-7)"
         }
       ]
     },
@@ -1904,6 +2096,8 @@
         "rank": 1,
         "wins": 7,
         "losses": 2,
+        "points_for": 1270.9,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1911,6 +2105,8 @@
         "rank": 2,
         "wins": 7,
         "losses": 2,
+        "points_for": 1247.2,
+        "points_back": 23.7,
         "in_playoffs": true
       },
       {
@@ -1918,6 +2114,8 @@
         "rank": 3,
         "wins": 7,
         "losses": 2,
+        "points_for": 1227.6,
+        "points_back": 19.6,
         "in_playoffs": true
       },
       {
@@ -1925,6 +2123,8 @@
         "rank": 4,
         "wins": 6,
         "losses": 3,
+        "points_for": 1318.6,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1932,6 +2132,8 @@
         "rank": 5,
         "wins": 5,
         "losses": 4,
+        "points_for": 1043.5,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1939,6 +2141,8 @@
         "rank": 6,
         "wins": 4,
         "losses": 5,
+        "points_for": 1205.6,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -1946,6 +2150,8 @@
         "rank": 7,
         "wins": 4,
         "losses": 5,
+        "points_for": 1200.0,
+        "points_back": 5.6,
         "in_playoffs": false
       },
       {
@@ -1953,6 +2159,8 @@
         "rank": 8,
         "wins": 4,
         "losses": 5,
+        "points_for": 1036.5,
+        "points_back": 163.5,
         "in_playoffs": false
       },
       {
@@ -1960,6 +2168,8 @@
         "rank": 9,
         "wins": 3,
         "losses": 6,
+        "points_for": 1122.8,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1967,6 +2177,8 @@
         "rank": 10,
         "wins": 3,
         "losses": 6,
+        "points_for": 1107.5,
+        "points_back": 15.3,
         "in_playoffs": false
       },
       {
@@ -1974,6 +2186,8 @@
         "rank": 11,
         "wins": 2,
         "losses": 7,
+        "points_for": 1136.6,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -1981,6 +2195,8 @@
         "rank": 12,
         "wins": 2,
         "losses": 7,
+        "points_for": 953.1,
+        "points_back": 183.5,
         "in_playoffs": false
       }
     ]
@@ -2041,42 +2257,42 @@
         "loser_team_id": 6,
         "winner_score": 122.62,
         "loser_score": 97.74,
-        "text": "Lamar and Drake's Grahamy's (Imran) (6-4) beat Mahomes is where the heart is \u2764 (Lisette) (4-6) 122.6-97.7"
+        "text": "Lamar and Drake's Grahamy's (Imran, 6-4) beat Mahomes is where the heart is \u2764 (Lisette, 4-6) 122.6-97.7"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 3,
         "winner_score": 186.1,
         "loser_score": 167.74,
-        "text": "Team Kantastrophe (Cara) (7-3) beat Illusions Michael (Pete) (7-3) 186.1-167.7"
+        "text": "Team Kantastrophe (Cara, 7-3) beat Illusions Michael (Pete, 7-3) 186.1-167.7"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 8,
         "winner_score": 121.46,
         "loser_score": 121.36,
-        "text": "Conquering Heroes (Ben) (5-5) beat Daddy Nielsen (Joe) (7-3) 121.5-121.4"
+        "text": "Conquering Heroes (Ben, 5-5) beat Daddy Nielsen (Joe, 7-3) 121.5-121.4"
       },
       {
         "winner_team_id": 12,
         "loser_team_id": 11,
         "winner_score": 96.5,
         "loser_score": 93.38,
-        "text": "Buffalo Abusement Park (Melinda) (4-6) beat Keep 'em and weep (Kris) (2-8) 96.5-93.4"
+        "text": "Buffalo Abusement Park (Melinda, 4-6) beat Keep 'em and weep (Kris, 2-8) 96.5-93.4"
       },
       {
         "winner_team_id": 9,
         "loser_team_id": 2,
         "winner_score": 155.54,
         "loser_score": 114.5,
-        "text": "McConkey Kong Country (Ronjan) (5-5) beat Mednis Madness (mariss) (7-3) 155.5-114.5"
+        "text": "McConkey Kong Country (Ronjan, 5-5) beat Mednis Madness (mariss, 7-3) 155.5-114.5"
       },
       {
         "winner_team_id": 7,
         "loser_team_id": 10,
         "winner_score": 117.3,
         "loser_score": 105.14,
-        "text": "Terrible Towels (Mike) (3-7) beat Baker's Dirty Dozen (Karl) (3-7) 117.3-105.1"
+        "text": "Terrible Towels (Mike, 3-7) beat Baker's Dirty Dozen (Karl, 3-7) 117.3-105.1"
       }
     ],
     "looking_ahead": {
@@ -2087,42 +2303,42 @@
             5,
             6
           ],
-          "text": "Team Kantastrophe (Cara) (#1, 7-3) squares off against Mahomes is where the heart is \u2764 (Lisette) (#8, 4-6)"
+          "text": "Team Kantastrophe (Cara, #1, 7-3) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 4-6)"
         },
         {
           "team_ids": [
             1,
             8
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran) (#5, 6-4) faces Daddy Nielsen (Joe) (#3, 7-3)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #5, 6-4) faces Daddy Nielsen (Joe, #3, 7-3)"
         },
         {
           "team_ids": [
             3,
             12
           ],
-          "text": "Illusions Michael (Pete) (#2, 7-3) faces Buffalo Abusement Park (Melinda) (#9, 4-6)"
+          "text": "Illusions Michael (Pete, #2, 7-3) faces Buffalo Abusement Park (Melinda, #9, 4-6)"
         },
         {
           "team_ids": [
             4,
             2
           ],
-          "text": "Conquering Heroes (Ben) (#7, 5-5) squares off against Mednis Madness (mariss) (#4, 7-3)"
+          "text": "Conquering Heroes (Ben, #7, 5-5) squares off against Mednis Madness (mariss, #4, 7-3)"
         },
         {
           "team_ids": [
             11,
             10
           ],
-          "text": "Keep 'em and weep (Kris) (#12, 2-8) squares off against Baker's Dirty Dozen (Karl) (#10, 3-7)"
+          "text": "Keep 'em and weep (Kris, #12, 2-8) squares off against Baker's Dirty Dozen (Karl, #10, 3-7)"
         },
         {
           "team_ids": [
             9,
             7
           ],
-          "text": "McConkey Kong Country (Ronjan) (#6, 5-5) faces Terrible Towels (Mike) (#11, 3-7)"
+          "text": "McConkey Kong Country (Ronjan, #6, 5-5) faces Terrible Towels (Mike, #11, 3-7)"
         }
       ]
     },
@@ -2132,6 +2348,8 @@
         "rank": 1,
         "wins": 7,
         "losses": 3,
+        "points_for": 1504.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2139,6 +2357,8 @@
         "rank": 2,
         "wins": 7,
         "losses": 3,
+        "points_for": 1414.9,
+        "points_back": 89.8,
         "in_playoffs": true
       },
       {
@@ -2146,6 +2366,8 @@
         "rank": 3,
         "wins": 7,
         "losses": 3,
+        "points_for": 1392.3,
+        "points_back": 22.6,
         "in_playoffs": true
       },
       {
@@ -2153,6 +2375,8 @@
         "rank": 4,
         "wins": 7,
         "losses": 3,
+        "points_for": 1342.1,
+        "points_back": 50.2,
         "in_playoffs": true
       },
       {
@@ -2160,6 +2384,8 @@
         "rank": 5,
         "wins": 6,
         "losses": 4,
+        "points_for": 1166.1,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2167,6 +2393,8 @@
         "rank": 6,
         "wins": 5,
         "losses": 5,
+        "points_for": 1355.5,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2174,6 +2402,8 @@
         "rank": 7,
         "wins": 5,
         "losses": 5,
+        "points_for": 1158.0,
+        "points_back": 197.5,
         "in_playoffs": false
       },
       {
@@ -2181,6 +2411,8 @@
         "rank": 8,
         "wins": 4,
         "losses": 6,
+        "points_for": 1303.3,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2188,6 +2420,8 @@
         "rank": 9,
         "wins": 4,
         "losses": 6,
+        "points_for": 1219.3,
+        "points_back": 84.0,
         "in_playoffs": false
       },
       {
@@ -2195,6 +2429,8 @@
         "rank": 10,
         "wins": 3,
         "losses": 7,
+        "points_for": 1212.7,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2202,6 +2438,8 @@
         "rank": 11,
         "wins": 3,
         "losses": 7,
+        "points_for": 1070.4,
+        "points_back": 142.3,
         "in_playoffs": false
       },
       {
@@ -2209,6 +2447,8 @@
         "rank": 12,
         "wins": 2,
         "losses": 8,
+        "points_for": 1230.0,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -2270,42 +2510,42 @@
         "loser_team_id": 5,
         "winner_score": 137.64,
         "loser_score": 127.04,
-        "text": "Mahomes is where the heart is \u2764 (Lisette) (5-6) beat Team Kantastrophe (Cara) (7-4) 137.6-127.0"
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 5-6) beat Team Kantastrophe (Cara, 7-4) 137.6-127.0"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 8,
         "winner_score": 112.06,
         "loser_score": 110.66,
-        "text": "Lamar and Drake's Grahamy's (Imran) (7-4) beat Daddy Nielsen (Joe) (7-4) 112.1-110.7"
+        "text": "Lamar and Drake's Grahamy's (Imran, 7-4) beat Daddy Nielsen (Joe, 7-4) 112.1-110.7"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 12,
         "winner_score": 149.78,
         "loser_score": 126.7,
-        "text": "Illusions Michael (Pete) (8-3) beat Buffalo Abusement Park (Melinda) (4-7) 149.8-126.7"
+        "text": "Illusions Michael (Pete, 8-3) beat Buffalo Abusement Park (Melinda, 4-7) 149.8-126.7"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 2,
         "winner_score": 124.18,
         "loser_score": 96.2,
-        "text": "Conquering Heroes (Ben) (6-5) beat Mednis Madness (mariss) (7-4) 124.2-96.2"
+        "text": "Conquering Heroes (Ben, 6-5) beat Mednis Madness (mariss, 7-4) 124.2-96.2"
       },
       {
         "winner_team_id": 10,
         "loser_team_id": 11,
         "winner_score": 137.38,
         "loser_score": 94.76,
-        "text": "Baker's Dirty Dozen (Karl) (4-7) beat Keep 'em and weep (Kris) (2-9) 137.4-94.8"
+        "text": "Baker's Dirty Dozen (Karl, 4-7) beat Keep 'em and weep (Kris, 2-9) 137.4-94.8"
       },
       {
         "winner_team_id": 7,
         "loser_team_id": 9,
         "winner_score": 139.34,
         "loser_score": 99.52,
-        "text": "Terrible Towels (Mike) (4-7) beat McConkey Kong Country (Ronjan) (5-6) 139.3-99.5"
+        "text": "Terrible Towels (Mike, 4-7) beat McConkey Kong Country (Ronjan, 5-6) 139.3-99.5"
       }
     ],
     "looking_ahead": {
@@ -2316,42 +2556,42 @@
             6,
             8
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette) (#8, 5-6) faces Daddy Nielsen (Joe) (#3, 7-4) again - Daddy Nielsen (Joe) won the first meeting 153.5-108.3"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #8, 5-6) faces Daddy Nielsen (Joe, #3, 7-4) again - Daddy Nielsen (Joe) won the first meeting 153.5-108.3"
         },
         {
           "team_ids": [
             12,
             5
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#10, 4-7) faces Team Kantastrophe (Cara) (#2, 7-4) again - Buffalo Abusement Park (Melinda) won the first meeting 134.0-122.3"
+          "text": "Buffalo Abusement Park (Melinda, #10, 4-7) faces Team Kantastrophe (Cara, #2, 7-4) again - Buffalo Abusement Park (Melinda) won the first meeting 134.0-122.3"
         },
         {
           "team_ids": [
             2,
             1
           ],
-          "text": "Rematch: Mednis Madness (mariss) (#4, 7-4) vs. Lamar and Drake's Grahamy's (Imran) (#5, 7-4); Lamar and Drake's Grahamy's (Imran) took the first one 140.0-111.9"
+          "text": "Rematch: Mednis Madness (mariss, #4, 7-4) vs. Lamar and Drake's Grahamy's (Imran, #5, 7-4); Lamar and Drake's Grahamy's (Imran) took the first one 140.0-111.9"
         },
         {
           "team_ids": [
             10,
             3
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#9, 4-7) faces Illusions Michael (Pete) (#1, 8-3) again - Illusions Michael (Pete) won the first meeting 159.0-111.9"
+          "text": "Baker's Dirty Dozen (Karl, #9, 4-7) faces Illusions Michael (Pete, #1, 8-3) again - Illusions Michael (Pete) won the first meeting 159.0-111.9"
         },
         {
           "team_ids": [
             7,
             4
           ],
-          "text": "Rematch: Terrible Towels (Mike) (#11, 4-7) vs. Conquering Heroes (Ben) (#6, 6-5); Conquering Heroes (Ben) took the first one 100.4-86.9"
+          "text": "Rematch: Terrible Towels (Mike, #11, 4-7) vs. Conquering Heroes (Ben, #6, 6-5); Conquering Heroes (Ben) took the first one 100.4-86.9"
         },
         {
           "team_ids": [
             9,
             11
           ],
-          "text": "Rematch: McConkey Kong Country (Ronjan) (#7, 5-6) vs. Keep 'em and weep (Kris) (#12, 2-9); Keep 'em and weep (Kris) took the first one 143.0-115.9"
+          "text": "Rematch: McConkey Kong Country (Ronjan, #7, 5-6) vs. Keep 'em and weep (Kris, #12, 2-9); Keep 'em and weep (Kris) took the first one 143.0-115.9"
         }
       ]
     },
@@ -2361,6 +2601,8 @@
         "rank": 1,
         "wins": 8,
         "losses": 3,
+        "points_for": 1564.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2368,6 +2610,8 @@
         "rank": 2,
         "wins": 7,
         "losses": 4,
+        "points_for": 1631.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2375,6 +2619,8 @@
         "rank": 3,
         "wins": 7,
         "losses": 4,
+        "points_for": 1502.9,
+        "points_back": 128.8,
         "in_playoffs": true
       },
       {
@@ -2382,6 +2628,8 @@
         "rank": 4,
         "wins": 7,
         "losses": 4,
+        "points_for": 1438.3,
+        "points_back": 64.6,
         "in_playoffs": true
       },
       {
@@ -2389,6 +2637,8 @@
         "rank": 5,
         "wins": 7,
         "losses": 4,
+        "points_for": 1278.1,
+        "points_back": 160.2,
         "in_playoffs": true
       },
       {
@@ -2396,6 +2646,8 @@
         "rank": 6,
         "wins": 6,
         "losses": 5,
+        "points_for": 1282.2,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2403,6 +2655,8 @@
         "rank": 7,
         "wins": 5,
         "losses": 6,
+        "points_for": 1455.0,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2410,6 +2664,8 @@
         "rank": 8,
         "wins": 5,
         "losses": 6,
+        "points_for": 1441.0,
+        "points_back": 14.0,
         "in_playoffs": false
       },
       {
@@ -2417,6 +2673,8 @@
         "rank": 9,
         "wins": 4,
         "losses": 7,
+        "points_for": 1350.0,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2424,6 +2682,8 @@
         "rank": 10,
         "wins": 4,
         "losses": 7,
+        "points_for": 1346.0,
+        "points_back": 4.0,
         "in_playoffs": false
       },
       {
@@ -2431,6 +2691,8 @@
         "rank": 11,
         "wins": 4,
         "losses": 7,
+        "points_for": 1209.8,
+        "points_back": 136.2,
         "in_playoffs": false
       },
       {
@@ -2438,6 +2700,8 @@
         "rank": 12,
         "wins": 2,
         "losses": 9,
+        "points_for": 1324.7,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -2483,42 +2747,42 @@
         "loser_team_id": 6,
         "winner_score": 163.36,
         "loser_score": 122.62,
-        "text": "Daddy Nielsen (Joe) (8-4) beat Mahomes is where the heart is \u2764 (Lisette) (5-7) 163.4-122.6"
+        "text": "Daddy Nielsen (Joe, 8-4) beat Mahomes is where the heart is \u2764 (Lisette, 5-7) 163.4-122.6"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 12,
         "winner_score": 132.08,
         "loser_score": 104.72,
-        "text": "Team Kantastrophe (Cara) (8-4) beat Buffalo Abusement Park (Melinda) (4-8) 132.1-104.7"
+        "text": "Team Kantastrophe (Cara, 8-4) beat Buffalo Abusement Park (Melinda, 4-8) 132.1-104.7"
       },
       {
         "winner_team_id": 2,
         "loser_team_id": 1,
         "winner_score": 171.34,
         "loser_score": 103.66,
-        "text": "Mednis Madness (mariss) (8-4) beat Lamar and Drake's Grahamy's (Imran) (7-5) 171.3-103.7"
+        "text": "Mednis Madness (mariss, 8-4) beat Lamar and Drake's Grahamy's (Imran, 7-5) 171.3-103.7"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 10,
         "winner_score": 119.26,
         "loser_score": 116.5,
-        "text": "Illusions Michael (Pete) (9-3) beat Baker's Dirty Dozen (Karl) (4-8) 119.3-116.5"
+        "text": "Illusions Michael (Pete, 9-3) beat Baker's Dirty Dozen (Karl, 4-8) 119.3-116.5"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 7,
         "winner_score": 137.04,
         "loser_score": 67.26,
-        "text": "Conquering Heroes (Ben) (7-5) beat Terrible Towels (Mike) (4-8) 137.0-67.3"
+        "text": "Conquering Heroes (Ben, 7-5) beat Terrible Towels (Mike, 4-8) 137.0-67.3"
       },
       {
         "winner_team_id": 9,
         "loser_team_id": 11,
         "winner_score": 189.4,
         "loser_score": 120.78,
-        "text": "McConkey Kong Country (Ronjan) (6-6) beat Keep 'em and weep (Kris) (2-10) 189.4-120.8"
+        "text": "McConkey Kong Country (Ronjan, 6-6) beat Keep 'em and weep (Kris, 2-10) 189.4-120.8"
       }
     ],
     "looking_ahead": {
@@ -2529,42 +2793,42 @@
             12,
             6
           ],
-          "text": "Buffalo Abusement Park (Melinda) (#10, 4-8) faces Mahomes is where the heart is \u2764 (Lisette) (#8, 5-7) again - Buffalo Abusement Park (Melinda) won the first meeting 182.9-112.8"
+          "text": "Buffalo Abusement Park (Melinda, #10, 4-8) faces Mahomes is where the heart is \u2764 (Lisette, #8, 5-7) again - Buffalo Abusement Park (Melinda) won the first meeting 182.9-112.8"
         },
         {
           "team_ids": [
             8,
             2
           ],
-          "text": "Rematch: Daddy Nielsen (Joe) (#3, 8-4) vs. Mednis Madness (mariss) (#4, 8-4); Mednis Madness (mariss) took the first one 189.2-121.1"
+          "text": "Rematch: Daddy Nielsen (Joe, #3, 8-4) vs. Mednis Madness (mariss, #4, 8-4); Mednis Madness (mariss) took the first one 189.2-121.1"
         },
         {
           "team_ids": [
             5,
             10
           ],
-          "text": "Team Kantastrophe (Cara) (#2, 8-4) faces Baker's Dirty Dozen (Karl) (#9, 4-8) again - Team Kantastrophe (Cara) won the first meeting 142.1-114.5"
+          "text": "Team Kantastrophe (Cara, #2, 8-4) faces Baker's Dirty Dozen (Karl, #9, 4-8) again - Team Kantastrophe (Cara) won the first meeting 142.1-114.5"
         },
         {
           "team_ids": [
             1,
             7
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran) (#6, 7-5) faces Terrible Towels (Mike) (#11, 4-8) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 138.7-119.1"
+          "text": "Lamar and Drake's Grahamy's (Imran, #6, 7-5) faces Terrible Towels (Mike, #11, 4-8) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 138.7-119.1"
         },
         {
           "team_ids": [
             3,
             9
           ],
-          "text": "Rematch: Illusions Michael (Pete) (#1, 9-3) vs. McConkey Kong Country (Ronjan) (#7, 6-6); Illusions Michael (Pete) took the first one 139.6-112.2"
+          "text": "Rematch: Illusions Michael (Pete, #1, 9-3) vs. McConkey Kong Country (Ronjan, #7, 6-6); Illusions Michael (Pete) took the first one 139.6-112.2"
         },
         {
           "team_ids": [
             4,
             11
           ],
-          "text": "Conquering Heroes (Ben) (#5, 7-5) faces Keep 'em and weep (Kris) (#12, 2-10) again - Keep 'em and weep (Kris) won the first meeting 127.1-73.2"
+          "text": "Conquering Heroes (Ben, #5, 7-5) faces Keep 'em and weep (Kris, #12, 2-10) again - Keep 'em and weep (Kris) won the first meeting 127.1-73.2"
         }
       ]
     },
@@ -2574,6 +2838,8 @@
         "rank": 1,
         "wins": 9,
         "losses": 3,
+        "points_for": 1683.9,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2581,6 +2847,8 @@
         "rank": 2,
         "wins": 8,
         "losses": 4,
+        "points_for": 1763.8,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2588,6 +2856,8 @@
         "rank": 3,
         "wins": 8,
         "losses": 4,
+        "points_for": 1666.3,
+        "points_back": 97.5,
         "in_playoffs": true
       },
       {
@@ -2595,6 +2865,8 @@
         "rank": 4,
         "wins": 8,
         "losses": 4,
+        "points_for": 1609.6,
+        "points_back": 56.7,
         "in_playoffs": true
       },
       {
@@ -2602,6 +2874,8 @@
         "rank": 5,
         "wins": 7,
         "losses": 5,
+        "points_for": 1419.2,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2609,6 +2883,8 @@
         "rank": 6,
         "wins": 7,
         "losses": 5,
+        "points_for": 1381.8,
+        "points_back": 37.4,
         "in_playoffs": true
       },
       {
@@ -2616,6 +2892,8 @@
         "rank": 7,
         "wins": 6,
         "losses": 6,
+        "points_for": 1644.4,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2623,6 +2901,8 @@
         "rank": 8,
         "wins": 5,
         "losses": 7,
+        "points_for": 1563.6,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2630,6 +2910,8 @@
         "rank": 9,
         "wins": 4,
         "losses": 8,
+        "points_for": 1466.5,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2637,6 +2919,8 @@
         "rank": 10,
         "wins": 4,
         "losses": 8,
+        "points_for": 1450.7,
+        "points_back": 15.8,
         "in_playoffs": false
       },
       {
@@ -2644,6 +2928,8 @@
         "rank": 11,
         "wins": 4,
         "losses": 8,
+        "points_for": 1277.0,
+        "points_back": 173.7,
         "in_playoffs": false
       },
       {
@@ -2651,6 +2937,8 @@
         "rank": 12,
         "wins": 2,
         "losses": 10,
+        "points_for": 1445.5,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -2680,42 +2968,42 @@
         "loser_team_id": 12,
         "winner_score": 149.98,
         "loser_score": 126.82,
-        "text": "Mahomes is where the heart is \u2764 (Lisette) (6-7) beat Buffalo Abusement Park (Melinda) (4-9) 150.0-126.8"
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 6-7) beat Buffalo Abusement Park (Melinda, 4-9) 150.0-126.8"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 2,
         "winner_score": 101.82,
         "loser_score": 100.28,
-        "text": "Daddy Nielsen (Joe) (9-4) beat Mednis Madness (mariss) (8-5) 101.8-100.3"
+        "text": "Daddy Nielsen (Joe, 9-4) beat Mednis Madness (mariss, 8-5) 101.8-100.3"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 10,
         "winner_score": 122.9,
         "loser_score": 97.98,
-        "text": "Team Kantastrophe (Cara) (9-4) beat Baker's Dirty Dozen (Karl) (4-9) 122.9-98.0"
+        "text": "Team Kantastrophe (Cara, 9-4) beat Baker's Dirty Dozen (Karl, 4-9) 122.9-98.0"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 7,
         "winner_score": 119.92,
         "loser_score": 106.5,
-        "text": "Lamar and Drake's Grahamy's (Imran) (8-5) beat Terrible Towels (Mike) (4-9) 119.9-106.5"
+        "text": "Lamar and Drake's Grahamy's (Imran, 8-5) beat Terrible Towels (Mike, 4-9) 119.9-106.5"
       },
       {
         "winner_team_id": 3,
         "loser_team_id": 9,
         "winner_score": 157.56,
         "loser_score": 137.06,
-        "text": "Illusions Michael (Pete) (10-3) beat McConkey Kong Country (Ronjan) (6-7) 157.6-137.1"
+        "text": "Illusions Michael (Pete, 10-3) beat McConkey Kong Country (Ronjan, 6-7) 157.6-137.1"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 11,
         "winner_score": 120.68,
         "loser_score": 87.64,
-        "text": "Conquering Heroes (Ben) (8-5) beat Keep 'em and weep (Kris) (2-11) 120.7-87.6"
+        "text": "Conquering Heroes (Ben, 8-5) beat Keep 'em and weep (Kris, 2-11) 120.7-87.6"
       }
     ],
     "looking_ahead": {
@@ -2726,42 +3014,42 @@
             6,
             2
           ],
-          "text": "Rematch: Mahomes is where the heart is \u2764 (Lisette) (#8, 6-7) vs. Mednis Madness (mariss) (#4, 8-5); Mednis Madness (mariss) took the first one 131.2-111.0"
+          "text": "Rematch: Mahomes is where the heart is \u2764 (Lisette, #8, 6-7) vs. Mednis Madness (mariss, #4, 8-5); Mednis Madness (mariss) took the first one 131.2-111.0"
         },
         {
           "team_ids": [
             10,
             12
           ],
-          "text": "Baker's Dirty Dozen (Karl) (#10, 4-9) faces Buffalo Abusement Park (Melinda) (#9, 4-9) again - Baker's Dirty Dozen (Karl) won the first meeting 131.6-87.1"
+          "text": "Baker's Dirty Dozen (Karl, #10, 4-9) faces Buffalo Abusement Park (Melinda, #9, 4-9) again - Baker's Dirty Dozen (Karl) won the first meeting 131.6-87.1"
         },
         {
           "team_ids": [
             7,
             8
           ],
-          "text": "Terrible Towels (Mike) (#11, 4-9) faces Daddy Nielsen (Joe) (#3, 9-4) again - Daddy Nielsen (Joe) won the first meeting 132.8-99.0"
+          "text": "Terrible Towels (Mike, #11, 4-9) faces Daddy Nielsen (Joe, #3, 9-4) again - Daddy Nielsen (Joe) won the first meeting 132.8-99.0"
         },
         {
           "team_ids": [
             9,
             5
           ],
-          "text": "McConkey Kong Country (Ronjan) (#7, 6-7) faces Team Kantastrophe (Cara) (#2, 9-4) again - Team Kantastrophe (Cara) won the first meeting 156.4-128.5"
+          "text": "McConkey Kong Country (Ronjan, #7, 6-7) faces Team Kantastrophe (Cara, #2, 9-4) again - Team Kantastrophe (Cara) won the first meeting 156.4-128.5"
         },
         {
           "team_ids": [
             11,
             1
           ],
-          "text": "Keep 'em and weep (Kris) (#12, 2-11) faces Lamar and Drake's Grahamy's (Imran) (#6, 8-5) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 119.0-116.6"
+          "text": "Keep 'em and weep (Kris, #12, 2-11) faces Lamar and Drake's Grahamy's (Imran, #6, 8-5) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 119.0-116.6"
         },
         {
           "team_ids": [
             4,
             3
           ],
-          "text": "Rematch: Conquering Heroes (Ben) (#5, 8-5) vs. Illusions Michael (Pete) (#1, 10-3); Illusions Michael (Pete) took the first one 161.4-106.3"
+          "text": "Rematch: Conquering Heroes (Ben, #5, 8-5) vs. Illusions Michael (Pete, #1, 10-3); Illusions Michael (Pete) took the first one 161.4-106.3"
         }
       ]
     },
@@ -2771,6 +3059,8 @@
         "rank": 1,
         "wins": 10,
         "losses": 3,
+        "points_for": 1841.5,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2778,6 +3068,8 @@
         "rank": 2,
         "wins": 9,
         "losses": 4,
+        "points_for": 1886.7,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2785,6 +3077,8 @@
         "rank": 3,
         "wins": 9,
         "losses": 4,
+        "points_for": 1768.1,
+        "points_back": 118.6,
         "in_playoffs": true
       },
       {
@@ -2792,6 +3086,8 @@
         "rank": 4,
         "wins": 8,
         "losses": 5,
+        "points_for": 1709.9,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2799,6 +3095,8 @@
         "rank": 5,
         "wins": 8,
         "losses": 5,
+        "points_for": 1539.9,
+        "points_back": 170.0,
         "in_playoffs": true
       },
       {
@@ -2806,6 +3104,8 @@
         "rank": 6,
         "wins": 8,
         "losses": 5,
+        "points_for": 1501.7,
+        "points_back": 38.2,
         "in_playoffs": true
       },
       {
@@ -2813,6 +3113,8 @@
         "rank": 7,
         "wins": 6,
         "losses": 7,
+        "points_for": 1781.5,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2820,6 +3122,8 @@
         "rank": 8,
         "wins": 6,
         "losses": 7,
+        "points_for": 1713.6,
+        "points_back": 67.9,
         "in_playoffs": false
       },
       {
@@ -2827,6 +3131,8 @@
         "rank": 9,
         "wins": 4,
         "losses": 9,
+        "points_for": 1577.5,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2834,6 +3140,8 @@
         "rank": 10,
         "wins": 4,
         "losses": 9,
+        "points_for": 1564.5,
+        "points_back": 13.0,
         "in_playoffs": false
       },
       {
@@ -2841,6 +3149,8 @@
         "rank": 11,
         "wins": 4,
         "losses": 9,
+        "points_for": 1383.5,
+        "points_back": 181.0,
         "in_playoffs": false
       },
       {
@@ -2848,6 +3158,8 @@
         "rank": 12,
         "wins": 2,
         "losses": 11,
+        "points_for": 1533.1,
+        "points_back": null,
         "in_playoffs": false
       }
     ]
@@ -2893,42 +3205,42 @@
         "loser_team_id": 6,
         "winner_score": 101.28,
         "loser_score": 70.98,
-        "text": "Mednis Madness (mariss) (9-5) beat Mahomes is where the heart is \u2764 (Lisette) (6-8) 101.3-71.0"
+        "text": "Mednis Madness (mariss, 9-5) beat Mahomes is where the heart is \u2764 (Lisette, 6-8) 101.3-71.0"
       },
       {
         "winner_team_id": 10,
         "loser_team_id": 12,
         "winner_score": 139.24,
         "loser_score": 109.9,
-        "text": "Baker's Dirty Dozen (Karl) (5-9) beat Buffalo Abusement Park (Melinda) (4-10) 139.2-109.9"
+        "text": "Baker's Dirty Dozen (Karl, 5-9) beat Buffalo Abusement Park (Melinda, 4-10) 139.2-109.9"
       },
       {
         "winner_team_id": 8,
         "loser_team_id": 7,
         "winner_score": 109.22,
         "loser_score": 60.02,
-        "text": "Daddy Nielsen (Joe) (10-4) beat Terrible Towels (Mike) (4-10) 109.2-60.0"
+        "text": "Daddy Nielsen (Joe, 10-4) beat Terrible Towels (Mike, 4-10) 109.2-60.0"
       },
       {
         "winner_team_id": 5,
         "loser_team_id": 9,
         "winner_score": 131.14,
         "loser_score": 128.26,
-        "text": "Team Kantastrophe (Cara) (10-4) beat McConkey Kong Country (Ronjan) (6-8) 131.1-128.3"
+        "text": "Team Kantastrophe (Cara, 10-4) beat McConkey Kong Country (Ronjan, 6-8) 131.1-128.3"
       },
       {
         "winner_team_id": 1,
         "loser_team_id": 11,
         "winner_score": 164.82,
         "loser_score": 97.0,
-        "text": "Lamar and Drake's Grahamy's (Imran) (9-5) beat Keep 'em and weep (Kris) (2-12) 164.8-97.0"
+        "text": "Lamar and Drake's Grahamy's (Imran, 9-5) beat Keep 'em and weep (Kris, 2-12) 164.8-97.0"
       },
       {
         "winner_team_id": 4,
         "loser_team_id": 3,
         "winner_score": 167.62,
         "loser_score": 148.34,
-        "text": "Conquering Heroes (Ben) (9-5) beat Illusions Michael (Pete) (10-4) 167.6-148.3"
+        "text": "Conquering Heroes (Ben, 9-5) beat Illusions Michael (Pete, 10-4) 167.6-148.3"
       }
     ],
     "looking_ahead": null,
@@ -2938,6 +3250,8 @@
         "rank": 1,
         "wins": 10,
         "losses": 4,
+        "points_for": 2017.9,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2945,6 +3259,8 @@
         "rank": 2,
         "wins": 10,
         "losses": 4,
+        "points_for": 1989.8,
+        "points_back": 28.1,
         "in_playoffs": true
       },
       {
@@ -2952,6 +3268,8 @@
         "rank": 3,
         "wins": 10,
         "losses": 4,
+        "points_for": 1877.3,
+        "points_back": 112.5,
         "in_playoffs": true
       },
       {
@@ -2959,6 +3277,8 @@
         "rank": 4,
         "wins": 9,
         "losses": 5,
+        "points_for": 1811.2,
+        "points_back": null,
         "in_playoffs": true
       },
       {
@@ -2966,6 +3286,8 @@
         "rank": 5,
         "wins": 9,
         "losses": 5,
+        "points_for": 1707.5,
+        "points_back": 103.7,
         "in_playoffs": true
       },
       {
@@ -2973,6 +3295,8 @@
         "rank": 6,
         "wins": 9,
         "losses": 5,
+        "points_for": 1666.5,
+        "points_back": 41.0,
         "in_playoffs": true
       },
       {
@@ -2980,6 +3304,8 @@
         "rank": 7,
         "wins": 6,
         "losses": 8,
+        "points_for": 1909.7,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -2987,6 +3313,8 @@
         "rank": 8,
         "wins": 6,
         "losses": 8,
+        "points_for": 1784.6,
+        "points_back": 125.1,
         "in_playoffs": false
       },
       {
@@ -2994,6 +3322,8 @@
         "rank": 9,
         "wins": 5,
         "losses": 9,
+        "points_for": 1703.8,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -3001,6 +3331,8 @@
         "rank": 10,
         "wins": 4,
         "losses": 10,
+        "points_for": 1687.4,
+        "points_back": null,
         "in_playoffs": false
       },
       {
@@ -3008,6 +3340,8 @@
         "rank": 11,
         "wins": 4,
         "losses": 10,
+        "points_for": 1443.6,
+        "points_back": 243.8,
         "in_playoffs": false
       },
       {
@@ -3015,6 +3349,8 @@
         "rank": 12,
         "wins": 2,
         "losses": 12,
+        "points_for": 1630.1,
+        "points_back": null,
         "in_playoffs": false
       }
     ]

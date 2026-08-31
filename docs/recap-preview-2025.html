@@ -209,6 +209,14 @@
   .standings-label {
     font-family: "Rozha One", serif;
     font-size: 1.05rem;
+    margin: 0 0 2px;
+  }
+  .standings-sublabel {
+    font-family: "Special Elite", monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
     margin: 0 0 10px;
   }
   .standings-row {
@@ -226,7 +234,13 @@
     color: var(--ink-dim);
   }
   .standings-name { flex: 1; }
-  .standings-record { font-variant-numeric: tabular-nums; color: var(--ink-dim); }
+  .standings-points {
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-dim);
+    font-size: 0.8rem;
+  }
+  .standings-points em { color: var(--red); font-style: normal; }
+  .standings-record { font-variant-numeric: tabular-nums; width: 3.2em; text-align: right; }
   .standings-out { opacity: 0.55; }
   .standings-cutline { border-top: 2px dashed var(--red); margin: 4px 0; }
 
@@ -374,11 +388,13 @@ async function loadApp() {
     const playoffHtml = `
       <div class="standings">
         <p class="standings-label">Playoff Picture &middot; Through Week ${w.week}</p>
+        <p class="standings-sublabel">Top 6 make it &middot; ties broken by points scored</p>
         ${w.playoff_picture.map(row => `
           <div class="standings-row ${row.in_playoffs ? '' : 'standings-out'}">
             <span class="standings-rank">${row.rank}</span>
             ${renderCrest(teams, row.team_id)}
             <span class="standings-name">${teamName(teams[row.team_id])}</span>
+            <span class="standings-points">${row.points_for.toFixed(1)} pts${row.points_back !== null ? ` <em>(-${row.points_back.toFixed(1)})</em>` : ''}</span>
             <span class="standings-record">${row.wins}-${row.losses}</span>
           </div>
           ${row.rank === 6 ? '<div class="standings-cutline"></div>' : ''}
