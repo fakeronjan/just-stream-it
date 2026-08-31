@@ -8,7 +8,145 @@
           12,
           5
         ],
-        "text": "This week's nail-biter: Buffalo Abusement Park (Melinda) squeaked past Team Kantastrophe (Cara) 134.0-122.3, a margin of just 11.7."
+        "text": "This week's nail-biter: Buffalo Abusement Park (Melinda) squeaked past Team Kantastrophe (Cara) 134.0-122.3, a margin of just 11.7.",
+        "lineups": {
+          "12": [
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "ARI",
+              "points": 18.32
+            },
+            {
+              "name": "James Cook III",
+              "position": "RB",
+              "pro_team": "BUF",
+              "points": 18.700000000000003
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 7.4
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "points": 24.6
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "points": 15.100000000000001
+            },
+            {
+              "name": "Ja'Marr Chase",
+              "position": "WR",
+              "pro_team": "CIN",
+              "points": 3.6
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "points": 8.9
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "FLEX",
+              "pro_team": "DET",
+              "points": 4.6
+            },
+            {
+              "name": "Commanders D/ST",
+              "position": "D/ST",
+              "pro_team": "WSH",
+              "points": 8.0
+            },
+            {
+              "name": "Jake Elliott",
+              "position": "K",
+              "pro_team": "PHI",
+              "points": 8.0
+            },
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "points": 16.78
+            }
+          ],
+          "5": [
+            {
+              "name": "Drake Maye",
+              "position": "QB",
+              "pro_team": "NE",
+              "points": 15.28
+            },
+            {
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "points": 21.4
+            },
+            {
+              "name": "Jonathan Taylor",
+              "position": "RB",
+              "pro_team": "IND",
+              "points": 11.3
+            },
+            {
+              "name": "Garrett Wilson",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "points": 19.0
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "MIA",
+              "points": 5.0
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "points": 4.0
+            },
+            {
+              "name": "Evan Engram",
+              "position": "TE",
+              "pro_team": "DEN",
+              "points": 3.6
+            },
+            {
+              "name": "Chase Brown",
+              "position": "FLEX",
+              "pro_team": "CIN",
+              "points": 12.100000000000001
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "points": 8.0
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "points": 9.0
+            },
+            {
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "pro_team": "LAR",
+              "points": 13.600000000000001
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -153,7 +291,10 @@
         "losses": 0,
         "points_for": 159.0,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 13,
+        "games_remaining": 13
       },
       {
         "team_id": 8,
@@ -162,7 +303,10 @@
         "losses": 0,
         "points_for": 153.5,
         "points_back": 5.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 13,
+        "games_remaining": 13
       },
       {
         "team_id": 11,
@@ -171,7 +315,10 @@
         "losses": 0,
         "points_for": 143.0,
         "points_back": 10.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 13,
+        "games_remaining": 13
       },
       {
         "team_id": 1,
@@ -180,7 +327,10 @@
         "losses": 0,
         "points_for": 140.0,
         "points_back": 3.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 13,
+        "games_remaining": 13
       },
       {
         "team_id": 12,
@@ -189,7 +339,10 @@
         "losses": 0,
         "points_for": 134.0,
         "points_back": 6.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 13,
+        "games_remaining": 13
       },
       {
         "team_id": 4,
@@ -198,7 +351,10 @@
         "losses": 0,
         "points_for": 100.4,
         "points_back": 33.6,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 13,
+        "games_remaining": 13
       },
       {
         "team_id": 5,
@@ -207,7 +363,10 @@
         "losses": 1,
         "points_for": 122.3,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 13
       },
       {
         "team_id": 9,
@@ -216,7 +375,10 @@
         "losses": 1,
         "points_for": 115.9,
         "points_back": 6.4,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 13
       },
       {
         "team_id": 2,
@@ -225,7 +387,10 @@
         "losses": 1,
         "points_for": 111.9,
         "points_back": 4.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 13
       },
       {
         "team_id": 10,
@@ -234,7 +399,10 @@
         "losses": 1,
         "points_for": 111.9,
         "points_back": 0.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 13
       },
       {
         "team_id": 6,
@@ -243,7 +411,10 @@
         "losses": 1,
         "points_for": 108.3,
         "points_back": 3.6,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 13
       },
       {
         "team_id": 7,
@@ -252,7 +423,10 @@
         "losses": 1,
         "points_for": 86.9,
         "points_back": 21.4,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 13
       }
     ]
   },
@@ -265,7 +439,145 @@
           1,
           7
         ],
-        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Terrible Towels (Mike) 138.7-119.1, a margin of just 19.6."
+        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Terrible Towels (Mike) 138.7-119.1, a margin of just 19.6.",
+        "lineups": {
+          "1": [
+            {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "pro_team": "BAL",
+              "points": 26.3
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
+              "points": 13.0
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 12.6
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 15.700000000000001
+            },
+            {
+              "name": "Tetairoa McMillan",
+              "position": "WR",
+              "pro_team": "CAR",
+              "points": 13.0
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 4.4
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "points": 13.4
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "FLEX",
+              "pro_team": "DEN",
+              "points": 15.000000000000002
+            },
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "points": 7.0
+            },
+            {
+              "name": "Graham Gano",
+              "position": "K",
+              "pro_team": "NYG",
+              "points": 13.0
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "points": 5.300000000000001
+            }
+          ],
+          "7": [
+            {
+              "name": "Jayden Daniels",
+              "position": "QB",
+              "pro_team": "WSH",
+              "points": 19.7
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "points": 15.4
+            },
+            {
+              "name": "James Conner",
+              "position": "RB",
+              "pro_team": "ARI",
+              "points": 11.700000000000001
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "points": 19.6
+            },
+            {
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "pro_team": "WSH",
+              "points": 7.300000000000001
+            },
+            {
+              "name": "Brian Thomas Jr.",
+              "position": "WR",
+              "pro_team": "JAX",
+              "points": 6.9
+            },
+            {
+              "name": "Mark Andrews",
+              "position": "TE",
+              "pro_team": "BAL",
+              "points": 0.8999999999999999
+            },
+            {
+              "name": "Quentin Johnston",
+              "position": "FLEX",
+              "pro_team": "LAC",
+              "points": 14.4
+            },
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "points": 8.0
+            },
+            {
+              "name": "Chris Boswell",
+              "position": "K",
+              "pro_team": "PIT",
+              "points": 12.0
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "LV",
+              "points": 3.2
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -406,7 +718,10 @@
         "losses": 0,
         "points_for": 316.9,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 12,
+        "games_remaining": 12
       },
       {
         "team_id": 3,
@@ -415,7 +730,10 @@
         "losses": 0,
         "points_for": 298.6,
         "points_back": 18.3,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 12,
+        "games_remaining": 12
       },
       {
         "team_id": 1,
@@ -424,7 +742,10 @@
         "losses": 0,
         "points_for": 278.7,
         "points_back": 19.9,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 12,
+        "games_remaining": 12
       },
       {
         "team_id": 11,
@@ -433,7 +754,10 @@
         "losses": 0,
         "points_for": 270.2,
         "points_back": 8.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 12,
+        "games_remaining": 12
       },
       {
         "team_id": 2,
@@ -442,7 +766,10 @@
         "losses": 1,
         "points_for": 301.1,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 8,
@@ -451,7 +778,10 @@
         "losses": 1,
         "points_for": 274.6,
         "points_back": 26.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 5,
@@ -460,7 +790,10 @@
         "losses": 1,
         "points_for": 264.4,
         "points_back": 10.2,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 4,
@@ -469,7 +802,10 @@
         "losses": 1,
         "points_for": 173.6,
         "points_back": 90.8,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 9,
@@ -478,7 +814,10 @@
         "losses": 2,
         "points_for": 228.1,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 10,
@@ -487,7 +826,10 @@
         "losses": 2,
         "points_for": 226.4,
         "points_back": 1.7,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 6,
@@ -496,7 +838,10 @@
         "losses": 2,
         "points_for": 221.1,
         "points_back": 5.3,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       },
       {
         "team_id": 7,
@@ -505,7 +850,10 @@
         "losses": 2,
         "points_for": 206.0,
         "points_back": 15.1,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
       }
     ]
   },
@@ -518,7 +866,145 @@
           1,
           11
         ],
-        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Keep 'em and weep (Kris) 119.0-116.6, a margin of just 2.4."
+        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Keep 'em and weep (Kris) 119.0-116.6, a margin of just 2.4.",
+        "lineups": {
+          "1": [
+            {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "pro_team": "BAL",
+              "points": 27.02
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 28.900000000000002
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
+              "points": 6.1000000000000005
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 8.0
+            },
+            {
+              "name": "Tetairoa McMillan",
+              "position": "WR",
+              "pro_team": "CAR",
+              "points": 6.300000000000001
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 0.0
+            },
+            {
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "pro_team": "NO",
+              "points": 8.100000000000001
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "FLEX",
+              "pro_team": "DEN",
+              "points": 14.8
+            },
+            {
+              "name": "Jaguars D/ST",
+              "position": "D/ST",
+              "pro_team": "JAX",
+              "points": 13.0
+            },
+            {
+              "name": "Graham Gano",
+              "position": "K",
+              "pro_team": "NYG",
+              "points": 3.0
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "points": 3.78
+            }
+          ],
+          "11": [
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "points": 14.6
+            },
+            {
+              "name": "Jahmyr Gibbs",
+              "position": "RB",
+              "pro_team": "DET",
+              "points": 24.4
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "points": 9.6
+            },
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "IND",
+              "points": 16.3
+            },
+            {
+              "name": "Tyreek Hill",
+              "position": "WR",
+              "pro_team": "FA",
+              "points": 13.4
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "NE",
+              "points": 3.8000000000000003
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "points": 4.6
+            },
+            {
+              "name": "Calvin Austin III",
+              "position": "FLEX",
+              "pro_team": "PIT",
+              "points": 10.9
+            },
+            {
+              "name": "Bengals D/ST",
+              "position": "D/ST",
+              "pro_team": "CIN",
+              "points": -1.0
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "points": 8.0
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "points": 12.040000000000001
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -603,42 +1089,42 @@
             6,
             10
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 0-3) squares off against Baker's Dirty Dozen (Karl, #8, 1-2)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 0-3) squares off against Baker's Dirty Dozen (Karl, #8, 1-2); Play every week and it's Lisette 0-3 Karl"
         },
         {
           "team_ids": [
             7,
             2
           ],
-          "text": "Terrible Towels (Mike, #12, 0-3) squares off against Mednis Madness (mariss, #3, 2-1)"
+          "text": "Terrible Towels (Mike, #12, 0-3) faces Mednis Madness (mariss, #3, 2-1); Play every week and it's Mike 0-3 mariss"
         },
         {
           "team_ids": [
             9,
             12
           ],
-          "text": "McConkey Kong Country (Ronjan, #10, 0-3) faces Buffalo Abusement Park (Melinda, #6, 2-1)"
+          "text": "McConkey Kong Country (Ronjan, #10, 0-3) faces Buffalo Abusement Park (Melinda, #6, 2-1); Play every week and it's Ronjan 1-2 Melinda"
         },
         {
           "team_ids": [
             11,
             8
           ],
-          "text": "Keep 'em and weep (Kris, #7, 2-1) squares off against Daddy Nielsen (Joe, #5, 2-1)"
+          "text": "Keep 'em and weep (Kris, #7, 2-1) squares off against Daddy Nielsen (Joe, #5, 2-1); Play every week and it's Kris 1-2 Joe"
         },
         {
           "team_ids": [
             4,
             5
           ],
-          "text": "Conquering Heroes (Ben, #9, 1-2) faces Team Kantastrophe (Cara, #4, 2-1)"
+          "text": "Conquering Heroes (Ben, #9, 1-2) squares off against Team Kantastrophe (Cara, #4, 2-1); Play every week and it's Ben 0-3 Cara"
         },
         {
           "team_ids": [
             3,
             1
           ],
-          "text": "Illusions Michael (Pete, #1, 3-0) squares off against Lamar and Drake's Grahamy's (Imran, #2, 3-0)"
+          "text": "Illusions Michael (Pete, #1, 3-0) squares off against Lamar and Drake's Grahamy's (Imran, #2, 3-0); Play every week and it's Pete 3-0 Imran"
         }
       ]
     },
@@ -650,7 +1136,10 @@
         "losses": 0,
         "points_for": 460.0,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 11,
+        "games_remaining": 11
       },
       {
         "team_id": 1,
@@ -659,7 +1148,10 @@
         "losses": 0,
         "points_for": 397.7,
         "points_back": 62.3,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 11,
+        "games_remaining": 11
       },
       {
         "team_id": 2,
@@ -668,7 +1160,10 @@
         "losses": 1,
         "points_for": 432.3,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 5,
@@ -677,7 +1172,10 @@
         "losses": 1,
         "points_for": 420.8,
         "points_back": 11.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 8,
@@ -686,7 +1184,10 @@
         "losses": 1,
         "points_for": 407.4,
         "points_back": 13.4,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 12,
@@ -695,7 +1196,10 @@
         "losses": 1,
         "points_for": 404.0,
         "points_back": 3.4,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 11,
@@ -704,7 +1208,10 @@
         "losses": 1,
         "points_for": 386.8,
         "points_back": 17.2,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 10,
@@ -713,7 +1220,10 @@
         "losses": 2,
         "points_for": 358.0,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 4,
@@ -722,7 +1232,10 @@
         "losses": 2,
         "points_for": 279.9,
         "points_back": 78.1,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 9,
@@ -731,7 +1244,10 @@
         "losses": 3,
         "points_for": 356.6,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 6,
@@ -740,7 +1256,10 @@
         "losses": 3,
         "points_for": 332.1,
         "points_back": 24.5,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       },
       {
         "team_id": 7,
@@ -749,7 +1268,10 @@
         "losses": 3,
         "points_for": 304.9,
         "points_back": 27.2,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 11
       }
     ]
   },
@@ -762,7 +1284,145 @@
           9,
           12
         ],
-        "text": "This week's nail-biter: McConkey Kong Country (Ronjan) squeaked past Buffalo Abusement Park (Melinda) 140.7-132.9, a margin of just 7.9."
+        "text": "This week's nail-biter: McConkey Kong Country (Ronjan) squeaked past Buffalo Abusement Park (Melinda) 140.7-132.9, a margin of just 7.9.",
+        "lineups": {
+          "9": [
+            {
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "pro_team": "PHI",
+              "points": 19.4
+            },
+            {
+              "name": "Breece Hall",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "points": 13.6
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "points": 8.7
+            },
+            {
+              "name": "Puka Nacua",
+              "position": "WR",
+              "pro_team": "LAR",
+              "points": 29.5
+            },
+            {
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "pro_team": "BAL",
+              "points": 2.9000000000000004
+            },
+            {
+              "name": "Ladd McConkey",
+              "position": "WR",
+              "pro_team": "LAC",
+              "points": 1.6
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "points": 7.1000000000000005
+            },
+            {
+              "name": "Quinshon Judkins",
+              "position": "FLEX",
+              "pro_team": "CLE",
+              "points": 19.500000000000004
+            },
+            {
+              "name": "Patriots D/ST",
+              "position": "D/ST",
+              "pro_team": "NE",
+              "points": 10.0
+            },
+            {
+              "name": "Joshua Karty",
+              "position": "K",
+              "pro_team": "ARI",
+              "points": 10.0
+            },
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "points": 18.42
+            }
+          ],
+          "12": [
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "ARI",
+              "points": 16.1
+            },
+            {
+              "name": "James Cook III",
+              "position": "RB",
+              "pro_team": "BUF",
+              "points": 21.000000000000004
+            },
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
+              "points": 19.0
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "points": 16.6
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "points": 10.9
+            },
+            {
+              "name": "Ja'Marr Chase",
+              "position": "WR",
+              "pro_team": "CIN",
+              "points": 4.800000000000001
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
+              "points": 8.100000000000001
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "FLEX",
+              "pro_team": "DET",
+              "points": 4.7
+            },
+            {
+              "name": "Bills D/ST",
+              "position": "D/ST",
+              "pro_team": "BUF",
+              "points": 7.0
+            },
+            {
+              "name": "Jake Elliott",
+              "position": "K",
+              "pro_team": "PHI",
+              "points": 7.0
+            },
+            {
+              "name": "Brock Purdy",
+              "position": "QB",
+              "pro_team": "SF",
+              "points": 17.66
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -847,42 +1507,42 @@
             7,
             6
           ],
-          "text": "Terrible Towels (Mike, #12, 0-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #11, 0-4)"
+          "text": "Terrible Towels (Mike, #12, 0-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #11, 0-4); Over a full season of head-to-head, Mike would be 1-3 against Lisette"
         },
         {
           "team_ids": [
             10,
             9
           ],
-          "text": "Baker's Dirty Dozen (Karl, #7, 2-2) faces McConkey Kong Country (Ronjan, #10, 1-3)"
+          "text": "Baker's Dirty Dozen (Karl, #7, 2-2) squares off against McConkey Kong Country (Ronjan, #10, 1-3); Over a full season of head-to-head, Karl would be 3-1 against Ronjan"
         },
         {
           "team_ids": [
             2,
             11
           ],
-          "text": "Mednis Madness (mariss, #2, 3-1) squares off against Keep 'em and weep (Kris, #8, 2-2)"
+          "text": "Mednis Madness (mariss, #2, 3-1) squares off against Keep 'em and weep (Kris, #8, 2-2); Play every week and it's mariss 3-1 Kris"
         },
         {
           "team_ids": [
             12,
             4
           ],
-          "text": "Buffalo Abusement Park (Melinda, #6, 2-2) faces Conquering Heroes (Ben, #9, 2-2)"
+          "text": "Buffalo Abusement Park (Melinda, #6, 2-2) squares off against Conquering Heroes (Ben, #9, 2-2); Over a full season of head-to-head, Melinda would be 2-2 against Ben"
         },
         {
           "team_ids": [
             8,
             3
           ],
-          "text": "Daddy Nielsen (Joe, #3, 3-1) squares off against Illusions Michael (Pete, #1, 4-0)"
+          "text": "Daddy Nielsen (Joe, #3, 3-1) squares off against Illusions Michael (Pete, #1, 4-0); Play every week and it's Joe 1-3 Pete"
         },
         {
           "team_ids": [
             5,
             1
           ],
-          "text": "Team Kantastrophe (Cara, #5, 2-2) squares off against Lamar and Drake's Grahamy's (Imran, #4, 3-1)"
+          "text": "Team Kantastrophe (Cara, #5, 2-2) squares off against Lamar and Drake's Grahamy's (Imran, #4, 3-1); Play every week and it's Cara 3-1 Imran"
         }
       ]
     },
@@ -894,7 +1554,10 @@
         "losses": 0,
         "points_for": 599.1,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 9,
+        "games_remaining": 10
       },
       {
         "team_id": 2,
@@ -903,7 +1566,10 @@
         "losses": 1,
         "points_for": 573.3,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 10,
+        "games_remaining": 10
       },
       {
         "team_id": 8,
@@ -912,7 +1578,10 @@
         "losses": 1,
         "points_for": 547.3,
         "points_back": 26.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 10,
+        "games_remaining": 10
       },
       {
         "team_id": 1,
@@ -921,7 +1590,10 @@
         "losses": 1,
         "points_for": 509.0,
         "points_back": 38.3,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 10,
+        "games_remaining": 10
       },
       {
         "team_id": 5,
@@ -930,7 +1602,10 @@
         "losses": 2,
         "points_for": 572.8,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 12,
@@ -939,7 +1614,10 @@
         "losses": 2,
         "points_for": 536.8,
         "points_back": 36.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 10,
@@ -948,7 +1626,10 @@
         "losses": 2,
         "points_for": 510.9,
         "points_back": 25.9,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 11,
@@ -957,7 +1638,10 @@
         "losses": 2,
         "points_for": 486.2,
         "points_back": 24.7,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 4,
@@ -966,7 +1650,10 @@
         "losses": 2,
         "points_for": 440.7,
         "points_back": 45.5,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 9,
@@ -975,7 +1662,10 @@
         "losses": 3,
         "points_for": 497.3,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 6,
@@ -984,7 +1674,10 @@
         "losses": 4,
         "points_for": 472.3,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       },
       {
         "team_id": 7,
@@ -993,7 +1686,10 @@
         "losses": 4,
         "points_for": 394.2,
         "points_back": 78.1,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 10
       }
     ]
   },
@@ -1006,7 +1702,145 @@
           4,
           12
         ],
-        "text": "Conquering Heroes (Ben) survived a scare from Buffalo Abusement Park (Melinda), escaping with a 1.8-point win, 119.1-117.4."
+        "text": "Conquering Heroes (Ben) survived a scare from Buffalo Abusement Park (Melinda), escaping with a 1.8-point win, 119.1-117.4.",
+        "lineups": {
+          "4": [
+            {
+              "name": "Carson Wentz",
+              "position": "QB",
+              "pro_team": "MIN",
+              "points": 14.739999999999998
+            },
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "points": 13.399999999999999
+            },
+            {
+              "name": "Omarion Hampton",
+              "position": "RB",
+              "pro_team": "LAC",
+              "points": 10.0
+            },
+            {
+              "name": "Emeka Egbuka",
+              "position": "WR",
+              "pro_team": "TB",
+              "points": 27.8
+            },
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "ARI",
+              "points": 11.8
+            },
+            {
+              "name": "Darius Slayton",
+              "position": "WR",
+              "pro_team": "NYG",
+              "points": 2.6
+            },
+            {
+              "name": "Brenton Strange",
+              "position": "TE",
+              "pro_team": "JAX",
+              "points": 2.7
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "FLEX",
+              "pro_team": "SEA",
+              "points": 11.3
+            },
+            {
+              "name": "Cardinals D/ST",
+              "position": "D/ST",
+              "pro_team": "ARI",
+              "points": 6.0
+            },
+            {
+              "name": "Tyler Loop",
+              "position": "K",
+              "pro_team": "BAL",
+              "points": 3.0
+            },
+            {
+              "name": "Michael Carter",
+              "position": "RB",
+              "pro_team": "ARI",
+              "points": 15.8
+            }
+          ],
+          "12": [
+            {
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "ARI",
+              "points": 15.3
+            },
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
+              "points": 7.300000000000001
+            },
+            {
+              "name": "James Cook III",
+              "position": "RB",
+              "pro_team": "BUF",
+              "points": 4.9
+            },
+            {
+              "name": "Ja'Marr Chase",
+              "position": "WR",
+              "pro_team": "CIN",
+              "points": 26.0
+            },
+            {
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "pro_team": "DEN",
+              "points": 13.9
+            },
+            {
+              "name": "Zay Flowers",
+              "position": "WR",
+              "pro_team": "BAL",
+              "points": 9.7
+            },
+            {
+              "name": "Hunter Henry",
+              "position": "TE",
+              "pro_team": "NE",
+              "points": 5.6000000000000005
+            },
+            {
+              "name": "Jameson Williams",
+              "position": "FLEX",
+              "pro_team": "DET",
+              "points": 1.5
+            },
+            {
+              "name": "Bills D/ST",
+              "position": "D/ST",
+              "pro_team": "BUF",
+              "points": 6.0
+            },
+            {
+              "name": "Jake Elliott",
+              "position": "K",
+              "pro_team": "PHI",
+              "points": 5.0
+            },
+            {
+              "name": "Mac Jones",
+              "position": "QB",
+              "pro_team": "SF",
+              "points": 22.18
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -1105,42 +1939,42 @@
             6,
             9
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 1-4) squares off against McConkey Kong Country (Ronjan, #9, 2-3)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #11, 1-4) squares off against McConkey Kong Country (Ronjan, #9, 2-3); Play every week and it's Lisette 2-3 Ronjan"
         },
         {
           "team_ids": [
             11,
             7
           ],
-          "text": "Keep 'em and weep (Kris, #10, 2-3) squares off against Terrible Towels (Mike, #12, 0-5)"
+          "text": "Keep 'em and weep (Kris, #10, 2-3) faces Terrible Towels (Mike, #12, 0-5); Over a full season of head-to-head, Kris would be 5-0 against Mike"
         },
         {
           "team_ids": [
             4,
             10
           ],
-          "text": "Conquering Heroes (Ben, #6, 3-2) faces Baker's Dirty Dozen (Karl, #8, 2-3)"
+          "text": "Conquering Heroes (Ben, #6, 3-2) faces Baker's Dirty Dozen (Karl, #8, 2-3); Over a full season of head-to-head, Ben would be 1-4 against Karl"
         },
         {
           "team_ids": [
             3,
             2
           ],
-          "text": "Illusions Michael (Pete, #1, 4-1) faces Mednis Madness (mariss, #2, 4-1)"
+          "text": "Illusions Michael (Pete, #1, 4-1) squares off against Mednis Madness (mariss, #2, 4-1); Play every week and it's Pete 2-3 mariss"
         },
         {
           "team_ids": [
             1,
             12
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #5, 3-2) faces Buffalo Abusement Park (Melinda, #7, 2-3)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #5, 3-2) squares off against Buffalo Abusement Park (Melinda, #7, 2-3); Over a full season of head-to-head, Imran would be 2-3 against Melinda"
         },
         {
           "team_ids": [
             5,
             8
           ],
-          "text": "Team Kantastrophe (Cara, #4, 3-2) faces Daddy Nielsen (Joe, #3, 4-1)"
+          "text": "Team Kantastrophe (Cara, #4, 3-2) squares off against Daddy Nielsen (Joe, #3, 4-1); Play every week and it's Cara 3-2 Joe"
         }
       ]
     },
@@ -1152,7 +1986,10 @@
         "losses": 1,
         "points_for": 728.6,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 9
       },
       {
         "team_id": 2,
@@ -1161,7 +1998,10 @@
         "losses": 1,
         "points_for": 716.8,
         "points_back": 11.8,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 9
       },
       {
         "team_id": 8,
@@ -1170,7 +2010,10 @@
         "losses": 1,
         "points_for": 707.2,
         "points_back": 9.6,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 9
       },
       {
         "team_id": 5,
@@ -1179,7 +2022,10 @@
         "losses": 2,
         "points_for": 731.8,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 9,
+        "games_remaining": 9
       },
       {
         "team_id": 1,
@@ -1188,7 +2034,10 @@
         "losses": 2,
         "points_for": 602.3,
         "points_back": 129.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 9,
+        "games_remaining": 9
       },
       {
         "team_id": 4,
@@ -1197,7 +2046,10 @@
         "losses": 2,
         "points_for": 559.9,
         "points_back": 42.4,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 9,
+        "games_remaining": 9
       },
       {
         "team_id": 12,
@@ -1206,7 +2058,10 @@
         "losses": 3,
         "points_for": 654.2,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 9
       },
       {
         "team_id": 10,
@@ -1215,7 +2070,10 @@
         "losses": 3,
         "points_for": 642.6,
         "points_back": 11.6,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 9
       },
       {
         "team_id": 9,
@@ -1224,7 +2082,10 @@
         "losses": 3,
         "points_for": 636.4,
         "points_back": 6.2,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 9
       },
       {
         "team_id": 11,
@@ -1233,7 +2094,10 @@
         "losses": 3,
         "points_for": 626.0,
         "points_back": 10.4,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 9
       },
       {
         "team_id": 6,
@@ -1242,7 +2106,10 @@
         "losses": 4,
         "points_for": 637.6,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 9
       },
       {
         "team_id": 7,
@@ -1251,7 +2118,10 @@
         "losses": 5,
         "points_for": 479.1,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 9
       }
     ]
   },
@@ -1264,7 +2134,145 @@
           7,
           11
         ],
-        "text": "This week's nail-biter: Terrible Towels (Mike) squeaked past Keep 'em and weep (Kris) 108.5-106.8, a margin of just 1.7."
+        "text": "This week's nail-biter: Terrible Towels (Mike) squeaked past Keep 'em and weep (Kris) 108.5-106.8, a margin of just 1.7.",
+        "lineups": {
+          "7": [
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "points": 18.46
+            },
+            {
+              "name": "Jaylen Warren",
+              "position": "RB",
+              "pro_team": "PIT",
+              "points": 7.300000000000001
+            },
+            {
+              "name": "Hassan Haskins",
+              "position": "RB",
+              "pro_team": "LAC",
+              "points": 2.8000000000000003
+            },
+            {
+              "name": "Brian Thomas Jr.",
+              "position": "WR",
+              "pro_team": "JAX",
+              "points": 19.0
+            },
+            {
+              "name": "Tre Tucker",
+              "position": "WR",
+              "pro_team": "LV",
+              "points": 9.5
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "points": 5.9
+            },
+            {
+              "name": "Mark Andrews",
+              "position": "TE",
+              "pro_team": "BAL",
+              "points": 4.6000000000000005
+            },
+            {
+              "name": "Jonnu Smith",
+              "position": "FLEX",
+              "pro_team": "PIT",
+              "points": 4.3
+            },
+            {
+              "name": "Lions D/ST",
+              "position": "D/ST",
+              "pro_team": "DET",
+              "points": 1.0
+            },
+            {
+              "name": "Chris Boswell",
+              "position": "K",
+              "pro_team": "PIT",
+              "points": 14.0
+            },
+            {
+              "name": "Jayden Daniels",
+              "position": "QB",
+              "pro_team": "WSH",
+              "points": 21.64
+            }
+          ],
+          "11": [
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "points": 18.759999999999998
+            },
+            {
+              "name": "Jahmyr Gibbs",
+              "position": "RB",
+              "pro_team": "DET",
+              "points": 7.0
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "points": 5.300000000000001
+            },
+            {
+              "name": "Sterling Shepard",
+              "position": "WR",
+              "pro_team": "TB",
+              "points": 6.1000000000000005
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "NE",
+              "points": 4.300000000000001
+            },
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "IND",
+              "points": 3.0
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "points": 10.8
+            },
+            {
+              "name": "Darren Waller",
+              "position": "FLEX",
+              "pro_team": "MIA",
+              "points": 8.2
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "points": 16.0
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "points": 5.0
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "points": 22.34
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -1341,42 +2349,42 @@
             11,
             6
           ],
-          "text": "Keep 'em and weep (Kris, #11, 2-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 2-4)"
+          "text": "Keep 'em and weep (Kris, #11, 2-4) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 2-4); Over a full season of head-to-head, Kris would be 3-3 against Lisette"
         },
         {
           "team_ids": [
             9,
             4
           ],
-          "text": "McConkey Kong Country (Ronjan, #9, 2-4) faces Conquering Heroes (Ben, #7, 3-3)"
+          "text": "McConkey Kong Country (Ronjan, #9, 2-4) faces Conquering Heroes (Ben, #7, 3-3); Play every week and it's Ronjan 5-1 Ben"
         },
         {
           "team_ids": [
             7,
             3
           ],
-          "text": "Terrible Towels (Mike, #12, 1-5) faces Illusions Michael (Pete, #3, 4-2)"
+          "text": "Terrible Towels (Mike, #12, 1-5) faces Illusions Michael (Pete, #3, 4-2); Play every week and it's Mike 0-6 Pete"
         },
         {
           "team_ids": [
             10,
             1
           ],
-          "text": "Baker's Dirty Dozen (Karl, #6, 3-3) squares off against Lamar and Drake's Grahamy's (Imran, #5, 4-2)"
+          "text": "Baker's Dirty Dozen (Karl, #6, 3-3) squares off against Lamar and Drake's Grahamy's (Imran, #5, 4-2); Over a full season of head-to-head, Karl would be 4-2 against Imran"
         },
         {
           "team_ids": [
             2,
             5
           ],
-          "text": "Mednis Madness (mariss, #1, 5-1) faces Team Kantastrophe (Cara, #2, 4-2)"
+          "text": "Mednis Madness (mariss, #1, 5-1) squares off against Team Kantastrophe (Cara, #2, 4-2); Play every week and it's mariss 1-5 Cara"
         },
         {
           "team_ids": [
             12,
             8
           ],
-          "text": "Buffalo Abusement Park (Melinda, #10, 2-4) squares off against Daddy Nielsen (Joe, #4, 4-2)"
+          "text": "Buffalo Abusement Park (Melinda, #10, 2-4) squares off against Daddy Nielsen (Joe, #4, 4-2); Over a full season of head-to-head, Melinda would be 1-5 against Joe"
         }
       ]
     },
@@ -1388,7 +2396,10 @@
         "losses": 1,
         "points_for": 881.4,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 7,
+        "games_remaining": 8
       },
       {
         "team_id": 5,
@@ -1397,7 +2408,10 @@
         "losses": 2,
         "points_for": 905.0,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 8
       },
       {
         "team_id": 3,
@@ -1406,7 +2420,10 @@
         "losses": 2,
         "points_for": 849.1,
         "points_back": 55.9,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 8
       },
       {
         "team_id": 8,
@@ -1415,7 +2432,10 @@
         "losses": 2,
         "points_for": 817.6,
         "points_back": 31.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 8
       },
       {
         "team_id": 1,
@@ -1424,7 +2444,10 @@
         "losses": 2,
         "points_for": 709.3,
         "points_back": 108.3,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 8
       },
       {
         "team_id": 10,
@@ -1433,7 +2456,10 @@
         "losses": 3,
         "points_for": 808.6,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       },
       {
         "team_id": 4,
@@ -1442,7 +2468,10 @@
         "losses": 3,
         "points_for": 640.9,
         "points_back": 167.7,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       },
       {
         "team_id": 6,
@@ -1451,7 +2480,10 @@
         "losses": 4,
         "points_for": 815.9,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       },
       {
         "team_id": 9,
@@ -1460,7 +2492,10 @@
         "losses": 4,
         "points_for": 753.6,
         "points_back": 62.3,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       },
       {
         "team_id": 12,
@@ -1469,7 +2504,10 @@
         "losses": 4,
         "points_for": 747.6,
         "points_back": 6.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       },
       {
         "team_id": 11,
@@ -1478,7 +2516,10 @@
         "losses": 4,
         "points_for": 732.8,
         "points_back": 14.8,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       },
       {
         "team_id": 7,
@@ -1487,7 +2528,10 @@
         "losses": 5,
         "points_for": 587.6,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
       }
     ]
   },
@@ -1500,7 +2544,145 @@
           1,
           10
         ],
-        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Baker's Dirty Dozen (Karl), escaping with a 0.3-point win, 94.1-93.7."
+        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Baker's Dirty Dozen (Karl), escaping with a 0.3-point win, 94.1-93.7.",
+        "lineups": {
+          "1": [
+            {
+              "name": "Spencer Rattler",
+              "position": "QB",
+              "pro_team": "NO",
+              "points": 10.52
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 8.5
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 4.9
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 19.5
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 6.2
+            },
+            {
+              "name": "Tetairoa McMillan",
+              "position": "WR",
+              "pro_team": "CAR",
+              "points": 4.800000000000001
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "points": 0.0
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "FLEX",
+              "pro_team": "NO",
+              "points": 4.4
+            },
+            {
+              "name": "Eagles D/ST",
+              "position": "D/ST",
+              "pro_team": "PHI",
+              "points": 11.0
+            },
+            {
+              "name": "Chad Ryland",
+              "position": "K",
+              "pro_team": "ARI",
+              "points": 12.0
+            },
+            {
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "pro_team": "ATL",
+              "points": 12.24
+            }
+          ],
+          "10": [
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "points": 11.120000000000001
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "points": 20.299999999999997
+            },
+            {
+              "name": "Kenneth Gainwell",
+              "position": "RB",
+              "pro_team": "PIT",
+              "points": 2.5000000000000004
+            },
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 10.200000000000001
+            },
+            {
+              "name": "DK Metcalf",
+              "position": "WR",
+              "pro_team": "PIT",
+              "points": 6.5
+            },
+            {
+              "name": "Cooper Kupp",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 1.7000000000000002
+            },
+            {
+              "name": "Michael Mayer",
+              "position": "TE",
+              "pro_team": "LV",
+              "points": 1.5
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "FLEX",
+              "pro_team": "MIN",
+              "points": 17.3
+            },
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "points": -4.0
+            },
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "points": 18.0
+            },
+            {
+              "name": "Sam Darnold",
+              "position": "QB",
+              "pro_team": "SEA",
+              "points": 8.62
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -1570,42 +2752,42 @@
             6,
             4
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 3-4) faces Conquering Heroes (Ben, #9, 3-4)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 3-4) faces Conquering Heroes (Ben, #9, 3-4); Play every week and it's Lisette 6-1 Ben"
         },
         {
           "team_ids": [
             3,
             11
           ],
-          "text": "Illusions Michael (Pete, #2, 5-2) squares off against Keep 'em and weep (Kris, #10, 2-5)"
+          "text": "Illusions Michael (Pete, #2, 5-2) squares off against Keep 'em and weep (Kris, #10, 2-5); Over a full season of head-to-head, Pete would be 5-2 against Kris"
         },
         {
           "team_ids": [
             1,
             9
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #4, 5-2) squares off against McConkey Kong Country (Ronjan, #7, 3-4)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #4, 5-2) squares off against McConkey Kong Country (Ronjan, #7, 3-4); Over a full season of head-to-head, Imran would be 2-5 against Ronjan"
         },
         {
           "team_ids": [
             5,
             7
           ],
-          "text": "Team Kantastrophe (Cara, #5, 4-3) faces Terrible Towels (Mike, #12, 1-6)"
+          "text": "Team Kantastrophe (Cara, #5, 4-3) squares off against Terrible Towels (Mike, #12, 1-6); Over a full season of head-to-head, Cara would be 7-0 against Mike"
         },
         {
           "team_ids": [
             8,
             10
           ],
-          "text": "Daddy Nielsen (Joe, #3, 5-2) squares off against Baker's Dirty Dozen (Karl, #8, 3-4)"
+          "text": "Daddy Nielsen (Joe, #3, 5-2) squares off against Baker's Dirty Dozen (Karl, #8, 3-4); Over a full season of head-to-head, Joe would be 5-2 against Karl"
         },
         {
           "team_ids": [
             12,
             2
           ],
-          "text": "Buffalo Abusement Park (Melinda, #11, 2-5) faces Mednis Madness (mariss, #1, 6-1)"
+          "text": "Buffalo Abusement Park (Melinda, #11, 2-5) faces Mednis Madness (mariss, #1, 6-1); Play every week and it's Melinda 1-6 mariss"
         }
       ]
     },
@@ -1617,7 +2799,10 @@
         "losses": 1,
         "points_for": 1025.9,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 5,
+        "games_remaining": 7
       },
       {
         "team_id": 3,
@@ -1626,7 +2811,10 @@
         "losses": 2,
         "points_for": 985.6,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 7
       },
       {
         "team_id": 8,
@@ -1635,7 +2823,10 @@
         "losses": 2,
         "points_for": 977.4,
         "points_back": 8.2,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 7
       },
       {
         "team_id": 1,
@@ -1644,7 +2835,10 @@
         "losses": 2,
         "points_for": 803.4,
         "points_back": 174.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 7
       },
       {
         "team_id": 5,
@@ -1653,7 +2847,10 @@
         "losses": 3,
         "points_for": 1032.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 7,
+        "games_remaining": 7
       },
       {
         "team_id": 6,
@@ -1662,7 +2859,10 @@
         "losses": 4,
         "points_for": 961.8,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       },
       {
         "team_id": 9,
@@ -1671,7 +2871,10 @@
         "losses": 4,
         "points_for": 915.1,
         "points_back": 46.7,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       },
       {
         "team_id": 10,
@@ -1680,7 +2883,10 @@
         "losses": 4,
         "points_for": 902.3,
         "points_back": 12.8,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       },
       {
         "team_id": 4,
@@ -1689,7 +2895,10 @@
         "losses": 4,
         "points_for": 744.8,
         "points_back": 157.5,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       },
       {
         "team_id": 11,
@@ -1698,7 +2907,10 @@
         "losses": 5,
         "points_for": 877.6,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       },
       {
         "team_id": 12,
@@ -1707,7 +2919,10 @@
         "losses": 5,
         "points_for": 850.3,
         "points_back": 27.3,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       },
       {
         "team_id": 7,
@@ -1716,7 +2931,10 @@
         "losses": 6,
         "points_for": 714.8,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 7
       }
     ]
   },
@@ -1729,7 +2947,145 @@
           6,
           4
         ],
-        "text": "This week's nail-biter: Mahomes is where the heart is \u2764 (Lisette) squeaked past Conquering Heroes (Ben) 115.8-113.2, a margin of just 2.7."
+        "text": "This week's nail-biter: Mahomes is where the heart is \u2764 (Lisette) squeaked past Conquering Heroes (Ben) 115.8-113.2, a margin of just 2.7.",
+        "lineups": {
+          "6": [
+            {
+              "name": "Patrick Mahomes",
+              "position": "QB",
+              "pro_team": "KC",
+              "points": 22.96
+            },
+            {
+              "name": "Christian McCaffrey",
+              "position": "RB",
+              "pro_team": "SF",
+              "points": 8.3
+            },
+            {
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "pro_team": "CAR",
+              "points": 5.4
+            },
+            {
+              "name": "Tetairoa McMillan",
+              "position": "WR",
+              "pro_team": "CAR",
+              "points": 13.4
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "points": 7.800000000000001
+            },
+            {
+              "name": "Jerry Jeudy",
+              "position": "WR",
+              "pro_team": "CLE",
+              "points": 0.0
+            },
+            {
+              "name": "David Njoku",
+              "position": "TE",
+              "pro_team": "CLE",
+              "points": 11.7
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "FLEX",
+              "pro_team": "NO",
+              "points": 5.5
+            },
+            {
+              "name": "Falcons D/ST",
+              "position": "D/ST",
+              "pro_team": "ATL",
+              "points": 0.0
+            },
+            {
+              "name": "Chase McLaughlin",
+              "position": "K",
+              "pro_team": "TB",
+              "points": 17.0
+            },
+            {
+              "name": "Bo Nix",
+              "position": "QB",
+              "pro_team": "DEN",
+              "points": 23.78
+            }
+          ],
+          "4": [
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "points": 28.3
+            },
+            {
+              "name": "Kimani Vidal",
+              "position": "RB",
+              "pro_team": "LAC",
+              "points": 19.200000000000003
+            },
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "points": 2.4000000000000004
+            },
+            {
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "pro_team": "PHI",
+              "points": 11.4
+            },
+            {
+              "name": "Tee Higgins",
+              "position": "WR",
+              "pro_team": "CIN",
+              "points": 10.9
+            },
+            {
+              "name": "Emeka Egbuka",
+              "position": "WR",
+              "pro_team": "TB",
+              "points": 5.0
+            },
+            {
+              "name": "Colston Loveland",
+              "position": "TE",
+              "pro_team": "CHI",
+              "points": 5.300000000000001
+            },
+            {
+              "name": "Alec Pierce",
+              "position": "FLEX",
+              "pro_team": "IND",
+              "points": 7.9
+            },
+            {
+              "name": "Packers D/ST",
+              "position": "D/ST",
+              "pro_team": "GB",
+              "points": 7.0
+            },
+            {
+              "name": "Evan McPherson",
+              "position": "K",
+              "pro_team": "CIN",
+              "points": 8.0
+            },
+            {
+              "name": "Carson Wentz",
+              "position": "QB",
+              "pro_team": "MIN",
+              "points": 7.76
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -1822,42 +3178,42 @@
             3,
             6
           ],
-          "text": "Illusions Michael (Pete, #3, 6-2) squares off against Mahomes is where the heart is \u2764 (Lisette, #6, 4-4)"
+          "text": "Illusions Michael (Pete, #3, 6-2) squares off against Mahomes is where the heart is \u2764 (Lisette, #6, 4-4); Over a full season of head-to-head, Pete would be 4-4 against Lisette"
         },
         {
           "team_ids": [
             4,
             1
           ],
-          "text": "Conquering Heroes (Ben, #10, 3-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-3)"
+          "text": "Conquering Heroes (Ben, #10, 3-5) squares off against Lamar and Drake's Grahamy's (Imran, #5, 5-3); Play every week and it's Ben 4-4 Imran"
         },
         {
           "team_ids": [
             11,
             5
           ],
-          "text": "Keep 'em and weep (Kris, #11, 2-6) squares off against Team Kantastrophe (Cara, #4, 5-3)"
+          "text": "Keep 'em and weep (Kris, #11, 2-6) faces Team Kantastrophe (Cara, #4, 5-3); Play every week and it's Kris 2-6 Cara"
         },
         {
           "team_ids": [
             9,
             8
           ],
-          "text": "McConkey Kong Country (Ronjan, #7, 4-4) squares off against Daddy Nielsen (Joe, #1, 6-2)"
+          "text": "McConkey Kong Country (Ronjan, #7, 4-4) faces Daddy Nielsen (Joe, #1, 6-2); Over a full season of head-to-head, Ronjan would be 3-5 against Joe"
         },
         {
           "team_ids": [
             7,
             12
           ],
-          "text": "Terrible Towels (Mike, #12, 1-7) faces Buffalo Abusement Park (Melinda, #9, 3-5)"
+          "text": "Terrible Towels (Mike, #12, 1-7) faces Buffalo Abusement Park (Melinda, #9, 3-5); Over a full season of head-to-head, Mike would be 3-5 against Melinda"
         },
         {
           "team_ids": [
             10,
             2
           ],
-          "text": "Baker's Dirty Dozen (Karl, #8, 3-5) squares off against Mednis Madness (mariss, #2, 6-2)"
+          "text": "Baker's Dirty Dozen (Karl, #8, 3-5) faces Mednis Madness (mariss, #2, 6-2); Play every week and it's Karl 4-4 mariss"
         }
       ]
     },
@@ -1869,7 +3225,10 @@
         "losses": 2,
         "points_for": 1124.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 5,
+        "games_remaining": 6
       },
       {
         "team_id": 2,
@@ -1878,7 +3237,10 @@
         "losses": 2,
         "points_for": 1121.3,
         "points_back": 3.4,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 5,
+        "games_remaining": 6
       },
       {
         "team_id": 3,
@@ -1887,7 +3249,10 @@
         "losses": 2,
         "points_for": 1109.4,
         "points_back": 11.9,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 5,
+        "games_remaining": 6
       },
       {
         "team_id": 5,
@@ -1896,7 +3261,10 @@
         "losses": 3,
         "points_for": 1171.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 6
       },
       {
         "team_id": 1,
@@ -1905,7 +3273,10 @@
         "losses": 3,
         "points_for": 893.5,
         "points_back": 278.2,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 6
       },
       {
         "team_id": 6,
@@ -1914,7 +3285,10 @@
         "losses": 4,
         "points_for": 1077.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       },
       {
         "team_id": 9,
@@ -1923,7 +3297,10 @@
         "losses": 4,
         "points_for": 1061.0,
         "points_back": 16.7,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       },
       {
         "team_id": 10,
@@ -1932,7 +3309,10 @@
         "losses": 5,
         "points_for": 1017.0,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       },
       {
         "team_id": 12,
@@ -1941,7 +3321,10 @@
         "losses": 5,
         "points_for": 1012.2,
         "points_back": 4.8,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       },
       {
         "team_id": 4,
@@ -1950,7 +3333,10 @@
         "losses": 5,
         "points_for": 858.0,
         "points_back": 154.2,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       },
       {
         "team_id": 11,
@@ -1959,7 +3345,10 @@
         "losses": 6,
         "points_for": 992.7,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       },
       {
         "team_id": 7,
@@ -1968,7 +3357,10 @@
         "losses": 7,
         "points_for": 819.4,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 6
       }
     ]
   },
@@ -1981,7 +3373,145 @@
           5,
           11
         ],
-        "text": "Team Kantastrophe (Cara) survived a scare from Keep 'em and weep (Kris), escaping with a 3.0-point win, 146.9-143.9."
+        "text": "Team Kantastrophe (Cara) survived a scare from Keep 'em and weep (Kris), escaping with a 3.0-point win, 146.9-143.9.",
+        "lineups": {
+          "5": [
+            {
+              "name": "Drake Maye",
+              "position": "QB",
+              "pro_team": "NE",
+              "points": 16.36
+            },
+            {
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "points": 13.600000000000001
+            },
+            {
+              "name": "Jonathan Taylor",
+              "position": "RB",
+              "pro_team": "IND",
+              "points": 6.7
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "MIA",
+              "points": 11.200000000000001
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "points": 11.0
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "points": 4.300000000000001
+            },
+            {
+              "name": "Dalton Schultz",
+              "position": "TE",
+              "pro_team": "HOU",
+              "points": 10.7
+            },
+            {
+              "name": "Chase Brown",
+              "position": "FLEX",
+              "pro_team": "CIN",
+              "points": 15.2
+            },
+            {
+              "name": "Titans D/ST",
+              "position": "D/ST",
+              "pro_team": "TEN",
+              "points": 20.0
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "points": 11.0
+            },
+            {
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "pro_team": "LAR",
+              "points": 26.84
+            }
+          ],
+          "11": [
+            {
+              "name": "Justin Herbert",
+              "position": "QB",
+              "pro_team": "LAC",
+              "points": 27.7
+            },
+            {
+              "name": "Terrell Jennings",
+              "position": "RB",
+              "pro_team": "NE",
+              "points": 10.9
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "points": 4.6000000000000005
+            },
+            {
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "pro_team": "IND",
+              "points": 16.0
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "points": 12.7
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "NE",
+              "points": 11.3
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
+              "points": 10.600000000000001
+            },
+            {
+              "name": "Sam LaPorta",
+              "position": "FLEX",
+              "pro_team": "DET",
+              "points": 18.700000000000003
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "points": 10.0
+            },
+            {
+              "name": "Jake Bates",
+              "position": "K",
+              "pro_team": "DET",
+              "points": 6.0
+            },
+            {
+              "name": "Dak Prescott",
+              "position": "QB",
+              "pro_team": "DAL",
+              "points": 15.4
+            }
+          ]
+        }
       },
       {
         "type": "stud_of_the_week",
@@ -2051,42 +3581,42 @@
             6,
             1
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 4-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-4)"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #6, 4-5) faces Lamar and Drake's Grahamy's (Imran, #5, 5-4); Play every week and it's Lisette 5-4 Imran"
         },
         {
           "team_ids": [
             5,
             3
           ],
-          "text": "Team Kantastrophe (Cara, #4, 6-3) squares off against Illusions Michael (Pete, #2, 7-2)"
+          "text": "Team Kantastrophe (Cara, #4, 6-3) squares off against Illusions Michael (Pete, #2, 7-2); Over a full season of head-to-head, Cara would be 6-3 against Pete"
         },
         {
           "team_ids": [
             8,
             4
           ],
-          "text": "Daddy Nielsen (Joe, #1, 7-2) squares off against Conquering Heroes (Ben, #8, 4-5)"
+          "text": "Daddy Nielsen (Joe, #1, 7-2) squares off against Conquering Heroes (Ben, #8, 4-5); Over a full season of head-to-head, Joe would be 7-2 against Ben"
         },
         {
           "team_ids": [
             12,
             11
           ],
-          "text": "Buffalo Abusement Park (Melinda, #9, 3-6) faces Keep 'em and weep (Kris, #11, 2-7)"
+          "text": "Buffalo Abusement Park (Melinda, #9, 3-6) squares off against Keep 'em and weep (Kris, #11, 2-7); Play every week and it's Melinda 3-6 Kris"
         },
         {
           "team_ids": [
             2,
             9
           ],
-          "text": "Mednis Madness (mariss, #3, 7-2) squares off against McConkey Kong Country (Ronjan, #7, 4-5)"
+          "text": "Mednis Madness (mariss, #3, 7-2) squares off against McConkey Kong Country (Ronjan, #7, 4-5); Over a full season of head-to-head, mariss would be 5-4 against Ronjan"
         },
         {
           "team_ids": [
             10,
             7
           ],
-          "text": "Baker's Dirty Dozen (Karl, #10, 3-6) faces Terrible Towels (Mike, #12, 2-7)"
+          "text": "Baker's Dirty Dozen (Karl, #10, 3-6) squares off against Terrible Towels (Mike, #12, 2-7); Over a full season of head-to-head, Karl would be 6-3 against Mike"
         }
       ]
     },
@@ -2098,7 +3628,10 @@
         "losses": 2,
         "points_for": 1270.9,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 5
       },
       {
         "team_id": 3,
@@ -2107,7 +3640,10 @@
         "losses": 2,
         "points_for": 1247.2,
         "points_back": 23.7,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 5
       },
       {
         "team_id": 2,
@@ -2116,7 +3652,10 @@
         "losses": 2,
         "points_for": 1227.6,
         "points_back": 19.6,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 5
       },
       {
         "team_id": 5,
@@ -2125,7 +3664,10 @@
         "losses": 3,
         "points_for": 1318.6,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 4,
+        "games_remaining": 5
       },
       {
         "team_id": 1,
@@ -2134,7 +3676,10 @@
         "losses": 4,
         "points_for": 1043.5,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 5,
+        "games_remaining": 5
       },
       {
         "team_id": 6,
@@ -2143,7 +3688,10 @@
         "losses": 5,
         "points_for": 1205.6,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       },
       {
         "team_id": 9,
@@ -2152,7 +3700,10 @@
         "losses": 5,
         "points_for": 1200.0,
         "points_back": 5.6,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       },
       {
         "team_id": 4,
@@ -2161,7 +3712,10 @@
         "losses": 5,
         "points_for": 1036.5,
         "points_back": 163.5,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       },
       {
         "team_id": 12,
@@ -2170,7 +3724,10 @@
         "losses": 6,
         "points_for": 1122.8,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       },
       {
         "team_id": 10,
@@ -2179,7 +3736,10 @@
         "losses": 6,
         "points_for": 1107.5,
         "points_back": 15.3,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       },
       {
         "team_id": 11,
@@ -2188,7 +3748,10 @@
         "losses": 7,
         "points_for": 1136.6,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       },
       {
         "team_id": 7,
@@ -2197,7 +3760,10 @@
         "losses": 7,
         "points_for": 953.1,
         "points_back": 183.5,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 5
       }
     ]
   },
@@ -2210,7 +3776,145 @@
           4,
           8
         ],
-        "text": "This week's nail-biter: Conquering Heroes (Ben) squeaked past Daddy Nielsen (Joe) 121.5-121.4, a margin of just 0.1."
+        "text": "This week's nail-biter: Conquering Heroes (Ben) squeaked past Daddy Nielsen (Joe) 121.5-121.4, a margin of just 0.1.",
+        "lineups": {
+          "4": [
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
+              "points": 7.84
+            },
+            {
+              "name": "Ashton Jeanty",
+              "position": "RB",
+              "pro_team": "LV",
+              "points": 13.8
+            },
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "points": 8.8
+            },
+            {
+              "name": "Emeka Egbuka",
+              "position": "WR",
+              "pro_team": "TB",
+              "points": 20.5
+            },
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "ARI",
+              "points": 12.8
+            },
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "points": 5.5
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "points": 3.2
+            },
+            {
+              "name": "Kimani Vidal",
+              "position": "FLEX",
+              "pro_team": "LAC",
+              "points": 17.3
+            },
+            {
+              "name": "Panthers D/ST",
+              "position": "D/ST",
+              "pro_team": "CAR",
+              "points": 4.0
+            },
+            {
+              "name": "Tyler Loop",
+              "position": "K",
+              "pro_team": "BAL",
+              "points": 13.0
+            },
+            {
+              "name": "J.J. McCarthy",
+              "position": "QB",
+              "pro_team": "MIN",
+              "points": 14.72
+            }
+          ],
+          "8": [
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "points": 25.1
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "points": 11.600000000000001
+            },
+            {
+              "name": "Kenneth Walker III",
+              "position": "RB",
+              "pro_team": "SEA",
+              "points": 7.5
+            },
+            {
+              "name": "Chris Olave",
+              "position": "WR",
+              "pro_team": "NO",
+              "points": 18.9
+            },
+            {
+              "name": "Jaxon Smith-Njigba",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 17.8
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "points": 5.7
+            },
+            {
+              "name": "Luke Musgrave",
+              "position": "TE",
+              "pro_team": "GB",
+              "points": 3.8000000000000003
+            },
+            {
+              "name": "Romeo Doubs",
+              "position": "FLEX",
+              "pro_team": "GB",
+              "points": 1.0
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "points": 16.0
+            },
+            {
+              "name": "Michael Badgley",
+              "position": "K",
+              "pro_team": "FA",
+              "points": 7.0
+            },
+            {
+              "name": "Justin Fields",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "points": 6.960000000000001
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -2303,42 +4007,42 @@
             5,
             6
           ],
-          "text": "Team Kantastrophe (Cara, #1, 7-3) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 4-6)"
+          "text": "Team Kantastrophe (Cara, #1, 7-3) squares off against Mahomes is where the heart is \u2764 (Lisette, #8, 4-6); Over a full season of head-to-head, Cara would be 7-3 against Lisette"
         },
         {
           "team_ids": [
             1,
             8
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #5, 6-4) faces Daddy Nielsen (Joe, #3, 7-3)"
+          "text": "Lamar and Drake's Grahamy's (Imran, #5, 6-4) faces Daddy Nielsen (Joe, #3, 7-3); Play every week and it's Imran 3-7 Joe"
         },
         {
           "team_ids": [
             3,
             12
           ],
-          "text": "Illusions Michael (Pete, #2, 7-3) faces Buffalo Abusement Park (Melinda, #9, 4-6)"
+          "text": "Illusions Michael (Pete, #2, 7-3) squares off against Buffalo Abusement Park (Melinda, #9, 4-6); Over a full season of head-to-head, Pete would be 8-2 against Melinda"
         },
         {
           "team_ids": [
             4,
             2
           ],
-          "text": "Conquering Heroes (Ben, #7, 5-5) squares off against Mednis Madness (mariss, #4, 7-3)"
+          "text": "Conquering Heroes (Ben, #7, 5-5) squares off against Mednis Madness (mariss, #4, 7-3); Over a full season of head-to-head, Ben would be 4-6 against mariss"
         },
         {
           "team_ids": [
             11,
             10
           ],
-          "text": "Keep 'em and weep (Kris, #12, 2-8) squares off against Baker's Dirty Dozen (Karl, #10, 3-7)"
+          "text": "Keep 'em and weep (Kris, #12, 2-8) faces Baker's Dirty Dozen (Karl, #10, 3-7); Play every week and it's Kris 6-4 Karl"
         },
         {
           "team_ids": [
             9,
             7
           ],
-          "text": "McConkey Kong Country (Ronjan, #6, 5-5) faces Terrible Towels (Mike, #11, 3-7)"
+          "text": "McConkey Kong Country (Ronjan, #6, 5-5) faces Terrible Towels (Mike, #11, 3-7); Play every week and it's Ronjan 9-1 Mike"
         }
       ]
     },
@@ -2350,7 +4054,10 @@
         "losses": 3,
         "points_for": 1504.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 4
       },
       {
         "team_id": 3,
@@ -2359,7 +4066,10 @@
         "losses": 3,
         "points_for": 1414.9,
         "points_back": 89.8,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 4
       },
       {
         "team_id": 8,
@@ -2368,7 +4078,10 @@
         "losses": 3,
         "points_for": 1392.3,
         "points_back": 22.6,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 4
       },
       {
         "team_id": 2,
@@ -2377,7 +4090,10 @@
         "losses": 3,
         "points_for": 1342.1,
         "points_back": 50.2,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 4
       },
       {
         "team_id": 1,
@@ -2386,7 +4102,10 @@
         "losses": 4,
         "points_for": 1166.1,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 4,
+        "games_remaining": 4
       },
       {
         "team_id": 9,
@@ -2395,7 +4114,10 @@
         "losses": 5,
         "points_for": 1355.5,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       },
       {
         "team_id": 4,
@@ -2404,7 +4126,10 @@
         "losses": 5,
         "points_for": 1158.0,
         "points_back": 197.5,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       },
       {
         "team_id": 6,
@@ -2413,7 +4138,10 @@
         "losses": 6,
         "points_for": 1303.3,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       },
       {
         "team_id": 12,
@@ -2422,7 +4150,10 @@
         "losses": 6,
         "points_for": 1219.3,
         "points_back": 84.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       },
       {
         "team_id": 10,
@@ -2431,7 +4162,10 @@
         "losses": 7,
         "points_for": 1212.7,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       },
       {
         "team_id": 7,
@@ -2440,7 +4174,10 @@
         "losses": 7,
         "points_for": 1070.4,
         "points_back": 142.3,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       },
       {
         "team_id": 11,
@@ -2449,7 +4186,10 @@
         "losses": 8,
         "points_for": 1230.0,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 4
       }
     ]
   },
@@ -2462,7 +4202,145 @@
           1,
           8
         ],
-        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Daddy Nielsen (Joe), escaping with a 1.4-point win, 112.1-110.7."
+        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Daddy Nielsen (Joe), escaping with a 1.4-point win, 112.1-110.7.",
+        "lineups": {
+          "1": [
+            {
+              "name": "Tua Tagovailoa",
+              "position": "QB",
+              "pro_team": "MIA",
+              "points": 6.84
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "points": 16.1
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 6.5
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 15.4
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 15.100000000000001
+            },
+            {
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "points": 1.5
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "points": 21.7
+            },
+            {
+              "name": "David Montgomery",
+              "position": "FLEX",
+              "pro_team": "HOU",
+              "points": 4.2
+            },
+            {
+              "name": "Jaguars D/ST",
+              "position": "D/ST",
+              "pro_team": "JAX",
+              "points": 12.0
+            },
+            {
+              "name": "Evan McPherson",
+              "position": "K",
+              "pro_team": "CIN",
+              "points": 8.0
+            },
+            {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "pro_team": "BAL",
+              "points": 4.72
+            }
+          ],
+          "8": [
+            {
+              "name": "Justin Fields",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "points": 19.34
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "points": 9.5
+            },
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 5.6000000000000005
+            },
+            {
+              "name": "Jaxon Smith-Njigba",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 16.1
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "points": 8.600000000000001
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "points": 6.800000000000001
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "points": 9.6
+            },
+            {
+              "name": "Javonte Williams",
+              "position": "FLEX",
+              "pro_team": "DAL",
+              "points": 9.8
+            },
+            {
+              "name": "Texans D/ST",
+              "position": "D/ST",
+              "pro_team": "HOU",
+              "points": 10.0
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "points": 5.0
+            },
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "points": 10.32
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -2556,42 +4434,42 @@
             6,
             8
           ],
-          "text": "Mahomes is where the heart is \u2764 (Lisette, #8, 5-6) faces Daddy Nielsen (Joe, #3, 7-4) again - Daddy Nielsen (Joe) won the first meeting 153.5-108.3"
+          "text": "Mahomes is where the heart is \u2764 (Lisette, #8, 5-6) faces Daddy Nielsen (Joe, #3, 7-4) again - Daddy Nielsen (Joe) won the first meeting 153.5-108.3; Over a full season of head-to-head, Lisette would be 4-7 against Joe"
         },
         {
           "team_ids": [
             12,
             5
           ],
-          "text": "Buffalo Abusement Park (Melinda, #10, 4-7) faces Team Kantastrophe (Cara, #2, 7-4) again - Buffalo Abusement Park (Melinda) won the first meeting 134.0-122.3"
+          "text": "Rematch: Buffalo Abusement Park (Melinda, #10, 4-7) vs. Team Kantastrophe (Cara, #2, 7-4); Buffalo Abusement Park (Melinda) took the first one 134.0-122.3; Over a full season of head-to-head, Melinda would be 3-8 against Cara"
         },
         {
           "team_ids": [
             2,
             1
           ],
-          "text": "Rematch: Mednis Madness (mariss, #4, 7-4) vs. Lamar and Drake's Grahamy's (Imran, #5, 7-4); Lamar and Drake's Grahamy's (Imran) took the first one 140.0-111.9"
+          "text": "Rematch: Mednis Madness (mariss, #4, 7-4) vs. Lamar and Drake's Grahamy's (Imran, #5, 7-4); Lamar and Drake's Grahamy's (Imran) took the first one 140.0-111.9; Play every week and it's mariss 7-4 Imran"
         },
         {
           "team_ids": [
             10,
             3
           ],
-          "text": "Baker's Dirty Dozen (Karl, #9, 4-7) faces Illusions Michael (Pete, #1, 8-3) again - Illusions Michael (Pete) won the first meeting 159.0-111.9"
+          "text": "Baker's Dirty Dozen (Karl, #9, 4-7) faces Illusions Michael (Pete, #1, 8-3) again - Illusions Michael (Pete) won the first meeting 159.0-111.9; Over a full season of head-to-head, Karl would be 3-8 against Pete"
         },
         {
           "team_ids": [
             7,
             4
           ],
-          "text": "Rematch: Terrible Towels (Mike, #11, 4-7) vs. Conquering Heroes (Ben, #6, 6-5); Conquering Heroes (Ben) took the first one 100.4-86.9"
+          "text": "Terrible Towels (Mike, #11, 4-7) faces Conquering Heroes (Ben, #6, 6-5) again - Conquering Heroes (Ben) won the first meeting 100.4-86.9; Play every week and it's Mike 4-7 Ben"
         },
         {
           "team_ids": [
             9,
             11
           ],
-          "text": "Rematch: McConkey Kong Country (Ronjan, #7, 5-6) vs. Keep 'em and weep (Kris, #12, 2-9); Keep 'em and weep (Kris) took the first one 143.0-115.9"
+          "text": "Rematch: McConkey Kong Country (Ronjan, #7, 5-6) vs. Keep 'em and weep (Kris, #12, 2-9); Keep 'em and weep (Kris) took the first one 143.0-115.9; Over a full season of head-to-head, Ronjan would be 7-4 against Kris"
         }
       ]
     },
@@ -2603,7 +4481,10 @@
         "losses": 3,
         "points_for": 1564.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 1,
+        "games_remaining": 3
       },
       {
         "team_id": 5,
@@ -2612,7 +4493,10 @@
         "losses": 4,
         "points_for": 1631.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 2,
+        "games_remaining": 3
       },
       {
         "team_id": 8,
@@ -2621,7 +4505,10 @@
         "losses": 4,
         "points_for": 1502.9,
         "points_back": 128.8,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 2,
+        "games_remaining": 3
       },
       {
         "team_id": 2,
@@ -2630,7 +4517,10 @@
         "losses": 4,
         "points_for": 1438.3,
         "points_back": 64.6,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 2,
+        "games_remaining": 3
       },
       {
         "team_id": 1,
@@ -2639,7 +4529,10 @@
         "losses": 4,
         "points_for": 1278.1,
         "points_back": 160.2,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 2,
+        "games_remaining": 3
       },
       {
         "team_id": 4,
@@ -2648,7 +4541,10 @@
         "losses": 5,
         "points_for": 1282.2,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 3,
+        "games_remaining": 3
       },
       {
         "team_id": 9,
@@ -2657,7 +4553,10 @@
         "losses": 6,
         "points_for": 1455.0,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 3
       },
       {
         "team_id": 6,
@@ -2666,7 +4565,10 @@
         "losses": 6,
         "points_for": 1441.0,
         "points_back": 14.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 3
       },
       {
         "team_id": 10,
@@ -2675,7 +4577,10 @@
         "losses": 7,
         "points_for": 1350.0,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 3
       },
       {
         "team_id": 12,
@@ -2684,7 +4589,10 @@
         "losses": 7,
         "points_for": 1346.0,
         "points_back": 4.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 3
       },
       {
         "team_id": 7,
@@ -2693,7 +4601,10 @@
         "losses": 7,
         "points_for": 1209.8,
         "points_back": 136.2,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 3
       },
       {
         "team_id": 11,
@@ -2702,7 +4613,10 @@
         "losses": 9,
         "points_for": 1324.7,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 3
       }
     ]
   },
@@ -2715,7 +4629,145 @@
           3,
           10
         ],
-        "text": "Illusions Michael (Pete) survived a scare from Baker's Dirty Dozen (Karl), escaping with a 2.8-point win, 119.3-116.5."
+        "text": "Illusions Michael (Pete) survived a scare from Baker's Dirty Dozen (Karl), escaping with a 2.8-point win, 119.3-116.5.",
+        "lineups": {
+          "3": [
+            {
+              "name": "Josh Allen",
+              "position": "QB",
+              "pro_team": "BUF",
+              "points": 8.120000000000001
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
+              "points": 9.600000000000001
+            },
+            {
+              "name": "Rhamondre Stevenson",
+              "position": "RB",
+              "pro_team": "NE",
+              "points": 1.5
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "PHI",
+              "points": 21.0
+            },
+            {
+              "name": "Darnell Mooney",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 14.9
+            },
+            {
+              "name": "Rome Odunze",
+              "position": "WR",
+              "pro_team": "CHI",
+              "points": 6.800000000000001
+            },
+            {
+              "name": "Trey McBride",
+              "position": "TE",
+              "pro_team": "ARI",
+              "points": 12.4
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "FLEX",
+              "pro_team": "TEN",
+              "points": 6.1
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "points": 6.0
+            },
+            {
+              "name": "Harrison Butker",
+              "position": "K",
+              "pro_team": "KC",
+              "points": 16.0
+            },
+            {
+              "name": "Daniel Jones",
+              "position": "QB",
+              "pro_team": "IND",
+              "points": 16.84
+            }
+          ],
+          "10": [
+            {
+              "name": "Sam Darnold",
+              "position": "QB",
+              "pro_team": "SEA",
+              "points": 17.66
+            },
+            {
+              "name": "Derrick Henry",
+              "position": "RB",
+              "pro_team": "BAL",
+              "points": 21.799999999999997
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
+              "points": 1.4000000000000001
+            },
+            {
+              "name": "George Pickens",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 25.1
+            },
+            {
+              "name": "DK Metcalf",
+              "position": "WR",
+              "pro_team": "PIT",
+              "points": 11.899999999999999
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "points": 0.0
+            },
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "pro_team": "MIN",
+              "points": 3.9000000000000004
+            },
+            {
+              "name": "Kenneth Gainwell",
+              "position": "FLEX",
+              "pro_team": "PIT",
+              "points": 15.200000000000001
+            },
+            {
+              "name": "Steelers D/ST",
+              "position": "D/ST",
+              "pro_team": "PIT",
+              "points": 10.0
+            },
+            {
+              "name": "Brandon Aubrey",
+              "position": "K",
+              "pro_team": "DAL",
+              "points": 6.0
+            },
+            {
+              "name": "Baker Mayfield",
+              "position": "QB",
+              "pro_team": "TB",
+              "points": 3.54
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -2793,42 +4845,42 @@
             12,
             6
           ],
-          "text": "Buffalo Abusement Park (Melinda, #10, 4-8) faces Mahomes is where the heart is \u2764 (Lisette, #8, 5-7) again - Buffalo Abusement Park (Melinda) won the first meeting 182.9-112.8"
+          "text": "Buffalo Abusement Park (Melinda, #10, 4-8) faces Mahomes is where the heart is \u2764 (Lisette, #8, 5-7) again - Buffalo Abusement Park (Melinda) won the first meeting 182.9-112.8; Play every week and it's Melinda 3-9 Lisette"
         },
         {
           "team_ids": [
             8,
             2
           ],
-          "text": "Rematch: Daddy Nielsen (Joe, #3, 8-4) vs. Mednis Madness (mariss, #4, 8-4); Mednis Madness (mariss) took the first one 189.2-121.1"
+          "text": "Daddy Nielsen (Joe, #3, 8-4) faces Mednis Madness (mariss, #4, 8-4) again - Mednis Madness (mariss) won the first meeting 189.2-121.1; Over a full season of head-to-head, Joe would be 8-4 against mariss"
         },
         {
           "team_ids": [
             5,
             10
           ],
-          "text": "Team Kantastrophe (Cara, #2, 8-4) faces Baker's Dirty Dozen (Karl, #9, 4-8) again - Team Kantastrophe (Cara) won the first meeting 142.1-114.5"
+          "text": "Rematch: Team Kantastrophe (Cara, #2, 8-4) vs. Baker's Dirty Dozen (Karl, #9, 4-8); Team Kantastrophe (Cara) took the first one 142.1-114.5; Over a full season of head-to-head, Cara would be 10-2 against Karl"
         },
         {
           "team_ids": [
             1,
             7
           ],
-          "text": "Lamar and Drake's Grahamy's (Imran, #6, 7-5) faces Terrible Towels (Mike, #11, 4-8) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 138.7-119.1"
+          "text": "Lamar and Drake's Grahamy's (Imran, #6, 7-5) faces Terrible Towels (Mike, #11, 4-8) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 138.7-119.1; Play every week and it's Imran 8-4 Mike"
         },
         {
           "team_ids": [
             3,
             9
           ],
-          "text": "Rematch: Illusions Michael (Pete, #1, 9-3) vs. McConkey Kong Country (Ronjan, #7, 6-6); Illusions Michael (Pete) took the first one 139.6-112.2"
+          "text": "Rematch: Illusions Michael (Pete, #1, 9-3) vs. McConkey Kong Country (Ronjan, #7, 6-6); Illusions Michael (Pete) took the first one 139.6-112.2; Over a full season of head-to-head, Pete would be 6-6 against Ronjan"
         },
         {
           "team_ids": [
             4,
             11
           ],
-          "text": "Conquering Heroes (Ben, #5, 7-5) faces Keep 'em and weep (Kris, #12, 2-10) again - Keep 'em and weep (Kris) won the first meeting 127.1-73.2"
+          "text": "Rematch: Conquering Heroes (Ben, #5, 7-5) vs. Keep 'em and weep (Kris, #12, 2-10); Keep 'em and weep (Kris) took the first one 127.1-73.2; Over a full season of head-to-head, Ben would be 5-7 against Kris"
         }
       ]
     },
@@ -2840,7 +4892,10 @@
         "losses": 3,
         "points_for": 1683.9,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 2
       },
       {
         "team_id": 5,
@@ -2849,7 +4904,10 @@
         "losses": 4,
         "points_for": 1763.8,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 1,
+        "games_remaining": 2
       },
       {
         "team_id": 8,
@@ -2858,7 +4916,10 @@
         "losses": 4,
         "points_for": 1666.3,
         "points_back": 97.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 1,
+        "games_remaining": 2
       },
       {
         "team_id": 2,
@@ -2867,7 +4928,10 @@
         "losses": 4,
         "points_for": 1609.6,
         "points_back": 56.7,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 1,
+        "games_remaining": 2
       },
       {
         "team_id": 4,
@@ -2876,7 +4940,10 @@
         "losses": 5,
         "points_for": 1419.2,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 2,
+        "games_remaining": 2
       },
       {
         "team_id": 1,
@@ -2885,7 +4952,10 @@
         "losses": 5,
         "points_for": 1381.8,
         "points_back": 37.4,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 2,
+        "games_remaining": 2
       },
       {
         "team_id": 9,
@@ -2894,7 +4964,10 @@
         "losses": 6,
         "points_for": 1644.4,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 2
       },
       {
         "team_id": 6,
@@ -2903,7 +4976,10 @@
         "losses": 7,
         "points_for": 1563.6,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 2
       },
       {
         "team_id": 10,
@@ -2912,7 +4988,10 @@
         "losses": 8,
         "points_for": 1466.5,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 2
       },
       {
         "team_id": 12,
@@ -2921,7 +5000,10 @@
         "losses": 8,
         "points_for": 1450.7,
         "points_back": 15.8,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 2
       },
       {
         "team_id": 7,
@@ -2930,7 +5012,10 @@
         "losses": 8,
         "points_for": 1277.0,
         "points_back": 173.7,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 2
       },
       {
         "team_id": 11,
@@ -2939,7 +5024,10 @@
         "losses": 10,
         "points_for": 1445.5,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 2
       }
     ]
   },
@@ -2952,7 +5040,145 @@
           8,
           2
         ],
-        "text": "Daddy Nielsen (Joe) survived a scare from Mednis Madness (mariss), escaping with a 1.5-point win, 101.8-100.3."
+        "text": "Daddy Nielsen (Joe) survived a scare from Mednis Madness (mariss), escaping with a 1.5-point win, 101.8-100.3.",
+        "lineups": {
+          "8": [
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "points": 9.46
+            },
+            {
+              "name": "Javonte Williams",
+              "position": "RB",
+              "pro_team": "DAL",
+              "points": 15.5
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "points": 5.6000000000000005
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "points": 25.4
+            },
+            {
+              "name": "Chris Olave",
+              "position": "WR",
+              "pro_team": "NO",
+              "points": 12.7
+            },
+            {
+              "name": "Jaxon Smith-Njigba",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 3.3000000000000003
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "points": 6.1
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "FLEX",
+              "pro_team": "MIN",
+              "points": 1.4
+            },
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "points": 3.0
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "points": 6.0
+            },
+            {
+              "name": "Kirk Cousins",
+              "position": "QB",
+              "pro_team": "ATL",
+              "points": 13.36
+            }
+          ],
+          "2": [
+            {
+              "name": "Jared Goff",
+              "position": "QB",
+              "pro_team": "DET",
+              "points": 20.64
+            },
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
+              "points": 9.600000000000001
+            },
+            {
+              "name": "Tyrone Tracy Jr.",
+              "position": "RB",
+              "pro_team": "NYG",
+              "points": 3.8
+            },
+            {
+              "name": "Wan'Dale Robinson",
+              "position": "WR",
+              "pro_team": "NYG",
+              "points": 6.9
+            },
+            {
+              "name": "Keenan Allen",
+              "position": "WR",
+              "pro_team": "LAC",
+              "points": 5.0
+            },
+            {
+              "name": "Amon-Ra St. Brown",
+              "position": "WR",
+              "pro_team": "DET",
+              "points": 0.0
+            },
+            {
+              "name": "Tyler Warren",
+              "position": "TE",
+              "pro_team": "IND",
+              "points": 9.7
+            },
+            {
+              "name": "Deebo Samuel",
+              "position": "FLEX",
+              "pro_team": "WSH",
+              "points": 8.600000000000001
+            },
+            {
+              "name": "Dolphins D/ST",
+              "position": "D/ST",
+              "pro_team": "MIA",
+              "points": 13.0
+            },
+            {
+              "name": "Andy Borregales",
+              "position": "K",
+              "pro_team": "NE",
+              "points": 14.0
+            },
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "points": 9.040000000000001
+            }
+          ]
+        }
       },
       {
         "type": "stud_of_the_week",
@@ -3014,42 +5240,42 @@
             6,
             2
           ],
-          "text": "Rematch: Mahomes is where the heart is \u2764 (Lisette, #8, 6-7) vs. Mednis Madness (mariss, #4, 8-5); Mednis Madness (mariss) took the first one 131.2-111.0"
+          "text": "Rematch: Mahomes is where the heart is \u2764 (Lisette, #8, 6-7) vs. Mednis Madness (mariss, #4, 8-5); Mednis Madness (mariss) took the first one 131.2-111.0; Over a full season of head-to-head, Lisette would be 7-6 against mariss"
         },
         {
           "team_ids": [
             10,
             12
           ],
-          "text": "Baker's Dirty Dozen (Karl, #10, 4-9) faces Buffalo Abusement Park (Melinda, #9, 4-9) again - Baker's Dirty Dozen (Karl) won the first meeting 131.6-87.1"
+          "text": "Baker's Dirty Dozen (Karl, #10, 4-9) faces Buffalo Abusement Park (Melinda, #9, 4-9) again - Baker's Dirty Dozen (Karl) won the first meeting 131.6-87.1; Over a full season of head-to-head, Karl would be 7-6 against Melinda"
         },
         {
           "team_ids": [
             7,
             8
           ],
-          "text": "Terrible Towels (Mike, #11, 4-9) faces Daddy Nielsen (Joe, #3, 9-4) again - Daddy Nielsen (Joe) won the first meeting 132.8-99.0"
+          "text": "Terrible Towels (Mike, #11, 4-9) faces Daddy Nielsen (Joe, #3, 9-4) again - Daddy Nielsen (Joe) won the first meeting 132.8-99.0; Play every week and it's Mike 2-11 Joe"
         },
         {
           "team_ids": [
             9,
             5
           ],
-          "text": "McConkey Kong Country (Ronjan, #7, 6-7) faces Team Kantastrophe (Cara, #2, 9-4) again - Team Kantastrophe (Cara) won the first meeting 156.4-128.5"
+          "text": "McConkey Kong Country (Ronjan, #7, 6-7) faces Team Kantastrophe (Cara, #2, 9-4) again - Team Kantastrophe (Cara) won the first meeting 156.4-128.5; Play every week and it's Ronjan 4-9 Cara"
         },
         {
           "team_ids": [
             11,
             1
           ],
-          "text": "Keep 'em and weep (Kris, #12, 2-11) faces Lamar and Drake's Grahamy's (Imran, #6, 8-5) again - Lamar and Drake's Grahamy's (Imran) won the first meeting 119.0-116.6"
+          "text": "Rematch: Keep 'em and weep (Kris, #12, 2-11) vs. Lamar and Drake's Grahamy's (Imran, #6, 8-5); Lamar and Drake's Grahamy's (Imran) took the first one 119.0-116.6; Over a full season of head-to-head, Kris would be 5-8 against Imran"
         },
         {
           "team_ids": [
             4,
             3
           ],
-          "text": "Rematch: Conquering Heroes (Ben, #5, 8-5) vs. Illusions Michael (Pete, #1, 10-3); Illusions Michael (Pete) took the first one 161.4-106.3"
+          "text": "Rematch: Conquering Heroes (Ben, #5, 8-5) vs. Illusions Michael (Pete, #1, 10-3); Illusions Michael (Pete) took the first one 161.4-106.3; Play every week and it's Ben 3-10 Pete"
         }
       ]
     },
@@ -3061,7 +5287,10 @@
         "losses": 3,
         "points_for": 1841.5,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 1
       },
       {
         "team_id": 5,
@@ -3070,7 +5299,10 @@
         "losses": 4,
         "points_for": 1886.7,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 1
       },
       {
         "team_id": 8,
@@ -3079,7 +5311,10 @@
         "losses": 4,
         "points_for": 1768.1,
         "points_back": 118.6,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 1
       },
       {
         "team_id": 2,
@@ -3088,7 +5323,10 @@
         "losses": 5,
         "points_for": 1709.9,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 1
       },
       {
         "team_id": 4,
@@ -3097,7 +5335,10 @@
         "losses": 5,
         "points_for": 1539.9,
         "points_back": 170.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 1
       },
       {
         "team_id": 1,
@@ -3106,7 +5347,10 @@
         "losses": 5,
         "points_for": 1501.7,
         "points_back": 38.2,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 1
       },
       {
         "team_id": 9,
@@ -3115,7 +5359,10 @@
         "losses": 7,
         "points_for": 1781.5,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 1
       },
       {
         "team_id": 6,
@@ -3124,7 +5371,10 @@
         "losses": 7,
         "points_for": 1713.6,
         "points_back": 67.9,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 1
       },
       {
         "team_id": 12,
@@ -3133,7 +5383,10 @@
         "losses": 9,
         "points_for": 1577.5,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 1
       },
       {
         "team_id": 10,
@@ -3142,7 +5395,10 @@
         "losses": 9,
         "points_for": 1564.5,
         "points_back": 13.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 1
       },
       {
         "team_id": 7,
@@ -3151,7 +5407,10 @@
         "losses": 9,
         "points_for": 1383.5,
         "points_back": 181.0,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 1
       },
       {
         "team_id": 11,
@@ -3160,7 +5419,10 @@
         "losses": 11,
         "points_for": 1533.1,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 1
       }
     ]
   },
@@ -3173,7 +5435,145 @@
           5,
           9
         ],
-        "text": "This week's nail-biter: Team Kantastrophe (Cara) squeaked past McConkey Kong Country (Ronjan) 131.1-128.3, a margin of just 2.9."
+        "text": "This week's nail-biter: Team Kantastrophe (Cara) squeaked past McConkey Kong Country (Ronjan) 131.1-128.3, a margin of just 2.9.",
+        "lineups": {
+          "5": [
+            {
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "pro_team": "LAR",
+              "points": 23.240000000000002
+            },
+            {
+              "name": "Jonathan Taylor",
+              "position": "RB",
+              "pro_team": "IND",
+              "points": 11.4
+            },
+            {
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "points": 8.4
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "MIA",
+              "points": 15.6
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "points": 12.8
+            },
+            {
+              "name": "Chimere Dike",
+              "position": "WR",
+              "pro_team": "TEN",
+              "points": 10.9
+            },
+            {
+              "name": "Dalton Schultz",
+              "position": "TE",
+              "pro_team": "HOU",
+              "points": 3.7
+            },
+            {
+              "name": "Chase Brown",
+              "position": "FLEX",
+              "pro_team": "CIN",
+              "points": 17.0
+            },
+            {
+              "name": "Jets D/ST",
+              "position": "D/ST",
+              "pro_team": "NYJ",
+              "points": 5.0
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "points": 9.0
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "points": 14.100000000000001
+            }
+          ],
+          "9": [
+            {
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "pro_team": "PHI",
+              "points": 0.40000000000000036
+            },
+            {
+              "name": "Jahmyr Gibbs",
+              "position": "RB",
+              "pro_team": "DET",
+              "points": 33.5
+            },
+            {
+              "name": "Breece Hall",
+              "position": "RB",
+              "pro_team": "NYJ",
+              "points": 4.3
+            },
+            {
+              "name": "Puka Nacua",
+              "position": "WR",
+              "pro_team": "LAR",
+              "points": 32.2
+            },
+            {
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "pro_team": "PHI",
+              "points": 5.7
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "points": 4.9
+            },
+            {
+              "name": "Oronde Gadsden",
+              "position": "TE",
+              "pro_team": "LAC",
+              "points": 1.2000000000000002
+            },
+            {
+              "name": "Ladd McConkey",
+              "position": "FLEX",
+              "pro_team": "LAC",
+              "points": 1.7000000000000002
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "points": 5.0
+            },
+            {
+              "name": "Cameron Dicker",
+              "position": "K",
+              "pro_team": "LAC",
+              "points": 20.0
+            },
+            {
+              "name": "Trevor Lawrence",
+              "position": "QB",
+              "pro_team": "JAX",
+              "points": 19.36
+            }
+          ]
+        }
       },
       {
         "type": "blowout_of_the_week",
@@ -3252,7 +5652,10 @@
         "losses": 4,
         "points_for": 2017.9,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 0
       },
       {
         "team_id": 3,
@@ -3261,7 +5664,10 @@
         "losses": 4,
         "points_for": 1989.8,
         "points_back": 28.1,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 0
       },
       {
         "team_id": 8,
@@ -3270,7 +5676,10 @@
         "losses": 4,
         "points_for": 1877.3,
         "points_back": 112.5,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 0
       },
       {
         "team_id": 2,
@@ -3279,7 +5688,10 @@
         "losses": 5,
         "points_for": 1811.2,
         "points_back": null,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 0
       },
       {
         "team_id": 4,
@@ -3288,7 +5700,10 @@
         "losses": 5,
         "points_for": 1707.5,
         "points_back": 103.7,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 0
       },
       {
         "team_id": 1,
@@ -3297,7 +5712,10 @@
         "losses": 5,
         "points_for": 1666.5,
         "points_back": 41.0,
-        "in_playoffs": true
+        "in_playoffs": true,
+        "status": "clinched",
+        "magic_number": 0,
+        "games_remaining": 0
       },
       {
         "team_id": 9,
@@ -3306,7 +5724,10 @@
         "losses": 8,
         "points_for": 1909.7,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 0
       },
       {
         "team_id": 6,
@@ -3315,7 +5736,10 @@
         "losses": 8,
         "points_for": 1784.6,
         "points_back": 125.1,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 0
       },
       {
         "team_id": 10,
@@ -3324,7 +5748,10 @@
         "losses": 9,
         "points_for": 1703.8,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 0
       },
       {
         "team_id": 12,
@@ -3333,7 +5760,10 @@
         "losses": 10,
         "points_for": 1687.4,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 0
       },
       {
         "team_id": 7,
@@ -3342,7 +5772,10 @@
         "losses": 10,
         "points_for": 1443.6,
         "points_back": 243.8,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 0
       },
       {
         "team_id": 11,
@@ -3351,7 +5784,10 @@
         "losses": 12,
         "points_for": 1630.1,
         "points_back": null,
-        "in_playoffs": false
+        "in_playoffs": false,
+        "status": "eliminated",
+        "magic_number": null,
+        "games_remaining": 0
       }
     ]
   }

@@ -178,6 +178,39 @@
     text-wrap: balance;
   }
 
+  /* ---------- lineup breakdown (Game of the Week only) ---------- */
+  .lineups {
+    display: flex;
+    gap: 18px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .lineup-col { flex: 1; min-width: 220px; }
+  .lineup-team {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink-dim);
+    margin: 0 0 4px;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 3px;
+  }
+  .lineup-team .crest img { width: 14px; height: 14px; }
+  .lineup-row {
+    display: flex;
+    gap: 8px;
+    font-size: 0.78rem;
+    padding: 2px 0;
+  }
+  .lineup-pos { width: 2.6em; flex: 0 0 auto; color: var(--ink-dim); }
+  .lineup-name { flex: 1; }
+  .lineup-pts { font-variant-numeric: tabular-nums; width: 2.6em; text-align: right; }
+  .lineup-total { border-top: 1px solid var(--ink); margin-top: 3px; padding-top: 4px; font-weight: 700; }
+
   /* ---------- briefs: the box score, compact and plain ---------- */
   .briefs-label {
     font-family: "Special Elite", monospace;
@@ -234,6 +267,22 @@
     color: var(--ink-dim);
   }
   .standings-name { flex: 1; }
+  .standings-tag {
+    font-family: "Special Elite", monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    border: 1px solid currentColor;
+  }
+  .standings-tag-clinched { color: var(--ink); }
+  .standings-tag-eliminated { color: var(--ink-dim); border-style: dashed; }
+  .standings-magic {
+    font-family: "Special Elite", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.03em;
+    color: var(--red);
+  }
   .standings-points {
     font-variant-numeric: tabular-nums;
     color: var(--ink-dim);
@@ -316,6 +365,13 @@ const PASSWORD = 'cockroach';
 function teamLogo(t) { return (t && t.logo) || ''; }
 function teamName(t) { return (t && t.name && t.name.trim()) || ''; }
 
+function renderClinchTag(row) {
+  if (row.status === 'clinched') return ' <span class="standings-tag standings-tag-clinched">clinched</span>';
+  if (row.status === 'eliminated') return ' <span class="standings-tag standings-tag-eliminated">eliminated</span>';
+  if (row.magic_number !== null) return ` <span class="standings-magic">needs ${row.magic_number}W</span>`;
+  return '';
+}
+
 function crestImg(t) {
   return `<img src="${teamLogo(t)}" alt="" onerror="this.style.visibility='hidden'">`;
 }
@@ -337,16 +393,45 @@ const FEATURE_LABELS = {
   plot_twist: 'Plot Twist',
 };
 
+function renderLineupCol(teams, teamId, lineup) {
+  const total = lineup.reduce((sum, p) => sum + p.points, 0);
+  return `
+    <div class="lineup-col">
+      <p class="lineup-team">${renderCrest(teams, teamId)} ${teamName(teams[teamId])}</p>
+      ${lineup.map(p => `
+        <div class="lineup-row">
+          <span class="lineup-pos">${p.position}</span>
+          <span class="lineup-name">${p.name}</span>
+          <span class="lineup-pts">${p.points.toFixed(1)}</span>
+        </div>
+      `).join('')}
+      <div class="lineup-row lineup-total">
+        <span class="lineup-pos"></span>
+        <span class="lineup-name">Total</span>
+        <span class="lineup-pts">${total.toFixed(1)}</span>
+      </div>
+    </div>
+  `;
+}
+
 function renderFeature(teams, f) {
   const crests = f.team_ids.length >= 2
     ? renderCrests(teams, f.team_ids[0], f.team_ids[1])
     : renderCrest(teams, f.team_ids[0]);
+
+  const lineupsHtml = f.lineups ? `
+    <div class="lineups">
+      ${f.team_ids.map(tid => renderLineupCol(teams, tid, f.lineups[String(tid)])).join('')}
+    </div>
+  ` : '';
+
   return `
     <article class="feature">
       ${crests}
-      <div>
+      <div style="flex:1">
         <p class="feature-label">${FEATURE_LABELS[f.type] || f.type}</p>
         <p class="feature-text">${f.text}</p>
+        ${lineupsHtml}
       </div>
     </article>
   `;
@@ -393,7 +478,7 @@ async function loadApp() {
           <div class="standings-row ${row.in_playoffs ? '' : 'standings-out'}">
             <span class="standings-rank">${row.rank}</span>
             ${renderCrest(teams, row.team_id)}
-            <span class="standings-name">${teamName(teams[row.team_id])}</span>
+            <span class="standings-name">${teamName(teams[row.team_id])}${renderClinchTag(row)}</span>
             <span class="standings-points">${row.points_for.toFixed(1)} pts${row.points_back !== null ? ` <em>(-${row.points_back.toFixed(1)})</em>` : ''}</span>
             <span class="standings-record">${row.wins}-${row.losses}</span>
           </div>

@@ -50,7 +50,7 @@ import json
 import random
 from pathlib import Path
 
-from espn_maps import division_rival_abbrevs
+from espn_maps import LINEUP_SLOT_MAP, division_rival_abbrevs
 from owner_util import owner_first_name
 
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
@@ -93,6 +93,11 @@ LOOKING_AHEAD_TEMPLATES_REMATCH = [
     "{a} faces {b} again - {prior_winner} won the first meeting {prior_score}",
     "Rematch: {a} vs. {b}; {prior_winner} took the first one {prior_score}",
 ]
+ALL_PLAY_MIN_WEEKS = 3  # don't bother below this - too small a sample to mean anything
+ALL_PLAY_TEMPLATES = [
+    "Over a full season of head-to-head, {a_owner} would be {aw}-{bw} against {b_owner}",
+    "Play every week and it's {a_owner} {aw}-{bw} {b_owner}",
+]
 
 
 def join_list(items):
@@ -128,6 +133,7 @@ class RecapContext:
         }
         self.owner_by_team_id = {tid: owner_first_name(t["owners"]) for tid, t in self.teams.items()}
         self.revealed_rostered_rivals = set()
+        self.num_regular_weeks = max(m["week"] for m in self.matchups if not m["is_playoffs"])
 
     def team_short(self, team_id):
         t = self.teams[team_id]
@@ -190,6 +196,35 @@ def _winner_loser(m):
     return m["away_team_id"], m["away_score"], m["home_team_id"], m["home_score"]
 
 
+# Real fantasy roster display order - QB, then both RB/WR slots grouped,
+# TE, FLEX, then D/ST and K last. Not the raw lineup_slot_id numeric
+# order (which interleaves BE/IR between them).
+ROSTER_SLOT_ORDER = [0, 2, 4, 6, 23, 16, 17]
+
+
+def build_lineup(week_box, team_id):
+    """A team's full STARTED lineup for one week, in real roster display
+    order - the "who actually won this" breakdown for a marquee game,
+    same idea as the old league's championship-recap lineup tables."""
+    players = [p for p in week_box.get(str(team_id), []) if p["started"]]
+
+    def sort_key(p):
+        slot = p["lineup_slot_id"]
+        order = ROSTER_SLOT_ORDER.index(slot) if slot in ROSTER_SLOT_ORDER else len(ROSTER_SLOT_ORDER)
+        return (order, -p["points"])
+
+    players.sort(key=sort_key)
+    return [
+        {
+            "name": p["name"],
+            "position": LINEUP_SLOT_MAP.get(p["lineup_slot_id"], p["position"]),
+            "pro_team": p["pro_team"],
+            "points": p["points"],
+        }
+        for p in players
+    ]
+
+
 def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box):
     """The standalone weekly highlights - each its own item, with real
     narrative prose, never glued onto a plain scoreline."""
@@ -206,6 +241,14 @@ def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box)
             winner=ctx.team_short(cw), loser=ctx.team_short(cl),
             wscore=f"{cws:.1f}", lscore=f"{cls:.1f}", margin=f"{abs(cws - cls):.1f}",
         ),
+        # Full lineup breakdown, winner then loser - the "how it was
+        # actually won" table, same idea as the old league's championship
+        # recap. Only for Game of the Week, not every matchup - a lineup
+        # table on all 6 games would bury this rather than spotlight it.
+        "lineups": {
+            str(cw): build_lineup(week_box, cw),
+            str(cl): build_lineup(week_box, cl),
+        },
     })
 
     blowout = by_margin[-1]
@@ -320,6 +363,58 @@ def build_week_briefs(ctx, week_matchups, record_after):
     return briefs
 
 
+def _remaining_games(ctx, week, num_regular_weeks):
+    """{team_id: count of regular-season games left after `week`}."""
+    remaining = {tid: 0 for tid in ctx.teams}
+    for m in ctx.matchups:
+        if m["is_playoffs"] or m["week"] <= week or m["week"] > num_regular_weeks:
+            continue
+        remaining[m["home_team_id"]] += 1
+        remaining[m["away_team_id"]] += 1
+    return remaining
+
+
+def _clinch_status(tid, record, remaining, all_ids):
+    """(status, magic_number) for one team - "clinched" / "eliminated" /
+    "alive", using the standard worst-case/best-case method real sports
+    "magic number" tables use: assume the team in question gets the
+    extreme outcome (all losses to test clinching, all wins to test
+    elimination) and everyone else gets the extreme outcome that helps
+    them most, then check whether PLAYOFF_SPOTS teams could still equal
+    or beat that. This can be slightly conservative near the very end of
+    a season (it doesn't reason about head-to-head tiebreakers), which
+    is the safe direction - it will never falsely call a team clinched.
+
+    magic_number is only meaningful for "alive" teams: the fewest
+    additional wins (out of their remaining games) that would guarantee
+    a clinch regardless of every other result.
+    """
+    wins, _, pf = record[tid]
+    others = [t for t in all_ids if t != tid]
+
+    def would_clinch(extra_wins):
+        floor_wins = wins + extra_wins  # worst case for tid beyond these guaranteed wins
+        can_catch_up = sum(
+            1 for s in others
+            if record[s][0] + remaining[s] >= floor_wins
+        )
+        return can_catch_up < PLAYOFF_SPOTS
+
+    def would_be_eliminated():
+        ceiling_wins = wins + remaining[tid]  # best case for tid
+        guaranteed_ahead = sum(1 for s in others if record[s][0] >= ceiling_wins)
+        return guaranteed_ahead >= PLAYOFF_SPOTS
+
+    if would_clinch(0):
+        return "clinched", 0
+    if would_be_eliminated():
+        return "eliminated", None
+    for extra in range(1, remaining[tid] + 1):
+        if would_clinch(extra):
+            return "alive", extra
+    return "alive", None  # can't guarantee it even winning out - still mathematically alive on tiebreakers
+
+
 def build_playoff_picture(ctx, week):
     """Top PLAYOFF_SPOTS of 12 make it - confirmed against the real 2025
     bracket in season_moments.json. Same regular-season-only ranking as
@@ -334,6 +429,8 @@ def build_playoff_picture(ctx, week):
     showing it as a "how far behind" number means something concrete.
     """
     rank, record = standings_through_week(ctx, week)
+    remaining = _remaining_games(ctx, week, ctx.num_regular_weeks)
+    all_ids = list(ctx.teams)
     ranked_ids = sorted(ctx.teams, key=lambda tid: rank[tid])
     rows = []
     prev = None
@@ -342,6 +439,7 @@ def build_playoff_picture(ctx, week):
         points_back = None
         if prev and prev["wins"] == wins:
             points_back = round(prev["points_for"] - pf, 1)
+        status, magic_number = _clinch_status(tid, record, remaining, all_ids)
         row = {
             "team_id": tid,
             "rank": rank[tid],
@@ -350,10 +448,47 @@ def build_playoff_picture(ctx, week):
             "points_for": round(pf, 1),
             "points_back": points_back,
             "in_playoffs": rank[tid] <= PLAYOFF_SPOTS,
+            "status": status,
+            "magic_number": magic_number,
+            "games_remaining": remaining[tid],
         }
         rows.append(row)
         prev = row
     return rows
+
+
+def _team_scores_by_week(ctx, through_week):
+    """{team_id: {week: score}} for every regular-season week through
+    through_week - what each team actually scored, independent of who
+    they actually played. Powers the "all-play" hypothetical head-to-head
+    below (every team plays exactly one real game per week, so this
+    covers every team for every week in range)."""
+    scores = {tid: {} for tid in ctx.teams}
+    for m in ctx.matchups:
+        if m["is_playoffs"] or m["week"] > through_week:
+            continue
+        scores[m["home_team_id"]][m["week"]] = m["home_score"]
+        scores[m["away_team_id"]][m["week"]] = m["away_score"]
+    return scores
+
+
+def hypothetical_h2h(scores_by_week, team_a, team_b):
+    """"If these two had played every week this season" - a's record
+    against b, purely by comparing each week's actual scores. Real
+    precedent: the old league's own recaps did exactly this for playoff
+    rivalry write-ups ("had they played every week, X would be 8-4
+    against Y")."""
+    a_wins = b_wins = 0
+    weeks_a, weeks_b = scores_by_week[team_a], scores_by_week[team_b]
+    for wk, a_score in weeks_a.items():
+        b_score = weeks_b.get(wk)
+        if b_score is None:
+            continue
+        if a_score > b_score:
+            a_wins += 1
+        elif b_score > a_score:
+            b_wins += 1
+    return a_wins, b_wins
 
 
 def build_looking_ahead(ctx, week):
@@ -381,6 +516,8 @@ def build_looking_ahead(ctx, week):
         pair = frozenset((m["home_team_id"], m["away_team_id"]))
         last_meeting[pair] = m  # keep overwriting - ends on the MOST RECENT prior meeting
 
+    scores_by_week = _team_scores_by_week(ctx, week)
+
     previews = []
     for m in next_matchups:
         a, b = m["home_team_id"], m["away_team_id"]
@@ -395,6 +532,16 @@ def build_looking_ahead(ctx, week):
             )
         else:
             text = rng.choice(LOOKING_AHEAD_TEMPLATES_PLAIN).format(a=a_label, b=b_label)
+
+        # Hypothetical all-play head-to-head - real precedent from the old
+        # league's own recaps ("had they played every week, X would be
+        # 8-4 against Y"). Only worth showing with enough of a sample.
+        aw, bw = hypothetical_h2h(scores_by_week, a, b)
+        if aw + bw >= ALL_PLAY_MIN_WEEKS:
+            text += "; " + rng.choice(ALL_PLAY_TEMPLATES).format(
+                a_owner=ctx.owner_by_team_id[a], b_owner=ctx.owner_by_team_id[b], aw=aw, bw=bw,
+            )
+
         previews.append({"team_ids": [a, b], "text": text})
     return {"week": next_week, "matchups": previews}
 
