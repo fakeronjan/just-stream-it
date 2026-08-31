@@ -9,3 +9,7 @@ venv/
 # ESPN auth cookies - never commit
 .env
 secrets.json
+
+# Raw source exports (e.g. Google Doc downloads) - reference material only,
+# not meant to be committed; content gets extracted into docs/ by hand
+league_rules/source-docs/
