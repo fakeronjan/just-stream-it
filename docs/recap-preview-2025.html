@@ -331,9 +331,10 @@
   }
   .bracket-side:first-of-type { border-bottom: 1px dashed rgba(28,26,22,0.25); }
   .bracket-side .crest img { width: 16px; height: 16px; }
+  .bracket-team { display: flex; align-items: center; gap: 6px; min-width: 0; }
   .bracket-winner { font-weight: 700; }
-  .bracket-score { font-variant-numeric: tabular-nums; }
-  .bracket-seed { color: var(--ink-dim); font-size: 0.8em; }
+  .bracket-score { font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .bracket-seed { color: var(--ink-dim); font-size: 0.8em; font-weight: 400; flex-shrink: 0; }
   .bracket-tbd { color: var(--ink-dim); font-style: italic; }
 
   /* ---------- looking ahead ---------- */
@@ -423,9 +424,9 @@ function bracketSeed(bracket, teamId) {
 }
 
 function renderBracketTeamLabel(teams, bracket, teamId) {
-  if (!teamId) return '<span class="bracket-tbd">TBD</span>';
+  if (!teamId) return '<span class="bracket-team"><span class="bracket-tbd">TBD</span></span>';
   const seed = bracketSeed(bracket, teamId);
-  return `${renderCrest(teams, teamId)} ${teamName(teams[teamId])}${seed ? ` <span class="bracket-seed">(${seed})</span>` : ''}`;
+  return `<span class="bracket-team">${renderCrest(teams, teamId)} ${seed ? `<span class="bracket-seed">(${seed})</span> ` : ''}${teamName(teams[teamId])}</span>`;
 }
 
 function renderBracketGame(teams, bracket, game) {
