@@ -1,14 +1,22 @@
-"""Weekly in-season recap for the 2026+ stats page - a matchup-centric
-narrative, not a per-category one.
+"""Weekly in-season recap for the 2026+ stats page.
 
-The structure is built around the week's real matchups (one line per
-game) rather than a handful of isolated "storyline" categories, because
-that's the only way to guarantee every team gets covered without forcing
-content that isn't there: 6 matchups = all 12 teams touched, every week,
-with zero fabrication - a quiet matchup just stays a bare scoreline.
-Bonus storylines (upsets, the week's best performance, real-NFL-fandom
-callouts) are attached as extra clauses onto whichever matchup they
-actually happened in, rather than floating as disconnected sentences.
+Two-tier structure, mirroring how a real sports section works: a handful
+of FEATURES up top (Game of the Week, Stud of the Week, upset alerts,
+real-NFL-fandom callouts - each its own standalone item with real
+narrative prose) and a compact BRIEFS list below (all 6 matchups as
+plain scorelines, guaranteeing every team gets covered even when nothing
+noteworthy happened to them that week).
+
+This replaces an earlier "matchup-centric" version that attached bonus
+storylines as extra clauses onto whichever scoreline they happened in.
+That version also guaranteed full coverage, but Ronjan's read after
+seeing it rendered was that gluing "Stud of the Week" onto a random
+scoreline buried the fun stuff and made the whole page read clinical -
+correct: a real paper doesn't fold the box scores and the feature
+write-up into the same sentence. Features and briefs are now separate,
+features get real narrative phrasing (with template variety, seeded per
+week so a given week's text is stable across reruns), and briefs stay
+genuinely minimal.
 
 This whole design was worked out and stress-tested against the full real
 2025 season before being written as real code - a few calibration
@@ -22,10 +30,16 @@ decisions came directly out of that:
     owners roster a rival's player ALL SEASON, so re-announcing it every
     week was the single most repetitive thing in an early draft of this.
     It's a one-time reveal, not a weekly fact-check.
-  - When multiple items of the same clause type land in one matchup
+  - When multiple items of the same feature type happen in one week
     (e.g. 3 new rival reveals for the same owner in week 1, when
-    everything is "new"), they're grouped into ONE sentence with proper
-    list grammar, not N repeats of the same clause label.
+    everything is "new"), they're grouped into ONE item with proper
+    list grammar, not N separate items.
+  - Looking Ahead only ever uses information available BEFORE next
+    week's games are played (records/rank entering, rematch flag) -
+    even though testing this against a real past season means the
+    actual outcome is sitting right there in the data, using it would
+    make the preview meaningless once this runs for real in 2026, where
+    next week hasn't happened yet. Never peek.
 
 Run after generate_data.py and build_season_analytics.py (needs
 matchups.json, weekly_boxscores.json, teams.json, nfl_schedule.json for
@@ -33,6 +47,7 @@ the target season) and league_rules/owner_nfl_fandom.json.
 """
 
 import json
+import random
 from pathlib import Path
 
 from espn_maps import division_rival_abbrevs
@@ -41,16 +56,24 @@ from owner_util import owner_first_name
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
 LEAGUE_RULES = Path(__file__).parent.parent / "league_rules"
 
-NAIL_BITER_MARGIN = 3
 BLOWOUT_MARGIN = 40
 UPSET_MIN_RANK_SWING = 5
 DIVISION_RIVAL_MIN_POINTS = 25
 
+CLOSE_GAME_TEMPLATES = [
+    "This week's nail-biter: {winner} squeaked past {loser} {wscore}-{lscore}, a margin of just {margin}.",
+    "{winner} survived a scare from {loser}, escaping with a {margin}-point win, {wscore}-{lscore}.",
+]
+BLOWOUT_TEMPLATES = [
+    "{winner} had no mercy for {loser}, winning {wscore}-{lscore} - a {margin}-point beatdown.",
+    "Not so close: {winner} ran up the score on {loser}, {wscore}-{lscore}.",
+]
+
 
 def join_list(items):
-    """Proper English list grammar: "A", "A and B", "A, B, and C" - so a
-    matchup with multiple same-type clauses reads as one sentence, not a
-    repeated label per item."""
+    """Proper English list grammar: "A", "A and B", "A, B, and C" - so
+    multiple same-type items in one week read as one sentence, not a
+    repeated item per instance."""
     items = list(items)
     if len(items) == 1:
         return items[0]
@@ -98,6 +121,7 @@ def standings_through_week(ctx, through_week):
     -wins, -points_for.
     """
     wins = {tid: 0 for tid in ctx.teams}
+    losses = {tid: 0 for tid in ctx.teams}
     pf = {tid: 0.0 for tid in ctx.teams}
     for m in ctx.matchups:
         if m["is_playoffs"] or m["week"] > through_week:
@@ -106,15 +130,18 @@ def standings_through_week(ctx, through_week):
         pf[m["away_team_id"]] += m["away_score"]
         if m["winner"] == "HOME":
             wins[m["home_team_id"]] += 1
+            losses[m["away_team_id"]] += 1
         elif m["winner"] == "AWAY":
             wins[m["away_team_id"]] += 1
+            losses[m["home_team_id"]] += 1
     ranked = sorted(ctx.teams, key=lambda tid: (-wins[tid], -pf[tid]))
-    return {tid: i + 1 for i, tid in enumerate(ranked)}
+    rank = {tid: i + 1 for i, tid in enumerate(ranked)}
+    record = {tid: (wins[tid], losses[tid]) for tid in ctx.teams}
+    return rank, record
 
 
 def _week_stud(week_box):
-    """The single highest-scoring started player league-wide this week -
-    attached to whichever matchup that player's team is in."""
+    """The single highest-scoring started player league-wide this week."""
     stud = None
     for team_id_str, players in week_box.items():
         for p in players:
@@ -123,39 +150,89 @@ def _week_stud(week_box):
     return stud
 
 
-def _matchup_clauses(ctx, winner_id, loser_id, entering_rank, stud, week_box):
-    clauses = []
+def _winner_loser(m):
+    if m["winner"] == "HOME":
+        return m["home_team_id"], m["home_score"], m["away_team_id"], m["away_score"]
+    return m["away_team_id"], m["away_score"], m["home_team_id"], m["home_score"]
 
-    if entering_rank:
+
+def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box):
+    """The standalone weekly highlights - each its own item, with real
+    narrative prose, never glued onto a plain scoreline."""
+    rng = random.Random(week)  # stable phrasing per week across reruns
+    features = []
+
+    by_margin = sorted(week_matchups, key=lambda m: abs(m["home_score"] - m["away_score"]))
+    closest = by_margin[0]
+    cw, cws, cl, cls = _winner_loser(closest)
+    features.append({
+        "type": "game_of_the_week",
+        "team_ids": [cw, cl],
+        "text": rng.choice(CLOSE_GAME_TEMPLATES).format(
+            winner=ctx.team_short(cw), loser=ctx.team_short(cl),
+            wscore=f"{cws:.1f}", lscore=f"{cls:.1f}", margin=f"{abs(cws - cls):.1f}",
+        ),
+    })
+
+    blowout = by_margin[-1]
+    if blowout != closest and abs(blowout["home_score"] - blowout["away_score"]) >= BLOWOUT_MARGIN:
+        bw, bws, bl, bls = _winner_loser(blowout)
+        features.append({
+            "type": "blowout_of_the_week",
+            "team_ids": [bw, bl],
+            "text": rng.choice(BLOWOUT_TEMPLATES).format(
+                winner=ctx.team_short(bw), loser=ctx.team_short(bl),
+                wscore=f"{bws:.1f}", lscore=f"{bls:.1f}", margin=f"{abs(bws - bls):.1f}",
+            ),
+        })
+
+    if stud:
+        features.append({
+            "type": "stud_of_the_week",
+            "team_ids": [stud["team_id"]],
+            "text": f"Stud of the week: {stud['name']} ({ctx.team_short(stud['team_id'])}) "
+                    f"dropped {stud['points']:.1f} points, best of anyone in the league.",
+        })
+
+    for m in week_matchups:
+        if m["winner"] not in ("HOME", "AWAY"):
+            continue
+        winner_id, _, loser_id, _ = _winner_loser(m)
+        if not entering_rank:
+            continue
         upset_size = entering_rank[winner_id] - entering_rank[loser_id]
         if upset_size >= UPSET_MIN_RANK_SWING:
-            clauses.append(
-                f"upset alert: {ctx.team_short(winner_id)} came in ranked #{entering_rank[winner_id]} "
-                f"to {ctx.team_short(loser_id)}'s #{entering_rank[loser_id]}"
-            )
+            features.append({
+                "type": "upset_alert",
+                "team_ids": [winner_id, loser_id],
+                "text": f"Upset alert: {ctx.team_short(winner_id)} came in ranked #{entering_rank[winner_id]} "
+                        f"and knocked off {ctx.team_short(loser_id)}'s #{entering_rank[loser_id]}.",
+            })
 
-    if stud and stud["team_id"] in (winner_id, loser_id):
-        clauses.append(f"league-best performance: {stud['name']} ({stud['points']:.1f} pts)")
-
-    # Fandom: a real division rival torched this owner THIS week.
-    for team_id in (winner_id, loser_id):
-        opp_id = loser_id if team_id == winner_id else winner_id
-        owner = ctx.owner_by_team_id[team_id]
+    # Fandom: a real division rival torched an owner this week.
+    for team_id, owner in ctx.owner_by_team_id.items():
         rivals = ctx.rival_abbrevs_by_owner.get(owner)
         if not rivals:
             continue
+        game = next((m for m in week_matchups if team_id in (m["home_team_id"], m["away_team_id"])), None)
+        if not game:
+            continue
+        opp_id = game["away_team_id"] if game["home_team_id"] == team_id else game["home_team_id"]
         hits = [
             f"{p['name']} ({p['pro_team']}, {p['points']:.1f} pts)"
             for p in week_box.get(str(opp_id), [])
             if p["started"] and p["pro_team"] in rivals and p["points"] >= DIVISION_RIVAL_MIN_POINTS
         ]
         if hits:
-            clauses.append(f"division-rival salt: {join_list(hits)} went off on {owner}, a {ctx.fandom[owner]} fan")
+            features.append({
+                "type": "division_rival_salt",
+                "team_ids": [team_id, opp_id],
+                "text": f"Division-rival salt: {join_list(hits)} went off on {owner}, a {ctx.fandom[owner]} fan.",
+            })
 
     # Fandom: owner is rostering a division rival - ONE-TIME reveal per
     # (owner, player), grouped if multiple are new in the same week.
-    for team_id in (winner_id, loser_id):
-        owner = ctx.owner_by_team_id[team_id]
+    for team_id, owner in ctx.owner_by_team_id.items():
         rivals = ctx.rival_abbrevs_by_owner.get(owner)
         if not rivals:
             continue
@@ -169,65 +246,89 @@ def _matchup_clauses(ctx, winner_id, loser_id, entering_rank, stud, week_box):
             ctx.revealed_rostered_rivals.add(key)
             new_reveals.append(f"{p['name']} ({p['pro_team']})")
         if new_reveals:
-            clauses.append(
-                f"plot twist: {owner}, a {ctx.fandom[owner]} fan, has been starting "
-                f"{join_list(new_reveals)} all along"
-            )
+            features.append({
+                "type": "plot_twist",
+                "team_ids": [team_id],
+                "text": f"Plot twist: {owner}, a {ctx.fandom[owner]} fan, has been starting "
+                        f"{join_list(new_reveals)} all along.",
+            })
 
-    return clauses
+    return features
 
 
-def build_week_recap(ctx, week):
-    """One line per real matchup that week - always full team coverage,
-    with bonus clauses attached only where something real qualifies."""
-    week_matchups = [m for m in ctx.matchups if m["week"] == week and not m["is_playoffs"]]
-    if not week_matchups:
-        return []
-    entering_rank = standings_through_week(ctx, week - 1) if week > 1 else None
-    week_box = ctx.boxscores[str(week)]
-    stud = _week_stud(week_box)
-
-    lines = []
+def build_week_briefs(ctx, week_matchups):
+    """Clean scorelines for all 6 games - the box-score layer, guaranteeing
+    every team is covered regardless of whether they made the features."""
+    briefs = []
     for m in week_matchups:
         if m["winner"] not in ("HOME", "AWAY"):
             continue
-        winner_id = m["home_team_id"] if m["winner"] == "HOME" else m["away_team_id"]
-        loser_id = m["away_team_id"] if m["winner"] == "HOME" else m["home_team_id"]
-        wscore = m["home_score"] if m["winner"] == "HOME" else m["away_score"]
-        lscore = m["away_score"] if m["winner"] == "HOME" else m["home_score"]
-        margin = abs(wscore - lscore)
+        winner_id, wscore, loser_id, lscore = _winner_loser(m)
+        briefs.append({
+            "winner_team_id": winner_id,
+            "loser_team_id": loser_id,
+            "winner_score": wscore,
+            "loser_score": lscore,
+            "text": f"{ctx.team_short(winner_id)} beat {ctx.team_short(loser_id)} {wscore:.1f}-{lscore:.1f}",
+        })
+    return briefs
 
-        text = f"{ctx.team_short(winner_id)} beat {ctx.team_short(loser_id)} {wscore:.1f}-{lscore:.1f}"
-        if margin <= NAIL_BITER_MARGIN:
-            text += " (nail-biter)"
-        elif margin >= BLOWOUT_MARGIN:
-            text += " (blowout)"
 
-        clauses = _matchup_clauses(ctx, winner_id, loser_id, entering_rank, stud, week_box)
-        if clauses:
-            text += " - " + "; ".join(clauses)
+def build_looking_ahead(ctx, week):
+    """Next week's matchups, previewed using ONLY information available
+    before those games are played: records/rank entering, and whether
+    it's a rematch of an earlier meeting this season. Never uses the
+    actual result, even when testing against a season where we already
+    know it - a live 2026 preview can't know it either.
+    """
+    next_week = week + 1
+    next_matchups = [m for m in ctx.matchups if m["week"] == next_week and not m["is_playoffs"]]
+    if not next_matchups:
+        return None
 
-        lines.append(
-            {
-                "winner_team_id": winner_id,
-                "loser_team_id": loser_id,
-                "winner_score": wscore,
-                "loser_score": lscore,
-                "text": text,
-            }
-        )
-    return lines
+    rank, record = standings_through_week(ctx, week)
+    earlier_meetings = {}
+    for m in ctx.matchups:
+        if m["is_playoffs"] or m["week"] > week:
+            continue
+        pair = frozenset((m["home_team_id"], m["away_team_id"]))
+        earlier_meetings[pair] = earlier_meetings.get(pair, 0) + 1
+
+    previews = []
+    for m in next_matchups:
+        a, b = m["home_team_id"], m["away_team_id"]
+        pair = frozenset((a, b))
+        ra, rb = rank.get(a), rank.get(b)
+        rec_a = f"{record[a][0]}-{record[a][1]}"
+        rec_b = f"{record[b][0]}-{record[b][1]}"
+        text = f"{ctx.team_short(a)} (#{ra}, {rec_a}) vs. {ctx.team_short(b)} (#{rb}, {rec_b})"
+        if earlier_meetings.get(pair):
+            text += " - a rematch"
+        previews.append({"team_ids": [a, b], "text": text})
+    return {"week": next_week, "matchups": previews}
+
+
+def build_week_recap(ctx, week):
+    week_matchups = [m for m in ctx.matchups if m["week"] == week and not m["is_playoffs"]]
+    if not week_matchups:
+        return None
+    entering_rank, _ = standings_through_week(ctx, week - 1) if week > 1 else (None, None)
+    week_box = ctx.boxscores[str(week)]
+    stud = _week_stud(week_box)
+
+    return {
+        "week": week,
+        "features": build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box),
+        "briefs": build_week_briefs(ctx, week_matchups),
+        "looking_ahead": build_looking_ahead(ctx, week),
+    }
 
 
 def main(season):
     ctx = RecapContext(season)
     played_weeks = sorted({m["week"] for m in ctx.matchups if not m["is_playoffs"]})
 
-    weekly_recap = []
-    for week in played_weeks:
-        lines = build_week_recap(ctx, week)
-        if lines:
-            weekly_recap.append({"week": week, "matchups": lines})
+    weekly_recap = [r for r in (build_week_recap(ctx, week) for week in played_weeks) if r]
 
     out_path = DOCS_DATA / str(season) / "weekly_recap.json"
     out_path.write_text(json.dumps(weekly_recap, indent=2))

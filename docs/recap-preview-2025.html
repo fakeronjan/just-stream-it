@@ -145,49 +145,82 @@
     margin: 0 0 18px;
   }
 
-  .pullquote {
-    background: var(--paper-2);
-    border-top: 3px solid var(--ink);
-    border-bottom: 3px solid var(--ink);
-    padding: 14px 4px;
-    margin: 0 0 20px;
-    font-family: "Rozha One", serif;
-    font-size: 1.15rem;
-    line-height: 1.3;
-    text-align: center;
-    text-wrap: balance;
-  }
-  .pullquote .attr {
-    display: block;
-    font-family: "Special Elite", monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    margin-top: 8px;
-  }
-
-  .dispatch {
-    display: flex;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(28,26,22,0.18);
-    font-size: 0.98rem;
-  }
-  .dispatch:last-child { border-bottom: none; }
-  .dispatch .crest {
-    flex: 0 0 auto;
-    display: flex;
-    gap: -6px;
-  }
-  .dispatch .crest img {
+  .crest { flex: 0 0 auto; display: flex; }
+  .crest img {
     width: 26px; height: 26px; border-radius: 4px; object-fit: cover;
     border: 1px solid var(--ink);
     filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
   }
-  .dispatch .crest img + img { margin-left: -8px; }
-  .dispatch p { margin: 0; }
-  .dispatch b { font-weight: 700; }
+  .crest img + img { margin-left: -8px; }
+
+  /* ---------- features: the actual story, front-and-center ---------- */
+  .feature {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--ink);
+  }
+  .feature .crest img { width: 34px; height: 34px; }
+  .feature-label {
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 4px;
+  }
+  .feature-text {
+    font-family: "Rozha One", serif;
+    font-size: 1.15rem;
+    line-height: 1.32;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  /* ---------- briefs: the box score, compact and plain ---------- */
+  .briefs-label {
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin: 26px 0 4px;
+  }
+  .brief {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(28,26,22,0.15);
+    font-size: 0.85rem;
+    color: var(--ink-dim);
+  }
+  .brief:last-child { border-bottom: none; }
+  .brief .crest img { width: 20px; height: 20px; }
+  .brief p { margin: 0; }
+
+  /* ---------- looking ahead ---------- */
+  .looking-ahead {
+    margin-top: 22px;
+    padding: 16px;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+  }
+  .looking-ahead-label {
+    font-family: "Rozha One", serif;
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+  }
+  .ahead-line {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 0.85rem;
+  }
+  .ahead-line .crest img { width: 20px; height: 20px; }
+  .ahead-line p { margin: 0; }
 
   .empty-state { text-align: center; padding: 60px 20px; color: var(--ink-dim); font-family: "Special Elite", monospace; }
 
@@ -246,28 +279,28 @@ function renderCrests(teams, teamId1, teamId2) {
   </span>`;
 }
 
-// Rarer/funnier clause types make better headlines than routine ones -
-// every week has a "league-best performance", so it's the weakest pick
-// when something rarer is also on offer that week.
-const CLAUSE_PRIORITY = ['plot twist', 'division-rival salt', 'upset alert', 'league-best performance'];
+const FEATURE_LABELS = {
+  game_of_the_week: 'Game of the Week',
+  blowout_of_the_week: 'Blowout of the Week',
+  stud_of_the_week: 'Stud of the Week',
+  upset_alert: 'Upset Alert',
+  division_rival_salt: 'Rival Watch',
+  plot_twist: 'Plot Twist',
+};
 
-function findPullquote(weekMatchups) {
-  // The single best INDIVIDUAL clause this week, not the longest combined
-  // clause blob from one matchup - a matchup can carry 2+ semicolon-joined
-  // clauses (e.g. a stud AND a rival callout in the same game), and
-  // mashing those together read as an incoherent run-on headline.
-  let best = null;
-  for (const m of weekMatchups) {
-    const dashIdx = m.text.indexOf(' - ');
-    if (dashIdx === -1) continue;
-    const clauses = m.text.slice(dashIdx + 3).split('; ');
-    for (const clause of clauses) {
-      const priority = CLAUSE_PRIORITY.findIndex(p => clause.startsWith(p));
-      const rank = priority === -1 ? CLAUSE_PRIORITY.length : priority;
-      if (!best || rank < best.rank) best = { m, clause, rank };
-    }
-  }
-  return best;
+function renderFeature(teams, f) {
+  const crests = f.team_ids.length >= 2
+    ? renderCrests(teams, f.team_ids[0], f.team_ids[1])
+    : `<span class="crest"><img src="${teamLogo(teams[f.team_ids[0]])}" alt="" onerror="this.style.visibility='hidden'"></span>`;
+  return `
+    <article class="feature">
+      ${crests}
+      <div>
+        <p class="feature-label">${FEATURE_LABELS[f.type] || f.type}</p>
+        <p class="feature-text">${f.text}</p>
+      </div>
+    </article>
+  `;
 }
 
 async function loadApp() {
@@ -294,27 +327,39 @@ async function loadApp() {
   const weeksDesc = [...weeklyRecap].sort((a, b) => b.week - a.week);
 
   editionsEl.innerHTML = weeksDesc.map(w => {
-    const pull = findPullquote(w.matchups);
-    const pullHtml = pull ? `
-      <div class="pullquote">
-        &ldquo;${pull.clause.charAt(0).toUpperCase() + pull.clause.slice(1)}&rdquo;
-        <span class="attr">This week's headline, Week ${w.week}</span>
-      </div>` : '';
+    const featuresHtml = w.features.map(f => renderFeature(teams, f)).join('');
 
-    const dispatches = w.matchups.map(m => `
-      <div class="dispatch">
-        ${renderCrests(teams, m.winner_team_id, m.loser_team_id)}
-        <p>${m.text}.</p>
+    const briefsHtml = w.briefs.map(b => `
+      <div class="brief">
+        ${renderCrests(teams, b.winner_team_id, b.loser_team_id)}
+        <p>${b.text}.</p>
       </div>
     `).join('');
+
+    const aheadHtml = w.looking_ahead ? `
+      <div class="looking-ahead">
+        <p class="looking-ahead-label">Looking Ahead &middot; Week ${w.looking_ahead.week}</p>
+        ${w.looking_ahead.matchups.map(p => `
+          <div class="ahead-line">
+            ${renderCrests(teams, p.team_ids[0], p.team_ids[1])}
+            <p>${p.text}.</p>
+          </div>
+        `).join('')}
+      </div>
+    ` : '';
 
     return `
       <section class="edition">
         <p class="kicker">Week ${w.week} Edition</p>
         <h2 class="edition-head">This Week Around the League</h2>
         <p class="dateline">2025 Regular Season &middot; Week ${w.week} of 14</p>
-        ${pullHtml}
-        ${dispatches}
+
+        ${featuresHtml}
+
+        <p class="briefs-label">Around the League</p>
+        ${briefsHtml}
+
+        ${aheadHtml}
       </section>
     `;
   }).join('');
