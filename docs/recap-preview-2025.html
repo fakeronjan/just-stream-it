@@ -200,6 +200,36 @@
   .brief .crest img { width: 20px; height: 20px; }
   .brief p { margin: 0; }
 
+  /* ---------- playoff picture ---------- */
+  .standings {
+    margin-top: 22px;
+    padding: 16px;
+    border: 1px solid var(--ink);
+  }
+  .standings-label {
+    font-family: "Rozha One", serif;
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+  }
+  .standings-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    font-size: 0.85rem;
+  }
+  .standings-row .crest img { width: 18px; height: 18px; }
+  .standings-rank {
+    font-family: "Special Elite", monospace;
+    width: 1.4em;
+    flex: 0 0 auto;
+    color: var(--ink-dim);
+  }
+  .standings-name { flex: 1; }
+  .standings-record { font-variant-numeric: tabular-nums; color: var(--ink-dim); }
+  .standings-out { opacity: 0.55; }
+  .standings-cutline { border-top: 2px dashed var(--red); margin: 4px 0; }
+
   /* ---------- looking ahead ---------- */
   .looking-ahead {
     margin-top: 22px;
@@ -270,13 +300,18 @@
 const PASSWORD = 'cockroach';
 
 function teamLogo(t) { return (t && t.logo) || ''; }
+function teamName(t) { return (t && t.name && t.name.trim()) || ''; }
+
+function crestImg(t) {
+  return `<img src="${teamLogo(t)}" alt="" onerror="this.style.visibility='hidden'">`;
+}
+
+function renderCrest(teams, teamId) {
+  return `<span class="crest">${crestImg(teams[teamId])}</span>`;
+}
 
 function renderCrests(teams, teamId1, teamId2) {
-  const t1 = teams[teamId1], t2 = teams[teamId2];
-  return `<span class="crest">
-    <img src="${teamLogo(t1)}" alt="" onerror="this.style.visibility='hidden'">
-    <img src="${teamLogo(t2)}" alt="" onerror="this.style.visibility='hidden'">
-  </span>`;
+  return `<span class="crest">${crestImg(teams[teamId1])}${crestImg(teams[teamId2])}</span>`;
 }
 
 const FEATURE_LABELS = {
@@ -291,7 +326,7 @@ const FEATURE_LABELS = {
 function renderFeature(teams, f) {
   const crests = f.team_ids.length >= 2
     ? renderCrests(teams, f.team_ids[0], f.team_ids[1])
-    : `<span class="crest"><img src="${teamLogo(teams[f.team_ids[0]])}" alt="" onerror="this.style.visibility='hidden'"></span>`;
+    : renderCrest(teams, f.team_ids[0]);
   return `
     <article class="feature">
       ${crests}
@@ -336,6 +371,21 @@ async function loadApp() {
       </div>
     `).join('');
 
+    const playoffHtml = `
+      <div class="standings">
+        <p class="standings-label">Playoff Picture &middot; Through Week ${w.week}</p>
+        ${w.playoff_picture.map(row => `
+          <div class="standings-row ${row.in_playoffs ? '' : 'standings-out'}">
+            <span class="standings-rank">${row.rank}</span>
+            ${renderCrest(teams, row.team_id)}
+            <span class="standings-name">${teamName(teams[row.team_id])}</span>
+            <span class="standings-record">${row.wins}-${row.losses}</span>
+          </div>
+          ${row.rank === 6 ? '<div class="standings-cutline"></div>' : ''}
+        `).join('')}
+      </div>
+    `;
+
     const aheadHtml = w.looking_ahead ? `
       <div class="looking-ahead">
         <p class="looking-ahead-label">Looking Ahead &middot; Week ${w.looking_ahead.week}</p>
@@ -358,6 +408,8 @@ async function loadApp() {
 
         <p class="briefs-label">Around the League</p>
         ${briefsHtml}
+
+        ${playoffHtml}
 
         ${aheadHtml}
       </section>

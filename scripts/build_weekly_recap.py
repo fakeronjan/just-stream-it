@@ -59,6 +59,7 @@ LEAGUE_RULES = Path(__file__).parent.parent / "league_rules"
 BLOWOUT_MARGIN = 40
 UPSET_MIN_RANK_SWING = 5
 DIVISION_RIVAL_MIN_POINTS = 25
+PLAYOFF_SPOTS = 6
 
 CLOSE_GAME_TEMPLATES = [
     "This week's nail-biter: {winner} squeaked past {loser} {wscore}-{lscore}, a margin of just {margin}.",
@@ -67,6 +68,30 @@ CLOSE_GAME_TEMPLATES = [
 BLOWOUT_TEMPLATES = [
     "{winner} had no mercy for {loser}, winning {wscore}-{lscore} - a {margin}-point beatdown.",
     "Not so close: {winner} ran up the score on {loser}, {wscore}-{lscore}.",
+]
+STUD_TEMPLATES = [
+    "Stud of the week: {name} ({team}) dropped {points} points, best of anyone in the league.",
+    "Nobody topped {name} ({team}) this week - {points} points to lead all starters.",
+]
+UPSET_TEMPLATES = [
+    "Upset alert: {winner} came in ranked #{wrank} and knocked off {loser}'s #{lrank}.",
+    "{winner} (#{wrank} entering the week) had no business beating {loser} (#{lrank}) - but here we are.",
+]
+DIVISION_SALT_TEMPLATES = [
+    "Division-rival salt: {hits} went off on {owner}, a {fan_team} fan.",
+    "Rough week to be a {fan_team} fan: {hits} torched {owner}'s lineup.",
+]
+PLOT_TWIST_TEMPLATES = [
+    "Plot twist: {owner}, a {fan_team} fan, has been starting {reveals} all along.",
+    "Buried lede: {owner} ({fan_team} fan) is rostering {reveals}, and has been for a while.",
+]
+LOOKING_AHEAD_TEMPLATES_PLAIN = [
+    "{a} (#{ra}, {reca}) faces {b} (#{rb}, {recb})",
+    "{a} (#{ra}, {reca}) squares off against {b} (#{rb}, {recb})",
+]
+LOOKING_AHEAD_TEMPLATES_REMATCH = [
+    "{a} (#{ra}, {reca}) faces {b} (#{rb}, {recb}) again - {prior_winner} won the first meeting {prior_score}",
+    "Rematch: {a} (#{ra}, {reca}) vs. {b} (#{rb}, {recb}); {prior_winner} took the first one {prior_score}",
 ]
 
 
@@ -190,8 +215,9 @@ def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box)
         features.append({
             "type": "stud_of_the_week",
             "team_ids": [stud["team_id"]],
-            "text": f"Stud of the week: {stud['name']} ({ctx.team_short(stud['team_id'])}) "
-                    f"dropped {stud['points']:.1f} points, best of anyone in the league.",
+            "text": rng.choice(STUD_TEMPLATES).format(
+                name=stud["name"], team=ctx.team_short(stud["team_id"]), points=f"{stud['points']:.1f}",
+            ),
         })
 
     for m in week_matchups:
@@ -205,8 +231,10 @@ def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box)
             features.append({
                 "type": "upset_alert",
                 "team_ids": [winner_id, loser_id],
-                "text": f"Upset alert: {ctx.team_short(winner_id)} came in ranked #{entering_rank[winner_id]} "
-                        f"and knocked off {ctx.team_short(loser_id)}'s #{entering_rank[loser_id]}.",
+                "text": rng.choice(UPSET_TEMPLATES).format(
+                    winner=ctx.team_short(winner_id), loser=ctx.team_short(loser_id),
+                    wrank=entering_rank[winner_id], lrank=entering_rank[loser_id],
+                ),
             })
 
     # Fandom: a real division rival torched an owner this week.
@@ -227,7 +255,9 @@ def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box)
             features.append({
                 "type": "division_rival_salt",
                 "team_ids": [team_id, opp_id],
-                "text": f"Division-rival salt: {join_list(hits)} went off on {owner}, a {ctx.fandom[owner]} fan.",
+                "text": rng.choice(DIVISION_SALT_TEMPLATES).format(
+                    hits=join_list(hits), owner=owner, fan_team=ctx.fandom[owner],
+                ),
             })
 
     # Fandom: owner is rostering a division rival - ONE-TIME reveal per
@@ -249,61 +279,100 @@ def build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box)
             features.append({
                 "type": "plot_twist",
                 "team_ids": [team_id],
-                "text": f"Plot twist: {owner}, a {ctx.fandom[owner]} fan, has been starting "
-                        f"{join_list(new_reveals)} all along.",
+                "text": rng.choice(PLOT_TWIST_TEMPLATES).format(
+                    owner=owner, fan_team=ctx.fandom[owner], reveals=join_list(new_reveals),
+                ),
             })
 
     return features
 
 
-def build_week_briefs(ctx, week_matchups):
+def build_week_briefs(ctx, week_matchups, record_after):
     """Clean scorelines for all 6 games - the box-score layer, guaranteeing
-    every team is covered regardless of whether they made the features."""
+    every team is covered regardless of whether they made the features.
+    Records shown are AS OF AFTER this week's games (real box-score
+    convention), not entering it.
+    """
     briefs = []
     for m in week_matchups:
         if m["winner"] not in ("HOME", "AWAY"):
             continue
         winner_id, wscore, loser_id, lscore = _winner_loser(m)
+        rec_w = f"{record_after[winner_id][0]}-{record_after[winner_id][1]}"
+        rec_l = f"{record_after[loser_id][0]}-{record_after[loser_id][1]}"
         briefs.append({
             "winner_team_id": winner_id,
             "loser_team_id": loser_id,
             "winner_score": wscore,
             "loser_score": lscore,
-            "text": f"{ctx.team_short(winner_id)} beat {ctx.team_short(loser_id)} {wscore:.1f}-{lscore:.1f}",
+            "text": f"{ctx.team_short(winner_id)} ({rec_w}) beat {ctx.team_short(loser_id)} ({rec_l}) "
+                    f"{wscore:.1f}-{lscore:.1f}",
         })
     return briefs
 
 
+def build_playoff_picture(ctx, week):
+    """Top PLAYOFF_SPOTS of 12 make it - confirmed against the real 2025
+    bracket in season_moments.json. Same regular-season-only ranking as
+    everything else here; no bracket tracing, since real playoffs haven't
+    happened yet mid-season.
+    """
+    rank, record = standings_through_week(ctx, week)
+    ranked_ids = sorted(ctx.teams, key=lambda tid: rank[tid])
+    rows = []
+    for tid in ranked_ids:
+        rows.append({
+            "team_id": tid,
+            "rank": rank[tid],
+            "wins": record[tid][0],
+            "losses": record[tid][1],
+            "in_playoffs": rank[tid] <= PLAYOFF_SPOTS,
+        })
+    return rows
+
+
 def build_looking_ahead(ctx, week):
     """Next week's matchups, previewed using ONLY information available
-    before those games are played: records/rank entering, and whether
-    it's a rematch of an earlier meeting this season. Never uses the
-    actual result, even when testing against a season where we already
-    know it - a live 2026 preview can't know it either.
+    before those games are played: records/rank entering, and - for a
+    rematch - the PRIOR meeting's actual result. That prior result is
+    fair game even though it's "the answer" to something: it already
+    happened, same as it would in a real live 2026 preview written after
+    that earlier week's games are final. What stays off-limits is the
+    outcome of the games THIS preview is actually previewing - never
+    used, even though testing against a real past season means it's
+    sitting right there in the data.
     """
     next_week = week + 1
     next_matchups = [m for m in ctx.matchups if m["week"] == next_week and not m["is_playoffs"]]
     if not next_matchups:
         return None
+    rng = random.Random(week * 1000 + 1)  # distinct stream from build_week_features' rng
 
     rank, record = standings_through_week(ctx, week)
-    earlier_meetings = {}
+    last_meeting = {}
     for m in ctx.matchups:
-        if m["is_playoffs"] or m["week"] > week:
+        if m["is_playoffs"] or m["week"] > week or m["winner"] not in ("HOME", "AWAY"):
             continue
         pair = frozenset((m["home_team_id"], m["away_team_id"]))
-        earlier_meetings[pair] = earlier_meetings.get(pair, 0) + 1
+        last_meeting[pair] = m  # keep overwriting - ends on the MOST RECENT prior meeting
 
     previews = []
     for m in next_matchups:
         a, b = m["home_team_id"], m["away_team_id"]
-        pair = frozenset((a, b))
         ra, rb = rank.get(a), rank.get(b)
-        rec_a = f"{record[a][0]}-{record[a][1]}"
-        rec_b = f"{record[b][0]}-{record[b][1]}"
-        text = f"{ctx.team_short(a)} (#{ra}, {rec_a}) vs. {ctx.team_short(b)} (#{rb}, {rec_b})"
-        if earlier_meetings.get(pair):
-            text += " - a rematch"
+        reca = f"{record[a][0]}-{record[a][1]}"
+        recb = f"{record[b][0]}-{record[b][1]}"
+        prior = last_meeting.get(frozenset((a, b)))
+        if prior:
+            pw, pws, pl, pls = _winner_loser(prior)
+            text = rng.choice(LOOKING_AHEAD_TEMPLATES_REMATCH).format(
+                a=ctx.team_short(a), ra=ra, reca=reca, b=ctx.team_short(b), rb=rb, recb=recb,
+                prior_winner=ctx.team_short(pw), prior_score=f"{pws:.1f}-{pls:.1f}",
+            )
+        else:
+            text = rng.choice(LOOKING_AHEAD_TEMPLATES_PLAIN).format(
+                a=ctx.team_short(a), ra=ra, reca=reca, b=ctx.team_short(b), rb=rb, recb=recb,
+            )
         previews.append({"team_ids": [a, b], "text": text})
     return {"week": next_week, "matchups": previews}
 
@@ -313,14 +382,16 @@ def build_week_recap(ctx, week):
     if not week_matchups:
         return None
     entering_rank, _ = standings_through_week(ctx, week - 1) if week > 1 else (None, None)
+    _, record_after = standings_through_week(ctx, week)
     week_box = ctx.boxscores[str(week)]
     stud = _week_stud(week_box)
 
     return {
         "week": week,
         "features": build_week_features(ctx, week, week_matchups, entering_rank, stud, week_box),
-        "briefs": build_week_briefs(ctx, week_matchups),
+        "briefs": build_week_briefs(ctx, week_matchups, record_after),
         "looking_ahead": build_looking_ahead(ctx, week),
+        "playoff_picture": build_playoff_picture(ctx, week),
     }
 
 
