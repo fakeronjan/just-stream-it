@@ -1,10 +1,10 @@
 {
   "_comment": "Each owner's real-life favorite NFL team, for narrative use in the 2026 in-season stats page (e.g. calling out when an owner's own rival team's player torches them). Keyed by owner first name, matching build_keeper_guide.py's owner_first_name() derivation. Confirmed by Ronjan 2026-08-30; null = not yet confirmed, still being collected.",
   "Karl": "Cowboys",
-  "Kris": null,
+  "Kris": "Chiefs",
   "Lisette": null,
   "Ronjan": "Bengals",
-  "Ben": null,
+  "Ben": "Patriots",
   "Joe": "Packers",
   "Mariss": "Giants",
   "Pete": "Bills",

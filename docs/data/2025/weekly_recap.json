@@ -45,6 +45,13 @@
           8
         ],
         "text": "Buried lede: Joe (Packers fan) is rostering Justin Jefferson (MIN), Caleb Williams (CHI), and Aaron Jones Sr. (MIN), and has been for a while."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          11
+        ],
+        "text": "Buried lede: Kris (Chiefs fan) is rostering Justin Herbert (LAC), and has been for a while."
       }
     ],
     "briefs": [
@@ -938,6 +945,13 @@
       {
         "type": "plot_twist",
         "team_ids": [
+          11
+        ],
+        "text": "Plot twist: Kris, a Chiefs fan, has been starting Marvin Mims Jr. (DEN) all along."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
           12
         ],
         "text": "Plot twist: Melinda, a Bills fan, has been starting Hunter Henry (NE) all along."
@@ -1146,6 +1160,13 @@
           5
         ],
         "text": "Nobody topped Bijan Robinson (Team Kantastrophe (Cara)) this week - 32.8 points to lead all starters."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          4
+        ],
+        "text": "Plot twist: Ben, a Patriots fan, has been starting Mason Taylor (NYJ) all along."
       }
     ],
     "briefs": [
@@ -1572,6 +1593,13 @@
           8
         ],
         "text": "Division-rival salt: Saquon Barkley (PHI, 31.4 pts) went off on Karl, a Cowboys fan."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          11
+        ],
+        "text": "Plot twist: Kris, a Chiefs fan, has been starting Wil Lutz (DEN) all along."
       }
     ],
     "briefs": [
@@ -2849,6 +2877,14 @@
           3
         ],
         "text": "Nobody topped Josh Allen (Illusions Michael (Pete)) this week - 37.8 points to lead all starters."
+      },
+      {
+        "type": "division_rival_salt",
+        "team_ids": [
+          4,
+          3
+        ],
+        "text": "Rough week to be a Patriots fan: Josh Allen (BUF, 37.8 pts) torched Ben's lineup."
       }
     ],
     "briefs": [
