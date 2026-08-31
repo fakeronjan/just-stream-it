@@ -8,10 +8,10 @@ const NAV_INTERNAL = [
   { key: 'draft-guide', label: '2026 Draft Guide', href: 'index.html' },
   { key: 'keeper-dossier', label: '2026 Keeper Dossier', href: 'keeper-dossier.html' },
   { key: 'season-2025', label: '2025 Season Recap', href: 'season-2025.html' },
+  { key: 'league-rules', label: 'League Rules', href: 'league-rules.html' },
 ];
 
 const NAV_EXTERNAL = [
-  { label: 'League Rules', href: 'https://docs.google.com/document/d/1q_smocauuxIDkYcAw6Cirj2t5gmFihMDPqs6NPtdfZI/edit?tab=t.0' },
   { label: 'ESPN League Home', hrefFn: (leagueId) => `https://fantasy.espn.com/football/league?leagueId=${leagueId}` },
 ];
 

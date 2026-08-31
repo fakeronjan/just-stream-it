@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It - League Rules</title>
+<meta name="description" content="Just Stream It fantasy football league rules - keepers, draft order, and trophies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+<script src="nav.js"></script>
+<script>
+(function() {
+  var saved = localStorage.getItem('jsi_theme');
+  var light = saved ? saved === 'light' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+  if (light) document.documentElement.setAttribute('data-theme', 'light');
+})();
+</script>
+<style>
+  .rules-section { margin-top: 36px; }
+  .rules-section:first-of-type { margin-top: 0; }
+  .rules-gif {
+    display: block;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+  }
+  .rules-list, .rules-list ul {
+    margin: 0;
+    padding-left: 22px;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+  .rules-list { list-style: disc; }
+  .rules-list ul { list-style: circle; margin-top: 4px; }
+  .rules-list li { margin-bottom: 10px; }
+  .rules-list li:last-child { margin-bottom: 0; }
+  .rules-list b, .rules-list strong { color: var(--text); }
+  .rules-closing { text-align: center; margin-top: 44px; }
+  .rules-closing .section-title { text-align: center; }
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode"></button>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Just Stream It</p>
+    <p>League members only. Enter the passphrase to continue:</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">$</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none" class="page">
+
+  <header class="site-header">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
+    <div>
+      <h1>League Rules</h1>
+      <nav class="resources" id="resources-nav"></nav>
+      <div class="subtitle">All rules subject to revision by league vote</div>
+    </div>
+  </header>
+
+  <div class="section rules-section">
+    <div class="section-title">Keepers</div>
+    <div class="card">
+      <img class="rules-gif" src="images/league-rules/dibs.gif" alt="">
+      <ul class="rules-list">
+        <li>You may keep up to 3 players from your prior year's team for your next year's team.</li>
+        <li>The cost for keeping a player is your draft pick one round earlier than was used to acquire the player.
+          <ul>
+            <li>For example, in 2025, you drafted a player in the 8th round and you wish to keep this player in 2026. It will cost a 7th round pick in the 2026 draft. The player will be assigned to you as your 7th round pick and will not be on the draft board. If you wish to keep that player again in 2027, it will cost you a 6th round pick. The player will be assigned to you as your 6th round pick and will not be on the draft board.</li>
+          </ul>
+        </li>
+        <li>In the case of a first round pick that you want to keep, the cost will be a first round pick plus one keeper slot.
+          <ul>
+            <li>For example, in 2025, you drafted a player in the first round and you wish to keep this player in 2026. It will cost you a first round pick in the 2026 draft. The player will be assigned to you as your first round pick and will not be on the draft board. Additionally, you may only select one more keeper instead for a total of two keepers.</li>
+          </ul>
+        </li>
+        <li>No team may keep both their first and second round picks from the prior year, since both picks would cost a first round pick in the next year, and that's not possible.</li>
+      </ul>
+
+      <img class="rules-gif" src="images/league-rules/not-qualified.gif" alt="" style="margin-top:24px;">
+      <ul class="rules-list">
+        <li>In order to be eligible to be a keeper, a player:
+          <ul>
+            <li>Must have been drafted in the prior year. That is to say, a player that went undrafted and was picked up on the waivers is not eligible for keeping.
+              <ul>
+                <li>That said, a player that was drafted, then dropped, then picked up off waivers is still eligible for keeping. Their draft position at time of draft is retained for purposes of determining cost of keeping.</li>
+              </ul>
+            </li>
+            <li>Must have been on your roster on the last Sunday of the season, even if on the bench or on the IR.</li>
+            <li>Not have been tagged as a keeper for more than 2 years in a row.
+              <ul>
+                <li>For example, a player is drafted in 2025, then kept in 2026 and 2027. In 2028, they must enter the draft pool again and cannot be kept.</li>
+                <li>If a player is traded, the keeper length is not reset. For example a player drafted in 2025, then kept in 2026 and then traded in 2026 may only be kept by the new team for one more year in 2027.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Additional notes:
+          <ul>
+            <li>Over the course of the season, you may end up with two players drafted in the same round either because of trades, or because a player was dropped and then picked up from waivers. If you wish to keep two players drafted in the same round, you can do so but with a two round escalator for one of the two players. For example, if you have two players drafted in the 9th round and you want to keep both of them, it would cost you an 8th round pick for one of them and a 7th round pick for the other. Please inform the league manager which player you want assigned to you in each round in the next draft.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <img class="rules-gif" src="images/league-rules/no-implied-dibs.gif" alt="" style="margin-top:24px;">
+      <ul class="rules-list">
+        <li>Keepers must be decided on at least one week before the draft and shared publicly so all teams know who is not available.
+          <ul>
+            <li>Changes to keepers less than one week before draft will not be allowed except in extreme cases supported by at least 2 other league members. For example if one of your planned keepers has a catastrophic injury in the 6 days before draft, you would likely find at least two league-mates supporting a late pre-draft change to your keeper selection.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section rules-section">
+    <div class="section-title">Draft</div>
+    <div class="card">
+      <img class="rules-gif" src="images/league-rules/on-the-clock.gif" alt="">
+      <ul class="rules-list">
+        <li>Draft will be snake format every year.</li>
+        <li>First season will be picker wheel to decide on order.</li>
+        <li>Each subsequent season, the draft order will be determined as follows:
+          <ul>
+            <li>Anyone not able to join the live draft. If multiple people can't join the live draft, lottery determines order within this group. People not joining the live draft will always go first so that they can at least set their first round picks.</li>
+            <li>Bottom 4 teams from the prior season (based on regular season W-L standing with points scored tie breaker) will be put into a picker wheel. These four teams will choose their draft slots from the remaining draft slots available (after the people who can't join the draft are assigned). The team that is selected on the picker wheel first will have the first choice on their preferred draft slot. The team that is selected on the picker wheel second will have second choice, and so on.</li>
+            <li>Remaining teams from the prior season will be ordered in the remaining draft slots in opposite order of their finish from the prior season. That is, champion last, finals loser second last, followed by semi-finals losers, opening round losers and non-playoff teams. Position among two semi-finals losers, two opening round losers and two non-playoff teams will be based on the opposite of regular season W-L standing followed by points scored.</li>
+          </ul>
+        </li>
+        <li><b>Keepers are locked before draft order is decided.</b>
+          <ul>
+            <li>Since teams will know approximately where they are drafting, teams will set keepers prior to the draft order being finalized as described above.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section rules-section">
+    <div class="section-title">Trophies</div>
+    <div class="card">
+      <img class="rules-gif" src="images/league-rules/my-trophy.gif" alt="">
+      <ul class="rules-list">
+        <li>Toilet trophy will be based on regular season standings only. Peer pressure will be applied to prevent teams from tanking for the toilet trophy. The toilet trophy must be earned by trying not to tank. 🙂</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="rules-closing">
+    <div class="section-title">Let's have some fun!</div>
+    <img class="rules-gif" src="images/league-rules/ready-for-football.gif" alt="">
+  </div>
+
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+
+  const meta = await (await fetch('data/meta.json')).json();
+  document.getElementById('resources-nav').innerHTML = renderNav('league-rules', meta.league_id);
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+
+function updateThemeToggleIcon() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.getElementById('theme-toggle').textContent = isLight ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+}
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jsi_theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('jsi_theme', 'light');
+  }
+  updateThemeToggleIcon();
+});
+updateThemeToggleIcon();
+</script>
+</body>
+</html>
