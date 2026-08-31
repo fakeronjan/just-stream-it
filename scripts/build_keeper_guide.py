@@ -41,23 +41,11 @@ from pathlib import Path
 from config import CURRENT_SEASON, LEAGUE_ID
 from espn_client import fetch_player_pool, fetch_players_by_id
 from espn_maps import POSITION_MAP, PRO_TEAM_MAP
+from owner_util import owner_first_name
 
 DOCS_DATA = Path(__file__).parent.parent / "docs" / "data"
 LEAGUE_RULES = Path(__file__).parent.parent / "league_rules"
 NUM_TEAMS = 12
-
-# A couple of owners go by a nickname in league chatter/spreadsheets that
-# isn't their ESPN account's first name.
-OWNER_NICKNAMES = {
-    "Michael Higgins": "Mike",
-    "Joseph Sebranek": "Joe",
-    "Karlos Abel": "Karl",
-}
-
-
-def owner_first_name(owners):
-    full = owners[0] if owners else ""
-    return OWNER_NICKNAMES.get(full, full.split()[0])
 
 
 def load(season, name):

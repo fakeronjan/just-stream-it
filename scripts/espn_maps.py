@@ -60,3 +60,40 @@ PRO_TEAM_MAP = {
     33: "BAL",
     34: "HOU",
 }
+
+# Real NFL team nickname (as used in league_rules/owner_nfl_fandom.json) ->
+# the abbrev used everywhere else in this codebase (PRO_TEAM_MAP values).
+TEAM_NAME_TO_ABBREV = {
+    "Bills": "BUF", "Dolphins": "MIA", "Patriots": "NE", "Jets": "NYJ",
+    "Ravens": "BAL", "Bengals": "CIN", "Browns": "CLE", "Steelers": "PIT",
+    "Texans": "HOU", "Colts": "IND", "Jaguars": "JAX", "Titans": "TEN",
+    "Broncos": "DEN", "Chiefs": "KC", "Raiders": "LV", "Chargers": "LAC",
+    "Cowboys": "DAL", "Giants": "NYG", "Eagles": "PHI", "Commanders": "WSH",
+    "Bears": "CHI", "Lions": "DET", "Packers": "GB", "Vikings": "MIN",
+    "Falcons": "ATL", "Panthers": "CAR", "Saints": "NO", "Buccaneers": "TB",
+    "Cardinals": "ARI", "Rams": "LAR", "49ers": "SF", "Seahawks": "SEA",
+}
+
+# Real NFL divisions, by team nickname - stable structure, not expected to
+# change season to season. Used to find an owner's real-life division
+# rivals for the weekly recap's fandom-narrative bits.
+NFL_DIVISIONS = {
+    "AFC East": ["Bills", "Dolphins", "Patriots", "Jets"],
+    "AFC North": ["Ravens", "Bengals", "Browns", "Steelers"],
+    "AFC South": ["Texans", "Colts", "Jaguars", "Titans"],
+    "AFC West": ["Broncos", "Chiefs", "Raiders", "Chargers"],
+    "NFC East": ["Cowboys", "Giants", "Eagles", "Commanders"],
+    "NFC North": ["Bears", "Lions", "Packers", "Vikings"],
+    "NFC South": ["Falcons", "Panthers", "Saints", "Buccaneers"],
+    "NFC West": ["Cardinals", "Rams", "49ers", "Seahawks"],
+}
+
+
+def division_rival_abbrevs(team_name):
+    """A team's 3 real division rivals, as abbrevs - e.g. "Bengals" ->
+    {"BAL", "CLE", "PIT"}. Returns an empty set for an unrecognized name
+    (e.g. an owner's fandom not yet confirmed, still null in the JSON)."""
+    for division_teams in NFL_DIVISIONS.values():
+        if team_name in division_teams:
+            return {TEAM_NAME_TO_ABBREV[t] for t in division_teams if t != team_name}
+    return set()
