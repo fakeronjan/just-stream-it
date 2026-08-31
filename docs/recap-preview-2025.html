@@ -293,6 +293,49 @@
   .standings-out { opacity: 0.55; }
   .standings-cutline { border-top: 2px dashed var(--red); margin: 4px 0; }
 
+  /* ---------- playoff bracket ---------- */
+  .bracket-rounds { display: flex; flex-direction: column; gap: 16px; }
+  .bracket-round-label {
+    font-family: "Rozha One", serif;
+    font-size: 0.95rem;
+    margin: 0 0 6px;
+  }
+  .bracket-byes {
+    font-family: "Special Elite", monospace;
+    font-size: 0.65rem;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  .bracket-game {
+    border: 1px solid var(--ink);
+    margin-bottom: 8px;
+  }
+  .bracket-game-label {
+    font-family: "Special Elite", monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--red);
+    margin: 0;
+    padding: 3px 8px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .bracket-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 5px 8px;
+    font-size: 0.82rem;
+  }
+  .bracket-side:first-of-type { border-bottom: 1px dashed rgba(28,26,22,0.25); }
+  .bracket-side .crest img { width: 16px; height: 16px; }
+  .bracket-winner { font-weight: 700; }
+  .bracket-score { font-variant-numeric: tabular-nums; }
+  .bracket-seed { color: var(--ink-dim); font-size: 0.8em; }
+  .bracket-tbd { color: var(--ink-dim); font-style: italic; }
+
   /* ---------- looking ahead ---------- */
   .looking-ahead {
     margin-top: 22px;
@@ -372,6 +415,56 @@ function renderClinchTag(row) {
   return '';
 }
 
+function bracketSeed(bracket, teamId) {
+  for (const [seed, tid] of Object.entries(bracket.seed_to_team)) {
+    if (tid === teamId) return seed;
+  }
+  return null;
+}
+
+function renderBracketTeamLabel(teams, bracket, teamId) {
+  if (!teamId) return '<span class="bracket-tbd">TBD</span>';
+  const seed = bracketSeed(bracket, teamId);
+  return `${renderCrest(teams, teamId)} ${teamName(teams[teamId])}${seed ? ` <span class="bracket-seed">(${seed})</span>` : ''}`;
+}
+
+function renderBracketGame(teams, bracket, game) {
+  const [a, b] = game.team_ids;
+  const result = game.result;
+  const aWon = result && result.winner === a;
+  const bWon = result && result.winner === b;
+  return `
+    <div class="bracket-game">
+      ${game.label ? `<p class="bracket-game-label">${game.label}</p>` : ''}
+      <div class="bracket-side ${aWon ? 'bracket-winner' : ''}">
+        ${renderBracketTeamLabel(teams, bracket, a)}
+        ${result ? `<span class="bracket-score">${aWon ? result.winner_score.toFixed(1) : result.loser_score.toFixed(1)}</span>` : ''}
+      </div>
+      <div class="bracket-side ${bWon ? 'bracket-winner' : ''}">
+        ${renderBracketTeamLabel(teams, bracket, b)}
+        ${result ? `<span class="bracket-score">${bWon ? result.winner_score.toFixed(1) : result.loser_score.toFixed(1)}</span>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function renderBracket(teams, bracket) {
+  return `
+    <div class="standings">
+      <p class="standings-label">Playoff Bracket</p>
+      <div class="bracket-rounds">
+        ${bracket.rounds.filter(r => r.week).map(r => `
+          <div class="bracket-round">
+            <p class="bracket-round-label">${r.name}</p>
+            ${r.byes.length ? `<p class="bracket-byes">Bye: ${r.byes.map(tid => teamName(teams[tid])).join(', ')}</p>` : ''}
+            ${r.games.map(g => renderBracketGame(teams, bracket, g)).join('')}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
 function crestImg(t) {
   return `<img src="${teamLogo(t)}" alt="" onerror="this.style.visibility='hidden'">`;
 }
@@ -391,6 +484,8 @@ const FEATURE_LABELS = {
   upset_alert: 'Upset Alert',
   division_rival_salt: 'Rival Watch',
   plot_twist: 'Plot Twist',
+  championship: 'Championship',
+  third_place: '3rd Place',
 };
 
 function renderLineupCol(teams, teamId, lineup) {
@@ -470,7 +565,7 @@ async function loadApp() {
       </div>
     `).join('');
 
-    const playoffHtml = `
+    const playoffHtml = w.playoff_picture ? `
       <div class="standings">
         <p class="standings-label">Playoff Picture &middot; Through Week ${w.week}</p>
         <p class="standings-sublabel">Top 6 make it &middot; ties broken by points scored</p>
@@ -485,25 +580,32 @@ async function loadApp() {
           ${row.rank === 6 ? '<div class="standings-cutline"></div>' : ''}
         `).join('')}
       </div>
-    `;
+    ` : (w.bracket ? renderBracket(teams, w.bracket) : '');
 
+    const aheadLabel = w.looking_ahead
+      ? (w.looking_ahead.round_name ? `Looking Ahead &middot; ${w.looking_ahead.round_name}` : `Looking Ahead &middot; Week ${w.looking_ahead.week}`)
+      : '';
     const aheadHtml = w.looking_ahead ? `
       <div class="looking-ahead">
-        <p class="looking-ahead-label">Looking Ahead &middot; Week ${w.looking_ahead.week}</p>
+        <p class="looking-ahead-label">${aheadLabel}</p>
         ${w.looking_ahead.matchups.map(p => `
           <div class="ahead-line">
-            ${renderCrests(teams, p.team_ids[0], p.team_ids[1])}
+            ${p.team_ids.length >= 2 ? renderCrests(teams, p.team_ids[0], p.team_ids[1]) : renderCrest(teams, p.team_ids[0])}
             <p>${p.text}.</p>
           </div>
         `).join('')}
       </div>
     ` : '';
 
+    const kicker = w.is_playoffs ? `${w.round_name} &middot; Week ${w.week}` : `Week ${w.week} Edition`;
+    const headline = w.is_playoffs ? w.round_name : 'This Week Around the League';
+    const dateline = w.is_playoffs ? `2025 Playoffs &middot; ${w.round_name}` : `2025 Regular Season &middot; Week ${w.week} of 14`;
+
     return `
       <section class="edition">
-        <p class="kicker">Week ${w.week} Edition</p>
-        <h2 class="edition-head">This Week Around the League</h2>
-        <p class="dateline">2025 Regular Season &middot; Week ${w.week} of 14</p>
+        <p class="kicker">${kicker}</p>
+        <h2 class="edition-head">${headline}</h2>
+        <p class="dateline">${dateline}</p>
 
         ${featuresHtml}
 

@@ -5790,5 +5790,1248 @@
         "games_remaining": 0
       }
     ]
+  },
+  {
+    "week": 15,
+    "is_playoffs": true,
+    "round_name": "Wild Card",
+    "features": [
+      {
+        "type": "game_of_the_week",
+        "team_ids": [
+          1,
+          8
+        ],
+        "text": "This week's nail-biter: Lamar and Drake's Grahamy's (Imran) squeaked past Daddy Nielsen (Joe) 132.7-129.7, a margin of just 3.0.",
+        "lineups": {
+          "1": [
+            {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "pro_team": "BAL",
+              "points": 14.6
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "points": 21.3
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 10.5
+            },
+            {
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "pro_team": "NYJ",
+              "points": 14.4
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 14.100000000000001
+            },
+            {
+              "name": "Luther Burden III",
+              "position": "WR",
+              "pro_team": "CHI",
+              "points": 11.4
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "points": 18.8
+            },
+            {
+              "name": "Blake Corum",
+              "position": "FLEX",
+              "pro_team": "LAR",
+              "points": 13.100000000000001
+            },
+            {
+              "name": "Jaguars D/ST",
+              "position": "D/ST",
+              "pro_team": "JAX",
+              "points": 11.0
+            },
+            {
+              "name": "Evan McPherson",
+              "position": "K",
+              "pro_team": "CIN",
+              "points": 0.0
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "points": 3.4800000000000004
+            }
+          ],
+          "8": [
+            {
+              "name": "Kirk Cousins",
+              "position": "QB",
+              "pro_team": "ATL",
+              "points": 26.92
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "points": 16.2
+            },
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 10.3
+            },
+            {
+              "name": "Jaxon Smith-Njigba",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 14.8
+            },
+            {
+              "name": "Rashee Rice",
+              "position": "WR",
+              "pro_team": "KC",
+              "points": 8.600000000000001
+            },
+            {
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "pro_team": "MIN",
+              "points": 3.2
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
+              "points": 2.6
+            },
+            {
+              "name": "Javonte Williams",
+              "position": "FLEX",
+              "pro_team": "DAL",
+              "points": 15.1
+            },
+            {
+              "name": "Browns D/ST",
+              "position": "D/ST",
+              "pro_team": "CLE",
+              "points": 1.0
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "points": 12.0
+            },
+            {
+              "name": "Caleb Williams",
+              "position": "QB",
+              "pro_team": "CHI",
+              "points": 18.98
+            }
+          ]
+        }
+      },
+      {
+        "type": "blowout_of_the_week",
+        "team_ids": [
+          2,
+          4
+        ],
+        "text": "Mednis Madness (mariss) had no mercy for Conquering Heroes (Ben), winning 195.0-111.8 - a 83.2-point beatdown."
+      },
+      {
+        "type": "stud_of_the_week",
+        "team_ids": [
+          2
+        ],
+        "text": "Stud of the week: Amon-Ra St. Brown (Mednis Madness (mariss)) dropped 34.9 points, best of anyone in the league."
+      }
+    ],
+    "briefs": [
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 4,
+        "winner_score": 195.02,
+        "loser_score": 111.8,
+        "text": "Mednis Madness (mariss, 9-5) beat Conquering Heroes (Ben, 9-5) 195.0-111.8"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 8,
+        "winner_score": 132.68,
+        "loser_score": 129.7,
+        "text": "Lamar and Drake's Grahamy's (Imran, 9-5) beat Daddy Nielsen (Joe, 10-4) 132.7-129.7"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 6,
+        "winner_score": 150.3,
+        "loser_score": 137.04,
+        "text": "McConkey Kong Country (Ronjan, 6-8) beat Mahomes is where the heart is \u2764 (Lisette, 6-8) 150.3-137.0"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 10,
+        "winner_score": 176.06,
+        "loser_score": 132.62,
+        "text": "Buffalo Abusement Park (Melinda, 4-10) beat Baker's Dirty Dozen (Karl, 5-9) 176.1-132.6"
+      },
+      {
+        "winner_team_id": 7,
+        "loser_team_id": 11,
+        "winner_score": 73.08,
+        "loser_score": 69.46,
+        "text": "Terrible Towels (Mike, 4-10) beat Keep 'em and weep (Kris, 2-12) 73.1-69.5"
+      }
+    ],
+    "looking_ahead": {
+      "week": 16,
+      "round_name": "Semifinals",
+      "matchups": [
+        {
+          "team_ids": [
+            5,
+            2
+          ],
+          "text": "Semifinals: Team Kantastrophe (Cara, seed 1) vs. Mednis Madness (mariss, seed 4); over a full season of head-to-head, Cara would be 11-3 against mariss"
+        },
+        {
+          "team_ids": [
+            3,
+            1
+          ],
+          "text": "Semifinals: Illusions Michael (Pete, seed 2) vs. Lamar and Drake's Grahamy's (Imran, seed 6); over a full season of head-to-head, Pete would be 12-2 against Imran"
+        }
+      ]
+    },
+    "bracket": {
+      "seed_to_team": {
+        "1": 5,
+        "2": 3,
+        "3": 8,
+        "4": 2,
+        "5": 4,
+        "6": 1
+      },
+      "frozen_record": {
+        "1": [
+          9,
+          5,
+          1666.54
+        ],
+        "2": [
+          9,
+          5,
+          1811.1799999999996
+        ],
+        "3": [
+          10,
+          4,
+          1989.84
+        ],
+        "4": [
+          9,
+          5,
+          1707.5
+        ],
+        "5": [
+          10,
+          4,
+          2017.8600000000001
+        ],
+        "6": [
+          6,
+          8,
+          1784.56
+        ],
+        "7": [
+          4,
+          10,
+          1443.56
+        ],
+        "8": [
+          10,
+          4,
+          1877.3200000000002
+        ],
+        "9": [
+          6,
+          8,
+          1909.74
+        ],
+        "10": [
+          5,
+          9,
+          1703.76
+        ],
+        "11": [
+          2,
+          12,
+          1630.14
+        ],
+        "12": [
+          4,
+          10,
+          1687.44
+        ]
+      },
+      "rounds": [
+        {
+          "week": 15,
+          "name": "Wild Card",
+          "games": [
+            {
+              "seeds": [
+                4,
+                5
+              ],
+              "team_ids": [
+                2,
+                4
+              ],
+              "result": {
+                "winner": 2,
+                "loser": 4,
+                "winner_score": 195.02,
+                "loser_score": 111.8
+              }
+            },
+            {
+              "seeds": [
+                3,
+                6
+              ],
+              "team_ids": [
+                8,
+                1
+              ],
+              "result": {
+                "winner": 1,
+                "loser": 8,
+                "winner_score": 132.68,
+                "loser_score": 129.7
+              }
+            }
+          ],
+          "byes": [
+            5,
+            3
+          ]
+        },
+        {
+          "week": 16,
+          "name": "Semifinals",
+          "games": [
+            {
+              "seeds": [
+                1,
+                null
+              ],
+              "team_ids": [
+                5,
+                2
+              ]
+            },
+            {
+              "seeds": [
+                2,
+                null
+              ],
+              "team_ids": [
+                3,
+                1
+              ]
+            }
+          ],
+          "byes": []
+        },
+        {
+          "week": 17,
+          "name": "Championship",
+          "games": [
+            {
+              "seeds": [
+                null,
+                null
+              ],
+              "team_ids": [
+                null,
+                null
+              ],
+              "label": "Championship"
+            },
+            {
+              "seeds": [
+                null,
+                null
+              ],
+              "team_ids": [
+                null,
+                null
+              ],
+              "label": "3rd Place"
+            }
+          ],
+          "byes": []
+        }
+      ]
+    }
+  },
+  {
+    "week": 16,
+    "is_playoffs": true,
+    "round_name": "Semifinals",
+    "features": [
+      {
+        "type": "game_of_the_week",
+        "team_ids": [
+          1,
+          3
+        ],
+        "text": "Lamar and Drake's Grahamy's (Imran) survived a scare from Illusions Michael (Pete), escaping with a 13.8-point win, 115.4-101.6.",
+        "lineups": {
+          "1": [
+            {
+              "name": "Lamar Jackson",
+              "position": "QB",
+              "pro_team": "BAL",
+              "points": 4.74
+            },
+            {
+              "name": "Blake Corum",
+              "position": "RB",
+              "pro_team": "LAR",
+              "points": 12.600000000000001
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "points": 10.0
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 8.100000000000001
+            },
+            {
+              "name": "Olamide Zaccheaus",
+              "position": "WR",
+              "pro_team": "CHI",
+              "points": 4.300000000000001
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 4.2
+            },
+            {
+              "name": "George Kittle",
+              "position": "TE",
+              "pro_team": "SF",
+              "points": 21.0
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "FLEX",
+              "pro_team": "DEN",
+              "points": 20.1
+            },
+            {
+              "name": "Saints D/ST",
+              "position": "D/ST",
+              "pro_team": "NO",
+              "points": 19.0
+            },
+            {
+              "name": "Evan McPherson",
+              "position": "K",
+              "pro_team": "CIN",
+              "points": 10.0
+            },
+            {
+              "name": "Gardner Minshew",
+              "position": "QB",
+              "pro_team": "KC",
+              "points": 1.4
+            }
+          ],
+          "3": [
+            {
+              "name": "Josh Allen",
+              "position": "QB",
+              "pro_team": "BUF",
+              "points": 6.9
+            },
+            {
+              "name": "De'Von Achane",
+              "position": "RB",
+              "pro_team": "MIA",
+              "points": 16.5
+            },
+            {
+              "name": "Bucky Irving",
+              "position": "RB",
+              "pro_team": "TB",
+              "points": 7.1000000000000005
+            },
+            {
+              "name": "DJ Moore",
+              "position": "WR",
+              "pro_team": "CHI",
+              "points": 19.4
+            },
+            {
+              "name": "A.J. Brown",
+              "position": "WR",
+              "pro_team": "PHI",
+              "points": 14.0
+            },
+            {
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 9.1
+            },
+            {
+              "name": "Trey McBride",
+              "position": "TE",
+              "pro_team": "ARI",
+              "points": 4.7
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "FLEX",
+              "pro_team": "NE",
+              "points": 1.7000000000000002
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "points": -4.0
+            },
+            {
+              "name": "Ka'imi Fairbairn",
+              "position": "K",
+              "pro_team": "HOU",
+              "points": 16.0
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "RB",
+              "pro_team": "TEN",
+              "points": 10.200000000000001
+            }
+          ]
+        }
+      },
+      {
+        "type": "blowout_of_the_week",
+        "team_ids": [
+          5,
+          2
+        ],
+        "text": "Not so close: Team Kantastrophe (Cara) ran up the score on Mednis Madness (mariss), 176.1-100.5."
+      },
+      {
+        "type": "stud_of_the_week",
+        "team_ids": [
+          5
+        ],
+        "text": "Nobody topped Chase Brown (Team Kantastrophe (Cara)) this week - 30.9 points to lead all starters."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          12
+        ],
+        "text": "Buried lede: Melinda (Bills fan) is rostering Brady Cook (NYJ), and has been for a while."
+      }
+    ],
+    "briefs": [
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 2,
+        "winner_score": 176.08,
+        "loser_score": 100.54,
+        "text": "Team Kantastrophe (Cara, 10-4) beat Mednis Madness (mariss, 9-5) 176.1-100.5"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 3,
+        "winner_score": 115.44,
+        "loser_score": 101.6,
+        "text": "Lamar and Drake's Grahamy's (Imran, 9-5) beat Illusions Michael (Pete, 10-4) 115.4-101.6"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 8,
+        "winner_score": 153.18,
+        "loser_score": 114.58,
+        "text": "Conquering Heroes (Ben, 9-5) beat Daddy Nielsen (Joe, 10-4) 153.2-114.6"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 9,
+        "winner_score": 170.82,
+        "loser_score": 159.26,
+        "text": "Buffalo Abusement Park (Melinda, 4-10) beat McConkey Kong Country (Ronjan, 6-8) 170.8-159.3"
+      },
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 7,
+        "winner_score": 126.22,
+        "loser_score": 124.76,
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 6-8) beat Terrible Towels (Mike, 4-10) 126.2-124.8"
+      },
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 11,
+        "winner_score": 125.6,
+        "loser_score": 111.06,
+        "text": "Baker's Dirty Dozen (Karl, 5-9) beat Keep 'em and weep (Kris, 2-12) 125.6-111.1"
+      }
+    ],
+    "looking_ahead": {
+      "week": 17,
+      "round_name": "Championship",
+      "matchups": [
+        {
+          "team_ids": [
+            5,
+            1
+          ],
+          "text": "Championship: Team Kantastrophe (Cara, seed 1) vs. Lamar and Drake's Grahamy's (Imran, seed 6); over a full season of head-to-head, Cara would be 11-3 against Imran"
+        },
+        {
+          "team_ids": [
+            2,
+            3
+          ],
+          "text": "3rd Place: Mednis Madness (mariss, seed 4) vs. Illusions Michael (Pete, seed 2); over a full season of head-to-head, mariss would be 6-8 against Pete"
+        }
+      ]
+    },
+    "bracket": {
+      "seed_to_team": {
+        "1": 5,
+        "2": 3,
+        "3": 8,
+        "4": 2,
+        "5": 4,
+        "6": 1
+      },
+      "frozen_record": {
+        "1": [
+          9,
+          5,
+          1666.54
+        ],
+        "2": [
+          9,
+          5,
+          1811.1799999999996
+        ],
+        "3": [
+          10,
+          4,
+          1989.84
+        ],
+        "4": [
+          9,
+          5,
+          1707.5
+        ],
+        "5": [
+          10,
+          4,
+          2017.8600000000001
+        ],
+        "6": [
+          6,
+          8,
+          1784.56
+        ],
+        "7": [
+          4,
+          10,
+          1443.56
+        ],
+        "8": [
+          10,
+          4,
+          1877.3200000000002
+        ],
+        "9": [
+          6,
+          8,
+          1909.74
+        ],
+        "10": [
+          5,
+          9,
+          1703.76
+        ],
+        "11": [
+          2,
+          12,
+          1630.14
+        ],
+        "12": [
+          4,
+          10,
+          1687.44
+        ]
+      },
+      "rounds": [
+        {
+          "week": 15,
+          "name": "Wild Card",
+          "games": [
+            {
+              "seeds": [
+                4,
+                5
+              ],
+              "team_ids": [
+                2,
+                4
+              ],
+              "result": {
+                "winner": 2,
+                "loser": 4,
+                "winner_score": 195.02,
+                "loser_score": 111.8
+              }
+            },
+            {
+              "seeds": [
+                3,
+                6
+              ],
+              "team_ids": [
+                8,
+                1
+              ],
+              "result": {
+                "winner": 1,
+                "loser": 8,
+                "winner_score": 132.68,
+                "loser_score": 129.7
+              }
+            }
+          ],
+          "byes": [
+            5,
+            3
+          ]
+        },
+        {
+          "week": 16,
+          "name": "Semifinals",
+          "games": [
+            {
+              "seeds": [
+                1,
+                null
+              ],
+              "team_ids": [
+                5,
+                2
+              ],
+              "result": {
+                "winner": 5,
+                "loser": 2,
+                "winner_score": 176.08,
+                "loser_score": 100.54
+              }
+            },
+            {
+              "seeds": [
+                2,
+                null
+              ],
+              "team_ids": [
+                3,
+                1
+              ],
+              "result": {
+                "winner": 1,
+                "loser": 3,
+                "winner_score": 115.44,
+                "loser_score": 101.6
+              }
+            }
+          ],
+          "byes": []
+        },
+        {
+          "week": 17,
+          "name": "Championship",
+          "games": [
+            {
+              "seeds": [
+                null,
+                null
+              ],
+              "team_ids": [
+                5,
+                1
+              ],
+              "label": "Championship"
+            },
+            {
+              "seeds": [
+                null,
+                null
+              ],
+              "team_ids": [
+                2,
+                3
+              ],
+              "label": "3rd Place"
+            }
+          ],
+          "byes": []
+        }
+      ]
+    }
+  },
+  {
+    "week": 17,
+    "is_playoffs": true,
+    "round_name": "Championship",
+    "features": [
+      {
+        "type": "championship",
+        "team_ids": [
+          5,
+          1
+        ],
+        "text": "It's a title for Team Kantastrophe (Cara) - Lamar and Drake's Grahamy's (Imran) falls 156.2-128.8 in the championship.",
+        "lineups": {
+          "5": [
+            {
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "pro_team": "LAR",
+              "points": 12.76
+            },
+            {
+              "name": "Bijan Robinson",
+              "position": "RB",
+              "pro_team": "ATL",
+              "points": 37.4
+            },
+            {
+              "name": "Chase Brown",
+              "position": "RB",
+              "pro_team": "CIN",
+              "points": 27.6
+            },
+            {
+              "name": "Nico Collins",
+              "position": "WR",
+              "pro_team": "HOU",
+              "points": 7.2
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "points": 4.9
+            },
+            {
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "pro_team": "MIA",
+              "points": 0.7000000000000001
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "points": 8.3
+            },
+            {
+              "name": "Jonathan Taylor",
+              "position": "FLEX",
+              "pro_team": "IND",
+              "points": 15.9
+            },
+            {
+              "name": "Chargers D/ST",
+              "position": "D/ST",
+              "pro_team": "LAC",
+              "points": 3.0
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "points": 6.0
+            },
+            {
+              "name": "Drake Maye",
+              "position": "QB",
+              "pro_team": "NE",
+              "points": 32.44
+            }
+          ],
+          "1": [
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "GB",
+              "points": 31.52
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 16.1
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
+              "points": 14.500000000000002
+            },
+            {
+              "name": "Luther Burden III",
+              "position": "WR",
+              "pro_team": "CHI",
+              "points": 23.8
+            },
+            {
+              "name": "CeeDee Lamb",
+              "position": "WR",
+              "pro_team": "DAL",
+              "points": 7.1000000000000005
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 0.9
+            },
+            {
+              "name": "Kyle Pitts Sr.",
+              "position": "TE",
+              "pro_team": "ATL",
+              "points": 2.6
+            },
+            {
+              "name": "Blake Corum",
+              "position": "FLEX",
+              "pro_team": "LAR",
+              "points": 1.8
+            },
+            {
+              "name": "Saints D/ST",
+              "position": "D/ST",
+              "pro_team": "NO",
+              "points": 12.0
+            },
+            {
+              "name": "Evan McPherson",
+              "position": "K",
+              "pro_team": "CIN",
+              "points": 9.0
+            },
+            {
+              "name": "Shedeur Sanders",
+              "position": "QB",
+              "pro_team": "CLE",
+              "points": 9.440000000000001
+            }
+          ]
+        }
+      },
+      {
+        "type": "third_place",
+        "team_ids": [
+          3,
+          2
+        ],
+        "text": "Consolation prize - Illusions Michael (Pete) took 3rd, beating Mednis Madness (mariss) 117.6-104.3."
+      },
+      {
+        "type": "stud_of_the_week",
+        "team_ids": [
+          5
+        ],
+        "text": "Nobody topped Bijan Robinson (Team Kantastrophe (Cara)) this week - 37.4 points to lead all starters."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          1
+        ],
+        "text": "Buried lede: Imran (Bears fan) is rostering Malik Willis (GB), and has been for a while."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          3
+        ],
+        "text": "Buried lede: Pete (Bills fan) is rostering Quinn Ewers (MIA), and has been for a while."
+      }
+    ],
+    "briefs": [
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 1,
+        "winner_score": 156.2,
+        "loser_score": 128.76,
+        "text": "Team Kantastrophe (Cara, 10-4) beat Lamar and Drake's Grahamy's (Imran, 9-5) 156.2-128.8"
+      },
+      {
+        "winner_team_id": 3,
+        "loser_team_id": 2,
+        "winner_score": 117.56,
+        "loser_score": 104.34,
+        "text": "Illusions Michael (Pete, 10-4) beat Mednis Madness (mariss, 9-5) 117.6-104.3"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 8,
+        "winner_score": 143.18,
+        "loser_score": 104.14,
+        "text": "Conquering Heroes (Ben, 9-5) beat Daddy Nielsen (Joe, 10-4) 143.2-104.1"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 6,
+        "winner_score": 127.1,
+        "loser_score": 123.1,
+        "text": "Buffalo Abusement Park (Melinda, 4-10) beat Mahomes is where the heart is \u2764 (Lisette, 6-8) 127.1-123.1"
+      },
+      {
+        "winner_team_id": 10,
+        "loser_team_id": 9,
+        "winner_score": 144.32,
+        "loser_score": 103.82,
+        "text": "Baker's Dirty Dozen (Karl, 5-9) beat McConkey Kong Country (Ronjan, 6-8) 144.3-103.8"
+      },
+      {
+        "winner_team_id": 11,
+        "loser_team_id": 7,
+        "winner_score": 121.7,
+        "loser_score": 94.14,
+        "text": "Keep 'em and weep (Kris, 2-12) beat Terrible Towels (Mike, 4-10) 121.7-94.1"
+      }
+    ],
+    "looking_ahead": null,
+    "bracket": {
+      "seed_to_team": {
+        "1": 5,
+        "2": 3,
+        "3": 8,
+        "4": 2,
+        "5": 4,
+        "6": 1
+      },
+      "frozen_record": {
+        "1": [
+          9,
+          5,
+          1666.54
+        ],
+        "2": [
+          9,
+          5,
+          1811.1799999999996
+        ],
+        "3": [
+          10,
+          4,
+          1989.84
+        ],
+        "4": [
+          9,
+          5,
+          1707.5
+        ],
+        "5": [
+          10,
+          4,
+          2017.8600000000001
+        ],
+        "6": [
+          6,
+          8,
+          1784.56
+        ],
+        "7": [
+          4,
+          10,
+          1443.56
+        ],
+        "8": [
+          10,
+          4,
+          1877.3200000000002
+        ],
+        "9": [
+          6,
+          8,
+          1909.74
+        ],
+        "10": [
+          5,
+          9,
+          1703.76
+        ],
+        "11": [
+          2,
+          12,
+          1630.14
+        ],
+        "12": [
+          4,
+          10,
+          1687.44
+        ]
+      },
+      "rounds": [
+        {
+          "week": 15,
+          "name": "Wild Card",
+          "games": [
+            {
+              "seeds": [
+                4,
+                5
+              ],
+              "team_ids": [
+                2,
+                4
+              ],
+              "result": {
+                "winner": 2,
+                "loser": 4,
+                "winner_score": 195.02,
+                "loser_score": 111.8
+              }
+            },
+            {
+              "seeds": [
+                3,
+                6
+              ],
+              "team_ids": [
+                8,
+                1
+              ],
+              "result": {
+                "winner": 1,
+                "loser": 8,
+                "winner_score": 132.68,
+                "loser_score": 129.7
+              }
+            }
+          ],
+          "byes": [
+            5,
+            3
+          ]
+        },
+        {
+          "week": 16,
+          "name": "Semifinals",
+          "games": [
+            {
+              "seeds": [
+                1,
+                null
+              ],
+              "team_ids": [
+                5,
+                2
+              ],
+              "result": {
+                "winner": 5,
+                "loser": 2,
+                "winner_score": 176.08,
+                "loser_score": 100.54
+              }
+            },
+            {
+              "seeds": [
+                2,
+                null
+              ],
+              "team_ids": [
+                3,
+                1
+              ],
+              "result": {
+                "winner": 1,
+                "loser": 3,
+                "winner_score": 115.44,
+                "loser_score": 101.6
+              }
+            }
+          ],
+          "byes": []
+        },
+        {
+          "week": 17,
+          "name": "Championship",
+          "games": [
+            {
+              "seeds": [
+                null,
+                null
+              ],
+              "team_ids": [
+                5,
+                1
+              ],
+              "label": "Championship",
+              "result": {
+                "winner": 5,
+                "loser": 1,
+                "winner_score": 156.2,
+                "loser_score": 128.76
+              }
+            },
+            {
+              "seeds": [
+                null,
+                null
+              ],
+              "team_ids": [
+                2,
+                3
+              ],
+              "label": "3rd Place",
+              "result": {
+                "winner": 3,
+                "loser": 2,
+                "winner_score": 117.56,
+                "loser_score": 104.34
+              }
+            }
+          ],
+          "byes": []
+        }
+      ]
+    }
   }
 ]

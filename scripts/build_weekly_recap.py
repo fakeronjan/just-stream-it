@@ -85,6 +85,14 @@ PLOT_TWIST_TEMPLATES = [
     "Plot twist: {owner}, a {fan_team} fan, has been starting {reveals} all along.",
     "Buried lede: {owner} ({fan_team} fan) is rostering {reveals}, and has been for a while.",
 ]
+CHAMPIONSHIP_TEMPLATES = [
+    "{winner} is your champion, beating {loser} {wscore}-{lscore} to take the title.",
+    "It's a title for {winner} - {loser} falls {wscore}-{lscore} in the championship.",
+]
+THIRD_PLACE_TEMPLATES = [
+    "3rd place: {winner} beat {loser} {wscore}-{lscore}.",
+    "Consolation prize - {winner} took 3rd, beating {loser} {wscore}-{lscore}.",
+]
 LOOKING_AHEAD_TEMPLATES_PLAIN = [
     "{a} faces {b}",
     "{a} squares off against {b}",
@@ -546,6 +554,243 @@ def build_looking_ahead(ctx, week):
     return {"week": next_week, "matchups": previews}
 
 
+def compute_seeds(ctx):
+    """Final regular-season standings freeze into seeds 1..PLAYOFF_SPOTS
+    for the real bracket. Playoff W-L/points_for context everywhere else
+    in playoff-week output uses this same frozen snapshot too - playoff
+    games determine placement, not an extension of the regular-season
+    record."""
+    rank, record = standings_through_week(ctx, ctx.num_regular_weeks)
+    seed_to_team = {r: tid for tid, r in rank.items() if r <= PLAYOFF_SPOTS}
+    return seed_to_team, record
+
+
+def _find_playoff_result(ctx, week, team_a, team_b):
+    for m in ctx.matchups:
+        if m["week"] != week or not m["is_playoffs"]:
+            continue
+        if {m["home_team_id"], m["away_team_id"]} == {team_a, team_b}:
+            winner_id, wscore, loser_id, lscore = _winner_loser(m)
+            return {"winner": winner_id, "loser": loser_id, "winner_score": wscore, "loser_score": lscore}
+    return None
+
+
+def build_bracket(ctx, through_week=None):
+    """Fixed single-elimination bracket for this league's real
+    PLAYOFF_SPOTS=6 format - confirmed by tracing all 3 rounds of the
+    actual 2025 postseason against this exact structure and matching
+    the real champion, runner-up, 3rd, and 4th place teams exactly:
+
+      Wild Card (seeds 1, 2 bye):  4 vs 5,  3 vs 6
+      Semifinals (fixed slots):    1 vs (4v5 winner),  2 vs (3v6 winner)
+      Championship:                semi winners
+      3rd place game:              semi losers (this league treats this
+        as a real, official placement game - unlike the parallel
+        consolation-ladder games ESPN also schedules for teams 7-12
+        under the same is_playoffs flag; see build_season_moments.py's
+        compute_standings docstring for that same distinction).
+
+    NOT dynamic reseeding (checked and ruled out - the semifinal
+    pairings only make sense as fixed bracket slots, not "highest
+    remaining seed vs lowest remaining seed").
+
+    `through_week` caps which weeks' results get revealed - None means
+    "everything available" (fine for a completed season, or for the
+    Looking Ahead use, which only ever reads results from rounds already
+    fully decided). But EACH WEEK'S OWN recap needs its own bracket
+    snapshot capped at that week, or every playoff week's bracket field
+    would show the exact same fully-resolved bracket regardless of which
+    week it's attached to - caught exactly that bug testing this against
+    the real 2025 season, where week 15's page was showing the eventual
+    champion before the semifinals had even happened.
+    """
+    seed_to_team, frozen_record = compute_seeds(ctx)
+    playoff_weeks = sorted({m["week"] for m in ctx.matchups if m["is_playoffs"] and m["week"] > ctx.num_regular_weeks})
+    round_weeks = playoff_weeks[:3]  # this league's bracket is always exactly 3 rounds
+
+    def week_for(round_idx):
+        return round_weeks[round_idx] if round_idx < len(round_weeks) else None
+
+    def revealed(week):
+        return week and (through_week is None or week <= through_week)
+
+    rounds = []
+
+    game_4v5 = {"seeds": (4, 5), "team_ids": (seed_to_team.get(4), seed_to_team.get(5))}
+    game_3v6 = {"seeds": (3, 6), "team_ids": (seed_to_team.get(3), seed_to_team.get(6))}
+    r1_week = week_for(0)
+    if revealed(r1_week) and all(game_4v5["team_ids"]):
+        game_4v5["result"] = _find_playoff_result(ctx, r1_week, *game_4v5["team_ids"])
+    if revealed(r1_week) and all(game_3v6["team_ids"]):
+        game_3v6["result"] = _find_playoff_result(ctx, r1_week, *game_3v6["team_ids"])
+    rounds.append({
+        "week": r1_week, "name": "Wild Card",
+        "games": [game_4v5, game_3v6],
+        "byes": [seed_to_team.get(1), seed_to_team.get(2)],
+    })
+
+    winner_4v5 = game_4v5.get("result", {}).get("winner")
+    winner_3v6 = game_3v6.get("result", {}).get("winner")
+    semi_a = {"seeds": (1, None), "team_ids": (seed_to_team.get(1), winner_4v5)}
+    semi_b = {"seeds": (2, None), "team_ids": (seed_to_team.get(2), winner_3v6)}
+    r2_week = week_for(1)
+    if revealed(r2_week) and all(semi_a["team_ids"]):
+        semi_a["result"] = _find_playoff_result(ctx, r2_week, *semi_a["team_ids"])
+    if revealed(r2_week) and all(semi_b["team_ids"]):
+        semi_b["result"] = _find_playoff_result(ctx, r2_week, *semi_b["team_ids"])
+    rounds.append({"week": r2_week, "name": "Semifinals", "games": [semi_a, semi_b], "byes": []})
+
+    champ_a = semi_a.get("result", {}).get("winner")
+    champ_b = semi_b.get("result", {}).get("winner")
+    third_a = semi_a.get("result", {}).get("loser")
+    third_b = semi_b.get("result", {}).get("loser")
+    championship = {"seeds": (None, None), "team_ids": (champ_a, champ_b), "label": "Championship"}
+    third_place = {"seeds": (None, None), "team_ids": (third_a, third_b), "label": "3rd Place"}
+    r3_week = week_for(2)
+    if revealed(r3_week) and all(championship["team_ids"]):
+        championship["result"] = _find_playoff_result(ctx, r3_week, *championship["team_ids"])
+    if revealed(r3_week) and all(third_place["team_ids"]):
+        third_place["result"] = _find_playoff_result(ctx, r3_week, *third_place["team_ids"])
+    rounds.append({"week": r3_week, "name": "Championship", "games": [championship, third_place], "byes": []})
+
+    return {"seed_to_team": seed_to_team, "frozen_record": frozen_record, "rounds": rounds}
+
+
+def build_playoff_looking_ahead(ctx, bracket, round_idx):
+    """The next round's games - concrete team names where already
+    determined (the round just completed is always fully known by the
+    time we're building this), otherwise a conditional description
+    naming the still-open game. Same "never peek at this round's own
+    result" rule as the regular-season version - the round being
+    previewed hasn't been played yet from this function's point of view.
+    """
+    next_idx = round_idx + 1
+    if next_idx >= len(bracket["rounds"]):
+        return None
+    nxt = bracket["rounds"][next_idx]
+    if not nxt["week"]:
+        return None
+
+    scores_by_week = _team_scores_by_week(ctx, ctx.num_regular_weeks)
+    previews = []
+    for game in nxt["games"]:
+        a, b = game["team_ids"]
+        label = game.get("label", nxt["name"])
+        if a and b:
+            a_label = ctx.team_with_meta(a, f"seed {bracket_seed(bracket, a)}")
+            b_label = ctx.team_with_meta(b, f"seed {bracket_seed(bracket, b)}")
+            text = f"{label}: {a_label} vs. {b_label}"
+            aw, bw = hypothetical_h2h(scores_by_week, a, b)
+            if aw + bw >= ALL_PLAY_MIN_WEEKS:
+                text += (f"; over a full season of head-to-head, {ctx.owner_by_team_id[a]} would be "
+                         f"{aw}-{bw} against {ctx.owner_by_team_id[b]}")
+            previews.append({"team_ids": [a, b], "text": text})
+        else:
+            known = a or b
+            known_label = ctx.team_with_meta(known, f"seed {bracket_seed(bracket, known)}") if known else None
+            if known_label:
+                text = f"{label}: {known_label} awaits the winner of this week's other game"
+            else:
+                text = f"{label}: set by this week's results"
+            previews.append({"team_ids": [t for t in (a, b) if t], "text": text})
+    return {"week": nxt["week"], "round_name": nxt["name"], "matchups": previews}
+
+
+def bracket_seed(bracket, team_id):
+    for seed, tid in bracket["seed_to_team"].items():
+        if tid == team_id:
+            return seed
+    return None
+
+
+def _championship_features(ctx, week, rnd, week_box):
+    """The championship + 3rd place results, unconditionally featured
+    (never competing with each other or anything else for "closest
+    margin") - the championship always leads, gets the lineup breakdown;
+    3rd place gets a short mention with no lineup, since it's real but
+    not the marquee.
+    """
+    rng = random.Random(week)
+    championship_game, third_place_game = rnd["games"]
+    features = []
+
+    champ_result = championship_game.get("result")
+    if champ_result:
+        cw, cl = champ_result["winner"], champ_result["loser"]
+        features.append({
+            "type": "championship",
+            "team_ids": [cw, cl],
+            "text": rng.choice(CHAMPIONSHIP_TEMPLATES).format(
+                winner=ctx.team_short(cw), loser=ctx.team_short(cl),
+                wscore=f"{champ_result['winner_score']:.1f}", lscore=f"{champ_result['loser_score']:.1f}",
+            ),
+            "lineups": {str(cw): build_lineup(week_box, cw), str(cl): build_lineup(week_box, cl)},
+        })
+
+    third_result = third_place_game.get("result")
+    if third_result:
+        tw, tl = third_result["winner"], third_result["loser"]
+        features.append({
+            "type": "third_place",
+            "team_ids": [tw, tl],
+            "text": rng.choice(THIRD_PLACE_TEMPLATES).format(
+                winner=ctx.team_short(tw), loser=ctx.team_short(tl),
+                wscore=f"{third_result['winner_score']:.1f}", lscore=f"{third_result['loser_score']:.1f}",
+            ),
+        })
+
+    return features
+
+
+def build_playoff_week_recap(ctx, round_idx, week):
+    # A fresh bracket snapshot capped at THIS week, not one shared object
+    # reused across every playoff week - see build_bracket()'s docstring
+    # for the real bug this fixes (every week showing the same final,
+    # fully-resolved bracket regardless of which week it's attached to).
+    bracket = build_bracket(ctx, through_week=week)
+    rnd = bracket["rounds"][round_idx]
+    if not rnd["week"]:
+        return None
+
+    all_week_matchups = [m for m in ctx.matchups if m["week"] == week and m["is_playoffs"]]
+    if not all_week_matchups:
+        return None
+
+    bracket_team_ids = {tid for g in rnd["games"] for tid in g["team_ids"] if tid}
+    bracket_matchups = [
+        m for m in all_week_matchups
+        if m["home_team_id"] in bracket_team_ids and m["away_team_id"] in bracket_team_ids
+    ]
+
+    entering_rank, frozen_record = standings_through_week(ctx, ctx.num_regular_weeks)
+    week_box = ctx.boxscores[str(week)]
+    # Game of the Week / Stud / etc. only look at the real bracket games
+    # for a playoff week - a consolation-bracket blowout shouldn't
+    # upstage an actual semifinal. Briefs (below) still cover everything.
+    stud = _week_stud({str(tid): week_box.get(str(tid), []) for tid in bracket_team_ids}) if bracket_matchups else None
+    features = build_week_features(ctx, week, bracket_matchups, entering_rank, stud, week_box) if bracket_matchups else []
+
+    if rnd["name"] == "Championship":
+        # The closest-margin "Game of the Week" pick doesn't belong here -
+        # checked against real 2025 data and it picked the 3rd-place game
+        # over the actual title game, because the consolation game
+        # happened to be closer. The championship is unconditionally the
+        # marquee feature on this week regardless of margin; swap it in
+        # ahead of whatever build_week_features picked.
+        features = [f for f in features if f["type"] not in ("game_of_the_week", "blowout_of_the_week")]
+        features = _championship_features(ctx, week, rnd, week_box) + features
+
+    return {
+        "week": week,
+        "is_playoffs": True,
+        "round_name": rnd["name"],
+        "features": features,
+        "briefs": build_week_briefs(ctx, all_week_matchups, frozen_record),
+        "looking_ahead": build_playoff_looking_ahead(ctx, bracket, round_idx),
+        "bracket": bracket,
+    }
+
+
 def build_week_recap(ctx, week):
     week_matchups = [m for m in ctx.matchups if m["week"] == week and not m["is_playoffs"]]
     if not week_matchups:
@@ -564,11 +809,41 @@ def build_week_recap(ctx, week):
     }
 
 
+def _week_is_decided(ctx, week):
+    """Whether any real result exists for this week yet. matchups.json
+    holds the FULL season schedule from day one (generate_data.py pulls
+    it straight from ESPN's own schedule endpoint, which returns every
+    matchup period up front, not just played ones) - so a future week's
+    games already exist as entries here, just with winner unset and 0
+    scores. Without this check, a mid-2026-season run would "recap"
+    weeks that haven't happened yet.
+    """
+    return any(m["week"] == week and m["winner"] in ("HOME", "AWAY") for m in ctx.matchups)
+
+
 def main(season):
     ctx = RecapContext(season)
-    played_weeks = sorted({m["week"] for m in ctx.matchups if not m["is_playoffs"]})
+    played_weeks = sorted({
+        m["week"] for m in ctx.matchups
+        if not m["is_playoffs"] and _week_is_decided(ctx, m["week"])
+    })
 
     weekly_recap = [r for r in (build_week_recap(ctx, week) for week in played_weeks) if r]
+
+    # build_bracket() seeds off the FULL regular season - meaningless (and
+    # actively misleading) to compute before it's actually finished, so
+    # skip playoff processing entirely until then. This particular call
+    # is only to learn the round/week structure (fixed and knowable in
+    # advance regardless of results) - build_playoff_week_recap() builds
+    # its OWN properly-capped bracket snapshot for each week's results.
+    if _week_is_decided(ctx, ctx.num_regular_weeks):
+        structural_bracket = build_bracket(ctx)
+        for round_idx, rnd in enumerate(structural_bracket["rounds"]):
+            if not rnd["week"] or not _week_is_decided(ctx, rnd["week"]):
+                continue
+            r = build_playoff_week_recap(ctx, round_idx, rnd["week"])
+            if r:
+                weekly_recap.append(r)
 
     out_path = DOCS_DATA / str(season) / "weekly_recap.json"
     out_path.write_text(json.dumps(weekly_recap, indent=2))
