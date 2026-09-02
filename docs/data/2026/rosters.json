@@ -35,7 +35,7 @@
       "name": "Jared Goff",
       "position": "QB",
       "pro_team": "DET",
-      "lineup_slot": 7,
+      "lineup_slot": "QB",
       "keeper_value": 4,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -105,7 +105,7 @@
       "name": "Daniel Jones",
       "position": "QB",
       "pro_team": "IND",
-      "lineup_slot": "QB",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -459,7 +459,7 @@
       "name": "Alec Pierce",
       "position": "WR",
       "pro_team": "IND",
-      "lineup_slot": "FLEX",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -469,7 +469,7 @@
       "name": "Travis Hunter",
       "position": "WR",
       "pro_team": "JAX",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 8,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -479,7 +479,7 @@
       "name": "Michael Wilson",
       "position": "WR",
       "pro_team": "ARI",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1661,7 +1661,7 @@
       "name": "Romeo Doubs",
       "position": "WR",
       "pro_team": "NE",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 15,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1691,7 +1691,7 @@
       "name": "Tre Tucker",
       "position": "WR",
       "pro_team": "LV",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
