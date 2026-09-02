@@ -1,9 +1,12 @@
 <!--
   UNLISTED preview - not linked from nav.js or any other page on purpose.
-  Draft night recap for the 2026 draft (completed 9/1/2026), the league's
-  first-ever keeper draft. Ronjan asked for this as a candidate replacement
-  for index.html (currently the pre-draft Draft Guide, now stale). Reachable
-  only by direct URL - review before it goes anywhere near index.html.
+  Draft recap for the 2026 draft (completed 9/1/2026), meant to become a new
+  "Draft Recap" section at the top of index.html, above the existing
+  Pick-your-team / Full board / Top 200 sections - same theme.css look as
+  index.html for exactly that reason (was a standalone newspaper-styled
+  page before; rebuilt to match so the merge is a straight copy-in later).
+  Reachable only by direct URL - review before it goes anywhere near
+  index.html.
 -->
 <!doctype html>
 <html lang="en">
@@ -14,300 +17,47 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
 <script src="nav.js"></script>
 <style>
-  :root {
-    --paper:      #ddd7c8;
-    --paper-2:    #d3ccba;
-    --ink:        #1c1a16;
-    --ink-dim:    #4a463c;
-    --meta:       #8a8571;
-    --rule:       #1c1a16;
-    --red:        #a3241c;
+  .team-tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 18px;
   }
+  .tile-detail-lg { color: var(--text-dim); font-size: 0.88rem; margin-top: 4px; line-height: 1.55; }
+  .tile-detail-lg b { color: var(--text); font-weight: 700; }
 
-  * { box-sizing: border-box; }
+  .rebrand-note { font-size: 0.78rem; color: var(--text-mute); margin-top: 2px; }
+  .logo-swap { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+  .logo-swap img { width: 30px; height: 30px; border-radius: 7px; object-fit: cover; background: var(--panel-2); }
+  .logo-swap .arrow { color: var(--text-mute); font-size: 0.9rem; }
+  .logo-swap .swap-label { font-size: 0.68rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.05em; margin-right: 2px; }
 
-  body {
-    margin: 0;
-    background: var(--paper);
-    background-image:
-      repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 2px),
-      repeating-linear-gradient(90deg, rgba(0,0,0,0.012) 0px, transparent 1px, transparent 2px);
-    color: var(--ink);
-    font-family: "Vollkorn", Georgia, "Times New Roman", serif;
-    line-height: 1.55;
-  }
-
-  a { color: var(--red); }
-
-  .page { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
-
-  /* ---------- lock screen ---------- */
-  #lock-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
-  .lock-box {
-    width: 100%; max-width: 420px;
-    background: var(--paper-2);
-    border: 1px solid var(--ink);
-    padding: 32px 28px;
-    text-align: center;
-  }
-  .lock-box img.logo { width: 64px; height: 64px; border-radius: 10px; margin-bottom: 12px; }
-  .lock-title { font-family: "Rozha One", serif; font-size: 1.6rem; margin: 0 0 6px; }
-  .lock-box p { color: var(--ink-dim); font-size: 0.9rem; margin: 0 0 16px; }
-  .prompt-line { display: flex; align-items: center; gap: 8px; border: 1px solid var(--ink); background: #fff8; padding: 8px 10px; }
-  .prompt-line .dollar { font-family: "Special Elite", monospace; color: var(--red); }
-  .prompt-line input {
-    flex: 1; border: none; background: transparent; outline: none;
-    font-family: "Special Elite", monospace; font-size: 0.95rem; color: var(--ink);
-  }
-  .lock-error { color: var(--red); font-size: 0.82rem; margin-top: 10px; visibility: hidden; }
-  .lock-error.show { visibility: visible; }
-
-  /* ---------- masthead ---------- */
-  header.masthead { padding-top: 28px; text-align: center; }
-  .masthead-meta {
-    font-family: "Special Elite", monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--ink);
-    padding-bottom: 6px;
-    margin-bottom: 10px;
-  }
-  h1.nameplate {
-    font-family: "Rozha One", serif;
-    font-size: clamp(2.1rem, 9.5vw, 3.6rem);
-    margin: 0;
-    letter-spacing: 0.005em;
-    line-height: 1.05;
-  }
-  .tagline {
-    font-family: "Special Elite", monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.05em;
-    color: var(--ink-dim);
-    margin: 4px 0 0;
-  }
-  .masthead-rule {
-    border: 0; border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink);
-    height: 4px; margin: 14px 0 6px;
-  }
-
-  nav.resources {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 4px 14px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    justify-content: flex-start;
-    font-family: "Special Elite", monospace;
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 8px 0 18px;
-  }
-  nav.resources::-webkit-scrollbar { display: none; }
-  nav.resources a { flex: 0 0 auto; white-space: nowrap; color: var(--ink-dim); text-decoration: none; }
-  nav.resources a:hover { color: var(--red); }
-  nav.resources a.active { color: var(--red); font-weight: 700; }
-  nav.resources .nav-arrow { font-size: 0.9em; margin-left: 0.1em; }
-  nav.resources .nav-sep { color: var(--meta); }
-
-  /* ---------- edition ---------- */
-  .edition { margin-top: 40px; }
-
-  .kicker {
-    font-family: "Special Elite", monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin: 0 0 4px;
-  }
-  h2.edition-head {
-    font-family: "Rozha One", serif;
-    font-size: 2rem;
-    margin: 0 0 4px;
-    text-wrap: balance;
-  }
-  .dateline {
-    font-family: "Special Elite", monospace;
-    font-size: 0.7rem;
-    color: var(--meta);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin: 0 0 18px;
-  }
-
-  .crest { flex: 0 0 auto; display: flex; }
-  .crest img {
-    width: 26px; height: 26px; border-radius: 4px; object-fit: cover;
-    border: 1px solid var(--ink);
-    filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
-  }
-  .crest img + img { margin-left: -8px; }
-
-  /* ---------- features ---------- */
-  .feature {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 16px 0;
-    border-bottom: 1px solid var(--ink);
-  }
-  .feature .crest img { width: 34px; height: 34px; }
-  .feature-label {
-    font-family: "Special Elite", monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin: 0 0 4px;
-  }
-  .feature-text {
-    font-family: "Vollkorn", serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-  }
-  .feature-text b { font-weight: 700; }
-
-  /* ---------- briefs (board lists) ---------- */
-  .briefs-label {
-    font-family: "Special Elite", monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    margin: 30px 0 4px;
-  }
-  .brief {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 7px 0;
-    border-bottom: 1px solid rgba(28,26,22,0.15);
-    font-size: 0.85rem;
-    color: var(--ink-dim);
-  }
-  .brief:last-child { border-bottom: none; }
-  .brief .crest img { width: 20px; height: 20px; }
-  .brief .brief-pick {
-    font-family: "Special Elite", monospace;
-    font-size: 0.7rem;
-    color: var(--meta);
-    width: 2.4em;
-    flex: 0 0 auto;
-  }
-  .brief p { margin: 0; flex: 1; }
-  .brief p b { color: var(--ink); font-weight: 700; }
-  .brief .brief-tag {
-    font-family: "Special Elite", monospace;
-    font-size: 0.6rem;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    border: 1px solid currentColor;
-    padding: 1px 5px;
-    flex: 0 0 auto;
-  }
-
-  /* ---------- reach / value box ---------- */
-  .valuebox {
-    margin-top: 22px;
-    padding: 16px;
-    border: 1px solid var(--ink);
-  }
-  .valuebox-label { font-family: "Rozha One", serif; font-size: 1.05rem; margin: 0 0 2px; }
-  .valuebox-sublabel {
-    font-family: "Special Elite", monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    margin: 0 0 12px;
-  }
-  .valuebox h4 {
-    font-family: "Special Elite", monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin: 14px 0 6px;
-  }
-  .valuebox h4:first-of-type { margin-top: 0; }
-  .valuerow {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 4px 0;
-    font-size: 0.85rem;
-  }
-  .valuerow .crest img { width: 18px; height: 18px; }
-  .valuerow-name { flex: 1; }
-  .valuerow-gap {
-    font-variant-numeric: tabular-nums;
-    font-family: "Special Elite", monospace;
-    font-size: 0.72rem;
-    color: var(--ink-dim);
-  }
-
-  /* ---------- keeper ledger table ---------- */
-  .ledger { margin-top: 22px; }
-  .ledger-label { font-family: "Rozha One", serif; font-size: 1.05rem; margin: 0 0 2px; }
-  .ledger-sublabel {
-    font-family: "Special Elite", monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    margin: 0 0 12px;
-  }
-  table.ledger-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-  table.ledger-table th {
-    font-family: "Special Elite", monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--ink-dim);
-    text-align: left;
-    border-bottom: 1px solid var(--ink);
-    padding: 4px 6px;
-  }
-  table.ledger-table td {
-    padding: 5px 6px;
-    border-bottom: 1px solid rgba(28,26,22,0.15);
-    vertical-align: middle;
-  }
-  table.ledger-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
-  table.ledger-table td.vig-pos { color: #2f5c33; }
-  table.ledger-table td.vig-neg { color: var(--red); }
-  table.ledger-table .crest img { width: 16px; height: 16px; }
-
-  .empty-state { text-align: center; padding: 60px 20px; color: var(--ink-dim); font-family: "Special Elite", monospace; }
-
-  footer.masthead-footer {
-    margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
-    text-align: center; font-family: "Special Elite", monospace; font-size: 0.65rem;
-    color: var(--meta); text-transform: uppercase; letter-spacing: 0.05em;
-  }
+  .rank-value.good { color: var(--good); }
+  .rank-value.bad { color: var(--bad); }
+  .rank-list .rank-sub .owner-tag { font-weight: 600; color: var(--text); }
 </style>
+<script>
+(function() {
+  var saved = localStorage.getItem('jsi_theme');
+  var light = saved ? saved === 'light' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+  if (light) document.documentElement.setAttribute('data-theme', 'light');
+})();
+</script>
 </head>
 <body>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode"></button>
 
 <div id="lock-screen">
   <div class="lock-box">
     <img class="logo" src="logos/just-stream-it-logo.png" alt="">
-    <p class="lock-title">Subscribers Only</p>
-    <p>Enter the passphrase to read today's edition.</p>
+    <p class="lock-title">Just Stream It</p>
+    <p>League members only. Enter the passphrase to continue:</p>
     <form id="auth-form" class="prompt-line">
-      <span class="dollar">&gt;</span>
+      <span class="dollar">$</span>
       <input type="text" id="auth-input" autocomplete="off" autofocus>
     </form>
     <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
@@ -316,223 +66,310 @@
 
 <div id="app" style="display:none" class="page">
 
-  <header class="masthead">
-    <div class="masthead-meta">
-      <span>Est. 2025</span>
-      <span>Unlisted Preview Edition</span>
-      <span>Price: One Waiver Claim</span>
+  <header class="site-header">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
+    <div>
+      <h1>Draft Recap</h1>
+      <nav class="resources" id="resources-nav"></nav>
+      <div class="subtitle">9/1/2026 &middot; 12 teams, 19 rounds, 228 picks, the league's first keeper draft</div>
     </div>
-    <h1 class="nameplate">The Just Stream It<br>Gazette</h1>
-    <p class="tagline">&ldquo;All the Fantasy That's Fit to Print&rdquo;</p>
-    <hr class="masthead-rule">
-    <nav class="resources" id="resources-nav"></nav>
   </header>
 
-  <div id="editions">
-    <section class="edition">
-      <p class="kicker">Draft Night</p>
-      <h2 class="edition-head">The League's First Keeper Draft Is in the Books</h2>
-      <p class="dateline">September 1, 2026 &middot; 12 owners, 19 rounds, 228 picks</p>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/10.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.01 &middot; The Aristocrats</p>
-          <p class="feature-text">Karl Abel is the only owner who kept nobody, walked away from a 9th-place finish, and rebuilt from scratch under a new name. He opened with three running backs in his first four picks (Bijan Robinson at 1.01, then Ashton Jeanty and Josh Jacobs), ran four straight wide receivers from picks five through eight, then paired Travis Kelce and Hunter Henry back to back at tight end. <b>Position by position, not player by player.</b></p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/11.png" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.02 &middot; Keep 'em and weep</p>
-          <p class="feature-text">Kris Wikstrom is coming off the league's worst record, 2-12, and used the top of the board to reload: Lamar Jackson at 1.02, then Quinshon Judkins (kept for a round-9 cost) and Tyler Shough (kept for round 13, <b>one of the two best-value keepers in the league</b>). He also landed running back Woody Marks 61 picks past his ADP in round 15, the deepest fall at the position all night.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/6.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.03 &middot; Mahomes is where the heart is</p>
-          <p class="feature-text">Lisette Bruens kept Christian McCaffrey and Bo Nix, and the Nix keeper (a round-two cost) is <b>the one real overpay in the league</b> by the model's math. Her first live pick after that wasn't a reach, it was fate: a team named for Patrick Mahomes actually landed Patrick Mahomes, at pick 27. She's one of five owners now carrying four quarterbacks.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/9.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.04 &middot; McConkey Kong Country 2</p>
-          <p class="feature-text">Ronjan Sikdar's team picked up a sequel in the name and kept its running back: Jahmyr Gibbs at the round-one cost, plus Trevor Lawrence for round five. He built out to four quarterbacks, including a round-11 flier on Aaron Rodgers, and closed heavy at wide receiver, <b>four of his last picks at the position</b>, landing Tre Tucker and Jalen Nailor well past their ADP.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/4.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.05 &middot; Conquering Heroes</p>
-          <p class="feature-text">Ben Porter's three keepers, Kenneth Walker III, Emeka Egbuka and Colston Loveland, all graded as fair-to-good value. His boldest live pick was MarShawn Lloyd in round six, 57 picks ahead of ADP and <b>the single biggest reach of the entire draft</b>.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/8.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.06 &middot; Olave Oyl</p>
-          <p class="feature-text">Joe Sebranek's rebrand from Daddy Nielsen tells you the plan: he kept Chris Olave, then opened round one with Jalen Hurts, part of a three-quarterback run at picks six through eight. All three of his keepers, Jaxon Smith-Njigba, Olave and Javonte Williams, <b>landed as value by the model</b>, and he doubled down late with reaches on Gunnar Helm and Malik Davis.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/2.svg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.07 &middot; Mednis Madness</p>
-          <p class="feature-text">Mariss Mednis's first pick was the third quarterback in that round-one run, Caleb Williams, taken 15 slots ahead of his ADP. She kept Cam Skattebo and Wan'Dale Robinson, both solid value, and added a round-six reach on tight end Isaiah Likely.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/3.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.08 &middot; Illusions Michael</p>
-          <p class="feature-text">Pete Gallagher kept Josh Allen at a fair cost and never drafted another quarterback, <b>the only 19-round roster in the league with just one</b>. He poured the savings into wide receiver instead, eight of them, and found value everywhere late: Keaton Mitchell fell 66 picks past ADP in round 17.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/1.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.09 &middot; Lamar and Drake's Grahamy's</p>
-          <p class="feature-text">Imran Hirani is back after finishing runner-up, and his three keepers, Daniel Jones, Kyle Pitts Sr. and Luther Burden III (<b>the second-best keeper value in the league</b>), came cheap. He clearly wanted quarterback depth beyond that: Fernando Mendoza and Carson Beck were both rookie-QB reaches, 50 and 66 picks ahead of their ADP.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/5.svg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.10 &middot; Team Kantastrophe</p>
-          <p class="feature-text">Cara Kantrowitz is the defending champion, and her keepers read like a title defense: Jonathan Taylor at essentially fair cost, Drake Maye, and Matthew Stafford kept for a round-10 cost, <b>the third-best keeper value in the league</b>. She closed with a round-16 flier on Chris Rodriguez Jr., 62 picks past his ADP.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/12.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.11 &middot; Buffalo Abusement Park</p>
-          <p class="feature-text">Melinda Thomas kept Ja'Marr Chase, <b>the second-priciest keeper in the league behind only Bo Nix</b>, and James Cook III alongside him. She stayed light at quarterback, just two all draft, and grabbed running back Jonah Coleman 67 picks past ADP in round 17, the biggest fall of the night.</p>
-        </div>
-      </article>
-
-      <article class="feature">
-        <span class="crest"><img src="logos/2026/7.jpg" alt=""></span>
-        <div style="flex:1">
-          <p class="feature-label">1.12 &middot; Terrible Towels</p>
-          <p class="feature-text">Mike Higgins finished last a year ago and answered with the best-value keeper duo in the league: Jayden Daniels at a fair round-one cost, then Jaxson Dart for a round-12 cost, <b>the single biggest bargain of any keeper in Just Stream It</b>. He added Shedeur Sanders as a round-16 quarterback flier behind them.</p>
-        </div>
-      </article>
-
-      <p class="briefs-label">The Round One Board</p>
-      <div class="brief"><span class="brief-pick">1.01</span><span class="crest"><img src="logos/2026/10.jpg" alt=""></span><p><b>Bijan Robinson</b>, RB &middot; The Aristocrats</p></div>
-      <div class="brief"><span class="brief-pick">1.02</span><span class="crest"><img src="logos/2026/11.png" alt=""></span><p><b>Lamar Jackson</b>, QB &middot; Keep 'em and weep</p></div>
-      <div class="brief"><span class="brief-pick">1.03</span><span class="crest"><img src="logos/2026/6.jpg" alt=""></span><p><b>Christian McCaffrey</b>, RB &middot; Mahomes is where the heart is</p><span class="brief-tag">kept</span></div>
-      <div class="brief"><span class="brief-pick">1.04</span><span class="crest"><img src="logos/2026/9.jpg" alt=""></span><p><b>Jahmyr Gibbs</b>, RB &middot; McConkey Kong Country 2</p><span class="brief-tag">kept</span></div>
-      <div class="brief"><span class="brief-pick">1.05</span><span class="crest"><img src="logos/2026/4.jpg" alt=""></span><p><b>Puka Nacua</b>, WR &middot; Conquering Heroes</p></div>
-      <div class="brief"><span class="brief-pick">1.06</span><span class="crest"><img src="logos/2026/8.jpg" alt=""></span><p><b>Jalen Hurts</b>, QB &middot; Olave Oyl</p></div>
-      <div class="brief"><span class="brief-pick">1.07</span><span class="crest"><img src="logos/2026/2.svg" alt=""></span><p><b>Caleb Williams</b>, QB &middot; Mednis Madness</p></div>
-      <div class="brief"><span class="brief-pick">1.08</span><span class="crest"><img src="logos/2026/3.jpg" alt=""></span><p><b>Josh Allen</b>, QB &middot; Illusions Michael</p><span class="brief-tag">kept</span></div>
-      <div class="brief"><span class="brief-pick">1.09</span><span class="crest"><img src="logos/2026/1.jpg" alt=""></span><p><b>Amon-Ra St. Brown</b>, WR &middot; Lamar and Drake's Grahamy's</p></div>
-      <div class="brief"><span class="brief-pick">1.10</span><span class="crest"><img src="logos/2026/5.svg" alt=""></span><p><b>CeeDee Lamb</b>, WR &middot; Team Kantastrophe</p></div>
-      <div class="brief"><span class="brief-pick">1.11</span><span class="crest"><img src="logos/2026/12.jpg" alt=""></span><p><b>Ja'Marr Chase</b>, WR &middot; Buffalo Abusement Park</p><span class="brief-tag">kept</span></div>
-      <div class="brief"><span class="brief-pick">1.12</span><span class="crest"><img src="logos/2026/7.jpg" alt=""></span><p><b>Jayden Daniels</b>, QB &middot; Terrible Towels</p><span class="brief-tag">kept</span></div>
-
-      <div class="valuebox">
-        <p class="valuebox-label">Reach &amp; Value Board</p>
-        <p class="valuebox-sublabel">Vs. preseason superflex ADP, top-150 skill-position picks only</p>
-
-        <h4>Biggest Reaches</h4>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/4.jpg" alt=""></span><span class="valuerow-name">MarShawn Lloyd, RB (Ben)</span><span class="valuerow-gap">pick 68 vs. ADP 125</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/1.jpg" alt=""></span><span class="valuerow-name">Fernando Mendoza, QB (Imran)</span><span class="valuerow-gap">pick 88 vs. ADP 138</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/6.jpg" alt=""></span><span class="valuerow-name">Jordan Love, QB (Lisette)</span><span class="valuerow-gap">pick 51 vs. ADP 79</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/2.svg" alt=""></span><span class="valuerow-name">Isaiah Likely, TE (Mariss)</span><span class="valuerow-gap">pick 66 vs. ADP 90</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/2.svg" alt=""></span><span class="valuerow-name">Caleb Williams, QB (Mariss)</span><span class="valuerow-gap">pick 7 vs. ADP 22</span></div>
-
-        <h4>Biggest Falls</h4>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/11.png" alt=""></span><span class="valuerow-name">Woody Marks, RB (Kris)</span><span class="valuerow-gap">pick 170 vs. ADP 109</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/5.svg" alt=""></span><span class="valuerow-name">Chris Rodriguez Jr., RB (Cara)</span><span class="valuerow-gap">pick 183 vs. ADP 121</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/1.jpg" alt=""></span><span class="valuerow-name">Brian Robinson Jr., RB (Imran)</span><span class="valuerow-gap">pick 184 vs. ADP 122</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/10.jpg" alt=""></span><span class="valuerow-name">Adonai Mitchell, WR (Karl)</span><span class="valuerow-gap">pick 192 vs. ADP 129</span></div>
-        <div class="valuerow"><span class="crest"><img src="logos/2026/3.jpg" alt=""></span><span class="valuerow-name">Keaton Mitchell, RB (Pete)</span><span class="valuerow-gap">pick 200 vs. ADP 134</span></div>
-      </div>
-
-      <div class="ledger">
-        <p class="ledger-label">The Keeper Ledger</p>
-        <p class="ledger-sublabel">All 27 keepers, best value first</p>
-        <table class="ledger-table">
-          <thead>
-            <tr><th></th><th>Owner</th><th>Player</th><th>Pos</th><th>Cost</th><th class="num">Vig</th></tr>
-          </thead>
-          <tbody>
-            <tr><td class="crest"><img src="logos/2026/7.jpg" alt=""></td><td>Mike</td><td>Jaxson Dart</td><td>QB</td><td>R12</td><td class="num vig-pos">+114</td></tr>
-            <tr><td class="crest"><img src="logos/2026/1.jpg" alt=""></td><td>Imran</td><td>Luther Burden III</td><td>WR</td><td>R14</td><td class="num vig-pos">+77</td></tr>
-            <tr><td class="crest"><img src="logos/2026/5.svg" alt=""></td><td>Cara</td><td>Matthew Stafford</td><td>QB</td><td>R10</td><td class="num vig-pos">+66</td></tr>
-            <tr><td class="crest"><img src="logos/2026/8.jpg" alt=""></td><td>Joe</td><td>Javonte Williams</td><td>RB</td><td>R11</td><td class="num vig-pos">+63</td></tr>
-            <tr><td class="crest"><img src="logos/2026/1.jpg" alt=""></td><td>Imran</td><td>Kyle Pitts Sr.</td><td>TE</td><td>R13</td><td class="num vig-pos">+53</td></tr>
-            <tr><td class="crest"><img src="logos/2026/8.jpg" alt=""></td><td>Joe</td><td>Chris Olave</td><td>WR</td><td>R8</td><td class="num vig-pos">+46</td></tr>
-            <tr><td class="crest"><img src="logos/2026/2.svg" alt=""></td><td>Mariss</td><td>Cam Skattebo</td><td>RB</td><td>R10</td><td class="num vig-pos">+39</td></tr>
-            <tr><td class="crest"><img src="logos/2026/4.jpg" alt=""></td><td>Ben</td><td>Colston Loveland</td><td>TE</td><td>R10</td><td class="num vig-pos">+37</td></tr>
-            <tr><td class="crest"><img src="logos/2026/8.jpg" alt=""></td><td>Joe</td><td>Jaxon Smith-Njigba</td><td>WR</td><td>R4</td><td class="num vig-pos">+35</td></tr>
-            <tr><td class="crest"><img src="logos/2026/2.svg" alt=""></td><td>Mariss</td><td>Wan'Dale Robinson</td><td>WR</td><td>R14</td><td class="num vig-pos">+33</td></tr>
-            <tr><td class="crest"><img src="logos/2026/11.png" alt=""></td><td>Kris</td><td>Quinshon Judkins</td><td>RB</td><td>R9</td><td class="num vig-pos">+32</td></tr>
-            <tr><td class="crest"><img src="logos/2026/1.jpg" alt=""></td><td>Imran</td><td>Daniel Jones</td><td>QB</td><td>R11</td><td class="num vig-pos">+30</td></tr>
-            <tr><td class="crest"><img src="logos/2026/5.svg" alt=""></td><td>Cara</td><td>Drake Maye</td><td>QB</td><td>R3</td><td class="num vig-pos">+21</td></tr>
-            <tr><td class="crest"><img src="logos/2026/9.jpg" alt=""></td><td>Ronjan</td><td>Trevor Lawrence</td><td>QB</td><td>R5</td><td class="num vig-pos">+21</td></tr>
-            <tr><td class="crest"><img src="logos/2026/6.jpg" alt=""></td><td>Lisette</td><td>Tetairoa McMillan</td><td>WR</td><td>R7</td><td class="num vig-pos">+17</td></tr>
-            <tr><td class="crest"><img src="logos/2026/4.jpg" alt=""></td><td>Ben</td><td>Kenneth Walker III</td><td>RB</td><td>R5</td><td class="num vig-pos">+10</td></tr>
-            <tr><td class="crest"><img src="logos/2026/12.jpg" alt=""></td><td>Melinda</td><td>James Cook III</td><td>RB</td><td>R3</td><td class="num vig-pos">+10</td></tr>
-            <tr><td class="crest"><img src="logos/2026/3.jpg" alt=""></td><td>Pete</td><td>Trey McBride</td><td>TE</td><td>R3</td><td class="num vig-pos">+8</td></tr>
-            <tr><td class="crest"><img src="logos/2026/9.jpg" alt=""></td><td>Ronjan</td><td>Jahmyr Gibbs</td><td>RB</td><td>R1</td><td class="num vig-pos">+5</td></tr>
-            <tr><td class="crest"><img src="logos/2026/7.jpg" alt=""></td><td>Mike</td><td>Jayden Daniels</td><td>QB</td><td>R1</td><td class="num vig-pos">+3</td></tr>
-            <tr><td class="crest"><img src="logos/2026/3.jpg" alt=""></td><td>Pete</td><td>Josh Allen</td><td>QB</td><td>R1</td><td class="num">+0</td></tr>
-            <tr><td class="crest"><img src="logos/2026/5.svg" alt=""></td><td>Cara</td><td>Jonathan Taylor</td><td>RB</td><td>R2</td><td class="num vig-neg">-2</td></tr>
-            <tr><td class="crest"><img src="logos/2026/6.jpg" alt=""></td><td>Lisette</td><td>Christian McCaffrey</td><td>RB</td><td>R1</td><td class="num vig-neg">-6</td></tr>
-            <tr><td class="crest"><img src="logos/2026/12.jpg" alt=""></td><td>Melinda</td><td>Ja'Marr Chase</td><td>WR</td><td>R1</td><td class="num vig-neg">-7</td></tr>
-            <tr><td class="crest"><img src="logos/2026/6.jpg" alt=""></td><td>Lisette</td><td>Bo Nix</td><td>QB</td><td>R2</td><td class="num vig-neg">-17</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-    </section>
+  <div class="section">
+    <div class="section-title">Every Team</div>
+    <div class="section-note">In round-one draft order</div>
+    <div class="team-tile-grid" id="team-tiles"></div>
   </div>
 
-  <footer class="masthead-footer">2026 Draft, Complete Results &middot; Compiled from live ESPN draft data</footer>
+  <div class="section">
+    <div class="section-title">Round One Board</div>
+    <div class="card">
+      <ol class="rank-list" id="round1-list"></ol>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Reach &amp; Value Board</div>
+    <div class="section-note">Vs. preseason superflex ADP, top-150 skill-position picks only</div>
+    <div class="card">
+      <div class="tile-label" style="margin-bottom:8px;">Biggest Reaches</div>
+      <ol class="rank-list" id="reach-list"></ol>
+      <div class="tile-label" style="margin:20px 0 8px;">Biggest Falls</div>
+      <ol class="rank-list" id="value-list"></ol>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Keeper Ledger</div>
+    <div class="section-note">All 27 keepers, best value first</div>
+    <div class="card">
+      <ol class="rank-list" id="keeper-list"></ol>
+    </div>
+  </div>
 
 </div>
 
 <script>
 const PASSWORD = 'cockroach';
 
+// team_id -> { logo, oldLogo (only if changed this year) }
+const LOGO = {
+  1: 'logos/2026/1.jpg', 2: 'logos/2026/2.svg', 3: 'logos/2026/3.jpg', 4: 'logos/2026/4.jpg',
+  5: 'logos/2026/5.svg', 6: 'logos/2026/6.jpg', 7: 'logos/2026/7.jpg', 8: 'logos/2026/8.jpg',
+  9: 'logos/2026/9.jpg', 10: 'logos/2026/10.jpg', 11: 'logos/2026/11.png', 12: 'logos/2026/12.jpg',
+};
+const OLD_LOGO = {
+  8: 'logos/2025/8.svg',
+  9: 'logos/2025/9.png',
+  10: 'logos/2025/10.png',
+};
+
+const TEAMS = [
+  { id: 10, owner: 'Karl Abel', name: 'The Aristocrats', oldName: "Baker's Dirty Dozen" },
+  { id: 11, owner: 'Kris Wikstrom', name: "Keep 'em and weep" },
+  { id: 6,  owner: 'Lisette Bruens', name: 'Mahomes is where the heart is' },
+  { id: 9,  owner: 'Ronjan Sikdar', name: 'McConkey Kong Country 2', oldName: 'McConkey Kong Country' },
+  { id: 4,  owner: 'Ben Porter', name: 'Conquering Heroes' },
+  { id: 8,  owner: 'Joe Sebranek', name: 'Olave Oyl', oldName: 'Daddy Nielsen' },
+  { id: 2,  owner: 'Mariss Mednis', name: 'Mednis Madness' },
+  { id: 3,  owner: 'Pete Gallagher', name: 'Illusions Michael' },
+  { id: 1,  owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's" },
+  { id: 5,  owner: 'Cara Kantrowitz', name: 'Team Kantastrophe' },
+  { id: 12, owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
+  { id: 7,  owner: 'Mike Higgins', name: 'Terrible Towels' },
+];
+
+// Hand-written recap text, verified against docs/data/2026/draft.json,
+// docs/data/keeper_guide_2026.json and docs/data/adp_unkept_2026.json.
+// Every sentence carries a specific pick, round, or number - nothing here
+// is filler.
+const RECAP_TEXT = {
+  10: 'Karl Abel is the only owner who kept nobody, walked away from a 9th-place finish, and rebuilt under a new name. He opened with three running backs in his first four picks: <b>Bijan Robinson</b> at 1.01, then Ashton Jeanty and Josh Jacobs. Picks five through eight were four straight wide receivers (Davante Adams, Courtland Sutton, Carnell Tate, Mike Evans), then Travis Kelce and Hunter Henry back to back at tight end in rounds nine and ten.',
+  11: "Kris Wikstrom is coming off the league's worst record, 2-12. He picked second overall (<b>Lamar Jackson</b>), then kept Quinshon Judkins for a round-9 cost and Tyler Shough for round 13, one of the two best-value keepers in the league. His round-15 running back, Woody Marks, fell 61 picks past ADP, the deepest fall at the position all night.",
+  6: "Lisette Bruens kept Christian McCaffrey and Bo Nix; the Nix keeper (a round-2 cost) is <b>the one real overpay in the league</b> by the model's math. Her first live pick landed the player her team is named for: <b>Patrick Mahomes</b>, at pick 27. She's one of five owners now carrying four quarterbacks.",
+  9: "Ronjan Sikdar kept his round-one running back, Jahmyr Gibbs, plus Trevor Lawrence for round 5. He rostered four quarterbacks total, including a round-11 flier on Aaron Rodgers, and closed with <b>four straight wide receivers</b> in his final picks, landing Tre Tucker and Jalen Nailor well past their ADP.",
+  4: 'Ben Porter\'s three keepers, Kenneth Walker III, Emeka Egbuka and Colston Loveland, all graded as fair-to-good value. His boldest live pick was MarShawn Lloyd in round 6, 57 picks ahead of ADP and <b>the single biggest reach of the entire draft</b>.',
+  8: 'Joe Sebranek renamed Daddy Nielsen to Olave Oyl after keeping Chris Olave. He opened round one with Jalen Hurts, part of a three-quarterback run at picks 6 through 8. All three of his keepers, Jaxon Smith-Njigba, Olave and Javonte Williams, <b>graded as value by the model</b>, and he added late reaches on Gunnar Helm and Malik Davis.',
+  2: "Mariss Mednis's first pick was the third quarterback in that round-one run, Caleb Williams, taken 15 slots ahead of his ADP. She kept Cam Skattebo and Wan'Dale Robinson, both solid value, and added a round-6 reach on tight end Isaiah Likely.",
+  3: 'Pete Gallagher kept Josh Allen at a fair cost and never drafted another quarterback, <b>the only 19-round roster in the league with just one</b>. He carried eight wide receivers instead, and found value late: Keaton Mitchell fell 66 picks past ADP in round 17.',
+  1: "Imran Hirani is back after finishing runner-up, and his three keepers, Daniel Jones, Kyle Pitts Sr. and Luther Burden III, <b>the second-best keeper value in the league</b>, came cheap. He added two more quarterbacks as late fliers, Fernando Mendoza and Carson Beck, rookies taken 50 and 66 picks ahead of their ADP.",
+  5: 'Cara Kantrowitz is the defending champion. She kept Jonathan Taylor at essentially fair cost, plus Drake Maye and Matthew Stafford for a round-10 cost, <b>the third-best keeper value in the league</b>. Her round-16 pick, Chris Rodriguez Jr., fell 62 picks past his ADP.',
+  12: 'Melinda Thomas kept Ja\'Marr Chase, <b>the second-priciest keeper in the league behind only Bo Nix</b>, and James Cook III alongside him. She stayed light at quarterback, just two all draft, and her round-17 running back, Jonah Coleman, fell 67 picks past ADP, the biggest fall of the night.',
+  7: 'Mike Higgins finished last a year ago and answered with the best-value keeper duo in the league: Jayden Daniels at a fair round-1 cost, then Jaxson Dart for a round-12 cost, <b>the single biggest bargain of any keeper in Just Stream It</b>. He added Shedeur Sanders as a round-16 quarterback flier behind them.',
+};
+
+const ROUND1 = [
+  { pick: '1.01', team: 10, player: 'Bijan Robinson', pos: 'RB', kept: false },
+  { pick: '1.02', team: 11, player: 'Lamar Jackson', pos: 'QB', kept: false },
+  { pick: '1.03', team: 6,  player: 'Christian McCaffrey', pos: 'RB', kept: true },
+  { pick: '1.04', team: 9,  player: 'Jahmyr Gibbs', pos: 'RB', kept: true },
+  { pick: '1.05', team: 4,  player: 'Puka Nacua', pos: 'WR', kept: false },
+  { pick: '1.06', team: 8,  player: 'Jalen Hurts', pos: 'QB', kept: false },
+  { pick: '1.07', team: 2,  player: 'Caleb Williams', pos: 'QB', kept: false },
+  { pick: '1.08', team: 3,  player: 'Josh Allen', pos: 'QB', kept: true },
+  { pick: '1.09', team: 1,  player: 'Amon-Ra St. Brown', pos: 'WR', kept: false },
+  { pick: '1.10', team: 5,  player: 'CeeDee Lamb', pos: 'WR', kept: false },
+  { pick: '1.11', team: 12, player: "Ja'Marr Chase", pos: 'WR', kept: true },
+  { pick: '1.12', team: 7,  player: 'Jayden Daniels', pos: 'QB', kept: true },
+];
+
+const REACHES = [
+  { team: 4, player: 'MarShawn Lloyd', pos: 'RB', pick: 68, adp: 125 },
+  { team: 1, player: 'Fernando Mendoza', pos: 'QB', pick: 88, adp: 138 },
+  { team: 6, player: 'Jordan Love', pos: 'QB', pick: 51, adp: 79 },
+  { team: 2, player: 'Isaiah Likely', pos: 'TE', pick: 66, adp: 90 },
+  { team: 2, player: 'Caleb Williams', pos: 'QB', pick: 7, adp: 22 },
+];
+const VALUES = [
+  { team: 11, player: 'Woody Marks', pos: 'RB', pick: 170, adp: 109 },
+  { team: 5,  player: 'Chris Rodriguez Jr.', pos: 'RB', pick: 183, adp: 121 },
+  { team: 1,  player: 'Brian Robinson Jr.', pos: 'RB', pick: 184, adp: 122 },
+  { team: 10, player: 'Adonai Mitchell', pos: 'WR', pick: 192, adp: 129 },
+  { team: 3,  player: 'Keaton Mitchell', pos: 'RB', pick: 200, adp: 134 },
+];
+
+const KEEPERS = [
+  { team: 7,  player: 'Jaxson Dart', pos: 'QB', round: 12, vig: 114 },
+  { team: 1,  player: 'Luther Burden III', pos: 'WR', round: 14, vig: 77 },
+  { team: 5,  player: 'Matthew Stafford', pos: 'QB', round: 10, vig: 66 },
+  { team: 8,  player: 'Javonte Williams', pos: 'RB', round: 11, vig: 63 },
+  { team: 1,  player: 'Kyle Pitts Sr.', pos: 'TE', round: 13, vig: 53 },
+  { team: 8,  player: 'Chris Olave', pos: 'WR', round: 8, vig: 46 },
+  { team: 2,  player: 'Cam Skattebo', pos: 'RB', round: 10, vig: 39 },
+  { team: 4,  player: 'Colston Loveland', pos: 'TE', round: 10, vig: 37 },
+  { team: 8,  player: 'Jaxon Smith-Njigba', pos: 'WR', round: 4, vig: 35 },
+  { team: 2,  player: "Wan'Dale Robinson", pos: 'WR', round: 14, vig: 33 },
+  { team: 11, player: 'Quinshon Judkins', pos: 'RB', round: 9, vig: 32 },
+  { team: 1,  player: 'Daniel Jones', pos: 'QB', round: 11, vig: 30 },
+  { team: 5,  player: 'Drake Maye', pos: 'QB', round: 3, vig: 21 },
+  { team: 9,  player: 'Trevor Lawrence', pos: 'QB', round: 5, vig: 21 },
+  { team: 6,  player: 'Tetairoa McMillan', pos: 'WR', round: 7, vig: 17 },
+  { team: 4,  player: 'Kenneth Walker III', pos: 'RB', round: 5, vig: 10 },
+  { team: 12, player: 'James Cook III', pos: 'RB', round: 3, vig: 10 },
+  { team: 3,  player: 'Trey McBride', pos: 'TE', round: 3, vig: 8 },
+  { team: 9,  player: 'Jahmyr Gibbs', pos: 'RB', round: 1, vig: 5 },
+  { team: 7,  player: 'Jayden Daniels', pos: 'QB', round: 1, vig: 3 },
+  { team: 3,  player: 'Josh Allen', pos: 'QB', round: 1, vig: 0 },
+  { team: 5,  player: 'Jonathan Taylor', pos: 'RB', round: 2, vig: -2 },
+  { team: 6,  player: 'Christian McCaffrey', pos: 'RB', round: 1, vig: -6 },
+  { team: 12, player: "Ja'Marr Chase", pos: 'WR', round: 1, vig: -7 },
+  { team: 6,  player: 'Bo Nix', pos: 'QB', round: 2, vig: -17 },
+];
+
+function teamById(id) { return TEAMS.find(t => t.id === id); }
+
+function posBadge(pos) {
+  return `<span class="pos-badge pos-${pos}">${pos}</span>`;
+}
+
+function chip(teamId, size) {
+  const t = teamById(teamId);
+  const cls = size ? `team-chip ${size}` : 'team-chip';
+  return `
+    <span class="${cls}">
+      <img class="chip-logo" src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">
+      <span class="chip-text">
+        <span class="chip-name">${t.owner}</span>
+        <span class="chip-owner">${t.name}</span>
+      </span>
+    </span>
+  `;
+}
+
+function renderTeamTiles() {
+  const el = document.getElementById('team-tiles');
+  el.innerHTML = TEAMS.map(t => {
+    const logoSwapHtml = OLD_LOGO[t.id] ? `
+      <div class="logo-swap">
+        <span class="swap-label">Logo:</span>
+        <img src="${OLD_LOGO[t.id]}" alt="2025 logo" onerror="this.style.visibility='hidden'">
+        <span class="arrow">&rarr;</span>
+        <img src="${LOGO[t.id]}" alt="2026 logo" onerror="this.style.visibility='hidden'">
+      </div>
+    ` : '';
+    const renameHtml = t.oldName ? `<div class="rebrand-note">Renamed from ${t.oldName}</div>` : '';
+    return `
+      <div class="tile">
+        ${chip(t.id)}
+        ${renameHtml}
+        ${logoSwapHtml}
+        <p class="tile-detail-lg">${RECAP_TEXT[t.id]}</p>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderRound1() {
+  const el = document.getElementById('round1-list');
+  el.innerHTML = ROUND1.map(p => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(p.team, 'team-chip-sm')}
+          ${posBadge(p.pos)}
+          <span>${p.player}</span>
+          ${p.kept ? '<span class="round-tag highlight">kept</span>' : ''}
+        </div>
+      </div>
+      <div class="rank-value">${p.pick}</div>
+    </li>
+  `).join('');
+}
+
+function renderReachValue() {
+  const reachEl = document.getElementById('reach-list');
+  reachEl.innerHTML = REACHES.map(r => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(r.team, 'team-chip-sm')}
+          ${posBadge(r.pos)}
+          <span>${r.player}</span>
+        </div>
+        <div class="rank-sub">pick ${r.pick} vs. ADP ${r.adp}</div>
+      </div>
+      <div class="rank-value good">+${r.adp - r.pick}</div>
+    </li>
+  `).join('');
+
+  const valueEl = document.getElementById('value-list');
+  valueEl.innerHTML = VALUES.map(r => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(r.team, 'team-chip-sm')}
+          ${posBadge(r.pos)}
+          <span>${r.player}</span>
+        </div>
+        <div class="rank-sub">pick ${r.pick} vs. ADP ${r.adp}</div>
+      </div>
+      <div class="rank-value bad">-${r.pick - r.adp}</div>
+    </li>
+  `).join('');
+}
+
+function renderKeepers() {
+  const el = document.getElementById('keeper-list');
+  el.innerHTML = KEEPERS.map(k => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(k.team, 'team-chip-sm')}
+          ${posBadge(k.pos)}
+          <span>${k.player}</span>
+        </div>
+        <div class="rank-sub">kept for round ${k.round}</div>
+      </div>
+      <div class="rank-value ${k.vig > 0 ? 'good' : k.vig < 0 ? 'bad' : ''}">${k.vig > 0 ? '+' : ''}${k.vig}</div>
+    </li>
+  `).join('');
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+
+  const meta = await (await fetch('data/meta.json')).json();
+  document.getElementById('resources-nav').innerHTML = renderNav('draft-recap-preview', meta.league_id);
+
+  renderTeamTiles();
+  renderRound1();
+  renderReachValue();
+  renderKeepers();
+}
+
 document.getElementById('auth-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const input = document.getElementById('auth-input');
   if (input.value === PASSWORD) {
     localStorage.setItem('jsi_auth', 'granted');
-    unlock();
+    loadApp();
   } else {
     document.getElementById('auth-error').classList.add('show');
     input.value = '';
   }
 });
 
-async function unlock() {
-  document.getElementById('lock-screen').style.display = 'none';
-  document.getElementById('app').style.display = '';
-  const meta = await (await fetch('data/meta.json')).json();
-  document.getElementById('resources-nav').innerHTML = renderNav('draft-recap-preview', meta.league_id);
-}
-
 if (localStorage.getItem('jsi_auth') === 'granted') {
-  unlock();
+  loadApp();
 }
-</script>
 
+function updateThemeToggleIcon() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.getElementById('theme-toggle').textContent = isLight ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+}
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jsi_theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('jsi_theme', 'light');
+  }
+  updateThemeToggleIcon();
+});
+updateThemeToggleIcon();
+</script>
 </body>
 </html>
