@@ -238,6 +238,7 @@ nav.resources .nav-sep { color: var(--dim); align-self: center; }
 .team-box img {
   width: 28px;
   height: 28px;
+  border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
   flex-shrink: 0;
@@ -259,6 +260,7 @@ nav.resources .nav-sep { color: var(--dim); align-self: center; }
 .dossier-header img {
   width: 52px;
   height: 52px;
+  border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
 }

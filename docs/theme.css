@@ -302,7 +302,7 @@ nav.resources .nav-sep { color: var(--text-mute); }
 .team-chip img.chip-logo {
   width: 34px;
   height: 34px;
-  border-radius: 8px;
+  border-radius: 50%;
   object-fit: cover;
   background: var(--panel-2);
   flex-shrink: 0;
@@ -316,12 +316,12 @@ nav.resources .nav-sep { color: var(--text-mute); }
 .team-chip .chip-owner { font-size: 0.78rem; color: var(--text-dim); }
 
 .team-chip-sm { gap: 8px; }
-.team-chip-sm img.chip-logo { width: 24px; height: 24px; border-radius: 6px; }
+.team-chip-sm img.chip-logo { width: 24px; height: 24px; border-radius: 50%; }
 .team-chip-sm .chip-name { font-size: 0.85rem; }
 .team-chip-sm .chip-owner { font-size: 0.7rem; }
 
 .team-chip-xs { gap: 6px; }
-.team-chip-xs img.chip-logo { width: 18px; height: 18px; border-radius: 4px; }
+.team-chip-xs img.chip-logo { width: 18px; height: 18px; border-radius: 50%; }
 .team-chip-xs .chip-name { font-size: 0.8rem; }
 .team-chip-xs .chip-owner { font-size: 0.68rem; }
 
@@ -479,7 +479,7 @@ nav.resources .nav-sep { color: var(--text-mute); }
 .team-row img.team-logo {
   width: 40px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: 50%;
   object-fit: cover;
   background: var(--panel-2);
 }
