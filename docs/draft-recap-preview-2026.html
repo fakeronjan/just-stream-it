@@ -44,9 +44,6 @@
   .rank-value.good { color: var(--good); }
   .rank-value.bad { color: var(--bad); }
   .rank-list .rank-sub .owner-tag { font-weight: 600; color: var(--text); }
-
-  .results-row { color: var(--text-dim); font-size: 0.88rem; line-height: 1.5; margin-top: 6px; }
-  .results-row b { color: var(--text); }
 </style>
 <script>
 (function() {
@@ -171,28 +168,6 @@ const RECAP_TEXT = {
   7: "Mike built the same shape as Pete Gallagher this year: solve quarterback cheaply through a keeper, then spend everywhere else on wide receiver. His two keepers, <b>Jayden Daniels</b> at a fair round-one cost and Jaxson Dart for round twelve, freed up the rest of his draft. Eight receivers followed, tied for the most in the league, starting with Justin Jefferson in round two. Running back was the clear afterthought, four total, tied for the fewest. Tight end came three rounds earlier than last year, Brock Bowers in round four versus Mark Andrews in round seven, and he added Shedeur Sanders as a round-16 quarterback flier behind his two keepers.",
 };
 
-// Grading layer for "The results": each team's own best-value keeper (by
-// vig, among their kept players), best-value live pick (biggest fall past
-// ADP, restricted to players ranked in the top 100 by ADP so this doesn't
-// just default to a round-19 dart every time), and an overall value grade
-// (average ADP delta across each team's own top-100-ADP live picks, ranked
-// 1-12 against the rest of the league). Computed from
-// docs/data/keeper_guide_2026.json and docs/data/adp_unkept_2026.json.
-const RESULTS = {
-  10: { keeper: null, pick: 'Mike Evans (WR), pick 96, fell 29 picks past an ADP of 67.', value: "Averaged 12 picks better than ADP on his notable picks, right around the league median." },
-  11: { keeper: 'Tyler Shough (QB), a round-13 cost, +72 vig, the third-best keeper value in the league.', pick: 'Jakobi Meyers (WR), pick 119, fell 44 picks past an ADP of 75.', value: "Averaged 18 picks better than ADP, the 5th-best value draft in the league." },
-  6: { keeper: 'Tetairoa McMillan (WR), a round-7 cost, +16 vig.', pick: 'Bryce Young (QB), pick 123, fell 32 picks past an ADP of 91.', value: "Averaged 14 picks better than ADP, a bit ahead of the league median." },
-  9: { keeper: 'Trevor Lawrence (QB), a round-5 cost, +21 vig.', pick: 'Tony Pollard (RB), pick 93, fell 22 picks past an ADP of 71.', value: "Averaged 10 picks better than ADP, right around the league median." },
-  4: { keeper: 'Colston Loveland (TE), a round-10 cost, +37 vig.', pick: 'Jacoby Brissett (QB), pick 125, fell 32 picks past an ADP of 93.', value: "Averaged 5 picks better than ADP, drafted close to the board all night." },
-  8: { keeper: 'Javonte Williams (RB), a round-11 cost, +66 vig, tied for the 4th-best keeper value in the league.', pick: 'Kenny Gainwell (RB), pick 102, fell 30 picks past an ADP of 72.', value: "Averaged 9 picks better than ADP, close to market value overall." },
-  2: { keeper: 'Cam Skattebo (RB), a round-10 cost, +40 vig.', pick: 'Zay Flowers (WR), pick 55, fell 23 picks past an ADP of 32.', value: "Averaged 2 picks worse than ADP, the only team that didn't lean toward value overall." },
-  3: { keeper: 'Trey McBride (TE), a round-3 cost, +8 vig.', pick: "De'Zhaun Stribling (WR), pick 128, fell 45 picks past an ADP of 83.", value: "Averaged 26 picks better than ADP, the best value draft in the league by this measure." },
-  1: { keeper: 'Luther Burden III (WR), a round-14 cost, +77 vig, the second-best keeper value in the league.', pick: 'Jonathon Brooks (RB), pick 81, fell 17 picks past an ADP of 64.', value: "Averaged 7 picks better than ADP, roughly at market value." },
-  5: { keeper: 'Matthew Stafford (QB), a round-10 cost, +66 vig, tied for the 4th-best keeper value in the league.', pick: 'Stefon Diggs (WR), pick 130, fell 34 picks past an ADP of 96.', value: "Averaged 21 picks better than ADP, the second-best value draft in the league." },
-  12: { keeper: 'James Cook III (RB), a round-3 cost, +10 vig.', pick: 'Jacory Croskey-Merritt (RB), pick 134, fell 34 picks past an ADP of 100.', value: "Averaged 19 picks better than ADP, the third-best value draft in the league." },
-  7: { keeper: 'Jaxson Dart (QB), a round-12 cost, +114 vig, the best keeper value in the entire league.', pick: 'Brian Thomas Jr. (WR), pick 108, fell 39 picks past an ADP of 69.', value: "Averaged 18 picks better than ADP, the 4th-best value draft in the league." },
-};
-
 const ROUND1 = [
   { pick: '1.01', team: 10, player: 'Bijan Robinson', pos: 'RB', kept: false },
   { pick: '1.02', team: 11, player: 'Lamar Jackson', pos: 'QB', kept: false },
@@ -290,18 +265,12 @@ function renderTeamTiles() {
       </div>
     ` : '';
     const renameHtml = t.oldName ? `<div class="rebrand-note">Renamed from ${t.oldName}</div>` : '';
-    const r = RESULTS[t.id];
     return `
       <div class="tile">
         ${chip(t.id)}
         ${renameHtml}
         ${logoSwapHtml}
-        <p class="tile-label" style="margin-top:14px;">Their plan</p>
         <p class="tile-detail-lg">${RECAP_TEXT[t.id]}</p>
-        <p class="tile-label">The results</p>
-        <div class="results-row"><b>Best keeper:</b> ${r.keeper || "None - the only team that kept nobody this year."}</div>
-        <div class="results-row"><b>Best pick:</b> ${r.pick}</div>
-        <div class="results-row"><b>Overall value:</b> ${r.value}</div>
       </div>
     `;
   }).join('');
