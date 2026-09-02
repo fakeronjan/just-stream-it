@@ -41,6 +41,22 @@
   }
   .logo-swap .arrow { color: var(--text-mute); font-size: 1.6rem; flex-shrink: 0; }
 
+  .identity-strip {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin: 12px 0 6px; padding: 10px 12px;
+    background: var(--panel-2); border-radius: 10px; font-size: 0.8rem;
+  }
+  .identity-year { display: flex; align-items: center; gap: 7px; }
+  .identity-label { font-size: 0.65rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; }
+  .identity-pct { font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+  .identity-arrow { color: var(--text-mute); }
+  .identity-tag {
+    margin-left: auto; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em;
+    font-weight: 700; padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+  }
+  .identity-tag.shifted { color: var(--brand); background: var(--brand-tint); }
+  .identity-tag.steady { color: var(--text-mute); background: var(--panel); }
+
   .rank-value.good { color: var(--good); }
   .rank-value.bad { color: var(--bad); }
   .rank-list .rank-sub .owner-tag { font-weight: 600; color: var(--text); }
@@ -83,7 +99,7 @@
 
   <div class="section">
     <div class="section-title">Every Team</div>
-    <div class="section-note">In round-one draft order</div>
+    <div class="section-note">In round-one draft order. The 2025 &rarr; 2026 badge compares each team's top position by share of 2025 points scored vs. share of 2026 draft value by ADP - not a perfect match, but close enough to show who's leaning on the same position again and who moved off it.</div>
     <div class="team-tile-grid" id="team-tiles"></div>
   </div>
 
@@ -144,6 +160,29 @@ const TEAMS = [
   { id: 12, owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
   { id: 7,  owner: 'Mike Higgins', name: 'Terrible Towels' },
 ];
+
+// A data-driven cross-check on the prose above: each team's dominant
+// position in 2025 (share of actual started points, from
+// docs/data/2025/team_analytics.json) vs. 2026 (share of draft value,
+// weighting every keeper + live pick by max(0, 250 - its superflex ADP
+// rank) and summing by position - QB/RB/WR/TE only, K/D-ST excluded from
+// both). Not apples to apples (points scored vs. pre-season ADP), but
+// close enough to show who's leaning on the same position again and who
+// moved off it.
+const IDENTITY = {
+  1:  { y25pos: 'RB', y25pct: 28, y26pos: 'RB', y26pct: 40 },
+  2:  { y25pos: 'WR', y25pct: 33, y26pos: 'WR', y26pct: 35 },
+  3:  { y25pos: 'RB', y25pct: 30, y26pos: 'WR', y26pct: 54 },
+  4:  { y25pos: 'WR', y25pct: 33, y26pos: 'WR', y26pct: 35 },
+  5:  { y25pos: 'RB', y25pct: 37, y26pos: 'RB', y26pct: 36 },
+  6:  { y25pos: 'RB', y25pct: 34, y26pos: 'WR', y26pct: 38 },
+  7:  { y25pos: 'WR', y25pct: 32, y26pos: 'WR', y26pct: 46 },
+  8:  { y25pos: 'WR', y25pct: 33, y26pos: 'WR', y26pct: 41 },
+  9:  { y25pos: 'WR', y25pct: 31, y26pos: 'RB', y26pct: 36 },
+  10: { y25pos: 'WR', y25pct: 30, y26pos: 'WR', y26pct: 39 },
+  11: { y25pos: 'QB', y25pct: 32, y26pos: 'WR', y26pct: 37 },
+  12: { y25pos: 'WR', y25pct: 36, y26pos: 'WR', y26pct: 42 },
+};
 
 // Hand-written recap text, verified against docs/data/2026/draft.json,
 // docs/data/keeper_guide_2026.json and docs/data/adp_unkept_2026.json.
@@ -265,11 +304,30 @@ function renderTeamTiles() {
       </div>
     ` : '';
     const renameHtml = t.oldName ? `<div class="rebrand-note">Renamed from ${t.oldName}</div>` : '';
+    const idy = IDENTITY[t.id];
+    const shifted = idy.y25pos !== idy.y26pos;
+    const identityHtml = `
+      <div class="identity-strip">
+        <span class="identity-year">
+          <span class="identity-label">2025</span>
+          ${posBadge(idy.y25pos)}
+          <span class="identity-pct">${idy.y25pct}%</span>
+        </span>
+        <span class="identity-arrow">&rarr;</span>
+        <span class="identity-year">
+          <span class="identity-label">2026</span>
+          ${posBadge(idy.y26pos)}
+          <span class="identity-pct">${idy.y26pct}%</span>
+        </span>
+        <span class="identity-tag ${shifted ? 'shifted' : 'steady'}">${shifted ? 'Shifted' : 'Held steady'}</span>
+      </div>
+    `;
     return `
       <div class="tile">
         ${chip(t.id)}
         ${renameHtml}
         ${logoSwapHtml}
+        ${identityHtml}
         <p class="tile-detail-lg">${RECAP_TEXT[t.id]}</p>
       </div>
     `;
