@@ -196,6 +196,23 @@ let adpUnkept = null;
 let posRankById = null;
 let selectedTeamId = null;
 
+// 3 teams rebranded (name + logo) right around draft day. This is a
+// pre-draft planning page, not a record of the draft itself, so it keeps
+// showing each team under the name/logo it had going into keeper decisions
+// and the draft - the rename shows up on the Draft Recap page instead,
+// where it's part of the actual story. Without this override, the live
+// team_name/logo fields (fetched fresh from ESPN) would silently rewrite
+// draft-night history every time the data cron runs.
+const NAME_OVERRIDE = {
+  8:  { team_name: 'Daddy Nielsen ', logo: 'logos/2025/8.svg' },
+  9:  { team_name: 'McConkey Kong Country', logo: 'logos/2025/9.png' },
+  10: { team_name: "Baker's Dirty Dozen", logo: 'logos/2025/10.png' },
+};
+function applyNameOverride(t) {
+  const o = NAME_OVERRIDE[t.team_id];
+  if (o) { t.team_name = o.team_name; t.logo = o.logo; }
+}
+
 // Position rank among the FULL player pool - kept players included - so
 // e.g. a WR's "position rank" accounts for every kept WR ranked above them,
 // even though kept players don't appear as rows in the available-players
@@ -332,6 +349,8 @@ async function loadApp() {
 
   if (!guide) {
     guide = await (await fetch('data/draft_guide_2026.json')).json();
+    guide.teams.forEach(applyNameOverride);
+    guide.rounds.forEach(r => r.picks.forEach(applyNameOverride));
     // Pick-your-team grid reads alphabetically by owner first name, matching
     // the Keeper Dossier's convention - the Full Draft Board below reads
     // guide.rounds/round_1_order instead (untouched), which is correctly in

@@ -73,6 +73,23 @@
 <script>
 const PASSWORD = 'cockroach';
 
+// 3 teams rebranded (name + logo) right around draft day. This is a
+// pre-draft planning page, not a record of the draft itself, so it keeps
+// showing each team under the name/logo it had going into keeper decisions
+// and the draft - the rename shows up on the Draft Recap page instead,
+// where it's part of the actual story. Without this override, the live
+// team_name/logo fields (fetched fresh from ESPN) would silently rewrite
+// draft-night history every time the data cron runs.
+const NAME_OVERRIDE = {
+  8:  { team_name: 'Daddy Nielsen ', logo: 'logos/2025/8.svg' },
+  9:  { team_name: 'McConkey Kong Country', logo: 'logos/2025/9.png' },
+  10: { team_name: "Baker's Dirty Dozen", logo: 'logos/2025/10.png' },
+};
+function applyNameOverride(t) {
+  const o = NAME_OVERRIDE[t.team_id];
+  if (o) { t.team_name = o.team_name; t.logo = o.logo; }
+}
+
 function fmtSigned(n) {
   if (n === null || n === undefined) return '-';
   return (n > 0 ? '+' : '') + n;
@@ -225,6 +242,7 @@ async function loadApp() {
 
   const res = await fetch('data/keeper_guide_2026.json');
   guide = await res.json();
+  guide.forEach(applyNameOverride);
   guide.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
   selectedTeamId = guide[0].team_id;
   renderTeamGrid();
