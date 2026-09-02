@@ -1,125 +1,63 @@
 <!--
-  This is currently the landing page, but that won't last: once the
-  season starts, index.html becomes a live stats page and the Draft
-  Guide moves to living permanently at draft-guide.html (already an
-  intentional duplicate of this file for exactly that reason). Until
-  that divergence happens, keep the two in sync.
+  Landing page: the 2026 Draft Recap, published 9/2/2026 (draft completed
+  9/1/2026). The 2026 Draft Guide used to live here pre-draft; it moved
+  permanently to draft-guide.html once this replaced it - see that file's
+  own header comment. This page has no permanent URL of its own yet
+  (it's just index.html for now); revisit once the weekly in-season
+  recaps are live and index.html needs to become something else again.
 -->
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Just Stream It - Draft Guide</title>
-<meta name="description" content="2026 snake draft order and round-by-round board for the Just Stream It fantasy football league, with keeper picks pre-slotted into their cost round.">
+<title>Just Stream It - 2026 Draft Recap</title>
+<meta name="description" content="2026 draft recap for the Just Stream It fantasy football league: every team's plan, keeper values, and reach/value picks from the league's first-ever keeper draft.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="theme.css">
 <script src="nav.js"></script>
 <style>
-  .team-picker {
+  .team-tile-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 18px;
   }
-  .team-picker-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 18px 14px;
-    cursor: pointer;
-    text-align: center;
-    font-family: inherit;
-    color: inherit;
-  }
-  .team-picker-btn:hover { border-color: var(--brand-dim); }
-  .team-picker-btn.active { border-color: var(--brand); background: var(--brand-tint); }
-  .team-picker-btn img.chip-logo {
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: var(--panel-2);
-    flex-shrink: 0;
-  }
-  .team-picker-btn .chip-text { display: flex; flex-direction: column; align-items: center; line-height: 1.3; }
-  .team-picker-btn .chip-name { font-weight: 700; font-size: 1rem; }
-  .team-picker-btn .chip-owner { font-size: 0.82rem; color: var(--text-dim); }
+  .tile-detail-lg { color: var(--text-dim); font-size: 0.88rem; margin-top: 4px; line-height: 1.55; }
+  .tile-detail-lg b { color: var(--text); font-weight: 700; }
 
-  @media (max-width: 640px) {
-    .team-picker { grid-template-columns: repeat(2, 1fr); }
+  .rebrand-note { font-size: 0.85rem; color: var(--text-dim); margin-top: 4px; }
+  .logo-swap { display: flex; align-items: center; gap: 16px; margin: 12px 0 6px; }
+  .logo-swap-pair { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .logo-swap-pair img {
+    width: 76px; height: 76px; border-radius: 50%; object-fit: cover;
+    background: var(--panel-2); border: 1px solid var(--line);
   }
+  .logo-swap-pair .swap-year {
+    font-size: 0.68rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
+  }
+  .logo-swap .arrow { color: var(--text-mute); font-size: 1.6rem; flex-shrink: 0; }
 
-  .open-rounds-line { margin-top: 8px; font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
-  .open-rounds-line b { color: var(--text); }
+  .identity-strip {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin: 12px 0 6px; padding: 10px 12px;
+    background: var(--panel-2); border-radius: 10px; font-size: 0.8rem;
+  }
+  .identity-year { display: flex; align-items: center; gap: 7px; }
+  .identity-label { font-size: 0.65rem; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; }
+  .identity-pct { font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+  .identity-arrow { color: var(--text-mute); }
+  .identity-tag {
+    margin-left: auto; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em;
+    font-weight: 700; padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+  }
+  .identity-tag.shifted { color: var(--brand); background: var(--brand-tint); }
+  .identity-tag.steady { color: var(--text-mute); background: var(--panel); }
 
-  .table-scroll { overflow-x: auto; }
-  table.draft-grid { border-collapse: collapse; font-size: 0.8rem; min-width: 1700px; width: 100%; }
-  table.draft-grid th, table.draft-grid td {
-    border: 1px solid var(--line);
-    padding: 6px 9px;
-    text-align: left;
-    vertical-align: top;
-  }
-  table.draft-grid td { min-width: 128px; }
-  table.draft-grid th {
-    background: var(--panel-2);
-    color: var(--text-mute);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    text-align: center;
-  }
-  /* Header team-chip: name stacked above the logo, not beside it - a
-     side-by-side chip clips against these narrow columns. */
-  table.draft-grid th .team-chip {
-    flex-direction: column;
-    gap: 4px;
-    align-items: center;
-  }
-  table.draft-grid th .team-chip .chip-logo { width: 26px; height: 26px; }
-  table.draft-grid td.round-col, table.draft-grid th.round-col {
-    position: sticky;
-    left: 0;
-    background: var(--panel);
-    z-index: 1;
-    font-weight: 700;
-    min-width: 56px;
-    white-space: nowrap;
-  }
-  table.draft-grid th.round-col { background: var(--panel-2); z-index: 2; }
-  table.draft-grid td.cell-keeper { background: var(--brand-tint); }
-  table.draft-grid td.col-active { box-shadow: inset 0 0 0 2px var(--brand); }
-  .cell-player { font-weight: 700; color: var(--text); white-space: nowrap; }
-  .cell-meta { font-size: 0.68rem; color: var(--text-mute); font-style: italic; }
-  .adp-line {
-    font-size: 0.72rem;
-    color: var(--text-dim);
-    margin-top: 3px;
-    white-space: nowrap;
-  }
-  .adp-line .pos-badge { transform: scale(0.85); transform-origin: left center; }
-
-  .top200-scroll { max-height: 480px; overflow-y: auto; overflow-x: auto; }
-  table.top200-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-  table.top200-table th, table.top200-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
-  table.top200-table th {
-    position: sticky;
-    top: 0;
-    background: var(--panel);
-    color: var(--text-mute);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-  table.top200-table td.player-cell { font-weight: 600; }
-  table.top200-table tbody tr:hover { background: var(--panel-2); }
+  .rank-value.good { color: var(--good); }
+  .rank-value.bad { color: var(--bad); }
+  .rank-list .rank-sub .owner-tag { font-weight: 600; color: var(--text); }
 </style>
 <script>
 (function() {
@@ -151,39 +89,41 @@
   <header class="site-header">
     <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
     <div>
-      <h1>Draft Guide</h1>
+      <h1>Draft Recap</h1>
       <nav class="resources" id="resources-nav"></nav>
-      <div class="subtitle">2026 snake draft order, 19 rounds - keeper picks are pre-slotted into their cost round</div>
+      <div class="subtitle">9/1/2026 &middot; 12 teams, 19 rounds, 228 picks, the league's first keeper draft</div>
     </div>
   </header>
 
   <div class="section">
-    <div class="section-title">Pick your team</div>
-    <div class="team-picker" id="team-picker"></div>
-    <div class="card" id="team-summary"></div>
+    <div class="section-title">Every Team</div>
+    <div class="section-note">In round-one draft order. The 2025 &rarr; 2026 badge compares each team's top position by share of 2025 points scored vs. share of 2026 draft value by ADP - not a perfect match, but close enough to show who's leaning on the same position again and who moved off it.</div>
+    <div class="team-tile-grid" id="team-tiles"></div>
   </div>
 
   <div class="section">
-    <div class="section-title">Full draft board</div>
-    <div class="section-note">For each pick, a rough guide to players who might be around at that point</div>
+    <div class="section-title">Round One Board</div>
     <div class="card">
-      <div class="table-scroll">
-        <table class="draft-grid" id="draft-grid"></table>
-      </div>
+      <ol class="rank-list" id="round1-list"></ol>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title">Top 200 available (not kept)</div>
+    <div class="section-title">Reach &amp; Value Board</div>
+    <div class="section-note">Vs. preseason superflex ADP, top-150 skill-position picks only</div>
     <div class="card">
-      <div class="top200-scroll">
-        <table class="top200-table">
-          <thead>
-            <tr><th>Rank</th><th>Pos Rank</th><th>Pos</th><th>Player</th><th>NFL Team</th></tr>
-          </thead>
-          <tbody id="top200-body"></tbody>
-        </table>
-      </div>
+      <div class="tile-label" style="margin-bottom:8px;">Biggest Reaches</div>
+      <ol class="rank-list" id="reach-list"></ol>
+      <div class="tile-label" style="margin:20px 0 8px;">Biggest Falls</div>
+      <ol class="rank-list" id="value-list"></ol>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Keeper Ledger</div>
+    <div class="section-note">All 27 keepers, best value first</div>
+    <div class="card">
+      <ol class="rank-list" id="keeper-list"></ol>
     </div>
   </div>
 
@@ -191,153 +131,271 @@
 
 <script>
 const PASSWORD = 'cockroach';
-let guide = null;
-let adpUnkept = null;
-let posRankById = null;
-let selectedTeamId = null;
 
-// 3 teams rebranded (name + logo) right around draft day. This is a
-// pre-draft planning page, not a record of the draft itself, so it keeps
-// showing each team under the name/logo it had going into keeper decisions
-// and the draft - the rename shows up on the Draft Recap page instead,
-// where it's part of the actual story. Without this override, the live
-// team_name/logo fields (fetched fresh from ESPN) would silently rewrite
-// draft-night history every time the data cron runs.
-const NAME_OVERRIDE = {
-  8:  { team_name: 'Daddy Nielsen ', logo: 'logos/2025/8.svg' },
-  9:  { team_name: 'McConkey Kong Country', logo: 'logos/2025/9.png' },
-  10: { team_name: "Baker's Dirty Dozen", logo: 'logos/2025/10.png' },
+// team_id -> { logo, oldLogo (only if changed this year) }
+const LOGO = {
+  1: 'logos/2026/1.jpg', 2: 'logos/2026/2.svg', 3: 'logos/2026/3.jpg', 4: 'logos/2026/4.jpg',
+  5: 'logos/2026/5.svg', 6: 'logos/2026/6.jpg', 7: 'logos/2026/7.jpg', 8: 'logos/2026/8.jpg',
+  9: 'logos/2026/9.jpg', 10: 'logos/2026/10.jpg', 11: 'logos/2026/11.png', 12: 'logos/2026/12.jpg',
 };
-function applyNameOverride(t) {
-  const o = NAME_OVERRIDE[t.team_id];
-  if (o) { t.team_name = o.team_name; t.logo = o.logo; }
+const OLD_LOGO = {
+  8: 'logos/2025/8.svg',
+  9: 'logos/2025/9.png',
+  10: 'logos/2025/10.png',
+};
+
+const TEAMS = [
+  { id: 10, owner: 'Karl Abel', name: 'The Aristocrats', oldName: "Baker's Dirty Dozen" },
+  { id: 11, owner: 'Kris Wikstrom', name: "Keep 'em and weep" },
+  { id: 6,  owner: 'Lisette Bruens', name: 'Mahomes is where the heart is' },
+  { id: 9,  owner: 'Ronjan Sikdar', name: 'McConkey Kong Country 2', oldName: 'McConkey Kong Country' },
+  { id: 4,  owner: 'Ben Porter', name: 'Conquering Heroes' },
+  { id: 8,  owner: 'Joe Sebranek', name: 'Olave Oyl', oldName: 'Daddy Nielsen' },
+  { id: 2,  owner: 'Mariss Mednis', name: 'Mednis Madness' },
+  { id: 3,  owner: 'Pete Gallagher', name: 'Illusions Michael' },
+  { id: 1,  owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's" },
+  { id: 5,  owner: 'Cara Kantrowitz', name: 'Team Kantastrophe' },
+  { id: 12, owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
+  { id: 7,  owner: 'Mike Higgins', name: 'Terrible Towels' },
+];
+
+// A data-driven cross-check on the prose above: each team's dominant
+// position in 2025 (share of actual started points, from
+// docs/data/2025/team_analytics.json) vs. 2026 (share of draft value,
+// weighting every keeper + live pick by max(0, 250 - its superflex ADP
+// rank) and summing by position - QB/RB/WR/TE only, K/D-ST excluded from
+// both). Not apples to apples (points scored vs. pre-season ADP), but
+// close enough to show who's leaning on the same position again and who
+// moved off it.
+const IDENTITY = {
+  1:  { y25pos: 'RB', y25pct: 28, y26pos: 'RB', y26pct: 40 },
+  2:  { y25pos: 'WR', y25pct: 33, y26pos: 'WR', y26pct: 35 },
+  3:  { y25pos: 'RB', y25pct: 30, y26pos: 'WR', y26pct: 54 },
+  4:  { y25pos: 'WR', y25pct: 33, y26pos: 'WR', y26pct: 35 },
+  5:  { y25pos: 'RB', y25pct: 37, y26pos: 'RB', y26pct: 36 },
+  6:  { y25pos: 'RB', y25pct: 34, y26pos: 'WR', y26pct: 38 },
+  7:  { y25pos: 'WR', y25pct: 32, y26pos: 'WR', y26pct: 46 },
+  8:  { y25pos: 'WR', y25pct: 33, y26pos: 'WR', y26pct: 41 },
+  9:  { y25pos: 'WR', y25pct: 31, y26pos: 'RB', y26pct: 36 },
+  10: { y25pos: 'WR', y25pct: 30, y26pos: 'WR', y26pct: 39 },
+  11: { y25pos: 'QB', y25pct: 32, y26pos: 'WR', y26pct: 37 },
+  12: { y25pos: 'WR', y25pct: 36, y26pos: 'WR', y26pct: 42 },
+};
+
+// Hand-written recap text, verified against docs/data/2026/draft.json,
+// docs/data/keeper_guide_2026.json and docs/data/adp_unkept_2026.json.
+// Every sentence carries a specific pick, round, or number - nothing here
+// is filler. Each entry leads with the actual strategy: which position(s)
+// they built the roster around this year and what got sacrificed for it
+// (backed by full 19-round position counts vs the league average of
+// RB 5.2 / QB 3.1 / WR 6.3 / TE 1.8), then keepers, then a 2025 comparison
+// where it sharpens the story rather than leading it.
+const RECAP_TEXT = {
+  10: "Karl's plan: solve one position completely, then move to the next. He opened with three running backs, <b>Bijan Robinson</b> at 1.01, then Ashton Jeanty and Josh Jacobs, before touching anything else. Then came wide receiver, four picks in a row (Davante Adams, Courtland Sutton, Carnell Tate, Mike Evans). Then tight end: Travis Kelce and Hunter Henry back to back in rounds nine and ten. It's the same running-back-first instinct he had in 2025 (Derrick Henry went at 1.01 that year too), just run with more discipline this time, on a wide open board since he had zero keepers to work around.",
+  11: "Kris spent this draft fixing the hole that sank his 2-12 season. Lamar Jackson at 1.02 was pure value at the top of the board, not a push at the position, his only other quarterbacks were a round-8 flier on C.J. Stroud and keeper Tyler Shough late. The actual fix was running back, which left him with just three bodies on the roster all of last year. He added Jeremiyah Love in round two and D'Andre Swift in round five, five total by the end, up from three. He built out a five-receiver room alongside it, Rashee Rice, DeVonta Smith, Marvin Harrison Jr. and Jakobi Meyers among them, which is actually where most of his draft value ended up sitting. He also kept Quinshon Judkins for a round-9 cost, and came away with three kickers, tied for the most in the league.",
+  6: "Lisette built around quarterback and wide receiver, not running back. Keeper <b>Christian McCaffrey</b> is basically her whole running back room; everything else at the position waited until round six or later. Instead she went deep at quarterback: Bo Nix at a round-2 keeper cost (the one overpay in the league by the model's math), then Patrick Mahomes, the player her team is literally named for, with her first live pick at 27, then a round-5 reach on Jordan Love. Wide receiver grew steadily alongside it, seven total by the end, with Garrett Wilson, Tetairoa McMillan, Matthew Golden and Xavier Worthy added from round four on. That's a shift from 2025, when Mahomes himself was her actual round-one pick instead of a fourth quarterback picked up for fun.",
+  9: "Ronjan built this draft around one idea: own the backfield. Keeper <b>Jahmyr Gibbs</b> at the round-one cost, then Saquon Barkley at pick 21, gave him two true bell-cow backs before he touched anything else, a complete reversal from 2025, when his first running back didn't show up until round six. He backed that up with two receivers right away, A.J. Brown in round three and Ladd McConkey in round four. Quarterback came later and in bulk instead of a single big pick: keeper Trevor Lawrence in round five, then Sam Darnold, Cam Ward and Aaron Rodgers across rounds seven through eleven, four total. Everything after that, more running backs (Tony Pollard, Jordan Mason) and late fliers at receiver (Tre Tucker, Jalen Nailor, both landing well past ADP), was just filling out the bench once the core of the team was set. The team picked up a sequel in the name to match.",
+  4: "Ben doubled up early at running back and quarterback, and all but abandoned tight end. He grabbed one true WR1 early, <b>Puka Nacua</b> at 1.05, so he wouldn't miss out on talent. Then came quarterback: two of his next three picks, Justin Herbert and Baker Mayfield, on the way to four total, tied for the most in the league. Running back became a volume approach instead of a star hunt, six total led by keeper Kenneth Walker III, while tight end got exactly one pick in 19 rounds, keeper Colston Loveland and nothing else. His boldest swing elsewhere was MarShawn Lloyd in round six, 57 picks ahead of ADP, <b>the single biggest reach of the entire draft</b>.",
+  8: "Joe picked his quarterback early and never touched the position again. <b>Jalen Hurts</b> at pick six, part of a three-quarterback run at picks six through eight, is one of just two quarterbacks on his roster, tied for the fewest in the league. Everything else went to the backfield and receiver room instead: Derrick Henry and Breece Hall back to back in rounds two and three, then his renamed team's namesake, Chris Olave, joining keeper Jaxon Smith-Njigba and DJ Moore to build a seven-receiver group. All three of his keepers (Smith-Njigba, Olave, Javonte Williams) graded as value by the model, and he added late reaches on Gunnar Helm and Malik Davis. That's a full reversal from 2025, when Justin Jefferson was his round-one receiver and quarterback waited until round three.",
+  2: "Mariss is the only team in the league carrying three tight ends, spreading bets at a position almost everyone else punts to one dart or none: Isaiah Likely in round six, Jake Ferguson in round nine, Kenyon Sadiq in round fifteen. Up top he flipped his approach entirely. Caleb Williams, the third quarterback in that round-one run, was his opening pick, taken 15 slots ahead of his ADP. In 2025 his round-one pick was a wide receiver (Malik Nabers), and his first quarterback didn't show up until round four. Running back and receiver both landed at close to league-average volume around those two bets. He kept Cam Skattebo and Wan'Dale Robinson, both solid value.",
+  3: "Pete solved quarterback once, cheaply, and never looked back. Keeper <b>Josh Allen</b> at a fair round-one cost is his only quarterback in 19 rounds, the only such roster in the league. He'd still carried a backup as recently as last year, Daniel Jones in round 12. Every pick that might have gone to a QB2 went to wide receiver instead, eight total, tied for the most in the league, starting with Drake London in round two. Running back became the clear afterthought, four total, tied for the fewest, though he still found value there late: Keaton Mitchell fell 66 picks past ADP in round 17.",
+  1: "Imran leaned on the same two positions as several other teams this year, running back and quarterback, but stocked them differently. He grabbed six backs, led by <b>De'Von Achane</b> and Travis Etienne Jr. back to back in rounds two and three, and four quarterbacks, tied for the most in the league. Two of those four are rookie lottery tickets rather than proven arms: Fernando Mendoza in round eight (50 picks ahead of his ADP) and Carson Beck in round twelve (66 picks ahead of his). Wide receiver only got one shot, Amon-Ra St. Brown at pick nine, and not much after that. It's basically a mirror image of 2025, when he opened with Lamar Jackson at quarterback and didn't touch running back until round four.",
+  5: "Cara kept doing what already worked: running back and quarterback, the same two positions her title-winning roster leaned on last year. She ended up with six backs and four quarterbacks, both above the league average. Her keepers set that shape, <b>Jonathan Taylor</b> at a round-2 cost and Drake Maye at round-3, and her live picks doubled down instead of branching out: Bucky Irving in round five as a genuine RB2, and Matthew Stafford kept for a round-10 cost as quarterback depth. Wide receiver stayed a single investment, CeeDee Lamb at pick ten, the round-one slot Bijan Robinson held in 2025. Her round-16 pick, Chris Rodriguez Jr., fell 62 picks past his ADP.",
+  12: "Melinda's roster starts and ends with wide receiver. Keeper <b>Ja'Marr Chase</b>, the second-priciest keeper in the league behind only Bo Nix, anchored a seven-receiver room that also includes Rome Odunze in round five and Jameson Williams in round six. That came directly at quarterback's expense: just two all draft, Joe Burrow and Brock Purdy, tied for the fewest in the league. Running back stayed a single core piece too, keeper James Cook III, who moved up to a round-3 cost from his original round-4 slot. Her round-17 running back, Jonah Coleman, fell 67 picks past ADP, the biggest fall of the night.",
+  7: "Mike built the same shape as Pete Gallagher this year: solve quarterback cheaply through a keeper, then spend everywhere else on wide receiver. His two keepers, <b>Jayden Daniels</b> at a fair round-one cost and Jaxson Dart for round twelve, freed up the rest of his draft. Eight receivers followed, tied for the most in the league, starting with Justin Jefferson in round two. Running back was the clear afterthought, four total, tied for the fewest. Tight end came three rounds earlier than last year, Brock Bowers in round four versus Mark Andrews in round seven, and he added Shedeur Sanders as a round-16 quarterback flier behind his two keepers.",
+};
+
+const ROUND1 = [
+  { pick: '1.01', team: 10, player: 'Bijan Robinson', pos: 'RB', kept: false },
+  { pick: '1.02', team: 11, player: 'Lamar Jackson', pos: 'QB', kept: false },
+  { pick: '1.03', team: 6,  player: 'Christian McCaffrey', pos: 'RB', kept: true },
+  { pick: '1.04', team: 9,  player: 'Jahmyr Gibbs', pos: 'RB', kept: true },
+  { pick: '1.05', team: 4,  player: 'Puka Nacua', pos: 'WR', kept: false },
+  { pick: '1.06', team: 8,  player: 'Jalen Hurts', pos: 'QB', kept: false },
+  { pick: '1.07', team: 2,  player: 'Caleb Williams', pos: 'QB', kept: false },
+  { pick: '1.08', team: 3,  player: 'Josh Allen', pos: 'QB', kept: true },
+  { pick: '1.09', team: 1,  player: 'Amon-Ra St. Brown', pos: 'WR', kept: false },
+  { pick: '1.10', team: 5,  player: 'CeeDee Lamb', pos: 'WR', kept: false },
+  { pick: '1.11', team: 12, player: "Ja'Marr Chase", pos: 'WR', kept: true },
+  { pick: '1.12', team: 7,  player: 'Jayden Daniels', pos: 'QB', kept: true },
+];
+
+const REACHES = [
+  { team: 4, player: 'MarShawn Lloyd', pos: 'RB', pick: 68, adp: 125 },
+  { team: 1, player: 'Fernando Mendoza', pos: 'QB', pick: 88, adp: 138 },
+  { team: 6, player: 'Jordan Love', pos: 'QB', pick: 51, adp: 79 },
+  { team: 2, player: 'Isaiah Likely', pos: 'TE', pick: 66, adp: 90 },
+  { team: 2, player: 'Caleb Williams', pos: 'QB', pick: 7, adp: 22 },
+];
+const VALUES = [
+  { team: 11, player: 'Woody Marks', pos: 'RB', pick: 170, adp: 109 },
+  { team: 5,  player: 'Chris Rodriguez Jr.', pos: 'RB', pick: 183, adp: 121 },
+  { team: 1,  player: 'Brian Robinson Jr.', pos: 'RB', pick: 184, adp: 122 },
+  { team: 10, player: 'Adonai Mitchell', pos: 'WR', pick: 192, adp: 129 },
+  { team: 3,  player: 'Keaton Mitchell', pos: 'RB', pick: 200, adp: 134 },
+];
+
+const KEEPERS = [
+  { team: 7,  player: 'Jaxson Dart', pos: 'QB', round: 12, vig: 114 },
+  { team: 1,  player: 'Luther Burden III', pos: 'WR', round: 14, vig: 77 },
+  { team: 11, player: 'Tyler Shough', pos: 'QB', round: 13, vig: 72 },
+  { team: 5,  player: 'Matthew Stafford', pos: 'QB', round: 10, vig: 66 },
+  { team: 8,  player: 'Javonte Williams', pos: 'RB', round: 11, vig: 66 },
+  { team: 1,  player: 'Kyle Pitts Sr.', pos: 'TE', round: 13, vig: 53 },
+  { team: 8,  player: 'Chris Olave', pos: 'WR', round: 8, vig: 46 },
+  { team: 2,  player: 'Cam Skattebo', pos: 'RB', round: 10, vig: 40 },
+  { team: 4,  player: 'Colston Loveland', pos: 'TE', round: 10, vig: 37 },
+  { team: 8,  player: 'Jaxon Smith-Njigba', pos: 'WR', round: 4, vig: 35 },
+  { team: 11, player: 'Quinshon Judkins', pos: 'RB', round: 9, vig: 33 },
+  { team: 2,  player: "Wan'Dale Robinson", pos: 'WR', round: 14, vig: 33 },
+  { team: 1,  player: 'Daniel Jones', pos: 'QB', round: 11, vig: 30 },
+  { team: 4,  player: 'Emeka Egbuka', pos: 'WR', round: 8, vig: 26 },
+  { team: 5,  player: 'Drake Maye', pos: 'QB', round: 3, vig: 21 },
+  { team: 9,  player: 'Trevor Lawrence', pos: 'QB', round: 5, vig: 21 },
+  { team: 6,  player: 'Tetairoa McMillan', pos: 'WR', round: 7, vig: 16 },
+  { team: 4,  player: 'Kenneth Walker III', pos: 'RB', round: 5, vig: 10 },
+  { team: 12, player: 'James Cook III', pos: 'RB', round: 3, vig: 10 },
+  { team: 3,  player: 'Trey McBride', pos: 'TE', round: 3, vig: 8 },
+  { team: 9,  player: 'Jahmyr Gibbs', pos: 'RB', round: 1, vig: 5 },
+  { team: 7,  player: 'Jayden Daniels', pos: 'QB', round: 1, vig: 3 },
+  { team: 3,  player: 'Josh Allen', pos: 'QB', round: 1, vig: 0 },
+  { team: 5,  player: 'Jonathan Taylor', pos: 'RB', round: 2, vig: -2 },
+  { team: 6,  player: 'Christian McCaffrey', pos: 'RB', round: 1, vig: -6 },
+  { team: 12, player: "Ja'Marr Chase", pos: 'WR', round: 1, vig: -7 },
+  { team: 6,  player: 'Bo Nix', pos: 'QB', round: 2, vig: -17 },
+];
+
+function teamById(id) { return TEAMS.find(t => t.id === id); }
+
+function posBadge(pos) {
+  return `<span class="pos-badge pos-${pos}">${pos}</span>`;
 }
 
-// Position rank among the FULL player pool - kept players included - so
-// e.g. a WR's "position rank" accounts for every kept WR ranked above them,
-// even though kept players don't appear as rows in the available-players
-// table below. keeperGuide is only used for this (position + ADP rank of
-// the 27 kept players); everything else on this page already comes from
-// adpUnkept, which excludes them.
-function computePositionRanks(unkept, keeperGuide) {
-  const kept = keeperGuide
-    .flatMap(team => team.candidates)
-    .filter(c => c.kept_2026)
-    .map(c => ({ id: c.player_id, position: c.position, rank: c.adp_superflex_rank }));
-  const pool = unkept
-    .map(p => ({ id: p.player_id, position: p.position, rank: p.superflex_rank }))
-    .concat(kept)
-    .sort((a, b) => a.rank - b.rank);
-
-  const counts = {};
-  const byId = {};
-  for (const p of pool) {
-    counts[p.position] = (counts[p.position] || 0) + 1;
-    byId[p.id] = counts[p.position];
-  }
-  return byId;
-}
-
-function posBadge(position) {
-  return `<span class="pos-badge pos-${position}">${position}</span>`;
-}
-
-function renderTeamPicker() {
-  const picker = document.getElementById('team-picker');
-  picker.innerHTML = guide.teams.map(t => `
-    <button class="team-picker-btn ${t.team_id === selectedTeamId ? 'active' : ''}" data-team="${t.team_id}">
-      <img class="chip-logo" src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
-      <div class="chip-text">
-        <span class="chip-name">${t.owners.join(' & ')}</span>
-        <span class="chip-owner">${t.team_name}</span>
-      </div>
-    </button>
-  `).join('');
-  picker.querySelectorAll('.team-picker-btn').forEach(el => {
-    el.addEventListener('click', () => {
-      selectedTeamId = Number(el.dataset.team);
-      renderTeamPicker();
-      renderTeamSummary();
-      renderGrid();
-    });
-  });
-}
-
-function renderTeamSummary() {
-  const box = document.getElementById('team-summary');
-  const team = guide.teams.find(t => t.team_id === selectedTeamId);
-  if (!team) {
-    box.innerHTML = '<div class="empty-state">Pick your team above to see your locked keepers and open rounds.</div>';
-    return;
-  }
-
-  const keeperLine = team.locked_keepers_2026.length
-    ? team.locked_keepers_2026.map(k => `${k.name} ${posBadge(k.position)} <span class="cell-meta">Rd ${k.keeper_cost_round_2026}</span>`).join(' &nbsp;&middot;&nbsp; ')
-    : '<span class="cell-meta">no keepers this year</span>';
-
-  box.innerHTML = `
-    <div class="tile-headline" style="margin-top:0;">${team.owners.join(' & ')} - ${team.team_name}</div>
-    <div class="open-rounds-line"><b>Locked keepers:</b> ${keeperLine}</div>
-    <div class="open-rounds-line"><b>Your live picks (${team.open_rounds.length} rounds):</b> ${team.open_rounds.join(', ')}</div>
+function chip(teamId, size) {
+  const t = teamById(teamId);
+  const cls = size ? `team-chip ${size}` : 'team-chip';
+  return `
+    <span class="${cls}">
+      <img class="chip-logo" src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">
+      <span class="chip-text">
+        <span class="chip-name">${t.owner}</span>
+        <span class="chip-owner">${t.name}</span>
+      </span>
+    </span>
   `;
 }
 
-function renderTop50() {
-  const tbody = document.getElementById('top200-body');
-  tbody.innerHTML = adpUnkept.slice(0, 200).map(p => `
-    <tr>
-      <td>${p.adjusted_rank}</td>
-      <td>${posRankById[p.player_id] ?? '-'}</td>
-      <td>${posBadge(p.position)}</td>
-      <td class="player-cell">${p.name}</td>
-      <td>${p.pro_team}</td>
-    </tr>
+function renderTeamTiles() {
+  const el = document.getElementById('team-tiles');
+  el.innerHTML = TEAMS.map(t => {
+    const logoSwapHtml = OLD_LOGO[t.id] ? `
+      <div class="logo-swap">
+        <div class="logo-swap-pair">
+          <img src="${OLD_LOGO[t.id]}" alt="2025 logo" onerror="this.style.visibility='hidden'">
+          <span class="swap-year">2025</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+        <div class="logo-swap-pair">
+          <img src="${LOGO[t.id]}" alt="2026 logo" onerror="this.style.visibility='hidden'">
+          <span class="swap-year">2026</span>
+        </div>
+      </div>
+    ` : '';
+    const renameHtml = t.oldName ? `<div class="rebrand-note">Renamed from ${t.oldName}</div>` : '';
+    const idy = IDENTITY[t.id];
+    const shifted = idy.y25pos !== idy.y26pos;
+    const identityHtml = `
+      <div class="identity-strip">
+        <span class="identity-year">
+          <span class="identity-label">2025</span>
+          ${posBadge(idy.y25pos)}
+          <span class="identity-pct">${idy.y25pct}%</span>
+        </span>
+        <span class="identity-arrow">&rarr;</span>
+        <span class="identity-year">
+          <span class="identity-label">2026</span>
+          ${posBadge(idy.y26pos)}
+          <span class="identity-pct">${idy.y26pct}%</span>
+        </span>
+        <span class="identity-tag ${shifted ? 'shifted' : 'steady'}">${shifted ? 'Shifted' : 'Held steady'}</span>
+      </div>
+    `;
+    return `
+      <div class="tile">
+        ${chip(t.id)}
+        ${renameHtml}
+        ${logoSwapHtml}
+        ${identityHtml}
+        <p class="tile-detail-lg">${RECAP_TEXT[t.id]}</p>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderRound1() {
+  const el = document.getElementById('round1-list');
+  el.innerHTML = ROUND1.map(p => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(p.team, 'team-chip-sm')}
+          ${posBadge(p.pos)}
+          <span>${p.player}</span>
+          ${p.kept ? '<span class="round-tag highlight">kept</span>' : ''}
+        </div>
+      </div>
+      <div class="rank-value">${p.pick}</div>
+    </li>
   `).join('');
 }
 
-function renderGrid() {
-  const el = document.getElementById('draft-grid');
-  const headerTeams = guide.rounds[0].picks.map((p, i) => ({
-    team_id: p.team_id, team_name: p.team_name, owners: p.owners, logo: p.logo,
-    nickname: guide.round_1_order[i],
-  }));
+function renderReachValue() {
+  const reachEl = document.getElementById('reach-list');
+  reachEl.innerHTML = REACHES.map(r => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(r.team, 'team-chip-sm')}
+          ${posBadge(r.pos)}
+          <span>${r.player}</span>
+        </div>
+        <div class="rank-sub">pick ${r.pick} vs. ADP ${r.adp}</div>
+      </div>
+      <div class="rank-value good">+${r.adp - r.pick}</div>
+    </li>
+  `).join('');
 
-  const theadHtml = `
-    <thead>
-      <tr>
-        <th class="round-col">Rd</th>
-        ${headerTeams.map(t => `
-          <th class="${t.team_id === selectedTeamId ? 'col-active' : ''}">
-            <div class="team-chip team-chip-xs">
-              <img class="chip-logo" src="${t.logo}" alt="" onerror="this.style.visibility='hidden'">
-              <div class="chip-text"><span class="chip-name">${t.nickname}</span></div>
-            </div>
-          </th>`).join('')}
-      </tr>
-    </thead>`;
+  const valueEl = document.getElementById('value-list');
+  valueEl.innerHTML = VALUES.map(r => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(r.team, 'team-chip-sm')}
+          ${posBadge(r.pos)}
+          <span>${r.player}</span>
+        </div>
+        <div class="rank-sub">pick ${r.pick} vs. ADP ${r.adp}</div>
+      </div>
+      <div class="rank-value bad">-${r.pick - r.adp}</div>
+    </li>
+  `).join('');
+}
 
-  const rowsHtml = guide.rounds.map(r => {
-    const cells = headerTeams.map(t => {
-      const pick = r.picks.find(p => p.team_id === t.team_id);
-      const activeCls = t.team_id === selectedTeamId ? 'col-active' : '';
-      if (pick.keeper) {
-        return `<td class="cell-keeper ${activeCls}">
-          <div class="cell-player">${pick.keeper.name}</div>
-          <div class="cell-meta">${posBadge(pick.keeper.position)} keeper &middot; pick ${pick.overall_pick}</div>
-        </td>`;
-      }
-      const context = (pick.adp_context || [])
-        .map(p => `<div class="adp-line">${p.name} ${posBadge(p.position)}</div>`)
-        .join('');
-      return `<td class="cell-open ${activeCls}">
-        <div class="cell-meta">pick ${pick.overall_pick}</div>
-        ${context}
-      </td>`;
-    }).join('');
-    return `<tr><td class="round-col">Rd ${r.round}</td>${cells}</tr>`;
-  }).join('');
-
-  el.innerHTML = theadHtml + `<tbody>${rowsHtml}</tbody>`;
+function renderKeepers() {
+  const el = document.getElementById('keeper-list');
+  el.innerHTML = KEEPERS.map(k => `
+    <li>
+      <div class="rank-main">
+        <div class="rank-chip-row">
+          ${chip(k.team, 'team-chip-sm')}
+          ${posBadge(k.pos)}
+          <span>${k.player}</span>
+        </div>
+        <div class="rank-sub">kept for round ${k.round}</div>
+      </div>
+      <div class="rank-value ${k.vig > 0 ? 'good' : k.vig < 0 ? 'bad' : ''}">${k.vig > 0 ? '+' : ''}${k.vig}</div>
+    </li>
+  `).join('');
 }
 
 async function loadApp() {
@@ -345,29 +403,12 @@ async function loadApp() {
   document.getElementById('app').style.display = '';
 
   const meta = await (await fetch('data/meta.json')).json();
-  document.getElementById('resources-nav').innerHTML = renderNav('draft-guide', meta.league_id);
+  document.getElementById('resources-nav').innerHTML = renderNav('draft-recap', meta.league_id);
 
-  if (!guide) {
-    guide = await (await fetch('data/draft_guide_2026.json')).json();
-    guide.teams.forEach(applyNameOverride);
-    guide.rounds.forEach(r => r.picks.forEach(applyNameOverride));
-    // Pick-your-team grid reads alphabetically by owner first name, matching
-    // the Keeper Dossier's convention - the Full Draft Board below reads
-    // guide.rounds/round_1_order instead (untouched), which is correctly in
-    // draft-pick order, so this sort only ever affects guide.teams.
-    guide.teams.sort((a, b) => a.owners.join(' & ').localeCompare(b.owners.join(' & ')));
-  }
-  if (!adpUnkept) {
-    adpUnkept = await (await fetch('data/adp_unkept_2026.json')).json();
-  }
-  if (!posRankById) {
-    const keeperGuide = await (await fetch('data/keeper_guide_2026.json')).json();
-    posRankById = computePositionRanks(adpUnkept, keeperGuide);
-  }
-  renderTeamPicker();
-  renderTeamSummary();
-  renderTop50();
-  renderGrid();
+  renderTeamTiles();
+  renderRound1();
+  renderReachValue();
+  renderKeepers();
 }
 
 document.getElementById('auth-form').addEventListener('submit', (e) => {
