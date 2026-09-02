@@ -42,14 +42,19 @@ jobs:
         run: |
           git config user.name  "Just Stream It Bot"
           git config user.email "just-stream-it-bot@users.noreply.github.com"
-          git add docs/data/
+          git add -A docs/data/ docs/logos/
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "Update league data $(date -u '+%Y-%m-%d')"
+            pushed=0
             for i in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && git push && { pushed=1; break; }
               echo "Push attempt $i failed; retrying in 5s..."
               sleep 5
             done
+            if [ "$pushed" -ne 1 ]; then
+              echo "::error::Failed to push updated data after 3 attempts."
+              exit 1
+            fi
           fi

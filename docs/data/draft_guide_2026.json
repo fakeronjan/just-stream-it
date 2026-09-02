@@ -23,11 +23,11 @@
           "overall_pick": 1,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -127,11 +127,11 @@
           "overall_pick": 4,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": {
             "player_id": 4429795,
             "name": "Jahmyr Gibbs",
@@ -188,11 +188,11 @@
           "overall_pick": 6,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -652,11 +652,11 @@
           "overall_pick": 19,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -738,11 +738,11 @@
           "overall_pick": 21,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -842,11 +842,11 @@
           "overall_pick": 24,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -890,11 +890,11 @@
           "overall_pick": 25,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -1019,11 +1019,11 @@
           "overall_pick": 28,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -1105,11 +1105,11 @@
           "overall_pick": 30,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -1177,7 +1177,7 @@
               "name": "Patrick Mahomes",
               "position": "QB",
               "pro_team": "KC",
-              "adjusted_rank": 28
+              "adjusted_rank": 27
             },
             {
               "name": "Garrett Wilson",
@@ -1229,15 +1229,15 @@
               "adjusted_rank": 26
             },
             {
-              "name": "Josh Jacobs",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 27
-            },
-            {
               "name": "Patrick Mahomes",
               "position": "QB",
               "pro_team": "KC",
+              "adjusted_rank": 27
+            },
+            {
+              "name": "Travis Etienne Jr.",
+              "position": "RB",
+              "pro_team": "NO",
               "adjusted_rank": 28
             },
             {
@@ -1302,21 +1302,21 @@
               "adjusted_rank": 26
             },
             {
-              "name": "Josh Jacobs",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 27
-            },
-            {
               "name": "Patrick Mahomes",
               "position": "QB",
               "pro_team": "KC",
-              "adjusted_rank": 28
+              "adjusted_rank": 27
             },
             {
               "name": "Travis Etienne Jr.",
               "position": "RB",
               "pro_team": "NO",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
               "adjusted_rank": 29
             },
             {
@@ -1344,21 +1344,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Josh Jacobs",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 27
-            },
-            {
               "name": "Patrick Mahomes",
               "position": "QB",
               "pro_team": "KC",
-              "adjusted_rank": 28
+              "adjusted_rank": 27
             },
             {
               "name": "Travis Etienne Jr.",
               "position": "RB",
               "pro_team": "NO",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
               "adjusted_rank": 29
             },
             {
@@ -1387,15 +1387,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Patrick Mahomes",
-              "position": "QB",
-              "pro_team": "KC",
-              "adjusted_rank": 28
-            },
-            {
               "name": "Travis Etienne Jr.",
               "position": "RB",
               "pro_team": "NO",
+              "adjusted_rank": 28
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "RB",
+              "pro_team": "LAR",
               "adjusted_rank": 29
             },
             {
@@ -1411,10 +1411,10 @@
               "adjusted_rank": 31
             },
             {
-              "name": "Zay Flowers",
-              "position": "WR",
-              "pro_team": "BAL",
-              "adjusted_rank": 32
+              "name": "Kyler Murray",
+              "position": "QB",
+              "pro_team": "MIN",
+              "adjusted_rank": 39
             }
           ]
         },
@@ -1430,9 +1430,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Travis Etienne Jr.",
+              "name": "Kyren Williams",
               "position": "RB",
-              "pro_team": "NO",
+              "pro_team": "LAR",
               "adjusted_rank": 29
             },
             {
@@ -1491,9 +1491,9 @@
               "adjusted_rank": 32
             },
             {
-              "name": "Kyren Williams",
+              "name": "Bucky Irving",
               "position": "RB",
-              "pro_team": "LAR",
+              "pro_team": "TB",
               "adjusted_rank": 37
             },
             {
@@ -1534,9 +1534,9 @@
               "adjusted_rank": 33
             },
             {
-              "name": "Kyren Williams",
+              "name": "Bucky Irving",
               "position": "RB",
-              "pro_team": "LAR",
+              "pro_team": "TB",
               "adjusted_rank": 37
             },
             {
@@ -1577,9 +1577,9 @@
               "adjusted_rank": 34
             },
             {
-              "name": "Kyren Williams",
+              "name": "Bucky Irving",
               "position": "RB",
-              "pro_team": "LAR",
+              "pro_team": "TB",
               "adjusted_rank": 37
             },
             {
@@ -1594,11 +1594,11 @@
           "overall_pick": 43,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": {
             "player_id": 4430878,
             "name": "Jaxon Smith-Njigba",
@@ -1638,9 +1638,9 @@
               "adjusted_rank": 35
             },
             {
-              "name": "Kyren Williams",
+              "name": "Bucky Irving",
               "position": "RB",
-              "pro_team": "LAR",
+              "pro_team": "TB",
               "adjusted_rank": 37
             },
             {
@@ -1655,11 +1655,11 @@
           "overall_pick": 45,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -1681,9 +1681,9 @@
               "adjusted_rank": 36
             },
             {
-              "name": "Kyren Williams",
+              "name": "Bucky Irving",
               "position": "RB",
-              "pro_team": "LAR",
+              "pro_team": "TB",
               "adjusted_rank": 37
             },
             {
@@ -1718,15 +1718,15 @@
               "adjusted_rank": 36
             },
             {
-              "name": "Kyren Williams",
-              "position": "RB",
-              "pro_team": "LAR",
-              "adjusted_rank": 37
-            },
-            {
               "name": "Bucky Irving",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
               "adjusted_rank": 38
             },
             {
@@ -1755,15 +1755,15 @@
               "adjusted_rank": 36
             },
             {
-              "name": "Kyren Williams",
-              "position": "RB",
-              "pro_team": "LAR",
-              "adjusted_rank": 37
-            },
-            {
               "name": "Bucky Irving",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
               "adjusted_rank": 38
             },
             {
@@ -1784,23 +1784,23 @@
           "overall_pick": 48,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
-            {
-              "name": "Kyren Williams",
-              "position": "RB",
-              "pro_team": "LAR",
-              "adjusted_rank": 37
-            },
             {
               "name": "Bucky Irving",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 37
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "RB",
+              "pro_team": "CHI",
               "adjusted_rank": 38
             },
             {
@@ -1832,17 +1832,17 @@
           "overall_pick": 49,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Bucky Irving",
+              "name": "D'Andre Swift",
               "position": "RB",
-              "pro_team": "TB",
+              "pro_team": "CHI",
               "adjusted_rank": 38
             },
             {
@@ -1950,9 +1950,9 @@
               "adjusted_rank": 43
             },
             {
-              "name": "D'Andre Swift",
+              "name": "Bhayshul Tuten",
               "position": "RB",
-              "pro_team": "CHI",
+              "pro_team": "JAX",
               "adjusted_rank": 46
             }
           ]
@@ -1961,11 +1961,11 @@
           "overall_pick": 52,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": {
             "player_id": 4360310,
             "name": "Trevor Lawrence",
@@ -1997,11 +1997,11 @@
           "overall_pick": 54,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2023,9 +2023,9 @@
               "adjusted_rank": 43
             },
             {
-              "name": "D'Andre Swift",
+              "name": "Bhayshul Tuten",
               "position": "RB",
-              "pro_team": "CHI",
+              "pro_team": "JAX",
               "adjusted_rank": 46
             },
             {
@@ -2066,9 +2066,9 @@
               "adjusted_rank": 44
             },
             {
-              "name": "D'Andre Swift",
+              "name": "Bhayshul Tuten",
               "position": "RB",
-              "pro_team": "CHI",
+              "pro_team": "JAX",
               "adjusted_rank": 46
             },
             {
@@ -2109,9 +2109,9 @@
               "adjusted_rank": 45
             },
             {
-              "name": "D'Andre Swift",
+              "name": "Bhayshul Tuten",
               "position": "RB",
-              "pro_team": "CHI",
+              "pro_team": "JAX",
               "adjusted_rank": 46
             },
             {
@@ -2146,15 +2146,15 @@
               "adjusted_rank": 45
             },
             {
-              "name": "D'Andre Swift",
-              "position": "RB",
-              "pro_team": "CHI",
-              "adjusted_rank": 46
-            },
-            {
               "name": "Bhayshul Tuten",
               "position": "RB",
               "pro_team": "JAX",
+              "adjusted_rank": 46
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
               "adjusted_rank": 47
             },
             {
@@ -2183,21 +2183,21 @@
               "adjusted_rank": 45
             },
             {
-              "name": "D'Andre Swift",
-              "position": "RB",
-              "pro_team": "CHI",
-              "adjusted_rank": 46
-            },
-            {
               "name": "Bhayshul Tuten",
               "position": "RB",
               "pro_team": "JAX",
-              "adjusted_rank": 47
+              "adjusted_rank": 46
             },
             {
               "name": "David Montgomery",
               "position": "RB",
               "pro_team": "HOU",
+              "adjusted_rank": 47
+            },
+            {
+              "name": "Jadarian Price",
+              "position": "RB",
+              "pro_team": "SEA",
               "adjusted_rank": 48
             },
             {
@@ -2220,21 +2220,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "D'Andre Swift",
-              "position": "RB",
-              "pro_team": "CHI",
-              "adjusted_rank": 46
-            },
-            {
               "name": "Bhayshul Tuten",
               "position": "RB",
               "pro_team": "JAX",
-              "adjusted_rank": 47
+              "adjusted_rank": 46
             },
             {
               "name": "David Montgomery",
               "position": "RB",
               "pro_team": "HOU",
+              "adjusted_rank": 47
+            },
+            {
+              "name": "Jadarian Price",
+              "position": "RB",
+              "pro_team": "SEA",
               "adjusted_rank": 48
             },
             {
@@ -2263,21 +2263,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Bhayshul Tuten",
-              "position": "RB",
-              "pro_team": "JAX",
-              "adjusted_rank": 47
-            },
-            {
               "name": "David Montgomery",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 48
+              "adjusted_rank": 47
             },
             {
               "name": "Jadarian Price",
               "position": "RB",
               "pro_team": "SEA",
+              "adjusted_rank": 48
+            },
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
               "adjusted_rank": 49
             },
             {
@@ -2311,15 +2311,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "David Montgomery",
-              "position": "RB",
-              "pro_team": "HOU",
-              "adjusted_rank": 48
-            },
-            {
               "name": "Jadarian Price",
               "position": "RB",
               "pro_team": "SEA",
+              "adjusted_rank": 48
+            },
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
               "adjusted_rank": 49
             },
             {
@@ -2354,9 +2354,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jadarian Price",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "GB",
               "adjusted_rank": 49
             },
             {
@@ -2561,11 +2561,11 @@
           "overall_pick": 67,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2647,11 +2647,11 @@
           "overall_pick": 69,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2776,11 +2776,11 @@
           "overall_pick": 72,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2824,11 +2824,11 @@
           "overall_pick": 73,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2928,11 +2928,11 @@
           "overall_pick": 76,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3014,11 +3014,11 @@
           "overall_pick": 78,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3340,9 +3340,9 @@
               "adjusted_rank": 72
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 73
             },
             {
@@ -3377,9 +3377,9 @@
               "adjusted_rank": 72
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 73
             },
             {
@@ -3414,9 +3414,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Chuba Hubbard",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 73
             },
             {
@@ -3578,11 +3578,11 @@
           "overall_pick": 91,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": {
             "player_id": 4361370,
             "name": "Chris Olave",
@@ -3614,11 +3614,11 @@
           "overall_pick": 93,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3743,11 +3743,11 @@
           "overall_pick": 96,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3791,11 +3791,11 @@
           "overall_pick": 97,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3895,11 +3895,11 @@
           "overall_pick": 100,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3981,11 +3981,11 @@
           "overall_pick": 102,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -4271,9 +4271,9 @@
               "adjusted_rank": 94
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "CAR",
               "adjusted_rank": 97
             }
           ]
@@ -4319,9 +4319,9 @@
               "adjusted_rank": 95
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "CAR",
               "adjusted_rank": 97
             }
           ]
@@ -4362,9 +4362,9 @@
               "adjusted_rank": 96
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "CAR",
               "adjusted_rank": 97
             }
           ]
@@ -4417,9 +4417,9 @@
               "adjusted_rank": 96
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "CAR",
               "adjusted_rank": 97
             },
             {
@@ -4454,15 +4454,15 @@
               "adjusted_rank": 96
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "CAR",
               "adjusted_rank": 97
             },
             {
-              "name": "Kyle Monangai",
+              "name": "J.K. Dobbins",
               "position": "RB",
-              "pro_team": "CHI",
+              "pro_team": "DEN",
               "adjusted_rank": 98
             },
             {
@@ -4495,11 +4495,11 @@
           "overall_pick": 115,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -4509,21 +4509,21 @@
               "adjusted_rank": 96
             },
             {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 97
+            },
+            {
               "name": "J.K. Dobbins",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 97
+              "adjusted_rank": 98
             },
             {
               "name": "Kyle Monangai",
               "position": "RB",
               "pro_team": "CHI",
-              "adjusted_rank": 98
-            },
-            {
-              "name": "Jacory Croskey-Merritt",
-              "position": "RB",
-              "pro_team": "WSH",
               "adjusted_rank": 99
             },
             {
@@ -4556,29 +4556,29 @@
           "overall_pick": 117,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
+              "adjusted_rank": 97
+            },
             {
               "name": "J.K. Dobbins",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 97
+              "adjusted_rank": 98
             },
             {
               "name": "Kyle Monangai",
               "position": "RB",
               "pro_team": "CHI",
-              "adjusted_rank": 98
-            },
-            {
-              "name": "Jacory Croskey-Merritt",
-              "position": "RB",
-              "pro_team": "WSH",
               "adjusted_rank": 99
             },
             {
@@ -4607,21 +4607,21 @@
           "keeper": null,
           "adp_context": [
             {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "adjusted_rank": 98
+            },
+            {
               "name": "Kyle Monangai",
               "position": "RB",
               "pro_team": "CHI",
-              "adjusted_rank": 98
+              "adjusted_rank": 99
             },
             {
               "name": "Jacory Croskey-Merritt",
               "position": "RB",
               "pro_team": "WSH",
-              "adjusted_rank": 99
-            },
-            {
-              "name": "Aaron Jones Sr.",
-              "position": "RB",
-              "pro_team": "MIN",
               "adjusted_rank": 100
             },
             {
@@ -4650,21 +4650,21 @@
           "keeper": null,
           "adp_context": [
             {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
+              "adjusted_rank": 99
+            },
+            {
               "name": "Jacory Croskey-Merritt",
               "position": "RB",
               "pro_team": "WSH",
-              "adjusted_rank": 99
+              "adjusted_rank": 100
             },
             {
               "name": "Aaron Jones Sr.",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 100
-            },
-            {
-              "name": "Rachaad White",
-              "position": "RB",
-              "pro_team": "WSH",
               "adjusted_rank": 101
             },
             {
@@ -4685,23 +4685,23 @@
           "overall_pick": 120,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 100
+            },
             {
               "name": "Aaron Jones Sr.",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 100
-            },
-            {
-              "name": "Rachaad White",
-              "position": "RB",
-              "pro_team": "WSH",
               "adjusted_rank": 101
             },
             {
@@ -4733,17 +4733,17 @@
           "overall_pick": 121,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Rachaad White",
+              "name": "Aaron Jones Sr.",
               "position": "RB",
-              "pro_team": "WSH",
+              "pro_team": "MIN",
               "adjusted_rank": 101
             },
             {
@@ -4802,9 +4802,9 @@
               "adjusted_rank": 104
             },
             {
-              "name": "Jordan Mason",
+              "name": "Rachaad White",
               "position": "RB",
-              "pro_team": "MIN",
+              "pro_team": "WSH",
               "adjusted_rank": 106
             },
             {
@@ -4845,9 +4845,9 @@
               "adjusted_rank": 105
             },
             {
-              "name": "Jordan Mason",
+              "name": "Rachaad White",
               "position": "RB",
-              "pro_team": "MIN",
+              "pro_team": "WSH",
               "adjusted_rank": 106
             },
             {
@@ -4862,11 +4862,11 @@
           "overall_pick": 124,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -4882,15 +4882,15 @@
               "adjusted_rank": 105
             },
             {
-              "name": "Jordan Mason",
+              "name": "Rachaad White",
               "position": "RB",
-              "pro_team": "MIN",
+              "pro_team": "WSH",
               "adjusted_rank": 106
             },
             {
-              "name": "Blake Corum",
+              "name": "Jordan Mason",
               "position": "RB",
-              "pro_team": "LAR",
+              "pro_team": "MIN",
               "adjusted_rank": 107
             },
             {
@@ -4919,21 +4919,21 @@
               "adjusted_rank": 105
             },
             {
+              "name": "Rachaad White",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 106
+            },
+            {
               "name": "Jordan Mason",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 106
+              "adjusted_rank": 107
             },
             {
               "name": "Blake Corum",
               "position": "RB",
               "pro_team": "LAR",
-              "adjusted_rank": 107
-            },
-            {
-              "name": "RJ Harvey",
-              "position": "RB",
-              "pro_team": "DEN",
               "adjusted_rank": 108
             },
             {
@@ -4948,11 +4948,11 @@
           "overall_pick": 126,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": {
             "player_id": 4361579,
             "name": "Javonte Williams",
@@ -4974,21 +4974,21 @@
           "keeper": null,
           "adp_context": [
             {
+              "name": "Rachaad White",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 106
+            },
+            {
               "name": "Jordan Mason",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 106
+              "adjusted_rank": 107
             },
             {
               "name": "Blake Corum",
               "position": "RB",
               "pro_team": "LAR",
-              "adjusted_rank": 107
-            },
-            {
-              "name": "RJ Harvey",
-              "position": "RB",
-              "pro_team": "DEN",
               "adjusted_rank": 108
             },
             {
@@ -5017,21 +5017,21 @@
           "keeper": null,
           "adp_context": [
             {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
+              "adjusted_rank": 107
+            },
+            {
               "name": "Blake Corum",
               "position": "RB",
               "pro_team": "LAR",
-              "adjusted_rank": 107
+              "adjusted_rank": 108
             },
             {
               "name": "RJ Harvey",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 108
-            },
-            {
-              "name": "Woody Marks",
-              "position": "RB",
-              "pro_team": "HOU",
               "adjusted_rank": 109
             },
             {
@@ -5078,15 +5078,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "RJ Harvey",
+              "name": "Blake Corum",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "LAR",
               "adjusted_rank": 108
             },
             {
-              "name": "Woody Marks",
+              "name": "RJ Harvey",
               "position": "RB",
-              "pro_team": "HOU",
+              "pro_team": "DEN",
               "adjusted_rank": 109
             },
             {
@@ -5121,9 +5121,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Woody Marks",
+              "name": "RJ Harvey",
               "position": "RB",
-              "pro_team": "HOU",
+              "pro_team": "DEN",
               "adjusted_rank": 109
             },
             {
@@ -5182,9 +5182,9 @@
               "adjusted_rank": 112
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5248,9 +5248,9 @@
               "adjusted_rank": 113
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5291,9 +5291,9 @@
               "adjusted_rank": 114
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5334,9 +5334,9 @@
               "adjusted_rank": 115
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5377,9 +5377,9 @@
               "adjusted_rank": 116
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5420,9 +5420,9 @@
               "adjusted_rank": 117
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5437,11 +5437,11 @@
           "overall_pick": 139,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -5463,9 +5463,9 @@
               "adjusted_rank": 118
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
@@ -5500,15 +5500,15 @@
               "adjusted_rank": 118
             },
             {
-              "name": "Zach Charbonnet",
+              "name": "Woody Marks",
               "position": "RB",
-              "pro_team": "SEA",
+              "pro_team": "HOU",
               "adjusted_rank": 119
             },
             {
-              "name": "Tyjae Spears",
+              "name": "Zach Charbonnet",
               "position": "RB",
-              "pro_team": "TEN",
+              "pro_team": "SEA",
               "adjusted_rank": 120
             },
             {
@@ -5523,11 +5523,11 @@
           "overall_pick": 141,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -5537,21 +5537,21 @@
               "adjusted_rank": 118
             },
             {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 119
+            },
+            {
               "name": "Zach Charbonnet",
               "position": "RB",
               "pro_team": "SEA",
-              "adjusted_rank": 119
+              "adjusted_rank": 120
             },
             {
               "name": "Tyjae Spears",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 120
-            },
-            {
-              "name": "Chris Rodriguez Jr.",
-              "position": "RB",
-              "pro_team": "JAX",
               "adjusted_rank": 121
             },
             {
@@ -5574,21 +5574,21 @@
           "keeper": null,
           "adp_context": [
             {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 119
+            },
+            {
               "name": "Zach Charbonnet",
               "position": "RB",
               "pro_team": "SEA",
-              "adjusted_rank": 119
+              "adjusted_rank": 120
             },
             {
               "name": "Tyjae Spears",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 120
-            },
-            {
-              "name": "Chris Rodriguez Jr.",
-              "position": "RB",
-              "pro_team": "JAX",
               "adjusted_rank": 121
             },
             {
@@ -5617,21 +5617,21 @@
           "keeper": null,
           "adp_context": [
             {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
+              "adjusted_rank": 120
+            },
+            {
               "name": "Tyjae Spears",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 120
+              "adjusted_rank": 121
             },
             {
               "name": "Chris Rodriguez Jr.",
               "position": "RB",
               "pro_team": "JAX",
-              "adjusted_rank": 121
-            },
-            {
-              "name": "Brian Robinson Jr.",
-              "position": "RB",
-              "pro_team": "ATL",
               "adjusted_rank": 122
             },
             {
@@ -5652,23 +5652,23 @@
           "overall_pick": 144,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
+            {
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 121
+            },
             {
               "name": "Chris Rodriguez Jr.",
               "position": "RB",
               "pro_team": "JAX",
-              "adjusted_rank": 121
-            },
-            {
-              "name": "Brian Robinson Jr.",
-              "position": "RB",
-              "pro_team": "ATL",
               "adjusted_rank": 122
             },
             {
@@ -5678,9 +5678,9 @@
               "adjusted_rank": 123
             },
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 124
             },
             {
@@ -5700,17 +5700,17 @@
           "overall_pick": 145,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Brian Robinson Jr.",
+              "name": "Chris Rodriguez Jr.",
               "position": "RB",
-              "pro_team": "ATL",
+              "pro_team": "JAX",
               "adjusted_rank": 122
             },
             {
@@ -5720,15 +5720,15 @@
               "adjusted_rank": 123
             },
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 124
             },
             {
-              "name": "MarShawn Lloyd",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "ARI",
               "adjusted_rank": 125
             },
             {
@@ -5775,15 +5775,15 @@
               "adjusted_rank": 123
             },
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 124
             },
             {
-              "name": "MarShawn Lloyd",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "ARI",
               "adjusted_rank": 125
             },
             {
@@ -5804,23 +5804,23 @@
           "overall_pick": 148,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
+            {
+              "name": "Brian Robinson Jr.",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 124
+            },
             {
               "name": "Tyler Allgeier",
               "position": "RB",
               "pro_team": "ARI",
-              "adjusted_rank": 124
-            },
-            {
-              "name": "MarShawn Lloyd",
-              "position": "RB",
-              "pro_team": "GB",
               "adjusted_rank": 125
             },
             {
@@ -5855,9 +5855,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "MarShawn Lloyd",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "ARI",
               "adjusted_rank": 125
             },
             {
@@ -5890,11 +5890,11 @@
           "overall_pick": 150,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6379,11 +6379,11 @@
           "overall_pick": 163,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6465,11 +6465,11 @@
           "overall_pick": 165,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6594,11 +6594,11 @@
           "overall_pick": 168,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6642,11 +6642,11 @@
           "overall_pick": 169,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6771,11 +6771,11 @@
           "overall_pick": 172,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6857,11 +6857,11 @@
           "overall_pick": 174,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7421,11 +7421,11 @@
           "overall_pick": 187,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7507,11 +7507,11 @@
           "overall_pick": 189,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7636,11 +7636,11 @@
           "overall_pick": 192,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7684,11 +7684,11 @@
           "overall_pick": 193,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7813,11 +7813,11 @@
           "overall_pick": 196,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7899,11 +7899,11 @@
           "overall_pick": 198,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -8146,7 +8146,7 @@
               "adjusted_rank": 179
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8189,7 +8189,7 @@
               "adjusted_rank": 180
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8237,7 +8237,7 @@
               "adjusted_rank": 181
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8280,7 +8280,7 @@
               "adjusted_rank": 183
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8323,7 +8323,7 @@
               "adjusted_rank": 183
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8366,7 +8366,7 @@
               "adjusted_rank": 184
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8409,7 +8409,7 @@
               "adjusted_rank": 185
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8446,7 +8446,7 @@
               "adjusted_rank": 185
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
@@ -8463,11 +8463,11 @@
           "overall_pick": 211,
           "slot_in_round": 7,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -8483,15 +8483,15 @@
               "adjusted_rank": 185
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 187
             },
             {
@@ -8520,21 +8520,21 @@
               "adjusted_rank": 185
             },
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
             },
             {
-              "name": "Kaelon Black",
-              "position": "RB",
-              "pro_team": "SF",
-              "adjusted_rank": 187
-            },
-            {
               "name": "Kimani Vidal",
               "position": "RB",
               "pro_team": "LAC",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
               "adjusted_rank": 188
             },
             {
@@ -8549,29 +8549,29 @@
           "overall_pick": 213,
           "slot_in_round": 9,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jordan James",
+              "name": "Kaelon Black",
               "position": "RB",
               "pro_team": "SF",
               "adjusted_rank": 186
             },
             {
-              "name": "Kaelon Black",
-              "position": "RB",
-              "pro_team": "SF",
-              "adjusted_rank": 187
-            },
-            {
               "name": "Kimani Vidal",
               "position": "RB",
               "pro_team": "LAC",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
               "adjusted_rank": 188
             },
             {
@@ -8581,9 +8581,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8600,19 +8600,19 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kaelon Black",
-              "position": "RB",
-              "pro_team": "SF",
-              "adjusted_rank": 187
-            },
-            {
               "name": "Kimani Vidal",
               "position": "RB",
               "pro_team": "LAC",
-              "adjusted_rank": 188
+              "adjusted_rank": 187
             },
             {
               "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 188
+            },
+            {
+              "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 189
@@ -8624,9 +8624,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8643,21 +8643,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kimani Vidal",
-              "position": "RB",
-              "pro_team": "LAC",
-              "adjusted_rank": 188
-            },
-            {
               "name": "Jaylen Wright",
               "position": "RB",
               "pro_team": "MIA",
-              "adjusted_rank": 189
+              "adjusted_rank": 188
             },
             {
               "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
+              "adjusted_rank": 189
+            },
+            {
+              "name": "Samaje Perine",
+              "position": "RB",
+              "pro_team": "CIN",
               "adjusted_rank": 190
             },
             {
@@ -8667,9 +8667,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8678,29 +8678,29 @@
           "overall_pick": 216,
           "slot_in_round": 12,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jaylen Wright",
+              "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 189
             },
             {
-              "name": "Ollie Gordon II",
-              "position": "RB",
-              "pro_team": "MIA",
-              "adjusted_rank": 190
-            },
-            {
               "name": "Samaje Perine",
               "position": "RB",
               "pro_team": "CIN",
+              "adjusted_rank": 190
+            },
+            {
+              "name": "Ty Johnson",
+              "position": "RB",
+              "pro_team": "BUF",
               "adjusted_rank": 191
             },
             {
@@ -8710,9 +8710,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8726,29 +8726,29 @@
           "overall_pick": 217,
           "slot_in_round": 1,
           "team_id": 10,
-          "team_name": "Baker's Dirty Dozen",
+          "team_name": "The Aristocrats",
           "owners": [
             "Karlos Abel"
           ],
-          "logo": "logos/2026/10.png",
+          "logo": "logos/2026/10.jpg",
           "keeper": null,
           "adp_context": [
-            {
-              "name": "Ollie Gordon II",
-              "position": "RB",
-              "pro_team": "MIA",
-              "adjusted_rank": 190
-            },
             {
               "name": "Samaje Perine",
               "position": "RB",
               "pro_team": "CIN",
-              "adjusted_rank": 191
+              "adjusted_rank": 190
             },
             {
               "name": "Ty Johnson",
               "position": "RB",
               "pro_team": "BUF",
+              "adjusted_rank": 191
+            },
+            {
+              "name": "Malik Davis",
+              "position": "RB",
+              "pro_team": "DAL",
               "adjusted_rank": 192
             },
             {
@@ -8758,9 +8758,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8777,21 +8777,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Samaje Perine",
-              "position": "RB",
-              "pro_team": "CIN",
-              "adjusted_rank": 191
-            },
-            {
               "name": "Ty Johnson",
               "position": "RB",
               "pro_team": "BUF",
+              "adjusted_rank": 191
+            },
+            {
+              "name": "Malik Davis",
+              "position": "RB",
+              "pro_team": "DAL",
               "adjusted_rank": 192
             },
             {
-              "name": "Isaiah Davis",
+              "name": "Brashard Smith",
               "position": "RB",
-              "pro_team": "NYJ",
+              "pro_team": "KC",
               "adjusted_rank": 193
             },
             {
@@ -8801,9 +8801,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8820,21 +8820,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Ty Johnson",
+              "name": "Malik Davis",
               "position": "RB",
-              "pro_team": "BUF",
+              "pro_team": "DAL",
               "adjusted_rank": 192
             },
             {
-              "name": "Isaiah Davis",
+              "name": "Brashard Smith",
               "position": "RB",
-              "pro_team": "NYJ",
+              "pro_team": "KC",
               "adjusted_rank": 193
             },
             {
-              "name": "Jaydon Blue",
+              "name": "Chris Brooks",
               "position": "RB",
-              "pro_team": "DAL",
+              "pro_team": "GB",
               "adjusted_rank": 194
             },
             {
@@ -8844,9 +8844,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8855,29 +8855,29 @@
           "overall_pick": 220,
           "slot_in_round": 4,
           "team_id": 9,
-          "team_name": "McConkey Kong Country",
+          "team_name": "McConkey Kong Country 2",
           "owners": [
             "Ronjan Sikdar"
           ],
-          "logo": "logos/2026/9.png",
+          "logo": "logos/2026/9.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Isaiah Davis",
+              "name": "Brashard Smith",
               "position": "RB",
-              "pro_team": "NYJ",
+              "pro_team": "KC",
               "adjusted_rank": 193
             },
             {
-              "name": "Jaydon Blue",
+              "name": "Chris Brooks",
               "position": "RB",
-              "pro_team": "DAL",
+              "pro_team": "GB",
               "adjusted_rank": 194
             },
             {
-              "name": "Kaytron Allen",
+              "name": "Emmett Johnson",
               "position": "RB",
-              "pro_team": "WSH",
+              "pro_team": "KC",
               "adjusted_rank": 195
             },
             {
@@ -8887,9 +8887,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8906,21 +8906,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jaydon Blue",
+              "name": "Chris Brooks",
               "position": "RB",
-              "pro_team": "DAL",
+              "pro_team": "GB",
               "adjusted_rank": 194
             },
             {
-              "name": "Kaytron Allen",
+              "name": "Emmett Johnson",
               "position": "RB",
-              "pro_team": "WSH",
+              "pro_team": "KC",
               "adjusted_rank": 195
             },
             {
-              "name": "Tyrone Tracy Jr.",
+              "name": "Isaiah Davis",
               "position": "RB",
-              "pro_team": "NYG",
+              "pro_team": "NYJ",
               "adjusted_rank": 196
             },
             {
@@ -8930,9 +8930,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8941,29 +8941,29 @@
           "overall_pick": 222,
           "slot_in_round": 6,
           "team_id": 8,
-          "team_name": "Daddy Nielsen ",
+          "team_name": "Olave Oyl",
           "owners": [
             "Joseph Sebranek"
           ],
-          "logo": "logos/2026/8.svg",
+          "logo": "logos/2026/8.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kaytron Allen",
+              "name": "Emmett Johnson",
               "position": "RB",
-              "pro_team": "WSH",
+              "pro_team": "KC",
               "adjusted_rank": 195
             },
             {
-              "name": "Tyrone Tracy Jr.",
+              "name": "Isaiah Davis",
               "position": "RB",
-              "pro_team": "NYG",
+              "pro_team": "NYJ",
               "adjusted_rank": 196
             },
             {
-              "name": "Nicholas Singleton",
+              "name": "LeQuint Allen Jr.",
               "position": "RB",
-              "pro_team": "TEN",
+              "pro_team": "JAX",
               "adjusted_rank": 197
             },
             {
@@ -8973,9 +8973,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -8992,15 +8992,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tyrone Tracy Jr.",
+              "name": "Isaiah Davis",
               "position": "RB",
-              "pro_team": "NYG",
+              "pro_team": "NYJ",
               "adjusted_rank": 196
             },
             {
-              "name": "Nicholas Singleton",
+              "name": "LeQuint Allen Jr.",
               "position": "RB",
-              "pro_team": "TEN",
+              "pro_team": "JAX",
               "adjusted_rank": 197
             },
             {
@@ -9016,9 +9016,9 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             }
           ]
@@ -9035,9 +9035,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Nicholas Singleton",
+              "name": "LeQuint Allen Jr.",
               "position": "RB",
-              "pro_team": "TEN",
+              "pro_team": "JAX",
               "adjusted_rank": 197
             },
             {
@@ -9053,15 +9053,15 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             },
             {
-              "name": "Tre' Harris",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "LAC",
+              "pro_team": "PIT",
               "adjusted_rank": 201
             }
           ]
@@ -9090,15 +9090,15 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             },
             {
-              "name": "Tre' Harris",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "LAC",
+              "pro_team": "PIT",
               "adjusted_rank": 201
             },
             {
@@ -9127,15 +9127,15 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             },
             {
-              "name": "Tre' Harris",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "LAC",
+              "pro_team": "PIT",
               "adjusted_rank": 201
             },
             {
@@ -9164,15 +9164,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Germie Bernard",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "NYG",
               "adjusted_rank": 200
             },
             {
-              "name": "Tre' Harris",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "LAC",
+              "pro_team": "PIT",
               "adjusted_rank": 201
             },
             {
@@ -9207,9 +9207,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tre' Harris",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "LAC",
+              "pro_team": "PIT",
               "adjusted_rank": 201
             },
             {
@@ -9225,9 +9225,9 @@
               "adjusted_rank": 203
             },
             {
-              "name": "Ryan Flournoy",
+              "name": "Tre' Harris",
               "position": "WR",
-              "pro_team": "DAL",
+              "pro_team": "LAC",
               "adjusted_rank": 204
             },
             {
@@ -9244,11 +9244,11 @@
   "teams": [
     {
       "team_id": 10,
-      "team_name": "Baker's Dirty Dozen",
+      "team_name": "The Aristocrats",
       "owners": [
         "Karlos Abel"
       ],
-      "logo": "logos/2026/10.png",
+      "logo": "logos/2026/10.jpg",
       "locked_keepers_2026": [],
       "open_rounds": [
         1,
@@ -9366,11 +9366,11 @@
     },
     {
       "team_id": 9,
-      "team_name": "McConkey Kong Country",
+      "team_name": "McConkey Kong Country 2",
       "owners": [
         "Ronjan Sikdar"
       ],
-      "logo": "logos/2026/9.png",
+      "logo": "logos/2026/9.jpg",
       "locked_keepers_2026": [
         {
           "player_id": 4429795,
@@ -9458,11 +9458,11 @@
     },
     {
       "team_id": 8,
-      "team_name": "Daddy Nielsen ",
+      "team_name": "Olave Oyl",
       "owners": [
         "Joseph Sebranek"
       ],
-      "logo": "logos/2026/8.svg",
+      "logo": "logos/2026/8.jpg",
       "locked_keepers_2026": [
         {
           "player_id": 4430878,

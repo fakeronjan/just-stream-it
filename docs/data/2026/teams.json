@@ -12,7 +12,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 12,
     "final_rank": 0
   },
   {
@@ -28,7 +28,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 11,
     "final_rank": 0
   },
   {
@@ -44,7 +44,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 10,
     "final_rank": 0
   },
   {
@@ -60,7 +60,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 9,
     "final_rank": 0
   },
   {
@@ -76,7 +76,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 8,
     "final_rank": 0
   },
   {
@@ -92,7 +92,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 7,
     "final_rank": 0
   },
   {
@@ -108,14 +108,14 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 6,
     "final_rank": 0
   },
   {
     "id": 8,
-    "name": "Daddy Nielsen ",
-    "abbrev": "NLSN",
-    "logo": "logos/2026/8.svg",
+    "name": "Olave Oyl",
+    "abbrev": "OO",
+    "logo": "logos/2026/8.jpg",
     "owners": [
       "Joseph Sebranek"
     ],
@@ -124,14 +124,14 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 5,
     "final_rank": 0
   },
   {
     "id": 9,
-    "name": "McConkey Kong Country",
+    "name": "McConkey Kong Country 2",
     "abbrev": "rj",
-    "logo": "logos/2026/9.png",
+    "logo": "logos/2026/9.jpg",
     "owners": [
       "Ronjan Sikdar"
     ],
@@ -140,14 +140,14 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 4,
     "final_rank": 0
   },
   {
     "id": 10,
-    "name": "Baker's Dirty Dozen",
-    "abbrev": "BDD",
-    "logo": "logos/2026/10.png",
+    "name": "The Aristocrats",
+    "abbrev": "TA",
+    "logo": "logos/2026/10.jpg",
     "owners": [
       "Karlos Abel"
     ],
@@ -156,7 +156,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 3,
     "final_rank": 0
   },
   {
@@ -172,7 +172,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 2,
     "final_rank": 0
   },
   {
@@ -188,7 +188,7 @@
     "ties": 0,
     "points_for": 0.0,
     "points_against": 0.0,
-    "playoff_seed": 0,
+    "playoff_seed": 1,
     "final_rank": 0
   }
 ]

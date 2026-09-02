@@ -47,7 +47,13 @@ def download_logo(team_id, url, season):
     """
     s2, swid = _load_credentials()
     resp = requests.get(url, cookies={"espn_s2": s2, "SWID": swid}, timeout=30)
-    resp.raise_for_status()
+    if not resp.ok:
+        season_dir = LOGOS_DIR / str(season)
+        existing = list(season_dir.glob(f"{team_id}.*")) if season_dir.exists() else []
+        if existing:
+            print(f"WARNING: logo fetch for team {team_id} ({season}) got {resp.status_code}; keeping existing {existing[0].name}")
+            return f"logos/{season}/{existing[0].name}"
+        raise requests.exceptions.HTTPError(f"{resp.status_code} fetching logo for team {team_id} ({season}), and no existing local logo to fall back to", response=resp)
     content_type = resp.headers.get("content-type", "").split(";")[0].strip()
     ext = EXT_BY_CONTENT_TYPE.get(content_type, ".png")
     season_dir = LOGOS_DIR / str(season)

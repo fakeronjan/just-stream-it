@@ -234,28 +234,28 @@
     "adjusted_rank": 26
   },
   {
-    "player_id": 4047365,
-    "name": "Josh Jacobs",
-    "position": "RB",
-    "pro_team": "GB",
-    "superflex_rank": 57,
-    "standard_rank": 30,
-    "adjusted_rank": 27
-  },
-  {
     "player_id": 3139477,
     "name": "Patrick Mahomes",
     "position": "QB",
     "pro_team": "KC",
     "superflex_rank": 58,
     "standard_rank": 114,
-    "adjusted_rank": 28
+    "adjusted_rank": 27
   },
   {
     "player_id": 4239996,
     "name": "Travis Etienne Jr.",
     "position": "RB",
     "pro_team": "NO",
+    "superflex_rank": 60,
+    "standard_rank": 32,
+    "adjusted_rank": 28
+  },
+  {
+    "player_id": 4430737,
+    "name": "Kyren Williams",
+    "position": "RB",
+    "pro_team": "LAR",
     "superflex_rank": 61,
     "standard_rank": 38,
     "adjusted_rank": 29
@@ -283,8 +283,8 @@
     "name": "Zay Flowers",
     "position": "WR",
     "pro_team": "BAL",
-    "superflex_rank": 65,
-    "standard_rank": 35,
+    "superflex_rank": 64,
+    "standard_rank": 33,
     "adjusted_rank": 32
   },
   {
@@ -311,7 +311,7 @@
     "position": "WR",
     "pro_team": "LAC",
     "superflex_rank": 69,
-    "standard_rank": 48,
+    "standard_rank": 47,
     "adjusted_rank": 35
   },
   {
@@ -320,23 +320,23 @@
     "position": "WR",
     "pro_team": "WSH",
     "superflex_rank": 70,
-    "standard_rank": 46,
+    "standard_rank": 48,
     "adjusted_rank": 36
-  },
-  {
-    "player_id": 4430737,
-    "name": "Kyren Williams",
-    "position": "RB",
-    "pro_team": "LAR",
-    "superflex_rank": 71,
-    "standard_rank": 39,
-    "adjusted_rank": 37
   },
   {
     "player_id": 4596448,
     "name": "Bucky Irving",
     "position": "RB",
     "pro_team": "TB",
+    "superflex_rank": 73,
+    "standard_rank": 41,
+    "adjusted_rank": 37
+  },
+  {
+    "player_id": 4259545,
+    "name": "D'Andre Swift",
+    "position": "RB",
+    "pro_team": "CHI",
     "superflex_rank": 74,
     "standard_rank": 42,
     "adjusted_rank": 38
@@ -365,7 +365,7 @@
     "position": "WR",
     "pro_team": "CIN",
     "superflex_rank": 82,
-    "standard_rank": 47,
+    "standard_rank": 46,
     "adjusted_rank": 41
   },
   {
@@ -405,37 +405,37 @@
     "adjusted_rank": 45
   },
   {
-    "player_id": 4259545,
-    "name": "D'Andre Swift",
-    "position": "RB",
-    "pro_team": "CHI",
-    "superflex_rank": 89,
-    "standard_rank": 64,
-    "adjusted_rank": 46
-  },
-  {
     "player_id": 4882093,
     "name": "Bhayshul Tuten",
     "position": "RB",
     "pro_team": "JAX",
-    "superflex_rank": 90,
-    "standard_rank": 66,
-    "adjusted_rank": 47
+    "superflex_rank": 89,
+    "standard_rank": 64,
+    "adjusted_rank": 46
   },
   {
     "player_id": 4035538,
     "name": "David Montgomery",
     "position": "RB",
     "pro_team": "HOU",
-    "superflex_rank": 91,
+    "superflex_rank": 90,
     "standard_rank": 67,
-    "adjusted_rank": 48
+    "adjusted_rank": 47
   },
   {
     "player_id": 4685512,
     "name": "Jadarian Price",
     "position": "RB",
     "pro_team": "SEA",
+    "superflex_rank": 91,
+    "standard_rank": 66,
+    "adjusted_rank": 48
+  },
+  {
+    "player_id": 4047365,
+    "name": "Josh Jacobs",
+    "position": "RB",
+    "pro_team": "GB",
     "superflex_rank": 92,
     "standard_rank": 68,
     "adjusted_rank": 49
@@ -554,7 +554,7 @@
     "position": "RB",
     "pro_team": "PIT",
     "superflex_rank": 113,
-    "standard_rank": 118,
+    "standard_rank": 117,
     "adjusted_rank": 62
   },
   {
@@ -572,7 +572,7 @@
     "position": "RB",
     "pro_team": "CAR",
     "superflex_rank": 115,
-    "standard_rank": 117,
+    "standard_rank": 118,
     "adjusted_rank": 64
   },
   {
@@ -626,7 +626,7 @@
     "position": "RB",
     "pro_team": "NE",
     "superflex_rank": 122,
-    "standard_rank": 120,
+    "standard_rank": 119,
     "adjusted_rank": 70
   },
   {
@@ -635,7 +635,7 @@
     "position": "RB",
     "pro_team": "TEN",
     "superflex_rank": 123,
-    "standard_rank": 119,
+    "standard_rank": 120,
     "adjusted_rank": 71
   },
   {
@@ -648,12 +648,12 @@
     "adjusted_rank": 72
   },
   {
-    "player_id": 4241416,
-    "name": "Chuba Hubbard",
+    "player_id": 4429023,
+    "name": "MarShawn Lloyd",
     "position": "RB",
-    "pro_team": "CAR",
+    "pro_team": "GB",
     "superflex_rank": 125,
-    "standard_rank": 129,
+    "standard_rank": 122,
     "adjusted_rank": 73
   },
   {
@@ -662,7 +662,7 @@
     "position": "WR",
     "pro_team": "ARI",
     "superflex_rank": 126,
-    "standard_rank": 107,
+    "standard_rank": 106,
     "adjusted_rank": 74
   },
   {
@@ -671,7 +671,7 @@
     "position": "WR",
     "pro_team": "JAX",
     "superflex_rank": 127,
-    "standard_rank": 106,
+    "standard_rank": 107,
     "adjusted_rank": 75
   },
   {
@@ -761,7 +761,7 @@
     "position": "WR",
     "pro_team": "GB",
     "superflex_rank": 147,
-    "standard_rank": 111,
+    "standard_rank": 139,
     "adjusted_rank": 85
   },
   {
@@ -788,7 +788,7 @@
     "position": "TE",
     "pro_team": "DAL",
     "superflex_rank": 150,
-    "standard_rank": 138,
+    "standard_rank": 135,
     "adjusted_rank": 88
   },
   {
@@ -864,48 +864,48 @@
     "adjusted_rank": 96
   },
   {
+    "player_id": 4241416,
+    "name": "Chuba Hubbard",
+    "position": "RB",
+    "pro_team": "CAR",
+    "superflex_rank": 165,
+    "standard_rank": 133,
+    "adjusted_rank": 97
+  },
+  {
     "player_id": 4241985,
     "name": "J.K. Dobbins",
     "position": "RB",
     "pro_team": "DEN",
-    "superflex_rank": 165,
+    "superflex_rank": 166,
     "standard_rank": 121,
-    "adjusted_rank": 97
+    "adjusted_rank": 98
   },
   {
     "player_id": 4608686,
     "name": "Kyle Monangai",
     "position": "RB",
     "pro_team": "CHI",
-    "superflex_rank": 166,
-    "standard_rank": 131,
-    "adjusted_rank": 98
+    "superflex_rank": 168,
+    "standard_rank": 130,
+    "adjusted_rank": 99
   },
   {
     "player_id": 4575131,
     "name": "Jacory Croskey-Merritt",
     "position": "RB",
     "pro_team": "WSH",
-    "superflex_rank": 168,
-    "standard_rank": 123,
-    "adjusted_rank": 99
+    "superflex_rank": 169,
+    "standard_rank": 131,
+    "adjusted_rank": 100
   },
   {
     "player_id": 3042519,
     "name": "Aaron Jones Sr.",
     "position": "RB",
     "pro_team": "MIN",
-    "superflex_rank": 169,
-    "standard_rank": 151,
-    "adjusted_rank": 100
-  },
-  {
-    "player_id": 4697815,
-    "name": "Rachaad White",
-    "position": "RB",
-    "pro_team": "WSH",
     "superflex_rank": 170,
-    "standard_rank": 150,
+    "standard_rank": 152,
     "adjusted_rank": 101
   },
   {
@@ -914,7 +914,7 @@
     "position": "TE",
     "pro_team": "BUF",
     "superflex_rank": 171,
-    "standard_rank": 135,
+    "standard_rank": 138,
     "adjusted_rank": 102
   },
   {
@@ -945,39 +945,39 @@
     "adjusted_rank": 105
   },
   {
+    "player_id": 4697815,
+    "name": "Rachaad White",
+    "position": "RB",
+    "pro_team": "WSH",
+    "superflex_rank": 176,
+    "standard_rank": 151,
+    "adjusted_rank": 106
+  },
+  {
     "player_id": 4360569,
     "name": "Jordan Mason",
     "position": "RB",
     "pro_team": "MIN",
-    "superflex_rank": 176,
-    "standard_rank": 133,
-    "adjusted_rank": 106
+    "superflex_rank": 177,
+    "standard_rank": 144,
+    "adjusted_rank": 107
   },
   {
     "player_id": 4429096,
     "name": "Blake Corum",
     "position": "RB",
     "pro_team": "LAR",
-    "superflex_rank": 177,
-    "standard_rank": 144,
-    "adjusted_rank": 107
+    "superflex_rank": 178,
+    "standard_rank": 150,
+    "adjusted_rank": 108
   },
   {
     "player_id": 4568490,
     "name": "RJ Harvey",
     "position": "RB",
     "pro_team": "DEN",
-    "superflex_rank": 178,
-    "standard_rank": 175,
-    "adjusted_rank": 108
-  },
-  {
-    "player_id": 4429059,
-    "name": "Woody Marks",
-    "position": "RB",
-    "pro_team": "HOU",
     "superflex_rank": 181,
-    "standard_rank": 152,
+    "standard_rank": 176,
     "adjusted_rank": 109
   },
   {
@@ -1062,39 +1062,39 @@
     "adjusted_rank": 118
   },
   {
+    "player_id": 4429059,
+    "name": "Woody Marks",
+    "position": "RB",
+    "pro_team": "HOU",
+    "superflex_rank": 196,
+    "standard_rank": 153,
+    "adjusted_rank": 119
+  },
+  {
     "player_id": 4426385,
     "name": "Zach Charbonnet",
     "position": "RB",
     "pro_team": "SEA",
-    "superflex_rank": 196,
-    "standard_rank": 153,
-    "adjusted_rank": 119
+    "superflex_rank": 197,
+    "standard_rank": 175,
+    "adjusted_rank": 120
   },
   {
     "player_id": 4428557,
     "name": "Tyjae Spears",
     "position": "RB",
     "pro_team": "TEN",
-    "superflex_rank": 197,
-    "standard_rank": 177,
-    "adjusted_rank": 120
+    "superflex_rank": 198,
+    "standard_rank": 180,
+    "adjusted_rank": 121
   },
   {
     "player_id": 4362619,
     "name": "Chris Rodriguez Jr.",
     "position": "RB",
     "pro_team": "JAX",
-    "superflex_rank": 198,
-    "standard_rank": 176,
-    "adjusted_rank": 121
-  },
-  {
-    "player_id": 4241474,
-    "name": "Brian Robinson Jr.",
-    "position": "RB",
-    "pro_team": "ATL",
     "superflex_rank": 199,
-    "standard_rank": 179,
+    "standard_rank": 177,
     "adjusted_rank": 122
   },
   {
@@ -1107,19 +1107,19 @@
     "adjusted_rank": 123
   },
   {
-    "player_id": 4373626,
-    "name": "Tyler Allgeier",
+    "player_id": 4241474,
+    "name": "Brian Robinson Jr.",
     "position": "RB",
-    "pro_team": "ARI",
+    "pro_team": "ATL",
     "superflex_rank": 203,
     "standard_rank": 181,
     "adjusted_rank": 124
   },
   {
-    "player_id": 4429023,
-    "name": "MarShawn Lloyd",
+    "player_id": 4373626,
+    "name": "Tyler Allgeier",
     "position": "RB",
-    "pro_team": "GB",
+    "pro_team": "ARI",
     "superflex_rank": 205,
     "standard_rank": 182,
     "adjusted_rank": 125
@@ -1202,7 +1202,7 @@
     "position": "RB",
     "pro_team": "LAC",
     "superflex_rank": 219,
-    "standard_rank": 202,
+    "standard_rank": 200,
     "adjusted_rank": 134
   },
   {
@@ -1211,7 +1211,7 @@
     "position": "RB",
     "pro_team": "DET",
     "superflex_rank": 220,
-    "standard_rank": 200,
+    "standard_rank": 202,
     "adjusted_rank": 135
   },
   {
@@ -1382,7 +1382,7 @@
     "position": "K",
     "pro_team": "DAL",
     "superflex_rank": 251,
-    "standard_rank": 240,
+    "standard_rank": 241,
     "adjusted_rank": 154
   },
   {
@@ -1391,7 +1391,7 @@
     "position": "K",
     "pro_team": "LAC",
     "superflex_rank": 252,
-    "standard_rank": 241,
+    "standard_rank": 242,
     "adjusted_rank": 155
   },
   {
@@ -1400,7 +1400,7 @@
     "position": "K",
     "pro_team": "SEA",
     "superflex_rank": 253,
-    "standard_rank": 242,
+    "standard_rank": 243,
     "adjusted_rank": 156
   },
   {
@@ -1427,7 +1427,7 @@
     "position": "K",
     "pro_team": "SF",
     "superflex_rank": 259,
-    "standard_rank": 248,
+    "standard_rank": 249,
     "adjusted_rank": 159
   },
   {
@@ -1436,7 +1436,7 @@
     "position": "K",
     "pro_team": "KC",
     "superflex_rank": 260,
-    "standard_rank": 249,
+    "standard_rank": 250,
     "adjusted_rank": 160
   },
   {
@@ -1444,8 +1444,8 @@
     "name": "Cam Little",
     "position": "K",
     "pro_team": "JAX",
-    "superflex_rank": 262,
-    "standard_rank": 251,
+    "superflex_rank": 261,
+    "standard_rank": 252,
     "adjusted_rank": 161
   },
   {
@@ -1454,7 +1454,7 @@
     "position": "K",
     "pro_team": "DET",
     "superflex_rank": 263,
-    "standard_rank": 252,
+    "standard_rank": 253,
     "adjusted_rank": 162
   },
   {
@@ -1481,7 +1481,7 @@
     "position": "K",
     "pro_team": "MIN",
     "superflex_rank": 270,
-    "standard_rank": 259,
+    "standard_rank": 260,
     "adjusted_rank": 165
   },
   {
@@ -1570,8 +1570,8 @@
     "name": "Justice Hill",
     "position": "RB",
     "pro_team": "BAL",
-    "superflex_rank": 292,
-    "standard_rank": 268,
+    "superflex_rank": 293,
+    "standard_rank": 267,
     "adjusted_rank": 175
   },
   {
@@ -1588,7 +1588,7 @@
     "name": "Devaughn Vele",
     "position": "WR",
     "pro_team": "NO",
-    "superflex_rank": 297,
+    "superflex_rank": 298,
     "standard_rank": 215,
     "adjusted_rank": 177
   },
@@ -1634,7 +1634,7 @@
     "position": "QB",
     "pro_team": "MIN",
     "superflex_rank": 310,
-    "standard_rank": 448,
+    "standard_rank": 447,
     "adjusted_rank": 182
   },
   {
@@ -1665,8 +1665,8 @@
     "adjusted_rank": 185
   },
   {
-    "player_id": 4685397,
-    "name": "Jordan James",
+    "player_id": 4696044,
+    "name": "Kaelon Black",
     "position": "RB",
     "pro_team": "SF",
     "superflex_rank": 315,
@@ -1674,26 +1674,26 @@
     "adjusted_rank": 186
   },
   {
-    "player_id": 4696044,
-    "name": "Kaelon Black",
+    "player_id": 4430968,
+    "name": "Kimani Vidal",
     "position": "RB",
-    "pro_team": "SF",
+    "pro_team": "LAC",
     "superflex_rank": 316,
     "standard_rank": 307,
     "adjusted_rank": 187
   },
   {
-    "player_id": 4430968,
-    "name": "Kimani Vidal",
+    "player_id": 4682745,
+    "name": "Jaylen Wright",
     "position": "RB",
-    "pro_team": "LAC",
+    "pro_team": "MIA",
     "superflex_rank": 318,
     "standard_rank": 308,
     "adjusted_rank": 188
   },
   {
-    "player_id": 4682745,
-    "name": "Jaylen Wright",
+    "player_id": 4711533,
+    "name": "Ollie Gordon II",
     "position": "RB",
     "pro_team": "MIA",
     "superflex_rank": 319,
@@ -1701,73 +1701,73 @@
     "adjusted_rank": 189
   },
   {
-    "player_id": 4711533,
-    "name": "Ollie Gordon II",
-    "position": "RB",
-    "pro_team": "MIA",
-    "superflex_rank": 320,
-    "standard_rank": 320,
-    "adjusted_rank": 190
-  },
-  {
     "player_id": 3116389,
     "name": "Samaje Perine",
     "position": "RB",
     "pro_team": "CIN",
-    "superflex_rank": 321,
-    "standard_rank": 321,
-    "adjusted_rank": 191
+    "superflex_rank": 320,
+    "standard_rank": 320,
+    "adjusted_rank": 190
   },
   {
     "player_id": 3915411,
     "name": "Ty Johnson",
     "position": "RB",
     "pro_team": "BUF",
+    "superflex_rank": 321,
+    "standard_rank": 321,
+    "adjusted_rank": 191
+  },
+  {
+    "player_id": 4240603,
+    "name": "Malik Davis",
+    "position": "RB",
+    "pro_team": "DAL",
     "superflex_rank": 322,
     "standard_rank": 324,
     "adjusted_rank": 192
+  },
+  {
+    "player_id": 4596602,
+    "name": "Brashard Smith",
+    "position": "RB",
+    "pro_team": "KC",
+    "superflex_rank": 323,
+    "standard_rank": 325,
+    "adjusted_rank": 193
+  },
+  {
+    "player_id": 3149687,
+    "name": "Chris Brooks",
+    "position": "RB",
+    "pro_team": "GB",
+    "superflex_rank": 324,
+    "standard_rank": 340,
+    "adjusted_rank": 194
+  },
+  {
+    "player_id": 4832955,
+    "name": "Emmett Johnson",
+    "position": "RB",
+    "pro_team": "KC",
+    "superflex_rank": 325,
+    "standard_rank": 342,
+    "adjusted_rank": 195
   },
   {
     "player_id": 4695404,
     "name": "Isaiah Davis",
     "position": "RB",
     "pro_team": "NYJ",
-    "superflex_rank": 323,
-    "standard_rank": 325,
-    "adjusted_rank": 193
-  },
-  {
-    "player_id": 4685279,
-    "name": "Jaydon Blue",
-    "position": "RB",
-    "pro_team": "DAL",
-    "superflex_rank": 324,
-    "standard_rank": 340,
-    "adjusted_rank": 194
-  },
-  {
-    "player_id": 4685246,
-    "name": "Kaytron Allen",
-    "position": "RB",
-    "pro_team": "WSH",
-    "superflex_rank": 325,
-    "standard_rank": 342,
-    "adjusted_rank": 195
-  },
-  {
-    "player_id": 4360516,
-    "name": "Tyrone Tracy Jr.",
-    "position": "RB",
-    "pro_team": "NYG",
     "superflex_rank": 326,
     "standard_rank": 343,
     "adjusted_rank": 196
   },
   {
-    "player_id": 4685555,
-    "name": "Nicholas Singleton",
+    "player_id": 4911851,
+    "name": "LeQuint Allen Jr.",
     "position": "RB",
-    "pro_team": "TEN",
+    "pro_team": "JAX",
     "superflex_rank": 327,
     "standard_rank": 344,
     "adjusted_rank": 197
@@ -1791,21 +1791,21 @@
     "adjusted_rank": 199
   },
   {
-    "player_id": 4685261,
-    "name": "Germie Bernard",
+    "player_id": 4682648,
+    "name": "Malachi Fields",
     "position": "WR",
-    "pro_team": "PIT",
+    "pro_team": "NYG",
     "superflex_rank": 331,
     "standard_rank": 287,
     "adjusted_rank": 200
   },
   {
-    "player_id": 4686612,
-    "name": "Tre' Harris",
+    "player_id": 4685261,
+    "name": "Germie Bernard",
     "position": "WR",
-    "pro_team": "LAC",
+    "pro_team": "PIT",
     "superflex_rank": 332,
-    "standard_rank": 289,
+    "standard_rank": 290,
     "adjusted_rank": 201
   },
   {
@@ -1823,41 +1823,41 @@
     "position": "QB",
     "pro_team": "KC",
     "superflex_rank": 334,
-    "standard_rank": 452,
+    "standard_rank": 453,
     "adjusted_rank": 203
+  },
+  {
+    "player_id": 4686612,
+    "name": "Tre' Harris",
+    "position": "WR",
+    "pro_team": "LAC",
+    "superflex_rank": 335,
+    "standard_rank": 293,
+    "adjusted_rank": 204
   },
   {
     "player_id": 5083754,
     "name": "Ryan Flournoy",
     "position": "WR",
     "pro_team": "DAL",
-    "superflex_rank": 335,
-    "standard_rank": 293,
-    "adjusted_rank": 204
+    "superflex_rank": 336,
+    "standard_rank": 299,
+    "adjusted_rank": 205
   },
   {
     "player_id": 4870612,
     "name": "Zachariah Branch",
     "position": "WR",
     "pro_team": "ATL",
-    "superflex_rank": 336,
-    "standard_rank": 300,
-    "adjusted_rank": 205
+    "superflex_rank": 337,
+    "standard_rank": 302,
+    "adjusted_rank": 206
   },
   {
     "player_id": 4723820,
     "name": "Omar Cooper Jr.",
     "position": "WR",
     "pro_team": "NYJ",
-    "superflex_rank": 337,
-    "standard_rank": 302,
-    "adjusted_rank": 206
-  },
-  {
-    "player_id": 4429022,
-    "name": "Kayshon Boutte",
-    "position": "WR",
-    "pro_team": "HOU",
     "superflex_rank": 338,
     "standard_rank": 304,
     "adjusted_rank": 207
@@ -1908,64 +1908,64 @@
     "adjusted_rank": 212
   },
   {
+    "player_id": 4429022,
+    "name": "Kayshon Boutte",
+    "position": "WR",
+    "pro_team": "HOU",
+    "superflex_rank": 347,
+    "standard_rank": 305,
+    "adjusted_rank": 213
+  },
+  {
     "player_id": 4569603,
     "name": "Malik Washington",
     "position": "WR",
     "pro_team": "MIA",
-    "superflex_rank": 347,
-    "standard_rank": 305,
-    "adjusted_rank": 213
+    "superflex_rank": 348,
+    "standard_rank": 322,
+    "adjusted_rank": 214
   },
   {
     "player_id": 2977187,
     "name": "Cooper Kupp",
     "position": "WR",
     "pro_team": "SEA",
-    "superflex_rank": 348,
-    "standard_rank": 322,
-    "adjusted_rank": 214
+    "superflex_rank": 349,
+    "standard_rank": 326,
+    "adjusted_rank": 215
   },
   {
     "player_id": 4430034,
     "name": "Xavier Legette",
     "position": "WR",
     "pro_team": "CAR",
-    "superflex_rank": 349,
-    "standard_rank": 326,
-    "adjusted_rank": 215
+    "superflex_rank": 350,
+    "standard_rank": 327,
+    "adjusted_rank": 216
   },
   {
     "player_id": 4361409,
     "name": "Jahan Dotson",
     "position": "WR",
     "pro_team": "ATL",
-    "superflex_rank": 350,
-    "standard_rank": 327,
-    "adjusted_rank": 216
-  },
-  {
-    "player_id": 3916945,
-    "name": "Darius Slayton",
-    "position": "WR",
-    "pro_team": "NYG",
     "superflex_rank": 351,
     "standard_rank": 328,
     "adjusted_rank": 217
+  },
+  {
+    "player_id": 4686422,
+    "name": "Xavier Hutchinson",
+    "position": "WR",
+    "pro_team": "HOU",
+    "superflex_rank": 354,
+    "standard_rank": 329,
+    "adjusted_rank": 218
   },
   {
     "player_id": 4249417,
     "name": "Jalen Tolbert",
     "position": "WR",
     "pro_team": "MIA",
-    "superflex_rank": 353,
-    "standard_rank": 329,
-    "adjusted_rank": 218
-  },
-  {
-    "player_id": 4427095,
-    "name": "DeMario Douglas",
-    "position": "WR",
-    "pro_team": "NE",
     "superflex_rank": 355,
     "standard_rank": 330,
     "adjusted_rank": 219
@@ -1980,91 +1980,91 @@
     "adjusted_rank": 220
   },
   {
-    "player_id": 5081432,
-    "name": "Antonio Williams",
+    "player_id": 4427095,
+    "name": "DeMario Douglas",
     "position": "WR",
-    "pro_team": "WSH",
+    "pro_team": "NE",
     "superflex_rank": 357,
     "standard_rank": 332,
     "adjusted_rank": 221
   },
   {
-    "player_id": 4362921,
-    "name": "Tyquan Thornton",
+    "player_id": 3916945,
+    "name": "Darius Slayton",
     "position": "WR",
-    "pro_team": "KC",
+    "pro_team": "NYG",
     "superflex_rank": 358,
     "standard_rank": 333,
     "adjusted_rank": 222
-  },
-  {
-    "player_id": 4832846,
-    "name": "Demond Claiborne",
-    "position": "RB",
-    "pro_team": "MIN",
-    "superflex_rank": 360,
-    "standard_rank": 345,
-    "adjusted_rank": 223
-  },
-  {
-    "player_id": 4685526,
-    "name": "Adam Randall",
-    "position": "RB",
-    "pro_team": "BAL",
-    "superflex_rank": 361,
-    "standard_rank": 346,
-    "adjusted_rank": 224
-  },
-  {
-    "player_id": 4832955,
-    "name": "Emmett Johnson",
-    "position": "RB",
-    "pro_team": "KC",
-    "superflex_rank": 362,
-    "standard_rank": 349,
-    "adjusted_rank": 225
-  },
-  {
-    "player_id": 4911851,
-    "name": "LeQuint Allen Jr.",
-    "position": "RB",
-    "pro_team": "JAX",
-    "superflex_rank": 363,
-    "standard_rank": 350,
-    "adjusted_rank": 226
   },
   {
     "player_id": 4429835,
     "name": "George Holani",
     "position": "RB",
     "pro_team": "SEA",
-    "superflex_rank": 364,
-    "standard_rank": 351,
-    "adjusted_rank": 227
+    "superflex_rank": 360,
+    "standard_rank": 345,
+    "adjusted_rank": 223
+  },
+  {
+    "player_id": 4360516,
+    "name": "Tyrone Tracy Jr.",
+    "position": "RB",
+    "pro_team": "NYG",
+    "superflex_rank": 361,
+    "standard_rank": 346,
+    "adjusted_rank": 224
   },
   {
     "player_id": 4430871,
     "name": "Sean Tucker",
     "position": "RB",
     "pro_team": "TB",
+    "superflex_rank": 362,
+    "standard_rank": 348,
+    "adjusted_rank": 225
+  },
+  {
+    "player_id": 4686468,
+    "name": "Seth McGowan",
+    "position": "RB",
+    "pro_team": "IND",
+    "superflex_rank": 363,
+    "standard_rank": 350,
+    "adjusted_rank": 226
+  },
+  {
+    "player_id": 4685397,
+    "name": "Jordan James",
+    "position": "RB",
+    "pro_team": "SF",
+    "superflex_rank": 364,
+    "standard_rank": 351,
+    "adjusted_rank": 227
+  },
+  {
+    "player_id": 4431545,
+    "name": "Will Shipley",
+    "position": "RB",
+    "pro_team": "PHI",
     "superflex_rank": 367,
     "standard_rank": 352,
     "adjusted_rank": 228
   },
   {
-    "player_id": 3045147,
-    "name": "James Conner",
+    "player_id": 4383429,
+    "name": "Jacob Saylors",
     "position": "RB",
-    "pro_team": "ARI",
+    "pro_team": "DET",
     "superflex_rank": 368,
     "standard_rank": 353,
     "adjusted_rank": 229
   },
   {
-    "player_id": 4362478,
-    "name": "Emari Demercado",
+    "player_id": 4685555,
+    "name": "Nicholas Singleton",
     "position": "RB",
-    "pro_team": "KC",
+    "pro_team": "TEN",
     "superflex_rank": 369,
     "standard_rank": 355,
     "adjusted_rank": 230
@@ -2084,7 +2084,7 @@
     "position": "TE",
     "pro_team": "TEN",
     "superflex_rank": 371,
-    "standard_rank": 311,
+    "standard_rank": 310,
     "adjusted_rank": 232
   },
   {
@@ -2093,7 +2093,7 @@
     "position": "TE",
     "pro_team": "WSH",
     "superflex_rank": 373,
-    "standard_rank": 310,
+    "standard_rank": 311,
     "adjusted_rank": 233
   },
   {
@@ -2124,29 +2124,29 @@
     "adjusted_rank": 236
   },
   {
-    "player_id": 4686468,
-    "name": "Seth McGowan",
+    "player_id": 4599739,
+    "name": "Kendre Miller",
     "position": "RB",
-    "pro_team": "IND",
+    "pro_team": "NO",
     "superflex_rank": 377,
     "standard_rank": 356,
     "adjusted_rank": 237
   },
   {
-    "player_id": 4635008,
-    "name": "Keon Coleman",
+    "player_id": 5081432,
+    "name": "Antonio Williams",
     "position": "WR",
-    "pro_team": "BUF",
+    "pro_team": "WSH",
     "superflex_rank": 381,
     "standard_rank": 357,
     "adjusted_rank": 238
   },
   {
-    "player_id": 5123663,
-    "name": "Isaac TeSlaa",
+    "player_id": 4362921,
+    "name": "Tyquan Thornton",
     "position": "WR",
-    "pro_team": "DET",
-    "superflex_rank": 383,
+    "pro_team": "KC",
+    "superflex_rank": 382,
     "standard_rank": 358,
     "adjusted_rank": 239
   },
@@ -2164,7 +2164,7 @@
     "name": "Saints D/ST",
     "position": "D/ST",
     "pro_team": "NO",
-    "superflex_rank": 387,
+    "superflex_rank": 386,
     "standard_rank": 361,
     "adjusted_rank": 241
   },
@@ -2214,26 +2214,26 @@
     "adjusted_rank": 246
   },
   {
-    "player_id": 4600981,
-    "name": "Pat Bryant",
+    "player_id": 4635008,
+    "name": "Keon Coleman",
     "position": "WR",
-    "pro_team": "DEN",
+    "pro_team": "BUF",
     "superflex_rank": 394,
     "standard_rank": 369,
     "adjusted_rank": 247
   },
   {
-    "player_id": 4040655,
-    "name": "Darnell Mooney",
+    "player_id": 5123663,
+    "name": "Isaac TeSlaa",
     "position": "WR",
-    "pro_team": "NYG",
+    "pro_team": "DET",
     "superflex_rank": 396,
     "standard_rank": 370,
     "adjusted_rank": 248
   },
   {
-    "player_id": 4686472,
-    "name": "Marvin Mims Jr.",
+    "player_id": 4600981,
+    "name": "Pat Bryant",
     "position": "WR",
     "pro_team": "DEN",
     "superflex_rank": 397,
@@ -2241,172 +2241,172 @@
     "adjusted_rank": 249
   },
   {
-    "player_id": 4682648,
-    "name": "Malachi Fields",
+    "player_id": 4686472,
+    "name": "Marvin Mims Jr.",
     "position": "WR",
-    "pro_team": "NYG",
+    "pro_team": "DEN",
     "superflex_rank": 398,
     "standard_rank": 372,
     "adjusted_rank": 250
-  },
-  {
-    "player_id": 3149687,
-    "name": "Chris Brooks",
-    "position": "RB",
-    "pro_team": "GB",
-    "superflex_rank": 399,
-    "standard_rank": 376,
-    "adjusted_rank": 251
-  },
-  {
-    "player_id": 4887558,
-    "name": "Emanuel Wilson",
-    "position": "RB",
-    "pro_team": "SEA",
-    "superflex_rank": 400,
-    "standard_rank": 378,
-    "adjusted_rank": 252
-  },
-  {
-    "player_id": 3676833,
-    "name": "KaVontae Turpin",
-    "position": "WR",
-    "pro_team": "DAL",
-    "superflex_rank": 403,
-    "standard_rank": 390,
-    "adjusted_rank": 253
-  },
-  {
-    "player_id": 4603186,
-    "name": "Jack Bech",
-    "position": "WR",
-    "pro_team": "LV",
-    "superflex_rank": 404,
-    "standard_rank": 391,
-    "adjusted_rank": 254
-  },
-  {
-    "player_id": 4597703,
-    "name": "Tory Horton",
-    "position": "WR",
-    "pro_team": "SEA",
-    "superflex_rank": 405,
-    "standard_rank": 392,
-    "adjusted_rank": 255
-  },
-  {
-    "player_id": 5220680,
-    "name": "Ted Hurst III",
-    "position": "WR",
-    "pro_team": "TB",
-    "superflex_rank": 406,
-    "standard_rank": 393,
-    "adjusted_rank": 256
-  },
-  {
-    "player_id": 4368003,
-    "name": "Andrei Iosivas",
-    "position": "WR",
-    "pro_team": "CIN",
-    "superflex_rank": 407,
-    "standard_rank": 395,
-    "adjusted_rank": 257
-  },
-  {
-    "player_id": 4431545,
-    "name": "Will Shipley",
-    "position": "RB",
-    "pro_team": "PHI",
-    "superflex_rank": 409,
-    "standard_rank": 396,
-    "adjusted_rank": 258
-  },
-  {
-    "player_id": 4240603,
-    "name": "Malik Davis",
-    "position": "RB",
-    "pro_team": "DAL",
-    "superflex_rank": 410,
-    "standard_rank": 397,
-    "adjusted_rank": 259
-  },
-  {
-    "player_id": 4599739,
-    "name": "Kendre Miller",
-    "position": "RB",
-    "pro_team": "NO",
-    "superflex_rank": 411,
-    "standard_rank": 398,
-    "adjusted_rank": 260
   },
   {
     "player_id": 4429299,
     "name": "Tahj Brooks",
     "position": "RB",
     "pro_team": "CIN",
-    "superflex_rank": 412,
-    "standard_rank": 399,
-    "adjusted_rank": 261
+    "superflex_rank": 399,
+    "standard_rank": 376,
+    "adjusted_rank": 251
   },
   {
-    "player_id": 4685350,
-    "name": "Trevor Etienne",
+    "player_id": 4832846,
+    "name": "Demond Claiborne",
     "position": "RB",
-    "pro_team": "CAR",
-    "superflex_rank": 413,
-    "standard_rank": 402,
-    "adjusted_rank": 262
+    "pro_team": "MIN",
+    "superflex_rank": 400,
+    "standard_rank": 378,
+    "adjusted_rank": 252
+  },
+  {
+    "player_id": 4368003,
+    "name": "Andrei Iosivas",
+    "position": "WR",
+    "pro_team": "CIN",
+    "superflex_rank": 403,
+    "standard_rank": 390,
+    "adjusted_rank": 253
+  },
+  {
+    "player_id": 4685307,
+    "name": "Kevin Coleman Jr.",
+    "position": "WR",
+    "pro_team": "MIA",
+    "superflex_rank": 404,
+    "standard_rank": 391,
+    "adjusted_rank": 254
+  },
+  {
+    "player_id": 3676833,
+    "name": "KaVontae Turpin",
+    "position": "WR",
+    "pro_team": "DAL",
+    "superflex_rank": 405,
+    "standard_rank": 392,
+    "adjusted_rank": 255
+  },
+  {
+    "player_id": 4603186,
+    "name": "Jack Bech",
+    "position": "WR",
+    "pro_team": "LV",
+    "superflex_rank": 406,
+    "standard_rank": 393,
+    "adjusted_rank": 256
+  },
+  {
+    "player_id": 4597703,
+    "name": "Tory Horton",
+    "position": "WR",
+    "pro_team": "SEA",
+    "superflex_rank": 407,
+    "standard_rank": 395,
+    "adjusted_rank": 257
+  },
+  {
+    "player_id": 4690013,
+    "name": "Rasheen Ali",
+    "position": "RB",
+    "pro_team": "BAL",
+    "superflex_rank": 409,
+    "standard_rank": 396,
+    "adjusted_rank": 258
+  },
+  {
+    "player_id": 4685246,
+    "name": "Kaytron Allen",
+    "position": "RB",
+    "pro_team": "WSH",
+    "superflex_rank": 410,
+    "standard_rank": 397,
+    "adjusted_rank": 259
   },
   {
     "player_id": 4874509,
     "name": "DJ Giddens",
     "position": "RB",
     "pro_team": "IND",
-    "superflex_rank": 416,
-    "standard_rank": 403,
-    "adjusted_rank": 263
+    "superflex_rank": 411,
+    "standard_rank": 398,
+    "adjusted_rank": 260
   },
   {
-    "player_id": 4429939,
-    "name": "Jawhar Jordan",
+    "player_id": 4887558,
+    "name": "Emanuel Wilson",
     "position": "RB",
-    "pro_team": "HOU",
-    "superflex_rank": 417,
-    "standard_rank": 404,
-    "adjusted_rank": 264
+    "pro_team": "SEA",
+    "superflex_rank": 412,
+    "standard_rank": 399,
+    "adjusted_rank": 261
   },
   {
     "player_id": 4819231,
     "name": "Kaleb Johnson",
     "position": "RB",
-    "pro_team": "PIT",
+    "pro_team": "GB",
+    "superflex_rank": 413,
+    "standard_rank": 402,
+    "adjusted_rank": 262
+  },
+  {
+    "player_id": 4035537,
+    "name": "Kene Nwangwu",
+    "position": "RB",
+    "pro_team": "NYJ",
+    "superflex_rank": 415,
+    "standard_rank": 403,
+    "adjusted_rank": 263
+  },
+  {
+    "player_id": 4427728,
+    "name": "Bam Knight",
+    "position": "RB",
+    "pro_team": "ARI",
+    "superflex_rank": 417,
+    "standard_rank": 404,
+    "adjusted_rank": 264
+  },
+  {
+    "player_id": 4912274,
+    "name": "Sione Vaki",
+    "position": "RB",
+    "pro_team": "DET",
     "superflex_rank": 418,
     "standard_rank": 405,
     "adjusted_rank": 265
   },
   {
-    "player_id": 2991662,
-    "name": "Mack Hollins",
+    "player_id": 5220680,
+    "name": "Ted Hurst III",
     "position": "WR",
-    "pro_team": "NE",
+    "pro_team": "TB",
     "superflex_rank": 419,
     "standard_rank": 406,
     "adjusted_rank": 266
-  },
-  {
-    "player_id": -16003,
-    "name": "Bears D/ST",
-    "position": "D/ST",
-    "pro_team": "CHI",
-    "superflex_rank": 420,
-    "standard_rank": 408,
-    "adjusted_rank": 267
   },
   {
     "player_id": -16020,
     "name": "Jets D/ST",
     "position": "D/ST",
     "pro_team": "NYJ",
+    "superflex_rank": 420,
+    "standard_rank": 408,
+    "adjusted_rank": 267
+  },
+  {
+    "player_id": -16025,
+    "name": "49ers D/ST",
+    "position": "D/ST",
+    "pro_team": "SF",
     "superflex_rank": 422,
     "standard_rank": 409,
     "adjusted_rank": 268
@@ -2421,10 +2421,10 @@
     "adjusted_rank": 269
   },
   {
-    "player_id": 3050478,
-    "name": "Jake Elliott",
+    "player_id": 4571557,
+    "name": "Spencer Shrader",
     "position": "K",
-    "pro_team": "PHI",
+    "pro_team": "IND",
     "superflex_rank": 424,
     "standard_rank": 411,
     "adjusted_rank": 270
@@ -2435,7 +2435,7 @@
     "position": "TE",
     "pro_team": "DEN",
     "superflex_rank": 425,
-    "standard_rank": 413,
+    "standard_rank": 412,
     "adjusted_rank": 271
   },
   {
@@ -2444,7 +2444,7 @@
     "position": "TE",
     "pro_team": "LAC",
     "superflex_rank": 426,
-    "standard_rank": 412,
+    "standard_rank": 414,
     "adjusted_rank": 272
   },
   {
@@ -2475,89 +2475,89 @@
     "adjusted_rank": 275
   },
   {
-    "player_id": 4360797,
-    "name": "Tutu Atwell",
+    "player_id": 4040655,
+    "name": "Darnell Mooney",
     "position": "WR",
-    "pro_team": "LAR",
+    "pro_team": "NYG",
     "superflex_rank": 431,
     "standard_rank": 419,
     "adjusted_rank": 276
   },
   {
-    "player_id": 4912218,
-    "name": "Cyrus Allen",
+    "player_id": 2991662,
+    "name": "Mack Hollins",
     "position": "WR",
-    "pro_team": "KC",
+    "pro_team": "NE",
     "superflex_rank": 432,
     "standard_rank": 421,
     "adjusted_rank": 277
-  },
-  {
-    "player_id": -16025,
-    "name": "49ers D/ST",
-    "position": "D/ST",
-    "pro_team": "SF",
-    "superflex_rank": 433,
-    "standard_rank": 424,
-    "adjusted_rank": 278
   },
   {
     "player_id": -16006,
     "name": "Cowboys D/ST",
     "position": "D/ST",
     "pro_team": "DAL",
-    "superflex_rank": 435,
-    "standard_rank": 425,
-    "adjusted_rank": 279
+    "superflex_rank": 433,
+    "standard_rank": 424,
+    "adjusted_rank": 278
   },
   {
     "player_id": -16011,
     "name": "Colts D/ST",
     "position": "D/ST",
     "pro_team": "IND",
-    "superflex_rank": 436,
-    "standard_rank": 426,
-    "adjusted_rank": 280
+    "superflex_rank": 435,
+    "standard_rank": 425,
+    "adjusted_rank": 279
   },
   {
     "player_id": -16016,
     "name": "Vikings D/ST",
     "position": "D/ST",
     "pro_team": "MIN",
+    "superflex_rank": 436,
+    "standard_rank": 426,
+    "adjusted_rank": 280
+  },
+  {
+    "player_id": -16004,
+    "name": "Bengals D/ST",
+    "position": "D/ST",
+    "pro_team": "CIN",
     "superflex_rank": 437,
     "standard_rank": 427,
     "adjusted_rank": 281
   },
   {
-    "player_id": 4035537,
-    "name": "Kene Nwangwu",
+    "player_id": 4366963,
+    "name": "Dylan Laube",
     "position": "RB",
-    "pro_team": "NYJ",
+    "pro_team": "LV",
     "superflex_rank": 438,
     "standard_rank": 431,
     "adjusted_rank": 282
   },
   {
-    "player_id": 4372561,
-    "name": "Isaac Guerendo",
+    "player_id": 4362748,
+    "name": "Tyler Badie",
     "position": "RB",
-    "pro_team": "SF",
+    "pro_team": "DEN",
     "superflex_rank": 440,
     "standard_rank": 432,
     "adjusted_rank": 283
   },
   {
-    "player_id": 4596602,
-    "name": "Brashard Smith",
+    "player_id": 4685526,
+    "name": "Adam Randall",
     "position": "RB",
-    "pro_team": "KC",
+    "pro_team": "BAL",
     "superflex_rank": 441,
     "standard_rank": 434,
     "adjusted_rank": 284
   },
   {
-    "player_id": 4427728,
-    "name": "Bam Knight",
+    "player_id": 3045147,
+    "name": "James Conner",
     "position": "RB",
     "pro_team": "ARI",
     "superflex_rank": 442,
@@ -2565,29 +2565,29 @@
     "adjusted_rank": 285
   },
   {
-    "player_id": 4366963,
-    "name": "Dylan Laube",
+    "player_id": 5081508,
+    "name": "Eli Heidenreich",
     "position": "RB",
-    "pro_team": "LV",
+    "pro_team": "PIT",
     "superflex_rank": 443,
     "standard_rank": 436,
     "adjusted_rank": 286
   },
   {
-    "player_id": 4690013,
-    "name": "Rasheen Ali",
+    "player_id": 4685477,
+    "name": "Jam Miller",
     "position": "RB",
-    "pro_team": "BAL",
+    "pro_team": "FA",
     "superflex_rank": 445,
     "standard_rank": 437,
     "adjusted_rank": 287
   },
   {
-    "player_id": 4362748,
-    "name": "Tyler Badie",
+    "player_id": 4429275,
+    "name": "Trey Benson",
     "position": "RB",
-    "pro_team": "DEN",
-    "superflex_rank": 448,
+    "pro_team": "ARI",
+    "superflex_rank": 447,
     "standard_rank": 438,
     "adjusted_rank": 288
   },
@@ -2605,7 +2605,7 @@
     "name": "Colby Parkinson",
     "position": "TE",
     "pro_team": "LAR",
-    "superflex_rank": 452,
+    "superflex_rank": 453,
     "standard_rank": 418,
     "adjusted_rank": 290
   },
@@ -2624,32 +2624,32 @@
     "position": "TE",
     "pro_team": "PIT",
     "superflex_rank": 455,
-    "standard_rank": 445,
+    "standard_rank": 459,
     "adjusted_rank": 292
   },
   {
-    "player_id": 4383429,
-    "name": "Jacob Saylors",
+    "player_id": 4693370,
+    "name": "Riley Nowakowski",
     "position": "RB",
-    "pro_team": "DET",
+    "pro_team": "PIT",
     "superflex_rank": 456,
     "standard_rank": 456,
     "adjusted_rank": 293
   },
   {
-    "player_id": 4240631,
-    "name": "DeeJay Dallas",
+    "player_id": 16002,
+    "name": "Kyle Juszczyk",
     "position": "RB",
-    "pro_team": "JAX",
+    "pro_team": "SF",
     "superflex_rank": 457,
     "standard_rank": 457,
     "adjusted_rank": 294
   },
   {
-    "player_id": 4568024,
-    "name": "Josh Williams",
+    "player_id": 4383396,
+    "name": "Hunter Luepke",
     "position": "RB",
-    "pro_team": "TB",
+    "pro_team": "DAL",
     "superflex_rank": 458,
     "standard_rank": 458,
     "adjusted_rank": 295
@@ -2669,7 +2669,7 @@
     "position": "TE",
     "pro_team": "SEA",
     "superflex_rank": 460,
-    "standard_rank": 459,
+    "standard_rank": 445,
     "adjusted_rank": 297
   },
   {
@@ -2745,19 +2745,19 @@
     "adjusted_rank": 305
   },
   {
-    "player_id": 4372780,
-    "name": "Tommy Tremble",
+    "player_id": 4831959,
+    "name": "Eli Raridon",
     "position": "TE",
-    "pro_team": "CAR",
+    "pro_team": "NE",
     "superflex_rank": 472,
     "standard_rank": 472,
     "adjusted_rank": 306
   },
   {
-    "player_id": 3043275,
-    "name": "Austin Hooper",
+    "player_id": 4372780,
+    "name": "Tommy Tremble",
     "position": "TE",
-    "pro_team": "ATL",
+    "pro_team": "CAR",
     "superflex_rank": 473,
     "standard_rank": 473,
     "adjusted_rank": 307
@@ -2790,109 +2790,109 @@
     "adjusted_rank": 310
   },
   {
-    "player_id": 3892775,
-    "name": "Jarrett Stidham",
+    "player_id": 4596472,
+    "name": "Jalon Daniels",
     "position": "QB",
-    "pro_team": "DEN",
+    "pro_team": "TB",
     "superflex_rank": 479,
     "standard_rank": 479,
     "adjusted_rank": 311
   },
   {
-    "player_id": 3059989,
-    "name": "Nick Mullens",
+    "player_id": 3892775,
+    "name": "Jarrett Stidham",
     "position": "QB",
-    "pro_team": "JAX",
+    "pro_team": "DEN",
     "superflex_rank": 480,
     "standard_rank": 480,
     "adjusted_rank": 312
-  },
-  {
-    "player_id": 3886812,
-    "name": "Jake Browning",
-    "position": "QB",
-    "pro_team": "TB",
-    "superflex_rank": 482,
-    "standard_rank": 482,
-    "adjusted_rank": 313
   },
   {
     "player_id": 4240391,
     "name": "Tommy DeVito",
     "position": "QB",
     "pro_team": "NE",
-    "superflex_rank": 483,
-    "standard_rank": 483,
-    "adjusted_rank": 314
+    "superflex_rank": 482,
+    "standard_rank": 482,
+    "adjusted_rank": 313
   },
   {
     "player_id": 2576980,
     "name": "Marcus Mariota",
     "position": "QB",
     "pro_team": "WSH",
-    "superflex_rank": 484,
-    "standard_rank": 484,
-    "adjusted_rank": 315
+    "superflex_rank": 483,
+    "standard_rank": 483,
+    "adjusted_rank": 314
   },
   {
     "player_id": 4434153,
     "name": "Tyson Bagent",
     "position": "QB",
     "pro_team": "CHI",
-    "superflex_rank": 485,
-    "standard_rank": 485,
-    "adjusted_rank": 316
+    "superflex_rank": 484,
+    "standard_rank": 484,
+    "adjusted_rank": 315
   },
   {
     "player_id": 4426875,
     "name": "Sam Howell",
     "position": "QB",
     "pro_team": "DAL",
+    "superflex_rank": 485,
+    "standard_rank": 485,
+    "adjusted_rank": 316
+  },
+  {
+    "player_id": 4685201,
+    "name": "Tanner McKee",
+    "position": "QB",
+    "pro_team": "PHI",
     "superflex_rank": 486,
     "standard_rank": 486,
     "adjusted_rank": 317
+  },
+  {
+    "player_id": 3050478,
+    "name": "Jake Elliott",
+    "position": "K",
+    "pro_team": "PHI",
+    "superflex_rank": 488,
+    "standard_rank": 488,
+    "adjusted_rank": 318
   },
   {
     "player_id": 3051909,
     "name": "Daniel Carlson",
     "position": "K",
     "pro_team": "NO",
-    "superflex_rank": 487,
-    "standard_rank": 487,
-    "adjusted_rank": 318
+    "superflex_rank": 489,
+    "standard_rank": 489,
+    "adjusted_rank": 319
   },
   {
     "player_id": 2985659,
     "name": "Wil Lutz",
     "position": "K",
     "pro_team": "DEN",
-    "superflex_rank": 489,
-    "standard_rank": 489,
-    "adjusted_rank": 319
+    "superflex_rank": 490,
+    "standard_rank": 490,
+    "adjusted_rank": 320
   },
   {
     "player_id": 3917232,
     "name": "Tyler Bass",
     "position": "K",
     "pro_team": "BUF",
-    "superflex_rank": 490,
-    "standard_rank": 490,
-    "adjusted_rank": 320
+    "superflex_rank": 491,
+    "standard_rank": 491,
+    "adjusted_rank": 321
   },
   {
     "player_id": 5082424,
     "name": "Dominic Zvada",
     "position": "K",
     "pro_team": "NYG",
-    "superflex_rank": 491,
-    "standard_rank": 491,
-    "adjusted_rank": 321
-  },
-  {
-    "player_id": 4259619,
-    "name": "Blake Grupe",
-    "position": "K",
-    "pro_team": "IND",
     "superflex_rank": 492,
     "standard_rank": 492,
     "adjusted_rank": 322
@@ -2947,8 +2947,8 @@
     "name": "Joey Slye",
     "position": "K",
     "pro_team": "TEN",
-    "superflex_rank": 501,
-    "standard_rank": 501,
+    "superflex_rank": 500,
+    "standard_rank": 500,
     "adjusted_rank": 328
   },
   {
@@ -2979,19 +2979,19 @@
     "adjusted_rank": 331
   },
   {
-    "player_id": -16004,
-    "name": "Bengals D/ST",
+    "player_id": -16019,
+    "name": "Giants D/ST",
     "position": "D/ST",
-    "pro_team": "CIN",
+    "pro_team": "NYG",
     "superflex_rank": 505,
     "standard_rank": 505,
     "adjusted_rank": 332
   },
   {
-    "player_id": -16019,
-    "name": "Giants D/ST",
+    "player_id": -16003,
+    "name": "Bears D/ST",
     "position": "D/ST",
-    "pro_team": "NYG",
+    "pro_team": "CHI",
     "superflex_rank": 506,
     "standard_rank": 506,
     "adjusted_rank": 333
@@ -3069,12 +3069,12 @@
     "adjusted_rank": 341
   },
   {
-    "player_id": 4431487,
-    "name": "Savion Williams",
+    "player_id": 4912218,
+    "name": "Cyrus Allen",
     "position": "WR",
-    "pro_team": "GB",
-    "superflex_rank": 977,
-    "standard_rank": 977,
+    "pro_team": "KC",
+    "superflex_rank": 978,
+    "standard_rank": 978,
     "adjusted_rank": 342
   },
   {
@@ -3082,8 +3082,8 @@
     "name": "Kyle Williams",
     "position": "WR",
     "pro_team": "NE",
-    "superflex_rank": 978,
-    "standard_rank": 978,
+    "superflex_rank": 979,
+    "standard_rank": 979,
     "adjusted_rank": 343
   },
   {
@@ -3091,26 +3091,26 @@
     "name": "Troy Franklin",
     "position": "WR",
     "pro_team": "DEN",
-    "superflex_rank": 979,
-    "standard_rank": 979,
+    "superflex_rank": 980,
+    "standard_rank": 980,
     "adjusted_rank": 344
+  },
+  {
+    "player_id": 4242433,
+    "name": "Joshua Palmer",
+    "position": "WR",
+    "pro_team": "BUF",
+    "superflex_rank": 981,
+    "standard_rank": 981,
+    "adjusted_rank": 345
   },
   {
     "player_id": 3045523,
     "name": "Kendrick Bourne",
     "position": "WR",
     "pro_team": "ARI",
-    "superflex_rank": 980,
-    "standard_rank": 980,
-    "adjusted_rank": 345
-  },
-  {
-    "player_id": 4686422,
-    "name": "Xavier Hutchinson",
-    "position": "WR",
-    "pro_team": "HOU",
-    "superflex_rank": 981,
-    "standard_rank": 981,
+    "superflex_rank": 982,
+    "standard_rank": 982,
     "adjusted_rank": 346
   },
   {
@@ -3118,8 +3118,8 @@
     "name": "Malik Benson",
     "position": "WR",
     "pro_team": "LV",
-    "superflex_rank": 982,
-    "standard_rank": 982,
+    "superflex_rank": 983,
+    "standard_rank": 983,
     "adjusted_rank": 347
   },
   {
@@ -3127,8 +3127,8 @@
     "name": "Kalif Raymond",
     "position": "WR",
     "pro_team": "CHI",
-    "superflex_rank": 983,
-    "standard_rank": 983,
+    "superflex_rank": 984,
+    "standard_rank": 984,
     "adjusted_rank": 348
   },
   {
@@ -3136,8 +3136,8 @@
     "name": "Dyami Brown",
     "position": "WR",
     "pro_team": "WSH",
-    "superflex_rank": 987,
-    "standard_rank": 987,
+    "superflex_rank": 990,
+    "standard_rank": 990,
     "adjusted_rank": 349
   },
   {
@@ -3145,44 +3145,44 @@
     "name": "Treylon Burks",
     "position": "WR",
     "pro_team": "WSH",
-    "superflex_rank": 993,
-    "standard_rank": 993,
+    "superflex_rank": 996,
+    "standard_rank": 996,
     "adjusted_rank": 350
-  },
-  {
-    "player_id": 16002,
-    "name": "Kyle Juszczyk",
-    "position": "RB",
-    "pro_team": "SF",
-    "superflex_rank": 997,
-    "standard_rank": 997,
-    "adjusted_rank": 351
-  },
-  {
-    "player_id": 4242433,
-    "name": "Joshua Palmer",
-    "position": "WR",
-    "pro_team": "BUF",
-    "superflex_rank": 998,
-    "standard_rank": 998,
-    "adjusted_rank": 352
   },
   {
     "player_id": 4696882,
     "name": "Devontez Walker",
     "position": "WR",
     "pro_team": "BAL",
-    "superflex_rank": 1001,
-    "standard_rank": 1001,
-    "adjusted_rank": 353
+    "superflex_rank": 1000,
+    "standard_rank": 1000,
+    "adjusted_rank": 351
+  },
+  {
+    "player_id": 3043275,
+    "name": "Austin Hooper",
+    "position": "TE",
+    "pro_team": "ATL",
+    "superflex_rank": 1003,
+    "standard_rank": 1003,
+    "adjusted_rank": 352
   },
   {
     "player_id": 4426844,
     "name": "Elijah Higgins",
     "position": "TE",
     "pro_team": "ARI",
-    "superflex_rank": 1007,
-    "standard_rank": 1007,
+    "superflex_rank": 1008,
+    "standard_rank": 1008,
+    "adjusted_rank": 353
+  },
+  {
+    "player_id": 4431487,
+    "name": "Savion Williams",
+    "position": "WR",
+    "pro_team": "GB",
+    "superflex_rank": 1012,
+    "standard_rank": 1012,
     "adjusted_rank": 354
   },
   {
@@ -3190,27 +3190,9 @@
     "name": "Will Kacmarek",
     "position": "TE",
     "pro_team": "MIA",
-    "superflex_rank": 1013,
-    "standard_rank": 1013,
-    "adjusted_rank": 355
-  },
-  {
-    "player_id": 5092508,
-    "name": "Colbie Young",
-    "position": "WR",
-    "pro_team": "CIN",
-    "superflex_rank": 1014,
-    "standard_rank": 1014,
-    "adjusted_rank": 356
-  },
-  {
-    "player_id": 4879276,
-    "name": "Bryce Lance",
-    "position": "WR",
-    "pro_team": "NO",
     "superflex_rank": 1016,
     "standard_rank": 1016,
-    "adjusted_rank": 357
+    "adjusted_rank": 355
   },
   {
     "player_id": 4431268,
@@ -3219,6 +3201,24 @@
     "pro_team": "TEN",
     "superflex_rank": 1017,
     "standard_rank": 1017,
+    "adjusted_rank": 356
+  },
+  {
+    "player_id": 4879276,
+    "name": "Bryce Lance",
+    "position": "WR",
+    "pro_team": "NO",
+    "superflex_rank": 1019,
+    "standard_rank": 1019,
+    "adjusted_rank": 357
+  },
+  {
+    "player_id": 3054212,
+    "name": "Jonnu Smith",
+    "position": "TE",
+    "pro_team": "GB",
+    "superflex_rank": 1020,
+    "standard_rank": 1020,
     "adjusted_rank": 358
   },
   {
@@ -3226,8 +3226,8 @@
     "name": "Drew Sample",
     "position": "TE",
     "pro_team": "CIN",
-    "superflex_rank": 1020,
-    "standard_rank": 1020,
+    "superflex_rank": 1021,
+    "standard_rank": 1021,
     "adjusted_rank": 359
   },
   {
@@ -3235,44 +3235,44 @@
     "name": "Josh Oliver",
     "position": "TE",
     "pro_team": "MIN",
-    "superflex_rank": 1021,
-    "standard_rank": 1021,
+    "superflex_rank": 1022,
+    "standard_rank": 1022,
     "adjusted_rank": 360
+  },
+  {
+    "player_id": 3911853,
+    "name": "Adam Trautman",
+    "position": "TE",
+    "pro_team": "DEN",
+    "superflex_rank": 1023,
+    "standard_rank": 1023,
+    "adjusted_rank": 361
   },
   {
     "player_id": 4602667,
     "name": "Jaylin Lane",
     "position": "WR",
     "pro_team": "WSH",
-    "superflex_rank": 1023,
-    "standard_rank": 1023,
-    "adjusted_rank": 361
-  },
-  {
-    "player_id": 4831959,
-    "name": "Eli Raridon",
-    "position": "TE",
-    "pro_team": "NE",
-    "superflex_rank": 1025,
-    "standard_rank": 1025,
+    "superflex_rank": 1024,
+    "standard_rank": 1024,
     "adjusted_rank": 362
-  },
-  {
-    "player_id": 4241263,
-    "name": "Charlie Kolar",
-    "position": "TE",
-    "pro_team": "LAC",
-    "superflex_rank": 1028,
-    "standard_rank": 1028,
-    "adjusted_rank": 363
   },
   {
     "player_id": 4869748,
     "name": "Zavion Thomas",
     "position": "WR",
     "pro_team": "CHI",
-    "superflex_rank": 1029,
-    "standard_rank": 1029,
+    "superflex_rank": 1030,
+    "standard_rank": 1030,
+    "adjusted_rank": 363
+  },
+  {
+    "player_id": 4241263,
+    "name": "Charlie Kolar",
+    "position": "TE",
+    "pro_team": "LAC",
+    "superflex_rank": 1032,
+    "standard_rank": 1032,
     "adjusted_rank": 364
   },
   {
@@ -3280,44 +3280,44 @@
     "name": "Noah Fant",
     "position": "TE",
     "pro_team": "NO",
-    "superflex_rank": 1031,
-    "standard_rank": 1031,
+    "superflex_rank": 1034,
+    "standard_rank": 1034,
     "adjusted_rank": 365
-  },
-  {
-    "player_id": 3054212,
-    "name": "Jonnu Smith",
-    "position": "TE",
-    "pro_team": "GB",
-    "superflex_rank": 1035,
-    "standard_rank": 1035,
-    "adjusted_rank": 366
   },
   {
     "player_id": 4808839,
     "name": "Isaiah Bond",
     "position": "WR",
     "pro_team": "CLE",
-    "superflex_rank": 1037,
-    "standard_rank": 1037,
-    "adjusted_rank": 367
+    "superflex_rank": 1041,
+    "standard_rank": 1041,
+    "adjusted_rank": 366
   },
   {
     "player_id": 4426496,
     "name": "Cade Stover",
     "position": "TE",
     "pro_team": "HOU",
-    "superflex_rank": 1038,
-    "standard_rank": 1038,
-    "adjusted_rank": 368
+    "superflex_rank": 1044,
+    "standard_rank": 1044,
+    "adjusted_rank": 367
   },
   {
     "player_id": 4048228,
     "name": "John Bates",
     "position": "TE",
     "pro_team": "WSH",
-    "superflex_rank": 1040,
-    "standard_rank": 1040,
+    "superflex_rank": 1045,
+    "standard_rank": 1045,
+    "adjusted_rank": 368
+  },
+  {
+    "player_id": 4683153,
+    "name": "Skyler Bell",
+    "position": "WR",
+    "pro_team": "BUF",
+    "superflex_rank": 1046,
+    "standard_rank": 1046,
     "adjusted_rank": 369
   },
   {
@@ -3325,108 +3325,72 @@
     "name": "Hollywood Brown",
     "position": "WR",
     "pro_team": "PHI",
-    "superflex_rank": 1041,
-    "standard_rank": 1041,
+    "superflex_rank": 1047,
+    "standard_rank": 1047,
     "adjusted_rank": 370
-  },
-  {
-    "player_id": 5088338,
-    "name": "Elijah Sarratt",
-    "position": "WR",
-    "pro_team": "BAL",
-    "superflex_rank": 1042,
-    "standard_rank": 1042,
-    "adjusted_rank": 371
   },
   {
     "player_id": 3917914,
     "name": "Olamide Zaccheaus",
     "position": "WR",
     "pro_team": "ATL",
-    "superflex_rank": 1046,
-    "standard_rank": 1046,
-    "adjusted_rank": 372
-  },
-  {
-    "player_id": 4569382,
-    "name": "Jordan Whittington",
-    "position": "WR",
-    "pro_team": "LAR",
-    "superflex_rank": 1049,
-    "standard_rank": 1049,
-    "adjusted_rank": 373
-  },
-  {
-    "player_id": 4685307,
-    "name": "Kevin Coleman Jr.",
-    "position": "WR",
-    "pro_team": "MIA",
-    "superflex_rank": 1053,
-    "standard_rank": 1053,
-    "adjusted_rank": 374
-  },
-  {
-    "player_id": 4569371,
-    "name": "Isaiah Williams",
-    "position": "WR",
-    "pro_team": "NYJ",
-    "superflex_rank": 1055,
-    "standard_rank": 1055,
-    "adjusted_rank": 375
+    "superflex_rank": 1050,
+    "standard_rank": 1050,
+    "adjusted_rank": 371
   },
   {
     "player_id": 4061956,
     "name": "Ashton Dulin",
     "position": "WR",
     "pro_team": "IND",
-    "superflex_rank": 1059,
-    "standard_rank": 1059,
-    "adjusted_rank": 376
+    "superflex_rank": 1054,
+    "standard_rank": 1054,
+    "adjusted_rank": 372
   },
   {
-    "player_id": 4710855,
-    "name": "Konata Mumpfield",
+    "player_id": 4569371,
+    "name": "Isaiah Williams",
+    "position": "WR",
+    "pro_team": "NYJ",
+    "superflex_rank": 1057,
+    "standard_rank": 1057,
+    "adjusted_rank": 373
+  },
+  {
+    "player_id": 4360797,
+    "name": "Tutu Atwell",
     "position": "WR",
     "pro_team": "LAR",
-    "superflex_rank": 1065,
-    "standard_rank": 1065,
-    "adjusted_rank": 377
+    "superflex_rank": 1059,
+    "standard_rank": 1059,
+    "adjusted_rank": 374
+  },
+  {
+    "player_id": 5092508,
+    "name": "Colbie Young",
+    "position": "WR",
+    "pro_team": "CIN",
+    "superflex_rank": 1064,
+    "standard_rank": 1064,
+    "adjusted_rank": 375
   },
   {
     "player_id": 4431492,
     "name": "Roman Wilson",
     "position": "WR",
     "pro_team": "PIT",
-    "superflex_rank": 1070,
-    "standard_rank": 1070,
-    "adjusted_rank": 378
-  },
-  {
-    "player_id": 3911853,
-    "name": "Adam Trautman",
-    "position": "TE",
-    "pro_team": "DEN",
-    "superflex_rank": 1072,
-    "standard_rank": 1072,
-    "adjusted_rank": 379
-  },
-  {
-    "player_id": 4683153,
-    "name": "Skyler Bell",
-    "position": "WR",
-    "pro_team": "BUF",
-    "superflex_rank": 1075,
-    "standard_rank": 1075,
-    "adjusted_rank": 380
+    "superflex_rank": 1073,
+    "standard_rank": 1073,
+    "adjusted_rank": 376
   },
   {
     "player_id": 4372096,
     "name": "Luke Schoonmaker",
     "position": "TE",
     "pro_team": "DAL",
-    "superflex_rank": 1077,
-    "standard_rank": 1077,
-    "adjusted_rank": 381
+    "superflex_rank": 1076,
+    "standard_rank": 1076,
+    "adjusted_rank": 377
   },
   {
     "player_id": 2998565,
@@ -3435,7 +3399,7 @@
     "pro_team": "IND",
     "superflex_rank": 1078,
     "standard_rank": 1078,
-    "adjusted_rank": 382
+    "adjusted_rank": 378
   },
   {
     "player_id": 4685553,
@@ -3444,16 +3408,16 @@
     "pro_team": "LAC",
     "superflex_rank": 1079,
     "standard_rank": 1079,
-    "adjusted_rank": 383
+    "adjusted_rank": 379
   },
   {
     "player_id": 4573699,
     "name": "Jackson Hawes",
     "position": "TE",
     "pro_team": "BUF",
-    "superflex_rank": 1081,
-    "standard_rank": 1081,
-    "adjusted_rank": 384
+    "superflex_rank": 1082,
+    "standard_rank": 1082,
+    "adjusted_rank": 380
   },
   {
     "player_id": 4361516,
@@ -3462,7 +3426,7 @@
     "pro_team": "TEN",
     "superflex_rank": 1085,
     "standard_rank": 1085,
-    "adjusted_rank": 385
+    "adjusted_rank": 381
   },
   {
     "player_id": 4690923,
@@ -3471,43 +3435,43 @@
     "pro_team": "WSH",
     "superflex_rank": 1087,
     "standard_rank": 1087,
-    "adjusted_rank": 386
+    "adjusted_rank": 382
   },
   {
     "player_id": 4361372,
     "name": "Jeremy Ruckert",
     "position": "TE",
     "pro_team": "NYJ",
-    "superflex_rank": 1097,
-    "standard_rank": 1097,
-    "adjusted_rank": 387
+    "superflex_rank": 1094,
+    "standard_rank": 1094,
+    "adjusted_rank": 383
   },
   {
-    "player_id": 4383396,
-    "name": "Hunter Luepke",
-    "position": "RB",
-    "pro_team": "DAL",
-    "superflex_rank": 1098,
-    "standard_rank": 1098,
-    "adjusted_rank": 388
+    "player_id": 5088338,
+    "name": "Elijah Sarratt",
+    "position": "WR",
+    "pro_team": "BAL",
+    "superflex_rank": 1095,
+    "standard_rank": 1095,
+    "adjusted_rank": 384
   },
   {
     "player_id": 16733,
     "name": "Odell Beckham Jr.",
     "position": "WR",
     "pro_team": "NYG",
-    "superflex_rank": 1104,
-    "standard_rank": 1104,
-    "adjusted_rank": 389
+    "superflex_rank": 1102,
+    "standard_rank": 1102,
+    "adjusted_rank": 385
   },
   {
     "player_id": 4883647,
     "name": "Elic Ayomanor",
     "position": "WR",
     "pro_team": "TEN",
-    "superflex_rank": 1105,
-    "standard_rank": 1105,
-    "adjusted_rank": 390
+    "superflex_rank": 1103,
+    "standard_rank": 1103,
+    "adjusted_rank": 386
   },
   {
     "player_id": 3052897,
@@ -3516,124 +3480,115 @@
     "pro_team": "BAL",
     "superflex_rank": 1106,
     "standard_rank": 1106,
-    "adjusted_rank": 391
+    "adjusted_rank": 387
+  },
+  {
+    "player_id": 4569382,
+    "name": "Jordan Whittington",
+    "position": "WR",
+    "pro_team": "LAR",
+    "superflex_rank": 1115,
+    "standard_rank": 1115,
+    "adjusted_rank": 388
   },
   {
     "player_id": 4608810,
     "name": "Tez Johnson",
     "position": "WR",
     "pro_team": "TB",
-    "superflex_rank": 1117,
-    "standard_rank": 1117,
-    "adjusted_rank": 392
+    "superflex_rank": 1119,
+    "standard_rank": 1119,
+    "adjusted_rank": 389
   },
   {
     "player_id": 4708486,
     "name": "Jimmy Horn Jr.",
     "position": "WR",
     "pro_team": "CAR",
-    "superflex_rank": 1119,
-    "standard_rank": 1119,
-    "adjusted_rank": 393
+    "superflex_rank": 1120,
+    "standard_rank": 1120,
+    "adjusted_rank": 390
   },
   {
-    "player_id": 3843945,
-    "name": "Foster Moreau",
-    "position": "TE",
-    "pro_team": "HOU",
-    "superflex_rank": 1139,
-    "standard_rank": 1139,
-    "adjusted_rank": 394
+    "player_id": 4710855,
+    "name": "Konata Mumpfield",
+    "position": "WR",
+    "pro_team": "LAR",
+    "superflex_rank": 1134,
+    "standard_rank": 1134,
+    "adjusted_rank": 391
+  },
+  {
+    "player_id": 3043116,
+    "name": "Demarcus Robinson",
+    "position": "WR",
+    "pro_team": "SF",
+    "superflex_rank": 1137,
+    "standard_rank": 1137,
+    "adjusted_rank": 392
   },
   {
     "player_id": 4242392,
     "name": "Brock Wright",
     "position": "TE",
     "pro_team": "DET",
-    "superflex_rank": 1142,
-    "standard_rank": 1142,
-    "adjusted_rank": 395
+    "superflex_rank": 1139,
+    "standard_rank": 1139,
+    "adjusted_rank": 393
   },
   {
     "player_id": 4686248,
     "name": "Nate Boerkircher",
     "position": "TE",
     "pro_team": "JAX",
-    "superflex_rank": 1143,
-    "standard_rank": 1143,
-    "adjusted_rank": 396
+    "superflex_rank": 1140,
+    "standard_rank": 1140,
+    "adjusted_rank": 394
   },
   {
     "player_id": 4426948,
     "name": "Luke McCaffrey",
     "position": "WR",
     "pro_team": "WSH",
-    "superflex_rank": 1144,
-    "standard_rank": 1144,
-    "adjusted_rank": 397
-  },
-  {
-    "player_id": 3895856,
-    "name": "Christian Kirk",
-    "position": "WR",
-    "pro_team": "SF",
-    "superflex_rank": 1145,
-    "standard_rank": 1145,
-    "adjusted_rank": 398
+    "superflex_rank": 1141,
+    "standard_rank": 1141,
+    "adjusted_rank": 395
   },
   {
     "player_id": 5082630,
     "name": "Jalen Royals",
     "position": "WR",
     "pro_team": "KC",
-    "superflex_rank": 1146,
-    "standard_rank": 1146,
-    "adjusted_rank": 399
+    "superflex_rank": 1142,
+    "standard_rank": 1142,
+    "adjusted_rank": 396
   },
   {
     "player_id": 4430870,
     "name": "KeAndre Lambert-Smith",
     "position": "WR",
     "pro_team": "LAC",
-    "superflex_rank": 1147,
-    "standard_rank": 1147,
-    "adjusted_rank": 400
-  },
-  {
-    "player_id": 4372505,
-    "name": "Payne Durham",
-    "position": "TE",
-    "pro_team": "TB",
-    "superflex_rank": 1148,
-    "standard_rank": 1148,
-    "adjusted_rank": 401
+    "superflex_rank": 1145,
+    "standard_rank": 1145,
+    "adjusted_rank": 397
   },
   {
     "player_id": 4702559,
     "name": "Oscar Delp",
     "position": "TE",
     "pro_team": "NO",
-    "superflex_rank": 1149,
-    "standard_rank": 1149,
-    "adjusted_rank": 402
+    "superflex_rank": 1147,
+    "standard_rank": 1147,
+    "adjusted_rank": 398
   },
   {
-    "player_id": 3929785,
-    "name": "Nick Westbrook-Ikhine",
+    "player_id": 4698597,
+    "name": "Barion Brown",
     "position": "WR",
-    "pro_team": "IND",
-    "superflex_rank": 1156,
-    "standard_rank": 1156,
-    "adjusted_rank": 403
-  },
-  {
-    "player_id": 4565859,
-    "name": "Joe Royer",
-    "position": "TE",
-    "pro_team": "CLE",
-    "superflex_rank": 1161,
-    "standard_rank": 1161,
-    "adjusted_rank": 404
+    "pro_team": "NO",
+    "superflex_rank": 1153,
+    "standard_rank": 1153,
+    "adjusted_rank": 399
   },
   {
     "player_id": 3917668,
@@ -3642,1563 +3597,1563 @@
     "pro_team": "LAC",
     "superflex_rank": 1162,
     "standard_rank": 1162,
-    "adjusted_rank": 405
+    "adjusted_rank": 400
   },
   {
     "player_id": 4432775,
     "name": "Dont'e Thornton Jr.",
     "position": "WR",
     "pro_team": "LV",
-    "superflex_rank": 1163,
-    "standard_rank": 1163,
-    "adjusted_rank": 406
-  },
-  {
-    "player_id": 4037235,
-    "name": "Greg Dortch",
-    "position": "WR",
-    "pro_team": "DET",
     "superflex_rank": 1164,
     "standard_rank": 1164,
-    "adjusted_rank": 407
-  },
-  {
-    "player_id": 4613104,
-    "name": "Malachi Corley",
-    "position": "WR",
-    "pro_team": "CLE",
-    "superflex_rank": 1188,
-    "standard_rank": 1188,
-    "adjusted_rank": 408
-  },
-  {
-    "player_id": 4698597,
-    "name": "Barion Brown",
-    "position": "WR",
-    "pro_team": "NO",
-    "superflex_rank": 1189,
-    "standard_rank": 1189,
-    "adjusted_rank": 409
-  },
-  {
-    "player_id": 4362477,
-    "name": "Derius Davis",
-    "position": "WR",
-    "pro_team": "LAC",
-    "superflex_rank": 1198,
-    "standard_rank": 1198,
-    "adjusted_rank": 410
-  },
-  {
-    "player_id": 4386544,
-    "name": "Xavier Smith",
-    "position": "WR",
-    "pro_team": "LAR",
-    "superflex_rank": 1199,
-    "standard_rank": 1199,
-    "adjusted_rank": 411
-  },
-  {
-    "player_id": 4241476,
-    "name": "Tyrell Shavers",
-    "position": "WR",
-    "pro_team": "BUF",
-    "superflex_rank": 1205,
-    "standard_rank": 1205,
-    "adjusted_rank": 412
-  },
-  {
-    "player_id": 3929914,
-    "name": "Adam Prentice",
-    "position": "RB",
-    "pro_team": "DEN",
-    "superflex_rank": 1212,
-    "standard_rank": 1212,
-    "adjusted_rank": 413
-  },
-  {
-    "player_id": 4241961,
-    "name": "Connor Heyward",
-    "position": "RB",
-    "pro_team": "LV",
-    "superflex_rank": 1215,
-    "standard_rank": 1215,
-    "adjusted_rank": 414
-  },
-  {
-    "player_id": 2515270,
-    "name": "Michael Burton",
-    "position": "RB",
-    "pro_team": "CLE",
-    "superflex_rank": 1216,
-    "standard_rank": 1216,
-    "adjusted_rank": 415
-  },
-  {
-    "player_id": 4695193,
-    "name": "Efton Chism III",
-    "position": "WR",
-    "pro_team": "NE",
-    "superflex_rank": 1217,
-    "standard_rank": 1217,
-    "adjusted_rank": 416
+    "adjusted_rank": 401
   },
   {
     "player_id": 4259305,
     "name": "Bo Melton",
     "position": "WR",
     "pro_team": "GB",
-    "superflex_rank": 1218,
-    "standard_rank": 1218,
-    "adjusted_rank": 417
+    "superflex_rank": 1168,
+    "standard_rank": 1168,
+    "adjusted_rank": 402
   },
   {
-    "player_id": 4690070,
-    "name": "Mitchell Tinsley",
+    "player_id": 4613104,
+    "name": "Malachi Corley",
+    "position": "WR",
+    "pro_team": "CLE",
+    "superflex_rank": 1182,
+    "standard_rank": 1182,
+    "adjusted_rank": 403
+  },
+  {
+    "player_id": 4386544,
+    "name": "Xavier Smith",
+    "position": "WR",
+    "pro_team": "LAR",
+    "superflex_rank": 1194,
+    "standard_rank": 1194,
+    "adjusted_rank": 404
+  },
+  {
+    "player_id": 3929914,
+    "name": "Adam Prentice",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 1207,
+    "standard_rank": 1207,
+    "adjusted_rank": 405
+  },
+  {
+    "player_id": 4241961,
+    "name": "Connor Heyward",
+    "position": "RB",
+    "pro_team": "LV",
+    "superflex_rank": 1209,
+    "standard_rank": 1209,
+    "adjusted_rank": 406
+  },
+  {
+    "player_id": 4384852,
+    "name": "Dohnte Meyers",
     "position": "WR",
     "pro_team": "CIN",
-    "superflex_rank": 1220,
-    "standard_rank": 1220,
-    "adjusted_rank": 418
+    "superflex_rank": 1210,
+    "standard_rank": 1210,
+    "adjusted_rank": 407
+  },
+  {
+    "player_id": 2515270,
+    "name": "Michael Burton",
+    "position": "RB",
+    "pro_team": "CLE",
+    "superflex_rank": 1211,
+    "standard_rank": 1211,
+    "adjusted_rank": 408
+  },
+  {
+    "player_id": 4695193,
+    "name": "Efton Chism III",
+    "position": "WR",
+    "pro_team": "NE",
+    "superflex_rank": 1212,
+    "standard_rank": 1212,
+    "adjusted_rank": 409
   },
   {
     "player_id": 4878695,
     "name": "Max Bredeson",
     "position": "RB",
     "pro_team": "MIN",
-    "superflex_rank": 1224,
-    "standard_rank": 1224,
-    "adjusted_rank": 419
-  },
-  {
-    "player_id": 4605951,
-    "name": "CJ Daniels",
-    "position": "WR",
-    "pro_team": "LAR",
-    "superflex_rank": 1225,
-    "standard_rank": 1225,
-    "adjusted_rank": 420
-  },
-  {
-    "player_id": 4912052,
-    "name": "Justin Joly",
-    "position": "TE",
-    "pro_team": "DEN",
-    "superflex_rank": 1226,
-    "standard_rank": 1226,
-    "adjusted_rank": 421
-  },
-  {
-    "player_id": 4685201,
-    "name": "Tanner McKee",
-    "position": "QB",
-    "pro_team": "PHI",
-    "superflex_rank": 1230,
-    "standard_rank": 1230,
-    "adjusted_rank": 422
+    "superflex_rank": 1218,
+    "standard_rank": 1218,
+    "adjusted_rank": 410
   },
   {
     "player_id": 4360967,
     "name": "Brevyn Spann-Ford",
     "position": "TE",
     "pro_team": "DAL",
-    "superflex_rank": 1231,
-    "standard_rank": 1231,
-    "adjusted_rank": 423
-  },
-  {
-    "player_id": 3043116,
-    "name": "Demarcus Robinson",
-    "position": "WR",
-    "pro_team": "SF",
-    "superflex_rank": 1232,
-    "standard_rank": 1232,
-    "adjusted_rank": 424
+    "superflex_rank": 1221,
+    "standard_rank": 1221,
+    "adjusted_rank": 411
   },
   {
     "player_id": 4714771,
     "name": "Drew Allar",
     "position": "QB",
     "pro_team": "PIT",
-    "superflex_rank": 1233,
-    "standard_rank": 1233,
-    "adjusted_rank": 425
+    "superflex_rank": 1223,
+    "standard_rank": 1223,
+    "adjusted_rank": 412
   },
   {
     "player_id": 4383351,
     "name": "Trey Lance",
     "position": "QB",
     "pro_team": "LAC",
-    "superflex_rank": 1234,
-    "standard_rank": 1234,
-    "adjusted_rank": 426
+    "superflex_rank": 1224,
+    "standard_rank": 1224,
+    "adjusted_rank": 413
   },
   {
     "player_id": 4683423,
     "name": "Riley Leonard",
     "position": "QB",
     "pro_team": "IND",
-    "superflex_rank": 1235,
-    "standard_rank": 1235,
-    "adjusted_rank": 427
-  },
-  {
-    "player_id": 4040612,
-    "name": "Luke Farrell",
-    "position": "TE",
-    "pro_team": "SF",
-    "superflex_rank": 1236,
-    "standard_rank": 1236,
-    "adjusted_rank": 428
-  },
-  {
-    "player_id": 14163,
-    "name": "Tyrod Taylor",
-    "position": "QB",
-    "pro_team": "GB",
-    "superflex_rank": 1238,
-    "standard_rank": 1238,
-    "adjusted_rank": 429
-  },
-  {
-    "player_id": 4240703,
-    "name": "Kenny Pickett",
-    "position": "QB",
-    "pro_team": "CAR",
-    "superflex_rank": 1243,
-    "standard_rank": 1243,
-    "adjusted_rank": 430
-  },
-  {
-    "player_id": 4565185,
-    "name": "Tai Felton",
-    "position": "WR",
-    "pro_team": "MIN",
-    "superflex_rank": 1244,
-    "standard_rank": 1244,
-    "adjusted_rank": 431
-  },
-  {
-    "player_id": 4426339,
-    "name": "Spencer Rattler",
-    "position": "QB",
-    "pro_team": "NO",
-    "superflex_rank": 1245,
-    "standard_rank": 1245,
-    "adjusted_rank": 432
-  },
-  {
-    "player_id": 3915486,
-    "name": "Tyler Conklin",
-    "position": "TE",
-    "pro_team": "DET",
-    "superflex_rank": 1246,
-    "standard_rank": 1246,
-    "adjusted_rank": 433
-  },
-  {
-    "player_id": 4695705,
-    "name": "Marlin Klein",
-    "position": "TE",
-    "pro_team": "HOU",
-    "superflex_rank": 1248,
-    "standard_rank": 1248,
-    "adjusted_rank": 434
-  },
-  {
-    "player_id": 4360086,
-    "name": "Josh Whyle",
-    "position": "TE",
-    "pro_team": "GB",
-    "superflex_rank": 1251,
-    "standard_rank": 1251,
-    "adjusted_rank": 435
-  },
-  {
-    "player_id": 4685504,
-    "name": "Sam Roush",
-    "position": "TE",
-    "pro_team": "CHI",
-    "superflex_rank": 1252,
-    "standard_rank": 1252,
-    "adjusted_rank": 436
-  },
-  {
-    "player_id": 5160110,
-    "name": "Jahdae Walker",
-    "position": "WR",
-    "pro_team": "CHI",
-    "superflex_rank": 1254,
-    "standard_rank": 1254,
-    "adjusted_rank": 437
-  },
-  {
-    "player_id": 4035671,
-    "name": "Tyler Huntley",
-    "position": "QB",
-    "pro_team": "BAL",
-    "superflex_rank": 1255,
-    "standard_rank": 1255,
-    "adjusted_rank": 438
-  },
-  {
-    "player_id": 3044720,
-    "name": "Joshua Dobbs",
-    "position": "QB",
-    "pro_team": "DET",
-    "superflex_rank": 1256,
-    "standard_rank": 1256,
-    "adjusted_rank": 439
-  },
-  {
-    "player_id": 4432260,
-    "name": "Matthew Hibner",
-    "position": "TE",
-    "pro_team": "BAL",
-    "superflex_rank": 1257,
-    "standard_rank": 1258,
-    "adjusted_rank": 440
-  },
-  {
-    "player_id": 4876132,
-    "name": "Josh Cuevas",
-    "position": "TE",
-    "pro_team": "BAL",
-    "superflex_rank": 1258,
-    "standard_rank": 1257,
-    "adjusted_rank": 441
-  },
-  {
-    "player_id": 2975863,
-    "name": "Eric Saubert",
-    "position": "TE",
-    "pro_team": "SEA",
-    "superflex_rank": 1259,
-    "standard_rank": 1259,
-    "adjusted_rank": 442
-  },
-  {
-    "player_id": 3118892,
-    "name": "Justin Watson",
-    "position": "WR",
-    "pro_team": "HOU",
-    "superflex_rank": 1262,
-    "standard_rank": 1262,
-    "adjusted_rank": 443
-  },
-  {
-    "player_id": 4715355,
-    "name": "Darius Cooper",
-    "position": "WR",
-    "pro_team": "PHI",
-    "superflex_rank": 1264,
-    "standard_rank": 1264,
-    "adjusted_rank": 444
-  },
-  {
-    "player_id": 3125107,
-    "name": "Andrew Beck",
-    "position": "RB",
-    "pro_team": "NYJ",
-    "superflex_rank": 1267,
-    "standard_rank": 1267,
-    "adjusted_rank": 445
-  },
-  {
-    "player_id": 4242546,
-    "name": "Davis Mills",
-    "position": "QB",
-    "pro_team": "HOU",
-    "superflex_rank": 1268,
-    "standard_rank": 1268,
-    "adjusted_rank": 446
-  },
-  {
-    "player_id": 4426485,
-    "name": "Jonathan Mingo",
-    "position": "WR",
-    "pro_team": "DAL",
-    "superflex_rank": 1269,
-    "standard_rank": 1269,
-    "adjusted_rank": 447
-  },
-  {
-    "player_id": 4685413,
-    "name": "Cade Klubnik",
-    "position": "QB",
-    "pro_team": "NYJ",
-    "superflex_rank": 1275,
-    "standard_rank": 1275,
-    "adjusted_rank": 448
-  },
-  {
-    "player_id": 4693370,
-    "name": "Riley Nowakowski",
-    "position": "RB",
-    "pro_team": "PIT",
-    "superflex_rank": 1276,
-    "standard_rank": 1276,
-    "adjusted_rank": 449
-  },
-  {
-    "player_id": 4869132,
-    "name": "Reggie Virgil",
-    "position": "WR",
-    "pro_team": "ARI",
-    "superflex_rank": 1277,
-    "standard_rank": 1277,
-    "adjusted_rank": 450
-  },
-  {
-    "player_id": 3115293,
-    "name": "Kyle Allen",
-    "position": "QB",
-    "pro_team": "BUF",
-    "superflex_rank": 1278,
-    "standard_rank": 1278,
-    "adjusted_rank": 451
-  },
-  {
-    "player_id": 3924327,
-    "name": "Drew Lock",
-    "position": "QB",
-    "pro_team": "SEA",
-    "superflex_rank": 1280,
-    "standard_rank": 1280,
-    "adjusted_rank": 452
-  },
-  {
-    "player_id": 4039505,
-    "name": "Reggie Gilliam",
-    "position": "RB",
-    "pro_team": "NE",
-    "superflex_rank": 1281,
-    "standard_rank": 1281,
-    "adjusted_rank": 453
-  },
-  {
-    "player_id": 3039707,
-    "name": "Mitchell Trubisky",
-    "position": "QB",
-    "pro_team": "TEN",
-    "superflex_rank": 1284,
-    "standard_rank": 1284,
-    "adjusted_rank": 454
-  },
-  {
-    "player_id": 2975417,
-    "name": "Patrick Ricard",
-    "position": "RB",
-    "pro_team": "NYG",
-    "superflex_rank": 1290,
-    "standard_rank": 1290,
-    "adjusted_rank": 455
+    "superflex_rank": 1228,
+    "standard_rank": 1228,
+    "adjusted_rank": 414
   },
   {
     "player_id": 4889929,
     "name": "Quinn Ewers",
     "position": "QB",
     "pro_team": "JAX",
-    "superflex_rank": 1291,
-    "standard_rank": 1291,
-    "adjusted_rank": 456
+    "superflex_rank": 1229,
+    "standard_rank": 1229,
+    "adjusted_rank": 415
   },
   {
-    "player_id": 4038524,
-    "name": "Gardner Minshew II",
+    "player_id": 14163,
+    "name": "Tyrod Taylor",
     "position": "QB",
-    "pro_team": "ARI",
-    "superflex_rank": 1294,
-    "standard_rank": 1294,
-    "adjusted_rank": 457
+    "pro_team": "GB",
+    "superflex_rank": 1231,
+    "standard_rank": 1231,
+    "adjusted_rank": 416
   },
   {
-    "player_id": 5081338,
-    "name": "Kaden Wetjen",
-    "position": "WR",
-    "pro_team": "PIT",
-    "superflex_rank": 1320,
-    "standard_rank": 1320,
-    "adjusted_rank": 458
+    "player_id": 4240703,
+    "name": "Kenny Pickett",
+    "position": "QB",
+    "pro_team": "CAR",
+    "superflex_rank": 1236,
+    "standard_rank": 1236,
+    "adjusted_rank": 417
   },
   {
-    "player_id": 4035656,
-    "name": "Ben Skowronek",
-    "position": "WR",
-    "pro_team": "PIT",
-    "superflex_rank": 1322,
-    "standard_rank": 1322,
-    "adjusted_rank": 459
-  },
-  {
-    "player_id": 5097554,
-    "name": "Kameron Johnson",
-    "position": "WR",
-    "pro_team": "TB",
-    "superflex_rank": 1328,
-    "standard_rank": 1328,
-    "adjusted_rank": 460
-  },
-  {
-    "player_id": 3123075,
-    "name": "Braxton Berrios",
-    "position": "WR",
-    "pro_team": "NYG",
-    "superflex_rank": 1335,
-    "standard_rank": 1335,
-    "adjusted_rank": 461
-  },
-  {
-    "player_id": 4257188,
-    "name": "Charlie Jones",
-    "position": "WR",
-    "pro_team": "CIN",
-    "superflex_rank": 1336,
-    "standard_rank": 1336,
-    "adjusted_rank": 462
-  },
-  {
-    "player_id": 4430656,
-    "name": "Myles Price",
+    "player_id": 4565185,
+    "name": "Tai Felton",
     "position": "WR",
     "pro_team": "MIN",
-    "superflex_rank": 1340,
-    "standard_rank": 1340,
-    "adjusted_rank": 463
-  },
-  {
-    "player_id": 4690143,
-    "name": "LaJohntay Wester",
-    "position": "WR",
-    "pro_team": "BAL",
-    "superflex_rank": 1341,
-    "standard_rank": 1341,
-    "adjusted_rank": 464
-  },
-  {
-    "player_id": 4372716,
-    "name": "Nikko Remigio",
-    "position": "WR",
-    "pro_team": "KC",
-    "superflex_rank": 1344,
-    "standard_rank": 1344,
-    "adjusted_rank": 465
-  },
-  {
-    "player_id": 4429684,
-    "name": "Anthony Gould",
-    "position": "WR",
-    "pro_team": "IND",
-    "superflex_rank": 1345,
-    "standard_rank": 1345,
-    "adjusted_rank": 466
-  },
-  {
-    "player_id": 4430191,
-    "name": "Skyy Moore",
-    "position": "WR",
-    "pro_team": "GB",
-    "superflex_rank": 1352,
-    "standard_rank": 1352,
-    "adjusted_rank": 467
+    "superflex_rank": 1237,
+    "standard_rank": 1237,
+    "adjusted_rank": 418
   },
   {
     "player_id": 4879194,
     "name": "Josh Cameron",
     "position": "WR",
     "pro_team": "JAX",
-    "superflex_rank": 1354,
-    "standard_rank": 1354,
-    "adjusted_rank": 468
+    "superflex_rank": 1238,
+    "standard_rank": 1238,
+    "adjusted_rank": 419
   },
   {
-    "player_id": 2975674,
-    "name": "Robert Tonyan",
+    "player_id": 4426339,
+    "name": "Spencer Rattler",
+    "position": "QB",
+    "pro_team": "NO",
+    "superflex_rank": 1239,
+    "standard_rank": 1239,
+    "adjusted_rank": 420
+  },
+  {
+    "player_id": 4695705,
+    "name": "Marlin Klein",
     "position": "TE",
+    "pro_team": "HOU",
+    "superflex_rank": 1241,
+    "standard_rank": 1241,
+    "adjusted_rank": 421
+  },
+  {
+    "player_id": 4360086,
+    "name": "Josh Whyle",
+    "position": "TE",
+    "pro_team": "GB",
+    "superflex_rank": 1242,
+    "standard_rank": 1242,
+    "adjusted_rank": 422
+  },
+  {
+    "player_id": 4040612,
+    "name": "Luke Farrell",
+    "position": "TE",
+    "pro_team": "SF",
+    "superflex_rank": 1243,
+    "standard_rank": 1243,
+    "adjusted_rank": 423
+  },
+  {
+    "player_id": 4685504,
+    "name": "Sam Roush",
+    "position": "TE",
+    "pro_team": "CHI",
+    "superflex_rank": 1245,
+    "standard_rank": 1245,
+    "adjusted_rank": 424
+  },
+  {
+    "player_id": 5160110,
+    "name": "Jahdae Walker",
+    "position": "WR",
+    "pro_team": "CHI",
+    "superflex_rank": 1246,
+    "standard_rank": 1246,
+    "adjusted_rank": 425
+  },
+  {
+    "player_id": 3044720,
+    "name": "Joshua Dobbs",
+    "position": "QB",
+    "pro_team": "DET",
+    "superflex_rank": 1248,
+    "standard_rank": 1248,
+    "adjusted_rank": 426
+  },
+  {
+    "player_id": 4035671,
+    "name": "Tyler Huntley",
+    "position": "QB",
+    "pro_team": "BAL",
+    "superflex_rank": 1249,
+    "standard_rank": 1249,
+    "adjusted_rank": 427
+  },
+  {
+    "player_id": 4432260,
+    "name": "Matthew Hibner",
+    "position": "TE",
+    "pro_team": "BAL",
+    "superflex_rank": 1250,
+    "standard_rank": 1251,
+    "adjusted_rank": 428
+  },
+  {
+    "player_id": 2975863,
+    "name": "Eric Saubert",
+    "position": "TE",
+    "pro_team": "SEA",
+    "superflex_rank": 1252,
+    "standard_rank": 1252,
+    "adjusted_rank": 429
+  },
+  {
+    "player_id": 4715355,
+    "name": "Darius Cooper",
+    "position": "WR",
+    "pro_team": "PHI",
+    "superflex_rank": 1254,
+    "standard_rank": 1254,
+    "adjusted_rank": 430
+  },
+  {
+    "player_id": 3125107,
+    "name": "Andrew Beck",
+    "position": "RB",
+    "pro_team": "NYJ",
+    "superflex_rank": 1256,
+    "standard_rank": 1256,
+    "adjusted_rank": 431
+  },
+  {
+    "player_id": 4426485,
+    "name": "Jonathan Mingo",
+    "position": "WR",
+    "pro_team": "DAL",
+    "superflex_rank": 1257,
+    "standard_rank": 1257,
+    "adjusted_rank": 432
+  },
+  {
+    "player_id": 4242546,
+    "name": "Davis Mills",
+    "position": "QB",
+    "pro_team": "HOU",
+    "superflex_rank": 1258,
+    "standard_rank": 1258,
+    "adjusted_rank": 433
+  },
+  {
+    "player_id": 4685413,
+    "name": "Cade Klubnik",
+    "position": "QB",
+    "pro_team": "NYJ",
+    "superflex_rank": 1262,
+    "standard_rank": 1262,
+    "adjusted_rank": 434
+  },
+  {
+    "player_id": 3052096,
+    "name": "Johnny Mundt",
+    "position": "TE",
+    "pro_team": "PHI",
+    "superflex_rank": 1263,
+    "standard_rank": 1263,
+    "adjusted_rank": 435
+  },
+  {
+    "player_id": 4869132,
+    "name": "Reggie Virgil",
+    "position": "WR",
+    "pro_team": "ARI",
+    "superflex_rank": 1265,
+    "standard_rank": 1265,
+    "adjusted_rank": 436
+  },
+  {
+    "player_id": 3115293,
+    "name": "Kyle Allen",
+    "position": "QB",
+    "pro_team": "BUF",
+    "superflex_rank": 1267,
+    "standard_rank": 1267,
+    "adjusted_rank": 437
+  },
+  {
+    "player_id": 4433971,
+    "name": "Kyle McCord",
+    "position": "QB",
+    "pro_team": "MIA",
+    "superflex_rank": 1268,
+    "standard_rank": 1268,
+    "adjusted_rank": 438
+  },
+  {
+    "player_id": 3924327,
+    "name": "Drew Lock",
+    "position": "QB",
+    "pro_team": "SEA",
+    "superflex_rank": 1271,
+    "standard_rank": 1271,
+    "adjusted_rank": 439
+  },
+  {
+    "player_id": 4039505,
+    "name": "Reggie Gilliam",
+    "position": "RB",
+    "pro_team": "NE",
+    "superflex_rank": 1272,
+    "standard_rank": 1272,
+    "adjusted_rank": 440
+  },
+  {
+    "player_id": 3039707,
+    "name": "Mitchell Trubisky",
+    "position": "QB",
+    "pro_team": "TEN",
+    "superflex_rank": 1273,
+    "standard_rank": 1273,
+    "adjusted_rank": 441
+  },
+  {
+    "player_id": 2975417,
+    "name": "Patrick Ricard",
+    "position": "RB",
+    "pro_team": "NYG",
+    "superflex_rank": 1276,
+    "standard_rank": 1276,
+    "adjusted_rank": 442
+  },
+  {
+    "player_id": 4038524,
+    "name": "Gardner Minshew II",
+    "position": "QB",
+    "pro_team": "ARI",
+    "superflex_rank": 1278,
+    "standard_rank": 1278,
+    "adjusted_rank": 443
+  },
+  {
+    "player_id": 5081338,
+    "name": "Kaden Wetjen",
+    "position": "WR",
     "pro_team": "PIT",
-    "superflex_rank": 1360,
-    "standard_rank": 1360,
-    "adjusted_rank": 469
+    "superflex_rank": 1302,
+    "standard_rank": 1302,
+    "adjusted_rank": 444
+  },
+  {
+    "player_id": 4035656,
+    "name": "Ben Skowronek",
+    "position": "WR",
+    "pro_team": "PIT",
+    "superflex_rank": 1304,
+    "standard_rank": 1304,
+    "adjusted_rank": 445
+  },
+  {
+    "player_id": 5097554,
+    "name": "Kameron Johnson",
+    "position": "WR",
+    "pro_team": "TB",
+    "superflex_rank": 1308,
+    "standard_rank": 1308,
+    "adjusted_rank": 446
+  },
+  {
+    "player_id": 4429105,
+    "name": "Arian Smith",
+    "position": "WR",
+    "pro_team": "NYJ",
+    "superflex_rank": 1311,
+    "standard_rank": 1311,
+    "adjusted_rank": 447
+  },
+  {
+    "player_id": 3123075,
+    "name": "Braxton Berrios",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1321,
+    "standard_rank": 1321,
+    "adjusted_rank": 448
+  },
+  {
+    "player_id": 4373273,
+    "name": "British Brooks",
+    "position": "RB",
+    "pro_team": "HOU",
+    "superflex_rank": 1323,
+    "standard_rank": 1323,
+    "adjusted_rank": 449
+  },
+  {
+    "player_id": 4570738,
+    "name": "Ke'Shawn Williams",
+    "position": "WR",
+    "pro_team": "CIN",
+    "superflex_rank": 1325,
+    "standard_rank": 1325,
+    "adjusted_rank": 450
+  },
+  {
+    "player_id": 4430656,
+    "name": "Myles Price",
+    "position": "WR",
+    "pro_team": "MIN",
+    "superflex_rank": 1326,
+    "standard_rank": 1326,
+    "adjusted_rank": 451
+  },
+  {
+    "player_id": 4690143,
+    "name": "LaJohntay Wester",
+    "position": "WR",
+    "pro_team": "BAL",
+    "superflex_rank": 1327,
+    "standard_rank": 1327,
+    "adjusted_rank": 452
+  },
+  {
+    "player_id": 4039050,
+    "name": "Devin Duvernay",
+    "position": "WR",
+    "pro_team": "ARI",
+    "superflex_rank": 1328,
+    "standard_rank": 1328,
+    "adjusted_rank": 453
+  },
+  {
+    "player_id": 4372716,
+    "name": "Nikko Remigio",
+    "position": "WR",
+    "pro_team": "KC",
+    "superflex_rank": 1330,
+    "standard_rank": 1330,
+    "adjusted_rank": 454
+  },
+  {
+    "player_id": 4430191,
+    "name": "Skyy Moore",
+    "position": "WR",
+    "pro_team": "GB",
+    "superflex_rank": 1331,
+    "standard_rank": 1331,
+    "adjusted_rank": 455
+  },
+  {
+    "player_id": 4692835,
+    "name": "Jalen Brooks",
+    "position": "WR",
+    "pro_team": "ARI",
+    "superflex_rank": 1333,
+    "standard_rank": 1333,
+    "adjusted_rank": 456
   },
   {
     "player_id": 3728262,
     "name": "Ray-Ray McCloud III",
     "position": "WR",
     "pro_team": "CHI",
-    "superflex_rank": 1364,
-    "standard_rank": 1364,
-    "adjusted_rank": 470
-  },
-  {
-    "player_id": 2983509,
-    "name": "Dare Ogunbowale",
-    "position": "RB",
-    "pro_team": "LV",
-    "superflex_rank": 1369,
-    "standard_rank": 1369,
-    "adjusted_rank": 471
+    "superflex_rank": 1335,
+    "standard_rank": 1335,
+    "adjusted_rank": 457
   },
   {
     "player_id": 3116407,
     "name": "Mason Rudolph",
     "position": "QB",
     "pro_team": "PIT",
-    "superflex_rank": 1370,
-    "standard_rank": 1370,
-    "adjusted_rank": 472
-  },
-  {
-    "player_id": 3127586,
-    "name": "Jeremy McNichols",
-    "position": "RB",
-    "pro_team": "WSH",
-    "superflex_rank": 1371,
-    "standard_rank": 1371,
-    "adjusted_rank": 473
-  },
-  {
-    "player_id": 4035222,
-    "name": "Trayveon Williams",
-    "position": "RB",
-    "pro_team": "DET",
-    "superflex_rank": 1374,
-    "standard_rank": 1374,
-    "adjusted_rank": 474
+    "superflex_rank": 1337,
+    "standard_rank": 1337,
+    "adjusted_rank": 458
   },
   {
     "player_id": 2576336,
     "name": "Ameer Abdullah",
     "position": "RB",
     "pro_team": "JAX",
-    "superflex_rank": 1375,
-    "standard_rank": 1375,
-    "adjusted_rank": 475
-  },
-  {
-    "player_id": 4035004,
-    "name": "Mecole Hardman Jr.",
-    "position": "WR",
-    "pro_team": "FA",
-    "superflex_rank": 1379,
-    "standard_rank": 1379,
-    "adjusted_rank": 476
+    "superflex_rank": 1339,
+    "standard_rank": 1339,
+    "adjusted_rank": 459
   },
   {
     "player_id": 4040761,
     "name": "Devin Singletary",
     "position": "RB",
     "pro_team": "NYG",
-    "superflex_rank": 1380,
-    "standard_rank": 1380,
-    "adjusted_rank": 477
+    "superflex_rank": 1340,
+    "standard_rank": 1340,
+    "adjusted_rank": 460
   },
   {
-    "player_id": 3051738,
-    "name": "Marquez Valdes-Scantling",
+    "player_id": 3895856,
+    "name": "Christian Kirk",
     "position": "WR",
-    "pro_team": "DAL",
-    "superflex_rank": 1386,
-    "standard_rank": 1386,
-    "adjusted_rank": 478
+    "pro_team": "SF",
+    "superflex_rank": 1341,
+    "standard_rank": 1341,
+    "adjusted_rank": 461
   },
   {
-    "player_id": 2976592,
-    "name": "Sterling Shepard",
+    "player_id": 3134353,
+    "name": "Tim Patrick",
     "position": "WR",
-    "pro_team": "HOU",
-    "superflex_rank": 1387,
-    "standard_rank": 1387,
-    "adjusted_rank": 479
+    "pro_team": "NYJ",
+    "superflex_rank": 1342,
+    "standard_rank": 1342,
+    "adjusted_rank": 462
   },
   {
     "player_id": 2573079,
     "name": "Carson Wentz",
     "position": "QB",
     "pro_team": "MIN",
-    "superflex_rank": 1388,
-    "standard_rank": 1388,
-    "adjusted_rank": 480
+    "superflex_rank": 1343,
+    "standard_rank": 1343,
+    "adjusted_rank": 463
   },
   {
     "player_id": 14012,
     "name": "Andy Dalton",
     "position": "QB",
     "pro_team": "PHI",
-    "superflex_rank": 1389,
-    "standard_rank": 1389,
-    "adjusted_rank": 481
+    "superflex_rank": 1344,
+    "standard_rank": 1344,
+    "adjusted_rank": 464
   },
   {
     "player_id": 4039057,
     "name": "Lil'Jordan Humphrey",
     "position": "WR",
     "pro_team": "DEN",
-    "superflex_rank": 1392,
-    "standard_rank": 1392,
-    "adjusted_rank": 482
-  },
-  {
-    "player_id": 3126997,
-    "name": "Tom Kennedy",
-    "position": "WR",
-    "pro_team": "DET",
-    "superflex_rank": 1398,
-    "standard_rank": 1398,
-    "adjusted_rank": 483
+    "superflex_rank": 1346,
+    "standard_rank": 1346,
+    "adjusted_rank": 465
   },
   {
     "player_id": 4360438,
     "name": "Brandon Aiyuk",
     "position": "WR",
     "pro_team": "SF",
-    "superflex_rank": 1400,
-    "standard_rank": 1400,
-    "adjusted_rank": 484
+    "superflex_rank": 1348,
+    "standard_rank": 1348,
+    "adjusted_rank": 466
   },
   {
     "player_id": 4239934,
     "name": "AJ Dillon",
     "position": "RB",
     "pro_team": "CAR",
-    "superflex_rank": 1401,
-    "standard_rank": 1401,
-    "adjusted_rank": 485
-  },
-  {
-    "player_id": 3930066,
-    "name": "Van Jefferson",
-    "position": "WR",
-    "pro_team": "WSH",
-    "superflex_rank": 1403,
-    "standard_rank": 1403,
-    "adjusted_rank": 486
-  },
-  {
-    "player_id": 4243315,
-    "name": "Salvon Ahmed",
-    "position": "RB",
-    "pro_team": "CHI",
-    "superflex_rank": 1409,
-    "standard_rank": 1409,
-    "adjusted_rank": 487
-  },
-  {
-    "player_id": 4240657,
-    "name": "Michael Carter",
-    "position": "RB",
-    "pro_team": "TEN",
-    "superflex_rank": 1414,
-    "standard_rank": 1415,
-    "adjusted_rank": 488
+    "superflex_rank": 1349,
+    "standard_rank": 1349,
+    "adjusted_rank": 467
   },
   {
     "player_id": 4372414,
     "name": "Elijah Moore",
     "position": "WR",
     "pro_team": "PHI",
-    "superflex_rank": 1416,
-    "standard_rank": 1417,
-    "adjusted_rank": 489
+    "superflex_rank": 1352,
+    "standard_rank": 1352,
+    "adjusted_rank": 468
   },
   {
     "player_id": 4361259,
     "name": "Zach Wilson",
     "position": "QB",
     "pro_team": "NO",
-    "superflex_rank": 1418,
-    "standard_rank": 1419,
-    "adjusted_rank": 490
+    "superflex_rank": 1353,
+    "standard_rank": 1353,
+    "adjusted_rank": 469
   },
   {
     "player_id": 4374033,
     "name": "Jermar Jefferson",
     "position": "RB",
     "pro_team": "MIN",
-    "superflex_rank": 1420,
-    "standard_rank": 1421,
-    "adjusted_rank": 491
-  },
-  {
-    "player_id": 3871102,
-    "name": "David Sills V",
-    "position": "WR",
-    "pro_team": "TB",
-    "superflex_rank": 1437,
-    "standard_rank": 1438,
-    "adjusted_rank": 492
+    "superflex_rank": 1354,
+    "standard_rank": 1354,
+    "adjusted_rank": 470
   },
   {
     "player_id": 4567096,
     "name": "John Metchie III",
     "position": "WR",
     "pro_team": "CAR",
-    "superflex_rank": 1438,
-    "standard_rank": 1439,
-    "adjusted_rank": 493
-  },
-  {
-    "player_id": 4360238,
-    "name": "Dameon Pierce",
-    "position": "RB",
-    "pro_team": "PHI",
-    "superflex_rank": 1440,
-    "standard_rank": 1441,
-    "adjusted_rank": 494
-  },
-  {
-    "player_id": 4361777,
-    "name": "Zamir White",
-    "position": "RB",
-    "pro_team": "NO",
-    "superflex_rank": 1442,
-    "standard_rank": 1443,
-    "adjusted_rank": 495
+    "superflex_rank": 1362,
+    "standard_rank": 1362,
+    "adjusted_rank": 471
   },
   {
     "player_id": 4243389,
     "name": "Calvin Austin III",
     "position": "WR",
     "pro_team": "NYG",
-    "superflex_rank": 1444,
-    "standard_rank": 1445,
-    "adjusted_rank": 496
-  },
-  {
-    "player_id": 4249836,
-    "name": "Pierre Strong Jr.",
-    "position": "RB",
-    "pro_team": "GB",
-    "superflex_rank": 1447,
-    "standard_rank": 1448,
-    "adjusted_rank": 497
-  },
-  {
-    "player_id": 4241374,
-    "name": "Grant Calcaterra",
-    "position": "TE",
-    "pro_team": "PHI",
-    "superflex_rank": 1448,
-    "standard_rank": 1449,
-    "adjusted_rank": 498
+    "superflex_rank": 1364,
+    "standard_rank": 1364,
+    "adjusted_rank": 472
   },
   {
     "player_id": 4036032,
     "name": "Brittain Brown",
     "position": "RB",
     "pro_team": "CHI",
-    "superflex_rank": 1458,
-    "standard_rank": 1459,
-    "adjusted_rank": 499
+    "superflex_rank": 1369,
+    "standard_rank": 1369,
+    "adjusted_rank": 473
+  },
+  {
+    "player_id": 4367567,
+    "name": "Julius Chestnut",
+    "position": "RB",
+    "pro_team": "TEN",
+    "superflex_rank": 1370,
+    "standard_rank": 1370,
+    "adjusted_rank": 474
   },
   {
     "player_id": 4243003,
     "name": "Ronnie Rivers",
     "position": "RB",
     "pro_team": "LAR",
-    "superflex_rank": 1467,
-    "standard_rank": 1468,
-    "adjusted_rank": 500
+    "superflex_rank": 1372,
+    "standard_rank": 1372,
+    "adjusted_rank": 475
   },
   {
     "player_id": 4426386,
     "name": "Roschon Johnson",
     "position": "RB",
     "pro_team": "CHI",
-    "superflex_rank": 1477,
-    "standard_rank": 1478,
-    "adjusted_rank": 501
+    "superflex_rank": 1374,
+    "standard_rank": 1374,
+    "adjusted_rank": 476
   },
   {
     "player_id": 4428085,
     "name": "Luke Musgrave",
     "position": "TE",
     "pro_team": "GB",
-    "superflex_rank": 1479,
-    "standard_rank": 1480,
-    "adjusted_rank": 502
-  },
-  {
-    "player_id": 4361418,
-    "name": "Will Levis",
-    "position": "QB",
-    "pro_team": "TEN",
-    "superflex_rank": 1480,
-    "standard_rank": 1481,
-    "adjusted_rank": 503
+    "superflex_rank": 1375,
+    "standard_rank": 1375,
+    "adjusted_rank": 477
   },
   {
     "player_id": 4259553,
     "name": "Stetson Bennett IV",
     "position": "QB",
     "pro_team": "LAR",
-    "superflex_rank": 1482,
-    "standard_rank": 1483,
-    "adjusted_rank": 504
-  },
-  {
-    "player_id": 4429202,
-    "name": "Israel Abanikanda",
-    "position": "RB",
-    "pro_team": "DAL",
-    "superflex_rank": 1488,
-    "standard_rank": 1489,
-    "adjusted_rank": 505
-  },
-  {
-    "player_id": 4722893,
-    "name": "Jaleel McLaughlin",
-    "position": "RB",
-    "pro_team": "DEN",
-    "superflex_rank": 1504,
-    "standard_rank": 1505,
-    "adjusted_rank": 506
+    "superflex_rank": 1376,
+    "standard_rank": 1376,
+    "adjusted_rank": 478
   },
   {
     "player_id": 4360405,
     "name": "Jake Bobo",
     "position": "WR",
     "pro_team": "SEA",
-    "superflex_rank": 1510,
-    "standard_rank": 1511,
-    "adjusted_rank": 507
-  },
-  {
-    "player_id": 4429676,
-    "name": "Tyler Goodson",
-    "position": "RB",
-    "pro_team": "ATL",
-    "superflex_rank": 1516,
-    "standard_rank": 1521,
-    "adjusted_rank": 508
+    "superflex_rank": 1386,
+    "standard_rank": 1386,
+    "adjusted_rank": 479
   },
   {
     "player_id": 4428209,
     "name": "Ricky Pearsall",
     "position": "WR",
     "pro_team": "SF",
-    "superflex_rank": 1521,
-    "standard_rank": 1522,
-    "adjusted_rank": 509
+    "superflex_rank": 1391,
+    "standard_rank": 1391,
+    "adjusted_rank": 480
   },
   {
-    "player_id": 4429275,
-    "name": "Trey Benson",
+    "player_id": 4372561,
+    "name": "Isaac Guerendo",
     "position": "RB",
-    "pro_team": "ARI",
-    "superflex_rank": 1522,
-    "standard_rank": 1523,
-    "adjusted_rank": 510
+    "pro_team": "SF",
+    "superflex_rank": 1393,
+    "standard_rank": 1393,
+    "adjusted_rank": 481
   },
   {
     "player_id": 4569682,
     "name": "Audric Estime",
     "position": "RB",
     "pro_team": "NO",
-    "superflex_rank": 1523,
-    "standard_rank": 1524,
-    "adjusted_rank": 511
-  },
-  {
-    "player_id": 4427985,
-    "name": "Bub Means",
-    "position": "WR",
-    "pro_team": "NO",
-    "superflex_rank": 1525,
-    "standard_rank": 1526,
-    "adjusted_rank": 512
-  },
-  {
-    "player_id": 4912274,
-    "name": "Sione Vaki",
-    "position": "RB",
-    "pro_team": "DET",
-    "superflex_rank": 1532,
-    "standard_rank": 1533,
-    "adjusted_rank": 513
+    "superflex_rank": 1394,
+    "standard_rank": 1394,
+    "adjusted_rank": 482
   },
   {
     "player_id": 4360698,
     "name": "Joe Milton III",
     "position": "QB",
-    "pro_team": "DAL",
-    "superflex_rank": 1536,
-    "standard_rank": 1537,
-    "adjusted_rank": 514
+    "pro_team": "FA",
+    "superflex_rank": 1398,
+    "standard_rank": 1398,
+    "adjusted_rank": 483
   },
   {
-    "player_id": 4714365,
-    "name": "Carson Steele",
-    "position": "RB",
-    "pro_team": "PHI",
-    "superflex_rank": 1539,
-    "standard_rank": 1540,
-    "adjusted_rank": 515
-  },
-  {
-    "player_id": 4429805,
-    "name": "Frank Gore Jr.",
-    "position": "RB",
+    "player_id": 4241476,
+    "name": "Tyrell Shavers",
+    "position": "WR",
     "pro_team": "BUF",
-    "superflex_rank": 1558,
-    "standard_rank": 1559,
-    "adjusted_rank": 516
+    "superflex_rank": 1407,
+    "standard_rank": 1406,
+    "adjusted_rank": 484
   },
   {
     "player_id": 4877706,
     "name": "Jayden Higgins",
     "position": "WR",
     "pro_team": "HOU",
-    "superflex_rank": 1563,
-    "standard_rank": 1563,
-    "adjusted_rank": 517
+    "superflex_rank": 1409,
+    "standard_rank": 1409,
+    "adjusted_rank": 485
+  },
+  {
+    "player_id": 4685350,
+    "name": "Trevor Etienne",
+    "position": "RB",
+    "pro_team": "CAR",
+    "superflex_rank": 1410,
+    "standard_rank": 1410,
+    "adjusted_rank": 486
   },
   {
     "player_id": 4427238,
     "name": "Dillon Gabriel",
     "position": "QB",
     "pro_team": "CLE",
-    "superflex_rank": 1564,
-    "standard_rank": 1564,
-    "adjusted_rank": 518
+    "superflex_rank": 1411,
+    "standard_rank": 1411,
+    "adjusted_rank": 487
   },
   {
     "player_id": 4432734,
     "name": "Jalen Milroe",
     "position": "QB",
     "pro_team": "SEA",
-    "superflex_rank": 1565,
-    "standard_rank": 1565,
-    "adjusted_rank": 519
-  },
-  {
-    "player_id": 4710341,
-    "name": "Jarquez Hunter",
-    "position": "RB",
-    "pro_team": "MIA",
-    "superflex_rank": 1566,
-    "standard_rank": 1566,
-    "adjusted_rank": 520
+    "superflex_rank": 1412,
+    "standard_rank": 1412,
+    "adjusted_rank": 488
   },
   {
     "player_id": 4683243,
     "name": "Mitchell Evans",
     "position": "TE",
     "pro_team": "CAR",
-    "superflex_rank": 1568,
-    "standard_rank": 1568,
-    "adjusted_rank": 521
-  },
-  {
-    "player_id": 4431562,
-    "name": "Phil Mafah",
-    "position": "RB",
-    "pro_team": "DAL",
-    "superflex_rank": 1571,
-    "standard_rank": 1571,
-    "adjusted_rank": 522
+    "superflex_rank": 1414,
+    "standard_rank": 1414,
+    "adjusted_rank": 489
   },
   {
     "player_id": 4682652,
     "name": "Devin Neal",
     "position": "RB",
     "pro_team": "NO",
-    "superflex_rank": 1585,
-    "standard_rank": 1585,
-    "adjusted_rank": 523
+    "superflex_rank": 1422,
+    "standard_rank": 1422,
+    "adjusted_rank": 490
   },
   {
     "player_id": 4429955,
     "name": "Will Howard",
     "position": "QB",
     "pro_team": "PIT",
-    "superflex_rank": 1588,
-    "standard_rank": 1588,
-    "adjusted_rank": 524
+    "superflex_rank": 1424,
+    "standard_rank": 1424,
+    "adjusted_rank": 491
   },
   {
     "player_id": 4601080,
     "name": "Raheim Sanders",
     "position": "RB",
     "pro_team": "CLE",
-    "superflex_rank": 1595,
-    "standard_rank": 1597,
-    "adjusted_rank": 525
-  },
-  {
-    "player_id": 4257364,
-    "name": "Zavier Scott",
-    "position": "RB",
-    "pro_team": "MIN",
-    "superflex_rank": 1600,
-    "standard_rank": 1600,
-    "adjusted_rank": 526
-  },
-  {
-    "player_id": 4429435,
-    "name": "Brady Cook",
-    "position": "QB",
-    "pro_team": "NYJ",
-    "superflex_rank": 1601,
-    "standard_rank": 1601,
-    "adjusted_rank": 527
-  },
-  {
-    "player_id": 4573398,
-    "name": "Max Brosmer",
-    "position": "QB",
-    "pro_team": "MIN",
-    "superflex_rank": 1609,
-    "standard_rank": 1603,
-    "adjusted_rank": 528
-  },
-  {
-    "player_id": 4428943,
-    "name": "Jacardia Wright",
-    "position": "RB",
-    "pro_team": "SEA",
-    "superflex_rank": 1618,
-    "standard_rank": 1604,
-    "adjusted_rank": 529
-  },
-  {
-    "player_id": 4426689,
-    "name": "Ulysses Bentley IV",
-    "position": "RB",
-    "pro_team": "IND",
-    "superflex_rank": 1619,
-    "standard_rank": 1621,
-    "adjusted_rank": 530
+    "superflex_rank": 1427,
+    "standard_rank": 1427,
+    "adjusted_rank": 492
   },
   {
     "player_id": 5091739,
     "name": "Chris Brazzell II",
     "position": "WR",
     "pro_team": "CAR",
-    "superflex_rank": 1627,
-    "standard_rank": 1627,
-    "adjusted_rank": 531
+    "superflex_rank": 1439,
+    "standard_rank": 1439,
+    "adjusted_rank": 493
+  },
+  {
+    "player_id": 4605951,
+    "name": "CJ Daniels",
+    "position": "WR",
+    "pro_team": "LAR",
+    "superflex_rank": 1440,
+    "standard_rank": 1440,
+    "adjusted_rank": 494
+  },
+  {
+    "player_id": 4565859,
+    "name": "Joe Royer",
+    "position": "TE",
+    "pro_team": "CLE",
+    "superflex_rank": 1441,
+    "standard_rank": 1441,
+    "adjusted_rank": 495
   },
   {
     "player_id": 4431325,
     "name": "Taylen Green",
     "position": "QB",
     "pro_team": "CLE",
-    "superflex_rank": 1633,
-    "standard_rank": 1635,
-    "adjusted_rank": 532
-  },
-  {
-    "player_id": 4685477,
-    "name": "Jam Miller",
-    "position": "RB",
-    "pro_team": "NE",
-    "superflex_rank": 1637,
-    "standard_rank": 1634,
-    "adjusted_rank": 533
-  },
-  {
-    "player_id": 5081508,
-    "name": "Eli Heidenreich",
-    "position": "RB",
-    "pro_team": "PIT",
-    "superflex_rank": 1640,
-    "standard_rank": 1636,
-    "adjusted_rank": 534
+    "superflex_rank": 1447,
+    "standard_rank": 1446,
+    "adjusted_rank": 496
   },
   {
     "player_id": 4567747,
     "name": "Garrett Nussmeier",
     "position": "QB",
     "pro_team": "KC",
-    "superflex_rank": 1641,
-    "standard_rank": 1639,
-    "adjusted_rank": 535
+    "superflex_rank": 1453,
+    "standard_rank": 1450,
+    "adjusted_rank": 497
   },
   {
-    "player_id": 4594749,
-    "name": "Michael Trigg",
-    "position": "TE",
+    "player_id": 4808759,
+    "name": "Camden Brown",
+    "position": "WR",
     "pro_team": "DAL",
-    "superflex_rank": 1647,
-    "standard_rank": 1647,
-    "adjusted_rank": 536
+    "superflex_rank": 1457,
+    "standard_rank": 1457,
+    "adjusted_rank": 498
+  },
+  {
+    "player_id": 5344782,
+    "name": "Jack Strand",
+    "position": "QB",
+    "pro_team": "ATL",
+    "superflex_rank": 1459,
+    "standard_rank": 1459,
+    "adjusted_rank": 499
+  },
+  {
+    "player_id": 3118892,
+    "name": "Justin Watson",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1609,
+    "standard_rank": 1609,
+    "adjusted_rank": 500
+  },
+  {
+    "player_id": 3915486,
+    "name": "Tyler Conklin",
+    "position": "TE",
+    "pro_team": "DET",
+    "superflex_rank": 1619,
+    "standard_rank": 1619,
+    "adjusted_rank": 501
   },
   {
     "player_id": 2468609,
     "name": "Taysom Hill",
     "position": "TE",
     "pro_team": "FA",
-    "superflex_rank": 1854,
-    "standard_rank": 1854,
-    "adjusted_rank": 537
+    "superflex_rank": 1685,
+    "standard_rank": 1685,
+    "adjusted_rank": 502
   },
   {
-    "player_id": 2576414,
-    "name": "Raheem Mostert",
+    "player_id": 4035222,
+    "name": "Trayveon Williams",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1880,
-    "standard_rank": 1880,
-    "adjusted_rank": 538
+    "superflex_rank": 1687,
+    "standard_rank": 1687,
+    "adjusted_rank": 503
+  },
+  {
+    "player_id": 3059989,
+    "name": "Nick Mullens",
+    "position": "QB",
+    "pro_team": "FA",
+    "superflex_rank": 1688,
+    "standard_rank": 1688,
+    "adjusted_rank": 504
+  },
+  {
+    "player_id": 4037235,
+    "name": "Greg Dortch",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1712,
+    "standard_rank": 1712,
+    "adjusted_rank": 505
+  },
+  {
+    "player_id": 4035004,
+    "name": "Mecole Hardman Jr.",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1720,
+    "standard_rank": 1720,
+    "adjusted_rank": 506
   },
   {
     "player_id": 3821683,
     "name": "Austin Seibert",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1885,
-    "standard_rank": 1885,
-    "adjusted_rank": 539
+    "superflex_rank": 1723,
+    "standard_rank": 1723,
+    "adjusted_rank": 507
   },
   {
     "player_id": 3116385,
     "name": "Joe Mixon",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1896,
-    "standard_rank": 1896,
-    "adjusted_rank": 540
+    "superflex_rank": 1736,
+    "standard_rank": 1736,
+    "adjusted_rank": 508
   },
   {
     "player_id": 3116406,
     "name": "Tyreek Hill",
     "position": "WR",
     "pro_team": "FA",
-    "superflex_rank": 1897,
-    "standard_rank": 1897,
-    "adjusted_rank": 541
+    "superflex_rank": 1737,
+    "standard_rank": 1737,
+    "adjusted_rank": 509
   },
   {
     "player_id": 3116593,
     "name": "Dalvin Cook",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1898,
-    "standard_rank": 1898,
-    "adjusted_rank": 542
+    "superflex_rank": 1738,
+    "standard_rank": 1738,
+    "adjusted_rank": 510
   },
   {
     "player_id": 3128720,
     "name": "Nick Chubb",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1899,
-    "standard_rank": 1899,
-    "adjusted_rank": 543
+    "superflex_rank": 1739,
+    "standard_rank": 1739,
+    "adjusted_rank": 511
   },
   {
     "player_id": 3120348,
     "name": "JuJu Smith-Schuster",
     "position": "WR",
     "pro_team": "FA",
-    "superflex_rank": 1902,
-    "standard_rank": 1902,
-    "adjusted_rank": 544
+    "superflex_rank": 1742,
+    "standard_rank": 1742,
+    "adjusted_rank": 512
   },
   {
     "player_id": 3059915,
     "name": "Kareem Hunt",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1907,
-    "standard_rank": 1908,
-    "adjusted_rank": 545
+    "superflex_rank": 1748,
+    "standard_rank": 1749,
+    "adjusted_rank": 513
   },
   {
     "player_id": 3123052,
     "name": "Michael Badgley",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1908,
-    "standard_rank": 1909,
-    "adjusted_rank": 546
+    "superflex_rank": 1749,
+    "standard_rank": 1750,
+    "adjusted_rank": 514
   },
   {
     "player_id": 3068267,
     "name": "Austin Ekeler",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1909,
-    "standard_rank": 1910,
-    "adjusted_rank": 547
+    "superflex_rank": 1750,
+    "standard_rank": 1751,
+    "adjusted_rank": 515
   },
   {
     "player_id": 3051392,
     "name": "Ezekiel Elliott",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 1911,
-    "standard_rank": 1914,
-    "adjusted_rank": 548
+    "superflex_rank": 1752,
+    "standard_rank": 1755,
+    "adjusted_rank": 516
   },
   {
     "player_id": 3049899,
     "name": "Younghoe Koo",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1915,
-    "standard_rank": 1918,
-    "adjusted_rank": 549
+    "superflex_rank": 1756,
+    "standard_rank": 1759,
+    "adjusted_rank": 517
+  },
+  {
+    "player_id": 3051738,
+    "name": "Marquez Valdes-Scantling",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1757,
+    "standard_rank": 1760,
+    "adjusted_rank": 518
   },
   {
     "player_id": 2577327,
     "name": "Tyler Lockett",
     "position": "WR",
     "pro_team": "FA",
-    "superflex_rank": 1917,
-    "standard_rank": 1920,
-    "adjusted_rank": 550
+    "superflex_rank": 1759,
+    "standard_rank": 1762,
+    "adjusted_rank": 519
+  },
+  {
+    "player_id": 2976499,
+    "name": "Amari Cooper",
+    "position": "WR",
+    "pro_team": "LV",
+    "superflex_rank": 1761,
+    "standard_rank": 1764,
+    "adjusted_rank": 520
   },
   {
     "player_id": 15795,
     "name": "DeAndre Hopkins",
     "position": "WR",
     "pro_team": "FA",
-    "superflex_rank": 1923,
-    "standard_rank": 1926,
-    "adjusted_rank": 551
+    "superflex_rank": 1766,
+    "standard_rank": 1769,
+    "adjusted_rank": 521
+  },
+  {
+    "player_id": 16757,
+    "name": "Derek Carr",
+    "position": "QB",
+    "pro_team": "NO",
+    "superflex_rank": 1767,
+    "standard_rank": 1770,
+    "adjusted_rank": 522
   },
   {
     "player_id": 15835,
     "name": "Zach Ertz",
     "position": "TE",
     "pro_team": "FA",
-    "superflex_rank": 1926,
-    "standard_rank": 1929,
-    "adjusted_rank": 552
+    "superflex_rank": 1769,
+    "standard_rank": 1772,
+    "adjusted_rank": 523
   },
   {
     "player_id": 15683,
     "name": "Justin Tucker",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1927,
-    "standard_rank": 1930,
-    "adjusted_rank": 553
+    "superflex_rank": 1770,
+    "standard_rank": 1773,
+    "adjusted_rank": 524
   },
   {
     "player_id": 16760,
     "name": "Jimmy Garoppolo",
     "position": "QB",
     "pro_team": "LAR",
-    "superflex_rank": 1929,
-    "standard_rank": 1932,
-    "adjusted_rank": 554
+    "superflex_rank": 1772,
+    "standard_rank": 1775,
+    "adjusted_rank": 525
   },
   {
     "player_id": 16339,
     "name": "Brandon McManus",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1931,
-    "standard_rank": 1934,
-    "adjusted_rank": 555
+    "superflex_rank": 1774,
+    "standard_rank": 1777,
+    "adjusted_rank": 526
   },
   {
     "player_id": 16460,
     "name": "Adam Thielen",
     "position": "WR",
     "pro_team": "PIT",
-    "superflex_rank": 1932,
-    "standard_rank": 1935,
-    "adjusted_rank": 556
+    "superflex_rank": 1775,
+    "standard_rank": 1778,
+    "adjusted_rank": 527
   },
   {
     "player_id": 16728,
     "name": "Teddy Bridgewater",
     "position": "QB",
     "pro_team": "DET",
-    "superflex_rank": 1933,
-    "standard_rank": 1936,
-    "adjusted_rank": 557
+    "superflex_rank": 1776,
+    "standard_rank": 1779,
+    "adjusted_rank": 528
   },
   {
     "player_id": 15965,
     "name": "Dustin Hopkins",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1934,
-    "standard_rank": 1937,
-    "adjusted_rank": 558
+    "superflex_rank": 1777,
+    "standard_rank": 1780,
+    "adjusted_rank": 529
   },
   {
     "player_id": 14993,
     "name": "Greg Zuerlein",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1935,
-    "standard_rank": 1938,
-    "adjusted_rank": 559
+    "superflex_rank": 1778,
+    "standard_rank": 1781,
+    "adjusted_rank": 530
   },
   {
     "player_id": 14881,
     "name": "Russell Wilson",
     "position": "QB",
     "pro_team": "FA",
-    "superflex_rank": 1936,
-    "standard_rank": 1939,
-    "adjusted_rank": 560
+    "superflex_rank": 1779,
+    "standard_rank": 1782,
+    "adjusted_rank": 531
   },
   {
     "player_id": 11122,
     "name": "Matt Prater",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1937,
-    "standard_rank": 1940,
-    "adjusted_rank": 561
+    "superflex_rank": 1780,
+    "standard_rank": 1783,
+    "adjusted_rank": 532
   },
   {
     "player_id": 12460,
     "name": "Graham Gano",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 1938,
-    "standard_rank": 1942,
-    "adjusted_rank": 562
+    "superflex_rank": 1782,
+    "standard_rank": 1786,
+    "adjusted_rank": 533
+  },
+  {
+    "player_id": 4240631,
+    "name": "DeeJay Dallas",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 1822,
+    "standard_rank": 1825,
+    "adjusted_rank": 534
+  },
+  {
+    "player_id": 3930066,
+    "name": "Van Jefferson",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1840,
+    "standard_rank": 1844,
+    "adjusted_rank": 535
+  },
+  {
+    "player_id": 3929785,
+    "name": "Nick Westbrook-Ikhine",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1887,
+    "standard_rank": 1896,
+    "adjusted_rank": 536
+  },
+  {
+    "player_id": 4240657,
+    "name": "Michael Carter",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 1906,
+    "standard_rank": 1912,
+    "adjusted_rank": 537
   },
   {
     "player_id": 4240600,
     "name": "Kadarius Toney",
     "position": "WR",
     "pro_team": "FA",
-    "superflex_rank": 2043,
-    "standard_rank": 2048,
-    "adjusted_rank": 563
+    "superflex_rank": 1907,
+    "standard_rank": 1913,
+    "adjusted_rank": 538
+  },
+  {
+    "player_id": 4360238,
+    "name": "Dameon Pierce",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 1998,
+    "standard_rank": 2004,
+    "adjusted_rank": 539
   },
   {
     "player_id": 4428963,
     "name": "Cade York",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 2114,
-    "standard_rank": 2119,
-    "adjusted_rank": 564
+    "superflex_rank": 1999,
+    "standard_rank": 2005,
+    "adjusted_rank": 540
+  },
+  {
+    "player_id": 4361777,
+    "name": "Zamir White",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2001,
+    "standard_rank": 2007,
+    "adjusted_rank": 541
   },
   {
     "player_id": 4372019,
     "name": "Jerome Ford",
     "position": "RB",
     "pro_team": "FA",
-    "superflex_rank": 2129,
-    "standard_rank": 2134,
-    "adjusted_rank": 565
+    "superflex_rank": 2022,
+    "standard_rank": 2028,
+    "adjusted_rank": 542
   },
   {
     "player_id": 4372066,
     "name": "Jake Moody",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 2201,
-    "standard_rank": 2206,
-    "adjusted_rank": 566
+    "superflex_rank": 2124,
+    "standard_rank": 2130,
+    "adjusted_rank": 543
+  },
+  {
+    "player_id": 4361418,
+    "name": "Will Levis",
+    "position": "QB",
+    "pro_team": "FA",
+    "superflex_rank": 2126,
+    "standard_rank": 2132,
+    "adjusted_rank": 544
   },
   {
     "player_id": 4369863,
     "name": "Cedric Tillman",
     "position": "WR",
     "pro_team": "FA",
-    "superflex_rank": 2209,
-    "standard_rank": 2214,
-    "adjusted_rank": 567
+    "superflex_rank": 2137,
+    "standard_rank": 2143,
+    "adjusted_rank": 545
+  },
+  {
+    "player_id": 4257188,
+    "name": "Charlie Jones",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 2142,
+    "standard_rank": 2148,
+    "adjusted_rank": 546
+  },
+  {
+    "player_id": 4429202,
+    "name": "Israel Abanikanda",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2144,
+    "standard_rank": 2150,
+    "adjusted_rank": 547
+  },
+  {
+    "player_id": 4430388,
+    "name": "DeWayne McBride",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2192,
+    "standard_rank": 2198,
+    "adjusted_rank": 548
   },
   {
     "player_id": 4696736,
     "name": "Tanner Brown",
     "position": "K",
-    "pro_team": "NO",
-    "superflex_rank": 2275,
-    "standard_rank": 2280,
-    "adjusted_rank": 568
+    "pro_team": "FA",
+    "superflex_rank": 2209,
+    "standard_rank": 2215,
+    "adjusted_rank": 549
+  },
+  {
+    "player_id": 4722893,
+    "name": "Jaleel McLaughlin",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2214,
+    "standard_rank": 2220,
+    "adjusted_rank": 550
+  },
+  {
+    "player_id": 4362478,
+    "name": "Emari Demercado",
+    "position": "RB",
+    "pro_team": "DAL",
+    "superflex_rank": 2218,
+    "standard_rank": 2224,
+    "adjusted_rank": 551
+  },
+  {
+    "player_id": 4259619,
+    "name": "Blake Grupe",
+    "position": "K",
+    "pro_team": "NYJ",
+    "superflex_rank": 2221,
+    "standard_rank": 2227,
+    "adjusted_rank": 552
+  },
+  {
+    "player_id": 4690070,
+    "name": "Mitchell Tinsley",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 2222,
+    "standard_rank": 2228,
+    "adjusted_rank": 553
+  },
+  {
+    "player_id": 3886812,
+    "name": "Jake Browning",
+    "position": "QB",
+    "pro_team": "FA",
+    "superflex_rank": 2223,
+    "standard_rank": 2229,
+    "adjusted_rank": 554
+  },
+  {
+    "player_id": 4429939,
+    "name": "Jawhar Jordan",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2321,
+    "standard_rank": 2327,
+    "adjusted_rank": 555
+  },
+  {
+    "player_id": 4714365,
+    "name": "Carson Steele",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2373,
+    "standard_rank": 2379,
+    "adjusted_rank": 556
   },
   {
     "player_id": 3043234,
     "name": "Zane Gonzalez",
     "position": "K",
     "pro_team": "FA",
+    "superflex_rank": 2388,
+    "standard_rank": 1753,
+    "adjusted_rank": 557
+  },
+  {
+    "player_id": 4051167,
+    "name": "Parker Romo",
+    "position": "K",
+    "pro_team": "FA",
+    "superflex_rank": 2391,
+    "standard_rank": 2396,
+    "adjusted_rank": 558
+  },
+  {
+    "player_id": 4429805,
+    "name": "Frank Gore Jr.",
+    "position": "RB",
+    "pro_team": "FA",
     "superflex_rank": 2425,
-    "standard_rank": 1912,
-    "adjusted_rank": 569
-  },
-  {
-    "player_id": 4427600,
-    "name": "Terrell Jennings",
-    "position": "RB",
-    "pro_team": "FA",
-    "superflex_rank": 2426,
-    "standard_rank": 2430,
-    "adjusted_rank": 570
-  },
-  {
-    "player_id": 4240911,
-    "name": "Jacob Kibodi",
-    "position": "RB",
-    "pro_team": "FA",
-    "superflex_rank": 2476,
-    "standard_rank": 2479,
-    "adjusted_rank": 571
+    "standard_rank": 2441,
+    "adjusted_rank": 559
   },
   {
     "player_id": 5092436,
     "name": "Jude McAtamney",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 2479,
-    "standard_rank": 2478,
-    "adjusted_rank": 572
+    "superflex_rank": 2455,
+    "standard_rank": 2453,
+    "adjusted_rank": 560
   },
   {
-    "player_id": 4571557,
-    "name": "Spencer Shrader",
-    "position": "K",
-    "pro_team": "IND",
-    "superflex_rank": 2480,
-    "standard_rank": 2476,
-    "adjusted_rank": 573
+    "player_id": 4685279,
+    "name": "Jaydon Blue",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2458,
+    "standard_rank": 2460,
+    "adjusted_rank": 561
+  },
+  {
+    "player_id": 4710341,
+    "name": "Jarquez Hunter",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2464,
+    "standard_rank": 2466,
+    "adjusted_rank": 562
+  },
+  {
+    "player_id": 4431562,
+    "name": "Phil Mafah",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2473,
+    "standard_rank": 2475,
+    "adjusted_rank": 563
+  },
+  {
+    "player_id": 4432338,
+    "name": "Luke Lachey",
+    "position": "TE",
+    "pro_team": "GB",
+    "superflex_rank": 2475,
+    "standard_rank": 2477,
+    "adjusted_rank": 564
   },
   {
     "player_id": 4570688,
     "name": "Caden Davis",
     "position": "K",
     "pro_team": "FA",
-    "superflex_rank": 2512,
-    "standard_rank": 2514,
-    "adjusted_rank": 574
+    "superflex_rank": 2504,
+    "standard_rank": 2506,
+    "adjusted_rank": 565
+  },
+  {
+    "player_id": 4568024,
+    "name": "Josh Williams",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2513,
+    "standard_rank": 2515,
+    "adjusted_rank": 566
   },
   {
     "player_id": 5208518,
     "name": "Charlie Smyth",
     "position": "K",
-    "pro_team": "NO",
-    "superflex_rank": 2516,
-    "standard_rank": 2518,
-    "adjusted_rank": 575
+    "pro_team": "FA",
+    "superflex_rank": 2515,
+    "standard_rank": 2517,
+    "adjusted_rank": 567
   },
   {
     "player_id": 4242536,
     "name": "Sal Cannella",
     "position": "TE",
     "pro_team": "FA",
-    "superflex_rank": 2533,
-    "standard_rank": 2578,
-    "adjusted_rank": 576
+    "superflex_rank": 2527,
+    "standard_rank": 2586,
+    "adjusted_rank": 568
   },
   {
     "player_id": 5529,
     "name": "Philip Rivers",
     "position": "QB",
     "pro_team": "IND",
-    "superflex_rank": 2556,
-    "standard_rank": 1941,
-    "adjusted_rank": 577
+    "superflex_rank": 2554,
+    "standard_rank": 1784,
+    "adjusted_rank": 569
   },
   {
     "player_id": 4566158,
     "name": "Ben Sauls",
     "position": "K",
     "pro_team": "NYG",
-    "superflex_rank": 2564,
-    "standard_rank": 2579,
-    "adjusted_rank": 578
+    "superflex_rank": 2566,
+    "standard_rank": 2588,
+    "adjusted_rank": 570
+  },
+  {
+    "player_id": 4426689,
+    "name": "Ulysses Bentley IV",
+    "position": "RB",
+    "pro_team": "FA",
+    "superflex_rank": 2571,
+    "standard_rank": 2578,
+    "adjusted_rank": 571
+  },
+  {
+    "player_id": 4912052,
+    "name": "Justin Joly",
+    "position": "TE",
+    "pro_team": "MIA",
+    "superflex_rank": 2596,
+    "standard_rank": 2617,
+    "adjusted_rank": 572
+  },
+  {
+    "player_id": 4594749,
+    "name": "Michael Trigg",
+    "position": "TE",
+    "pro_team": "FA",
+    "superflex_rank": 2627,
+    "standard_rank": 2627,
+    "adjusted_rank": 573
   }
 ]
