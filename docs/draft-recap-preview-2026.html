@@ -45,9 +45,8 @@
   .rank-value.bad { color: var(--bad); }
   .rank-list .rank-sub .owner-tag { font-weight: 600; color: var(--text); }
 
-  .rank-value.good { color: var(--good); }
-  .rank-value.bad { color: var(--bad); }
-  .rank-list .rank-sub .owner-tag { font-weight: 600; color: var(--text); }
+  .results-row { color: var(--text-dim); font-size: 0.88rem; line-height: 1.5; margin-top: 6px; }
+  .results-row b { color: var(--text); }
 </style>
 <script>
 (function() {
@@ -159,17 +158,39 @@ const TEAMS = [
 // where it sharpens the story rather than leading it.
 const RECAP_TEXT = {
   10: "Karl's plan: solve one position completely before moving to the next. Three running backs opened his draft, <b>Bijan Robinson</b> at 1.01, then Ashton Jeanty and Josh Jacobs, locking in the foundation before he touched anything else. Wide receiver came next, four picks in a row (Davante Adams, Courtland Sutton, Carnell Tate, Mike Evans). Only after that block was full did he turn to tight end, taking Travis Kelce and Hunter Henry back to back in rounds nine and ten. It's the same running-back-first instinct as his 2025 draft, Derrick Henry went at 1.01 that year too, just run with more discipline this time, and with zero keepers to work around, a fully open board to do it on.",
-  11: "Kris spent this draft fixing the hole that sank his 2-12 season. Lamar Jackson at 1.02 was pure value, not a quarterback commitment; he's Kris's only real investment at the position. The actual fix came at running back, the spot that left him with just three bodies on the roster all of last year. Jeremiyah Love arrived in round two, D'Andre Swift in round five, five total by the end, up from three. He kept Quinshon Judkins (round-9 cost) and Tyler Shough (round 13, one of the two best-value keepers in the league) as speculative value rather than a second core position, and his round-15 flier on running back Woody Marks fell 61 picks past ADP, the deepest fall of the night at the position.",
+  11: "Kris spent this draft fixing the hole that sank his 2-12 season. Lamar Jackson at 1.02 was pure value, not a quarterback commitment; he's Kris's only real investment at the position. The actual fix came at running back, the spot that left him with just three bodies on the roster all of last year. Jeremiyah Love arrived in round two, D'Andre Swift in round five, five total by the end, up from three.",
   6: "Lisette built around quarterback and wide receiver, not running back. Keeper <b>Christian McCaffrey</b> (round-1 cost) is essentially her only real investment at running back; everything else at the position came in round six or later. Instead she built a four-quarterback room: Bo Nix at a round-2 keeper cost (the one real overpay in the league by the model's math), then Patrick Mahomes, the player her team is literally named for, with her first live pick at 27, then a round-5 reach on Jordan Love. Wide receiver grew alongside it, seven total, building steadily from round four on with Garrett Wilson, Tetairoa McMillan, Matthew Golden and Xavier Worthy. It's a shift from 2025, when Mahomes himself was her actual round-one pick rather than a QB4 luxury add.",
   9: "Ronjan built this draft around one idea: own the backfield. Keeper <b>Jahmyr Gibbs</b> at the round-one cost, then Saquon Barkley at pick 21, both true bell-cow volume backs, formed the spine before he touched anything else, a direct reversal from 2025, when his first running back didn't arrive until round six. He paired the duo with two real receivers right behind it, A.J. Brown in round three and Ladd McConkey in round four. Then came a middle-round quarterback collection instead of a single commitment: keeper Trevor Lawrence at round five, then Sam Darnold, Cam Ward and Aaron Rodgers across rounds seven through eleven, four total. What followed, more running backs (Tony Pollard, Jordan Mason) and speculative wide receivers (Tre Tucker, Jalen Nailor, both landing well past ADP), was pure bench-building once the roster's real identity was set. The team picked up a sequel in the name to match.",
   4: "Ben doubled up early at running back and quarterback, and all but abandoned tight end. He grabbed one true WR1 early, <b>Puka Nacua</b> at 1.05, so he wouldn't miss on talent. Then came quarterback: two of his next three picks, Justin Herbert and Baker Mayfield, on the way to four total, tied for the most in the league. Running back became a volume approach instead of a star hunt, six total led by keeper Kenneth Walker III, while tight end got exactly one pick in 19 rounds, keeper Colston Loveland and nothing else. His boldest swing elsewhere was MarShawn Lloyd in round six, 57 picks ahead of ADP, <b>the single biggest reach of the entire draft</b>.",
   8: "Joe made one real quarterback decision, early, and never revisited it. <b>Jalen Hurts</b> at pick six, part of a three-quarterback run at picks six through eight, is one of just two quarterbacks on his entire roster, tied for the fewest in the league. Everything else went to the backfield and receiver room. Derrick Henry and Breece Hall went back to back in rounds two and three, then his renamed team's namesake, Chris Olave, joined keeper Jaxon Smith-Njigba and DJ Moore to build a seven-receiver group. All three of his keepers (Smith-Njigba, Olave, Javonte Williams) graded as value by the model, and he added late reaches on Gunnar Helm and Malik Davis. It's a full reversal from 2025, when Justin Jefferson was his round-one receiver and quarterback waited until round three.",
   2: "Mariss is the only team in the league carrying three tight ends, spreading bets at a position almost everyone else punts to one dart or none: Isaiah Likely in round six, Jake Ferguson in round nine, Kenyon Sadiq in round fifteen. Up top he flipped his approach entirely. Caleb Williams, the third quarterback in that round-one run, was his opening pick, taken 15 slots ahead of his ADP; in 2025 his round-one pick was a wide receiver (Malik Nabers) and his first quarterback didn't arrive until round four. Running back and receiver both landed at close to league-average volume around those two bets. He kept Cam Skattebo and Wan'Dale Robinson, both solid value.",
   3: "Pete solved quarterback once, cheaply, and moved on for good. Keeper <b>Josh Allen</b> at a fair round-one cost is his only quarterback in 19 rounds, the sole such roster in the league; he'd carried a backup, Daniel Jones in round 12, as recently as last year. Every pick that might have gone to a QB2 went to wide receiver instead, eight total, tied for the most in the league, starting with Drake London in round two. Running back became the clear afterthought, four total, tied for the fewest, though he still found value there late: Keaton Mitchell fell 66 picks past ADP in round 17.",
-  1: "Imran leaned on the same two positions as several other teams this year, running back and quarterback, but stocked them differently. Six backs, led by <b>De'Von Achane</b> and Travis Etienne Jr. back to back in rounds two and three, formed one half of the roster. Four quarterbacks, tied for the most in the league, formed the other, but two of those four are rookie lottery tickets rather than proven arms: Fernando Mendoza in round eight and Carson Beck in round twelve, taken 50 and 66 picks ahead of their ADP. Wide receiver got one real investment, Amon-Ra St. Brown at pick nine, and not much after. His three keepers, Daniel Jones, Kyle Pitts Sr. and Luther Burden III, <b>the second-best keeper value in the league</b>, came cheap. It's a mirror image of 2025, when he opened with Lamar Jackson at quarterback and didn't touch running back until round four.",
-  5: "Cara kept doing what already worked: running back and quarterback, the same two positions her title-winning roster leaned on last year, six and four total respectively, both above the league average. Her keepers set that shape, <b>Jonathan Taylor</b> at a round-2 cost and Drake Maye at round-3. Her live picks doubled down rather than diversified: Bucky Irving in round five for a real RB2, and Matthew Stafford kept for a round-10 cost as quarterback depth, <b>the third-best keeper value in the league</b>. Wide receiver stayed a single true investment, CeeDee Lamb at pick ten, the round-one slot Bijan Robinson held in 2025. Her round-16 pick, Chris Rodriguez Jr., fell 62 picks past his ADP.",
+  1: "Imran leaned on the same two positions as several other teams this year, running back and quarterback, but stocked them differently. Six backs, led by <b>De'Von Achane</b> and Travis Etienne Jr. back to back in rounds two and three, formed one half of the roster. Four quarterbacks, tied for the most in the league, formed the other, but two of those four are rookie lottery tickets rather than proven arms: Fernando Mendoza in round eight and Carson Beck in round twelve, taken 50 and 66 picks ahead of their ADP. Wide receiver got one real investment, Amon-Ra St. Brown at pick nine, and not much after. It's a mirror image of 2025, when he opened with Lamar Jackson at quarterback and didn't touch running back until round four.",
+  5: "Cara kept doing what already worked: running back and quarterback, the same two positions her title-winning roster leaned on last year, six and four total respectively, both above the league average. Her keepers set that shape, <b>Jonathan Taylor</b> at a round-2 cost and Drake Maye at round-3. Her live picks doubled down rather than diversified: Bucky Irving in round five for a real RB2, and Matthew Stafford kept for a round-10 cost as quarterback depth. Wide receiver stayed a single true investment, CeeDee Lamb at pick ten, the round-one slot Bijan Robinson held in 2025. Her round-16 pick, Chris Rodriguez Jr., fell 62 picks past his ADP.",
   12: "Melinda's roster starts and ends with wide receiver. Keeper <b>Ja'Marr Chase</b>, the second-priciest keeper in the league behind only Bo Nix, anchored a seven-receiver room that also includes Rome Odunze in round five and Jameson Williams in round six. That investment came directly at quarterback's expense: just two all draft, Joe Burrow and Brock Purdy, tied for the fewest in the league. Running back stayed a single core piece; keeper James Cook III moved up to a round-3 cost from his original round-4 slot. Her round-17 running back, Jonah Coleman, fell 67 picks past ADP, the biggest fall of the night.",
-  7: "Mike built the same shape as Pete Gallagher this year: solve quarterback cheaply through a keeper, then spend everywhere else on wide receiver. His two keepers, <b>Jayden Daniels</b> at a fair round-one cost and Jaxson Dart for round twelve, <b>the single biggest bargain of any keeper in Just Stream It</b>, freed up the rest of his draft. Eight receivers followed, tied for the most in the league, starting with Justin Jefferson in round two. Running back was the clear afterthought, four total, tied for the fewest. Tight end came three rounds earlier than last year, Brock Bowers in round four versus Mark Andrews in round seven, and he added Shedeur Sanders as a round-16 quarterback flier behind his two keepers.",
+  7: "Mike built the same shape as Pete Gallagher this year: solve quarterback cheaply through a keeper, then spend everywhere else on wide receiver. His two keepers, <b>Jayden Daniels</b> at a fair round-one cost and Jaxson Dart for round twelve, freed up the rest of his draft. Eight receivers followed, tied for the most in the league, starting with Justin Jefferson in round two. Running back was the clear afterthought, four total, tied for the fewest. Tight end came three rounds earlier than last year, Brock Bowers in round four versus Mark Andrews in round seven, and he added Shedeur Sanders as a round-16 quarterback flier behind his two keepers.",
+};
+
+// Grading layer for "The results": each team's own best-value keeper (by
+// vig, among their kept players), best-value live pick (biggest fall past
+// ADP, restricted to players ranked in the top 100 by ADP so this doesn't
+// just default to a round-19 dart every time), and an overall value grade
+// (average ADP delta across each team's own top-100-ADP live picks, ranked
+// 1-12 against the rest of the league). Computed from
+// docs/data/keeper_guide_2026.json and docs/data/adp_unkept_2026.json.
+const RESULTS = {
+  10: { keeper: null, pick: 'Mike Evans (WR), pick 96, fell 29 picks past an ADP of 67.', value: "Averaged 12 picks better than ADP on his notable picks, right around the league median." },
+  11: { keeper: 'Tyler Shough (QB), a round-13 cost, +72 vig, the third-best keeper value in the league.', pick: 'Jakobi Meyers (WR), pick 119, fell 44 picks past an ADP of 75.', value: "Averaged 18 picks better than ADP, the 5th-best value draft in the league." },
+  6: { keeper: 'Tetairoa McMillan (WR), a round-7 cost, +16 vig.', pick: 'Bryce Young (QB), pick 123, fell 32 picks past an ADP of 91.', value: "Averaged 14 picks better than ADP, a bit ahead of the league median." },
+  9: { keeper: 'Trevor Lawrence (QB), a round-5 cost, +21 vig.', pick: 'Tony Pollard (RB), pick 93, fell 22 picks past an ADP of 71.', value: "Averaged 10 picks better than ADP, right around the league median." },
+  4: { keeper: 'Colston Loveland (TE), a round-10 cost, +37 vig.', pick: 'Jacoby Brissett (QB), pick 125, fell 32 picks past an ADP of 93.', value: "Averaged 5 picks better than ADP, drafted close to the board all night." },
+  8: { keeper: 'Javonte Williams (RB), a round-11 cost, +66 vig, tied for the 4th-best keeper value in the league.', pick: 'Kenny Gainwell (RB), pick 102, fell 30 picks past an ADP of 72.', value: "Averaged 9 picks better than ADP, close to market value overall." },
+  2: { keeper: 'Cam Skattebo (RB), a round-10 cost, +40 vig.', pick: 'Zay Flowers (WR), pick 55, fell 23 picks past an ADP of 32.', value: "Averaged 2 picks worse than ADP, the only team that didn't lean toward value overall." },
+  3: { keeper: 'Trey McBride (TE), a round-3 cost, +8 vig.', pick: "De'Zhaun Stribling (WR), pick 128, fell 45 picks past an ADP of 83.", value: "Averaged 26 picks better than ADP, the best value draft in the league by this measure." },
+  1: { keeper: 'Luther Burden III (WR), a round-14 cost, +77 vig, the second-best keeper value in the league.', pick: 'Jonathon Brooks (RB), pick 81, fell 17 picks past an ADP of 64.', value: "Averaged 7 picks better than ADP, roughly at market value." },
+  5: { keeper: 'Matthew Stafford (QB), a round-10 cost, +66 vig, tied for the 4th-best keeper value in the league.', pick: 'Stefon Diggs (WR), pick 130, fell 34 picks past an ADP of 96.', value: "Averaged 21 picks better than ADP, the second-best value draft in the league." },
+  12: { keeper: 'James Cook III (RB), a round-3 cost, +10 vig.', pick: 'Jacory Croskey-Merritt (RB), pick 134, fell 34 picks past an ADP of 100.', value: "Averaged 19 picks better than ADP, the third-best value draft in the league." },
+  7: { keeper: 'Jaxson Dart (QB), a round-12 cost, +114 vig, the best keeper value in the entire league.', pick: 'Brian Thomas Jr. (WR), pick 108, fell 39 picks past an ADP of 69.', value: "Averaged 18 picks better than ADP, the 4th-best value draft in the league." },
 };
 
 const ROUND1 = [
@@ -205,19 +226,21 @@ const VALUES = [
 const KEEPERS = [
   { team: 7,  player: 'Jaxson Dart', pos: 'QB', round: 12, vig: 114 },
   { team: 1,  player: 'Luther Burden III', pos: 'WR', round: 14, vig: 77 },
+  { team: 11, player: 'Tyler Shough', pos: 'QB', round: 13, vig: 72 },
   { team: 5,  player: 'Matthew Stafford', pos: 'QB', round: 10, vig: 66 },
-  { team: 8,  player: 'Javonte Williams', pos: 'RB', round: 11, vig: 63 },
+  { team: 8,  player: 'Javonte Williams', pos: 'RB', round: 11, vig: 66 },
   { team: 1,  player: 'Kyle Pitts Sr.', pos: 'TE', round: 13, vig: 53 },
   { team: 8,  player: 'Chris Olave', pos: 'WR', round: 8, vig: 46 },
-  { team: 2,  player: 'Cam Skattebo', pos: 'RB', round: 10, vig: 39 },
+  { team: 2,  player: 'Cam Skattebo', pos: 'RB', round: 10, vig: 40 },
   { team: 4,  player: 'Colston Loveland', pos: 'TE', round: 10, vig: 37 },
   { team: 8,  player: 'Jaxon Smith-Njigba', pos: 'WR', round: 4, vig: 35 },
+  { team: 11, player: 'Quinshon Judkins', pos: 'RB', round: 9, vig: 33 },
   { team: 2,  player: "Wan'Dale Robinson", pos: 'WR', round: 14, vig: 33 },
-  { team: 11, player: 'Quinshon Judkins', pos: 'RB', round: 9, vig: 32 },
   { team: 1,  player: 'Daniel Jones', pos: 'QB', round: 11, vig: 30 },
+  { team: 4,  player: 'Emeka Egbuka', pos: 'WR', round: 8, vig: 26 },
   { team: 5,  player: 'Drake Maye', pos: 'QB', round: 3, vig: 21 },
   { team: 9,  player: 'Trevor Lawrence', pos: 'QB', round: 5, vig: 21 },
-  { team: 6,  player: 'Tetairoa McMillan', pos: 'WR', round: 7, vig: 17 },
+  { team: 6,  player: 'Tetairoa McMillan', pos: 'WR', round: 7, vig: 16 },
   { team: 4,  player: 'Kenneth Walker III', pos: 'RB', round: 5, vig: 10 },
   { team: 12, player: 'James Cook III', pos: 'RB', round: 3, vig: 10 },
   { team: 3,  player: 'Trey McBride', pos: 'TE', round: 3, vig: 8 },
@@ -267,12 +290,18 @@ function renderTeamTiles() {
       </div>
     ` : '';
     const renameHtml = t.oldName ? `<div class="rebrand-note">Renamed from ${t.oldName}</div>` : '';
+    const r = RESULTS[t.id];
     return `
       <div class="tile">
         ${chip(t.id)}
         ${renameHtml}
         ${logoSwapHtml}
+        <p class="tile-label" style="margin-top:14px;">Their plan</p>
         <p class="tile-detail-lg">${RECAP_TEXT[t.id]}</p>
+        <p class="tile-label">The results</p>
+        <div class="results-row"><b>Best keeper:</b> ${r.keeper || "None - the only team that kept nobody this year."}</div>
+        <div class="results-row"><b>Best pick:</b> ${r.pick}</div>
+        <div class="results-row"><b>Overall value:</b> ${r.value}</div>
       </div>
     `;
   }).join('');
