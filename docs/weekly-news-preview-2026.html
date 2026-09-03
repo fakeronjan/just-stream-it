@@ -223,7 +223,15 @@
     font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase;
     letter-spacing: 0.04em; color: var(--ink-dim); text-align: center; margin-bottom: 6px;
   }
-  .matchup-h2h { font-size: 0.85rem; text-align: center; }
+  .matchup-h2h { max-width: 260px; margin: 0 auto; }
+  .matchup-h2h-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 3px 0; border-bottom: 1px solid rgba(28,26,22,0.12);
+  }
+  .matchup-h2h-row:last-child { border-bottom: none; }
+  .matchup-h2h-week { font-family: "Special Elite", monospace; font-size: 0.65rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
+  .matchup-h2h-score { font-size: 0.88rem; font-variant-numeric: tabular-nums; color: var(--ink-dim); }
+  .matchup-h2h-score .win { color: var(--ink); font-weight: 700; }
 
   footer.masthead-footer {
     margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
@@ -401,12 +409,12 @@ const POWER = {
 // the complete series, not a sample. No playoff meetings among any of
 // these 6 pairs.
 const MATCHUPS = [
-  { a: 8, b: 6,  aWins: 2, bWins: 0, text: "Joe swept Lisette in 2025, winning by 45 in week one (153.52-108.26) and by 41 in the week 12 rematch (163.36-122.62)." },
-  { a: 5, b: 12, aWins: 1, bWins: 1, text: "Cara and Melinda split their 2025 meetings, Melinda taking the opener 134.0-122.28, Cara answering in the rematch 132.08-104.72." },
-  { a: 1, b: 2,  aWins: 1, bWins: 1, text: "Imran and Mariss are 1-1 as well, though Mariss's week 12 win was the more lopsided one, 171.34-103.66." },
-  { a: 3, b: 10, aWins: 2, bWins: 0, text: "Pete swept Karl in 2025, but the rematch was tight, a 119.26-116.5 final that came down to the last lineup." },
-  { a: 4, b: 7,  aWins: 2, bWins: 0, text: "Ben has beaten Mike twice running, capped by a 137.04-67.26 blowout in their week 12 meeting." },
-  { a: 11, b: 9, aWins: 1, bWins: 1, text: "Kris and Ronjan split their 2025 series, and Ronjan's week 12 win, 189.4-120.78, was the biggest of the pair's two games." },
+  { a: 8, b: 6,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 153.52, bScore: 108.26 }, { week: 12, aScore: 163.36, bScore: 122.62 }] },
+  { a: 5, b: 12, aWins: 1, bWins: 1, games: [{ week: 1, aScore: 122.28, bScore: 134.00 }, { week: 12, aScore: 132.08, bScore: 104.72 }] },
+  { a: 1, b: 2,  aWins: 1, bWins: 1, games: [{ week: 1, aScore: 139.98, bScore: 111.92 }, { week: 12, aScore: 103.66, bScore: 171.34 }] },
+  { a: 3, b: 10, aWins: 2, bWins: 0, games: [{ week: 1, aScore: 159.04, bScore: 111.88 }, { week: 12, aScore: 119.26, bScore: 116.50 }] },
+  { a: 4, b: 7,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 100.44, bScore: 86.88 },  { week: 12, aScore: 137.04, bScore: 67.26 }] },
+  { a: 11, b: 9, aWins: 1, bWins: 1, games: [{ week: 1, aScore: 143.04, bScore: 115.90 }, { week: 12, aScore: 120.78, bScore: 189.40 }] },
 ];
 
 function crestImg(teamId) {
@@ -454,6 +462,16 @@ function renderMatchups() {
     const seriesLabel = m.aWins === m.bWins
       ? `2025 series: ${m.aWins}-${m.bWins}`
       : `2025 series: ${m.aWins > m.bWins ? ta.owner : tb.owner} leads ${Math.max(m.aWins, m.bWins)}-${Math.min(m.aWins, m.bWins)}`;
+    const gamesHtml = m.games.map(g => `
+      <div class="matchup-h2h-row">
+        <span class="matchup-h2h-week">Week ${g.week}</span>
+        <span class="matchup-h2h-score">
+          <span class="${g.aScore > g.bScore ? 'win' : ''}">${g.aScore.toFixed(2)}</span>
+          &ndash;
+          <span class="${g.bScore > g.aScore ? 'win' : ''}">${g.bScore.toFixed(2)}</span>
+        </span>
+      </div>
+    `).join('');
     return `
       <div class="matchup-card">
         <div class="matchup-teams">
@@ -466,7 +484,7 @@ function renderMatchups() {
           <div>${rosterHtml(m.b)}</div>
         </div>
         <p class="matchup-series">${seriesLabel} &middot; no playoff meetings</p>
-        <p class="matchup-h2h">${m.text}</p>
+        <div class="matchup-h2h">${gamesHtml}</div>
       </div>
     `;
   }).join('');
