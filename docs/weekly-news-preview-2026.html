@@ -187,32 +187,38 @@
   .rebrand-names .new-name { font-weight: 700; }
   .rebrand-blurb { font-size: 0.88rem; margin: 0; line-height: 1.5; }
 
-  /* ---------- roster cards ---------- */
-  .roster-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 16px;
-    margin-top: 4px;
-  }
-  .roster-card { border: 1px solid var(--ink); padding: 14px 16px; background: var(--paper-2); }
-  .roster-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-  .roster-head img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15); }
-  .roster-owner { font-weight: 700; font-size: 0.92rem; }
-  .roster-team { font-size: 0.72rem; color: var(--ink-dim); }
+  /* ---------- roster back/new groups (shared: reused inside each
+     matchup card below, one column per team) ---------- */
   .roster-group { margin-top: 8px; }
   .roster-group b { font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--red); display: block; margin-bottom: 3px; }
-  .roster-subline { font-size: 0.86rem; margin-top: 2px; }
+  .roster-subline { font-size: 0.84rem; margin-top: 2px; line-height: 1.4; }
   .roster-subline .roster-tag { font-weight: 700; color: var(--ink-dim); }
 
-  /* ---------- matchup cards ---------- */
-  .matchup-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
-  .matchup-card { border: 1px solid var(--ink); padding: 14px 16px; }
-  .matchup-teams { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 8px; }
-  .matchup-side { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 130px; }
-  .matchup-side img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15); }
-  .matchup-side .m-owner { font-weight: 700; font-size: 0.82rem; text-align: center; }
-  .matchup-side .m-team { font-size: 0.68rem; color: var(--ink-dim); text-align: center; }
-  .matchup-vs { font-family: "Special Elite", monospace; color: var(--meta); font-size: 0.8rem; }
+  /* ---------- matchup cards (team identity + power rank + back/new
+     roster, both teams side by side, then the shared 2025 history) ---------- */
+  .matchup-grid { display: flex; flex-direction: column; gap: 18px; margin-top: 4px; }
+  .matchup-card { border: 1px solid var(--ink); padding: 16px; }
+  .matchup-teams { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 14px; }
+  .matchup-side { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; }
+  .matchup-side img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15); }
+  .matchup-side .m-owner { font-weight: 700; font-size: 0.88rem; text-align: center; }
+  .matchup-side .m-team { font-size: 0.7rem; color: var(--ink-dim); text-align: center; }
+  .matchup-side .m-power {
+    font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--red);
+    text-transform: uppercase; letter-spacing: 0.03em; text-align: center; margin-top: 2px;
+  }
+  .matchup-vs { font-family: "Special Elite", monospace; color: var(--meta); font-size: 0.8rem; flex: 0 0 auto; }
+
+  .matchup-rosters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(28,26,22,0.2);
+    border-bottom: 1px solid rgba(28,26,22,0.2);
+    margin-bottom: 10px;
+  }
+
   .matchup-series {
     font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase;
     letter-spacing: 0.04em; color: var(--ink-dim); text-align: center; margin-bottom: 6px;
@@ -310,12 +316,8 @@
 
     </div>
 
-    <div class="section-label">The 2026 Rosters</div>
-    <p class="section-sublabel">Who's back, and who's new, on all 12 teams</p>
-    <div class="roster-grid" id="roster-grid"></div>
-
     <div class="section-label">Week 1 Matchups</div>
-    <p class="section-sublabel">Who's playing who, and how the same two teams did last time</p>
+    <p class="section-sublabel">Both rosters, ESPN's preseason power rank, and how these two did last time</p>
     <div class="matchup-grid" id="matchup-grid"></div>
 
   </section>
@@ -373,6 +375,26 @@ const ROSTERS = {
   12: { kept: ["Ja'Marr Chase (WR)", 'James Cook III (RB)'], redrafted: ['Brock Purdy (QB)', 'Jameson Williams (WR)'], neu: ['Joe Burrow (QB)', 'Rome Odunze (WR)', 'Jaylen Warren (RB)'] },
 };
 
+// ESPN's own preseason projection sim (mTeam view, currentSimulationResults)
+// - a Monte Carlo projection over the rest of the season, the same
+// underlying data that drives the "power rankings" widget on the league's
+// ESPN home screen. No games have been played yet, so this is entirely
+// model-based (strength of roster + schedule), not results-based.
+const POWER = {
+  1: { rank: 7,  playoffPct: 50.6 },
+  2: { rank: 12, playoffPct: 35.2 },
+  3: { rank: 11, playoffPct: 36.4 },
+  4: { rank: 3,  playoffPct: 57.2 },
+  5: { rank: 2,  playoffPct: 62.2 },
+  6: { rank: 9,  playoffPct: 45.3 },
+  7: { rank: 8,  playoffPct: 49.6 },
+  8: { rank: 1,  playoffPct: 63.9 },
+  9: { rank: 6,  playoffPct: 51.2 },
+  10: { rank: 10, playoffPct: 42.8 },
+  11: { rank: 5,  playoffPct: 51.4 },
+  12: { rank: 4,  playoffPct: 54.1 },
+};
+
 // 2026 week 1 schedule (docs/data/2026/matchups.json) paired with each
 // team's full 2025 head-to-head history (docs/data/2025/matchups.json) -
 // every 2025 matchup ran exactly twice, week 1 and week 12, so this is
@@ -391,38 +413,38 @@ function crestImg(teamId) {
   return `<img src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
 }
 
-function renderRosters() {
-  const el = document.getElementById('roster-grid');
-  el.innerHTML = Object.keys(TEAMS).map(id => {
-    const t = TEAMS[id];
-    const r = ROSTERS[id];
-    const keptLine = r.kept.length
-      ? `<div class="roster-subline"><span class="roster-tag">Kept:</span> ${r.kept.join(', ')}</div>`
-      : `<div class="roster-subline"><span class="roster-tag">Kept:</span> none</div>`;
-    const redraftLine = r.redrafted.length
-      ? `<div class="roster-subline"><span class="roster-tag">Redrafted:</span> ${r.redrafted.join(', ')}</div>`
-      : '';
-    return `
-      <div class="roster-card">
-        <div class="roster-head">
-          ${crestImg(id)}
-          <div>
-            <div class="roster-owner">${t.owner}</div>
-            <div class="roster-team">${t.name}</div>
-          </div>
-        </div>
-        <div class="roster-group">
-          <b>Back</b>
-          ${keptLine}
-          ${redraftLine}
-        </div>
-        <div class="roster-group">
-          <b>New</b>
-          <div class="roster-subline">${r.neu.join(', ')}</div>
-        </div>
-      </div>
-    `;
-  }).join('');
+function rosterHtml(id) {
+  const r = ROSTERS[id];
+  const keptLine = r.kept.length
+    ? `<div class="roster-subline"><span class="roster-tag">Kept:</span> ${r.kept.join(', ')}</div>`
+    : `<div class="roster-subline"><span class="roster-tag">Kept:</span> none</div>`;
+  const redraftLine = r.redrafted.length
+    ? `<div class="roster-subline"><span class="roster-tag">Redrafted:</span> ${r.redrafted.join(', ')}</div>`
+    : '';
+  return `
+    <div class="roster-group">
+      <b>Back</b>
+      ${keptLine}
+      ${redraftLine}
+    </div>
+    <div class="roster-group">
+      <b>New</b>
+      <div class="roster-subline">${r.neu.join(', ')}</div>
+    </div>
+  `;
+}
+
+function matchupSideHtml(id) {
+  const t = TEAMS[id];
+  const p = POWER[id];
+  return `
+    <div class="matchup-side">
+      ${crestImg(id)}
+      <span class="m-owner">${t.owner}</span>
+      <span class="m-team">${t.name}</span>
+      <span class="m-power">ESPN Power Rank #${p.rank} &middot; ${p.playoffPct}% to make playoffs</span>
+    </div>
+  `;
 }
 
 function renderMatchups() {
@@ -435,17 +457,13 @@ function renderMatchups() {
     return `
       <div class="matchup-card">
         <div class="matchup-teams">
-          <div class="matchup-side">
-            ${crestImg(m.a)}
-            <span class="m-owner">${ta.owner}</span>
-            <span class="m-team">${ta.name}</span>
-          </div>
+          ${matchupSideHtml(m.a)}
           <span class="matchup-vs">vs</span>
-          <div class="matchup-side">
-            ${crestImg(m.b)}
-            <span class="m-owner">${tb.owner}</span>
-            <span class="m-team">${tb.name}</span>
-          </div>
+          ${matchupSideHtml(m.b)}
+        </div>
+        <div class="matchup-rosters">
+          <div>${rosterHtml(m.a)}</div>
+          <div>${rosterHtml(m.b)}</div>
         </div>
         <p class="matchup-series">${seriesLabel} &middot; no playoff meetings</p>
         <p class="matchup-h2h">${m.text}</p>
@@ -459,7 +477,6 @@ async function loadApp() {
   document.getElementById('app').style.display = '';
   const meta = await (await fetch('data/meta.json')).json();
   document.getElementById('resources-nav').innerHTML = renderNav('weekly-news-preview', meta.league_id);
-  renderRosters();
   renderMatchups();
 }
 
