@@ -66,11 +66,11 @@
           "overall_pick": 2,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -799,11 +799,11 @@
           "overall_pick": 23,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -933,11 +933,11 @@
           "overall_pick": 26,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -1741,11 +1741,11 @@
           "overall_pick": 47,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -1875,11 +1875,11 @@
           "overall_pick": 50,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2275,9 +2275,9 @@
               "adjusted_rank": 48
             },
             {
-              "name": "Josh Jacobs",
+              "name": "Rhamondre Stevenson",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "NE",
               "adjusted_rank": 49
             },
             {
@@ -2317,9 +2317,9 @@
               "adjusted_rank": 48
             },
             {
-              "name": "Josh Jacobs",
+              "name": "Rhamondre Stevenson",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "NE",
               "adjusted_rank": 49
             },
             {
@@ -2354,9 +2354,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Josh Jacobs",
+              "name": "Rhamondre Stevenson",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "NE",
               "adjusted_rank": 49
             },
             {
@@ -2372,9 +2372,9 @@
               "adjusted_rank": 51
             },
             {
-              "name": "Rhamondre Stevenson",
+              "name": "Jaylen Warren",
               "position": "RB",
-              "pro_team": "NE",
+              "pro_team": "PIT",
               "adjusted_rank": 52
             },
             {
@@ -2409,9 +2409,9 @@
               "adjusted_rank": 51
             },
             {
-              "name": "Rhamondre Stevenson",
+              "name": "Jaylen Warren",
               "position": "RB",
-              "pro_team": "NE",
+              "pro_team": "PIT",
               "adjusted_rank": 52
             },
             {
@@ -2446,9 +2446,9 @@
               "adjusted_rank": 51
             },
             {
-              "name": "Rhamondre Stevenson",
+              "name": "Jaylen Warren",
               "position": "RB",
-              "pro_team": "NE",
+              "pro_team": "PIT",
               "adjusted_rank": 52
             },
             {
@@ -2483,9 +2483,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Rhamondre Stevenson",
+              "name": "Jaylen Warren",
               "position": "RB",
-              "pro_team": "NE",
+              "pro_team": "PIT",
               "adjusted_rank": 52
             },
             {
@@ -2550,7 +2550,7 @@
               "adjusted_rank": 56
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2593,7 +2593,7 @@
               "adjusted_rank": 57
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2636,7 +2636,7 @@
               "adjusted_rank": 58
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2673,7 +2673,7 @@
               "adjusted_rank": 58
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2716,7 +2716,7 @@
               "adjusted_rank": 59
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2733,11 +2733,11 @@
           "overall_pick": 71,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2759,7 +2759,7 @@
               "adjusted_rank": 60
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2802,7 +2802,7 @@
               "adjusted_rank": 61
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
@@ -2844,15 +2844,15 @@
               "adjusted_rank": 61
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
             },
             {
-              "name": "Rico Dowdle",
+              "name": "Jonathon Brooks",
               "position": "RB",
-              "pro_team": "PIT",
+              "pro_team": "CAR",
               "adjusted_rank": 63
             },
             {
@@ -2867,11 +2867,11 @@
           "overall_pick": 74,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -2881,21 +2881,21 @@
               "adjusted_rank": 61
             },
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
             },
             {
-              "name": "Rico Dowdle",
-              "position": "RB",
-              "pro_team": "PIT",
-              "adjusted_rank": 63
-            },
-            {
               "name": "Jonathon Brooks",
               "position": "RB",
               "pro_team": "CAR",
+              "adjusted_rank": 63
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 64
             },
             {
@@ -2936,27 +2936,27 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jaylen Warren",
+              "name": "Rico Dowdle",
               "position": "RB",
               "pro_team": "PIT",
               "adjusted_rank": 62
             },
             {
-              "name": "Rico Dowdle",
-              "position": "RB",
-              "pro_team": "PIT",
-              "adjusted_rank": 63
-            },
-            {
               "name": "Jonathon Brooks",
               "position": "RB",
               "pro_team": "CAR",
-              "adjusted_rank": 64
+              "adjusted_rank": 63
             },
             {
               "name": "Travis Hunter",
               "position": "WR",
               "pro_team": "JAX",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
               "adjusted_rank": 65
             },
             {
@@ -2979,21 +2979,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Rico Dowdle",
-              "position": "RB",
-              "pro_team": "PIT",
-              "adjusted_rank": 63
-            },
-            {
               "name": "Jonathon Brooks",
               "position": "RB",
               "pro_team": "CAR",
-              "adjusted_rank": 64
+              "adjusted_rank": 63
             },
             {
               "name": "Travis Hunter",
               "position": "WR",
               "pro_team": "JAX",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
               "adjusted_rank": 65
             },
             {
@@ -3022,15 +3022,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jonathon Brooks",
-              "position": "RB",
-              "pro_team": "CAR",
-              "adjusted_rank": 64
-            },
-            {
               "name": "Travis Hunter",
               "position": "WR",
               "pro_team": "JAX",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
               "adjusted_rank": 65
             },
             {
@@ -3065,9 +3065,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Travis Hunter",
-              "position": "WR",
-              "pro_team": "JAX",
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
               "adjusted_rank": 65
             },
             {
@@ -3083,10 +3083,10 @@
               "adjusted_rank": 67
             },
             {
-              "name": "TreVeyon Henderson",
-              "position": "RB",
-              "pro_team": "NE",
-              "adjusted_rank": 70
+              "name": "Matthew Golden",
+              "position": "WR",
+              "pro_team": "GB",
+              "adjusted_rank": 68
             },
             {
               "name": "George Kittle",
@@ -3126,9 +3126,9 @@
               "adjusted_rank": 68
             },
             {
-              "name": "TreVeyon Henderson",
+              "name": "Tony Pollard",
               "position": "RB",
-              "pro_team": "NE",
+              "pro_team": "TEN",
               "adjusted_rank": 70
             },
             {
@@ -3169,9 +3169,9 @@
               "adjusted_rank": 69
             },
             {
-              "name": "TreVeyon Henderson",
+              "name": "Tony Pollard",
               "position": "RB",
-              "pro_team": "NE",
+              "pro_team": "TEN",
               "adjusted_rank": 70
             },
             {
@@ -3206,15 +3206,15 @@
               "adjusted_rank": 69
             },
             {
-              "name": "TreVeyon Henderson",
-              "position": "RB",
-              "pro_team": "NE",
-              "adjusted_rank": 70
-            },
-            {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "Kenny Gainwell",
+              "position": "RB",
+              "pro_team": "TB",
               "adjusted_rank": 71
             },
             {
@@ -3243,21 +3243,21 @@
               "adjusted_rank": 69
             },
             {
-              "name": "TreVeyon Henderson",
-              "position": "RB",
-              "pro_team": "NE",
-              "adjusted_rank": 70
-            },
-            {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 71
+              "adjusted_rank": 70
             },
             {
               "name": "Kenny Gainwell",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
               "adjusted_rank": 72
             },
             {
@@ -3280,21 +3280,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "TreVeyon Henderson",
-              "position": "RB",
-              "pro_team": "NE",
-              "adjusted_rank": 70
-            },
-            {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 71
+              "adjusted_rank": 70
             },
             {
               "name": "Kenny Gainwell",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
               "adjusted_rank": 72
             },
             {
@@ -3328,21 +3328,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tony Pollard",
-              "position": "RB",
-              "pro_team": "TEN",
-              "adjusted_rank": 71
-            },
-            {
               "name": "Kenny Gainwell",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
               "adjusted_rank": 72
             },
             {
-              "name": "MarShawn Lloyd",
+              "name": "J.K. Dobbins",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "DEN",
               "adjusted_rank": 73
             },
             {
@@ -3371,15 +3371,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kenny Gainwell",
+              "name": "Chuba Hubbard",
               "position": "RB",
-              "pro_team": "TB",
+              "pro_team": "CAR",
               "adjusted_rank": 72
             },
             {
-              "name": "MarShawn Lloyd",
+              "name": "J.K. Dobbins",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "DEN",
               "adjusted_rank": 73
             },
             {
@@ -3414,9 +3414,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "MarShawn Lloyd",
+              "name": "J.K. Dobbins",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "DEN",
               "adjusted_rank": 73
             },
             {
@@ -3700,11 +3700,11 @@
           "overall_pick": 95,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -3834,11 +3834,11 @@
           "overall_pick": 98,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": {
             "player_id": 4685702,
             "name": "Quinshon Judkins",
@@ -4271,9 +4271,9 @@
               "adjusted_rank": 94
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             }
           ]
@@ -4319,9 +4319,9 @@
               "adjusted_rank": 95
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             }
           ]
@@ -4362,9 +4362,9 @@
               "adjusted_rank": 96
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             }
           ]
@@ -4417,9 +4417,9 @@
               "adjusted_rank": 96
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             },
             {
@@ -4454,15 +4454,15 @@
               "adjusted_rank": 96
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "GB",
               "adjusted_rank": 98
             },
             {
@@ -4509,15 +4509,15 @@
               "adjusted_rank": 96
             },
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "GB",
               "adjusted_rank": 98
             },
             {
@@ -4564,15 +4564,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Chuba Hubbard",
+              "name": "Josh Jacobs",
               "position": "RB",
-              "pro_team": "CAR",
+              "pro_team": "GB",
               "adjusted_rank": 97
             },
             {
-              "name": "J.K. Dobbins",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "GB",
               "adjusted_rank": 98
             },
             {
@@ -4607,9 +4607,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "J.K. Dobbins",
+              "name": "MarShawn Lloyd",
               "position": "RB",
-              "pro_team": "DEN",
+              "pro_team": "GB",
               "adjusted_rank": 98
             },
             {
@@ -4642,11 +4642,11 @@
           "overall_pick": 119,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -4776,11 +4776,11 @@
           "overall_pick": 122,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -5609,11 +5609,11 @@
           "overall_pick": 143,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -5678,9 +5678,9 @@
               "adjusted_rank": 123
             },
             {
-              "name": "Brian Robinson Jr.",
+              "name": "Mike Washington Jr.",
               "position": "RB",
-              "pro_team": "ATL",
+              "pro_team": "LV",
               "adjusted_rank": 124
             },
             {
@@ -5720,15 +5720,15 @@
               "adjusted_rank": 123
             },
             {
-              "name": "Brian Robinson Jr.",
+              "name": "Mike Washington Jr.",
               "position": "RB",
-              "pro_team": "ATL",
+              "pro_team": "LV",
               "adjusted_rank": 124
             },
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 125
             },
             {
@@ -5743,11 +5743,11 @@
           "overall_pick": 146,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": {
             "player_id": 4360689,
             "name": "Tyler Shough",
@@ -5775,15 +5775,15 @@
               "adjusted_rank": 123
             },
             {
-              "name": "Brian Robinson Jr.",
+              "name": "Mike Washington Jr.",
               "position": "RB",
-              "pro_team": "ATL",
+              "pro_team": "LV",
               "adjusted_rank": 124
             },
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 125
             },
             {
@@ -5812,15 +5812,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Brian Robinson Jr.",
+              "name": "Mike Washington Jr.",
               "position": "RB",
-              "pro_team": "ATL",
+              "pro_team": "LV",
               "adjusted_rank": 124
             },
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 125
             },
             {
@@ -5855,9 +5855,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tyler Allgeier",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
-              "pro_team": "ARI",
+              "pro_team": "ATL",
               "adjusted_rank": 125
             },
             {
@@ -5916,9 +5916,9 @@
               "adjusted_rank": 128
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
@@ -5959,9 +5959,9 @@
               "adjusted_rank": 129
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
@@ -6002,9 +6002,9 @@
               "adjusted_rank": 130
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
@@ -6063,9 +6063,9 @@
               "adjusted_rank": 131
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
@@ -6106,9 +6106,9 @@
               "adjusted_rank": 132
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
@@ -6149,9 +6149,9 @@
               "adjusted_rank": 133
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
@@ -6191,15 +6191,15 @@
               "adjusted_rank": 133
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
-              "name": "Isiah Pacheco",
+              "name": "Keaton Mitchell",
               "position": "RB",
-              "pro_team": "DET",
+              "pro_team": "LAC",
               "adjusted_rank": 135
             },
             {
@@ -6228,15 +6228,15 @@
               "adjusted_rank": 133
             },
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
-              "name": "Isiah Pacheco",
+              "name": "Keaton Mitchell",
               "position": "RB",
-              "pro_team": "DET",
+              "pro_team": "LAC",
               "adjusted_rank": 135
             },
             {
@@ -6265,15 +6265,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Keaton Mitchell",
+              "name": "Tyler Allgeier",
               "position": "RB",
-              "pro_team": "LAC",
+              "pro_team": "ARI",
               "adjusted_rank": 134
             },
             {
-              "name": "Isiah Pacheco",
+              "name": "Keaton Mitchell",
               "position": "RB",
-              "pro_team": "DET",
+              "pro_team": "LAC",
               "adjusted_rank": 135
             },
             {
@@ -6326,9 +6326,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Isiah Pacheco",
+              "name": "Keaton Mitchell",
               "position": "RB",
-              "pro_team": "DET",
+              "pro_team": "LAC",
               "adjusted_rank": 135
             },
             {
@@ -6497,9 +6497,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             }
           ]
@@ -6540,9 +6540,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             }
           ]
@@ -6551,11 +6551,11 @@
           "overall_pick": 167,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -6583,9 +6583,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             }
           ]
@@ -6626,9 +6626,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             }
           ]
@@ -6685,11 +6685,11 @@
           "overall_pick": 170,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7012,9 +7012,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7055,9 +7055,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7098,9 +7098,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7141,9 +7141,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7189,9 +7189,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7232,9 +7232,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7275,9 +7275,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7318,9 +7318,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7361,9 +7361,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7404,9 +7404,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7447,9 +7447,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7490,9 +7490,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7533,9 +7533,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7576,9 +7576,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7593,11 +7593,11 @@
           "overall_pick": 191,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
@@ -7619,9 +7619,9 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
+              "name": "Braelon Allen",
               "position": "RB",
-              "pro_team": "LV",
+              "pro_team": "NYJ",
               "adjusted_rank": 167
             },
             {
@@ -7656,15 +7656,15 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
-              "position": "RB",
-              "pro_team": "LV",
-              "adjusted_rank": 167
-            },
-            {
               "name": "Braelon Allen",
               "position": "RB",
               "pro_team": "NYJ",
+              "adjusted_rank": 167
+            },
+            {
+              "name": "Tank Bigsby",
+              "position": "RB",
+              "pro_team": "PHI",
               "adjusted_rank": 168
             },
             {
@@ -7698,21 +7698,21 @@
               "adjusted_rank": 166
             },
             {
-              "name": "Mike Washington Jr.",
-              "position": "RB",
-              "pro_team": "LV",
-              "adjusted_rank": 167
-            },
-            {
               "name": "Braelon Allen",
               "position": "RB",
               "pro_team": "NYJ",
-              "adjusted_rank": 168
+              "adjusted_rank": 167
             },
             {
               "name": "Tank Bigsby",
               "position": "RB",
               "pro_team": "PHI",
+              "adjusted_rank": 168
+            },
+            {
+              "name": "Ray Davis",
+              "position": "RB",
+              "pro_team": "BUF",
               "adjusted_rank": 169
             },
             {
@@ -7727,29 +7727,29 @@
           "overall_pick": 194,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
-            {
-              "name": "Mike Washington Jr.",
-              "position": "RB",
-              "pro_team": "LV",
-              "adjusted_rank": 167
-            },
             {
               "name": "Braelon Allen",
               "position": "RB",
               "pro_team": "NYJ",
-              "adjusted_rank": 168
+              "adjusted_rank": 167
             },
             {
               "name": "Tank Bigsby",
               "position": "RB",
               "pro_team": "PHI",
+              "adjusted_rank": 168
+            },
+            {
+              "name": "Ray Davis",
+              "position": "RB",
+              "pro_team": "BUF",
               "adjusted_rank": 169
             },
             {
@@ -7778,21 +7778,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Braelon Allen",
-              "position": "RB",
-              "pro_team": "NYJ",
-              "adjusted_rank": 168
-            },
-            {
               "name": "Tank Bigsby",
               "position": "RB",
               "pro_team": "PHI",
-              "adjusted_rank": 169
+              "adjusted_rank": 168
             },
             {
               "name": "Ray Davis",
               "position": "RB",
               "pro_team": "BUF",
+              "adjusted_rank": 169
+            },
+            {
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "pro_team": "CLE",
               "adjusted_rank": 170
             },
             {
@@ -7821,15 +7821,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tank Bigsby",
-              "position": "RB",
-              "pro_team": "PHI",
-              "adjusted_rank": 169
-            },
-            {
               "name": "Ray Davis",
               "position": "RB",
               "pro_team": "BUF",
+              "adjusted_rank": 169
+            },
+            {
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "pro_team": "CLE",
               "adjusted_rank": 170
             },
             {
@@ -7839,9 +7839,9 @@
               "adjusted_rank": 171
             },
             {
-              "name": "Dylan Sampson",
+              "name": "Najee Harris",
               "position": "RB",
-              "pro_team": "CLE",
+              "pro_team": "NYG",
               "adjusted_rank": 172
             },
             {
@@ -7864,9 +7864,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Ray Davis",
+              "name": "Dylan Sampson",
               "position": "RB",
-              "pro_team": "BUF",
+              "pro_team": "CLE",
               "adjusted_rank": 170
             },
             {
@@ -7876,15 +7876,15 @@
               "adjusted_rank": 171
             },
             {
-              "name": "Dylan Sampson",
-              "position": "RB",
-              "pro_team": "CLE",
-              "adjusted_rank": 172
-            },
-            {
               "name": "Najee Harris",
               "position": "RB",
               "pro_team": "NYG",
+              "adjusted_rank": 172
+            },
+            {
+              "name": "Alvin Kamara",
+              "position": "RB",
+              "pro_team": "NO",
               "adjusted_rank": 173
             },
             {
@@ -7913,21 +7913,21 @@
               "adjusted_rank": 171
             },
             {
-              "name": "Dylan Sampson",
-              "position": "RB",
-              "pro_team": "CLE",
-              "adjusted_rank": 172
-            },
-            {
               "name": "Najee Harris",
               "position": "RB",
               "pro_team": "NYG",
-              "adjusted_rank": 173
+              "adjusted_rank": 172
             },
             {
               "name": "Alvin Kamara",
               "position": "RB",
               "pro_team": "NO",
+              "adjusted_rank": 173
+            },
+            {
+              "name": "Justice Hill",
+              "position": "RB",
+              "pro_team": "BAL",
               "adjusted_rank": 174
             },
             {
@@ -7950,21 +7950,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Dylan Sampson",
-              "position": "RB",
-              "pro_team": "CLE",
-              "adjusted_rank": 172
-            },
-            {
               "name": "Najee Harris",
               "position": "RB",
               "pro_team": "NYG",
-              "adjusted_rank": 173
+              "adjusted_rank": 172
             },
             {
               "name": "Alvin Kamara",
               "position": "RB",
               "pro_team": "NO",
+              "adjusted_rank": 173
+            },
+            {
+              "name": "Justice Hill",
+              "position": "RB",
+              "pro_team": "BAL",
               "adjusted_rank": 174
             },
             {
@@ -7993,21 +7993,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Najee Harris",
-              "position": "RB",
-              "pro_team": "NYG",
-              "adjusted_rank": 173
-            },
-            {
               "name": "Alvin Kamara",
               "position": "RB",
               "pro_team": "NO",
-              "adjusted_rank": 174
+              "adjusted_rank": 173
             },
             {
               "name": "Justice Hill",
               "position": "RB",
               "pro_team": "BAL",
+              "adjusted_rank": 174
+            },
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "pro_team": "SF",
               "adjusted_rank": 175
             },
             {
@@ -8036,15 +8036,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Alvin Kamara",
-              "position": "RB",
-              "pro_team": "NO",
-              "adjusted_rank": 174
-            },
-            {
               "name": "Justice Hill",
               "position": "RB",
               "pro_team": "BAL",
+              "adjusted_rank": 174
+            },
+            {
+              "name": "Kaelon Black",
+              "position": "RB",
+              "pro_team": "SF",
               "adjusted_rank": 175
             },
             {
@@ -8079,9 +8079,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Justice Hill",
+              "name": "Kaelon Black",
               "position": "RB",
-              "pro_team": "BAL",
+              "pro_team": "SF",
               "adjusted_rank": 175
             },
             {
@@ -8146,9 +8146,9 @@
               "adjusted_rank": 179
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8189,9 +8189,9 @@
               "adjusted_rank": 180
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8237,9 +8237,9 @@
               "adjusted_rank": 181
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8280,9 +8280,9 @@
               "adjusted_rank": 183
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8323,9 +8323,9 @@
               "adjusted_rank": 183
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8366,9 +8366,9 @@
               "adjusted_rank": 184
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8403,15 +8403,15 @@
               "adjusted_rank": 184
             },
             {
-              "name": "Tank Dell",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "HOU",
+              "pro_team": "NYG",
               "adjusted_rank": 185
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             }
           ]
@@ -8440,15 +8440,15 @@
               "adjusted_rank": 184
             },
             {
-              "name": "Tank Dell",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "HOU",
+              "pro_team": "NYG",
               "adjusted_rank": 185
             },
             {
-              "name": "Kaelon Black",
+              "name": "Kimani Vidal",
               "position": "RB",
-              "pro_team": "SF",
+              "pro_team": "LAC",
               "adjusted_rank": 186
             },
             {
@@ -8477,21 +8477,21 @@
               "adjusted_rank": 184
             },
             {
-              "name": "Tank Dell",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "HOU",
+              "pro_team": "NYG",
               "adjusted_rank": 185
-            },
-            {
-              "name": "Kaelon Black",
-              "position": "RB",
-              "pro_team": "SF",
-              "adjusted_rank": 186
             },
             {
               "name": "Kimani Vidal",
               "position": "RB",
               "pro_team": "LAC",
+              "adjusted_rank": 186
+            },
+            {
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
               "adjusted_rank": 187
             },
             {
@@ -8514,25 +8514,25 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tank Dell",
+              "name": "Malachi Fields",
               "position": "WR",
-              "pro_team": "HOU",
+              "pro_team": "NYG",
               "adjusted_rank": 185
-            },
-            {
-              "name": "Kaelon Black",
-              "position": "RB",
-              "pro_team": "SF",
-              "adjusted_rank": 186
             },
             {
               "name": "Kimani Vidal",
               "position": "RB",
               "pro_team": "LAC",
-              "adjusted_rank": 187
+              "adjusted_rank": 186
             },
             {
               "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 188
@@ -8557,19 +8557,19 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kaelon Black",
-              "position": "RB",
-              "pro_team": "SF",
-              "adjusted_rank": 186
-            },
-            {
               "name": "Kimani Vidal",
               "position": "RB",
               "pro_team": "LAC",
-              "adjusted_rank": 187
+              "adjusted_rank": 186
             },
             {
               "name": "Jaylen Wright",
+              "position": "RB",
+              "pro_team": "MIA",
+              "adjusted_rank": 187
+            },
+            {
+              "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 188
@@ -8581,9 +8581,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8600,21 +8600,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kimani Vidal",
-              "position": "RB",
-              "pro_team": "LAC",
-              "adjusted_rank": 187
-            },
-            {
               "name": "Jaylen Wright",
               "position": "RB",
               "pro_team": "MIA",
-              "adjusted_rank": 188
+              "adjusted_rank": 187
             },
             {
               "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
+              "adjusted_rank": 188
+            },
+            {
+              "name": "Samaje Perine",
+              "position": "RB",
+              "pro_team": "CIN",
               "adjusted_rank": 189
             },
             {
@@ -8624,9 +8624,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8635,29 +8635,29 @@
           "overall_pick": 215,
           "slot_in_round": 11,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jaylen Wright",
+              "name": "Ollie Gordon II",
               "position": "RB",
               "pro_team": "MIA",
               "adjusted_rank": 188
             },
             {
-              "name": "Ollie Gordon II",
-              "position": "RB",
-              "pro_team": "MIA",
-              "adjusted_rank": 189
-            },
-            {
               "name": "Samaje Perine",
               "position": "RB",
               "pro_team": "CIN",
+              "adjusted_rank": 189
+            },
+            {
+              "name": "Ty Johnson",
+              "position": "RB",
+              "pro_team": "BUF",
               "adjusted_rank": 190
             },
             {
@@ -8667,9 +8667,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8686,21 +8686,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Ollie Gordon II",
-              "position": "RB",
-              "pro_team": "MIA",
-              "adjusted_rank": 189
-            },
-            {
               "name": "Samaje Perine",
               "position": "RB",
               "pro_team": "CIN",
-              "adjusted_rank": 190
+              "adjusted_rank": 189
             },
             {
               "name": "Ty Johnson",
               "position": "RB",
               "pro_team": "BUF",
+              "adjusted_rank": 190
+            },
+            {
+              "name": "Chris Brooks",
+              "position": "RB",
+              "pro_team": "GB",
               "adjusted_rank": 191
             },
             {
@@ -8710,9 +8710,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8734,21 +8734,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Samaje Perine",
-              "position": "RB",
-              "pro_team": "CIN",
-              "adjusted_rank": 190
-            },
-            {
               "name": "Ty Johnson",
               "position": "RB",
               "pro_team": "BUF",
+              "adjusted_rank": 190
+            },
+            {
+              "name": "Chris Brooks",
+              "position": "RB",
+              "pro_team": "GB",
               "adjusted_rank": 191
             },
             {
-              "name": "Malik Davis",
+              "name": "Brashard Smith",
               "position": "RB",
-              "pro_team": "DAL",
+              "pro_team": "KC",
               "adjusted_rank": 192
             },
             {
@@ -8758,9 +8758,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8769,29 +8769,29 @@
           "overall_pick": 218,
           "slot_in_round": 2,
           "team_id": 11,
-          "team_name": "Keep 'em and weep",
+          "team_name": "Rice Rice Baby",
           "owners": [
             "Kris Wikstrom"
           ],
-          "logo": "logos/2026/11.png",
+          "logo": "logos/2026/11.jpg",
           "keeper": null,
           "adp_context": [
             {
-              "name": "Ty Johnson",
+              "name": "Chris Brooks",
               "position": "RB",
-              "pro_team": "BUF",
+              "pro_team": "GB",
               "adjusted_rank": 191
-            },
-            {
-              "name": "Malik Davis",
-              "position": "RB",
-              "pro_team": "DAL",
-              "adjusted_rank": 192
             },
             {
               "name": "Brashard Smith",
               "position": "RB",
               "pro_team": "KC",
+              "adjusted_rank": 192
+            },
+            {
+              "name": "Malik Davis",
+              "position": "RB",
+              "pro_team": "DAL",
               "adjusted_rank": 193
             },
             {
@@ -8801,9 +8801,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8820,21 +8820,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Malik Davis",
-              "position": "RB",
-              "pro_team": "DAL",
-              "adjusted_rank": 192
-            },
-            {
               "name": "Brashard Smith",
               "position": "RB",
               "pro_team": "KC",
+              "adjusted_rank": 192
+            },
+            {
+              "name": "Malik Davis",
+              "position": "RB",
+              "pro_team": "DAL",
               "adjusted_rank": 193
             },
             {
-              "name": "Chris Brooks",
+              "name": "Emmett Johnson",
               "position": "RB",
-              "pro_team": "GB",
+              "pro_team": "KC",
               "adjusted_rank": 194
             },
             {
@@ -8844,9 +8844,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8863,21 +8863,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Brashard Smith",
+              "name": "Malik Davis",
               "position": "RB",
-              "pro_team": "KC",
+              "pro_team": "DAL",
               "adjusted_rank": 193
-            },
-            {
-              "name": "Chris Brooks",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 194
             },
             {
               "name": "Emmett Johnson",
               "position": "RB",
               "pro_team": "KC",
+              "adjusted_rank": 194
+            },
+            {
+              "name": "Isiah Pacheco",
+              "position": "RB",
+              "pro_team": "DET",
               "adjusted_rank": 195
             },
             {
@@ -8887,9 +8887,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8906,15 +8906,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Chris Brooks",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 194
-            },
-            {
               "name": "Emmett Johnson",
               "position": "RB",
               "pro_team": "KC",
+              "adjusted_rank": 194
+            },
+            {
+              "name": "Isiah Pacheco",
+              "position": "RB",
+              "pro_team": "DET",
               "adjusted_rank": 195
             },
             {
@@ -8930,9 +8930,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8949,9 +8949,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Emmett Johnson",
+              "name": "Isiah Pacheco",
               "position": "RB",
-              "pro_team": "KC",
+              "pro_team": "DET",
               "adjusted_rank": 195
             },
             {
@@ -8961,9 +8961,9 @@
               "adjusted_rank": 196
             },
             {
-              "name": "LeQuint Allen Jr.",
+              "name": "Jacob Saylors",
               "position": "RB",
-              "pro_team": "JAX",
+              "pro_team": "DET",
               "adjusted_rank": 197
             },
             {
@@ -8973,9 +8973,9 @@
               "adjusted_rank": 198
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -8998,9 +8998,9 @@
               "adjusted_rank": 196
             },
             {
-              "name": "LeQuint Allen Jr.",
+              "name": "Jacob Saylors",
               "position": "RB",
-              "pro_team": "JAX",
+              "pro_team": "DET",
               "adjusted_rank": 197
             },
             {
@@ -9016,9 +9016,9 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Malachi Fields",
+              "name": "Germie Bernard",
               "position": "WR",
-              "pro_team": "NYG",
+              "pro_team": "PIT",
               "adjusted_rank": 200
             }
           ]
@@ -9035,9 +9035,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "LeQuint Allen Jr.",
+              "name": "Jacob Saylors",
               "position": "RB",
-              "pro_team": "JAX",
+              "pro_team": "DET",
               "adjusted_rank": 197
             },
             {
@@ -9053,15 +9053,15 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Malachi Fields",
-              "position": "WR",
-              "pro_team": "NYG",
-              "adjusted_rank": 200
-            },
-            {
               "name": "Germie Bernard",
               "position": "WR",
               "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
               "adjusted_rank": 201
             }
           ]
@@ -9090,15 +9090,15 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Malachi Fields",
-              "position": "WR",
-              "pro_team": "NYG",
-              "adjusted_rank": 200
-            },
-            {
               "name": "Germie Bernard",
               "position": "WR",
               "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
               "adjusted_rank": 201
             },
             {
@@ -9127,15 +9127,15 @@
               "adjusted_rank": 199
             },
             {
-              "name": "Malachi Fields",
-              "position": "WR",
-              "pro_team": "NYG",
-              "adjusted_rank": 200
-            },
-            {
               "name": "Germie Bernard",
               "position": "WR",
               "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
               "adjusted_rank": 201
             },
             {
@@ -9164,15 +9164,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Malachi Fields",
-              "position": "WR",
-              "pro_team": "NYG",
-              "adjusted_rank": 200
-            },
-            {
               "name": "Germie Bernard",
               "position": "WR",
               "pro_team": "PIT",
+              "adjusted_rank": 200
+            },
+            {
+              "name": "Tre' Harris",
+              "position": "WR",
+              "pro_team": "LAC",
               "adjusted_rank": 201
             },
             {
@@ -9207,9 +9207,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Germie Bernard",
+              "name": "Tre' Harris",
               "position": "WR",
-              "pro_team": "PIT",
+              "pro_team": "LAC",
               "adjusted_rank": 201
             },
             {
@@ -9225,9 +9225,9 @@
               "adjusted_rank": 203
             },
             {
-              "name": "Tre' Harris",
+              "name": "Ryan Flournoy",
               "position": "WR",
-              "pro_team": "LAC",
+              "pro_team": "DAL",
               "adjusted_rank": 204
             },
             {
@@ -9274,11 +9274,11 @@
     },
     {
       "team_id": 11,
-      "team_name": "Keep 'em and weep",
+      "team_name": "Rice Rice Baby",
       "owners": [
         "Kris Wikstrom"
       ],
-      "logo": "logos/2026/11.png",
+      "logo": "logos/2026/11.jpg",
       "locked_keepers_2026": [
         {
           "player_id": 4685702,

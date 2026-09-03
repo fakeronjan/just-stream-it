@@ -161,26 +161,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4870847,
-      "name": "Ja'Kobi Lane",
-      "position": "WR",
-      "pro_team": "BAL",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
-      "player_id": -16012,
-      "name": "Chiefs D/ST",
-      "position": "D/ST",
-      "pro_team": "KC",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4571557,
       "name": "Spencer Shrader",
       "position": "K",
@@ -189,6 +169,26 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": 4723820,
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "pro_team": "NYJ",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16011,
+      "name": "Colts D/ST",
+      "position": "D/ST",
+      "pro_team": "IND",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "2": [
@@ -555,24 +555,24 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4689936,
-      "name": "Jake Bates",
-      "position": "K",
-      "pro_team": "DET",
+      "player_id": 4362887,
+      "name": "Justin Fields",
+      "position": "QB",
+      "pro_team": "KC",
       "lineup_slot": "BE",
-      "keeper_value": 9,
+      "keeper_value": 4,
       "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
+      "acquisition_type": "ADD"
     },
     {
-      "player_id": 17427,
-      "name": "Cairo Santos",
-      "position": "K",
-      "pro_team": "CHI",
+      "player_id": 4685522,
+      "name": "Ty Simpson",
+      "position": "QB",
+      "pro_team": "LAR",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
+      "acquisition_type": "ADD"
     }
   ],
   "4": [
@@ -765,6 +765,26 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": 4832955,
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "pro_team": "KC",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4429835,
+      "name": "George Holani",
+      "position": "RB",
+      "pro_team": "SEA",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "5": [
@@ -1725,6 +1745,16 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": 4586312,
+      "name": "Jaylin Noel",
+      "position": "WR",
+      "pro_team": "HOU",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "10": [
@@ -2273,16 +2303,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4702555,
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "pro_team": "DEN",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4360939,
       "name": "Rashod Bateman",
       "position": "WR",
@@ -2301,6 +2321,16 @@
       "keeper_value": 14,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": -16030,
+      "name": "Jaguars D/ST",
+      "position": "D/ST",
+      "pro_team": "JAX",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ]
 }
