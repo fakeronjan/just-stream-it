@@ -148,14 +148,6 @@
     margin: 0 0 18px;
   }
 
-  .crest { flex: 0 0 auto; display: flex; }
-  .crest img {
-    width: 26px; height: 26px; border-radius: 50%; object-fit: cover;
-    border: 1px solid var(--ink);
-    filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
-  }
-  .crest img + img { margin-left: -8px; }
-
   .section-label {
     font-family: "Rozha One", serif;
     font-size: 1.5rem;
@@ -172,45 +164,28 @@
     margin: 0 0 16px;
   }
 
-  /* ---------- features ---------- */
-  .feature {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 16px 0;
-    border-bottom: 1px solid var(--ink);
+  /* ---------- rebrand cards ---------- */
+  .rebrand-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 4px;
   }
-  .feature .crest img { width: 34px; height: 34px; }
-  .feature-label {
-    font-family: "Special Elite", monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin: 0 0 4px;
-  }
-  .feature-text {
-    font-family: "Vollkorn", serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-  }
-  .feature-text b { font-weight: 700; }
-
-  /* ---------- rebrand strip ---------- */
-  .rebrand-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
-  .rebrand-row { display: flex; align-items: center; gap: 12px; }
-  .rebrand-logos { display: flex; align-items: center; gap: 6px; flex: 0 0 auto; }
+  .rebrand-card { border: 1px solid var(--ink); background: var(--paper-2); padding: 16px; }
+  .rebrand-logos { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
   .rebrand-logos img {
-    width: 40px; height: 40px; border-radius: 50%; object-fit: cover;
-    border: 1px solid var(--ink);
-    filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
+    /* full color, deliberately breaking from the desaturated crest
+       treatment used everywhere else on this page - the rebrand is the
+       whole point of this section, so the new logos should pop */
+    width: 84px; height: 84px; border-radius: 50%; object-fit: cover;
+    border: 2px solid var(--ink);
   }
-  .rebrand-logos .arrow { color: var(--meta); font-size: 1rem; }
-  .rebrand-names { font-size: 0.88rem; }
+  .rebrand-logos .arrow { color: var(--meta); font-size: 1.3rem; }
+  .rebrand-owner { font-family: "Special Elite", monospace; font-size: 0.65rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .rebrand-names { font-size: 0.92rem; margin: 3px 0 8px; }
   .rebrand-names .old-name { color: var(--meta); text-decoration: line-through; }
   .rebrand-names .new-name { font-weight: 700; }
-  .rebrand-owner { font-family: "Special Elite", monospace; font-size: 0.65rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .rebrand-blurb { font-size: 0.88rem; margin: 0; line-height: 1.5; }
 
   /* ---------- roster cards ---------- */
   .roster-grid {
@@ -224,8 +199,10 @@
   .roster-head img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15); }
   .roster-owner { font-weight: 700; font-size: 0.92rem; }
   .roster-team { font-size: 0.72rem; color: var(--ink-dim); }
-  .roster-line { font-size: 0.86rem; margin-top: 6px; }
-  .roster-line b { font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--red); display: block; margin-bottom: 2px; }
+  .roster-group { margin-top: 8px; }
+  .roster-group b { font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--red); display: block; margin-bottom: 3px; }
+  .roster-subline { font-size: 0.86rem; margin-top: 2px; }
+  .roster-subline .roster-tag { font-weight: 700; color: var(--ink-dim); }
 
   /* ---------- matchup cards ---------- */
   .matchup-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
@@ -280,71 +257,58 @@
 
   <section class="edition">
     <p class="kicker">Season Opener</p>
-    <h2 class="edition-head">Week 1 Is All Rematches</h2>
+    <h2 class="edition-head">New Names, New Faces, Old Rivals</h2>
     <p class="dateline">2026 Season &middot; Week 1 Preview &middot; Kickoff Week</p>
-
-    <article class="feature">
-      <span class="crest"><img src="logos/2026/8.jpg" alt=""><img src="logos/2026/3.jpg" alt=""></span>
-      <div style="flex:1">
-        <p class="feature-label">The Big Number</p>
-        <p class="feature-text">Every one of this week's six matchups is a rematch from 2025 - the same 12-team schedule ran it back exactly this way in week 12 last year too. Three series are already decided: Joe Sebranek swept Lisette Bruens, Pete Gallagher swept Karl Abel, and Ben Porter swept Michael Higgins. The other three are dead even at 1-1, and one of Ronjan Sikdar's and Kris Wikstrom's two meetings was the most lopsided game of the bunch.</p>
-      </div>
-    </article>
 
     <div class="section-label">Rebrand Roundup</div>
     <p class="section-sublabel">Four teams enter 2026 under a new name, logo, or both</p>
-    <div class="rebrand-grid">
+    <div class="rebrand-cards">
 
-      <div class="rebrand-row">
+      <div class="rebrand-card">
         <div class="rebrand-logos">
           <img src="logos/2025/10.png" alt="">
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/10.jpg" alt="">
         </div>
-        <div class="rebrand-names">
-          <div class="rebrand-owner">Karl Abel</div>
-          <span class="old-name">Baker's Dirty Dozen</span> &rarr; <span class="new-name">The Aristocrats</span>
-        </div>
+        <div class="rebrand-owner">Karl Abel</div>
+        <div class="rebrand-names"><span class="old-name">Baker's Dirty Dozen</span> &rarr; <span class="new-name">The Aristocrats</span></div>
+        <p class="rebrand-blurb">Matches a clean-slate roster: he's the only owner who kept nobody this year, so the new name goes with an entirely new team.</p>
       </div>
 
-      <div class="rebrand-row">
+      <div class="rebrand-card">
         <div class="rebrand-logos">
           <img src="logos/2025/8.svg" alt="">
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/8.jpg" alt="">
         </div>
-        <div class="rebrand-names">
-          <div class="rebrand-owner">Joe Sebranek</div>
-          <span class="old-name">Daddy Nielsen</span> &rarr; <span class="new-name">Olave Oyl</span>
-        </div>
+        <div class="rebrand-owner">Joe Sebranek</div>
+        <div class="rebrand-names"><span class="old-name">Daddy Nielsen</span> &rarr; <span class="new-name">Olave Oyl</span></div>
+        <p class="rebrand-blurb">Renamed the moment he locked in keeper Chris Olave.</p>
       </div>
 
-      <div class="rebrand-row">
+      <div class="rebrand-card">
         <div class="rebrand-logos">
           <img src="logos/2025/11.png" alt="">
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/11.jpg" alt="">
         </div>
-        <div class="rebrand-names">
-          <div class="rebrand-owner">Kris Wikstrom</div>
-          <span class="old-name">Keep 'em and weep</span> &rarr; <span class="new-name">Rice Rice Baby</span>
-        </div>
+        <div class="rebrand-owner">Kris Wikstrom</div>
+        <div class="rebrand-names"><span class="old-name">Keep 'em and weep</span> &rarr; <span class="new-name">Rice Rice Baby</span></div>
+        <p class="rebrand-blurb">Renamed after landing Rashee Rice in round three of the live draft.</p>
       </div>
 
-      <div class="rebrand-row">
+      <div class="rebrand-card">
         <div class="rebrand-logos">
           <img src="logos/2025/9.png" alt="">
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/9.jpg" alt="">
         </div>
-        <div class="rebrand-names">
-          <div class="rebrand-owner">Ronjan Sikdar</div>
-          <span class="old-name">McConkey Kong Country</span> &rarr; <span class="new-name">McConkey Kong Country 2</span>
-        </div>
+        <div class="rebrand-owner">Ronjan Sikdar</div>
+        <div class="rebrand-names"><span class="old-name">McConkey Kong Country</span> &rarr; <span class="new-name">McConkey Kong Country 2</span></div>
+        <p class="rebrand-blurb">Didn't change the name so much as extend it, a numbered sequel for a team that also re-drafted its namesake, Ladd McConkey, in round four.</p>
       </div>
 
     </div>
-    <p class="feature-text" style="margin-top:16px;">Karl Abel's rebrand matches a clean-slate roster - he's the only owner who kept nobody this year. Joe Sebranek turned Daddy Nielsen into Olave Oyl the moment he locked in keeper Chris Olave, and Kris Wikstrom pulled the same move after landing Rashee Rice in round three of the live draft. Ronjan Sikdar didn't change the name so much as extend it: McConkey Kong Country picked up a numbered sequel.</p>
 
     <div class="section-label">The 2026 Rosters</div>
     <p class="section-sublabel">Who's back, and who's new, on all 12 teams</p>
@@ -384,21 +348,29 @@ const TEAMS = {
   12: { owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
 };
 
-// Verified against docs/data/keeper_guide_2026.json (kept) and
-// docs/data/2026/draft.json (new faces = first few live picks).
+// "Back" splits into two real categories, not one blob: KEPT (a keeper
+// slot, from docs/data/keeper_guide_2026.json) and REDRAFTED (drafted
+// again in the live 2026 draft by the SAME owner who had them on their
+// docs/data/2025/rosters.json end-of-season roster - not a keeper, a
+// real re-acquisition, e.g. Lisette's Patrick Mahomes in round three or
+// Ronjan's Ladd McConkey in round four). Matched by ESPN player_id, not
+// name, to avoid any suffix/spelling mismatches. D/ST and K excluded
+// from "redrafted" - those overlap constantly and mean nothing. "New"
+// is every other live pick never on that owner's 2025 roster, top 3 by
+// draft position, skill positions only.
 const ROSTERS = {
-  1:  { back: 'Daniel Jones, Kyle Pitts Sr. and Luther Burden III', neu: 'Amon-Ra St. Brown at pick nine, then a running back pair, De\'Von Achane and Travis Etienne Jr., back to back in rounds two and three' },
-  2:  { back: 'Cam Skattebo and Wan\'Dale Robinson', neu: 'Caleb Williams headlines it, taken 15 slots ahead of his ADP in round one, with Omarion Hampton and George Pickens added soon after' },
-  3:  { back: 'Josh Allen and Trey McBride, his only two keepers', neu: 'Drake London in round two kicks off a receiver-heavy haul that also brought in Terry McLaurin, Michael Pittman Jr. and Alec Pierce' },
-  4:  { back: 'Kenneth Walker III, Emeka Egbuka and Colston Loveland', neu: 'Puka Nacua at 1.05, then a two-quarterback bet on Justin Herbert and Baker Mayfield' },
-  5:  { back: 'Jonathan Taylor, Drake Maye and Matthew Stafford, the core of last year\'s title run', neu: 'CeeDee Lamb at pick ten and Malik Nabers in round four give her two true WR1s to build around' },
-  6:  { back: 'Christian McCaffrey, Bo Nix and Tetairoa McMillan', neu: 'Patrick Mahomes, the player the team is actually named for, fell to her at pick 27, a real live pick, not a keeper' },
-  7:  { back: 'Jayden Daniels and Jaxson Dart, the best-value keeper pair in the league', neu: 'Justin Jefferson in round two anchors a receiver corps that also added Nico Collins, Brock Bowers and Tee Higgins early' },
-  8:  { back: 'Jaxon Smith-Njigba, Chris Olave and Javonte Williams', neu: 'Jalen Hurts at pick six, then Derrick Henry and Breece Hall back to back to build out the backfield' },
-  9:  { back: 'Jahmyr Gibbs and Trevor Lawrence', neu: 'Saquon Barkley at pick 21 pairs with Gibbs for a two-back core, then A.J. Brown and Ladd McConkey add real receiver depth' },
-  10: { back: 'nobody, the only team starting from a fully open roster', neu: 'everybody, led by Bijan Robinson at 1.01, then Dak Prescott, Ashton Jeanty and Josh Jacobs in the first four picks alone' },
-  11: { back: 'Quinshon Judkins and Tyler Shough', neu: 'Lamar Jackson at 1.02, then the receiver his team is now named for, Rashee Rice, in round three alongside DeVonta Smith' },
-  12: { back: "Ja'Marr Chase and James Cook III", neu: 'Joe Burrow in round two and Brock Purdy in round four give her a two-quarterback bench behind Chase' },
+  1:  { kept: ['Daniel Jones (QB)', 'Kyle Pitts Sr. (TE)', 'Luther Burden III (WR)'], redrafted: [], neu: ['Amon-Ra St. Brown (WR)', "De'Von Achane (RB)", 'Travis Etienne Jr. (RB)'] },
+  2:  { kept: ['Cam Skattebo (RB)', "Wan'Dale Robinson (WR)"], redrafted: [], neu: ['Caleb Williams (QB)', 'Omarion Hampton (RB)', 'Kyler Murray (QB)'] },
+  3:  { kept: ['Josh Allen (QB)', 'Trey McBride (TE)'], redrafted: [], neu: ['Drake London (WR)', 'Kyren Williams (RB)', 'Terry McLaurin (WR)'] },
+  4:  { kept: ['Kenneth Walker III (RB)', 'Emeka Egbuka (WR)', 'Colston Loveland (TE)'], redrafted: ['Jacoby Brissett (QB)', 'Zach Charbonnet (RB)'], neu: ['Puka Nacua (WR)', 'Justin Herbert (QB)', 'Chase Brown (RB)'] },
+  5:  { kept: ['Jonathan Taylor (RB)', 'Drake Maye (QB)', 'Matthew Stafford (QB)'], redrafted: [], neu: ['CeeDee Lamb (WR)', 'Malik Nabers (WR)', 'Bucky Irving (RB)'] },
+  6:  { kept: ['Christian McCaffrey (RB)', 'Bo Nix (QB)', 'Tetairoa McMillan (WR)'], redrafted: ['Patrick Mahomes (QB)', 'Xavier Worthy (WR)'], neu: ['Garrett Wilson (WR)', 'Jordan Love (QB)', 'Rhamondre Stevenson (RB)'] },
+  7:  { kept: ['Jayden Daniels (QB)', 'Jaxson Dart (QB)'], redrafted: [], neu: ['Justin Jefferson (WR)', 'Nico Collins (WR)', 'Brock Bowers (TE)'] },
+  8:  { kept: ['Jaxon Smith-Njigba (WR)', 'Chris Olave (WR)', 'Javonte Williams (RB)'], redrafted: ['Jayden Reed (WR)'], neu: ['Jalen Hurts (QB)', 'Derrick Henry (RB)', 'Breece Hall (RB)'] },
+  9:  { kept: ['Jahmyr Gibbs (RB)', 'Trevor Lawrence (QB)'], redrafted: ['Ladd McConkey (WR)', 'Cam Ward (QB)', 'Jordan Mason (RB)'], neu: ['Saquon Barkley (RB)', 'A.J. Brown (WR)', 'Sam LaPorta (TE)'] },
+  10: { kept: [], redrafted: [], neu: ['Bijan Robinson (RB)', 'Dak Prescott (QB)', 'Ashton Jeanty (RB)'] },
+  11: { kept: ['Quinshon Judkins (RB)', 'Tyler Shough (QB)'], redrafted: [], neu: ['Lamar Jackson (QB)', 'Jeremiyah Love (RB)', 'Rashee Rice (WR)'] },
+  12: { kept: ["Ja'Marr Chase (WR)", 'James Cook III (RB)'], redrafted: ['Brock Purdy (QB)', 'Jameson Williams (WR)'], neu: ['Joe Burrow (QB)', 'Rome Odunze (WR)', 'Jaylen Warren (RB)'] },
 };
 
 // 2026 week 1 schedule (docs/data/2026/matchups.json) paired with each
@@ -424,6 +396,12 @@ function renderRosters() {
   el.innerHTML = Object.keys(TEAMS).map(id => {
     const t = TEAMS[id];
     const r = ROSTERS[id];
+    const keptLine = r.kept.length
+      ? `<div class="roster-subline"><span class="roster-tag">Kept:</span> ${r.kept.join(', ')}</div>`
+      : `<div class="roster-subline"><span class="roster-tag">Kept:</span> none</div>`;
+    const redraftLine = r.redrafted.length
+      ? `<div class="roster-subline"><span class="roster-tag">Redrafted:</span> ${r.redrafted.join(', ')}</div>`
+      : '';
     return `
       <div class="roster-card">
         <div class="roster-head">
@@ -433,8 +411,15 @@ function renderRosters() {
             <div class="roster-team">${t.name}</div>
           </div>
         </div>
-        <div class="roster-line"><b>Back</b>${r.back}</div>
-        <div class="roster-line"><b>New</b>${r.neu}</div>
+        <div class="roster-group">
+          <b>Back</b>
+          ${keptLine}
+          ${redraftLine}
+        </div>
+        <div class="roster-group">
+          <b>New</b>
+          <div class="roster-subline">${r.neu.join(', ')}</div>
+        </div>
       </div>
     `;
   }).join('');
