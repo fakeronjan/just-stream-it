@@ -1,0 +1,499 @@
+<!--
+  UNLISTED preview - not linked from nav.js or any other page on purpose.
+  First edition of what becomes the "Weekly News" tab once approved: the
+  2026 Week 1 preview. Same newspaper visual treatment as
+  recap-preview-2025.html (which stays permanently hidden per that
+  project's own memory) - Rozha One masthead, Vollkorn body, Special
+  Elite datelines, paper texture, single-theme (no dark mode toggle).
+  Reachable only by direct URL - review before this gets a nav.js entry.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Stream It - Weekly News Preview (unlisted)</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<script src="nav.js"></script>
+<style>
+  :root {
+    --paper:      #ddd7c8;
+    --paper-2:    #d3ccba;
+    --ink:        #1c1a16;
+    --ink-dim:    #4a463c;
+    --meta:       #8a8571;
+    --rule:       #1c1a16;
+    --red:        #a3241c;
+    --good:       #2f5c33;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image:
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 2px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.012) 0px, transparent 1px, transparent 2px);
+    color: var(--ink);
+    font-family: "Vollkorn", Georgia, "Times New Roman", serif;
+    line-height: 1.55;
+  }
+
+  a { color: var(--red); }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+
+  /* ---------- lock screen ---------- */
+  #lock-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .lock-box {
+    width: 100%; max-width: 420px;
+    background: var(--paper-2);
+    border: 1px solid var(--ink);
+    padding: 32px 28px;
+    text-align: center;
+  }
+  .lock-box img.logo { width: 64px; height: 64px; border-radius: 10px; margin-bottom: 12px; }
+  .lock-title { font-family: "Rozha One", serif; font-size: 1.6rem; margin: 0 0 6px; }
+  .lock-box p { color: var(--ink-dim); font-size: 0.9rem; margin: 0 0 16px; }
+  .prompt-line { display: flex; align-items: center; gap: 8px; border: 1px solid var(--ink); background: #fff8; padding: 8px 10px; }
+  .prompt-line .dollar { font-family: "Special Elite", monospace; color: var(--red); }
+  .prompt-line input {
+    flex: 1; border: none; background: transparent; outline: none;
+    font-family: "Special Elite", monospace; font-size: 0.95rem; color: var(--ink);
+  }
+  .lock-error { color: var(--red); font-size: 0.82rem; margin-top: 10px; visibility: hidden; }
+  .lock-error.show { visibility: visible; }
+
+  /* ---------- masthead ---------- */
+  header.masthead { padding-top: 28px; text-align: center; }
+  .masthead-meta {
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  h1.nameplate {
+    font-family: "Rozha One", serif;
+    font-size: clamp(2.1rem, 9.5vw, 3.6rem);
+    margin: 0;
+    letter-spacing: 0.005em;
+    line-height: 1.05;
+  }
+  .tagline {
+    font-family: "Special Elite", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-dim);
+    margin: 4px 0 0;
+  }
+  .masthead-rule {
+    border: 0; border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink);
+    height: 4px; margin: 14px 0 6px;
+  }
+
+  nav.resources {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    font-family: "Special Elite", monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 8px 0 18px;
+  }
+  nav.resources::-webkit-scrollbar { display: none; }
+  nav.resources a { flex: 0 0 auto; white-space: nowrap; color: var(--ink-dim); text-decoration: none; }
+  nav.resources a:hover { color: var(--red); }
+  nav.resources a.active { color: var(--red); font-weight: 700; }
+  nav.resources .nav-arrow { font-size: 0.9em; margin-left: 0.1em; }
+  nav.resources .nav-sep { color: var(--meta); }
+
+  /* ---------- edition ---------- */
+  .edition { margin-top: 40px; }
+
+  .kicker {
+    font-family: "Special Elite", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 4px;
+  }
+  h2.edition-head {
+    font-family: "Rozha One", serif;
+    font-size: 2rem;
+    margin: 0 0 4px;
+    text-wrap: balance;
+  }
+  .dateline {
+    font-family: "Special Elite", monospace;
+    font-size: 0.7rem;
+    color: var(--meta);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 18px;
+  }
+
+  .crest { flex: 0 0 auto; display: flex; }
+  .crest img {
+    width: 26px; height: 26px; border-radius: 50%; object-fit: cover;
+    border: 1px solid var(--ink);
+    filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
+  }
+  .crest img + img { margin-left: -8px; }
+
+  .section-label {
+    font-family: "Rozha One", serif;
+    font-size: 1.5rem;
+    margin: 44px 0 4px;
+    border-top: 3px double var(--ink);
+    padding-top: 24px;
+  }
+  .section-sublabel {
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    color: var(--meta);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 16px;
+  }
+
+  /* ---------- features ---------- */
+  .feature {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--ink);
+  }
+  .feature .crest img { width: 34px; height: 34px; }
+  .feature-label {
+    font-family: "Special Elite", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 4px;
+  }
+  .feature-text {
+    font-family: "Vollkorn", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .feature-text b { font-weight: 700; }
+
+  /* ---------- rebrand strip ---------- */
+  .rebrand-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
+  .rebrand-row { display: flex; align-items: center; gap: 12px; }
+  .rebrand-logos { display: flex; align-items: center; gap: 6px; flex: 0 0 auto; }
+  .rebrand-logos img {
+    width: 40px; height: 40px; border-radius: 50%; object-fit: cover;
+    border: 1px solid var(--ink);
+    filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15);
+  }
+  .rebrand-logos .arrow { color: var(--meta); font-size: 1rem; }
+  .rebrand-names { font-size: 0.88rem; }
+  .rebrand-names .old-name { color: var(--meta); text-decoration: line-through; }
+  .rebrand-names .new-name { font-weight: 700; }
+  .rebrand-owner { font-family: "Special Elite", monospace; font-size: 0.65rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+
+  /* ---------- roster cards ---------- */
+  .roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 4px;
+  }
+  .roster-card { border: 1px solid var(--ink); padding: 14px 16px; background: var(--paper-2); }
+  .roster-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .roster-head img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15); }
+  .roster-owner { font-weight: 700; font-size: 0.92rem; }
+  .roster-team { font-size: 0.72rem; color: var(--ink-dim); }
+  .roster-line { font-size: 0.86rem; margin-top: 6px; }
+  .roster-line b { font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--red); display: block; margin-bottom: 2px; }
+
+  /* ---------- matchup cards ---------- */
+  .matchup-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
+  .matchup-card { border: 1px solid var(--ink); padding: 14px 16px; }
+  .matchup-teams { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 8px; }
+  .matchup-side { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 130px; }
+  .matchup-side img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); filter: grayscale(1) contrast(1.05) brightness(0.95) sepia(0.15); }
+  .matchup-side .m-owner { font-weight: 700; font-size: 0.82rem; text-align: center; }
+  .matchup-side .m-team { font-size: 0.68rem; color: var(--ink-dim); text-align: center; }
+  .matchup-vs { font-family: "Special Elite", monospace; color: var(--meta); font-size: 0.8rem; }
+  .matchup-series {
+    font-family: "Special Elite", monospace; font-size: 0.65rem; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--ink-dim); text-align: center; margin-bottom: 6px;
+  }
+  .matchup-h2h { font-size: 0.85rem; text-align: center; }
+
+  footer.masthead-footer {
+    margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
+    text-align: center; font-family: "Special Elite", monospace; font-size: 0.65rem;
+    color: var(--meta); text-transform: uppercase; letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Subscribers Only</p>
+    <p>Enter the passphrase to read today's edition.</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">&gt;</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none" class="page">
+
+  <header class="masthead">
+    <div class="masthead-meta">
+      <span>Est. 2025</span>
+      <span>Unlisted Preview Edition</span>
+      <span>Price: One Waiver Claim</span>
+    </div>
+    <h1 class="nameplate">The Just Stream It<br>Gazette</h1>
+    <p class="tagline">&ldquo;All the Fantasy That's Fit to Print&rdquo;</p>
+    <hr class="masthead-rule">
+    <nav class="resources" id="resources-nav"></nav>
+  </header>
+
+  <section class="edition">
+    <p class="kicker">Season Opener</p>
+    <h2 class="edition-head">Week 1 Is All Rematches</h2>
+    <p class="dateline">2026 Season &middot; Week 1 Preview &middot; Kickoff Week</p>
+
+    <article class="feature">
+      <span class="crest"><img src="logos/2026/8.jpg" alt=""><img src="logos/2026/3.jpg" alt=""></span>
+      <div style="flex:1">
+        <p class="feature-label">The Big Number</p>
+        <p class="feature-text">Every one of this week's six matchups is a rematch from 2025 - the same 12-team schedule ran it back exactly this way in week 12 last year too. Three series are already decided: Joe Sebranek swept Lisette Bruens, Pete Gallagher swept Karl Abel, and Ben Porter swept Michael Higgins. The other three are dead even at 1-1, and one of Ronjan Sikdar's and Kris Wikstrom's two meetings was the most lopsided game of the bunch.</p>
+      </div>
+    </article>
+
+    <div class="section-label">Rebrand Roundup</div>
+    <p class="section-sublabel">Four teams enter 2026 under a new name, logo, or both</p>
+    <div class="rebrand-grid">
+
+      <div class="rebrand-row">
+        <div class="rebrand-logos">
+          <img src="logos/2025/10.png" alt="">
+          <span class="arrow">&rarr;</span>
+          <img src="logos/2026/10.jpg" alt="">
+        </div>
+        <div class="rebrand-names">
+          <div class="rebrand-owner">Karl Abel</div>
+          <span class="old-name">Baker's Dirty Dozen</span> &rarr; <span class="new-name">The Aristocrats</span>
+        </div>
+      </div>
+
+      <div class="rebrand-row">
+        <div class="rebrand-logos">
+          <img src="logos/2025/8.svg" alt="">
+          <span class="arrow">&rarr;</span>
+          <img src="logos/2026/8.jpg" alt="">
+        </div>
+        <div class="rebrand-names">
+          <div class="rebrand-owner">Joe Sebranek</div>
+          <span class="old-name">Daddy Nielsen</span> &rarr; <span class="new-name">Olave Oyl</span>
+        </div>
+      </div>
+
+      <div class="rebrand-row">
+        <div class="rebrand-logos">
+          <img src="logos/2025/11.png" alt="">
+          <span class="arrow">&rarr;</span>
+          <img src="logos/2026/11.jpg" alt="">
+        </div>
+        <div class="rebrand-names">
+          <div class="rebrand-owner">Kris Wikstrom</div>
+          <span class="old-name">Keep 'em and weep</span> &rarr; <span class="new-name">Rice Rice Baby</span>
+        </div>
+      </div>
+
+      <div class="rebrand-row">
+        <div class="rebrand-logos">
+          <img src="logos/2025/9.png" alt="">
+          <span class="arrow">&rarr;</span>
+          <img src="logos/2026/9.jpg" alt="">
+        </div>
+        <div class="rebrand-names">
+          <div class="rebrand-owner">Ronjan Sikdar</div>
+          <span class="old-name">McConkey Kong Country</span> &rarr; <span class="new-name">McConkey Kong Country 2</span>
+        </div>
+      </div>
+
+    </div>
+    <p class="feature-text" style="margin-top:16px;">Karl Abel's rebrand matches a clean-slate roster - he's the only owner who kept nobody this year. Joe Sebranek turned Daddy Nielsen into Olave Oyl the moment he locked in keeper Chris Olave, and Kris Wikstrom pulled the same move after landing Rashee Rice in round three of the live draft. Ronjan Sikdar didn't change the name so much as extend it: McConkey Kong Country picked up a numbered sequel.</p>
+
+    <div class="section-label">The 2026 Rosters</div>
+    <p class="section-sublabel">Who's back, and who's new, on all 12 teams</p>
+    <div class="roster-grid" id="roster-grid"></div>
+
+    <div class="section-label">Week 1 Matchups</div>
+    <p class="section-sublabel">Who's playing who, and how the same two teams did last time</p>
+    <div class="matchup-grid" id="matchup-grid"></div>
+
+  </section>
+
+  <footer class="masthead-footer">2026 Season, Week 1 Preview &middot; Compiled from live ESPN draft and schedule data</footer>
+
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+
+const LOGO = {
+  1: 'logos/2026/1.jpg', 2: 'logos/2026/2.svg', 3: 'logos/2026/3.jpg', 4: 'logos/2026/4.jpg',
+  5: 'logos/2026/5.svg', 6: 'logos/2026/6.jpg', 7: 'logos/2026/7.jpg', 8: 'logos/2026/8.jpg',
+  9: 'logos/2026/9.jpg', 10: 'logos/2026/10.jpg', 11: 'logos/2026/11.jpg', 12: 'logos/2026/12.jpg',
+};
+
+const TEAMS = {
+  1:  { owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's" },
+  2:  { owner: 'Mariss Mednis', name: 'Mednis Madness' },
+  3:  { owner: 'Pete Gallagher', name: 'Illusions Michael' },
+  4:  { owner: 'Ben Porter', name: 'Conquering Heroes' },
+  5:  { owner: 'Cara Kantrowitz', name: 'Team Kantastrophe' },
+  6:  { owner: 'Lisette Bruens', name: 'Mahomes is where the heart is' },
+  7:  { owner: 'Mike Higgins', name: 'Terrible Towels' },
+  8:  { owner: 'Joe Sebranek', name: 'Olave Oyl' },
+  9:  { owner: 'Ronjan Sikdar', name: 'McConkey Kong Country 2' },
+  10: { owner: 'Karl Abel', name: 'The Aristocrats' },
+  11: { owner: 'Kris Wikstrom', name: 'Rice Rice Baby' },
+  12: { owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
+};
+
+// Verified against docs/data/keeper_guide_2026.json (kept) and
+// docs/data/2026/draft.json (new faces = first few live picks).
+const ROSTERS = {
+  1:  { back: 'Daniel Jones, Kyle Pitts Sr. and Luther Burden III', neu: 'Amon-Ra St. Brown at pick nine, then a running back pair, De\'Von Achane and Travis Etienne Jr., back to back in rounds two and three' },
+  2:  { back: 'Cam Skattebo and Wan\'Dale Robinson', neu: 'Caleb Williams headlines it, taken 15 slots ahead of his ADP in round one, with Omarion Hampton and George Pickens added soon after' },
+  3:  { back: 'Josh Allen and Trey McBride, his only two keepers', neu: 'Drake London in round two kicks off a receiver-heavy haul that also brought in Terry McLaurin, Michael Pittman Jr. and Alec Pierce' },
+  4:  { back: 'Kenneth Walker III, Emeka Egbuka and Colston Loveland', neu: 'Puka Nacua at 1.05, then a two-quarterback bet on Justin Herbert and Baker Mayfield' },
+  5:  { back: 'Jonathan Taylor, Drake Maye and Matthew Stafford, the core of last year\'s title run', neu: 'CeeDee Lamb at pick ten and Malik Nabers in round four give her two true WR1s to build around' },
+  6:  { back: 'Christian McCaffrey, Bo Nix and Tetairoa McMillan', neu: 'Patrick Mahomes, the player the team is actually named for, fell to her at pick 27, a real live pick, not a keeper' },
+  7:  { back: 'Jayden Daniels and Jaxson Dart, the best-value keeper pair in the league', neu: 'Justin Jefferson in round two anchors a receiver corps that also added Nico Collins, Brock Bowers and Tee Higgins early' },
+  8:  { back: 'Jaxon Smith-Njigba, Chris Olave and Javonte Williams', neu: 'Jalen Hurts at pick six, then Derrick Henry and Breece Hall back to back to build out the backfield' },
+  9:  { back: 'Jahmyr Gibbs and Trevor Lawrence', neu: 'Saquon Barkley at pick 21 pairs with Gibbs for a two-back core, then A.J. Brown and Ladd McConkey add real receiver depth' },
+  10: { back: 'nobody, the only team starting from a fully open roster', neu: 'everybody, led by Bijan Robinson at 1.01, then Dak Prescott, Ashton Jeanty and Josh Jacobs in the first four picks alone' },
+  11: { back: 'Quinshon Judkins and Tyler Shough', neu: 'Lamar Jackson at 1.02, then the receiver his team is now named for, Rashee Rice, in round three alongside DeVonta Smith' },
+  12: { back: "Ja'Marr Chase and James Cook III", neu: 'Joe Burrow in round two and Brock Purdy in round four give her a two-quarterback bench behind Chase' },
+};
+
+// 2026 week 1 schedule (docs/data/2026/matchups.json) paired with each
+// team's full 2025 head-to-head history (docs/data/2025/matchups.json) -
+// every 2025 matchup ran exactly twice, week 1 and week 12, so this is
+// the complete series, not a sample. No playoff meetings among any of
+// these 6 pairs.
+const MATCHUPS = [
+  { a: 8, b: 6,  aWins: 2, bWins: 0, text: "Joe swept Lisette in 2025, winning by 45 in week one (153.52-108.26) and by 41 in the week 12 rematch (163.36-122.62)." },
+  { a: 5, b: 12, aWins: 1, bWins: 1, text: "Cara and Melinda split their 2025 meetings, Melinda taking the opener 134.0-122.28, Cara answering in the rematch 132.08-104.72." },
+  { a: 1, b: 2,  aWins: 1, bWins: 1, text: "Imran and Mariss are 1-1 as well, though Mariss's week 12 win was the more lopsided one, 171.34-103.66." },
+  { a: 3, b: 10, aWins: 2, bWins: 0, text: "Pete swept Karl in 2025, but the rematch was tight, a 119.26-116.5 final that came down to the last lineup." },
+  { a: 4, b: 7,  aWins: 2, bWins: 0, text: "Ben has beaten Mike twice running, capped by a 137.04-67.26 blowout in their week 12 meeting." },
+  { a: 11, b: 9, aWins: 1, bWins: 1, text: "Kris and Ronjan split their 2025 series, and Ronjan's week 12 win, 189.4-120.78, was the biggest of the pair's two games." },
+];
+
+function crestImg(teamId) {
+  return `<img src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
+}
+
+function renderRosters() {
+  const el = document.getElementById('roster-grid');
+  el.innerHTML = Object.keys(TEAMS).map(id => {
+    const t = TEAMS[id];
+    const r = ROSTERS[id];
+    return `
+      <div class="roster-card">
+        <div class="roster-head">
+          ${crestImg(id)}
+          <div>
+            <div class="roster-owner">${t.owner}</div>
+            <div class="roster-team">${t.name}</div>
+          </div>
+        </div>
+        <div class="roster-line"><b>Back</b>${r.back}</div>
+        <div class="roster-line"><b>New</b>${r.neu}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderMatchups() {
+  const el = document.getElementById('matchup-grid');
+  el.innerHTML = MATCHUPS.map(m => {
+    const ta = TEAMS[m.a], tb = TEAMS[m.b];
+    const seriesLabel = m.aWins === m.bWins
+      ? `2025 series: ${m.aWins}-${m.bWins}`
+      : `2025 series: ${m.aWins > m.bWins ? ta.owner : tb.owner} leads ${Math.max(m.aWins, m.bWins)}-${Math.min(m.aWins, m.bWins)}`;
+    return `
+      <div class="matchup-card">
+        <div class="matchup-teams">
+          <div class="matchup-side">
+            ${crestImg(m.a)}
+            <span class="m-owner">${ta.owner}</span>
+            <span class="m-team">${ta.name}</span>
+          </div>
+          <span class="matchup-vs">vs</span>
+          <div class="matchup-side">
+            ${crestImg(m.b)}
+            <span class="m-owner">${tb.owner}</span>
+            <span class="m-team">${tb.name}</span>
+          </div>
+        </div>
+        <p class="matchup-series">${seriesLabel} &middot; no playoff meetings</p>
+        <p class="matchup-h2h">${m.text}</p>
+      </div>
+    `;
+  }).join('');
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+  const meta = await (await fetch('data/meta.json')).json();
+  document.getElementById('resources-nav').innerHTML = renderNav('weekly-news-preview', meta.league_id);
+  renderRosters();
+  renderMatchups();
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+</script>
+
+</body>
+</html>
