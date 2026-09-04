@@ -183,6 +183,12 @@ a:hover { text-decoration: underline; }
   padding: 32px 0 28px;
 }
 
+/* Flex items refuse to shrink below their content's width by default
+   (min-width: auto) - without this, nav.resources's own overflow-x:auto
+   never kicks in, since the whole header just grows past the viewport
+   to fit the unwrapped nav instead of scrolling it internally. */
+.site-header > div { min-width: 0; width: 100%; }
+
 /* Fixed, not a header child - so it's reachable from the lock screen too
    (readability outdoors is exactly as much a problem before login). */
 .theme-toggle {
