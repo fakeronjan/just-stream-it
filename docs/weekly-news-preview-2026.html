@@ -212,6 +212,10 @@
     font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--red);
     text-transform: uppercase; letter-spacing: 0.03em; text-align: center; margin-top: 2px;
   }
+  .matchup-side .m-record {
+    font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--ink-dim);
+    text-transform: uppercase; letter-spacing: 0.03em; text-align: center; margin-top: 1px;
+  }
   .matchup-vs { font-family: "Special Elite", monospace; color: var(--meta); font-size: 0.8rem; flex: 0 0 auto; }
 
   .matchup-rosters {
@@ -415,6 +419,13 @@ const POWER = {
   12: { rank: 4,  playoffPct: 54.1 },
 };
 
+// docs/data/2025/teams.json wins/losses, for display context on each
+// matchup card.
+const RECORD25 = {
+  1: '9-5', 2: '9-5', 3: '10-4', 4: '9-5', 5: '10-4', 6: '6-8',
+  7: '4-10', 8: '10-4', 9: '6-8', 10: '5-9', 11: '2-12', 12: '4-10',
+};
+
 // 2026 week 1 schedule (docs/data/2026/matchups.json) paired with each
 // team's full 2025 head-to-head history (docs/data/2025/matchups.json) -
 // every 2025 matchup ran exactly twice, week 1 and week 12, so this is
@@ -429,17 +440,18 @@ const POWER = {
 // reason as everywhere else on this page - meaningless overlap). Bare
 // fundamentals only: player, which team had them in 2025, which team has
 // them now, and what it cost this year (keeper cost or live-draft round).
+// Ordered by combined ESPN playoff% (both teams' POWER.playoffPct summed),
+// descending - mechanical, no manual override, so the rule stays simple to
+// re-apply in future weeks. Cara/Melinda leads at 116.3, Pete/Karl trails
+// at 79.2. (This is a preseason-only proxy - once real games start, this
+// should probably become something result-based instead, e.g. closest
+// live win probability or point margin.)
 const MATCHUPS = [
-  { a: 8, b: 6,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 153.52, bScore: 108.26 }, { week: 12, aScore: 163.36, bScore: 122.62 }],
-    swaps: [ { player: 'Kayshon Boutte (WR)', from: 8, to: 6, round: 17 } ] },
   { a: 5, b: 12, aWins: 1, bWins: 1, games: [{ week: 1, aScore: 122.28, bScore: 134.00 }, { week: 12, aScore: 132.08, bScore: 104.72 }],
     swaps: [ { player: 'Dallas Goedert (TE)', from: 5, to: 12, round: 8 },
              { player: 'Juwan Johnson (TE)', from: 12, to: 5, round: 15 } ] },
-  { a: 1, b: 2,  aWins: 1, bWins: 1, games: [{ week: 1, aScore: 139.98, bScore: 111.92 }, { week: 12, aScore: 103.66, bScore: 171.34 }],
-    swaps: [ { player: 'Isaiah Likely (TE)', from: 1, to: 2, round: 6 },
-             { player: 'Amon-Ra St. Brown (WR)', from: 2, to: 1, round: 1 },
-             { player: 'Jared Goff (QB)', from: 2, to: 1, round: 4 } ] },
-  { a: 3, b: 10, aWins: 2, bWins: 0, games: [{ week: 1, aScore: 159.04, bScore: 111.88 }, { week: 12, aScore: 119.26, bScore: 116.50 }] },
+  { a: 8, b: 6,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 153.52, bScore: 108.26 }, { week: 12, aScore: 163.36, bScore: 122.62 }],
+    swaps: [ { player: 'Kayshon Boutte (WR)', from: 8, to: 6, round: 17 } ] },
   { a: 4, b: 7,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 100.44, bScore: 86.88 },  { week: 12, aScore: 137.04, bScore: 67.26 }],
     swaps: [ { player: 'Brock Bowers (TE)', from: 4, to: 7, round: 4 },
              { player: 'Tee Higgins (WR)', from: 4, to: 7, round: 5 },
@@ -463,6 +475,11 @@ const MATCHUPS = [
       ] },
     swaps: [ { player: 'Sam LaPorta (TE)', from: 11, to: 9, round: 6 },
              { player: 'DeVonta Smith (WR)', from: 9, to: 11, round: 4 } ] },
+  { a: 1, b: 2,  aWins: 1, bWins: 1, games: [{ week: 1, aScore: 139.98, bScore: 111.92 }, { week: 12, aScore: 103.66, bScore: 171.34 }],
+    swaps: [ { player: 'Isaiah Likely (TE)', from: 1, to: 2, round: 6 },
+             { player: 'Amon-Ra St. Brown (WR)', from: 2, to: 1, round: 1 },
+             { player: 'Jared Goff (QB)', from: 2, to: 1, round: 4 } ] },
+  { a: 3, b: 10, aWins: 2, bWins: 0, games: [{ week: 1, aScore: 159.04, bScore: 111.88 }, { week: 12, aScore: 119.26, bScore: 116.50 }] },
 ];
 
 function crestImg(teamId) {
@@ -499,6 +516,7 @@ function matchupSideHtml(id) {
       <span class="m-owner">${t.owner}</span>
       <span class="m-team">${t.name}</span>
       <span class="m-power">ESPN Power Rank #${p.rank} &middot; ${p.playoffPct}% to make playoffs</span>
+      <span class="m-record">2025 record: ${RECORD25[id]}</span>
     </div>
   `;
 }
