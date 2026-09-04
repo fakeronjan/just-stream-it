@@ -154,8 +154,8 @@ const TEAMS = [
   { id: 8,  owner: 'Joe Sebranek', name: 'Olave Oyl', oldName: 'Daddy Nielsen' },
   { id: 2,  owner: 'Mariss Mednis', name: 'Mednis Madness' },
   { id: 3,  owner: 'Pete Gallagher', name: 'Illusions Michael' },
-  { id: 1,  owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's" },
-  { id: 5,  owner: 'Cara Kantrowitz', name: 'Team Kantastrophe' },
+  { id: 1,  owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's", titleStatus2025: 'runnerup' },
+  { id: 5,  owner: 'Cara Kantrowitz', name: 'Team Kantastrophe', titleStatus2025: 'champ' },
   { id: 12, owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
   { id: 7,  owner: 'Mike Higgins', name: 'Terrible Towels' },
 ];
@@ -272,6 +272,21 @@ function posBadge(pos) {
   return `<span class="pos-badge pos-${pos}">${pos}</span>`;
 }
 
+// 2025 title-game finish - a season-specific status, not part of anyone's
+// name, so it lives on each team's titleStatus2025 and gets appended
+// wherever an owner name renders, rather than baked into the owner string
+// itself. DELIBERATELY named with the year, not just "titleStatus": if this
+// page's data ever gets reused as a starting point for a future season, a
+// generic field name is exactly the kind of thing that survives a
+// copy-paste unnoticed and points the trophy at last year's champ forever.
+// Add a fresh titleStatus2026 to whoever actually finishes 1st/2nd in 2026
+// when that time comes - don't rename or reuse this one.
+const TITLE_STATUS_EMOJI = { champ: '\u{1F3C6}', runnerup: '\u{1F948}' };
+function ownerLabel(t) {
+  const emoji = TITLE_STATUS_EMOJI[t.titleStatus2025];
+  return emoji ? `${t.owner} ${emoji}` : t.owner;
+}
+
 function chip(teamId, size) {
   const t = teamById(teamId);
   const cls = size ? `team-chip ${size}` : 'team-chip';
@@ -279,7 +294,7 @@ function chip(teamId, size) {
     <span class="${cls}">
       <img class="chip-logo" src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">
       <span class="chip-text">
-        <span class="chip-name">${t.owner}</span>
+        <span class="chip-name">${ownerLabel(t)}</span>
         <span class="chip-owner">${t.name}</span>
       </span>
     </span>
