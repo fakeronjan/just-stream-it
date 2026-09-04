@@ -206,8 +206,11 @@
   .matchup-teams { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 14px; }
   .matchup-side { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; }
   .matchup-side img { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 2px solid var(--ink); }
-  .matchup-side .m-owner { font-weight: 700; font-size: 0.88rem; text-align: center; }
-  .matchup-side .m-team { font-size: 0.7rem; color: var(--ink-dim); text-align: center; }
+  .matchup-side .m-team { font-weight: 700; font-size: 0.92rem; text-align: center; }
+  .matchup-side .m-owner {
+    font-family: "Special Elite", monospace; font-size: 0.65rem; color: var(--ink-dim);
+    text-transform: uppercase; letter-spacing: 0.04em; text-align: center;
+  }
   .matchup-side .m-power {
     font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--red);
     text-transform: uppercase; letter-spacing: 0.03em; text-align: center; margin-top: 2px;
@@ -300,8 +303,8 @@
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/10.jpg" alt="">
         </div>
-        <div class="rebrand-owner">Karl Abel</div>
         <div class="rebrand-names"><span class="old-name">Baker's Dirty Dozen</span> &rarr; <span class="new-name">The Aristocrats</span></div>
+        <div class="rebrand-owner">Karl Abel</div>
         <p class="rebrand-blurb">Baker's Dirty Dozen finished 9th at <b>5-9</b> last year, and Karl didn't tinker, he detonated it: zero keepers, the only true rebuild in the league. Going from "Dirty" to "Aristocrats" for a team blowing up everything it owns is either very on-brand or exactly backwards - your call.</p>
       </div>
 
@@ -311,8 +314,8 @@
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/8.jpg" alt="">
         </div>
-        <div class="rebrand-owner">Joe Sebranek</div>
         <div class="rebrand-names"><span class="old-name">Daddy Nielsen</span> &rarr; <span class="new-name">Olave Oyl</span></div>
+        <div class="rebrand-owner">Joe Sebranek</div>
         <p class="rebrand-blurb">This isn't a team in crisis rebranding. Daddy Nielsen went <b>10-4</b> last year, good for 5th, and Joe tore up the name anyway, just to hand the team over to his own keeper. Olave Oyl is a good team having fun, not a bad one starting over.</p>
       </div>
 
@@ -322,8 +325,8 @@
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/11.jpg" alt="">
         </div>
-        <div class="rebrand-owner">Kris Wikstrom</div>
         <div class="rebrand-names"><span class="old-name">Keep 'em and weep</span> &rarr; <span class="new-name">Rice Rice Baby</span></div>
+        <div class="rebrand-owner">Kris Wikstrom</div>
         <p class="rebrand-blurb">Keep 'em and weep finished <b>2-12</b>, dead last in the league, and honestly the old name was foreshadowing. Rice Rice Baby trades the tears for an actual receiver - for once, the joke's on offense.</p>
       </div>
 
@@ -333,8 +336,8 @@
           <span class="arrow">&rarr;</span>
           <img src="logos/2026/9.jpg" alt="">
         </div>
-        <div class="rebrand-owner">Ronjan Sikdar</div>
         <div class="rebrand-names"><span class="old-name">McConkey Kong Country</span> &rarr; <span class="new-name">McConkey Kong Country 2</span></div>
+        <div class="rebrand-owner">Ronjan Sikdar</div>
         <p class="rebrand-blurb">McConkey Kong Country put up <b>1909.7 points</b> last year, third-most in the league, and still finished 7th at 6-8, one spot outside the playoffs. That's exactly the setup a sequel is for: give the first one the ending it actually deserved. Fittingly, he re-drafted his namesake, Ladd McConkey, in round four.</p>
       </div>
 
@@ -513,8 +516,8 @@ function matchupSideHtml(id) {
   return `
     <div class="matchup-side">
       ${crestImg(id)}
-      <span class="m-owner">${t.owner}</span>
       <span class="m-team">${t.name}</span>
+      <span class="m-owner">${t.owner}</span>
       <span class="m-power">ESPN Power Rank #${p.rank} &middot; ${p.playoffPct}% to make playoffs</span>
       <span class="m-record">2025 record: ${RECORD25[id]}</span>
     </div>
