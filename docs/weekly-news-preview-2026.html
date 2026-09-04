@@ -426,6 +426,23 @@ function crestImg(teamId) {
   return `<img src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
 }
 
+// Only 4 trades happened in all of 2025 (docs/data/2025/transactions.json,
+// type TRADE_ACCEPT), and this checks whether any of them landed a player
+// still on that owner's current 2026 roster (kept or redrafted, cross-
+// referenced against docs/data/keeper_guide_2026.json's kept_2026 flag).
+// 2 of the 4 trades are still paying off: Ronjan's week-9 deal with Kris
+// sent him Jahmyr Gibbs and sent Kris back Quinshon Judkins - both are
+// still keepers a year later, and the two owners happen to be this week's
+// matchup. Ronjan's separate week-8 trade with mariss landed Trevor
+// Lawrence, also still kept. Mike's week-8 trade with Ronjan landed
+// Jaxson Dart, the league's best-value keeper this year.
+const TRADES = {
+  9:  ["Jahmyr Gibbs, kept at the round-1 cost, arrived via a week-9 2025 trade with Kris Wikstrom, this week's opponent.",
+       "Trevor Lawrence, kept at the round-5 cost, arrived via a separate week-8 2025 trade with mariss mednis."],
+  11: ["Quinshon Judkins, kept at the round-9 cost, is the other half of that same Gibbs trade with Ronjan Sikdar, this week's opponent."],
+  7:  ["Jaxson Dart, kept at the round-12 cost and the league's best-value keeper this year, arrived via a week-8 2025 trade with Ronjan Sikdar."],
+};
+
 function rosterHtml(id) {
   const r = ROSTERS[id];
   const keptLine = r.kept.length
@@ -434,6 +451,13 @@ function rosterHtml(id) {
   const redraftLine = r.redrafted.length
     ? `<div class="roster-subline"><span class="roster-tag">Redrafted:</span> ${r.redrafted.join(', ')}</div>`
     : '';
+  const trades = TRADES[id];
+  const tradeGroup = trades ? `
+    <div class="roster-group">
+      <b>Trade History</b>
+      ${trades.map(t => `<div class="roster-subline">${t}</div>`).join('')}
+    </div>
+  ` : '';
   return `
     <div class="roster-group">
       <b>Back</b>
@@ -444,6 +468,7 @@ function rosterHtml(id) {
       <b>New</b>
       <div class="roster-subline">${r.neu.join(', ')}</div>
     </div>
+    ${tradeGroup}
   `;
 }
 
