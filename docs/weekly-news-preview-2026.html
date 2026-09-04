@@ -363,11 +363,11 @@ const LOGO = {
 };
 
 const TEAMS = {
-  1:  { owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's" },
+  1:  { owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's", titleStatus2025: 'runnerup' },
   2:  { owner: 'Mariss Mednis', name: 'Mednis Madness' },
   3:  { owner: 'Pete Gallagher', name: 'Illusions Michael' },
   4:  { owner: 'Ben Porter', name: 'Conquering Heroes' },
-  5:  { owner: 'Cara Kantrowitz', name: 'Team Kantastrophe' },
+  5:  { owner: 'Cara Kantrowitz', name: 'Team Kantastrophe', titleStatus2025: 'champ' },
   6:  { owner: 'Lisette Bruens', name: 'Mahomes is where the heart is' },
   7:  { owner: 'Mike Higgins', name: 'Terrible Towels' },
   8:  { owner: 'Joe Sebranek', name: 'Olave Oyl' },
@@ -489,6 +489,23 @@ function crestImg(teamId) {
   return `<img src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
 }
 
+// 2025 title-game finish - a season-specific status, not part of anyone's
+// name, so it lives on TEAMS[id].titleStatus2025 and gets appended wherever
+// an owner name renders, rather than baked into the owner string itself.
+// DELIBERATELY named with the year, not just "titleStatus": this page (and
+// its data) will very likely get copied wholesale as the starting point for
+// next year's version, and a generic field name is exactly the kind of
+// thing that survives a copy-paste unnoticed and points the trophy at last
+// year's champ forever. When 2026 season results are in and a 2027 page
+// gets built from this one, add a fresh titleStatus2026 to whoever actually
+// finishes 1st/2nd that year - don't rename/reuse this field, and don't
+// carry these two flags forward onto team_id 1/5 by default.
+const TITLE_STATUS_EMOJI = { champ: '\u{1F3C6}', runnerup: '\u{1F948}' };
+function ownerLabel(t) {
+  const emoji = TITLE_STATUS_EMOJI[t.titleStatus2025];
+  return emoji ? `${t.owner} ${emoji}` : t.owner;
+}
+
 function rosterHtml(id) {
   const r = ROSTERS[id];
   const keptLine = r.kept.length
@@ -517,7 +534,7 @@ function matchupSideHtml(id) {
     <div class="matchup-side">
       ${crestImg(id)}
       <span class="m-team">${t.name}</span>
-      <span class="m-owner">${t.owner}</span>
+      <span class="m-owner">${ownerLabel(t)}</span>
       <span class="m-power">ESPN Power Rank #${p.rank} &middot; ${p.playoffPct}% to make playoffs</span>
       <span class="m-record">2025 record: ${RECORD25[id]}</span>
     </div>
