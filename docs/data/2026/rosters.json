@@ -161,16 +161,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4571557,
-      "name": "Spencer Shrader",
-      "position": "K",
-      "pro_team": "IND",
-      "lineup_slot": "K",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4723820,
       "name": "Omar Cooper Jr.",
       "position": "WR",
@@ -187,6 +177,36 @@
       "pro_team": "IND",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 3045147,
+      "name": "James Conner",
+      "position": "RB",
+      "pro_team": "ARI",
+      "lineup_slot": "IR",
+      "keeper_value": 6,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4366031,
+      "name": "Tank Dell",
+      "position": "WR",
+      "pro_team": "HOU",
+      "lineup_slot": "IR",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4689936,
+      "name": "Jake Bates",
+      "position": "K",
+      "pro_team": "DET",
+      "lineup_slot": "K",
+      "keeper_value": 9,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
     }
@@ -555,20 +575,20 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4362887,
-      "name": "Justin Fields",
+      "player_id": 11252,
+      "name": "Joe Flacco",
       "position": "QB",
-      "pro_team": "KC",
+      "pro_team": "CIN",
       "lineup_slot": "BE",
-      "keeper_value": 4,
+      "keeper_value": 15,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
     },
     {
-      "player_id": 4685522,
-      "name": "Ty Simpson",
+      "player_id": 4427238,
+      "name": "Dillon Gabriel",
       "position": "QB",
-      "pro_team": "LAR",
+      "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
@@ -777,10 +797,10 @@
       "acquisition_type": "ADD"
     },
     {
-      "player_id": 4429835,
-      "name": "George Holani",
+      "player_id": 4702555,
+      "name": "Jonah Coleman",
       "position": "RB",
-      "pro_team": "SEA",
+      "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",

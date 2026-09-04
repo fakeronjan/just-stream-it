@@ -404,10 +404,10 @@
         "reason": "not drafted in 2025 (waiver/FA addition)"
       },
       {
-        "player_id": 4429835,
-        "name": "George Holani",
+        "player_id": 4702555,
+        "name": "Jonah Coleman",
         "position": "RB",
-        "pro_team": "SEA",
+        "pro_team": "DEN",
         "lineup_slot": "BE",
         "keeper_value": 0,
         "injury_status": "NORMAL",
@@ -1203,7 +1203,7 @@
   },
   {
     "team_id": 1,
-    "team_name": "Lamar and Drake's Grahamy's",
+    "team_name": "They're Lions Two Us",
     "owners": [
       "Imran Hirani"
     ],
@@ -1292,6 +1292,32 @@
         "kept_2026": false
       },
       {
+        "player_id": 3045147,
+        "name": "James Conner",
+        "position": "RB",
+        "pro_team": "ARI",
+        "lineup_slot": "IR",
+        "keeper_value": 6,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "drafted_round_2025": 6,
+        "drafted_pick_2025": "6.07",
+        "drafted_overall_2025": 67,
+        "points_actual_2025": 29.3,
+        "position_rank_actual_2025": 77,
+        "points_projected_2026": 0.0,
+        "position_rank_projected_2026": 107,
+        "adp_superflex_rank": 445,
+        "adp_pick_estimate": "38.01",
+        "keeper_cost_round_2026": 5,
+        "keeper_cost_pick_estimate": "5.07",
+        "is_first_round_pick": false,
+        "vig": -390,
+        "shares_round_with": [],
+        "is_top_value": false,
+        "kept_2026": false
+      },
+      {
         "player_id": 4372016,
         "name": "Jaylen Waddle",
         "position": "WR",
@@ -1339,7 +1365,37 @@
         "keeper_cost_pick_estimate": "8.11",
         "is_first_round_pick": false,
         "vig": -76,
-        "shares_round_with": [],
+        "shares_round_with": [
+          "Jake Bates"
+        ],
+        "is_top_value": false,
+        "kept_2026": false
+      },
+      {
+        "player_id": 4689936,
+        "name": "Jake Bates",
+        "position": "K",
+        "pro_team": "DET",
+        "lineup_slot": "K",
+        "keeper_value": 9,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "drafted_round_2025": 9,
+        "drafted_pick_2025": "9.12",
+        "drafted_overall_2025": 108,
+        "points_actual_2025": 145.0,
+        "position_rank_actual_2025": 9,
+        "points_projected_2026": 146.10945551,
+        "position_rank_projected_2026": 9,
+        "adp_superflex_rank": 263,
+        "adp_pick_estimate": "22.11",
+        "keeper_cost_round_2026": 8,
+        "keeper_cost_pick_estimate": "8.12",
+        "is_first_round_pick": false,
+        "vig": -167,
+        "shares_round_with": [
+          "Dalton Kincaid"
+        ],
         "is_top_value": false,
         "kept_2026": false
       },
@@ -1550,17 +1606,6 @@
         "reason": "not on any roster at end of 2025 season"
       },
       {
-        "player_id": 4571557,
-        "name": "Spencer Shrader",
-        "position": "K",
-        "pro_team": "IND",
-        "lineup_slot": "K",
-        "keeper_value": 0,
-        "injury_status": "NORMAL",
-        "acquisition_type": "DRAFT",
-        "reason": "not drafted in 2025 (waiver/FA addition)"
-      },
-      {
         "player_id": 4723820,
         "name": "Omar Cooper Jr.",
         "position": "WR",
@@ -1581,6 +1626,17 @@
         "injury_status": "NORMAL",
         "acquisition_type": "ADD",
         "reason": "not on any roster at end of 2025 season"
+      },
+      {
+        "player_id": 4366031,
+        "name": "Tank Dell",
+        "position": "WR",
+        "pro_team": "HOU",
+        "lineup_slot": "IR",
+        "keeper_value": 0,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "reason": "not drafted in 2025 (waiver/FA addition)"
       }
     ],
     "cannot_keep_both_round1_and_round2": false,
@@ -2631,7 +2687,7 @@
         "drafted_pick_2025": "12.09",
         "drafted_overall_2025": 141,
         "points_actual_2025": 14.3,
-        "position_rank_actual_2025": 88,
+        "position_rank_actual_2025": 89,
         "points_projected_2026": 70.4081416,
         "position_rank_projected_2026": 55,
         "adp_superflex_rank": 274,
@@ -5240,7 +5296,7 @@
   },
   {
     "team_id": 3,
-    "team_name": "Illusions Michael",
+    "team_name": "Beard Al",
     "owners": [
       "Pete Gallagher"
     ],
@@ -5351,8 +5407,7 @@
         "is_first_round_pick": false,
         "vig": 8,
         "shares_round_with": [
-          "Kyren Williams",
-          "Justin Fields"
+          "Kyren Williams"
         ],
         "is_top_value": false,
         "kept_2026": true
@@ -5380,37 +5435,7 @@
         "is_first_round_pick": false,
         "vig": -31,
         "shares_round_with": [
-          "Trey McBride",
-          "Justin Fields"
-        ],
-        "is_top_value": false,
-        "kept_2026": false
-      },
-      {
-        "player_id": 4362887,
-        "name": "Justin Fields",
-        "position": "QB",
-        "pro_team": "KC",
-        "lineup_slot": "BE",
-        "keeper_value": 4,
-        "injury_status": "NORMAL",
-        "acquisition_type": "ADD",
-        "drafted_round_2025": 4,
-        "drafted_pick_2025": "4.03",
-        "drafted_overall_2025": 39,
-        "points_actual_2025": 142.66,
-        "position_rank_actual_2025": 28,
-        "points_projected_2026": 10.64103585,
-        "position_rank_projected_2026": 37,
-        "adp_superflex_rank": 334,
-        "adp_pick_estimate": "28.10",
-        "keeper_cost_round_2026": 3,
-        "keeper_cost_pick_estimate": "3.03",
-        "is_first_round_pick": false,
-        "vig": -307,
-        "shares_round_with": [
-          "Trey McBride",
-          "Kyren Williams"
+          "Trey McBride"
         ],
         "is_top_value": false,
         "kept_2026": false
@@ -5515,6 +5540,32 @@
         "keeper_cost_pick_estimate": "13.10",
         "is_first_round_pick": false,
         "vig": -22,
+        "shares_round_with": [],
+        "is_top_value": false,
+        "kept_2026": false
+      },
+      {
+        "player_id": 11252,
+        "name": "Joe Flacco",
+        "position": "QB",
+        "pro_team": "CIN",
+        "lineup_slot": "BE",
+        "keeper_value": 15,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "drafted_round_2025": 15,
+        "drafted_pick_2025": "15.03",
+        "drafted_overall_2025": 171,
+        "points_actual_2025": 146.66,
+        "position_rank_actual_2025": 27,
+        "points_projected_2026": 10.52102039,
+        "position_rank_projected_2026": 38,
+        "adp_superflex_rank": 374,
+        "adp_pick_estimate": "32.02",
+        "keeper_cost_round_2026": 14,
+        "keeper_cost_pick_estimate": "14.03",
+        "is_first_round_pick": false,
+        "vig": -215,
         "shares_round_with": [],
         "is_top_value": false,
         "kept_2026": false
@@ -5625,10 +5676,10 @@
         "reason": "not drafted in 2025 (waiver/FA addition)"
       },
       {
-        "player_id": 4685522,
-        "name": "Ty Simpson",
+        "player_id": 4427238,
+        "name": "Dillon Gabriel",
         "position": "QB",
-        "pro_team": "LAR",
+        "pro_team": "CLE",
         "lineup_slot": "BE",
         "keeper_value": 0,
         "injury_status": "NORMAL",
@@ -5722,8 +5773,7 @@
           "is_first_round_pick": false,
           "vig": 8,
           "shares_round_with": [
-            "Kyren Williams",
-            "Justin Fields"
+            "Kyren Williams"
           ],
           "is_top_value": false,
           "kept_2026": true
@@ -6685,7 +6735,7 @@
         "drafted_pick_2025": "17.03",
         "drafted_overall_2025": 195,
         "points_actual_2025": 10.1,
-        "position_rank_actual_2025": 96,
+        "position_rank_actual_2025": 97,
         "points_projected_2026": 72.40420546,
         "position_rank_projected_2026": 54,
         "adp_superflex_rank": 286,

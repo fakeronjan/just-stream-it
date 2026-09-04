@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Lamar and Drake's Grahamy's",
+    "name": "They're Lions Two Us",
     "abbrev": "IH",
     "logo": "logos/2026/1.jpg",
     "owners": [
@@ -33,8 +33,8 @@
   },
   {
     "id": 3,
-    "name": "Illusions Michael",
-    "abbrev": "TRIK",
+    "name": "Beard Al",
+    "abbrev": "Al",
     "logo": "logos/2026/3.jpg",
     "owners": [
       "Pete Gallagher"
