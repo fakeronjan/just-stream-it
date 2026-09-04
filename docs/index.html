@@ -104,6 +104,16 @@
     padding-bottom: 6px;
     margin-bottom: 10px;
   }
+  .nameplate-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(8px, 2.5vw, 20px);
+  }
+  .nameplate-row .football {
+    font-size: clamp(1.3rem, 4.5vw, 2rem);
+    flex-shrink: 0;
+  }
   h1.nameplate {
     font-family: "Rozha One", serif;
     font-size: clamp(2.1rem, 9.5vw, 3.6rem);
@@ -299,7 +309,11 @@
       <span>Week 1 Edition</span>
       <span>Price: One Waiver Claim</span>
     </div>
-    <h1 class="nameplate">The Nielson<br>News</h1>
+    <div class="nameplate-row">
+      <span class="football" aria-hidden="true">&#127944;</span>
+      <h1 class="nameplate">The Nielson<br>News</h1>
+      <span class="football" aria-hidden="true">&#127944;</span>
+    </div>
     <p class="tagline">&ldquo;A Great Paper for Smashing Cockroaches!&rdquo;</p>
     <hr class="masthead-rule">
     <nav class="resources" id="resources-nav"></nav>
