@@ -237,7 +237,13 @@
   .matchup-h2h-week { font-family: "Special Elite", monospace; font-size: 0.65rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
   .matchup-h2h-score { font-size: 0.88rem; font-variant-numeric: tabular-nums; color: var(--ink-dim); }
   .matchup-h2h-score .win { color: var(--ink); font-weight: 700; }
-  .matchup-trade { font-size: 0.86rem; text-align: center; max-width: 460px; margin: 0 auto; }
+  .matchup-fact-list { max-width: 480px; margin: 0 auto; }
+  .matchup-fact-row {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 10px;
+    padding: 3px 0; border-bottom: 1px solid rgba(28,26,22,0.12); font-size: 0.85rem;
+  }
+  .matchup-fact-row:last-child { border-bottom: none; }
+  .matchup-fact-tag { color: var(--ink-dim); font-size: 0.8rem; text-align: right; white-space: nowrap; }
 
   footer.masthead-footer {
     margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
@@ -414,19 +420,49 @@ const POWER = {
 // every 2025 matchup ran exactly twice, week 1 and week 12, so this is
 // the complete series, not a sample. No playoff meetings among any of
 // these 6 pairs.
+// "swaps": players who ended 2025 on one of these two teams' rosters and
+// are on the OTHER team's 2026 roster now - not a trade, not a keeper,
+// just the draft pool putting them back in front of the same opponent.
+// Computed by cross-referencing docs/data/2026/draft.json (both teams'
+// full 2026 rosters, keepers + live picks) against docs/data/2025/rosters.json
+// (both teams' end-of-2025 rosters) by ESPN player_id. D/ST excluded (same
+// reason as everywhere else on this page - meaningless overlap). Bare
+// fundamentals only: player, which team had them in 2025, which team has
+// them now, and what it cost this year (keeper cost or live-draft round).
 const MATCHUPS = [
-  { a: 8, b: 6,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 153.52, bScore: 108.26 }, { week: 12, aScore: 163.36, bScore: 122.62 }] },
-  { a: 5, b: 12, aWins: 1, bWins: 1, games: [{ week: 1, aScore: 122.28, bScore: 134.00 }, { week: 12, aScore: 132.08, bScore: 104.72 }] },
-  { a: 1, b: 2,  aWins: 1, bWins: 1, games: [{ week: 1, aScore: 139.98, bScore: 111.92 }, { week: 12, aScore: 103.66, bScore: 171.34 }] },
+  { a: 8, b: 6,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 153.52, bScore: 108.26 }, { week: 12, aScore: 163.36, bScore: 122.62 }],
+    swaps: [ { player: 'Kayshon Boutte (WR)', from: 8, to: 6, round: 17 } ] },
+  { a: 5, b: 12, aWins: 1, bWins: 1, games: [{ week: 1, aScore: 122.28, bScore: 134.00 }, { week: 12, aScore: 132.08, bScore: 104.72 }],
+    swaps: [ { player: 'Dallas Goedert (TE)', from: 5, to: 12, round: 8 },
+             { player: 'Juwan Johnson (TE)', from: 12, to: 5, round: 15 } ] },
+  { a: 1, b: 2,  aWins: 1, bWins: 1, games: [{ week: 1, aScore: 139.98, bScore: 111.92 }, { week: 12, aScore: 103.66, bScore: 171.34 }],
+    swaps: [ { player: 'Isaiah Likely (TE)', from: 1, to: 2, round: 6 },
+             { player: 'Amon-Ra St. Brown (WR)', from: 2, to: 1, round: 1 },
+             { player: 'Jared Goff (QB)', from: 2, to: 1, round: 4 } ] },
   { a: 3, b: 10, aWins: 2, bWins: 0, games: [{ week: 1, aScore: 159.04, bScore: 111.88 }, { week: 12, aScore: 119.26, bScore: 116.50 }] },
-  { a: 4, b: 7,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 100.44, bScore: 86.88 },  { week: 12, aScore: 137.04, bScore: 67.26 }] },
+  { a: 4, b: 7,  aWins: 2, bWins: 0, games: [{ week: 1, aScore: 100.44, bScore: 86.88 },  { week: 12, aScore: 137.04, bScore: 67.26 }],
+    swaps: [ { player: 'Brock Bowers (TE)', from: 4, to: 7, round: 4 },
+             { player: 'Tee Higgins (WR)', from: 4, to: 7, round: 5 },
+             { player: 'Brian Thomas Jr. (WR)', from: 4, to: 7, round: 9 },
+             { player: 'Parker Washington (WR)', from: 7, to: 4, round: 7 } ] },
   { a: 11, b: 9, aWins: 1, bWins: 1, games: [{ week: 1, aScore: 143.04, bScore: 115.90 }, { week: 12, aScore: 120.78, bScore: 189.40 }],
     // Only 4 trades happened in all of 2025 (docs/data/2025/transactions.json,
     // type TRADE_ACCEPT) - checked all 4 against this week's 6 pairings, and
     // this is the only one where the two trade partners are actually playing
     // each other this week (the other 3 involved teams facing someone else
     // in week 1, so they don't belong on any matchup card right now).
-    trade: "Week 9, 2025: Kris sent Jahmyr Gibbs to Ronjan for Quinshon Judkins and Sam LaPorta. Both principals are still around a year later: Gibbs is Ronjan's round-1 keeper, Judkins is Kris's round-9 keeper. LaPorta didn't stick with either team." },
+    // Bare fundamentals only - who sent what. No claims about who still has
+    // which player: that's already visible in the Back/New lists above, and
+    // an earlier draft here got it wrong (said LaPorta "didn't stick with
+    // either team" - he's actually Ronjan's round-6 pick this year, just
+    // via a fresh redraft, not the trade itself - see "swaps" below).
+    trade: { week: 9,
+      sides: [
+        { team: 11, sent: ['Jahmyr Gibbs (RB)'] },
+        { team: 9,  sent: ['Quinshon Judkins (RB)', 'Sam LaPorta (TE)'] },
+      ] },
+    swaps: [ { player: 'Sam LaPorta (TE)', from: 11, to: 9, round: 6 },
+             { player: 'DeVonta Smith (WR)', from: 9, to: 11, round: 4 } ] },
 ];
 
 function crestImg(teamId) {
@@ -484,6 +520,28 @@ function renderMatchups() {
         </span>
       </div>
     `).join('');
+    const tradeHtml = m.trade ? `
+      <p class="matchup-series" style="margin-top:14px;">Trade History &middot; Week ${m.trade.week}, 2025</p>
+      <div class="matchup-fact-list">
+        ${m.trade.sides.map(s => `
+          <div class="matchup-fact-row">
+            <span class="matchup-fact-tag">${TEAMS[s.team].owner} sent</span>
+            <span>${s.sent.join(', ')}</span>
+          </div>
+        `).join('')}
+      </div>
+    ` : '';
+    const swapsHtml = m.swaps ? `
+      <p class="matchup-series" style="margin-top:14px;">Familiar Faces &middot; 2025 roster, now on the other side</p>
+      <div class="matchup-fact-list">
+        ${m.swaps.map(s => `
+          <div class="matchup-fact-row">
+            <span>${s.player}</span>
+            <span class="matchup-fact-tag">${TEAMS[s.from].owner} &rarr; ${TEAMS[s.to].owner} (R${s.round})</span>
+          </div>
+        `).join('')}
+      </div>
+    ` : '';
     return `
       <div class="matchup-card">
         <div class="matchup-teams">
@@ -497,10 +555,8 @@ function renderMatchups() {
         </div>
         <p class="matchup-series">${seriesLabel} &middot; no playoff meetings</p>
         <div class="matchup-h2h">${gamesHtml}</div>
-        ${m.trade ? `
-          <p class="matchup-series" style="margin-top:14px;">Trade History</p>
-          <p class="matchup-trade">${m.trade}</p>
-        ` : ''}
+        ${tradeHtml}
+        ${swapsHtml}
       </div>
     `;
   }).join('');
