@@ -554,8 +554,8 @@ function renderMatchups() {
       <div class="matchup-fact-list">
         ${m.swaps.map(s => `
           <div class="matchup-fact-row">
-            <span>${s.player}</span>
             <span class="matchup-fact-tag">${TEAMS[s.from].owner} &rarr; ${TEAMS[s.to].owner} (R${s.round})</span>
+            <span>${s.player}</span>
           </div>
         `).join('')}
       </div>
