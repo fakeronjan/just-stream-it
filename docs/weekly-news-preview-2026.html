@@ -32,6 +32,11 @@
 
   * { box-sizing: border-box; }
 
+  /* Bumps every rem-based size on the page proportionally (nearly
+     everything here is in rem) rather than hand-tuning dozens of rules -
+     up from the 16px browser default. */
+  html { font-size: 18px; }
+
   body {
     margin: 0;
     background: var(--paper);
