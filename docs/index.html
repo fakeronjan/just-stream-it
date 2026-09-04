@@ -15,6 +15,20 @@
   (e.g. week-01-preview.html) and its own nav.js tab, with newer editions
   sorted leftmost. This page has no permanent URL of its own yet - revisit
   when Week 2's edition is ready to take over index.html.
+
+  IMPORTANT when freezing this (or any future) edition: team NAME strings
+  in TEAMS are safe as-is (hardcoded JS literals, won't drift). LOGO is
+  NOT - it points at logos/2026/{id}.ext, which the daily cron overwrites
+  in place on every rebrand. If a team renames again after this edition
+  is frozen, the frozen page would silently start showing that LATER
+  logo, exactly the bug already caught once on draft-summary.html
+  (2026-09-04, see its own header/project memory). Before copying this
+  page's content to its permanent filename: snapshot the CURRENT
+  logos/2026/* into a locked logos/2026-wkNN/ folder (NN = this edition's
+  week number) and repoint the frozen copy's LOGO map at that folder
+  instead of the live path. The new edition that replaces index.html
+  keeps reading the live logos/2026/ path, same as this one does now,
+  until ITS turn to freeze.
 -->
 <!doctype html>
 <html lang="en">
