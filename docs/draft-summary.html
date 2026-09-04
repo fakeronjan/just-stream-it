@@ -311,6 +311,8 @@ const OLD_LOGO = {
   9: 'logos/2025/9.png',
   10: 'logos/2025/10.png',
   11: 'logos/2025/11.png',
+  1: 'logos/2025/1.jpg',
+  3: 'logos/2025/3.jpg',
 };
 
 const TEAMS = [
@@ -321,8 +323,8 @@ const TEAMS = [
   { id: 4,  owner: 'Ben Porter', name: 'Conquering Heroes' },
   { id: 8,  owner: 'Joe Sebranek', name: 'Olave Oyl', oldName: 'Daddy Nielsen' },
   { id: 2,  owner: 'Mariss Mednis', name: 'Mednis Madness' },
-  { id: 3,  owner: 'Pete Gallagher', name: 'Illusions Michael' },
-  { id: 1,  owner: 'Imran Hirani', name: "Lamar and Drake's Grahamy's", titleStatus2025: 'runnerup' },
+  { id: 3,  owner: 'Pete Gallagher', name: 'Beard Al', oldName: 'Illusions Michael' },
+  { id: 1,  owner: 'Imran Hirani', name: "They're Lions Two Us", oldName: "Lamar and Drake's Grahamy's", titleStatus2025: 'runnerup' },
   { id: 5,  owner: 'Cara Kantrowitz', name: 'Team Kantastrophe', titleStatus2025: 'champ' },
   { id: 12, owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
   { id: 7,  owner: 'Mike Higgins', name: 'Terrible Towels' },
@@ -451,11 +453,8 @@ function posBadge(pos) {
 // copy-paste unnoticed and points the trophy at last year's champ forever.
 // Add a fresh titleStatus2026 to whoever actually finishes 1st/2nd in 2026
 // when that time comes - don't rename or reuse this one.
-const TITLE_STATUS_EMOJI = { champ: '\u{1F451}', runnerup: '\u{1F948}' };
-function ownerLabel(t) {
-  const emoji = TITLE_STATUS_EMOJI[t.titleStatus2025];
-  return emoji ? `${t.owner} ${emoji}` : t.owner;
-}
+// TITLE_STATUS_EMOJI/ownerLabel() themselves live in nav.js now (shared with
+// index.html) - see that file's own comment.
 
 function chip(teamId, size) {
   const t = teamById(teamId);

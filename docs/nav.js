@@ -25,3 +25,14 @@ function renderNav(currentKey, leagueId) {
   });
   return [...internal, ...external].join('<span class="nav-sep">&middot;</span>');
 }
+
+// Shared by every page that carries a per-team TEAMS object with a
+// titleStatus{YEAR} field (index.html, draft-summary.html) - single source
+// so a future emoji change (like trophy -> crown on 2026-09-04) only needs
+// updating here, not once per page. See each page's own TEAMS comment for
+// why the field itself is deliberately year-scoped.
+const TITLE_STATUS_EMOJI = { champ: '\u{1F451}', runnerup: '\u{1F948}' };
+function ownerLabel(t) {
+  const emoji = TITLE_STATUS_EMOJI[t.titleStatus2025];
+  return emoji ? `${t.owner} ${emoji}` : t.owner;
+}
