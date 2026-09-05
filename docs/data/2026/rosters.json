@@ -171,16 +171,6 @@
       "acquisition_type": "ADD"
     },
     {
-      "player_id": -16011,
-      "name": "Colts D/ST",
-      "position": "D/ST",
-      "pro_team": "IND",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": 3045147,
       "name": "James Conner",
       "position": "RB",
@@ -207,6 +197,16 @@
       "pro_team": "DET",
       "lineup_slot": "K",
       "keeper_value": 9,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16003,
+      "name": "Bears D/ST",
+      "position": "D/ST",
+      "pro_team": "CHI",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
     }
@@ -545,16 +545,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": -16021,
-      "name": "Eagles D/ST",
-      "position": "D/ST",
-      "pro_team": "PHI",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4574716,
       "name": "Harrison Mevis",
       "position": "K",
@@ -589,7 +579,27 @@
       "name": "Dillon Gabriel",
       "position": "QB",
       "pro_team": "CLE",
+      "lineup_slot": "IR",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4685413,
+      "name": "Cade Klubnik",
+      "position": "QB",
+      "pro_team": "NYJ",
       "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16016,
+      "name": "Vikings D/ST",
+      "position": "D/ST",
+      "pro_team": "MIN",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"

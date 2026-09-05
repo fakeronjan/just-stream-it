@@ -1203,7 +1203,7 @@
   },
   {
     "team_id": 1,
-    "team_name": "They're Lions Two Us",
+    "team_name": "Three Lions Football Club",
     "owners": [
       "Imran Hirani"
     ],
@@ -1617,22 +1617,22 @@
         "reason": "not drafted in 2025 (waiver/FA addition)"
       },
       {
-        "player_id": -16011,
-        "name": "Colts D/ST",
-        "position": "D/ST",
-        "pro_team": "IND",
-        "lineup_slot": "D/ST",
-        "keeper_value": 0,
-        "injury_status": "NORMAL",
-        "acquisition_type": "ADD",
-        "reason": "not on any roster at end of 2025 season"
-      },
-      {
         "player_id": 4366031,
         "name": "Tank Dell",
         "position": "WR",
         "pro_team": "HOU",
         "lineup_slot": "IR",
+        "keeper_value": 0,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "reason": "not drafted in 2025 (waiver/FA addition)"
+      },
+      {
+        "player_id": -16003,
+        "name": "Bears D/ST",
+        "position": "D/ST",
+        "pro_team": "CHI",
+        "lineup_slot": "D/ST",
         "keeper_value": 0,
         "injury_status": "NORMAL",
         "acquisition_type": "ADD",
@@ -5643,17 +5643,6 @@
         "reason": "not drafted in 2025 (waiver/FA addition)"
       },
       {
-        "player_id": -16021,
-        "name": "Eagles D/ST",
-        "position": "D/ST",
-        "pro_team": "PHI",
-        "lineup_slot": "D/ST",
-        "keeper_value": 0,
-        "injury_status": "NORMAL",
-        "acquisition_type": "DRAFT",
-        "reason": "not on any roster at end of 2025 season"
-      },
-      {
         "player_id": 4574716,
         "name": "Harrison Mevis",
         "position": "K",
@@ -5680,11 +5669,33 @@
         "name": "Dillon Gabriel",
         "position": "QB",
         "pro_team": "CLE",
+        "lineup_slot": "IR",
+        "keeper_value": 0,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "reason": "not drafted in 2025 (waiver/FA addition)"
+      },
+      {
+        "player_id": 4685413,
+        "name": "Cade Klubnik",
+        "position": "QB",
+        "pro_team": "NYJ",
         "lineup_slot": "BE",
         "keeper_value": 0,
         "injury_status": "NORMAL",
         "acquisition_type": "ADD",
         "reason": "not drafted in 2025 (waiver/FA addition)"
+      },
+      {
+        "player_id": -16016,
+        "name": "Vikings D/ST",
+        "position": "D/ST",
+        "pro_team": "MIN",
+        "lineup_slot": "D/ST",
+        "keeper_value": 0,
+        "injury_status": "NORMAL",
+        "acquisition_type": "ADD",
+        "reason": "not on any roster at end of 2025 season"
       }
     ],
     "cannot_keep_both_round1_and_round2": false,
