@@ -761,7 +761,7 @@
       "name": "Michael Penix Jr.",
       "position": "QB",
       "pro_team": "ATL",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -811,6 +811,16 @@
       "name": "Jonah Coleman",
       "position": "RB",
       "pro_team": "DEN",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16021,
+      "name": "Eagles D/ST",
+      "position": "D/ST",
+      "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
@@ -2151,16 +2161,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4697745,
-      "name": "Tyler Loop",
-      "position": "K",
-      "pro_team": "BAL",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4429013,
       "name": "Tank Bigsby",
       "position": "RB",
@@ -2169,6 +2169,16 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": 3117256,
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "pro_team": "HOU",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "12": [
