@@ -2682,7 +2682,7 @@
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -2725,7 +2725,7 @@
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -2768,7 +2768,7 @@
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -2811,7 +2811,7 @@
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         }
@@ -2859,7 +2859,7 @@
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -2893,16 +2893,16 @@
               "adjusted_rank": 63
             },
             {
-              "name": "Travis Hunter",
-              "position": "WR",
-              "pro_team": "JAX",
+              "name": "TreVeyon Henderson",
+              "position": "RB",
+              "pro_team": "NE",
               "adjusted_rank": 64
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -2948,22 +2948,22 @@
               "adjusted_rank": 63
             },
             {
-              "name": "Travis Hunter",
-              "position": "WR",
-              "pro_team": "JAX",
-              "adjusted_rank": 64
-            },
-            {
               "name": "TreVeyon Henderson",
               "position": "RB",
               "pro_team": "NE",
+              "adjusted_rank": 64
+            },
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
               "adjusted_rank": 65
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -2985,28 +2985,28 @@
               "adjusted_rank": 63
             },
             {
-              "name": "Travis Hunter",
-              "position": "WR",
-              "pro_team": "JAX",
-              "adjusted_rank": 64
-            },
-            {
               "name": "TreVeyon Henderson",
               "position": "RB",
               "pro_team": "NE",
-              "adjusted_rank": 65
+              "adjusted_rank": 64
             },
             {
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
+              "adjusted_rank": 65
+            },
+            {
+              "name": "Mike Evans",
+              "position": "WR",
+              "pro_team": "SF",
               "adjusted_rank": 66
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3022,34 +3022,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Travis Hunter",
-              "position": "WR",
-              "pro_team": "JAX",
-              "adjusted_rank": 64
-            },
-            {
               "name": "TreVeyon Henderson",
               "position": "RB",
               "pro_team": "NE",
-              "adjusted_rank": 65
+              "adjusted_rank": 64
             },
             {
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
-              "adjusted_rank": 66
+              "adjusted_rank": 65
             },
             {
               "name": "Mike Evans",
               "position": "WR",
               "pro_team": "SF",
+              "adjusted_rank": 66
+            },
+            {
+              "name": "Matthew Golden",
+              "position": "WR",
+              "pro_team": "GB",
               "adjusted_rank": 67
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3065,34 +3065,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "TreVeyon Henderson",
-              "position": "RB",
-              "pro_team": "NE",
-              "adjusted_rank": 65
-            },
-            {
               "name": "Christian Watson",
               "position": "WR",
               "pro_team": "GB",
-              "adjusted_rank": 66
+              "adjusted_rank": 65
             },
             {
               "name": "Mike Evans",
               "position": "WR",
               "pro_team": "SF",
-              "adjusted_rank": 67
+              "adjusted_rank": 66
             },
             {
               "name": "Matthew Golden",
               "position": "WR",
               "pro_team": "GB",
-              "adjusted_rank": 68
+              "adjusted_rank": 67
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "RB",
+              "pro_team": "TEN",
+              "adjusted_rank": 69
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3108,34 +3108,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Christian Watson",
-              "position": "WR",
-              "pro_team": "GB",
-              "adjusted_rank": 66
-            },
-            {
               "name": "Mike Evans",
               "position": "WR",
               "pro_team": "SF",
-              "adjusted_rank": 67
+              "adjusted_rank": 66
             },
             {
               "name": "Matthew Golden",
               "position": "WR",
               "pro_team": "GB",
+              "adjusted_rank": 67
+            },
+            {
+              "name": "Brian Thomas Jr.",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 68
             },
             {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 70
+              "adjusted_rank": 69
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3151,34 +3151,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Mike Evans",
-              "position": "WR",
-              "pro_team": "SF",
-              "adjusted_rank": 67
-            },
-            {
               "name": "Matthew Golden",
               "position": "WR",
               "pro_team": "GB",
-              "adjusted_rank": 68
+              "adjusted_rank": 67
             },
             {
               "name": "Brian Thomas Jr.",
               "position": "WR",
               "pro_team": "JAX",
-              "adjusted_rank": 69
+              "adjusted_rank": 68
             },
             {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
+              "adjusted_rank": 69
+            },
+            {
+              "name": "Kenny Gainwell",
+              "position": "RB",
+              "pro_team": "TB",
               "adjusted_rank": 70
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3194,34 +3194,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Matthew Golden",
-              "position": "WR",
-              "pro_team": "GB",
-              "adjusted_rank": 68
-            },
-            {
               "name": "Brian Thomas Jr.",
               "position": "WR",
               "pro_team": "JAX",
-              "adjusted_rank": 69
+              "adjusted_rank": 68
             },
             {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 70
+              "adjusted_rank": 69
             },
             {
               "name": "Kenny Gainwell",
               "position": "RB",
               "pro_team": "TB",
+              "adjusted_rank": 70
+            },
+            {
+              "name": "Chuba Hubbard",
+              "position": "RB",
+              "pro_team": "CAR",
               "adjusted_rank": 71
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3237,34 +3237,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Brian Thomas Jr.",
-              "position": "WR",
-              "pro_team": "JAX",
-              "adjusted_rank": 69
-            },
-            {
               "name": "Tony Pollard",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 70
+              "adjusted_rank": 69
             },
             {
               "name": "Kenny Gainwell",
               "position": "RB",
               "pro_team": "TB",
-              "adjusted_rank": 71
+              "adjusted_rank": 70
             },
             {
               "name": "Chuba Hubbard",
               "position": "RB",
               "pro_team": "CAR",
-              "adjusted_rank": 72
+              "adjusted_rank": 71
+            },
+            {
+              "name": "Michael Wilson",
+              "position": "WR",
+              "pro_team": "ARI",
+              "adjusted_rank": 73
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3280,34 +3280,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tony Pollard",
-              "position": "RB",
-              "pro_team": "TEN",
-              "adjusted_rank": 70
-            },
-            {
               "name": "Kenny Gainwell",
               "position": "RB",
               "pro_team": "TB",
-              "adjusted_rank": 71
+              "adjusted_rank": 70
             },
             {
               "name": "Chuba Hubbard",
               "position": "RB",
               "pro_team": "CAR",
+              "adjusted_rank": 71
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
               "adjusted_rank": 72
             },
             {
               "name": "Michael Wilson",
               "position": "WR",
               "pro_team": "ARI",
-              "adjusted_rank": 74
+              "adjusted_rank": 73
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         }
@@ -3328,34 +3328,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kenny Gainwell",
-              "position": "RB",
-              "pro_team": "TB",
-              "adjusted_rank": 71
-            },
-            {
               "name": "Chuba Hubbard",
               "position": "RB",
               "pro_team": "CAR",
-              "adjusted_rank": 72
+              "adjusted_rank": 71
             },
             {
               "name": "J.K. Dobbins",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 73
+              "adjusted_rank": 72
             },
             {
               "name": "Michael Wilson",
               "position": "WR",
               "pro_team": "ARI",
+              "adjusted_rank": 73
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 74
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             }
           ]
         },
@@ -3371,33 +3371,33 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Chuba Hubbard",
-              "position": "RB",
-              "pro_team": "CAR",
-              "adjusted_rank": 72
-            },
-            {
               "name": "J.K. Dobbins",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 73
+              "adjusted_rank": 72
             },
             {
               "name": "Michael Wilson",
               "position": "WR",
               "pro_team": "ARI",
-              "adjusted_rank": 74
+              "adjusted_rank": 73
             },
             {
               "name": "Jakobi Meyers",
               "position": "WR",
               "pro_team": "JAX",
-              "adjusted_rank": 75
+              "adjusted_rank": 74
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
+              "adjusted_rank": 75
+            },
+            {
+              "name": "Tucker Kraft",
+              "position": "TE",
+              "pro_team": "GB",
               "adjusted_rank": 76
             }
           ]
@@ -3414,33 +3414,33 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "J.K. Dobbins",
-              "position": "RB",
-              "pro_team": "DEN",
-              "adjusted_rank": 73
-            },
-            {
               "name": "Michael Wilson",
               "position": "WR",
               "pro_team": "ARI",
-              "adjusted_rank": 74
+              "adjusted_rank": 73
             },
             {
               "name": "Jakobi Meyers",
               "position": "WR",
               "pro_team": "JAX",
-              "adjusted_rank": 75
+              "adjusted_rank": 74
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             },
             {
               "name": "Tucker Kraft",
               "position": "TE",
               "pro_team": "GB",
+              "adjusted_rank": 76
+            },
+            {
+              "name": "Malik Willis",
+              "position": "QB",
+              "pro_team": "MIA",
               "adjusted_rank": 77
             }
           ]
@@ -3457,33 +3457,33 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Michael Wilson",
-              "position": "WR",
-              "pro_team": "ARI",
-              "adjusted_rank": 74
-            },
-            {
               "name": "Jakobi Meyers",
               "position": "WR",
               "pro_team": "JAX",
-              "adjusted_rank": 75
+              "adjusted_rank": 74
             },
             {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             },
             {
               "name": "Tucker Kraft",
               "position": "TE",
               "pro_team": "GB",
-              "adjusted_rank": 77
+              "adjusted_rank": 76
             },
             {
               "name": "Malik Willis",
               "position": "QB",
               "pro_team": "MIA",
+              "adjusted_rank": 77
+            },
+            {
+              "name": "Jordan Love",
+              "position": "QB",
+              "pro_team": "GB",
               "adjusted_rank": 78
             }
           ]
@@ -3500,34 +3500,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jakobi Meyers",
-              "position": "WR",
-              "pro_team": "JAX",
-              "adjusted_rank": 75
-            },
-            {
               "name": "George Kittle",
               "position": "TE",
               "pro_team": "SF",
-              "adjusted_rank": 76
+              "adjusted_rank": 75
             },
             {
               "name": "Tucker Kraft",
               "position": "TE",
               "pro_team": "GB",
-              "adjusted_rank": 77
+              "adjusted_rank": 76
             },
             {
               "name": "Malik Willis",
               "position": "QB",
               "pro_team": "MIA",
-              "adjusted_rank": 78
+              "adjusted_rank": 77
             },
             {
               "name": "Jordan Love",
               "position": "QB",
               "pro_team": "GB",
-              "adjusted_rank": 79
+              "adjusted_rank": 78
+            },
+            {
+              "name": "Jordan Addison",
+              "position": "WR",
+              "pro_team": "MIN",
+              "adjusted_rank": 81
             }
           ]
         },
@@ -3543,34 +3543,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "George Kittle",
-              "position": "TE",
-              "pro_team": "SF",
-              "adjusted_rank": 76
-            },
-            {
               "name": "Tucker Kraft",
               "position": "TE",
               "pro_team": "GB",
-              "adjusted_rank": 77
+              "adjusted_rank": 76
             },
             {
               "name": "Malik Willis",
               "position": "QB",
               "pro_team": "MIA",
-              "adjusted_rank": 78
+              "adjusted_rank": 77
             },
             {
               "name": "Jordan Love",
               "position": "QB",
               "pro_team": "GB",
+              "adjusted_rank": 78
+            },
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
               "adjusted_rank": 79
             },
             {
               "name": "Jordan Addison",
               "position": "WR",
               "pro_team": "MIN",
-              "adjusted_rank": 82
+              "adjusted_rank": 81
             }
           ]
         },
@@ -3622,34 +3622,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tucker Kraft",
-              "position": "TE",
-              "pro_team": "GB",
-              "adjusted_rank": 77
-            },
-            {
               "name": "Malik Willis",
               "position": "QB",
               "pro_team": "MIA",
-              "adjusted_rank": 78
+              "adjusted_rank": 77
             },
             {
               "name": "Jordan Love",
               "position": "QB",
               "pro_team": "GB",
-              "adjusted_rank": 79
+              "adjusted_rank": 78
             },
             {
               "name": "C.J. Stroud",
               "position": "QB",
               "pro_team": "HOU",
-              "adjusted_rank": 80
+              "adjusted_rank": 79
             },
             {
               "name": "Jordan Addison",
               "position": "WR",
               "pro_team": "MIN",
-              "adjusted_rank": 82
+              "adjusted_rank": 81
+            },
+            {
+              "name": "Dallas Goedert",
+              "position": "TE",
+              "pro_team": "PHI",
+              "adjusted_rank": 85
             }
           ]
         },
@@ -3665,34 +3665,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Malik Willis",
-              "position": "QB",
-              "pro_team": "MIA",
-              "adjusted_rank": 78
-            },
-            {
               "name": "Jordan Love",
               "position": "QB",
               "pro_team": "GB",
-              "adjusted_rank": 79
+              "adjusted_rank": 78
             },
             {
               "name": "C.J. Stroud",
               "position": "QB",
               "pro_team": "HOU",
+              "adjusted_rank": 79
+            },
+            {
+              "name": "Sam Darnold",
+              "position": "QB",
+              "pro_team": "SEA",
               "adjusted_rank": 80
             },
             {
               "name": "Jordan Addison",
               "position": "WR",
               "pro_team": "MIN",
-              "adjusted_rank": 82
+              "adjusted_rank": 81
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
             }
           ]
         },
@@ -3708,34 +3708,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jordan Love",
-              "position": "QB",
-              "pro_team": "GB",
-              "adjusted_rank": 79
-            },
-            {
               "name": "C.J. Stroud",
               "position": "QB",
               "pro_team": "HOU",
-              "adjusted_rank": 80
+              "adjusted_rank": 79
             },
             {
               "name": "Sam Darnold",
               "position": "QB",
               "pro_team": "SEA",
-              "adjusted_rank": 81
+              "adjusted_rank": 80
             },
             {
               "name": "Jordan Addison",
               "position": "WR",
               "pro_team": "MIN",
+              "adjusted_rank": 81
+            },
+            {
+              "name": "De'Zhaun Stribling",
+              "position": "WR",
+              "pro_team": "SF",
               "adjusted_rank": 82
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
             }
           ]
         },
@@ -3751,34 +3751,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "C.J. Stroud",
-              "position": "QB",
-              "pro_team": "HOU",
-              "adjusted_rank": 80
-            },
-            {
               "name": "Sam Darnold",
               "position": "QB",
               "pro_team": "SEA",
-              "adjusted_rank": 81
+              "adjusted_rank": 80
             },
             {
               "name": "Jordan Addison",
               "position": "WR",
               "pro_team": "MIN",
-              "adjusted_rank": 82
+              "adjusted_rank": 81
             },
             {
               "name": "De'Zhaun Stribling",
               "position": "WR",
               "pro_team": "SF",
+              "adjusted_rank": 82
+            },
+            {
+              "name": "Khalil Shakir",
+              "position": "WR",
+              "pro_team": "BUF",
               "adjusted_rank": 83
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
             }
           ]
         }
@@ -3799,34 +3799,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Sam Darnold",
-              "position": "QB",
-              "pro_team": "SEA",
-              "adjusted_rank": 81
-            },
-            {
               "name": "Jordan Addison",
               "position": "WR",
               "pro_team": "MIN",
-              "adjusted_rank": 82
+              "adjusted_rank": 81
             },
             {
               "name": "De'Zhaun Stribling",
               "position": "WR",
               "pro_team": "SF",
-              "adjusted_rank": 83
+              "adjusted_rank": 82
             },
             {
               "name": "Khalil Shakir",
               "position": "WR",
               "pro_team": "BUF",
-              "adjusted_rank": 84
+              "adjusted_rank": 83
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
+            },
+            {
+              "name": "Bryce Young",
+              "position": "QB",
+              "pro_team": "CAR",
+              "adjusted_rank": 90
             }
           ]
         },
@@ -3860,34 +3860,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jordan Addison",
-              "position": "WR",
-              "pro_team": "MIN",
-              "adjusted_rank": 82
-            },
-            {
               "name": "De'Zhaun Stribling",
               "position": "WR",
               "pro_team": "SF",
-              "adjusted_rank": 83
+              "adjusted_rank": 82
             },
             {
               "name": "Khalil Shakir",
               "position": "WR",
               "pro_team": "BUF",
+              "adjusted_rank": 83
+            },
+            {
+              "name": "Jayden Reed",
+              "position": "WR",
+              "pro_team": "GB",
               "adjusted_rank": 84
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             }
           ]
         },
@@ -3903,34 +3903,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "De'Zhaun Stribling",
-              "position": "WR",
-              "pro_team": "SF",
-              "adjusted_rank": 83
-            },
-            {
               "name": "Khalil Shakir",
               "position": "WR",
               "pro_team": "BUF",
-              "adjusted_rank": 84
+              "adjusted_rank": 83
             },
             {
               "name": "Jayden Reed",
               "position": "WR",
               "pro_team": "GB",
-              "adjusted_rank": 85
+              "adjusted_rank": 84
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
+              "adjusted_rank": 85
+            },
+            {
+              "name": "Travis Kelce",
+              "position": "TE",
+              "pro_team": "KC",
               "adjusted_rank": 86
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             }
           ]
         },
@@ -3946,34 +3946,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Khalil Shakir",
-              "position": "WR",
-              "pro_team": "BUF",
-              "adjusted_rank": 84
-            },
-            {
               "name": "Jayden Reed",
               "position": "WR",
               "pro_team": "GB",
-              "adjusted_rank": 85
+              "adjusted_rank": 84
             },
             {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
             },
             {
               "name": "Travis Kelce",
               "position": "TE",
               "pro_team": "KC",
+              "adjusted_rank": 86
+            },
+            {
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "pro_team": "DAL",
               "adjusted_rank": 87
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             }
           ]
         },
@@ -3989,34 +3989,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jayden Reed",
-              "position": "WR",
-              "pro_team": "GB",
-              "adjusted_rank": 85
-            },
-            {
               "name": "Dallas Goedert",
               "position": "TE",
               "pro_team": "PHI",
-              "adjusted_rank": 86
+              "adjusted_rank": 85
             },
             {
               "name": "Travis Kelce",
               "position": "TE",
               "pro_team": "KC",
-              "adjusted_rank": 87
+              "adjusted_rank": 86
             },
             {
               "name": "Jake Ferguson",
               "position": "TE",
               "pro_team": "DAL",
-              "adjusted_rank": 88
+              "adjusted_rank": 87
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
+            },
+            {
+              "name": "Xavier Worthy",
+              "position": "WR",
+              "pro_team": "KC",
+              "adjusted_rank": 93
             }
           ]
         },
@@ -4032,34 +4032,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Dallas Goedert",
-              "position": "TE",
-              "pro_team": "PHI",
-              "adjusted_rank": 86
-            },
-            {
               "name": "Travis Kelce",
               "position": "TE",
               "pro_team": "KC",
-              "adjusted_rank": 87
+              "adjusted_rank": 86
             },
             {
               "name": "Jake Ferguson",
               "position": "TE",
               "pro_team": "DAL",
+              "adjusted_rank": 87
+            },
+            {
+              "name": "Mark Andrews",
+              "position": "TE",
+              "pro_team": "BAL",
               "adjusted_rank": 88
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
             }
           ]
         },
@@ -4075,34 +4075,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Travis Kelce",
-              "position": "TE",
-              "pro_team": "KC",
-              "adjusted_rank": 87
-            },
-            {
               "name": "Jake Ferguson",
               "position": "TE",
               "pro_team": "DAL",
-              "adjusted_rank": 88
+              "adjusted_rank": 87
             },
             {
               "name": "Mark Andrews",
               "position": "TE",
               "pro_team": "BAL",
+              "adjusted_rank": 88
+            },
+            {
+              "name": "Isaiah Likely",
+              "position": "TE",
+              "pro_team": "NYG",
               "adjusted_rank": 89
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
             }
           ]
         },
@@ -4118,34 +4118,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jake Ferguson",
-              "position": "TE",
-              "pro_team": "DAL",
-              "adjusted_rank": 88
-            },
-            {
               "name": "Mark Andrews",
               "position": "TE",
               "pro_team": "BAL",
-              "adjusted_rank": 89
+              "adjusted_rank": 88
             },
             {
               "name": "Isaiah Likely",
               "position": "TE",
               "pro_team": "NYG",
-              "adjusted_rank": 90
+              "adjusted_rank": 89
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
+              "adjusted_rank": 90
+            },
+            {
+              "name": "Cam Ward",
+              "position": "QB",
+              "pro_team": "TEN",
               "adjusted_rank": 91
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
             }
           ]
         },
@@ -4161,34 +4161,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Mark Andrews",
-              "position": "TE",
-              "pro_team": "BAL",
-              "adjusted_rank": 89
-            },
-            {
               "name": "Isaiah Likely",
               "position": "TE",
               "pro_team": "NYG",
-              "adjusted_rank": 90
+              "adjusted_rank": 89
             },
             {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             },
             {
               "name": "Cam Ward",
               "position": "QB",
               "pro_team": "TEN",
+              "adjusted_rank": 91
+            },
+            {
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "pro_team": "ARI",
               "adjusted_rank": 92
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
             }
           ]
         },
@@ -4204,34 +4204,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Isaiah Likely",
-              "position": "TE",
-              "pro_team": "NYG",
-              "adjusted_rank": 90
-            },
-            {
               "name": "Bryce Young",
               "position": "QB",
               "pro_team": "CAR",
-              "adjusted_rank": 91
+              "adjusted_rank": 90
             },
             {
               "name": "Cam Ward",
               "position": "QB",
               "pro_team": "TEN",
-              "adjusted_rank": 92
+              "adjusted_rank": 91
             },
             {
               "name": "Jacoby Brissett",
               "position": "QB",
               "pro_team": "ARI",
-              "adjusted_rank": 93
+              "adjusted_rank": 92
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
+            },
+            {
+              "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 96
             }
           ]
         },
@@ -4247,34 +4247,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Bryce Young",
-              "position": "QB",
-              "pro_team": "CAR",
-              "adjusted_rank": 91
-            },
-            {
               "name": "Cam Ward",
               "position": "QB",
               "pro_team": "TEN",
-              "adjusted_rank": 92
+              "adjusted_rank": 91
             },
             {
               "name": "Jacoby Brissett",
               "position": "QB",
               "pro_team": "ARI",
-              "adjusted_rank": 93
+              "adjusted_rank": 92
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
+              "adjusted_rank": 93
+            },
+            {
+              "name": "Quentin Johnston",
+              "position": "WR",
+              "pro_team": "LAC",
               "adjusted_rank": 94
             },
             {
               "name": "Josh Jacobs",
               "position": "RB",
               "pro_team": "GB",
-              "adjusted_rank": 97
+              "adjusted_rank": 96
             }
           ]
         }
@@ -4295,34 +4295,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Cam Ward",
-              "position": "QB",
-              "pro_team": "TEN",
-              "adjusted_rank": 92
-            },
-            {
               "name": "Jacoby Brissett",
               "position": "QB",
               "pro_team": "ARI",
-              "adjusted_rank": 93
+              "adjusted_rank": 92
             },
             {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
             },
             {
               "name": "Quentin Johnston",
               "position": "WR",
               "pro_team": "LAC",
+              "adjusted_rank": 94
+            },
+            {
+              "name": "Stefon Diggs",
+              "position": "WR",
+              "pro_team": "WSH",
               "adjusted_rank": 95
             },
             {
               "name": "Josh Jacobs",
               "position": "RB",
               "pro_team": "GB",
-              "adjusted_rank": 97
+              "adjusted_rank": 96
             }
           ]
         },
@@ -4338,34 +4338,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jacoby Brissett",
-              "position": "QB",
-              "pro_team": "ARI",
-              "adjusted_rank": 93
-            },
-            {
               "name": "Xavier Worthy",
               "position": "WR",
               "pro_team": "KC",
-              "adjusted_rank": 94
+              "adjusted_rank": 93
             },
             {
               "name": "Quentin Johnston",
               "position": "WR",
               "pro_team": "LAC",
-              "adjusted_rank": 95
+              "adjusted_rank": 94
             },
             {
               "name": "Stefon Diggs",
               "position": "WR",
               "pro_team": "WSH",
-              "adjusted_rank": 96
+              "adjusted_rank": 95
             },
             {
               "name": "Josh Jacobs",
               "position": "RB",
               "pro_team": "GB",
-              "adjusted_rank": 97
+              "adjusted_rank": 96
+            },
+            {
+              "name": "Dalton Kincaid",
+              "position": "TE",
+              "pro_team": "BUF",
+              "adjusted_rank": 101
             }
           ]
         },
@@ -4399,25 +4399,25 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Xavier Worthy",
-              "position": "WR",
-              "pro_team": "KC",
-              "adjusted_rank": 94
-            },
-            {
               "name": "Quentin Johnston",
               "position": "WR",
               "pro_team": "LAC",
-              "adjusted_rank": 95
+              "adjusted_rank": 94
             },
             {
               "name": "Stefon Diggs",
               "position": "WR",
               "pro_team": "WSH",
-              "adjusted_rank": 96
+              "adjusted_rank": 95
             },
             {
               "name": "Josh Jacobs",
+              "position": "RB",
+              "pro_team": "GB",
+              "adjusted_rank": 96
+            },
+            {
+              "name": "MarShawn Lloyd",
               "position": "RB",
               "pro_team": "GB",
               "adjusted_rank": 97
@@ -4426,7 +4426,7 @@
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
             }
           ]
         },
@@ -4442,34 +4442,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Quentin Johnston",
-              "position": "WR",
-              "pro_team": "LAC",
-              "adjusted_rank": 95
-            },
-            {
               "name": "Stefon Diggs",
               "position": "WR",
               "pro_team": "WSH",
-              "adjusted_rank": 96
+              "adjusted_rank": 95
             },
             {
               "name": "Josh Jacobs",
               "position": "RB",
               "pro_team": "GB",
-              "adjusted_rank": 97
+              "adjusted_rank": 96
             },
             {
               "name": "MarShawn Lloyd",
               "position": "RB",
               "pro_team": "GB",
+              "adjusted_rank": 97
+            },
+            {
+              "name": "Kyle Monangai",
+              "position": "RB",
+              "pro_team": "CHI",
               "adjusted_rank": 98
             },
             {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
             }
           ]
         },
@@ -4503,34 +4503,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Stefon Diggs",
-              "position": "WR",
-              "pro_team": "WSH",
-              "adjusted_rank": 96
-            },
-            {
               "name": "Josh Jacobs",
               "position": "RB",
               "pro_team": "GB",
-              "adjusted_rank": 97
+              "adjusted_rank": 96
             },
             {
               "name": "MarShawn Lloyd",
               "position": "RB",
               "pro_team": "GB",
-              "adjusted_rank": 98
+              "adjusted_rank": 97
             },
             {
               "name": "Kyle Monangai",
               "position": "RB",
               "pro_team": "CHI",
-              "adjusted_rank": 99
+              "adjusted_rank": 98
             },
             {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
+            },
+            {
+              "name": "Josh Downs",
+              "position": "WR",
+              "pro_team": "IND",
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4564,34 +4564,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Josh Jacobs",
+              "name": "MarShawn Lloyd",
               "position": "RB",
               "pro_team": "GB",
               "adjusted_rank": 97
             },
             {
-              "name": "MarShawn Lloyd",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 98
-            },
-            {
               "name": "Kyle Monangai",
               "position": "RB",
               "pro_team": "CHI",
+              "adjusted_rank": 98
+            },
+            {
+              "name": "Jacory Croskey-Merritt",
+              "position": "RB",
+              "pro_team": "WSH",
               "adjusted_rank": 99
             },
             {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4607,34 +4607,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "MarShawn Lloyd",
-              "position": "RB",
-              "pro_team": "GB",
-              "adjusted_rank": 98
-            },
-            {
               "name": "Kyle Monangai",
               "position": "RB",
               "pro_team": "CHI",
-              "adjusted_rank": 99
+              "adjusted_rank": 98
             },
             {
               "name": "Jacory Croskey-Merritt",
               "position": "RB",
               "pro_team": "WSH",
+              "adjusted_rank": 99
+            },
+            {
+              "name": "Aaron Jones Sr.",
+              "position": "RB",
+              "pro_team": "MIN",
               "adjusted_rank": 100
             },
             {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4650,34 +4650,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Kyle Monangai",
-              "position": "RB",
-              "pro_team": "CHI",
-              "adjusted_rank": 99
-            },
-            {
               "name": "Jacory Croskey-Merritt",
               "position": "RB",
               "pro_team": "WSH",
-              "adjusted_rank": 100
+              "adjusted_rank": 99
             },
             {
               "name": "Aaron Jones Sr.",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 101
+              "adjusted_rank": 100
             },
             {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
+              "adjusted_rank": 101
+            },
+            {
+              "name": "T.J. Hockenson",
+              "position": "TE",
+              "pro_team": "MIN",
               "adjusted_rank": 102
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4693,34 +4693,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jacory Croskey-Merritt",
-              "position": "RB",
-              "pro_team": "WSH",
-              "adjusted_rank": 100
-            },
-            {
               "name": "Aaron Jones Sr.",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 101
+              "adjusted_rank": 100
             },
             {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
             },
             {
               "name": "T.J. Hockenson",
               "position": "TE",
               "pro_team": "MIN",
+              "adjusted_rank": 102
+            },
+            {
+              "name": "Hunter Henry",
+              "position": "TE",
+              "pro_team": "NE",
               "adjusted_rank": 103
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         }
@@ -4741,34 +4741,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Aaron Jones Sr.",
-              "position": "RB",
-              "pro_team": "MIN",
-              "adjusted_rank": 101
-            },
-            {
               "name": "Dalton Kincaid",
               "position": "TE",
               "pro_team": "BUF",
-              "adjusted_rank": 102
+              "adjusted_rank": 101
             },
             {
               "name": "T.J. Hockenson",
               "position": "TE",
               "pro_team": "MIN",
-              "adjusted_rank": 103
+              "adjusted_rank": 102
             },
             {
               "name": "Hunter Henry",
               "position": "TE",
               "pro_team": "NE",
-              "adjusted_rank": 104
+              "adjusted_rank": 103
+            },
+            {
+              "name": "Rachaad White",
+              "position": "RB",
+              "pro_team": "WSH",
+              "adjusted_rank": 105
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4784,34 +4784,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Dalton Kincaid",
-              "position": "TE",
-              "pro_team": "BUF",
-              "adjusted_rank": 102
-            },
-            {
               "name": "T.J. Hockenson",
               "position": "TE",
               "pro_team": "MIN",
-              "adjusted_rank": 103
+              "adjusted_rank": 102
             },
             {
               "name": "Hunter Henry",
               "position": "TE",
               "pro_team": "NE",
+              "adjusted_rank": 103
+            },
+            {
+              "name": "Terrance Ferguson",
+              "position": "TE",
+              "pro_team": "LAR",
               "adjusted_rank": 104
             },
             {
               "name": "Rachaad White",
               "position": "RB",
               "pro_team": "WSH",
-              "adjusted_rank": 106
+              "adjusted_rank": 105
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4827,34 +4827,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "T.J. Hockenson",
-              "position": "TE",
-              "pro_team": "MIN",
-              "adjusted_rank": 103
-            },
-            {
               "name": "Hunter Henry",
               "position": "TE",
               "pro_team": "NE",
-              "adjusted_rank": 104
+              "adjusted_rank": 103
             },
             {
               "name": "Terrance Ferguson",
               "position": "TE",
               "pro_team": "LAR",
-              "adjusted_rank": 105
+              "adjusted_rank": 104
             },
             {
               "name": "Rachaad White",
               "position": "RB",
               "pro_team": "WSH",
+              "adjusted_rank": 105
+            },
+            {
+              "name": "Jordan Mason",
+              "position": "RB",
+              "pro_team": "MIN",
               "adjusted_rank": 106
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4870,34 +4870,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Hunter Henry",
-              "position": "TE",
-              "pro_team": "NE",
-              "adjusted_rank": 104
-            },
-            {
               "name": "Terrance Ferguson",
               "position": "TE",
               "pro_team": "LAR",
-              "adjusted_rank": 105
+              "adjusted_rank": 104
             },
             {
               "name": "Rachaad White",
               "position": "RB",
               "pro_team": "WSH",
-              "adjusted_rank": 106
+              "adjusted_rank": 105
             },
             {
               "name": "Jordan Mason",
               "position": "RB",
               "pro_team": "MIN",
+              "adjusted_rank": 106
+            },
+            {
+              "name": "Blake Corum",
+              "position": "RB",
+              "pro_team": "LAR",
               "adjusted_rank": 107
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             }
           ]
         },
@@ -4913,34 +4913,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Terrance Ferguson",
-              "position": "TE",
-              "pro_team": "LAR",
-              "adjusted_rank": 105
-            },
-            {
               "name": "Rachaad White",
               "position": "RB",
               "pro_team": "WSH",
-              "adjusted_rank": 106
+              "adjusted_rank": 105
             },
             {
               "name": "Jordan Mason",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 107
+              "adjusted_rank": 106
             },
             {
               "name": "Blake Corum",
               "position": "RB",
               "pro_team": "LAR",
-              "adjusted_rank": 108
+              "adjusted_rank": 107
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
+            },
+            {
+              "name": "Geno Smith",
+              "position": "QB",
+              "pro_team": "NYJ",
+              "adjusted_rank": 122
             }
           ]
         },
@@ -4974,34 +4974,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Rachaad White",
-              "position": "RB",
-              "pro_team": "WSH",
-              "adjusted_rank": 106
-            },
-            {
               "name": "Jordan Mason",
               "position": "RB",
               "pro_team": "MIN",
-              "adjusted_rank": 107
+              "adjusted_rank": 106
             },
             {
               "name": "Blake Corum",
               "position": "RB",
               "pro_team": "LAR",
+              "adjusted_rank": 107
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
               "adjusted_rank": 108
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5017,34 +5017,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jordan Mason",
-              "position": "RB",
-              "pro_team": "MIN",
-              "adjusted_rank": 107
-            },
-            {
               "name": "Blake Corum",
               "position": "RB",
               "pro_team": "LAR",
-              "adjusted_rank": 108
+              "adjusted_rank": 107
             },
             {
               "name": "RJ Harvey",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 109
+              "adjusted_rank": 108
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
+              "adjusted_rank": 109
+            },
+            {
+              "name": "KC Concepcion",
+              "position": "WR",
+              "pro_team": "CLE",
               "adjusted_rank": 110
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5078,34 +5078,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Blake Corum",
-              "position": "RB",
-              "pro_team": "LAR",
-              "adjusted_rank": 108
-            },
-            {
               "name": "RJ Harvey",
               "position": "RB",
               "pro_team": "DEN",
-              "adjusted_rank": 109
+              "adjusted_rank": 108
             },
             {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             },
             {
               "name": "KC Concepcion",
               "position": "WR",
               "pro_team": "CLE",
+              "adjusted_rank": 110
+            },
+            {
+              "name": "Makai Lemon",
+              "position": "WR",
+              "pro_team": "PHI",
               "adjusted_rank": 111
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5121,34 +5121,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "RJ Harvey",
-              "position": "RB",
-              "pro_team": "DEN",
-              "adjusted_rank": 109
-            },
-            {
               "name": "Josh Downs",
               "position": "WR",
               "pro_team": "IND",
-              "adjusted_rank": 110
+              "adjusted_rank": 109
             },
             {
               "name": "KC Concepcion",
               "position": "WR",
               "pro_team": "CLE",
-              "adjusted_rank": 111
+              "adjusted_rank": 110
             },
             {
               "name": "Makai Lemon",
               "position": "WR",
               "pro_team": "PHI",
-              "adjusted_rank": 112
+              "adjusted_rank": 111
+            },
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5164,34 +5164,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Josh Downs",
-              "position": "WR",
-              "pro_team": "IND",
-              "adjusted_rank": 110
-            },
-            {
               "name": "KC Concepcion",
               "position": "WR",
               "pro_team": "CLE",
-              "adjusted_rank": 111
+              "adjusted_rank": 110
             },
             {
               "name": "Makai Lemon",
               "position": "WR",
               "pro_team": "PHI",
+              "adjusted_rank": 111
+            },
+            {
+              "name": "Chris Godwin Jr.",
+              "position": "WR",
+              "pro_team": "TB",
               "adjusted_rank": 112
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         }
@@ -5230,34 +5230,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "KC Concepcion",
-              "position": "WR",
-              "pro_team": "CLE",
-              "adjusted_rank": 111
-            },
-            {
               "name": "Makai Lemon",
               "position": "WR",
               "pro_team": "PHI",
-              "adjusted_rank": 112
+              "adjusted_rank": 111
             },
             {
               "name": "Chris Godwin Jr.",
               "position": "WR",
               "pro_team": "TB",
+              "adjusted_rank": 112
+            },
+            {
+              "name": "Deebo Samuel Sr.",
+              "position": "WR",
+              "pro_team": "SF",
               "adjusted_rank": 113
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5273,34 +5273,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Makai Lemon",
-              "position": "WR",
-              "pro_team": "PHI",
-              "adjusted_rank": 112
-            },
-            {
               "name": "Chris Godwin Jr.",
               "position": "WR",
               "pro_team": "TB",
-              "adjusted_rank": 113
+              "adjusted_rank": 112
             },
             {
               "name": "Deebo Samuel Sr.",
               "position": "WR",
               "pro_team": "SF",
+              "adjusted_rank": 113
+            },
+            {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "pro_team": "NE",
               "adjusted_rank": 114
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5316,34 +5316,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Chris Godwin Jr.",
-              "position": "WR",
-              "pro_team": "TB",
-              "adjusted_rank": 113
-            },
-            {
               "name": "Deebo Samuel Sr.",
               "position": "WR",
               "pro_team": "SF",
-              "adjusted_rank": 114
+              "adjusted_rank": 113
             },
             {
               "name": "Romeo Doubs",
               "position": "WR",
               "pro_team": "NE",
+              "adjusted_rank": 114
+            },
+            {
+              "name": "Jalen Coker",
+              "position": "WR",
+              "pro_team": "CAR",
               "adjusted_rank": 115
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5359,34 +5359,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Deebo Samuel Sr.",
-              "position": "WR",
-              "pro_team": "SF",
-              "adjusted_rank": 114
-            },
-            {
               "name": "Romeo Doubs",
               "position": "WR",
               "pro_team": "NE",
-              "adjusted_rank": 115
+              "adjusted_rank": 114
             },
             {
               "name": "Jalen Coker",
               "position": "WR",
               "pro_team": "CAR",
+              "adjusted_rank": 115
+            },
+            {
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "pro_team": "SEA",
               "adjusted_rank": 116
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5402,34 +5402,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Romeo Doubs",
-              "position": "WR",
-              "pro_team": "NE",
-              "adjusted_rank": 115
-            },
-            {
               "name": "Jalen Coker",
               "position": "WR",
               "pro_team": "CAR",
-              "adjusted_rank": 116
+              "adjusted_rank": 115
             },
             {
               "name": "Rashid Shaheed",
               "position": "WR",
               "pro_team": "SEA",
+              "adjusted_rank": 116
+            },
+            {
+              "name": "Jalen McMillan",
+              "position": "WR",
+              "pro_team": "TB",
               "adjusted_rank": 117
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5445,34 +5445,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jalen Coker",
-              "position": "WR",
-              "pro_team": "CAR",
-              "adjusted_rank": 116
-            },
-            {
               "name": "Rashid Shaheed",
               "position": "WR",
               "pro_team": "SEA",
-              "adjusted_rank": 117
+              "adjusted_rank": 116
             },
             {
               "name": "Jalen McMillan",
               "position": "WR",
               "pro_team": "TB",
-              "adjusted_rank": 118
+              "adjusted_rank": 117
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
+              "adjusted_rank": 118
+            },
+            {
+              "name": "Zach Charbonnet",
+              "position": "RB",
+              "pro_team": "SEA",
               "adjusted_rank": 119
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5488,34 +5488,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Rashid Shaheed",
-              "position": "WR",
-              "pro_team": "SEA",
-              "adjusted_rank": 117
-            },
-            {
               "name": "Jalen McMillan",
               "position": "WR",
               "pro_team": "TB",
-              "adjusted_rank": 118
+              "adjusted_rank": 117
             },
             {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Zach Charbonnet",
               "position": "RB",
               "pro_team": "SEA",
+              "adjusted_rank": 119
+            },
+            {
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "pro_team": "TEN",
               "adjusted_rank": 120
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             }
           ]
         },
@@ -5531,33 +5531,33 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Jalen McMillan",
-              "position": "WR",
-              "pro_team": "TB",
-              "adjusted_rank": 118
-            },
-            {
               "name": "Woody Marks",
               "position": "RB",
               "pro_team": "HOU",
-              "adjusted_rank": 119
+              "adjusted_rank": 118
             },
             {
               "name": "Zach Charbonnet",
               "position": "RB",
               "pro_team": "SEA",
-              "adjusted_rank": 120
+              "adjusted_rank": 119
             },
             {
               "name": "Tyjae Spears",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 121
+              "adjusted_rank": 120
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
+              "adjusted_rank": 122
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 123
             }
           ]
@@ -5574,34 +5574,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Woody Marks",
-              "position": "RB",
-              "pro_team": "HOU",
-              "adjusted_rank": 119
-            },
-            {
               "name": "Zach Charbonnet",
               "position": "RB",
               "pro_team": "SEA",
-              "adjusted_rank": 120
+              "adjusted_rank": 119
             },
             {
               "name": "Tyjae Spears",
               "position": "RB",
               "pro_team": "TEN",
+              "adjusted_rank": 120
+            },
+            {
+              "name": "Chris Rodriguez Jr.",
+              "position": "RB",
+              "pro_team": "JAX",
               "adjusted_rank": 121
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
-              "adjusted_rank": 123
+              "adjusted_rank": 122
             },
             {
-              "name": "Denzel Boston",
+              "name": "Travis Hunter",
               "position": "WR",
-              "pro_team": "CLE",
-              "adjusted_rank": 126
+              "pro_team": "JAX",
+              "adjusted_rank": 123
             }
           ]
         },
@@ -5617,34 +5617,34 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Zach Charbonnet",
-              "position": "RB",
-              "pro_team": "SEA",
-              "adjusted_rank": 120
-            },
-            {
               "name": "Tyjae Spears",
               "position": "RB",
               "pro_team": "TEN",
-              "adjusted_rank": 121
+              "adjusted_rank": 120
             },
             {
               "name": "Chris Rodriguez Jr.",
               "position": "RB",
               "pro_team": "JAX",
-              "adjusted_rank": 122
+              "adjusted_rank": 121
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
+              "adjusted_rank": 122
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 123
             },
             {
-              "name": "Denzel Boston",
-              "position": "WR",
-              "pro_team": "CLE",
-              "adjusted_rank": 126
+              "name": "Mike Washington Jr.",
+              "position": "RB",
+              "pro_team": "LV",
+              "adjusted_rank": 124
             }
           ]
         },
@@ -5660,21 +5660,21 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Tyjae Spears",
-              "position": "RB",
-              "pro_team": "TEN",
-              "adjusted_rank": 121
-            },
-            {
               "name": "Chris Rodriguez Jr.",
               "position": "RB",
               "pro_team": "JAX",
-              "adjusted_rank": 122
+              "adjusted_rank": 121
             },
             {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
+              "adjusted_rank": 122
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 123
             },
             {
@@ -5684,10 +5684,10 @@
               "adjusted_rank": 124
             },
             {
-              "name": "Denzel Boston",
-              "position": "WR",
-              "pro_team": "CLE",
-              "adjusted_rank": 126
+              "name": "Brian Robinson Jr.",
+              "position": "RB",
+              "pro_team": "ATL",
+              "adjusted_rank": 125
             }
           ]
         }
@@ -5708,15 +5708,15 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Chris Rodriguez Jr.",
-              "position": "RB",
-              "pro_team": "JAX",
-              "adjusted_rank": 122
-            },
-            {
               "name": "Geno Smith",
               "position": "QB",
               "pro_team": "NYJ",
+              "adjusted_rank": 122
+            },
+            {
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 123
             },
             {
@@ -5769,9 +5769,9 @@
           "keeper": null,
           "adp_context": [
             {
-              "name": "Geno Smith",
-              "position": "QB",
-              "pro_team": "NYJ",
+              "name": "Travis Hunter",
+              "position": "WR",
+              "pro_team": "JAX",
               "adjusted_rank": 123
             },
             {
@@ -5793,10 +5793,10 @@
               "adjusted_rank": 126
             },
             {
-              "name": "Jerry Jeudy",
-              "position": "WR",
-              "pro_team": "CLE",
-              "adjusted_rank": 127
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "pro_team": "NYJ",
+              "adjusted_rank": 137
             }
           ]
         },
