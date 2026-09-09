@@ -767,16 +767,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 2977187,
-      "name": "Cooper Kupp",
-      "position": "WR",
-      "pro_team": "SEA",
-      "lineup_slot": "BE",
-      "keeper_value": 8,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4819231,
       "name": "Kaleb Johnson",
       "position": "RB",
@@ -821,6 +811,16 @@
       "name": "Eagles D/ST",
       "position": "D/ST",
       "pro_team": "PHI",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4870847,
+      "name": "Ja'Kobi Lane",
+      "position": "WR",
+      "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
@@ -1277,7 +1277,7 @@
       "name": "TreVeyon Henderson",
       "position": "RB",
       "pro_team": "NE",
-      "lineup_slot": "RB",
+      "lineup_slot": "IR",
       "keeper_value": 6,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1307,7 +1307,7 @@
       "name": "J.K. Dobbins",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "RB",
       "keeper_value": 10,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1377,7 +1377,7 @@
       "name": "Patriots D/ST",
       "position": "D/ST",
       "pro_team": "NE",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1401,6 +1401,16 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": -16010,
+      "name": "Titans D/ST",
+      "position": "D/ST",
+      "pro_team": "TEN",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "8": [
