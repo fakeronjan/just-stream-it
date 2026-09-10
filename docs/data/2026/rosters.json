@@ -25,7 +25,7 @@
       "name": "Travis Etienne Jr.",
       "position": "RB",
       "pro_team": "NO",
-      "lineup_slot": "RB",
+      "lineup_slot": "FLEX",
       "keeper_value": 12,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -55,7 +55,7 @@
       "name": "Jadarian Price",
       "position": "RB",
       "pro_team": "SEA",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "RB",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -751,7 +751,7 @@
       "name": "Ravens D/ST",
       "position": "D/ST",
       "pro_team": "BAL",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -811,7 +811,7 @@
       "name": "Eagles D/ST",
       "position": "D/ST",
       "pro_team": "PHI",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
@@ -1045,7 +1045,7 @@
       "name": "Patrick Mahomes",
       "position": "QB",
       "pro_team": "KC",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 1,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1125,7 +1125,7 @@
       "name": "Bryce Young",
       "position": "QB",
       "pro_team": "CAR",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 11,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1201,14 +1201,14 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": -16027,
-      "name": "Buccaneers D/ST",
+      "player_id": -16020,
+      "name": "Jets D/ST",
       "position": "D/ST",
-      "pro_team": "TB",
+      "pro_team": "NYJ",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
+      "acquisition_type": "ADD"
     }
   ],
   "7": [
@@ -1393,21 +1393,21 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4685261,
-      "name": "Germie Bernard",
-      "position": "WR",
-      "pro_team": "PIT",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": -16010,
       "name": "Titans D/ST",
       "position": "D/ST",
       "pro_team": "TEN",
       "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4429086,
+      "name": "Michael Mayer",
+      "position": "TE",
+      "pro_team": "LV",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
@@ -1943,7 +1943,7 @@
       "name": "Deshaun Watson",
       "position": "QB",
       "pro_team": "CLE",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1953,7 +1953,7 @@
       "name": "Tua Tagovailoa",
       "position": "QB",
       "pro_team": "ATL",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -2337,7 +2337,7 @@
       "name": "Browns D/ST",
       "position": "D/ST",
       "pro_team": "CLE",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -2377,7 +2377,7 @@
       "name": "Jaguars D/ST",
       "position": "D/ST",
       "pro_team": "JAX",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
