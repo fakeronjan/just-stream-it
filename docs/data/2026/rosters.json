@@ -767,16 +767,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4819231,
-      "name": "Kaleb Johnson",
-      "position": "RB",
-      "pro_team": "GB",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4567104,
       "name": "Will Reichard",
       "position": "K",
@@ -817,10 +807,20 @@
       "acquisition_type": "ADD"
     },
     {
-      "player_id": 4870847,
-      "name": "Ja'Kobi Lane",
-      "position": "WR",
-      "pro_team": "BAL",
+      "player_id": 2972515,
+      "name": "Cooper Rush",
+      "position": "QB",
+      "pro_team": "ATL",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16027,
+      "name": "Buccaneers D/ST",
+      "position": "D/ST",
+      "pro_team": "TB",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
@@ -1045,7 +1045,7 @@
       "name": "Patrick Mahomes",
       "position": "QB",
       "pro_team": "KC",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 1,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1125,7 +1125,7 @@
       "name": "Bryce Young",
       "position": "QB",
       "pro_team": "CAR",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 11,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1247,7 +1247,7 @@
       "name": "Brock Bowers",
       "position": "TE",
       "pro_team": "LV",
-      "lineup_slot": "TE",
+      "lineup_slot": "IR",
       "keeper_value": 3,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1407,7 +1407,7 @@
       "name": "Michael Mayer",
       "position": "TE",
       "pro_team": "LV",
-      "lineup_slot": "BE",
+      "lineup_slot": "TE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
