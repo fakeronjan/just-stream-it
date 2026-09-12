@@ -4305,7 +4305,7 @@
     "player_id": 4374033,
     "name": "Jermar Jefferson",
     "position": "RB",
-    "pro_team": "MIN",
+    "pro_team": "FA",
     "superflex_rank": 1348,
     "standard_rank": 1347,
     "adjusted_rank": 479
@@ -4653,21 +4653,21 @@
     "adjusted_rank": 517
   },
   {
-    "player_id": 2576414,
-    "name": "Raheem Mostert",
-    "position": "RB",
-    "pro_team": "FA",
-    "superflex_rank": 1708,
-    "standard_rank": 1707,
-    "adjusted_rank": 518
-  },
-  {
     "player_id": 3821683,
     "name": "Austin Seibert",
     "position": "K",
     "pro_team": "FA",
     "superflex_rank": 1715,
     "standard_rank": 1714,
+    "adjusted_rank": 518
+  },
+  {
+    "player_id": 3975763,
+    "name": "Greg Joseph",
+    "position": "K",
+    "pro_team": "FA",
+    "superflex_rank": 1725,
+    "standard_rank": 1724,
     "adjusted_rank": 519
   },
   {

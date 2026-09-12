@@ -1943,7 +1943,7 @@
       "name": "Deshaun Watson",
       "position": "QB",
       "pro_team": "CLE",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1953,7 +1953,7 @@
       "name": "Tua Tagovailoa",
       "position": "QB",
       "pro_team": "ATL",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
