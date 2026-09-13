@@ -247,7 +247,7 @@
       "name": "George Pickens",
       "position": "WR",
       "pro_team": "DAL",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 3,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -287,7 +287,7 @@
       "name": "Jordan Addison",
       "position": "WR",
       "pro_team": "MIN",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 12,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -1575,16 +1575,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 15818,
-      "name": "Keenan Allen",
-      "position": "WR",
-      "pro_team": "IND",
-      "lineup_slot": "BE",
-      "keeper_value": 12,
-      "injury_status": "NORMAL",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4429501,
       "name": "Ray Davis",
       "position": "RB",
@@ -1603,6 +1593,16 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": 4600981,
+      "name": "Pat Bryant",
+      "position": "WR",
+      "pro_team": "DEN",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "9": [
