@@ -3555,13 +3555,22 @@
     "adjusted_rank": 395
   },
   {
+    "player_id": 4383440,
+    "name": "Nate Adkins",
+    "position": "TE",
+    "pro_team": "DEN",
+    "superflex_rank": 1138,
+    "standard_rank": 1137,
+    "adjusted_rank": 396
+  },
+  {
     "player_id": 4242392,
     "name": "Brock Wright",
     "position": "TE",
     "pro_team": "DET",
     "superflex_rank": 1139,
     "standard_rank": 1138,
-    "adjusted_rank": 396
+    "adjusted_rank": 397
   },
   {
     "player_id": 4686248,
@@ -3570,7 +3579,7 @@
     "pro_team": "JAX",
     "superflex_rank": 1140,
     "standard_rank": 1139,
-    "adjusted_rank": 397
+    "adjusted_rank": 398
   },
   {
     "player_id": 4426948,
@@ -3579,7 +3588,7 @@
     "pro_team": "WSH",
     "superflex_rank": 1141,
     "standard_rank": 1140,
-    "adjusted_rank": 398
+    "adjusted_rank": 399
   },
   {
     "player_id": 5082630,
@@ -3588,7 +3597,7 @@
     "pro_team": "KC",
     "superflex_rank": 1142,
     "standard_rank": 1141,
-    "adjusted_rank": 399
+    "adjusted_rank": 400
   },
   {
     "player_id": 4430870,
@@ -3597,7 +3606,7 @@
     "pro_team": "LAC",
     "superflex_rank": 1145,
     "standard_rank": 1144,
-    "adjusted_rank": 400
+    "adjusted_rank": 401
   },
   {
     "player_id": 4372505,
@@ -3606,7 +3615,7 @@
     "pro_team": "TB",
     "superflex_rank": 1146,
     "standard_rank": 1145,
-    "adjusted_rank": 401
+    "adjusted_rank": 402
   },
   {
     "player_id": 4702559,
@@ -3615,7 +3624,7 @@
     "pro_team": "NO",
     "superflex_rank": 1147,
     "standard_rank": 1146,
-    "adjusted_rank": 402
+    "adjusted_rank": 403
   },
   {
     "player_id": 3051889,
@@ -3624,7 +3633,7 @@
     "pro_team": "IND",
     "superflex_rank": 1153,
     "standard_rank": 1152,
-    "adjusted_rank": 403
+    "adjusted_rank": 404
   },
   {
     "player_id": 3917668,
@@ -3633,7 +3642,7 @@
     "pro_team": "LAC",
     "superflex_rank": 1162,
     "standard_rank": 1161,
-    "adjusted_rank": 404
+    "adjusted_rank": 405
   },
   {
     "player_id": 4259305,
@@ -3642,7 +3651,7 @@
     "pro_team": "GB",
     "superflex_rank": 1163,
     "standard_rank": 1162,
-    "adjusted_rank": 405
+    "adjusted_rank": 406
   },
   {
     "player_id": 4362018,
@@ -3651,7 +3660,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1169,
     "standard_rank": 1168,
-    "adjusted_rank": 406
+    "adjusted_rank": 407
   },
   {
     "player_id": 4613104,
@@ -3660,7 +3669,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1180,
     "standard_rank": 1179,
-    "adjusted_rank": 407
+    "adjusted_rank": 408
   },
   {
     "player_id": 4245144,
@@ -3669,7 +3678,7 @@
     "pro_team": "DET",
     "superflex_rank": 1182,
     "standard_rank": 1181,
-    "adjusted_rank": 408
+    "adjusted_rank": 409
   },
   {
     "player_id": 4362477,
@@ -3678,7 +3687,7 @@
     "pro_team": "LAC",
     "superflex_rank": 1192,
     "standard_rank": 1191,
-    "adjusted_rank": 409
+    "adjusted_rank": 410
   },
   {
     "player_id": 4386544,
@@ -3687,15 +3696,6 @@
     "pro_team": "LAR",
     "superflex_rank": 1193,
     "standard_rank": 1192,
-    "adjusted_rank": 410
-  },
-  {
-    "player_id": 3929914,
-    "name": "Adam Prentice",
-    "position": "RB",
-    "pro_team": "FA",
-    "superflex_rank": 1203,
-    "standard_rank": 1202,
     "adjusted_rank": 411
   },
   {
@@ -4662,13 +4662,31 @@
     "adjusted_rank": 518
   },
   {
+    "player_id": 4037235,
+    "name": "Greg Dortch",
+    "position": "WR",
+    "pro_team": "BUF",
+    "superflex_rank": 1704,
+    "standard_rank": 1703,
+    "adjusted_rank": 519
+  },
+  {
     "player_id": 3821683,
     "name": "Austin Seibert",
     "position": "K",
     "pro_team": "FA",
     "superflex_rank": 1715,
     "standard_rank": 1714,
-    "adjusted_rank": 519
+    "adjusted_rank": 520
+  },
+  {
+    "player_id": 3975763,
+    "name": "Greg Joseph",
+    "position": "K",
+    "pro_team": "FA",
+    "superflex_rank": 1725,
+    "standard_rank": 1724,
+    "adjusted_rank": 521
   },
   {
     "player_id": 3116385,
@@ -4677,7 +4695,7 @@
     "pro_team": "FA",
     "superflex_rank": 1728,
     "standard_rank": 1727,
-    "adjusted_rank": 520
+    "adjusted_rank": 522
   },
   {
     "player_id": 3116406,
@@ -4686,7 +4704,7 @@
     "pro_team": "FA",
     "superflex_rank": 1729,
     "standard_rank": 1728,
-    "adjusted_rank": 521
+    "adjusted_rank": 523
   },
   {
     "player_id": 3116593,
@@ -4695,7 +4713,7 @@
     "pro_team": "FA",
     "superflex_rank": 1730,
     "standard_rank": 1729,
-    "adjusted_rank": 522
+    "adjusted_rank": 524
   },
   {
     "player_id": 3128720,
@@ -4704,7 +4722,7 @@
     "pro_team": "FA",
     "superflex_rank": 1731,
     "standard_rank": 1730,
-    "adjusted_rank": 523
+    "adjusted_rank": 525
   },
   {
     "player_id": 3120348,
@@ -4713,7 +4731,7 @@
     "pro_team": "FA",
     "superflex_rank": 1734,
     "standard_rank": 1733,
-    "adjusted_rank": 524
+    "adjusted_rank": 526
   },
   {
     "player_id": 3059915,
@@ -4722,7 +4740,7 @@
     "pro_team": "FA",
     "superflex_rank": 1740,
     "standard_rank": 1740,
-    "adjusted_rank": 525
+    "adjusted_rank": 527
   },
   {
     "player_id": 3123052,
@@ -4731,7 +4749,7 @@
     "pro_team": "FA",
     "superflex_rank": 1741,
     "standard_rank": 1741,
-    "adjusted_rank": 526
+    "adjusted_rank": 528
   },
   {
     "player_id": 3068267,
@@ -4740,7 +4758,7 @@
     "pro_team": "FA",
     "superflex_rank": 1742,
     "standard_rank": 1742,
-    "adjusted_rank": 527
+    "adjusted_rank": 529
   },
   {
     "player_id": 3124679,
@@ -4749,7 +4767,7 @@
     "pro_team": "NYJ",
     "superflex_rank": 1743,
     "standard_rank": 1743,
-    "adjusted_rank": 528
+    "adjusted_rank": 530
   },
   {
     "player_id": 3051392,
@@ -4758,7 +4776,7 @@
     "pro_team": "FA",
     "superflex_rank": 1745,
     "standard_rank": 1747,
-    "adjusted_rank": 529
+    "adjusted_rank": 531
   },
   {
     "player_id": 3049899,
@@ -4767,16 +4785,7 @@
     "pro_team": "FA",
     "superflex_rank": 1749,
     "standard_rank": 1751,
-    "adjusted_rank": 530
-  },
-  {
-    "player_id": 3051738,
-    "name": "Marquez Valdes-Scantling",
-    "position": "WR",
-    "pro_team": "FA",
-    "superflex_rank": 1750,
-    "standard_rank": 1752,
-    "adjusted_rank": 531
+    "adjusted_rank": 532
   },
   {
     "player_id": 2976499,
@@ -4785,7 +4794,7 @@
     "pro_team": "LV",
     "superflex_rank": 1754,
     "standard_rank": 1756,
-    "adjusted_rank": 532
+    "adjusted_rank": 533
   },
   {
     "player_id": 15795,
@@ -4794,7 +4803,7 @@
     "pro_team": "FA",
     "superflex_rank": 1759,
     "standard_rank": 1761,
-    "adjusted_rank": 533
+    "adjusted_rank": 534
   },
   {
     "player_id": 15835,
@@ -4803,7 +4812,7 @@
     "pro_team": "FA",
     "superflex_rank": 1762,
     "standard_rank": 1764,
-    "adjusted_rank": 534
+    "adjusted_rank": 535
   },
   {
     "player_id": 15683,
@@ -4812,7 +4821,7 @@
     "pro_team": "FA",
     "superflex_rank": 1763,
     "standard_rank": 1765,
-    "adjusted_rank": 535
+    "adjusted_rank": 536
   },
   {
     "player_id": 16760,
@@ -4821,7 +4830,7 @@
     "pro_team": "LAR",
     "superflex_rank": 1765,
     "standard_rank": 1767,
-    "adjusted_rank": 536
+    "adjusted_rank": 537
   },
   {
     "player_id": 16339,
@@ -4830,7 +4839,7 @@
     "pro_team": "FA",
     "superflex_rank": 1767,
     "standard_rank": 1769,
-    "adjusted_rank": 537
+    "adjusted_rank": 538
   },
   {
     "player_id": 16460,
@@ -4839,7 +4848,7 @@
     "pro_team": "PIT",
     "superflex_rank": 1768,
     "standard_rank": 1770,
-    "adjusted_rank": 538
+    "adjusted_rank": 539
   },
   {
     "player_id": 16728,
@@ -4848,7 +4857,7 @@
     "pro_team": "DET",
     "superflex_rank": 1769,
     "standard_rank": 1771,
-    "adjusted_rank": 539
+    "adjusted_rank": 540
   },
   {
     "player_id": 15965,
@@ -4857,7 +4866,16 @@
     "pro_team": "FA",
     "superflex_rank": 1770,
     "standard_rank": 1772,
-    "adjusted_rank": 540
+    "adjusted_rank": 541
+  },
+  {
+    "player_id": 14993,
+    "name": "Greg Zuerlein",
+    "position": "K",
+    "pro_team": "FA",
+    "superflex_rank": 1771,
+    "standard_rank": 1773,
+    "adjusted_rank": 542
   },
   {
     "player_id": 14881,
@@ -4866,7 +4884,7 @@
     "pro_team": "FA",
     "superflex_rank": 1772,
     "standard_rank": 1774,
-    "adjusted_rank": 541
+    "adjusted_rank": 543
   },
   {
     "player_id": 11122,
@@ -4875,7 +4893,7 @@
     "pro_team": "FA",
     "superflex_rank": 1773,
     "standard_rank": 1775,
-    "adjusted_rank": 542
+    "adjusted_rank": 544
   },
   {
     "player_id": 12460,
@@ -4884,7 +4902,7 @@
     "pro_team": "FA",
     "superflex_rank": 1775,
     "standard_rank": 1778,
-    "adjusted_rank": 543
+    "adjusted_rank": 545
   },
   {
     "player_id": 3929785,
@@ -4893,7 +4911,7 @@
     "pro_team": "FA",
     "superflex_rank": 1877,
     "standard_rank": 1885,
-    "adjusted_rank": 544
+    "adjusted_rank": 546
   },
   {
     "player_id": 4240600,
@@ -4902,16 +4920,7 @@
     "pro_team": "FA",
     "superflex_rank": 1898,
     "standard_rank": 1903,
-    "adjusted_rank": 545
-  },
-  {
-    "player_id": 4361777,
-    "name": "Zamir White",
-    "position": "RB",
-    "pro_team": "FA",
-    "superflex_rank": 1993,
-    "standard_rank": 1998,
-    "adjusted_rank": 546
+    "adjusted_rank": 547
   },
   {
     "player_id": 4372019,
@@ -4920,7 +4929,7 @@
     "pro_team": "FA",
     "superflex_rank": 2014,
     "standard_rank": 2019,
-    "adjusted_rank": 547
+    "adjusted_rank": 548
   },
   {
     "player_id": 4372066,
@@ -4929,7 +4938,7 @@
     "pro_team": "FA",
     "superflex_rank": 2112,
     "standard_rank": 2117,
-    "adjusted_rank": 548
+    "adjusted_rank": 549
   },
   {
     "player_id": 4369863,
@@ -4938,7 +4947,7 @@
     "pro_team": "FA",
     "superflex_rank": 2125,
     "standard_rank": 2130,
-    "adjusted_rank": 549
+    "adjusted_rank": 550
   },
   {
     "player_id": 4429202,
@@ -4947,7 +4956,7 @@
     "pro_team": "DAL",
     "superflex_rank": 2131,
     "standard_rank": 2136,
-    "adjusted_rank": 550
+    "adjusted_rank": 551
   },
   {
     "player_id": 4430388,
@@ -4956,7 +4965,7 @@
     "pro_team": "FA",
     "superflex_rank": 2183,
     "standard_rank": 2188,
-    "adjusted_rank": 551
+    "adjusted_rank": 552
   },
   {
     "player_id": 4722893,
@@ -4965,7 +4974,7 @@
     "pro_team": "FA",
     "superflex_rank": 2205,
     "standard_rank": 2210,
-    "adjusted_rank": 552
+    "adjusted_rank": 553
   },
   {
     "player_id": 4429939,
@@ -4974,7 +4983,7 @@
     "pro_team": "FA",
     "superflex_rank": 2312,
     "standard_rank": 2317,
-    "adjusted_rank": 553
+    "adjusted_rank": 554
   },
   {
     "player_id": 4360698,
@@ -4983,7 +4992,7 @@
     "pro_team": "FA",
     "superflex_rank": 2335,
     "standard_rank": 2340,
-    "adjusted_rank": 554
+    "adjusted_rank": 555
   },
   {
     "player_id": 3043234,
@@ -4992,7 +5001,7 @@
     "pro_team": "FA",
     "superflex_rank": 2381,
     "standard_rank": 1745,
-    "adjusted_rank": 555
+    "adjusted_rank": 556
   },
   {
     "player_id": 4051167,
@@ -5001,7 +5010,7 @@
     "pro_team": "FA",
     "superflex_rank": 2384,
     "standard_rank": 2388,
-    "adjusted_rank": 556
+    "adjusted_rank": 557
   },
   {
     "player_id": 4429805,
@@ -5010,7 +5019,7 @@
     "pro_team": "BUF",
     "superflex_rank": 2420,
     "standard_rank": 2435,
-    "adjusted_rank": 557
+    "adjusted_rank": 558
   },
   {
     "player_id": 4685279,
@@ -5019,7 +5028,7 @@
     "pro_team": "FA",
     "superflex_rank": 2453,
     "standard_rank": 2454,
-    "adjusted_rank": 558
+    "adjusted_rank": 559
   },
   {
     "player_id": 4710341,
@@ -5028,7 +5037,7 @@
     "pro_team": "FA",
     "superflex_rank": 2459,
     "standard_rank": 2460,
-    "adjusted_rank": 559
+    "adjusted_rank": 560
   },
   {
     "player_id": 4431562,
@@ -5037,7 +5046,7 @@
     "pro_team": "FA",
     "superflex_rank": 2468,
     "standard_rank": 2469,
-    "adjusted_rank": 560
+    "adjusted_rank": 561
   },
   {
     "player_id": 4682652,
@@ -5046,7 +5055,7 @@
     "pro_team": "FA",
     "superflex_rank": 2494,
     "standard_rank": 2495,
-    "adjusted_rank": 561
+    "adjusted_rank": 562
   },
   {
     "player_id": 4570688,
@@ -5055,7 +5064,7 @@
     "pro_team": "FA",
     "superflex_rank": 2501,
     "standard_rank": 2502,
-    "adjusted_rank": 562
+    "adjusted_rank": 563
   },
   {
     "player_id": 4568024,
@@ -5064,7 +5073,7 @@
     "pro_team": "TB",
     "superflex_rank": 2509,
     "standard_rank": 2510,
-    "adjusted_rank": 563
+    "adjusted_rank": 564
   },
   {
     "player_id": 5208518,
@@ -5073,7 +5082,7 @@
     "pro_team": "FA",
     "superflex_rank": 2511,
     "standard_rank": 2512,
-    "adjusted_rank": 564
+    "adjusted_rank": 565
   },
   {
     "player_id": 4573398,
@@ -5082,7 +5091,7 @@
     "pro_team": "FA",
     "superflex_rank": 2548,
     "standard_rank": 2543,
-    "adjusted_rank": 565
+    "adjusted_rank": 566
   },
   {
     "player_id": 5529,
@@ -5091,7 +5100,7 @@
     "pro_team": "IND",
     "superflex_rank": 2551,
     "standard_rank": 1776,
-    "adjusted_rank": 566
+    "adjusted_rank": 567
   },
   {
     "player_id": 4566158,
@@ -5100,7 +5109,7 @@
     "pro_team": "NYG",
     "superflex_rank": 2562,
     "standard_rank": 2583,
-    "adjusted_rank": 567
+    "adjusted_rank": 568
   },
   {
     "player_id": 4426689,
@@ -5109,7 +5118,7 @@
     "pro_team": "FA",
     "superflex_rank": 2567,
     "standard_rank": 2572,
-    "adjusted_rank": 568
+    "adjusted_rank": 569
   },
   {
     "player_id": 4429466,
@@ -5118,7 +5127,7 @@
     "pro_team": "FA",
     "superflex_rank": 2569,
     "standard_rank": 2550,
-    "adjusted_rank": 569
+    "adjusted_rank": 570
   },
   {
     "player_id": 4361182,
@@ -5127,15 +5136,6 @@
     "pro_team": "FA",
     "superflex_rank": 2578,
     "standard_rank": 2580,
-    "adjusted_rank": 570
-  },
-  {
-    "player_id": 4683159,
-    "name": "Lewis Bond",
-    "position": "WR",
-    "pro_team": "FA",
-    "superflex_rank": 2593,
-    "standard_rank": 2596,
     "adjusted_rank": 571
   },
   {

@@ -115,7 +115,7 @@
       "name": "Carson Beck",
       "position": "QB",
       "pro_team": "ARI",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -206,6 +206,16 @@
       "position": "D/ST",
       "pro_team": "CHI",
       "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4869961,
+      "name": "Chris Bell",
+      "position": "WR",
+      "pro_team": "MIA",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
@@ -539,7 +549,7 @@
       "name": "Jalen McMillan",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -603,6 +613,16 @@
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 3149687,
+      "name": "Chris Brooks",
+      "position": "RB",
+      "pro_team": "GB",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "NORMAL",
+      "acquisition_type": "ADD"
     }
   ],
   "4": [
@@ -661,7 +681,7 @@
       "name": "MarShawn Lloyd",
       "position": "RB",
       "pro_team": "GB",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
@@ -721,7 +741,7 @@
       "name": "Chris Godwin Jr.",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "NORMAL",
       "acquisition_type": "DRAFT"
