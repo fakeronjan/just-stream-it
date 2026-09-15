@@ -34,7 +34,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="favicon-180.png">
 <title>Just Stream It - Weekly News: Week 1 Recap</title>
-<meta name="description" content="The Nielson News, Week 1 Recap: which Week 1 results came down to a player facing the team that used to own him, the week's biggest boom and bust sharing a roster, and every Week 2 matchup.">
+<meta name="description" content="The Nielson News, Week 1 Recap: six teams won in Week 1 by wildly different margins, the week's best individual score and its worst shared a roster, and every Week 2 matchup.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
@@ -246,38 +246,6 @@
     margin: 0 0 16px;
   }
 
-  /* ---------- lineup breakdown (Game of the Week only) ---------- */
-  .lineups {
-    display: flex;
-    gap: 18px;
-    margin-top: 14px;
-    flex-wrap: wrap;
-  }
-  .lineup-col { flex: 1; min-width: 220px; }
-  .lineup-team {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-family: "Special Elite", monospace;
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: var(--ink-dim);
-    margin: 0 0 4px;
-    border-bottom: 1px solid var(--ink);
-    padding-bottom: 3px;
-  }
-  .lineup-row {
-    display: flex;
-    gap: 8px;
-    font-size: 0.78rem;
-    padding: 2px 0;
-  }
-  .lineup-pos { width: 2.6em; flex: 0 0 auto; color: var(--ink-dim); }
-  .lineup-name { flex: 1; }
-  .lineup-pts { font-variant-numeric: tabular-nums; width: 2.6em; text-align: right; }
-  .lineup-total { border-top: 1px solid var(--ink); margin-top: 3px; padding-top: 4px; font-weight: 700; }
-
   /* ---------- matchup-result cards (Week 1 Recap): reuses the SAME
      .matchup-card/.matchup-teams/.matchup-side scaffolding as the Week 1
      Preview panel below (full-color logos, no filter, identical card
@@ -435,9 +403,9 @@
   <!-- ================= CURRENT EDITION: Week 1 Recap / Week 2 Preview ================= -->
   <section class="edition" id="panel-current">
     <p class="kicker">Week 1 Recap</p>
-    <h2 class="edition-head">The Players You Traded Away Had Opinions</h2>
+    <h2 class="edition-head">Six 1-0s, Worlds Apart</h2>
     <p class="dateline">2026 Season &middot; Week 1 Complete &middot; Week 2 Preview Below</p>
-    <p class="lede">Four of six Week 1 games put a player across from the team that gave him up - and in three of them, his new team won. Dallas Goedert, Isaiah Likely, and the Brock Bowers/Tee Higgins/Brian Thomas Jr. trio all beat their old rosters. The exception: Jahmyr Gibbs beat his old team by 10.6 points over his own projection, and Ronjan lost anyway. Add the week's best individual score sharing a roster with its worst, and a defense that finished in the negative, and that's Week 1.</p>
+    <p class="lede">Six teams won in Week 1, and not by the same margin - Olave Oyl's 201.6 was the week's high, Buffalo Abusement Park won with the week's low among winners, 123.5. The closest game came down to 7.4 points, decided by a defense that beat its own projection by more than that. The week's best individual score and its worst played for the same team. Here's how all six games went, and who's up in Week 2.</p>
 
     <p class="section-sublabel" style="margin-top:24px;">All 6 games, checked against ESPN's own pregame projections</p>
     <div class="matchup-grid" id="recap-matchup-grid"></div>
@@ -587,57 +555,32 @@ function crestImg(teamId) {
   return `<img src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
 }
 
-// ---------- All 6 Week 1 results, same length of treatment each -
-// no tiered "features vs briefs" split. Every number here is checked
+// ---------- All 6 Week 1 results, same length of treatment each - no
+// tiered "features vs briefs" split. Every number here is checked
 // directly against docs/data/2026/weekly_boxscores.json (actual points
 // AND ESPN's own pregame projected_points for each started player) and
-// rosters.json's injury_status - not estimated. Also checked: which
-// results involved a player facing the team that had him in 2025 (the
-// same "swaps" data the Week 1 Preview panel computes for its Familiar
-// Faces section) - four of six games had one, which is the actual
-// thesis of this edition. Game of the Week (10 vs 3) additionally gets
-// a full lineup breakdown, same as the old 2025 recap template did.
+// rosters.json's injury_status - not estimated. Where a Week 1 result
+// involved a player facing the team that had him in 2025 (the same
+// "swaps" data the Week 1 Preview panel computes for its Familiar Faces
+// section), that's folded into the game's own recap as one detail among
+// several, not the headline of the paragraph - a real Week 1 storyline
+// on its own merits, not this edition's organizing theme. Ronjan and
+// Kris's trade note: there were 4 real trades in 2025 total, not 1 -
+// this is just the one whose two sides happen to be playing each other
+// this week.
 const MATCHUP_RESULTS = [
   { a: 8, aScore: 201.62, b: 6, bScore: 107.3, tag: 'Blowout of the Week',
-    text: `Olave Oyl (Joe) put up the week's high score, beating Mahomes is where the heart is (Lisette) 201.6-107.3, the widest margin of the week. Derrick Henry beat his own projection by 19.1 (15.7 to 34.8) on 144 rush yards and 3 touchdowns, and Joe's three running backs - Henry, Javonte Williams, Breece Hall - combined for 75.3, more than three times what Lisette got from hers (23.3). Kayshon Boutte, who played for Joe in 2025, is now on Lisette's bench - he didn't factor in.` },
+    text: `Olave Oyl (Joe) put up the week's high score, beating Mahomes is where the heart is (Lisette) 201.6-107.3, the widest margin of the week. Derrick Henry beat his own projection by 19.1 (15.7 to 34.8) on 144 rush yards and 3 touchdowns, and Joe's three running backs - Henry, Javonte Williams, Breece Hall - combined for 75.3, more than three times Lisette's running back output (23.3). Kayshon Boutte, who played for Joe last year, sat on Lisette's bench the whole game.` },
   { a: 12, aScore: 123.46, b: 5, bScore: 98.02, tag: null,
-    text: `Buffalo Abusement Park (Melinda) beat Team Kantastrophe (Cara) 123.5-98.0. Dallas Goedert, on Cara's roster all of 2025, beat his projection by 12.8 (8.9 to 21.7) against his old team - the tight end Cara got back in the same offseason swap, Juwan Johnson, never left her bench. Every quarterback and defense Cara did start missed its number: Drake Maye scored 9.8 on a 16.3 projection, Matthew Stafford 4.1 on 17.5, and the Texans D/ST finished at -4.0 on a 5.3 projection.` },
+    text: `Buffalo Abusement Park (Melinda) beat Team Kantastrophe (Cara) 123.5-98.0. Dallas Goedert, on Cara's roster all of 2025, beat his projection by 12.8 (8.9 to 21.7) against his old team; the tight end Cara got back in the same offseason swap, Juwan Johnson, never left her bench. Every quarterback and defense Cara started missed its number: Drake Maye scored 9.8 on a 16.3 projection, Matthew Stafford 4.1 on 17.5, and the Texans D/ST finished at -4.0 on a 5.3 projection.` },
   { a: 2, aScore: 147.08, b: 1, bScore: 92.58, tag: 'Boom & Bust, Same Roster',
-    text: `Mednis Madness (mariss) beat Three Lions Football Club (Imran) 147.1-92.6. Caleb Williams beat his projection by 20.9 (16.4 to 37.3), the week's largest overperformance; teammate Kyler Murray, on the same 16.4 projection, scored -0.4, the week's largest bust - mariss won by 54.5 anyway. The tight end swap between these two backfired for Imran: Isaiah Likely beat his own projection by 16.2 (7.6 to 23.8) against his old team, while Imran's replacement at the position, Kyle Pitts Sr., was shut out on a 7.6 projection. Amon-Ra St. Brown (15.4 to 23.7) and Jared Goff (15.8 to 16.4), the pieces Imran got back, both beat their projections too - it wasn't enough.` },
+    text: `Mednis Madness (mariss) beat Three Lions Football Club (Imran) 147.1-92.6. Caleb Williams beat his projection by 20.9 (16.4 to 37.3), the week's largest overperformance; teammate Kyler Murray, on the same 16.4 projection, scored -0.4, the week's largest bust - mariss won by 54.5 anyway. Imran's own tight end swap backfired: Isaiah Likely beat his projection by 16.2 (7.6 to 23.8) against his old team, while Imran's replacement at the position, Kyle Pitts Sr., was shut out on a 7.6 projection. Amon-Ra St. Brown (15.4 to 23.7) and Jared Goff (15.8 to 16.4), the pieces Imran got back, both beat their projections too - it wasn't enough.` },
   { a: 10, aScore: 140.9, b: 3, bScore: 133.46, tag: 'Game of the Week',
-    text: `The Aristocrats (Karl) survived Beard Al (Pete) 140.9-133.5, the week's closest margin. Josh Allen beat his projection by 16.3 (19.3 to 35.7) and David Montgomery by 15.7 (11.7 to 27.4) for Pete, but Karl's Steelers D/ST beat its own projection by 11.8 (7.2 to 19.0) - more than the final margin. He didn't need Josh Jacobs, benched all week; Ashton Jeanty (16.2 to 29.7) and Bijan Robinson (16.8 to 27.3) both beat their numbers too. Pete played the week down two receivers already on IR, Jalen McMillan and Dillon Gabriel; a third, Alec Pierce, is now questionable for Week 2.`,
-    lineups: {
-      10: { label: 'The Aristocrats (Karl)', total: 140.9, players: [
-        { pos: 'RB', name: 'Ashton Jeanty', pts: 29.7 },
-        { pos: 'RB', name: 'Bijan Robinson', pts: 27.3 },
-        { pos: 'D/ST', name: 'Steelers D/ST', pts: 19.0 },
-        { pos: 'QB', name: 'Dak Prescott', pts: 14.4 },
-        { pos: 'QB', name: 'Deshaun Watson', pts: 14.0 },
-        { pos: 'WR', name: 'Mike Evans', pts: 13.9 },
-        { pos: 'TE', name: 'Travis Kelce', pts: 8.6 },
-        { pos: 'WR', name: 'Carnell Tate', pts: 5.8 },
-        { pos: 'WR', name: 'Davante Adams', pts: 4.1 },
-        { pos: 'WR', name: 'Courtland Sutton', pts: 2.1 },
-        { pos: 'K', name: 'Brandon Aubrey', pts: 2.0 },
-      ]},
-      3: { label: 'Beard Al (Pete)', total: 133.5, players: [
-        { pos: 'QB', name: 'Josh Allen', pts: 35.7 },
-        { pos: 'RB', name: 'David Montgomery', pts: 27.4 },
-        { pos: 'TE', name: 'Trey McBride', pts: 20.0 },
-        { pos: 'RB', name: 'Kyren Williams', pts: 14.0 },
-        { pos: 'WR', name: 'Alec Pierce', pts: 8.1 },
-        { pos: 'WR', name: 'Michael Wilson', pts: 8.1 },
-        { pos: 'WR', name: 'Michael Pittman Jr.', pts: 7.3 },
-        { pos: 'D/ST', name: 'Vikings D/ST', pts: 5.0 },
-        { pos: 'WR', name: 'Drake London', pts: 4.5 },
-        { pos: 'WR', name: 'Terry McLaurin', pts: 2.4 },
-        { pos: 'K', name: 'Harrison Mevis', pts: 1.0 },
-      ]},
-    } },
+    text: `The Aristocrats (Karl) survived Beard Al (Pete) 140.9-133.5, the week's closest margin. Josh Allen beat his projection by 16.3 (19.3 to 35.7) and David Montgomery by 15.7 (11.7 to 27.4) for Pete, but Karl's Steelers D/ST beat its own projection by 11.8 (7.2 to 19.0) - more than the final margin. He didn't need Josh Jacobs, benched all week; Ashton Jeanty (16.2 to 29.7) and Bijan Robinson (16.8 to 27.3) both beat their numbers too. Pete played the week down two receivers already on IR, Jalen McMillan and Dillon Gabriel; a third, Alec Pierce, is now questionable for Week 2.` },
   { a: 7, aScore: 156.36, b: 4, bScore: 127.6, tag: null,
-    text: `Terrible Towels (Mike) beat Conquering Heroes (Ben) 156.4-127.6. Three of Ben's 2025 pieces - Brock Bowers, Tee Higgins, Brian Thomas Jr. - now play for Mike, who won without much from any of them (Bowers is on IR, Higgins missed his projection, Thomas didn't start). The real difference was Mike's other receivers: Christian Watson beat his by 20.4 (9.3 to 29.7), Justin Jefferson by 13.4 (13.8 to 27.2), outscoring Ben's whole receiving corps by 40.2. Ben got the return piece in that swap, Parker Washington, who beat his projection by 7.3 (9.5 to 16.8) against his old team; Kenneth Walker III (13.3 to 32.6) gave Ben the week's best backfield. Neither was enough.` },
-  { a: 11, aScore: 134.92, b: 9, bScore: 121.92, tag: 'The Trade Comes Back Around',
-    text: `Rice Rice Baby (Kris) beat McConkey Kong Country 2 (Ronjan) 134.9-121.9 - a rematch of the only trade of 2025, when Kris sent Jahmyr Gibbs to Ronjan for Quinshon Judkins and Sam LaPorta. Ronjan re-drafted LaPorta back this year, so Judkins is the only piece of that trade still on Kris's roster - he scored 6.0. Gibbs beat his projection by 10.6 (20.5 to 31.1) against his old team, but Kris won anyway on D'Andre Swift (11.4 to 31.9, the week's second-largest overperformance) and a combined 41.4 from Lamar Jackson and C.J. Stroud. Ronjan's Sam Darnold (14.0 to 0.5) and A.J. Brown (11.5 to 4.1, now on IR) both missed their own numbers too.` },
+    text: `Terrible Towels (Mike) beat Conquering Heroes (Ben) 156.4-127.6. Three of Ben's 2025 receivers - Brock Bowers, Tee Higgins, Brian Thomas Jr. - now play for Mike, who won without much from any of them (Bowers is on IR, Higgins missed his projection, Thomas didn't start). The real difference was Mike's other receivers: Christian Watson beat his by 20.4 (9.3 to 29.7), Justin Jefferson by 13.4 (13.8 to 27.2), outscoring Ben's whole receiving corps by 40.2. Ben got the return piece in that swap, Parker Washington, who beat his projection by 7.3 (9.5 to 16.8) against his old team; Kenneth Walker III (13.3 to 32.6) gave Ben the week's best backfield anyway. Neither was enough.` },
+  { a: 11, aScore: 134.92, b: 9, bScore: 121.92, tag: null,
+    text: `Rice Rice Baby (Kris) beat McConkey Kong Country 2 (Ronjan) 134.9-121.9. D'Andre Swift (11.4 to 31.9) led Kris, the week's second-largest overperformance, and a combined 41.4 from Lamar Jackson and C.J. Stroud sealed it. Ronjan's Jahmyr Gibbs, whom Kris traded away last year, beat his own projection by 10.6 (20.5 to 31.1) against his old team; Quinshon Judkins, the piece Kris got back in that deal, managed only 6.0. Ronjan's Sam Darnold (14.0 to 0.5) and A.J. Brown (11.5 to 4.1, now on IR) both missed their own numbers too.` },
 ];
 
 // ---------- Week 2 preview, same structure as the Week 1 Preview panel
@@ -685,34 +628,9 @@ const WEEK2_MATCHUPS = [
     note: `The 2025 series is 1-1. Justin Herbert left Kris's roster for Ben's this offseason and faces his old team for the first time; Ben's Marvin Harrison Jr. makes the same trip in reverse. Kris is 1-0 off a big week from D'Andre Swift; Ben is still looking for his first win.` },
 ];
 
-function renderLineupCol(entry) {
-  return `
-    <div class="lineup-col">
-      <p class="lineup-team">${entry.label}</p>
-      ${entry.players.map(p => `
-        <div class="lineup-row">
-          <span class="lineup-pos">${p.pos}</span>
-          <span class="lineup-name">${p.name}</span>
-          <span class="lineup-pts">${p.pts.toFixed(1)}</span>
-        </div>
-      `).join('')}
-      <div class="lineup-row lineup-total">
-        <span class="lineup-pos"></span>
-        <span class="lineup-name">Total</span>
-        <span class="lineup-pts">${entry.total.toFixed(1)}</span>
-      </div>
-    </div>
-  `;
-}
-
 function renderMatchupResult(m) {
   const aWin = m.aScore > m.bScore;
   const tagHtml = m.tag ? `<p class="kicker" style="margin-bottom:10px;">${m.tag}</p>` : '';
-  const lineupsHtml = m.lineups ? `
-    <div class="lineups">
-      ${Object.values(m.lineups).map(renderLineupCol).join('')}
-    </div>
-  ` : '';
   return `
     <div class="matchup-card">
       ${tagHtml}
@@ -732,7 +650,6 @@ function renderMatchupResult(m) {
         </div>
       </div>
       <p class="matchup-result-text">${m.text}</p>
-      ${lineupsHtml}
     </div>
   `;
 }
