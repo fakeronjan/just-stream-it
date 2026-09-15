@@ -7,7 +7,7 @@
       "pro_team": "DET",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -17,7 +17,7 @@
       "pro_team": "MIA",
       "lineup_slot": "RB",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -27,7 +27,7 @@
       "pro_team": "NO",
       "lineup_slot": "FLEX",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -37,7 +37,7 @@
       "pro_team": "DET",
       "lineup_slot": "QB",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -47,7 +47,7 @@
       "pro_team": "DEN",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -57,7 +57,7 @@
       "pro_team": "SEA",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -67,7 +67,7 @@
       "pro_team": "CAR",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -77,7 +77,7 @@
       "pro_team": "LV",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -87,7 +87,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -97,7 +97,7 @@
       "pro_team": "BUF",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -107,7 +107,7 @@
       "pro_team": "IND",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -117,7 +117,7 @@
       "pro_team": "ARI",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -127,7 +127,7 @@
       "pro_team": "ATL",
       "lineup_slot": "TE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -137,7 +137,7 @@
       "pro_team": "CHI",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -147,7 +147,7 @@
       "pro_team": "ARI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -157,7 +157,7 @@
       "pro_team": "ATL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -167,7 +167,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -177,7 +177,7 @@
       "pro_team": "ARI",
       "lineup_slot": "IR",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
     },
     {
@@ -187,7 +187,7 @@
       "pro_team": "HOU",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
     },
     {
@@ -197,7 +197,7 @@
       "pro_team": "DET",
       "lineup_slot": "K",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -207,7 +207,7 @@
       "pro_team": "CHI",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     },
     {
@@ -217,7 +217,7 @@
       "pro_team": "MIA",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -229,7 +229,7 @@
       "pro_team": "CHI",
       "lineup_slot": "QB",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -239,7 +239,7 @@
       "pro_team": "LAC",
       "lineup_slot": "RB",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -249,7 +249,7 @@
       "pro_team": "MIN",
       "lineup_slot": 7,
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -259,7 +259,7 @@
       "pro_team": "DAL",
       "lineup_slot": "BE",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -269,7 +269,7 @@
       "pro_team": "BAL",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -279,7 +279,7 @@
       "pro_team": "NYG",
       "lineup_slot": "TE",
       "keeper_value": 15,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -289,7 +289,7 @@
       "pro_team": "CAR",
       "lineup_slot": "FLEX",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -299,7 +299,7 @@
       "pro_team": "MIN",
       "lineup_slot": "WR",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -309,7 +309,7 @@
       "pro_team": "DAL",
       "lineup_slot": "BE",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -319,7 +319,7 @@
       "pro_team": "NYG",
       "lineup_slot": "RB",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -329,7 +329,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -339,7 +339,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -349,7 +349,7 @@
       "pro_team": "NYG",
       "lineup_slot": "BE",
       "keeper_value": 17,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -359,7 +359,7 @@
       "pro_team": "TEN",
       "lineup_slot": "WR",
       "keeper_value": 15,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -369,7 +369,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -379,7 +379,7 @@
       "pro_team": "NYG",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -389,7 +389,7 @@
       "pro_team": "PIT",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -399,7 +399,7 @@
       "pro_team": "NYG",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -409,7 +409,7 @@
       "pro_team": "CIN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     }
   ],
@@ -421,7 +421,7 @@
       "pro_team": "BUF",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -431,7 +431,7 @@
       "pro_team": "ATL",
       "lineup_slot": "WR",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -441,7 +441,7 @@
       "pro_team": "ARI",
       "lineup_slot": "TE",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -451,7 +451,7 @@
       "pro_team": "LAR",
       "lineup_slot": "RB",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -461,7 +461,7 @@
       "pro_team": "WSH",
       "lineup_slot": "WR",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -471,7 +471,7 @@
       "pro_team": "HOU",
       "lineup_slot": "RB",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -481,7 +481,7 @@
       "pro_team": "PIT",
       "lineup_slot": "WR",
       "keeper_value": 10,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -491,7 +491,7 @@
       "pro_team": "IND",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -501,7 +501,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -511,7 +511,7 @@
       "pro_team": "ARI",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -521,7 +521,7 @@
       "pro_team": "SF",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -531,7 +531,7 @@
       "pro_team": "LAR",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -541,7 +541,7 @@
       "pro_team": "WSH",
       "lineup_slot": "BE",
       "keeper_value": 14,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -551,7 +551,7 @@
       "pro_team": "TB",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -561,7 +561,7 @@
       "pro_team": "LAR",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -571,7 +571,7 @@
       "pro_team": "LAC",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -581,7 +581,7 @@
       "pro_team": "CIN",
       "lineup_slot": "BE",
       "keeper_value": 15,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -591,7 +591,7 @@
       "pro_team": "CLE",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
     },
     {
@@ -601,7 +601,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -611,7 +611,7 @@
       "pro_team": "MIN",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     },
     {
@@ -621,7 +621,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -633,7 +633,7 @@
       "pro_team": "LAR",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -643,7 +643,7 @@
       "pro_team": "LAC",
       "lineup_slot": "QB",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -653,7 +653,7 @@
       "pro_team": "CIN",
       "lineup_slot": "RB",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -663,7 +663,7 @@
       "pro_team": "TB",
       "lineup_slot": 7,
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -673,7 +673,7 @@
       "pro_team": "KC",
       "lineup_slot": "RB",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -683,7 +683,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -693,7 +693,7 @@
       "pro_team": "JAX",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -703,7 +703,7 @@
       "pro_team": "TB",
       "lineup_slot": "WR",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -713,7 +713,7 @@
       "pro_team": "LAR",
       "lineup_slot": "BE",
       "keeper_value": 19,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -723,7 +723,7 @@
       "pro_team": "CHI",
       "lineup_slot": "TE",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -733,7 +733,7 @@
       "pro_team": "ARI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -743,7 +743,7 @@
       "pro_team": "TB",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -753,7 +753,7 @@
       "pro_team": "SEA",
       "lineup_slot": "IR",
       "keeper_value": 13,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -763,7 +763,7 @@
       "pro_team": "NO",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -773,7 +773,7 @@
       "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -783,7 +783,7 @@
       "pro_team": "ATL",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -793,7 +793,7 @@
       "pro_team": "MIN",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -803,7 +803,7 @@
       "pro_team": "KC",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -813,7 +813,7 @@
       "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -821,9 +821,9 @@
       "name": "Eagles D/ST",
       "position": "D/ST",
       "pro_team": "PHI",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     },
     {
@@ -833,7 +833,7 @@
       "pro_team": "ATL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -841,9 +841,9 @@
       "name": "Buccaneers D/ST",
       "position": "D/ST",
       "pro_team": "TB",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ],
@@ -855,7 +855,7 @@
       "pro_team": "DAL",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -865,7 +865,7 @@
       "pro_team": "IND",
       "lineup_slot": "RB",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -875,7 +875,7 @@
       "pro_team": "NE",
       "lineup_slot": "QB",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -885,7 +885,7 @@
       "pro_team": "NYG",
       "lineup_slot": "WR",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -895,7 +895,7 @@
       "pro_team": "TB",
       "lineup_slot": "RB",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -905,7 +905,7 @@
       "pro_team": "IND",
       "lineup_slot": "TE",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -915,7 +915,7 @@
       "pro_team": "PIT",
       "lineup_slot": "WR",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -925,7 +925,7 @@
       "pro_team": "PIT",
       "lineup_slot": "FLEX",
       "keeper_value": 18,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -935,7 +935,7 @@
       "pro_team": "HOU",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -945,7 +945,7 @@
       "pro_team": "LAR",
       "lineup_slot": 7,
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -955,7 +955,7 @@
       "pro_team": "WSH",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -965,7 +965,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -975,7 +975,7 @@
       "pro_team": "LV",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -985,7 +985,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -995,7 +995,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1005,7 +1005,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1015,7 +1015,7 @@
       "pro_team": "KC",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1025,7 +1025,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1035,7 +1035,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     }
   ],
@@ -1047,7 +1047,7 @@
       "pro_team": "SF",
       "lineup_slot": "RB",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1057,7 +1057,7 @@
       "pro_team": "DEN",
       "lineup_slot": "QB",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1067,7 +1067,7 @@
       "pro_team": "KC",
       "lineup_slot": 7,
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1077,7 +1077,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "WR",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1087,7 +1087,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1097,7 +1097,7 @@
       "pro_team": "NE",
       "lineup_slot": "RB",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1107,7 +1107,7 @@
       "pro_team": "CAR",
       "lineup_slot": "WR",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1117,7 +1117,7 @@
       "pro_team": "SF",
       "lineup_slot": "TE",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1127,7 +1127,7 @@
       "pro_team": "GB",
       "lineup_slot": "WR",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1137,7 +1137,7 @@
       "pro_team": "KC",
       "lineup_slot": "FLEX",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1147,7 +1147,7 @@
       "pro_team": "CAR",
       "lineup_slot": "BE",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1157,7 +1157,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 14,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1167,7 +1167,7 @@
       "pro_team": "SF",
       "lineup_slot": "BE",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1177,7 +1177,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1187,7 +1187,7 @@
       "pro_team": "HOU",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1197,7 +1197,7 @@
       "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1207,7 +1207,7 @@
       "pro_team": "HOU",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1217,7 +1217,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1227,7 +1227,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ],
@@ -1239,7 +1239,7 @@
       "pro_team": "WSH",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1249,7 +1249,7 @@
       "pro_team": "MIN",
       "lineup_slot": "WR",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1259,7 +1259,7 @@
       "pro_team": "HOU",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1269,7 +1269,7 @@
       "pro_team": "LV",
       "lineup_slot": "IR",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1279,7 +1279,7 @@
       "pro_team": "CIN",
       "lineup_slot": "WR",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1289,7 +1289,7 @@
       "pro_team": "JAX",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1299,7 +1299,7 @@
       "pro_team": "NE",
       "lineup_slot": "IR",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1309,7 +1309,7 @@
       "pro_team": "GB",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1319,7 +1319,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1329,7 +1329,7 @@
       "pro_team": "DEN",
       "lineup_slot": "RB",
       "keeper_value": 10,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1339,7 +1339,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1349,7 +1349,7 @@
       "pro_team": "NYG",
       "lineup_slot": 7,
       "keeper_value": 13,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1359,7 +1359,7 @@
       "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1369,7 +1369,7 @@
       "pro_team": "CAR",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1379,7 +1379,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1389,7 +1389,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1399,7 +1399,7 @@
       "pro_team": "NE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -1409,7 +1409,7 @@
       "pro_team": "JAX",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1419,7 +1419,7 @@
       "pro_team": "TEN",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     },
     {
@@ -1429,7 +1429,7 @@
       "pro_team": "LV",
       "lineup_slot": "TE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -1441,7 +1441,7 @@
       "pro_team": "PHI",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1451,7 +1451,7 @@
       "pro_team": "BAL",
       "lineup_slot": "RB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1461,7 +1461,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "FLEX",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1471,7 +1471,7 @@
       "pro_team": "SEA",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1481,7 +1481,7 @@
       "pro_team": "BUF",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1491,7 +1491,7 @@
       "pro_team": "MIA",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1501,7 +1501,7 @@
       "pro_team": "GB",
       "lineup_slot": "TE",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1511,7 +1511,7 @@
       "pro_team": "NO",
       "lineup_slot": "WR",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1521,7 +1521,7 @@
       "pro_team": "TB",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1531,7 +1531,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 13,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1541,7 +1541,7 @@
       "pro_team": "DAL",
       "lineup_slot": "RB",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1551,7 +1551,7 @@
       "pro_team": "IND",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1561,7 +1561,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1571,7 +1571,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1581,7 +1581,7 @@
       "pro_team": "DAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1591,7 +1591,7 @@
       "pro_team": "LAC",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -1601,7 +1601,7 @@
       "pro_team": "BUF",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1611,7 +1611,7 @@
       "pro_team": "GB",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1621,7 +1621,7 @@
       "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -1633,7 +1633,7 @@
       "pro_team": "DET",
       "lineup_slot": "RB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1643,7 +1643,7 @@
       "pro_team": "PHI",
       "lineup_slot": "RB",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1651,9 +1651,9 @@
       "name": "A.J. Brown",
       "position": "WR",
       "pro_team": "NE",
-      "lineup_slot": "WR",
+      "lineup_slot": "IR",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1663,7 +1663,7 @@
       "pro_team": "LAC",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1673,7 +1673,7 @@
       "pro_team": "JAX",
       "lineup_slot": "QB",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1683,7 +1683,7 @@
       "pro_team": "DET",
       "lineup_slot": "TE",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1691,9 +1691,9 @@
       "name": "Sam Darnold",
       "position": "QB",
       "pro_team": "SEA",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1703,7 +1703,7 @@
       "pro_team": "TEN",
       "lineup_slot": "FLEX",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1713,7 +1713,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1723,7 +1723,7 @@
       "pro_team": "LAR",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -1731,9 +1731,9 @@
       "name": "Aaron Rodgers",
       "position": "QB",
       "pro_team": "PIT",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1743,7 +1743,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1751,9 +1751,9 @@
       "name": "Romeo Doubs",
       "position": "WR",
       "pro_team": "NE",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 15,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1763,7 +1763,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1773,7 +1773,7 @@
       "pro_team": "DET",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1783,7 +1783,7 @@
       "pro_team": "LV",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1793,7 +1793,7 @@
       "pro_team": "LV",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1801,9 +1801,9 @@
       "name": "Alvin Kamara",
       "position": "RB",
       "pro_team": "NO",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1813,7 +1813,7 @@
       "pro_team": "CIN",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1823,7 +1823,7 @@
       "pro_team": "HOU",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -1835,7 +1835,7 @@
       "pro_team": "ATL",
       "lineup_slot": "RB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1845,7 +1845,7 @@
       "pro_team": "DAL",
       "lineup_slot": "QB",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1855,7 +1855,7 @@
       "pro_team": "LV",
       "lineup_slot": "RB",
       "keeper_value": 2,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1865,7 +1865,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "DAY_TO_DAY",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1875,7 +1875,7 @@
       "pro_team": "LAR",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1885,7 +1885,7 @@
       "pro_team": "DEN",
       "lineup_slot": "WR",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1895,7 +1895,7 @@
       "pro_team": "TEN",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1905,7 +1905,7 @@
       "pro_team": "SF",
       "lineup_slot": "FLEX",
       "keeper_value": 6,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1915,7 +1915,7 @@
       "pro_team": "KC",
       "lineup_slot": "TE",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1925,7 +1925,7 @@
       "pro_team": "NE",
       "lineup_slot": "BE",
       "keeper_value": 15,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1935,7 +1935,7 @@
       "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -1945,7 +1945,7 @@
       "pro_team": "PIT",
       "lineup_slot": "D/ST",
       "keeper_value": 10,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -1955,7 +1955,7 @@
       "pro_team": "DAL",
       "lineup_slot": "K",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1965,7 +1965,7 @@
       "pro_team": "CLE",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1975,7 +1975,7 @@
       "pro_team": "ATL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1985,7 +1985,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1995,7 +1995,7 @@
       "pro_team": "MIA",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2005,7 +2005,7 @@
       "pro_team": "LV",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2015,7 +2015,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     }
   ],
@@ -2027,7 +2027,7 @@
       "pro_team": "BAL",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2037,7 +2037,7 @@
       "pro_team": "ARI",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2047,7 +2047,7 @@
       "pro_team": "KC",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2057,7 +2057,7 @@
       "pro_team": "PHI",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2067,7 +2067,7 @@
       "pro_team": "CHI",
       "lineup_slot": "FLEX",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2077,7 +2077,7 @@
       "pro_team": "CLE",
       "lineup_slot": "TE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2087,7 +2087,7 @@
       "pro_team": "ARI",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2097,7 +2097,7 @@
       "pro_team": "HOU",
       "lineup_slot": 7,
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2107,7 +2107,7 @@
       "pro_team": "CLE",
       "lineup_slot": "RB",
       "keeper_value": 10,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2117,7 +2117,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2127,7 +2127,7 @@
       "pro_team": "LAC",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2137,7 +2137,7 @@
       "pro_team": "SEA",
       "lineup_slot": "D/ST",
       "keeper_value": 16,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -2147,7 +2147,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2157,7 +2157,7 @@
       "pro_team": "SEA",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2167,7 +2167,7 @@
       "pro_team": "HOU",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2177,7 +2177,7 @@
       "pro_team": "DET",
       "lineup_slot": "BE",
       "keeper_value": 17,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -2187,7 +2187,7 @@
       "pro_team": "SF",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2197,7 +2197,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2207,7 +2207,7 @@
       "pro_team": "HOU",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -2219,7 +2219,7 @@
       "pro_team": "CIN",
       "lineup_slot": "WR",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2229,7 +2229,7 @@
       "pro_team": "CIN",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2239,7 +2239,7 @@
       "pro_team": "BUF",
       "lineup_slot": "RB",
       "keeper_value": 4,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2249,7 +2249,7 @@
       "pro_team": "SF",
       "lineup_slot": 7,
       "keeper_value": 3,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2259,7 +2259,7 @@
       "pro_team": "CHI",
       "lineup_slot": "WR",
       "keeper_value": 8,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2269,7 +2269,7 @@
       "pro_team": "DET",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2279,7 +2279,7 @@
       "pro_team": "PIT",
       "lineup_slot": "RB",
       "keeper_value": 9,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2289,7 +2289,7 @@
       "pro_team": "PHI",
       "lineup_slot": "TE",
       "keeper_value": 12,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2299,7 +2299,7 @@
       "pro_team": "BUF",
       "lineup_slot": "BE",
       "keeper_value": 11,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2309,7 +2309,7 @@
       "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2319,7 +2319,7 @@
       "pro_team": "CHI",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2329,7 +2329,7 @@
       "pro_team": "WSH",
       "lineup_slot": "BE",
       "keeper_value": 10,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2339,7 +2339,7 @@
       "pro_team": "LAC",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2349,7 +2349,7 @@
       "pro_team": "SEA",
       "lineup_slot": "BE",
       "keeper_value": 13,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2359,7 +2359,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -2369,7 +2369,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2379,7 +2379,7 @@
       "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2389,7 +2389,7 @@
       "pro_team": "BUF",
       "lineup_slot": "BE",
       "keeper_value": 14,
-      "injury_status": "NORMAL",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2399,7 +2399,7 @@
       "pro_team": "JAX",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
-      "injury_status": "NORMAL",
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ]

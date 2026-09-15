@@ -149,7 +149,11 @@ def build_rosters(league):
                     "pro_team": PRO_TEAM_MAP.get(p["proTeamId"], p["proTeamId"]),
                     "lineup_slot": LINEUP_SLOT_MAP.get(e["lineupSlotId"], e["lineupSlotId"]),
                     "keeper_value": e["playerPoolEntry"].get("keeperValue"),
-                    "injury_status": e.get("injuryStatus"),
+                    # e["injuryStatus"] is the roster-ENTRY status (always
+                    # "NORMAL" - it's about the slot, not the player). The
+                    # real medical designation (OUT/QUESTIONABLE/IR/etc.)
+                    # lives on the player object itself.
+                    "injury_status": p.get("injuryStatus"),
                     "acquisition_type": e.get("acquisitionType"),
                 }
             )

@@ -163,6 +163,15 @@ def build_weekly_boxscores(season, num_weeks):
                         (s["stats"] for s in p.get("stats", []) if s.get("statSourceId") == 0 and s.get("scoringPeriodId") == week),
                         {},
                     )
+                    # statSourceId 1 is ESPN's own pregame projection for that
+                    # scoring period (0 is the actual result, already used for
+                    # "points" above) - kept alongside actual points so a
+                    # recap can call out who beat or missed expectations, not
+                    # just who scored the most in absolute terms.
+                    projected = next(
+                        (s.get("appliedTotal") for s in p.get("stats", []) if s.get("statSourceId") == 1 and s.get("scoringPeriodId") == week),
+                        None,
+                    )
                     players.append(
                         {
                             "player_id": e["playerId"],
@@ -172,6 +181,7 @@ def build_weekly_boxscores(season, num_weeks):
                             "lineup_slot_id": e["lineupSlotId"],
                             "started": e["lineupSlotId"] not in BENCH_IR_SLOTS,
                             "points": e["playerPoolEntry"].get("appliedStatTotal", 0.0),
+                            "projected_points": projected,
                             "stat_line": format_stat_line(actual_stats),
                         }
                     )

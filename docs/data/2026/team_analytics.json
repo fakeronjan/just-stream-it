@@ -1,0 +1,968 @@
+[
+  {
+    "team_id": 4,
+    "owners": [
+      "Ben Porter"
+    ],
+    "transactions_count": 7,
+    "trades_count": 0,
+    "waiver_pickups": 4,
+    "free_agent_pickups": 3,
+    "drops": 2,
+    "players_started_count": 12,
+    "started_points_total": 127.6,
+    "started_points_by_source": {
+      "DRAFT": 122.6,
+      "PICKUP": 5.0
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 96.1,
+      "PICKUP": 3.9
+    },
+    "started_points_by_position": {
+      "WR": 41.8,
+      "QB": 24.9,
+      "RB": 48.9,
+      "TE": 0.0,
+      "K": 7.0,
+      "D/ST": 5.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 32.8,
+      "QB": 19.5,
+      "RB": 38.3,
+      "TE": 0.0,
+      "K": 5.5,
+      "D/ST": 3.9
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Kenneth Walker III",
+          "position": "RB",
+          "points": 32.6,
+          "games": 14,
+          "ppg": 2.33
+        },
+        {
+          "name": "Parker Washington",
+          "position": "WR",
+          "points": 16.8,
+          "games": 14,
+          "ppg": 1.2
+        },
+        {
+          "name": "Chase Brown",
+          "position": "RB",
+          "points": 16.3,
+          "games": 14,
+          "ppg": 1.16
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Eagles D/ST",
+          "position": "D/ST",
+          "points": 5.0,
+          "games": 1,
+          "ppg": 5.0
+        },
+        {
+          "name": "Buccaneers D/ST",
+          "position": "D/ST",
+          "points": 0.0,
+          "games": 13,
+          "ppg": 0.0
+        }
+      ]
+    },
+    "actual_wins": 7,
+    "all_play_wins": 61,
+    "all_play_games": 154,
+    "expected_wins": 5.55,
+    "luck_index": 1.45,
+    "bad_luck_loss_weeks": [
+      9
+    ],
+    "good_luck_win_weeks": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "team_id": 5,
+    "owners": [
+      "Cara Kantrowitz"
+    ],
+    "transactions_count": 0,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 0,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 98.02,
+    "started_points_by_source": {
+      "DRAFT": 98.02
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 100.0
+    },
+    "started_points_by_position": {
+      "WR": 28.8,
+      "RB": 43.5,
+      "QB": 13.92,
+      "TE": 8.8,
+      "D/ST": -4.0,
+      "K": 7.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 29.4,
+      "RB": 44.4,
+      "QB": 14.2,
+      "TE": 9.0,
+      "D/ST": -4.1,
+      "K": 7.1
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "points": 23.6,
+          "games": 14,
+          "ppg": 1.69
+        },
+        {
+          "name": "Bucky Irving",
+          "position": "RB",
+          "points": 16.8,
+          "games": 14,
+          "ppg": 1.2
+        },
+        {
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "points": 12.9,
+          "games": 14,
+          "ppg": 0.92
+        }
+      ]
+    },
+    "actual_wins": 6,
+    "all_play_wins": 68,
+    "all_play_games": 154,
+    "expected_wins": 6.18,
+    "luck_index": -0.18,
+    "bad_luck_loss_weeks": [
+      10,
+      11
+    ],
+    "good_luck_win_weeks": [
+      4,
+      7
+    ]
+  },
+  {
+    "team_id": 1,
+    "owners": [
+      "Imran Hirani"
+    ],
+    "transactions_count": 7,
+    "trades_count": 0,
+    "waiver_pickups": 3,
+    "free_agent_pickups": 4,
+    "drops": 2,
+    "players_started_count": 11,
+    "started_points_total": 92.58,
+    "started_points_by_source": {
+      "DRAFT": 83.58,
+      "PICKUP": 9.0
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 90.3,
+      "PICKUP": 9.7
+    },
+    "started_points_by_position": {
+      "WR": 31.4,
+      "RB": 26.7,
+      "QB": 25.48,
+      "TE": 0.0,
+      "K": 7.0,
+      "D/ST": 2.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 33.9,
+      "RB": 28.8,
+      "QB": 27.5,
+      "TE": 0.0,
+      "K": 7.6,
+      "D/ST": 2.2
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Amon-Ra St. Brown",
+          "position": "WR",
+          "points": 23.7,
+          "games": 14,
+          "ppg": 1.69
+        },
+        {
+          "name": "Jared Goff",
+          "position": "QB",
+          "points": 16.44,
+          "games": 14,
+          "ppg": 1.17
+        },
+        {
+          "name": "Travis Etienne Jr.",
+          "position": "RB",
+          "points": 11.3,
+          "games": 14,
+          "ppg": 0.81
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Jake Bates",
+          "position": "K",
+          "points": 7.0,
+          "games": 14,
+          "ppg": 0.5
+        },
+        {
+          "name": "Bears D/ST",
+          "position": "D/ST",
+          "points": 2.0,
+          "games": 14,
+          "ppg": 0.14
+        }
+      ]
+    },
+    "actual_wins": 8,
+    "all_play_wins": 61,
+    "all_play_games": 154,
+    "expected_wins": 5.55,
+    "luck_index": 2.45,
+    "bad_luck_loss_weeks": [
+      11
+    ],
+    "good_luck_win_weeks": [
+      4,
+      5,
+      14
+    ]
+  },
+  {
+    "team_id": 8,
+    "owners": [
+      "Joseph Sebranek"
+    ],
+    "transactions_count": 1,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 1,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 201.62,
+    "started_points_by_source": {
+      "DRAFT": 201.62
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 100.0
+    },
+    "started_points_by_position": {
+      "QB": 41.42,
+      "RB": 75.3,
+      "WR": 63.9,
+      "TE": 8.0,
+      "D/ST": 0.0,
+      "K": 13.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 20.5,
+      "RB": 37.3,
+      "WR": 31.7,
+      "TE": 4.0,
+      "D/ST": 0.0,
+      "K": 6.4
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Derrick Henry",
+          "position": "RB",
+          "points": 34.8,
+          "games": 14,
+          "ppg": 2.49
+        },
+        {
+          "name": "Jalen Hurts",
+          "position": "QB",
+          "points": 24.72,
+          "games": 14,
+          "ppg": 1.77
+        },
+        {
+          "name": "Chris Olave",
+          "position": "WR",
+          "points": 23.2,
+          "games": 14,
+          "ppg": 1.66
+        }
+      ]
+    },
+    "actual_wins": 9,
+    "all_play_wins": 80,
+    "all_play_games": 154,
+    "expected_wins": 7.27,
+    "luck_index": 1.73,
+    "bad_luck_loss_weeks": [
+      13
+    ],
+    "good_luck_win_weeks": [
+      6,
+      7
+    ]
+  },
+  {
+    "team_id": 10,
+    "owners": [
+      "Karlos Abel"
+    ],
+    "transactions_count": 0,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 0,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 140.9,
+    "started_points_by_source": {
+      "DRAFT": 140.9
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 100.0
+    },
+    "started_points_by_position": {
+      "RB": 57.0,
+      "QB": 28.4,
+      "WR": 25.9,
+      "TE": 8.6,
+      "D/ST": 19.0,
+      "K": 2.0
+    },
+    "started_points_pct_by_position": {
+      "RB": 40.5,
+      "QB": 20.2,
+      "WR": 18.4,
+      "TE": 6.1,
+      "D/ST": 13.5,
+      "K": 1.4
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Ashton Jeanty",
+          "position": "RB",
+          "points": 29.7,
+          "games": 14,
+          "ppg": 2.12
+        },
+        {
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "points": 27.3,
+          "games": 14,
+          "ppg": 1.95
+        },
+        {
+          "name": "Steelers D/ST",
+          "position": "D/ST",
+          "points": 19.0,
+          "games": 14,
+          "ppg": 1.36
+        }
+      ]
+    },
+    "actual_wins": 7,
+    "all_play_wins": 79,
+    "all_play_games": 154,
+    "expected_wins": 7.18,
+    "luck_index": -0.18,
+    "bad_luck_loss_weeks": [
+      5,
+      14
+    ],
+    "good_luck_win_weeks": [
+      8,
+      11
+    ]
+  },
+  {
+    "team_id": 11,
+    "owners": [
+      "Kris Wikstrom"
+    ],
+    "transactions_count": 1,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 1,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 134.92,
+    "started_points_by_source": {
+      "DRAFT": 134.92
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 100.0
+    },
+    "started_points_by_position": {
+      "QB": 41.42,
+      "RB": 49.9,
+      "WR": 19.5,
+      "TE": 3.1,
+      "D/ST": 14.0,
+      "K": 7.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 30.7,
+      "RB": 37.0,
+      "WR": 14.5,
+      "TE": 2.3,
+      "D/ST": 10.4,
+      "K": 5.2
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "D'Andre Swift",
+          "position": "RB",
+          "points": 31.9,
+          "games": 14,
+          "ppg": 2.28
+        },
+        {
+          "name": "Lamar Jackson",
+          "position": "QB",
+          "points": 24.96,
+          "games": 14,
+          "ppg": 1.78
+        },
+        {
+          "name": "C.J. Stroud",
+          "position": "QB",
+          "points": 16.46,
+          "games": 14,
+          "ppg": 1.18
+        }
+      ]
+    },
+    "actual_wins": 7,
+    "all_play_wins": 66,
+    "all_play_games": 154,
+    "expected_wins": 6.0,
+    "luck_index": 1.0,
+    "bad_luck_loss_weeks": [
+      6,
+      7
+    ],
+    "good_luck_win_weeks": [
+      3,
+      12,
+      13
+    ]
+  },
+  {
+    "team_id": 6,
+    "owners": [
+      "Lisette Bruens"
+    ],
+    "transactions_count": 1,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 1,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 107.3,
+    "started_points_by_source": {
+      "DRAFT": 96.3,
+      "PICKUP": 11.0
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 89.7,
+      "PICKUP": 10.3
+    },
+    "started_points_by_position": {
+      "RB": 23.3,
+      "QB": 27.1,
+      "WR": 34.7,
+      "TE": 2.2,
+      "K": 9.0,
+      "D/ST": 11.0
+    },
+    "started_points_pct_by_position": {
+      "RB": 21.7,
+      "QB": 25.3,
+      "WR": 32.3,
+      "TE": 2.1,
+      "K": 8.4,
+      "D/ST": 10.3
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Patrick Mahomes",
+          "position": "QB",
+          "points": 21.66,
+          "games": 14,
+          "ppg": 1.55
+        },
+        {
+          "name": "Matthew Golden",
+          "position": "WR",
+          "points": 12.5,
+          "games": 14,
+          "ppg": 0.89
+        },
+        {
+          "name": "Rhamondre Stevenson",
+          "position": "RB",
+          "points": 12.0,
+          "games": 14,
+          "ppg": 0.86
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Jets D/ST",
+          "position": "D/ST",
+          "points": 11.0,
+          "games": 14,
+          "ppg": 0.79
+        }
+      ]
+    },
+    "actual_wins": 6,
+    "all_play_wins": 139,
+    "all_play_games": 154,
+    "expected_wins": 12.64,
+    "luck_index": -6.64,
+    "bad_luck_loss_weeks": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "good_luck_win_weeks": []
+  },
+  {
+    "team_id": 12,
+    "owners": [
+      "Melinda Thomas"
+    ],
+    "transactions_count": 1,
+    "trades_count": 0,
+    "waiver_pickups": 1,
+    "free_agent_pickups": 0,
+    "drops": 1,
+    "players_started_count": 11,
+    "started_points_total": 123.46,
+    "started_points_by_source": {
+      "DRAFT": 109.46,
+      "PICKUP": 14.0
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 88.7,
+      "PICKUP": 11.3
+    },
+    "started_points_by_position": {
+      "WR": 14.9,
+      "QB": 35.26,
+      "RB": 35.6,
+      "TE": 21.7,
+      "K": 2.0,
+      "D/ST": 14.0
+    },
+    "started_points_pct_by_position": {
+      "WR": 12.1,
+      "QB": 28.6,
+      "RB": 28.8,
+      "TE": 17.6,
+      "K": 1.6,
+      "D/ST": 11.3
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Dallas Goedert",
+          "position": "TE",
+          "points": 21.7,
+          "games": 14,
+          "ppg": 1.55
+        },
+        {
+          "name": "Brock Purdy",
+          "position": "QB",
+          "points": 21.1,
+          "games": 14,
+          "ppg": 1.51
+        },
+        {
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "points": 19.4,
+          "games": 14,
+          "ppg": 1.39
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "points": 14.0,
+          "games": 14,
+          "ppg": 1.0
+        }
+      ]
+    },
+    "actual_wins": 7,
+    "all_play_wins": 79,
+    "all_play_games": 154,
+    "expected_wins": 7.18,
+    "luck_index": -0.18,
+    "bad_luck_loss_weeks": [
+      3,
+      12,
+      13
+    ],
+    "good_luck_win_weeks": [
+      6,
+      9
+    ]
+  },
+  {
+    "team_id": 7,
+    "owners": [
+      "Michael Higgins"
+    ],
+    "transactions_count": 2,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 2,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 156.36,
+    "started_points_by_source": {
+      "DRAFT": 151.16,
+      "PICKUP": 5.2
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 96.7,
+      "PICKUP": 3.3
+    },
+    "started_points_by_position": {
+      "QB": 44.26,
+      "WR": 82.0,
+      "RB": 12.9,
+      "K": 12.0,
+      "D/ST": -1.0,
+      "TE": 6.2
+    },
+    "started_points_pct_by_position": {
+      "QB": 28.3,
+      "WR": 52.4,
+      "RB": 8.3,
+      "K": 7.7,
+      "D/ST": -0.6,
+      "TE": 4.0
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Christian Watson",
+          "position": "WR",
+          "points": 29.7,
+          "games": 14,
+          "ppg": 2.12
+        },
+        {
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "points": 27.2,
+          "games": 14,
+          "ppg": 1.94
+        },
+        {
+          "name": "Jaxson Dart",
+          "position": "QB",
+          "points": 26.6,
+          "games": 14,
+          "ppg": 1.9
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Michael Mayer",
+          "position": "TE",
+          "points": 6.2,
+          "games": 14,
+          "ppg": 0.44
+        },
+        {
+          "name": "Titans D/ST",
+          "position": "D/ST",
+          "points": -1.0,
+          "games": 14,
+          "ppg": -0.07
+        }
+      ]
+    },
+    "actual_wins": 7,
+    "all_play_wins": 77,
+    "all_play_games": 154,
+    "expected_wins": 7.0,
+    "luck_index": 0.0,
+    "bad_luck_loss_weeks": [
+      4,
+      5
+    ],
+    "good_luck_win_weeks": [
+      10,
+      11
+    ]
+  },
+  {
+    "team_id": 3,
+    "owners": [
+      "Pete Gallagher"
+    ],
+    "transactions_count": 7,
+    "trades_count": 0,
+    "waiver_pickups": 2,
+    "free_agent_pickups": 5,
+    "drops": 2,
+    "players_started_count": 11,
+    "started_points_total": 133.46,
+    "started_points_by_source": {
+      "DRAFT": 128.46,
+      "PICKUP": 5.0
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 96.3,
+      "PICKUP": 3.7
+    },
+    "started_points_by_position": {
+      "QB": 35.66,
+      "WR": 30.4,
+      "TE": 20.0,
+      "RB": 41.4,
+      "K": 1.0,
+      "D/ST": 5.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 26.7,
+      "WR": 22.8,
+      "TE": 15.0,
+      "RB": 31.0,
+      "K": 0.7,
+      "D/ST": 3.7
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Josh Allen",
+          "position": "QB",
+          "points": 35.66,
+          "games": 14,
+          "ppg": 2.55
+        },
+        {
+          "name": "David Montgomery",
+          "position": "RB",
+          "points": 27.4,
+          "games": 14,
+          "ppg": 1.96
+        },
+        {
+          "name": "Trey McBride",
+          "position": "TE",
+          "points": 20.0,
+          "games": 14,
+          "ppg": 1.43
+        }
+      ],
+      "PICKUP": [
+        {
+          "name": "Vikings D/ST",
+          "position": "D/ST",
+          "points": 5.0,
+          "games": 14,
+          "ppg": 0.36
+        }
+      ]
+    },
+    "actual_wins": 6,
+    "all_play_wins": 65,
+    "all_play_games": 154,
+    "expected_wins": 5.91,
+    "luck_index": 0.09,
+    "bad_luck_loss_weeks": [
+      8,
+      9
+    ],
+    "good_luck_win_weeks": [
+      2,
+      5,
+      14
+    ]
+  },
+  {
+    "team_id": 9,
+    "owners": [
+      "Ronjan Sikdar"
+    ],
+    "transactions_count": 1,
+    "trades_count": 0,
+    "waiver_pickups": 1,
+    "free_agent_pickups": 0,
+    "drops": 0,
+    "players_started_count": 13,
+    "started_points_total": 121.92,
+    "started_points_by_source": {
+      "DRAFT": 121.92
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 100.0
+    },
+    "started_points_by_position": {
+      "RB": 43.5,
+      "WR": 24.5,
+      "QB": 26.62,
+      "TE": 7.3,
+      "D/ST": 1.0,
+      "K": 19.0
+    },
+    "started_points_pct_by_position": {
+      "RB": 35.7,
+      "WR": 20.1,
+      "QB": 21.8,
+      "TE": 6.0,
+      "D/ST": 0.8,
+      "K": 15.6
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "points": 31.1,
+          "games": 14,
+          "ppg": 2.22
+        },
+        {
+          "name": "Trevor Lawrence",
+          "position": "QB",
+          "points": 26.1,
+          "games": 14,
+          "ppg": 1.86
+        },
+        {
+          "name": "Evan McPherson",
+          "position": "K",
+          "points": 19.0,
+          "games": 14,
+          "ppg": 1.36
+        }
+      ]
+    },
+    "actual_wins": 6,
+    "all_play_wins": 66,
+    "all_play_games": 154,
+    "expected_wins": 6.0,
+    "luck_index": 0.0,
+    "bad_luck_loss_weeks": [
+      7
+    ],
+    "good_luck_win_weeks": [
+      10,
+      13
+    ]
+  },
+  {
+    "team_id": 2,
+    "owners": [
+      "mariss mednis"
+    ],
+    "transactions_count": 0,
+    "trades_count": 0,
+    "waiver_pickups": 0,
+    "free_agent_pickups": 0,
+    "drops": 0,
+    "players_started_count": 11,
+    "started_points_total": 147.08,
+    "started_points_by_source": {
+      "DRAFT": 147.08
+    },
+    "started_points_pct_by_source": {
+      "DRAFT": 100.0
+    },
+    "started_points_by_position": {
+      "QB": 36.88,
+      "RB": 44.6,
+      "WR": 29.8,
+      "TE": 23.8,
+      "K": 8.0,
+      "D/ST": 4.0
+    },
+    "started_points_pct_by_position": {
+      "QB": 25.1,
+      "RB": 30.3,
+      "WR": 20.3,
+      "TE": 16.2,
+      "K": 5.4,
+      "D/ST": 2.7
+    },
+    "top_players_by_source": {
+      "DRAFT": [
+        {
+          "name": "Caleb Williams",
+          "position": "QB",
+          "points": 37.26,
+          "games": 14,
+          "ppg": 2.66
+        },
+        {
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "points": 23.8,
+          "games": 14,
+          "ppg": 1.7
+        },
+        {
+          "name": "Zay Flowers",
+          "position": "WR",
+          "points": 23.5,
+          "games": 14,
+          "ppg": 1.68
+        }
+      ]
+    },
+    "actual_wins": 8,
+    "all_play_wins": 83,
+    "all_play_games": 154,
+    "expected_wins": 7.55,
+    "luck_index": 0.45,
+    "bad_luck_loss_weeks": [
+      2,
+      3
+    ],
+    "good_luck_win_weeks": [
+      8,
+      9
+    ]
+  }
+]
