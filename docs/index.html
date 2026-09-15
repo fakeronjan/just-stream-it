@@ -423,75 +423,7 @@
 
     <div class="section-label" style="margin-top:24px;">Rebrand Roundup</div>
     <p class="section-sublabel">Six teams enter 2026 under a new name, logo, or both</p>
-    <div class="rebrand-cards">
-
-      <div class="rebrand-card">
-        <div class="rebrand-logos">
-          <img src="logos/2025/10.png" alt="">
-          <span class="arrow">&rarr;</span>
-          <img src="logos/2026-wk01/10.jpg" alt="">
-        </div>
-        <div class="rebrand-names"><span class="old-name">Baker's Dirty Dozen</span> &rarr; <span class="new-name">The Aristocrats</span></div>
-        <div class="rebrand-owner">Karl Abel</div>
-        <p class="rebrand-blurb">Baker's Dirty Dozen finished 9th at <b>5-9</b> last year, and Karl didn't tinker, he detonated it: zero keepers, the only true rebuild in the league. Going from "Dirty" to "Aristocrats" for a team blowing up everything it owns is either very on-brand or exactly backwards - your call.</p>
-      </div>
-
-      <div class="rebrand-card">
-        <div class="rebrand-logos">
-          <img src="logos/2025/8.svg" alt="">
-          <span class="arrow">&rarr;</span>
-          <img src="logos/2026-wk01/8.jpg" alt="">
-        </div>
-        <div class="rebrand-names"><span class="old-name">Daddy Nielsen</span> &rarr; <span class="new-name">Olave Oyl</span></div>
-        <div class="rebrand-owner">Joe Sebranek</div>
-        <p class="rebrand-blurb">This isn't a team in crisis rebranding. Daddy Nielsen went <b>10-4</b> last year, good for 5th, and Joe tore up the name anyway, just to hand the team over to his own keeper. Olave Oyl is a good team having fun, not a bad one starting over.</p>
-      </div>
-
-      <div class="rebrand-card">
-        <div class="rebrand-logos">
-          <img src="logos/2025/11.png" alt="">
-          <span class="arrow">&rarr;</span>
-          <img src="logos/2026-wk01/11.jpg" alt="">
-        </div>
-        <div class="rebrand-names"><span class="old-name">Keep 'em and weep</span> &rarr; <span class="new-name">Rice Rice Baby</span></div>
-        <div class="rebrand-owner">Kris Wikstrom</div>
-        <p class="rebrand-blurb">Keep 'em and weep finished <b>2-12</b>, dead last in the league, and honestly the old name was foreshadowing. Rice Rice Baby trades the tears for an actual receiver - for once, the joke's on offense.</p>
-      </div>
-
-      <div class="rebrand-card">
-        <div class="rebrand-logos">
-          <img src="logos/2025/9.png" alt="">
-          <span class="arrow">&rarr;</span>
-          <img src="logos/2026-wk01/9.jpg" alt="">
-        </div>
-        <div class="rebrand-names"><span class="old-name">McConkey Kong Country</span> &rarr; <span class="new-name">McConkey Kong Country 2</span></div>
-        <div class="rebrand-owner">Ronjan Sikdar</div>
-        <p class="rebrand-blurb">McConkey Kong Country put up <b>1909.7 points</b> last year, third-most in the league, and still finished 7th at 6-8, one spot outside the playoffs. That's exactly the setup a sequel is for: give the first one the ending it actually deserved. Fittingly, he re-drafted his namesake, Ladd McConkey, in round four.</p>
-      </div>
-
-      <div class="rebrand-card">
-        <div class="rebrand-logos">
-          <img src="logos/2025/1.jpg" alt="">
-          <span class="arrow">&rarr;</span>
-          <img src="logos/2026-wk01/1.jpg" alt="">
-        </div>
-        <div class="rebrand-names"><span class="old-name">Lamar and Drake's Grahamy's</span> &rarr; <span class="new-name">Three Lions Football Club</span></div>
-        <div class="rebrand-owner">Imran Hirani &#129352;</div>
-        <p class="rebrand-blurb">Imran went <b>9-5</b> last year and lost the title game to Cara - the runner-up finish that still shows up as a silver medal next to his name everywhere on this site. The Lions theme got more literal overnight: he already had two on the roster from the draft (Amon-Ra St. Brown, Jared Goff), then added kicker Jake Bates off waivers for an actual third.</p>
-      </div>
-
-      <div class="rebrand-card">
-        <div class="rebrand-logos">
-          <img src="logos/2025/3.jpg" alt="">
-          <span class="arrow">&rarr;</span>
-          <img src="logos/2026-wk01/3.jpg" alt="">
-        </div>
-        <div class="rebrand-names"><span class="old-name">Illusions Michael</span> &rarr; <span class="new-name">Beard Al</span></div>
-        <div class="rebrand-owner">Pete Gallagher</div>
-        <p class="rebrand-blurb">Illusions Michael put up the league's <b>second-most points</b> last year (1989.84, trailing only Cara's title team) and still went out in the semifinals at <b>10-4</b>. Beard Al is named for exactly what it sounds like - keeper Josh Allen, his only quarterback in 19 rounds at a fair round-one cost, beard included.</p>
-      </div>
-
-    </div>
+    <div class="rebrand-cards" id="rebrand-cards"></div>
 
     <div class="section-label">Week 1 Matchups</div>
     <p class="section-sublabel">Both rosters, ESPN's preseason power rank, and how these two did last time</p>
@@ -739,6 +671,51 @@ const PV_TEAMS = {
   12: { owner: 'Melinda Thomas', name: 'Buffalo Abusement Park' },
 };
 
+// ---------- Rebrand Roundup: data-driven on purpose. This used to be 6
+// hand-typed <img> pairs, one old-logo src and one new-logo src each -
+// and 2 of the 6 got the SAME path pasted into both slots (Imran's and
+// Pete's cards briefly showed the new logo twice, old logo gone
+// entirely). A data array with a single `id` field structurally
+// prevents that repeat: the render function derives BOTH logo paths
+// from that one id (old from logos/2025/, new from PV_LOGO, which every
+// other card on this panel already trusts) - there's no second path to
+// accidentally duplicate. oldExt varies per team (png/svg/jpg); PV_LOGO
+// already carries the new (2026-wk01) extension.
+const REBRAND_OLD_EXT = { 10: 'png', 8: 'svg', 11: 'png', 9: 'png', 1: 'jpg', 3: 'jpg' };
+const REBRANDS = [
+  { id: 10, oldName: "Baker's Dirty Dozen",
+    blurb: `Baker's Dirty Dozen finished 9th at <b>5-9</b> last year, and Karl didn't tinker, he detonated it: zero keepers, the only true rebuild in the league. Going from "Dirty" to "Aristocrats" for a team blowing up everything it owns is either very on-brand or exactly backwards - your call.` },
+  { id: 8, oldName: 'Daddy Nielsen',
+    blurb: `This isn't a team in crisis rebranding. Daddy Nielsen went <b>10-4</b> last year, good for 5th, and Joe tore up the name anyway, just to hand the team over to his own keeper. Olave Oyl is a good team having fun, not a bad one starting over.` },
+  { id: 11, oldName: "Keep 'em and weep",
+    blurb: `Keep 'em and weep finished <b>2-12</b>, dead last in the league, and honestly the old name was foreshadowing. Rice Rice Baby trades the tears for an actual receiver - for once, the joke's on offense.` },
+  { id: 9, oldName: 'McConkey Kong Country',
+    blurb: `McConkey Kong Country put up <b>1909.7 points</b> last year, third-most in the league, and still finished 7th at 6-8, one spot outside the playoffs. That's exactly the setup a sequel is for: give the first one the ending it actually deserved. Fittingly, he re-drafted his namesake, Ladd McConkey, in round four.` },
+  { id: 1, oldName: "Lamar and Drake's Grahamy's", ownerSuffix: ' &#129352;',
+    blurb: `Imran went <b>9-5</b> last year and lost the title game to Cara - the runner-up finish that still shows up as a silver medal next to his name everywhere on this site. The Lions theme got more literal overnight: he already had two on the roster from the draft (Amon-Ra St. Brown, Jared Goff), then added kicker Jake Bates off waivers for an actual third.` },
+  { id: 3, oldName: 'Illusions Michael',
+    blurb: `Illusions Michael put up the league's <b>second-most points</b> last year (1989.84, trailing only Cara's title team) and still went out in the semifinals at <b>10-4</b>. Beard Al is named for exactly what it sounds like - keeper Josh Allen, his only quarterback in 19 rounds at a fair round-one cost, beard included.` },
+];
+
+function renderRebrand(r) {
+  const t = PV_TEAMS[r.id];
+  const oldLogo = `logos/2025/${r.id}.${REBRAND_OLD_EXT[r.id]}`;
+  const newLogo = PV_LOGO[r.id];
+  if (oldLogo === newLogo) throw new Error(`Rebrand card for team ${r.id} has identical old/new logo paths: ${oldLogo}`);
+  return `
+    <div class="rebrand-card">
+      <div class="rebrand-logos">
+        <img src="${oldLogo}" alt="">
+        <span class="arrow">&rarr;</span>
+        <img src="${newLogo}" alt="">
+      </div>
+      <div class="rebrand-names"><span class="old-name">${r.oldName}</span> &rarr; <span class="new-name">${t.name}</span></div>
+      <div class="rebrand-owner">${t.owner}${r.ownerSuffix || ''}</div>
+      <p class="rebrand-blurb">${r.blurb}</p>
+    </div>
+  `;
+}
+
 // "Back" splits into two real categories, not one blob: KEPT (a keeper
 // slot, from docs/data/keeper_guide_2026.json) and REDRAFTED (drafted
 // again in the live 2026 draft by the SAME owner who had them on their
@@ -939,6 +916,7 @@ async function loadApp() {
   const meta = await (await fetch('data/meta.json')).json();
   document.getElementById('resources-nav').innerHTML = renderNav('weekly-news', meta.league_id);
   renderCurrentEdition();
+  document.getElementById('rebrand-cards').innerHTML = REBRANDS.map(renderRebrand).join('');
   PV_renderMatchups();
   setupEditionTabs();
 }
