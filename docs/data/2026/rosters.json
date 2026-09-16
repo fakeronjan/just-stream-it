@@ -115,7 +115,7 @@
       "name": "Carson Beck",
       "position": "QB",
       "pro_team": "ARI",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -161,16 +161,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4723820,
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "pro_team": "NYJ",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": 3045147,
       "name": "James Conner",
       "position": "RB",
@@ -201,16 +191,6 @@
       "acquisition_type": "ADD"
     },
     {
-      "player_id": -16003,
-      "name": "Bears D/ST",
-      "position": "D/ST",
-      "pro_team": "CHI",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": null,
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": 4869961,
       "name": "Chris Bell",
       "position": "WR",
@@ -218,6 +198,16 @@
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16025,
+      "name": "49ers D/ST",
+      "position": "D/ST",
+      "pro_team": "SF",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ],
@@ -449,7 +439,7 @@
       "name": "Kyren Williams",
       "position": "RB",
       "pro_team": "LAR",
-      "lineup_slot": 7,
+      "lineup_slot": "RB",
       "keeper_value": 4,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -575,16 +565,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 11252,
-      "name": "Joe Flacco",
-      "position": "QB",
-      "pro_team": "CIN",
-      "lineup_slot": "BE",
-      "keeper_value": 15,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": 4427238,
       "name": "Dillon Gabriel",
       "position": "QB",
@@ -592,16 +572,6 @@
       "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "INJURY_RESERVE",
-      "acquisition_type": "ADD"
-    },
-    {
-      "player_id": 4685413,
-      "name": "Cade Klubnik",
-      "position": "QB",
-      "pro_team": "NYJ",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -619,7 +589,27 @@
       "name": "Chris Brooks",
       "position": "RB",
       "pro_team": "GB",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 2573079,
+      "name": "Carson Wentz",
+      "position": "QB",
+      "pro_team": "MIN",
+      "lineup_slot": 7,
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 3924327,
+      "name": "Drew Lock",
+      "position": "QB",
+      "pro_team": "SEA",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -767,21 +757,11 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": -16033,
-      "name": "Ravens D/ST",
-      "position": "D/ST",
-      "pro_team": "BAL",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": null,
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4360423,
       "name": "Michael Penix Jr.",
       "position": "QB",
       "pro_team": "ATL",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -827,16 +807,6 @@
       "acquisition_type": "ADD"
     },
     {
-      "player_id": 2972515,
-      "name": "Cooper Rush",
-      "position": "QB",
-      "pro_team": "ATL",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": -16027,
       "name": "Buccaneers D/ST",
       "position": "D/ST",
@@ -844,6 +814,16 @@
       "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4696044,
+      "name": "Kaelon Black",
+      "position": "RB",
+      "pro_team": "SF",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -1035,7 +1015,7 @@
       "pro_team": "CLE",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     }
   ],
@@ -1125,7 +1105,7 @@
       "name": "Matthew Golden",
       "position": "WR",
       "pro_team": "GB",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1165,7 +1145,7 @@
       "name": "Deebo Samuel Sr.",
       "position": "WR",
       "pro_team": "SF",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 8,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1413,16 +1393,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": -16010,
-      "name": "Titans D/ST",
-      "position": "D/ST",
-      "pro_team": "TEN",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": null,
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": 4429086,
       "name": "Michael Mayer",
       "position": "TE",
@@ -1430,6 +1400,26 @@
       "lineup_slot": "TE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4040761,
+      "name": "Devin Singletary",
+      "position": "RB",
+      "pro_team": "NYG",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16012,
+      "name": "Chiefs D/ST",
+      "position": "D/ST",
+      "pro_team": "KC",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ],
@@ -1711,7 +1701,7 @@
       "name": "Cam Ward",
       "position": "QB",
       "pro_team": "TEN",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1731,7 +1721,7 @@
       "name": "Aaron Rodgers",
       "position": "QB",
       "pro_team": "PIT",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 11,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1781,7 +1771,7 @@
       "name": "Tre Tucker",
       "position": "WR",
       "pro_team": "LV",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1801,7 +1791,7 @@
       "name": "Alvin Kamara",
       "position": "RB",
       "pro_team": "NO",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 4,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1817,12 +1807,22 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4586312,
-      "name": "Jaylin Noel",
+      "player_id": 2977187,
+      "name": "Cooper Kupp",
       "position": "WR",
-      "pro_team": "HOU",
+      "pro_team": "SEA",
+      "lineup_slot": "WR",
+      "keeper_value": 8,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 15818,
+      "name": "Keenan Allen",
+      "position": "WR",
+      "pro_team": "IND",
       "lineup_slot": "BE",
-      "keeper_value": 0,
+      "keeper_value": 12,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
