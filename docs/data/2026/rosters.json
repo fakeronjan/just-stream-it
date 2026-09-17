@@ -25,7 +25,7 @@
       "name": "Travis Etienne Jr.",
       "position": "RB",
       "pro_team": "NO",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "RB",
       "keeper_value": 12,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -55,7 +55,7 @@
       "name": "Jadarian Price",
       "position": "RB",
       "pro_team": "SEA",
-      "lineup_slot": "RB",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -95,7 +95,7 @@
       "name": "Dalton Kincaid",
       "position": "TE",
       "pro_team": "BUF",
-      "lineup_slot": "BE",
+      "lineup_slot": "TE",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -125,7 +125,7 @@
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "pro_team": "ATL",
-      "lineup_slot": "TE",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -471,7 +471,7 @@
       "pro_team": "PIT",
       "lineup_slot": "WR",
       "keeper_value": 10,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -481,7 +481,7 @@
       "pro_team": "IND",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -509,9 +509,9 @@
       "name": "De'Zhaun Stribling",
       "position": "WR",
       "pro_team": "SF",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -539,9 +539,9 @@
       "name": "Jalen McMillan",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -667,16 +667,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 4429023,
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "pro_team": "GB",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 4432620,
       "name": "Parker Washington",
       "position": "WR",
@@ -717,21 +707,11 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 2578570,
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "pro_team": "ARI",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 3116165,
       "name": "Chris Godwin Jr.",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -764,16 +744,6 @@
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "QUESTIONABLE",
-      "acquisition_type": "DRAFT"
-    },
-    {
-      "player_id": 4567104,
-      "name": "Will Reichard",
-      "position": "K",
-      "pro_team": "MIN",
-      "lineup_slot": "K",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -825,6 +795,36 @@
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4686612,
+      "name": "Tre' Harris",
+      "position": "WR",
+      "pro_team": "LAC",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4241479,
+      "name": "Tua Tagovailoa",
+      "position": "QB",
+      "pro_team": "ATL",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "QUESTIONABLE",
+      "acquisition_type": "TRADE"
+    },
+    {
+      "player_id": 16800,
+      "name": "Davante Adams",
+      "position": "WR",
+      "pro_team": "LAR",
+      "lineup_slot": "FLEX",
+      "keeper_value": 5,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "TRADE"
     }
   ],
   "5": [
@@ -843,7 +843,7 @@
       "name": "Jonathan Taylor",
       "position": "RB",
       "pro_team": "IND",
-      "lineup_slot": "RB",
+      "lineup_slot": "FLEX",
       "keeper_value": 3,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -903,7 +903,7 @@
       "name": "Rico Dowdle",
       "position": "RB",
       "pro_team": "PIT",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 18,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -943,7 +943,7 @@
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "pro_team": "MIN",
-      "lineup_slot": "BE",
+      "lineup_slot": "RB",
       "keeper_value": 8,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -975,7 +975,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1013,7 +1013,7 @@
       "name": "Dylan Sampson",
       "position": "RB",
       "pro_team": "CLE",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
@@ -1097,7 +1097,7 @@
       "pro_team": "SF",
       "lineup_slot": "TE",
       "keeper_value": 5,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1201,10 +1201,10 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": -16020,
-      "name": "Jets D/ST",
+      "player_id": -16033,
+      "name": "Ravens D/ST",
       "position": "D/ST",
-      "pro_team": "NYJ",
+      "pro_team": "BAL",
       "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
@@ -1239,7 +1239,7 @@
       "pro_team": "HOU",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1277,9 +1277,9 @@
       "name": "TreVeyon Henderson",
       "position": "RB",
       "pro_team": "NE",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 6,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1317,7 +1317,7 @@
       "name": "T.J. Hockenson",
       "position": "TE",
       "pro_team": "MIN",
-      "lineup_slot": "BE",
+      "lineup_slot": "TE",
       "keeper_value": 7,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1339,7 +1339,7 @@
       "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1397,16 +1397,6 @@
       "name": "Michael Mayer",
       "position": "TE",
       "pro_team": "LV",
-      "lineup_slot": "TE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "ADD"
-    },
-    {
-      "player_id": 4040761,
-      "name": "Devin Singletary",
-      "position": "RB",
-      "pro_team": "NYG",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
@@ -1683,7 +1673,7 @@
       "pro_team": "SEA",
       "lineup_slot": "BE",
       "keeper_value": 5,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1733,7 +1723,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1793,7 +1783,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 4,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1813,7 +1803,7 @@
       "pro_team": "SEA",
       "lineup_slot": "WR",
       "keeper_value": 8,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -1869,16 +1859,6 @@
       "acquisition_type": "DRAFT"
     },
     {
-      "player_id": 16800,
-      "name": "Davante Adams",
-      "position": "WR",
-      "pro_team": "LAR",
-      "lineup_slot": "WR",
-      "keeper_value": 5,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "DRAFT"
-    },
-    {
       "player_id": 3128429,
       "name": "Courtland Sutton",
       "position": "WR",
@@ -1903,7 +1883,7 @@
       "name": "Mike Evans",
       "position": "WR",
       "pro_team": "SF",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "WR",
       "keeper_value": 6,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1963,19 +1943,9 @@
       "name": "Deshaun Watson",
       "position": "QB",
       "pro_team": "CLE",
-      "lineup_slot": 7,
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "DRAFT"
-    },
-    {
-      "player_id": 4241479,
-      "name": "Tua Tagovailoa",
-      "position": "QB",
-      "pro_team": "ATL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2017,6 +1987,26 @@
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
+    },
+    {
+      "player_id": 4429023,
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "pro_team": "GB",
+      "lineup_slot": "FLEX",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "TRADE"
+    },
+    {
+      "player_id": 2578570,
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "pro_team": "ARI",
+      "lineup_slot": 7,
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "TRADE"
     }
   ],
   "11": [
@@ -2067,7 +2057,7 @@
       "pro_team": "CHI",
       "lineup_slot": "FLEX",
       "keeper_value": 4,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2117,7 +2107,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2187,7 +2177,7 @@
       "pro_team": "SF",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2229,7 +2219,7 @@
       "pro_team": "CIN",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2319,7 +2309,7 @@
       "pro_team": "CHI",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
