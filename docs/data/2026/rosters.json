@@ -239,7 +239,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -257,9 +257,9 @@
       "name": "Zay Flowers",
       "position": "WR",
       "pro_team": "BAL",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 5,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -287,7 +287,7 @@
       "name": "Jordan Addison",
       "position": "WR",
       "pro_team": "MIN",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 12,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -399,7 +399,7 @@
       "pro_team": "CIN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     }
   ],
@@ -481,7 +481,7 @@
       "pro_team": "IND",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -541,7 +541,7 @@
       "pro_team": "TB",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -621,9 +621,9 @@
       "name": "Puka Nacua",
       "position": "WR",
       "pro_team": "LAR",
-      "lineup_slot": "WR",
+      "lineup_slot": "FLEX",
       "keeper_value": 2,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -741,9 +741,9 @@
       "name": "Michael Penix Jr.",
       "position": "QB",
       "pro_team": "ATL",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -813,7 +813,7 @@
       "pro_team": "ATL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "TRADE"
     },
     {
@@ -821,10 +821,20 @@
       "name": "Davante Adams",
       "position": "WR",
       "pro_team": "LAR",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "WR",
       "keeper_value": 5,
       "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
+    },
+    {
+      "player_id": 17427,
+      "name": "Cairo Santos",
+      "position": "K",
+      "pro_team": "CHI",
+      "lineup_slot": "K",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
     }
   ],
   "5": [
@@ -975,7 +985,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1097,7 +1107,7 @@
       "pro_team": "SF",
       "lineup_slot": "TE",
       "keeper_value": 5,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1197,7 +1207,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "ACTIVE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1239,7 +1249,7 @@
       "pro_team": "HOU",
       "lineup_slot": "FLEX",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1249,7 +1259,7 @@
       "pro_team": "LV",
       "lineup_slot": "IR",
       "keeper_value": 3,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1299,7 +1309,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1349,7 +1359,7 @@
       "pro_team": "CAR",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2057,7 +2067,7 @@
       "pro_team": "CHI",
       "lineup_slot": "FLEX",
       "keeper_value": 4,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2107,7 +2117,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2309,7 +2319,7 @@
       "pro_team": "CHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {

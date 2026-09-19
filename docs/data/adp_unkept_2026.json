@@ -4518,22 +4518,13 @@
     "adjusted_rank": 502
   },
   {
-    "player_id": 4708049,
-    "name": "Gavin Bartholomew",
-    "position": "TE",
-    "pro_team": "MIN",
-    "superflex_rank": 1407,
-    "standard_rank": 1406,
-    "adjusted_rank": 503
-  },
-  {
     "player_id": 4683243,
     "name": "Mitchell Evans",
     "position": "TE",
     "pro_team": "CAR",
     "superflex_rank": 1408,
     "standard_rank": 1407,
-    "adjusted_rank": 504
+    "adjusted_rank": 503
   },
   {
     "player_id": 4431466,
@@ -4542,7 +4533,7 @@
     "pro_team": "SF",
     "superflex_rank": 1409,
     "standard_rank": 1408,
-    "adjusted_rank": 505
+    "adjusted_rank": 504
   },
   {
     "player_id": 4429955,
@@ -4551,7 +4542,7 @@
     "pro_team": "PIT",
     "superflex_rank": 1417,
     "standard_rank": 1416,
-    "adjusted_rank": 506
+    "adjusted_rank": 505
   },
   {
     "player_id": 4601080,
@@ -4560,7 +4551,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1418,
     "standard_rank": 1417,
-    "adjusted_rank": 507
+    "adjusted_rank": 506
   },
   {
     "player_id": 5091739,
@@ -4569,7 +4560,7 @@
     "pro_team": "CAR",
     "superflex_rank": 1431,
     "standard_rank": 1430,
-    "adjusted_rank": 508
+    "adjusted_rank": 507
   },
   {
     "player_id": 4605951,
@@ -4578,7 +4569,7 @@
     "pro_team": "LAR",
     "superflex_rank": 1432,
     "standard_rank": 1431,
-    "adjusted_rank": 509
+    "adjusted_rank": 508
   },
   {
     "player_id": 4912052,
@@ -4587,7 +4578,7 @@
     "pro_team": "MIA",
     "superflex_rank": 1434,
     "standard_rank": 1442,
-    "adjusted_rank": 510
+    "adjusted_rank": 509
   },
   {
     "player_id": 4431325,
@@ -4596,7 +4587,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1440,
     "standard_rank": 1436,
-    "adjusted_rank": 511
+    "adjusted_rank": 510
   },
   {
     "player_id": 4567747,
@@ -4605,7 +4596,7 @@
     "pro_team": "FA",
     "superflex_rank": 1445,
     "standard_rank": 1440,
-    "adjusted_rank": 512
+    "adjusted_rank": 511
   },
   {
     "player_id": 4808759,
@@ -4614,7 +4605,7 @@
     "pro_team": "DAL",
     "superflex_rank": 1448,
     "standard_rank": 1447,
-    "adjusted_rank": 513
+    "adjusted_rank": 512
   },
   {
     "player_id": 4600597,
@@ -4623,7 +4614,7 @@
     "pro_team": "SEA",
     "superflex_rank": 1449,
     "standard_rank": 1448,
-    "adjusted_rank": 514
+    "adjusted_rank": 513
   },
   {
     "player_id": 5344782,
@@ -4632,7 +4623,7 @@
     "pro_team": "ATL",
     "superflex_rank": 1450,
     "standard_rank": 1449,
-    "adjusted_rank": 515
+    "adjusted_rank": 514
   },
   {
     "player_id": 4635009,
@@ -4641,7 +4632,7 @@
     "pro_team": "GB",
     "superflex_rank": 1453,
     "standard_rank": 1452,
-    "adjusted_rank": 516
+    "adjusted_rank": 515
   },
   {
     "player_id": 2576581,
@@ -4650,6 +4641,15 @@
     "pro_team": "BAL",
     "superflex_rank": 1591,
     "standard_rank": 1590,
+    "adjusted_rank": 516
+  },
+  {
+    "player_id": 4012556,
+    "name": "C.J. Ham",
+    "position": "RB",
+    "pro_team": "MIN",
+    "superflex_rank": 1600,
+    "standard_rank": 1599,
     "adjusted_rank": 517
   },
   {
