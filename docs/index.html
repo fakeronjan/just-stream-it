@@ -465,11 +465,11 @@ const LOGO = {
 };
 
 const TEAMS = {
-  1:  { owner: 'Imran', name: 'Three Lions Football Club' },
+  1:  { owner: 'Imran', name: 'Three Lions Football Club', titleStatus2025: 'runnerup' },
   2:  { owner: 'mariss', name: 'Mednis Madness' },
   3:  { owner: 'Pete', name: 'Beard Al' },
   4:  { owner: 'Ben', name: 'Conquering Heroes' },
-  5:  { owner: 'Cara', name: 'Team Kantastrophe' },
+  5:  { owner: 'Cara', name: 'Team Kantastrophe', titleStatus2025: 'champ' },
   6:  { owner: 'Lisette', name: 'Mahomes is where the heart is ❤' },
   7:  { owner: 'Mike', name: 'Terrible Towels' },
   8:  { owner: 'Joe', name: 'Olave Oyl' },
@@ -570,14 +570,14 @@ function renderMatchupResult(m) {
         <div class="matchup-side">
           ${crestImg(m.a)}
           <span class="m-team">${TEAMS[m.a].name}</span>
-          <span class="m-owner">${TEAMS[m.a].owner}</span>
+          <span class="m-owner">${ownerLabel(TEAMS[m.a])}</span>
           <span class="matchup-result-score ${aWin ? 'win' : ''}">${m.aScore.toFixed(1)}</span>
         </div>
         <span class="matchup-vs">${aWin ? 'def.' : 'lost to'}</span>
         <div class="matchup-side">
           ${crestImg(m.b)}
           <span class="m-team">${TEAMS[m.b].name}</span>
-          <span class="m-owner">${TEAMS[m.b].owner}</span>
+          <span class="m-owner">${ownerLabel(TEAMS[m.b])}</span>
           <span class="matchup-result-score ${!aWin ? 'win' : ''}">${m.bScore.toFixed(1)}</span>
         </div>
       </div>
@@ -619,14 +619,14 @@ function renderWeek2Matchup(m) {
         <div class="matchup-side">
           ${crestImg(m.a)}
           <span class="m-team">${TEAMS[m.a].name}</span>
-          <span class="m-owner">${TEAMS[m.a].owner}</span>
+          <span class="m-owner">${ownerLabel(TEAMS[m.a])}</span>
           <span class="matchup-result-tag">${m.aTag}</span>
         </div>
         <span class="matchup-vs">vs</span>
         <div class="matchup-side">
           ${crestImg(m.b)}
           <span class="m-team">${TEAMS[m.b].name}</span>
-          <span class="m-owner">${TEAMS[m.b].owner}</span>
+          <span class="m-owner">${ownerLabel(TEAMS[m.b])}</span>
           <span class="matchup-result-tag">${m.bTag}</span>
         </div>
       </div>
