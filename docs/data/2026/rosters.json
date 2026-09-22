@@ -1287,7 +1287,7 @@
       "name": "Jayden Daniels",
       "position": "QB",
       "pro_team": "WSH",
-      "lineup_slot": "QB",
+      "lineup_slot": "BE",
       "keeper_value": 1,
       "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
@@ -1307,7 +1307,7 @@
       "name": "Nico Collins",
       "position": "WR",
       "pro_team": "HOU",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 2,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -1347,7 +1347,7 @@
       "name": "TreVeyon Henderson",
       "position": "RB",
       "pro_team": "NE",
-      "lineup_slot": "BE",
+      "lineup_slot": "RB",
       "keeper_value": 6,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1377,7 +1377,7 @@
       "name": "J.K. Dobbins",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
       "keeper_value": 10,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1397,9 +1397,9 @@
       "name": "Jaxson Dart",
       "position": "QB",
       "pro_team": "NYG",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 13,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1407,7 +1407,7 @@
       "name": "RJ Harvey",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 9,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -1741,7 +1741,7 @@
       "name": "Sam Darnold",
       "position": "QB",
       "pro_team": "SEA",
-      "lineup_slot": "IR",
+      "lineup_slot": 7,
       "keeper_value": 5,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -1761,7 +1761,7 @@
       "name": "Cam Ward",
       "position": "QB",
       "pro_team": "TEN",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1891,16 +1891,6 @@
       "name": "Devin Singletary",
       "position": "RB",
       "pro_team": "NYG",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "ADD"
-    },
-    {
-      "player_id": 4361411,
-      "name": "Pat Freiermuth",
-      "position": "TE",
-      "pro_team": "PIT",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
