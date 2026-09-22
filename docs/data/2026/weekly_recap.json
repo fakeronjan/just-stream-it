@@ -401,5 +401,446 @@
         "games_remaining": 13
       }
     ]
+  },
+  {
+    "week": 2,
+    "features": [
+      {
+        "type": "game_of_the_week",
+        "team_ids": [
+          9,
+          3
+        ],
+        "text": "This week's nail-biter: McConkey Kong Country 2 (Ronjan) squeaked past Beard Al (Pete) 112.3-106.9, a margin of just 5.3.",
+        "lineups": {
+          "9": [
+            {
+              "name": "Trevor Lawrence",
+              "position": "QB",
+              "pro_team": "JAX",
+              "points": 6.16
+            },
+            {
+              "name": "Jahmyr Gibbs",
+              "position": "RB",
+              "pro_team": "DET",
+              "points": 20.3
+            },
+            {
+              "name": "Saquon Barkley",
+              "position": "RB",
+              "pro_team": "PHI",
+              "points": 2.5
+            },
+            {
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "pro_team": "NE",
+              "points": 11.100000000000001
+            },
+            {
+              "name": "Ladd McConkey",
+              "position": "WR",
+              "pro_team": "LAC",
+              "points": 5.0
+            },
+            {
+              "name": "Cooper Kupp",
+              "position": "WR",
+              "pro_team": "SEA",
+              "points": 3.0
+            },
+            {
+              "name": "Sam LaPorta",
+              "position": "TE",
+              "pro_team": "DET",
+              "points": 14.2
+            },
+            {
+              "name": "Tony Pollard",
+              "position": "FLEX",
+              "pro_team": "TEN",
+              "points": 7.0
+            },
+            {
+              "name": "Rams D/ST",
+              "position": "D/ST",
+              "pro_team": "LAR",
+              "points": 11.0
+            },
+            {
+              "name": "Evan McPherson",
+              "position": "K",
+              "pro_team": "CIN",
+              "points": 12.0
+            },
+            {
+              "name": "Cam Ward",
+              "position": "QB",
+              "pro_team": "TEN",
+              "points": 20.02
+            }
+          ],
+          "3": [
+            {
+              "name": "Josh Allen",
+              "position": "QB",
+              "pro_team": "BUF",
+              "points": 40.82
+            },
+            {
+              "name": "David Montgomery",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 3.4000000000000004
+            },
+            {
+              "name": "Chris Brooks",
+              "position": "RB",
+              "pro_team": "GB",
+              "points": 3.1
+            },
+            {
+              "name": "Drake London",
+              "position": "WR",
+              "pro_team": "ATL",
+              "points": 6.9
+            },
+            {
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "pro_team": "WSH",
+              "points": 6.0
+            },
+            {
+              "name": "Alec Pierce",
+              "position": "WR",
+              "pro_team": "IND",
+              "points": 1.6
+            },
+            {
+              "name": "Trey McBride",
+              "position": "TE",
+              "pro_team": "ARI",
+              "points": 14.100000000000001
+            },
+            {
+              "name": "Kyren Williams",
+              "position": "FLEX",
+              "pro_team": "LAR",
+              "points": 14.7
+            },
+            {
+              "name": "Bengals D/ST",
+              "position": "D/ST",
+              "pro_team": "CIN",
+              "points": 7.0
+            },
+            {
+              "name": "Harrison Mevis",
+              "position": "K",
+              "pro_team": "LAR",
+              "points": 3.0
+            },
+            {
+              "name": "Carson Wentz",
+              "position": "QB",
+              "pro_team": "MIN",
+              "points": 6.32
+            }
+          ]
+        }
+      },
+      {
+        "type": "blowout_of_the_week",
+        "team_ids": [
+          1,
+          7
+        ],
+        "text": "Three Lions Football Club (Imran) had no mercy for Terrible Towels (Mike), winning 150.8-85.8 - a 64.9-point beatdown."
+      },
+      {
+        "type": "stud_of_the_week",
+        "team_ids": [
+          3
+        ],
+        "text": "Stud of the week: Josh Allen (Beard Al (Pete)) dropped 40.8 points, best of anyone in the league."
+      },
+      {
+        "type": "upset_alert",
+        "team_ids": [
+          5,
+          10
+        ],
+        "text": "Chalk got tossed out the window: #11 Team Kantastrophe (Cara) took down #4 The Aristocrats (Karl)."
+      },
+      {
+        "type": "upset_alert",
+        "team_ids": [
+          1,
+          7
+        ],
+        "text": "Three Lions Football Club (Imran) (#12 entering the week) had no business beating Terrible Towels (Mike) (#2) - but here we are."
+      },
+      {
+        "type": "division_rival_salt",
+        "team_ids": [
+          5,
+          10
+        ],
+        "text": "Dak Prescott (DAL, 29.8 pts) made Cara's week miserable - and Cara roots for the Eagles."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          1
+        ],
+        "text": "Imran (Bears fan) got bailed out by a division rival: Amon-Ra St. Brown (DET, 30.7 pts) and Jared Goff (DET, 29.8 pts)."
+      },
+      {
+        "type": "plot_twist",
+        "team_ids": [
+          5
+        ],
+        "text": "Cara (Eagles fan) will take the win, even if CeeDee Lamb (DAL, 31.3 pts) did the heavy lifting."
+      }
+    ],
+    "briefs": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 12,
+        "winner_score": 136.6,
+        "loser_score": 115.06,
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 1-1) beat Buffalo Abusement Park (Melinda, 1-1) 136.6-115.1"
+      },
+      {
+        "winner_team_id": 8,
+        "loser_team_id": 2,
+        "winner_score": 134.04,
+        "loser_score": 81.0,
+        "text": "Olave Oyl (Joe, 2-0) beat Mednis Madness (mariss, 1-1) 134.0-81.0"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 10,
+        "winner_score": 154.7,
+        "loser_score": 123.46,
+        "text": "Team Kantastrophe (Cara, 1-1) beat The Aristocrats (Karl, 1-1) 154.7-123.5"
+      },
+      {
+        "winner_team_id": 1,
+        "loser_team_id": 7,
+        "winner_score": 150.78,
+        "loser_score": 85.84,
+        "text": "Three Lions Football Club (Imran, 1-1) beat Terrible Towels (Mike, 1-1) 150.8-85.8"
+      },
+      {
+        "winner_team_id": 9,
+        "loser_team_id": 3,
+        "winner_score": 112.28,
+        "loser_score": 106.94,
+        "text": "McConkey Kong Country 2 (Ronjan, 1-1) beat Beard Al (Pete, 0-2) 112.3-106.9"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 11,
+        "winner_score": 126.66,
+        "loser_score": 113.32,
+        "text": "Conquering Heroes (Ben, 1-1) beat Rice Rice Baby (Kris, 1-1) 126.7-113.3"
+      }
+    ],
+    "looking_ahead": {
+      "week": 3,
+      "matchups": [
+        {
+          "team_ids": [
+            2,
+            6
+          ],
+          "text": "Mednis Madness (mariss, #11, 1-1) and Mahomes is where the heart is \u2764 (Lisette, #6, 1-1) go head-to-head"
+        },
+        {
+          "team_ids": [
+            12,
+            10
+          ],
+          "text": "Buffalo Abusement Park (Melinda, #9, 1-1) faces The Aristocrats (Karl, #2, 1-1)"
+        },
+        {
+          "team_ids": [
+            8,
+            7
+          ],
+          "text": "Olave Oyl (Joe, #1, 2-0) takes on Terrible Towels (Mike, #8, 1-1)"
+        },
+        {
+          "team_ids": [
+            5,
+            9
+          ],
+          "text": "Team Kantastrophe (Cara, #4, 1-1) faces McConkey Kong Country 2 (Ronjan, #10, 1-1)"
+        },
+        {
+          "team_ids": [
+            1,
+            11
+          ],
+          "text": "Three Lions Football Club (Imran, #7, 1-1) faces Rice Rice Baby (Kris, #5, 1-1)"
+        },
+        {
+          "team_ids": [
+            3,
+            4
+          ],
+          "text": "Beard Al (Pete, #12, 0-2) and Conquering Heroes (Ben, #3, 1-1) go head-to-head"
+        }
+      ]
+    },
+    "playoff_picture": [
+      {
+        "team_id": 8,
+        "rank": 1,
+        "wins": 2,
+        "losses": 0,
+        "points_for": 335.7,
+        "points_back": null,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 12,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 10,
+        "rank": 2,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 264.4,
+        "points_back": null,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 4,
+        "rank": 3,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 254.3,
+        "points_back": 10.1,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 5,
+        "rank": 4,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 252.7,
+        "points_back": 1.6,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 11,
+        "rank": 5,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 248.2,
+        "points_back": 4.5,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 6,
+        "rank": 6,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 243.9,
+        "points_back": 4.3,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 1,
+        "rank": 7,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 243.4,
+        "points_back": 0.5,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 7,
+        "rank": 8,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 242.2,
+        "points_back": 1.2,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 12,
+        "rank": 9,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 238.5,
+        "points_back": 3.7,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 9,
+        "rank": 10,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 234.2,
+        "points_back": 4.3,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 2,
+        "rank": 11,
+        "wins": 1,
+        "losses": 1,
+        "points_for": 228.1,
+        "points_back": 6.1,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      },
+      {
+        "team_id": 3,
+        "rank": 12,
+        "wins": 0,
+        "losses": 2,
+        "points_for": 240.4,
+        "points_back": null,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 12
+      }
+    ]
   }
 ]

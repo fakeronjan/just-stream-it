@@ -7,12 +7,12 @@
     "owners": [
       "Imran Hirani"
     ],
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "points_for": 92.58,
-    "points_against": 147.08,
-    "playoff_seed": 12,
+    "points_for": 243.36,
+    "points_against": 232.92000000000002,
+    "playoff_seed": 7,
     "final_rank": 0
   },
   {
@@ -24,11 +24,11 @@
       "mariss mednis"
     ],
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "points_for": 147.08,
-    "points_against": 92.58,
-    "playoff_seed": 3,
+    "points_for": 228.08,
+    "points_against": 226.62,
+    "playoff_seed": 11,
     "final_rank": 0
   },
   {
@@ -40,11 +40,11 @@
       "Pete Gallagher"
     ],
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "ties": 0,
-    "points_for": 133.46,
-    "points_against": 140.9,
-    "playoff_seed": 7,
+    "points_for": 240.4,
+    "points_against": 253.18,
+    "playoff_seed": 12,
     "final_rank": 0
   },
   {
@@ -55,12 +55,12 @@
     "owners": [
       "Ben Porter"
     ],
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "points_for": 127.6,
-    "points_against": 156.36,
-    "playoff_seed": 8,
+    "points_for": 254.26,
+    "points_against": 269.68,
+    "playoff_seed": 3,
     "final_rank": 0
   },
   {
@@ -71,12 +71,12 @@
     "owners": [
       "Cara Kantrowitz"
     ],
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "points_for": 98.02,
-    "points_against": 123.46,
-    "playoff_seed": 11,
+    "points_for": 252.71999999999997,
+    "points_against": 246.92,
+    "playoff_seed": 4,
     "final_rank": 0
   },
   {
@@ -87,12 +87,12 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "points_for": 107.3,
-    "points_against": 201.62,
-    "playoff_seed": 10,
+    "points_for": 243.89999999999998,
+    "points_against": 316.68,
+    "playoff_seed": 6,
     "final_rank": 0
   },
   {
@@ -104,11 +104,11 @@
       "Michael Higgins"
     ],
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "points_for": 156.36,
-    "points_against": 127.6,
-    "playoff_seed": 2,
+    "points_for": 242.20000000000002,
+    "points_against": 278.38,
+    "playoff_seed": 8,
     "final_rank": 0
   },
   {
@@ -119,11 +119,11 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "wins": 1,
+    "wins": 2,
     "losses": 0,
     "ties": 0,
-    "points_for": 201.62,
-    "points_against": 107.3,
+    "points_for": 335.65999999999997,
+    "points_against": 188.3,
     "playoff_seed": 1,
     "final_rank": 0
   },
@@ -135,12 +135,12 @@
     "owners": [
       "Ronjan Sikdar"
     ],
-    "wins": 0,
+    "wins": 1,
     "losses": 1,
     "ties": 0,
-    "points_for": 121.92,
-    "points_against": 134.92,
-    "playoff_seed": 9,
+    "points_for": 234.2,
+    "points_against": 241.85999999999999,
+    "playoff_seed": 10,
     "final_rank": 0
   },
   {
@@ -152,11 +152,11 @@
       "Karlos Abel"
     ],
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "points_for": 140.9,
-    "points_against": 133.46,
-    "playoff_seed": 4,
+    "points_for": 264.36,
+    "points_against": 288.15999999999997,
+    "playoff_seed": 2,
     "final_rank": 0
   },
   {
@@ -168,10 +168,10 @@
       "Kris Wikstrom"
     ],
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "points_for": 134.92,
-    "points_against": 121.92,
+    "points_for": 248.23999999999998,
+    "points_against": 248.57999999999998,
     "playoff_seed": 5,
     "final_rank": 0
   },
@@ -184,11 +184,11 @@
       "Melinda Thomas"
     ],
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "ties": 0,
-    "points_for": 123.46,
-    "points_against": 98.02,
-    "playoff_seed": 6,
+    "points_for": 238.51999999999998,
+    "points_against": 234.62,
+    "playoff_seed": 9,
     "final_rank": 0
   }
 ]

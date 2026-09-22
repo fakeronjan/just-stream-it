@@ -67,7 +67,7 @@
       "pro_team": "CAR",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -117,7 +117,7 @@
       "pro_team": "ARI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -157,7 +157,7 @@
       "pro_team": "ATL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -249,7 +249,7 @@
       "pro_team": "MIN",
       "lineup_slot": "IR",
       "keeper_value": 2,
-      "injury_status": "OUT",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -511,7 +511,7 @@
       "pro_team": "IND",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -609,7 +609,7 @@
       "name": "Vikings D/ST",
       "position": "D/ST",
       "pro_team": "MIN",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -649,7 +649,7 @@
       "name": "Bengals D/ST",
       "position": "D/ST",
       "pro_team": "CIN",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -661,9 +661,9 @@
       "name": "Puka Nacua",
       "position": "WR",
       "pro_team": "LAR",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -731,7 +731,7 @@
       "name": "Blake Corum",
       "position": "RB",
       "pro_team": "LAR",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 19,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -783,7 +783,7 @@
       "pro_team": "ATL",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -821,7 +821,7 @@
       "name": "Buccaneers D/ST",
       "position": "D/ST",
       "pro_team": "TB",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -881,7 +881,7 @@
       "name": "Panthers D/ST",
       "position": "D/ST",
       "pro_team": "CAR",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -925,7 +925,7 @@
       "pro_team": "NYG",
       "lineup_slot": "WR",
       "keeper_value": 1,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1399,7 +1399,7 @@
       "pro_team": "NYG",
       "lineup_slot": 7,
       "keeper_value": 13,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1831,7 +1831,7 @@
       "name": "Tre Tucker",
       "position": "WR",
       "pro_team": "LV",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1871,7 +1871,7 @@
       "name": "Cooper Kupp",
       "position": "WR",
       "pro_team": "SEA",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 8,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -2369,7 +2369,7 @@
       "pro_team": "PHI",
       "lineup_slot": "TE",
       "keeper_value": 12,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
