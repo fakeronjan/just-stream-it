@@ -27,7 +27,7 @@
       "pro_team": "NO",
       "lineup_slot": "RB",
       "keeper_value": 12,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -541,7 +541,7 @@
       "pro_team": "LAR",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -793,7 +793,7 @@
       "pro_team": "DEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -995,7 +995,7 @@
       "pro_team": "MIN",
       "lineup_slot": "RB",
       "keeper_value": 8,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1085,7 +1085,7 @@
       "name": "Bo Nix",
       "position": "QB",
       "pro_team": "DEN",
-      "lineup_slot": "QB",
+      "lineup_slot": "BE",
       "keeper_value": 3,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1115,7 +1115,7 @@
       "name": "Jordan Love",
       "position": "QB",
       "pro_team": "GB",
-      "lineup_slot": "BE",
+      "lineup_slot": "QB",
       "keeper_value": 8,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1187,7 +1187,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 14,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1247,18 +1247,8 @@
       "pro_team": "MIN",
       "lineup_slot": "IR",
       "keeper_value": 12,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
-    },
-    {
-      "player_id": -16033,
-      "name": "Ravens D/ST",
-      "position": "D/ST",
-      "pro_team": "BAL",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": null,
-      "acquisition_type": "ADD"
     },
     {
       "player_id": 4429835,
@@ -1267,7 +1257,17 @@
       "pro_team": "SEA",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16010,
+      "name": "Titans D/ST",
+      "position": "D/ST",
+      "pro_team": "TEN",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ],
@@ -1277,9 +1277,9 @@
       "name": "Jayden Daniels",
       "position": "QB",
       "pro_team": "WSH",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 1,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1297,7 +1297,7 @@
       "name": "Nico Collins",
       "position": "WR",
       "pro_team": "HOU",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 2,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1307,7 +1307,7 @@
       "name": "Brock Bowers",
       "position": "TE",
       "pro_team": "LV",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 3,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1387,7 +1387,7 @@
       "name": "Jaxson Dart",
       "position": "QB",
       "pro_team": "NYG",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 13,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -1397,7 +1397,7 @@
       "name": "RJ Harvey",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 9,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1409,7 +1409,7 @@
       "pro_team": "CAR",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1430,16 +1430,6 @@
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
-      "acquisition_type": "DRAFT"
-    },
-    {
-      "player_id": -16017,
-      "name": "Patriots D/ST",
-      "position": "D/ST",
-      "pro_team": "NE",
-      "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": null,
       "acquisition_type": "DRAFT"
     },
     {
@@ -1478,6 +1468,16 @@
       "position": "QB",
       "pro_team": "WSH",
       "lineup_slot": "QB",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 15168,
+      "name": "Case Keenum",
+      "position": "QB",
+      "pro_team": "CHI",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -1581,7 +1581,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 13,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1753,7 +1753,7 @@
       "pro_team": "TEN",
       "lineup_slot": "FLEX",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1771,7 +1771,7 @@
       "name": "Rams D/ST",
       "position": "D/ST",
       "pro_team": "LAR",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "DRAFT"
@@ -1863,7 +1863,7 @@
       "pro_team": "SEA",
       "lineup_slot": "BE",
       "keeper_value": 8,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -1891,7 +1891,7 @@
       "name": "Packers D/ST",
       "position": "D/ST",
       "pro_team": "GB",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -2187,7 +2187,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2349,7 +2349,7 @@
       "pro_team": "PIT",
       "lineup_slot": "RB",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2389,7 +2389,7 @@
       "pro_team": "CHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
