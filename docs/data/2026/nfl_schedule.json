@@ -800,6 +800,18 @@
       "team_score": 0.0,
       "opponent_score": 0.0
     },
+    "GB": {
+      "opponent": "CHI",
+      "home": true,
+      "team_score": 0.0,
+      "opponent_score": 0.0
+    },
+    "CHI": {
+      "opponent": "GB",
+      "home": false,
+      "team_score": 0.0,
+      "opponent_score": 0.0
+    },
     "TEN": {
       "opponent": "HOU",
       "home": true,
@@ -892,18 +904,6 @@
     },
     "DEN": {
       "opponent": "LAC",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "GB": {
-      "opponent": "CHI",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "CHI": {
-      "opponent": "GB",
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
