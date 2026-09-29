@@ -41,6 +41,17 @@ def compute_standings(matchups, teams):
     playoff_games = [m for m in matchups if m["is_playoffs"]]
     playoff_weeks = sorted({m["week"] for m in playoff_games})
 
+    def tiebreak_key(team_id):
+        t = teams_by_id[team_id]
+        return (-t["wins"], -t["points_for"])
+
+    # Mid-season (the final hasn't been played): no bracket to trace yet,
+    # so everyone is simply ranked by current record then points_for.
+    final_week = playoff_weeks[-1] if playoff_weeks else None
+    if final_week is None or not any(m["week"] == final_week for m in playoff_games):
+        ordered = sorted((t["id"] for t in teams), key=tiebreak_key)
+        return [{"team_id": tid, "status": "in_season", "eliminated_round": None, "rank": i + 1} for i, tid in enumerate(ordered)]
+
     loss_counts = defaultdict(int)
     for m in playoff_games:
         loser_id = m["away_team_id"] if m["winner"] == "HOME" else m["home_team_id"]
@@ -67,10 +78,6 @@ def compute_standings(matchups, teams):
         if new_tier:
             tiers.append(sorted(new_tier))
             alive_so_far |= new_tier
-
-    def tiebreak_key(team_id):
-        t = teams_by_id[team_id]
-        return (-t["wins"], -t["points_for"])
 
     def status_for(tier_idx):
         if tier_idx == 0:
@@ -393,12 +400,16 @@ def compute_injury_burden(weekly_boxscores):
 
 def main(season):
     teams = load(season, "teams.json")
-    matchups = load(season, "matchups.json")
-    weekly_boxscores = load(season, "weekly_boxscores.json")
+    # Only weeks with real results - matchups.json carries the full future
+    # schedule too (winner unset, 0 scores), which would otherwise show up
+    # as 0-point "worst weeks" and bogus playoff results mid-season.
+    matchups = [m for m in load(season, "matchups.json") if m["winner"] in ("HOME", "AWAY")]
+    decided = {str(m["week"]) for m in matchups}
+    weekly_boxscores = {w: t for w, t in load(season, "weekly_boxscores.json").items() if w in decided}
     draft_picks = load(season, "draft.json")
     transactions = load(season, "transactions.json")
     nfl_schedule = load(season, "nfl_schedule.json")
-    total_weeks = max(m["week"] for m in matchups)
+    total_weeks = max((m["week"] for m in matchups), default=0)
 
     pickups, trades = compute_acquisition_value(draft_picks, transactions, weekly_boxscores, total_weeks)
     standings = compute_standings(matchups, teams)

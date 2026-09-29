@@ -38,6 +38,27 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: python build_keeper_guide.py
 
+      # In-season stats behind the Weekly News "Season to Date" section
+      # (and the recap engine): box scores + transactions + team analytics,
+      # NFL scores, season moments, weekly recap. All four only look at
+      # weeks with real results, so running daily mid-week is safe.
+      - name: Build season analytics
+        working-directory: scripts
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python build_season_analytics.py 2026
+
+      - name: Fetch NFL schedule
+        working-directory: scripts
+        run: python fetch_nfl_schedule.py 2026
+
+      - name: Build season moments and weekly recap
+        working-directory: scripts
+        run: |
+          python build_season_moments.py 2026
+          python build_weekly_recap.py 2026
+
       - name: Commit and push updated data
         run: |
           git config user.name  "Just Stream It Bot"

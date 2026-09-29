@@ -22,6 +22,12 @@
   Week 1) and repoint the frozen panel's own LOGO map at that folder
   instead - otherwise the frozen tab would silently start showing
   whatever a team's CURRENT logo is instead of what it actually was.
+  The "Top Performances" + "Superlatives" (Season to Date) block at the
+  bottom of the current panel reads LIVE 2026 data (season_moments.json,
+  team_analytics.json, rebuilt by the daily cron). When freezing the
+  current panel, MOVE that block (its HTML + renderSeasonToDate() call)
+  to the new current panel - don't leave a copy in the frozen tab, since
+  a frozen tab can't show live numbers.
   Each panel below is self-contained with its own JS data (PV_-prefixed
   for the Week 1 Preview panel, unprefixed for the current one) so
   frozen panels never share a live data object with the current one.
@@ -388,6 +394,52 @@
   .top-scorer-team { font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
   .top-scorer-pts { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 
+  /* ---------- season to date (Top Performances + Superlatives): same
+     tiles and logic as season-2025.html's renderTopPerformances /
+     renderSuperlatives, restyled for newsprint. Reads live 2026 data, so
+     it always belongs to the CURRENT edition - see the header comment. ---------- */
+  .std-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 4px; }
+  .std-card { border: 1px solid var(--ink); padding: 14px 16px; min-width: 0; }
+  .std-card-title { font-family: "Rozha One", serif; font-size: 1.1rem; margin: 0 0 8px; }
+  .std-rank-list { list-style: none; margin: 0; padding: 0; }
+  .std-rank-list li { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 8px 0; border-bottom: 1px solid rgba(28,26,22,0.12); }
+  .std-rank-list li:last-child { border-bottom: none; }
+  .std-rank-main { min-width: 0; font-size: 0.9rem; }
+  .std-rank-value { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 1rem; white-space: nowrap; }
+  .std-rank-sub { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
+  .std-rank-detail { grid-column: 1 / -1; font-size: 0.78rem; color: var(--ink-dim); line-height: 1.4; }
+  .std-mini-scorers { display: flex; flex-wrap: wrap; gap: 2px 12px; }
+  .std-pos {
+    display: inline-block; font-family: "Special Elite", monospace; font-size: 0.55rem; letter-spacing: 0.03em;
+    border: 1px solid var(--ink); padding: 0 4px; margin-right: 4px; vertical-align: 1px; color: var(--ink);
+  }
+  .std-chip { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+  .std-chip img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 1px solid var(--ink); flex-shrink: 0; }
+  .std-chip.sm img { width: 26px; height: 26px; }
+  .std-chip-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+  .std-chip-name { font-weight: 700; font-size: 0.88rem; }
+  .std-chip.sm .std-chip-name { font-size: 0.8rem; }
+  .std-chip-owner { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
+  .std-tile { border: 1px solid var(--ink); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .std-tile-label { font-family: "Special Elite", monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
+  .std-tile-headline { font-weight: 700; font-size: 0.95rem; }
+  .std-tile-detail { font-size: 0.82rem; color: var(--ink-dim); line-height: 1.45; }
+  .std-tile-value { font-family: "Rozha One", serif; font-size: 1.35rem; line-height: 1.2; }
+  .std-stat-sub { font-family: "Vollkorn", serif; font-size: 0.78rem; color: var(--ink-dim); }
+  .std-byline { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .std-byline-label { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--meta); text-transform: uppercase; letter-spacing: 0.04em; }
+  .std-byline-score { margin-left: auto; font-variant-numeric: tabular-nums; font-size: 0.85rem; }
+  .std-matchup { display: flex; flex-direction: column; gap: 4px; }
+  .std-matchup-connector { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--meta); text-transform: uppercase; letter-spacing: 0.04em; padding-left: 34px; }
+  .std-sublist { border-top: 1px solid rgba(28,26,22,0.2); padding-top: 6px; margin-top: 2px; }
+  .std-sub-row { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82rem; padding: 2px 0; }
+  .std-sub-row .pts { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .std-flip { border-top: 1px solid rgba(28,26,22,0.2); padding-top: 6px; margin-top: 2px; }
+  .std-flip-pos { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--meta); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+  .std-flip-row { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--ink-dim); }
+  .std-flip-row.winner { color: var(--ink); font-weight: 700; }
+  .std-trade-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-top: 1px solid rgba(28,26,22,0.2); padding-top: 6px; }
+
   footer.masthead-footer {
     margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
     text-align: center; font-family: "Special Elite", monospace; font-size: 0.65rem;
@@ -462,6 +514,14 @@
     <div class="section-label">Week 4 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="week4-matchup-grid"></div>
+
+    <div class="section-label">Top Performances</div>
+    <p class="section-sublabel">2026 season to date</p>
+    <div id="std-top-performances"></div>
+
+    <div class="section-label">Superlatives</div>
+    <p class="section-sublabel">2026 season to date</p>
+    <div id="std-superlatives"></div>
   </section>
 
   <!-- ================= FROZEN EDITION: Week 2 Recap / Week 3 Preview (published 9/22/2026) ================= -->
@@ -840,6 +900,309 @@ function renderCurrentEdition() {
   document.getElementById('standings-list').innerHTML = STANDINGS.map(renderStandingsRow).join('');
   document.getElementById('top-scorers-list').innerHTML = TOP_SCORERS.map(renderTopScorerRow).join('');
   document.getElementById('week4-matchup-grid').innerHTML = WEEK4_MATCHUPS.map(renderWeek4Matchup).join('');
+}
+
+/* ============================================================
+   SEASON TO DATE: Top Performances + Superlatives. Same tiles and
+   selection logic as season-2025.html (renderTopPerformances /
+   renderSuperlatives), pointed at live 2026 data so it refreshes every
+   time the daily cron rebuilds season_moments.json / team_analytics.json.
+   Tiles that don't mean anything yet keep their wiring but carry a
+   `show` condition (e.g. Best Trade until a trade happens). Lives in the
+   CURRENT edition only - when this edition is frozen, move this section
+   to the new current panel instead of copying it into the frozen one
+   (a frozen tab can't read live data).
+   ============================================================ */
+const STD_SEASON = 2026;
+const STD_SOURCE_LABEL = { DRAFT: 'draft picks', TRADE: 'traded-in players', PICKUP: 'waiver/free-agent pickups' };
+
+function std_fmt1(v) { return v.toFixed(1); }
+function std_ppgHtml(ppg, total, unit) { return `${std_fmt1(ppg)}${unit ? ' ' + unit : ''} <span class="std-stat-sub">(${std_fmt1(total)} total)</span>`; }
+function std_pos(p) { return `<span class="std-pos">${p}</span>`; }
+function std_chip(teamId, size, ownerSuffix) {
+  const t = TEAMS[teamId];
+  return `<span class="std-chip${size ? ' ' + size : ''}">${crestImg(teamId)}<span class="std-chip-text"><span class="std-chip-name">${t.name}</span><span class="std-chip-owner">${ownerLabel(t)}${ownerSuffix ? ' ' + ownerSuffix : ''}</span></span></span>`;
+}
+function std_matchup(aId, bId, connector) {
+  return `<div class="std-matchup">${std_chip(aId, 'sm')}<div class="std-matchup-connector">${connector}</div>${std_chip(bId, 'sm')}</div>`;
+}
+function std_keyPlayers(players) {
+  if (!players.length) return '';
+  return `<div class="std-sublist">${players.map(p => `<div class="std-sub-row"><span>${std_pos(p.position)}${p.name}</span><span class="pts">${std_ppgHtml(p.ppg, p.points)}</span></div>`).join('')}</div>`;
+}
+function std_topN(players, n) { return [...players].sort((a, b) => b.points - a.points).slice(0, n); }
+function std_findMatchup(matchups, week, teamId) {
+  return matchups.find(m => m.week === week && (m.home_team_id === teamId || m.away_team_id === teamId));
+}
+function std_result(game, teamId) {
+  const isHome = game.home_team_id === teamId;
+  return {
+    won: (isHome && game.winner === 'HOME') || (!isHome && game.winner === 'AWAY'),
+    teamScore: isHome ? game.home_score : game.away_score,
+    oppScore: isHome ? game.away_score : game.home_score,
+  };
+}
+function std_playerTotals(weeklyBoxscores) {
+  const totals = {};
+  Object.values(weeklyBoxscores).forEach(teams => {
+    Object.entries(teams).forEach(([teamId, players]) => {
+      totals[teamId] ??= {};
+      players.forEach(p => {
+        if (!p.started) return;
+        const e = totals[teamId][p.player_id] ??= { player_id: p.player_id, name: p.name, position: p.position, points: 0, games: 0 };
+        e.points += p.points || 0;
+        e.games += 1;
+      });
+    });
+  });
+  return Object.fromEntries(Object.entries(totals).map(([id, ps]) => [id, Object.values(ps).map(p => ({ ...p, ppg: p.points / p.games }))]));
+}
+function std_biggestFlip(weeklyBoxscores, week, aId, bId) {
+  const group = players => {
+    const g = {};
+    players.filter(p => p.started).forEach(p => (g[p.position] ??= []).push(p));
+    Object.values(g).forEach(list => list.sort((x, y) => y.points - x.points));
+    return g;
+  };
+  const gA = group(weeklyBoxscores[week]?.[aId] || []), gB = group(weeklyBoxscores[week]?.[bId] || []);
+  let best = null;
+  Object.keys(gA).forEach(pos => {
+    const a = gA[pos], b = gB[pos] || [];
+    for (let i = 0; i < Math.min(a.length, b.length); i++) {
+      const diff = Math.abs(a[i].points - b[i].points);
+      if (!best || diff > best.diff) best = { position: pos, playerA: a[i], playerB: b[i], diff };
+    }
+  });
+  return best;
+}
+
+function std_renderTopPerformances(moments, weeklyBoxscores) {
+  const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => {
+    const top = (weeklyBoxscores[w.week]?.[w.team_id] || []).filter(p => p.started).sort((a, b) => b.points - a.points).slice(0, 3);
+    return `
+      <li>
+        <div class="std-rank-main">${std_chip(w.team_id, 'sm', `&middot; Week ${w.week}`)}</div>
+        <div class="std-rank-value">${std_fmt1(w.score)}</div>
+        ${top.length ? `<div class="std-rank-detail"><div class="std-mini-scorers">${top.map(p => `<span>${std_pos(p.position)}${p.name} <b>${std_fmt1(p.points)}</b></span>`).join('')}</div></div>` : ''}
+      </li>`;
+  }).join('');
+  const playerWeeks = moments.player_extremes.best_performances.slice(0, 5).map(p => `
+      <li>
+        <div class="std-rank-main">${std_pos(p.position)}<b>${p.name}</b><div style="margin-top:4px">${std_chip(p.team_id, 'sm', `&middot; Week ${p.week}`)}</div></div>
+        <div class="std-rank-value">${std_fmt1(p.points)}</div>
+        ${p.pro_opponent ? `<div class="std-rank-detail">${p.pro_team} ${p.pro_home ? 'vs' : '@'} ${p.pro_opponent} &middot; Final ${Math.round(p.pro_team_score)}-${Math.round(p.pro_opponent_score)}${p.stat_line ? ` &middot; ${p.stat_line}` : ''}</div>` : ''}
+      </li>`).join('');
+  return `
+    <div class="std-grid">
+      <div class="std-card"><div class="std-card-title">Top Team Weeks</div><ul class="std-rank-list">${teamWeeks}</ul></div>
+      <div class="std-card"><div class="std-card-title">Top Player Weeks</div><ul class="std-rank-list">${playerWeeks}</ul></div>
+    </div>`;
+}
+
+function std_sourceHeavyTile(analytics, gamesPlayed, source, label) {
+  const top = [...analytics].sort((a, b) => (b.started_points_pct_by_source[source] || 0) - (a.started_points_pct_by_source[source] || 0))[0];
+  const pct = top.started_points_pct_by_source[source] || 0;
+  const pts = top.started_points_by_source[source] || 0;
+  return {
+    label,
+    // Draft Heavy only separates teams once nobody is still at 100%;
+    // Trade/Pickup Heavy need at least one real trade/pickup point.
+    show: source === 'DRAFT' ? pct < 100 : pct > 0,
+    headlineTeam: top.team_id,
+    detail: `${std_ppgHtml(pts / (gamesPlayed[top.team_id] || 1), pts, 'PPG')} from ${STD_SOURCE_LABEL[source]}`,
+    value: `${pct}% of offense`,
+    sub: std_keyPlayers((top.top_players_by_source?.[source] || []).map(p => ({ ...p, ppg: p.ppg ?? p.points / (p.games || 1) }))),
+  };
+}
+function std_positionHeavyTile(analytics, gamesPlayed, playerTotals, pos, label) {
+  const top = [...analytics].sort((a, b) => (b.started_points_pct_by_position[pos] || 0) - (a.started_points_pct_by_position[pos] || 0))[0];
+  const pts = top.started_points_by_position[pos] || 0;
+  return {
+    label,
+    show: pts > 0,
+    headlineTeam: top.team_id,
+    detail: `${std_ppgHtml(pts / (gamesPlayed[top.team_id] || 1), pts, 'PPG')} from the ${pos} spot`,
+    value: `${top.started_points_pct_by_position[pos]}% of offense`,
+    sub: std_keyPlayers(std_topN((playerTotals[top.team_id] || []).filter(p => p.position === pos), 3)),
+  };
+}
+
+function std_renderSuperlatives(moments, matchups, weeklyBoxscores, analytics, gamesPlayed, playerTotals, draftedSet, teamsLive, weeksPlayed) {
+  const liveById = Object.fromEntries(teamsLive.map(t => [t.id, t]));
+  const rankById = Object.fromEntries(moments.standings.map(r => [r.team_id, r.rank]));
+  const rec = id => `${liveById[id].wins}-${liveById[id].losses}`;
+  const upset = moments.upsets[0];
+  const bestWeek = moments.weekly_team_extremes.best_weeks[0];
+  const pickup = moments.best_waiver_pickups[0];
+  const benched = moments.bench_mistakes.worst_single_instances[0];
+  const closest = moments.rivalries[0];
+  const wounded = moments.injury_burden[0];
+
+  let bestTrade = null, bestDiff = -1;
+  moments.trades.forEach(t => {
+    if (t.sides.length !== 2) return;
+    const diff = Math.abs(t.sides[0].total_points - t.sides[1].total_points);
+    if (diff > bestDiff) {
+      bestDiff = diff;
+      const [winner, loser] = t.sides[0].total_points >= t.sides[1].total_points ? t.sides : [t.sides[1], t.sides[0]];
+      bestTrade = { winner, loser, week: t.week };
+    }
+  });
+
+  const benchGame = benched ? std_findMatchup(matchups, benched.week, benched.team_id) : null;
+  const benchRes = benchGame ? std_result(benchGame, benched.team_id) : null;
+  const benchOpp = benchGame ? (benchGame.home_team_id === benched.team_id ? benchGame.away_team_id : benchGame.home_team_id) : null;
+
+  const closestGame = closest ? std_findMatchup(matchups, closest.games[0].week, closest.team_ids[0]) : null;
+  const flip = closest ? std_biggestFlip(weeklyBoxscores, String(closest.games[0].week), String(closest.team_ids[0]), String(closest.team_ids[1])) : null;
+
+  const draftSorted = [...analytics].sort((a, b) => (b.started_points_by_source.DRAFT || 0) - (a.started_points_by_source.DRAFT || 0));
+  const bestDraft = draftSorted[0], worstDraft = draftSorted[draftSorted.length - 1];
+  const drafted = id => (playerTotals[id] || []).filter(p => draftedSet.has(`${id}_${p.player_id}`));
+
+  const lucky = [...analytics].sort((a, b) => b.luck_index - a.luck_index)[0];
+  const unlucky = [...analytics].sort((a, b) => a.luck_index - b.luck_index)[0];
+  const luckyNote = lucky.good_luck_win_weeks.length ? ` &middot; finished bottom 3 in scoring and still won in Week ${lucky.good_luck_win_weeks.join(', ')}` : '';
+  const unluckyNote = unlucky.bad_luck_loss_weeks.length ? ` &middot; finished top 3 in scoring and still lost in Week ${unlucky.bad_luck_loss_weeks.join(', ')}` : '';
+
+  const tiles = [
+    {
+      label: 'Biggest Upset',
+      show: !!upset && upset.upset_size > 0,
+      matchup: upset && std_matchup(upset.winner_team_id, upset.loser_team_id, 'beat'),
+      detail: upset && `Week ${upset.week}`,
+      value: upset && `${std_fmt1(upset.winner_score)} - ${std_fmt1(upset.loser_score)}`,
+      sub: upset && `<div class="std-sublist">
+        <div class="std-sub-row"><span>${TEAMS[upset.winner_team_id].name} (${rec(upset.winner_team_id)}, now #${rankById[upset.winner_team_id]})</span></div>
+        <div class="std-sub-row"><span>${TEAMS[upset.loser_team_id].name} (${rec(upset.loser_team_id)}, now #${rankById[upset.loser_team_id]})</span></div>
+      </div>`,
+    },
+    {
+      label: 'Best Team Week',
+      show: !!bestWeek,
+      headlineTeam: bestWeek?.team_id,
+      detail: bestWeek && `Week ${bestWeek.week}${bestWeek.is_playoffs ? ' &middot; playoffs' : ''}`,
+      value: bestWeek && std_fmt1(bestWeek.score),
+      sub: bestWeek && `<div class="std-sublist">${(weeklyBoxscores[bestWeek.week]?.[bestWeek.team_id] || []).filter(p => p.started).sort((a, b) => b.points - a.points).slice(0, 3)
+        .map(p => `<div class="std-sub-row"><span>${std_pos(p.position)}${p.name}</span><span class="pts">${std_fmt1(p.points)}</span></div>`).join('')}</div>`,
+    },
+    {
+      label: 'Best Waiver Add',
+      show: !!pickup && pickup.games_started > 0,
+      headline: pickup && (pickup.position === 'D/ST' ? pickup.name : `${pickup.name} (${pickup.position})`),
+      detail: pickup && `Week ${pickup.week_added} &middot; ${pickup.games_started} ${pickup.games_started === 1 ? 'game' : 'games'} started`,
+      value: pickup && std_ppgHtml(pickup.points_per_game, pickup.points_while_rostered, 'PPG'),
+      teamByline: pickup && { label: 'Picked up by', team: pickup.team_id },
+    },
+    {
+      label: 'Best Trade',
+      show: !!bestTrade,
+      headline: bestTrade && `Week ${bestTrade.week} trade`,
+      detail: bestTrade && `Won it by ${std_fmt1(bestDiff)} pts`,
+      value: bestTrade && `${std_fmt1(bestTrade.winner.total_points)} vs ${std_fmt1(bestTrade.loser.total_points)}`,
+      sub: bestTrade && `<div class="std-trade-sides">${[bestTrade.winner, bestTrade.loser].map(side => `
+        <div><div class="std-byline">${std_chip(side.team_id, 'sm')}<span class="std-byline-label">received</span></div>
+        ${side.players_received.map(p => `<div class="std-sub-row"><span>${p.name} (${p.position})</span><span class="pts">${std_ppgHtml(p.points_per_game, p.points_while_rostered)}</span></div>`).join('')}</div>`).join('')}</div>`,
+    },
+    {
+      label: 'Worst Bench Mistake',
+      show: !!benched,
+      headline: benched && `${benched.name} (${benched.position}) left on the bench`,
+      detail: benched && `Week ${benched.week}`,
+      value: benched && `${std_fmt1(benched.points)} pts unused`,
+      teamByline: benched && { label: 'Bench of', team: benched.team_id },
+      sub: benchRes ? `<div class="std-byline"><span class="std-byline-label">${benchRes.won ? 'Beat' : 'Lost to'}</span>${std_chip(benchOpp, 'sm')}<span class="std-byline-score">${std_fmt1(benchRes.teamScore)}-${std_fmt1(benchRes.oppScore)}</span></div>` : '',
+    },
+    {
+      label: 'Closest Game',
+      show: !!closest,
+      matchup: closest && std_matchup(closest.team_ids[0], closest.team_ids[1], 'vs'),
+      detail: closest && `Week ${closest.games[0].week}`,
+      value: closestGame ? `${std_fmt1(std_result(closestGame, closest.team_ids[0]).teamScore)} - ${std_fmt1(std_result(closestGame, closest.team_ids[1]).teamScore)}` : (closest ? `${closest.avg_margin.toFixed(2)} pt margin` : ''),
+      sub: flip ? `<div class="std-flip"><div class="std-flip-pos">Biggest Swing &middot; ${flip.position}</div>
+        <div class="std-flip-row ${flip.playerA.points >= flip.playerB.points ? 'winner' : ''}"><span>${flip.playerA.name}</span><span>${std_fmt1(flip.playerA.points)}</span></div>
+        <div class="std-flip-row ${flip.playerB.points > flip.playerA.points ? 'winner' : ''}"><span>${flip.playerB.name}</span><span>${std_fmt1(flip.playerB.points)}</span></div></div>` : '',
+    },
+    {
+      label: 'Walking Wounded',
+      show: !!wounded,
+      headlineTeam: wounded?.team_id,
+      detail: wounded && `${wounded.distinct_players_on_ir.length} different players on IR so far`,
+      value: wounded && `${wounded.player_weeks_on_ir} player-weeks lost`,
+      sub: wounded && `<div class="std-sublist"><div class="std-sub-row"><span>${wounded.distinct_players_on_ir.join(', ')}</span></div></div>`,
+    },
+    {
+      label: 'Best Draft',
+      show: true,
+      headlineTeam: bestDraft.team_id,
+      detail: `${std_ppgHtml((bestDraft.started_points_by_source.DRAFT || 0) / (gamesPlayed[bestDraft.team_id] || 1), bestDraft.started_points_by_source.DRAFT || 0, 'PPG')} from draft picks still on the roster`,
+      value: `${bestDraft.started_points_pct_by_source.DRAFT || 0}% of offense`,
+      sub: std_keyPlayers(std_topN(drafted(bestDraft.team_id), 3)),
+    },
+    {
+      label: 'Worst Draft',
+      show: true,
+      headlineTeam: worstDraft.team_id,
+      detail: `${std_ppgHtml((worstDraft.started_points_by_source.DRAFT || 0) / (gamesPlayed[worstDraft.team_id] || 1), worstDraft.started_points_by_source.DRAFT || 0, 'PPG')} from draft picks still on the roster`,
+      value: `${worstDraft.started_points_pct_by_source.DRAFT || 0}% of offense`,
+      sub: std_keyPlayers(std_topN(drafted(worstDraft.team_id), 3)),
+    },
+    std_sourceHeavyTile(analytics, gamesPlayed, 'DRAFT', 'Draft Heavy'),
+    std_sourceHeavyTile(analytics, gamesPlayed, 'TRADE', 'Trade Heavy'),
+    std_sourceHeavyTile(analytics, gamesPlayed, 'PICKUP', 'Pickup Heavy'),
+    std_positionHeavyTile(analytics, gamesPlayed, playerTotals, 'QB', 'QB Heavy'),
+    std_positionHeavyTile(analytics, gamesPlayed, playerTotals, 'RB', 'RB Heavy'),
+    std_positionHeavyTile(analytics, gamesPlayed, playerTotals, 'WR', 'WR Heavy'),
+    std_positionHeavyTile(analytics, gamesPlayed, playerTotals, 'D/ST', 'D/ST Heavy'),
+    {
+      label: 'Luckiest Team',
+      show: weeksPlayed >= 3,
+      headlineTeam: lucky.team_id,
+      detail: `Expected ~${std_fmt1(lucky.expected_wins)} wins off weekly scoring rank (all-play ${lucky.all_play_wins}-${lucky.all_play_games - lucky.all_play_wins}), has ${lucky.actual_wins}${luckyNote}`,
+      value: `+${std_fmt1(lucky.luck_index)} wins`,
+    },
+    {
+      label: 'Unluckiest Team',
+      show: weeksPlayed >= 3,
+      headlineTeam: unlucky.team_id,
+      detail: `Expected ~${std_fmt1(unlucky.expected_wins)} wins off weekly scoring rank (all-play ${unlucky.all_play_wins}-${unlucky.all_play_games - unlucky.all_play_wins}), has ${unlucky.actual_wins}${unluckyNote}`,
+      value: `${std_fmt1(unlucky.luck_index)} wins`,
+    },
+  ];
+
+  return `
+    <div class="std-grid">
+      ${tiles.filter(t => t.show).map(t => `
+        <div class="std-tile">
+          <div class="std-tile-label">${t.label}</div>
+          ${t.headlineTeam != null ? std_chip(t.headlineTeam) : ''}
+          ${t.matchup || ''}
+          ${t.headline ? `<div class="std-tile-headline">${t.headline}</div>` : ''}
+          <div class="std-tile-detail">${t.detail}</div>
+          <div class="std-tile-value">${t.value}</div>
+          ${t.teamByline ? `<div class="std-byline"><span class="std-byline-label">${t.teamByline.label}</span>${std_chip(t.teamByline.team, 'sm')}</div>` : ''}
+          ${t.sub || ''}
+        </div>`).join('')}
+    </div>`;
+}
+
+async function renderSeasonToDate() {
+  const get = name => fetch(`data/${STD_SEASON}/${name}`).then(r => r.json());
+  const [teamsLive, moments, allMatchups, weeklyBoxscores, analytics, draftPicks] = await Promise.all([
+    get('teams.json'), get('season_moments.json'), get('matchups.json'), get('weekly_boxscores.json'), get('team_analytics.json'), get('draft.json'),
+  ]);
+  // Only played weeks - matchups.json carries the whole future schedule.
+  const matchups = allMatchups.filter(m => m.winner === 'HOME' || m.winner === 'AWAY');
+  const weeksPlayed = new Set(matchups.map(m => m.week)).size;
+  const gamesPlayed = {};
+  matchups.forEach(m => {
+    gamesPlayed[m.home_team_id] = (gamesPlayed[m.home_team_id] || 0) + 1;
+    gamesPlayed[m.away_team_id] = (gamesPlayed[m.away_team_id] || 0) + 1;
+  });
+  const playerTotals = std_playerTotals(weeklyBoxscores);
+  const draftedSet = new Set(draftPicks.map(p => `${p.team_id}_${p.player_id}`));
+  document.getElementById('std-top-performances').innerHTML = std_renderTopPerformances(moments, weeklyBoxscores);
+  document.getElementById('std-superlatives').innerHTML = std_renderSuperlatives(moments, matchups, weeklyBoxscores, analytics, gamesPlayed, playerTotals, draftedSet, teamsLive, weeksPlayed);
 }
 
 /* ============================================================
@@ -1553,6 +1916,7 @@ async function loadApp() {
   const meta = await (await fetch('data/meta.json')).json();
   document.getElementById('resources-nav').innerHTML = renderNav('weekly-news', meta.league_id);
   renderCurrentEdition();
+  renderSeasonToDate();
   WK2R_renderEdition();
   WK1R_renderEdition();
   document.getElementById('rebrand-cards').innerHTML = REBRANDS.map(renderRebrand).join('');

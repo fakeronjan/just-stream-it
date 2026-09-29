@@ -142,9 +142,20 @@ def format_stat_line(raw_stats):
     return ", ".join(parts)
 
 
-def build_weekly_boxscores(season, num_weeks):
+def decided_weeks(matchups):
+    """Weeks with at least one real result. matchups.json carries the FULL
+    schedule from day one (future weeks sit there with winner unset and 0
+    scores), so a mid-season run must only ever look at these weeks -
+    otherwise unplayed weeks leak in as 0-point games (all-play once
+    counted 154 "games" after 2 real weeks). Same rule as
+    build_weekly_recap.py's _week_is_decided().
+    """
+    return sorted({m["week"] for m in matchups if m["winner"] in ("HOME", "AWAY")})
+
+
+def build_weekly_boxscores(season, weeks_to_fetch):
     weeks = {}
-    for week in range(1, num_weeks + 1):
+    for week in weeks_to_fetch:
         data = fetch_boxscore_week(LEAGUE_ID, season, week)
         team_rosters = {}
         for m in data.get("schedule", []):
@@ -192,6 +203,7 @@ def build_weekly_boxscores(season, num_weeks):
 
 
 def compute_team_analytics(season, teams, transactions, timeline, weekly_boxscores, regular_season_weeks):
+    """regular_season_weeks = the decided regular-season week numbers."""
     stats = {t["id"]: {
         "team_id": t["id"],
         "owners": t["owners"],
@@ -267,7 +279,7 @@ def compute_team_analytics(season, teams, transactions, timeline, weekly_boxscor
 
     # weekly rank / luck (regular season only - all 12 teams play every week)
     matchups = load(season, "matchups.json")
-    for week in range(1, regular_season_weeks + 1):
+    for week in regular_season_weeks:
         week_matchups = [m for m in matchups if m["week"] == week]
         scores = {}
         for m in week_matchups:
@@ -345,7 +357,9 @@ def main(season):
     print(f"Building season analytics for {season}...")
     teams = load(season, "teams.json")
     draft_picks = load(season, "draft.json")
-    matchup_settings_weeks = max(m["week"] for m in load(season, "matchups.json") if not m["is_playoffs"])
+    matchups = load(season, "matchups.json")
+    played_weeks = decided_weeks(matchups)
+    regular_played_weeks = [w for w in played_weeks if any(m["week"] == w and not m["is_playoffs"] for m in matchups)]
 
     print("Fetching transactions...")
     raw_txns = fetch_transactions(LEAGUE_ID, season)
@@ -355,11 +369,10 @@ def main(season):
     timeline = build_ownership_timeline(draft_picks, transactions)
 
     print("Fetching weekly box scores...")
-    total_weeks = max(m["week"] for m in load(season, "matchups.json"))
-    weekly_boxscores = build_weekly_boxscores(season, total_weeks)
+    weekly_boxscores = build_weekly_boxscores(season, played_weeks)
 
     analytics = compute_team_analytics(
-        season, teams, transactions, timeline, weekly_boxscores, matchup_settings_weeks
+        season, teams, transactions, timeline, weekly_boxscores, regular_played_weeks
     )
 
     season_dir = DOCS_DATA / str(season)

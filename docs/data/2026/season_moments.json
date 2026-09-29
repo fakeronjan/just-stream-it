@@ -1,0 +1,1443 @@
+{
+  "standings": [
+    {
+      "team_id": 8,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 1
+    },
+    {
+      "team_id": 6,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 2
+    },
+    {
+      "team_id": 12,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 3
+    },
+    {
+      "team_id": 11,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 4
+    },
+    {
+      "team_id": 9,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 5
+    },
+    {
+      "team_id": 10,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 6
+    },
+    {
+      "team_id": 3,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 7
+    },
+    {
+      "team_id": 7,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 8
+    },
+    {
+      "team_id": 4,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 9
+    },
+    {
+      "team_id": 5,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 10
+    },
+    {
+      "team_id": 2,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 11
+    },
+    {
+      "team_id": 1,
+      "status": "in_season",
+      "eliminated_round": null,
+      "rank": 12
+    }
+  ],
+  "upsets": [
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 4,
+      "loser_team_id": 11,
+      "winner_final_rank": 9,
+      "loser_final_rank": 4,
+      "upset_size": 5,
+      "winner_score": 126.66,
+      "loser_score": 113.32,
+      "margin": 13.34
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 1,
+      "loser_team_id": 7,
+      "winner_final_rank": 12,
+      "loser_final_rank": 8,
+      "upset_size": 4,
+      "winner_score": 150.78,
+      "loser_score": 85.84,
+      "margin": 64.94
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 5,
+      "loser_team_id": 10,
+      "winner_final_rank": 10,
+      "loser_final_rank": 6,
+      "upset_size": 4,
+      "winner_score": 154.7,
+      "loser_score": 123.46,
+      "margin": 31.24
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 6,
+      "winner_final_rank": 1,
+      "loser_final_rank": 2,
+      "upset_size": -1,
+      "winner_score": 201.62,
+      "loser_score": 107.3,
+      "margin": 94.32
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 2,
+      "loser_team_id": 1,
+      "winner_final_rank": 11,
+      "loser_final_rank": 12,
+      "upset_size": -1,
+      "winner_score": 147.08,
+      "loser_score": 92.58,
+      "margin": 54.5
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 7,
+      "loser_team_id": 4,
+      "winner_final_rank": 8,
+      "loser_final_rank": 9,
+      "upset_size": -1,
+      "winner_score": 156.36,
+      "loser_score": 127.6,
+      "margin": 28.76
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 12,
+      "winner_final_rank": 2,
+      "loser_final_rank": 3,
+      "upset_size": -1,
+      "winner_score": 136.6,
+      "loser_score": 115.06,
+      "margin": 21.54
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 11,
+      "loser_team_id": 9,
+      "winner_final_rank": 4,
+      "loser_final_rank": 5,
+      "upset_size": -1,
+      "winner_score": 134.92,
+      "loser_score": 121.92,
+      "margin": 13.0
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 10,
+      "loser_team_id": 3,
+      "winner_final_rank": 6,
+      "loser_final_rank": 7,
+      "upset_size": -1,
+      "winner_score": 140.9,
+      "loser_score": 133.46,
+      "margin": 7.44
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 3,
+      "loser_team_id": 4,
+      "winner_final_rank": 7,
+      "loser_final_rank": 9,
+      "upset_size": -2,
+      "winner_score": 153.56,
+      "loser_score": 108.22,
+      "margin": 45.34
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 3,
+      "winner_final_rank": 5,
+      "loser_final_rank": 7,
+      "upset_size": -2,
+      "winner_score": 112.28,
+      "loser_score": 106.94,
+      "margin": 5.34
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 12,
+      "loser_team_id": 10,
+      "winner_final_rank": 3,
+      "loser_final_rank": 6,
+      "upset_size": -3,
+      "winner_score": 140.76,
+      "loser_score": 139.8,
+      "margin": 0.96
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 9,
+      "loser_team_id": 5,
+      "winner_final_rank": 5,
+      "loser_final_rank": 10,
+      "upset_size": -5,
+      "winner_score": 137.64,
+      "loser_score": 108.96,
+      "margin": 28.68
+    },
+    {
+      "week": 1,
+      "is_playoffs": false,
+      "winner_team_id": 12,
+      "loser_team_id": 5,
+      "winner_final_rank": 3,
+      "loser_final_rank": 10,
+      "upset_size": -7,
+      "winner_score": 123.46,
+      "loser_score": 98.02,
+      "margin": 25.44
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 7,
+      "winner_final_rank": 1,
+      "loser_final_rank": 8,
+      "upset_size": -7,
+      "winner_score": 131.68,
+      "loser_score": 123.32,
+      "margin": 8.36
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 11,
+      "loser_team_id": 1,
+      "winner_final_rank": 4,
+      "loser_final_rank": 12,
+      "upset_size": -8,
+      "winner_score": 126.14,
+      "loser_score": 72.06,
+      "margin": 54.08
+    },
+    {
+      "week": 3,
+      "is_playoffs": false,
+      "winner_team_id": 6,
+      "loser_team_id": 2,
+      "winner_final_rank": 2,
+      "loser_final_rank": 11,
+      "upset_size": -9,
+      "winner_score": 138.32,
+      "loser_score": 121.96,
+      "margin": 16.36
+    },
+    {
+      "week": 2,
+      "is_playoffs": false,
+      "winner_team_id": 8,
+      "loser_team_id": 2,
+      "winner_final_rank": 1,
+      "loser_final_rank": 11,
+      "upset_size": -10,
+      "winner_score": 134.04,
+      "loser_score": 81.0,
+      "margin": 53.04
+    }
+  ],
+  "weekly_team_extremes": {
+    "best_weeks": [
+      {
+        "week": 1,
+        "team_id": 8,
+        "score": 201.62,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 7,
+        "score": 156.36,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 5,
+        "score": 154.7,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 3,
+        "score": 153.56,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 1,
+        "score": 150.78,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 2,
+        "score": 147.08,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 10,
+        "score": 140.9,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 12,
+        "score": 140.76,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 10,
+        "score": 139.8,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 6,
+        "score": 138.32,
+        "is_playoffs": false
+      }
+    ],
+    "worst_weeks": [
+      {
+        "week": 3,
+        "team_id": 1,
+        "score": 72.06,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 2,
+        "score": 81.0,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 7,
+        "score": 85.84,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 1,
+        "score": 92.58,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 5,
+        "score": 98.02,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 3,
+        "score": 106.94,
+        "is_playoffs": false
+      },
+      {
+        "week": 1,
+        "team_id": 6,
+        "score": 107.3,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 4,
+        "score": 108.22,
+        "is_playoffs": false
+      },
+      {
+        "week": 3,
+        "team_id": 5,
+        "score": 108.96,
+        "is_playoffs": false
+      },
+      {
+        "week": 2,
+        "team_id": 9,
+        "score": 112.28,
+        "is_playoffs": false
+      }
+    ]
+  },
+  "player_extremes": {
+    "best_performances": [
+      {
+        "week": 2,
+        "team_id": 3,
+        "player_id": 3918298,
+        "name": "Josh Allen",
+        "position": "QB",
+        "points": 40.82,
+        "pro_team": "BUF",
+        "pro_opponent": "DET",
+        "pro_home": true,
+        "pro_team_score": 41.0,
+        "pro_opponent_score": 31.0,
+        "stat_line": "248 pass yds, 3 pass TD, 69 rush yds, 2 rush TD"
+      },
+      {
+        "week": 2,
+        "team_id": 8,
+        "player_id": 4430878,
+        "name": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "points": 38.0,
+        "pro_team": "SEA",
+        "pro_opponent": "ARI",
+        "pro_home": false,
+        "pro_team_score": 31.0,
+        "pro_opponent_score": 7.0,
+        "stat_line": "9 rec, 155 rec yds, 3 rec TD"
+      },
+      {
+        "week": 3,
+        "team_id": 9,
+        "player_id": 4429795,
+        "name": "Jahmyr Gibbs",
+        "position": "RB",
+        "points": 37.9,
+        "pro_team": "DET",
+        "pro_opponent": "NYJ",
+        "pro_home": true,
+        "pro_team_score": 31.0,
+        "pro_opponent_score": 24.0,
+        "stat_line": "99 rush yds, 2 rush TD, 7 rec, 65 rec yds, 1 rec TD"
+      },
+      {
+        "week": 1,
+        "team_id": 2,
+        "player_id": 4431611,
+        "name": "Caleb Williams",
+        "position": "QB",
+        "points": 37.26,
+        "pro_team": "CHI",
+        "pro_opponent": "CAR",
+        "pro_home": false,
+        "pro_team_score": 59.0,
+        "pro_opponent_score": 37.0,
+        "stat_line": "269 pass yds, 2 pass TD, 65 rush yds, 2 rush TD"
+      },
+      {
+        "week": 1,
+        "team_id": 3,
+        "player_id": 3918298,
+        "name": "Josh Allen",
+        "position": "QB",
+        "points": 35.66,
+        "pro_team": "BUF",
+        "pro_opponent": "HOU",
+        "pro_home": false,
+        "pro_team_score": 36.0,
+        "pro_opponent_score": 31.0,
+        "stat_line": "334 pass yds, 2 pass TD, 23 rush yds, 2 rush TD"
+      },
+      {
+        "week": 2,
+        "team_id": 4,
+        "player_id": 16800,
+        "name": "Davante Adams",
+        "position": "WR",
+        "points": 35.5,
+        "pro_team": "LAR",
+        "pro_opponent": "NYG",
+        "pro_home": true,
+        "pro_team_score": 28.0,
+        "pro_opponent_score": 6.0,
+        "stat_line": "8 rec, 195 rec yds, 2 rec TD"
+      },
+      {
+        "week": 1,
+        "team_id": 8,
+        "player_id": 3043078,
+        "name": "Derrick Henry",
+        "position": "RB",
+        "points": 34.8,
+        "pro_team": "BAL",
+        "pro_opponent": "IND",
+        "pro_home": false,
+        "pro_team_score": 41.0,
+        "pro_opponent_score": 23.0,
+        "stat_line": "144 rush yds, 3 rush TD, 1 rec, 19 rec yds"
+      },
+      {
+        "week": 3,
+        "team_id": 10,
+        "player_id": 4430807,
+        "name": "Bijan Robinson",
+        "position": "RB",
+        "points": 34.300000000000004,
+        "pro_team": "ATL",
+        "pro_opponent": "GB",
+        "pro_home": false,
+        "pro_team_score": 35.0,
+        "pro_opponent_score": 14.0,
+        "stat_line": "194 rush yds, 2 rush TD, 2 rec, 19 rec yds"
+      },
+      {
+        "week": 1,
+        "team_id": 4,
+        "player_id": 4567048,
+        "name": "Kenneth Walker III",
+        "position": "RB",
+        "points": 32.6,
+        "pro_team": "KC",
+        "pro_opponent": "DEN",
+        "pro_home": true,
+        "pro_team_score": 31.0,
+        "pro_opponent_score": 10.0,
+        "stat_line": "173 rush yds, 1 rush TD, 3 rec, 18 rec yds, 1 rec TD"
+      },
+      {
+        "week": 1,
+        "team_id": 11,
+        "player_id": 4259545,
+        "name": "D'Andre Swift",
+        "position": "RB",
+        "points": 31.9,
+        "pro_team": "CHI",
+        "pro_opponent": "CAR",
+        "pro_home": false,
+        "pro_team_score": 59.0,
+        "pro_opponent_score": 37.0,
+        "stat_line": "124 rush yds, 3 rush TD, 1 rec, 10 rec yds"
+      }
+    ],
+    "worst_performances": [
+      {
+        "week": 3,
+        "team_id": 9,
+        "player_id": -16009,
+        "name": "Packers D/ST",
+        "position": "D/ST",
+        "points": -6.0,
+        "pro_team": "GB",
+        "pro_opponent": "ATL",
+        "pro_home": true,
+        "pro_team_score": 14.0,
+        "pro_opponent_score": 35.0,
+        "stat_line": ""
+      },
+      {
+        "week": 1,
+        "team_id": 5,
+        "player_id": -16034,
+        "name": "Texans D/ST",
+        "position": "D/ST",
+        "points": -4.0,
+        "pro_team": "HOU",
+        "pro_opponent": "BUF",
+        "pro_home": true,
+        "pro_team_score": 31.0,
+        "pro_opponent_score": 36.0,
+        "stat_line": ""
+      },
+      {
+        "week": 1,
+        "team_id": 7,
+        "player_id": -16010,
+        "name": "Titans D/ST",
+        "position": "D/ST",
+        "points": -1.0,
+        "pro_team": "TEN",
+        "pro_opponent": "NYJ",
+        "pro_home": true,
+        "pro_team_score": 10.0,
+        "pro_opponent_score": 23.0,
+        "stat_line": ""
+      },
+      {
+        "week": 2,
+        "team_id": 2,
+        "player_id": -16019,
+        "name": "Giants D/ST",
+        "position": "D/ST",
+        "points": -1.0,
+        "pro_team": "NYG",
+        "pro_opponent": "LAR",
+        "pro_home": false,
+        "pro_team_score": 6.0,
+        "pro_opponent_score": 28.0,
+        "stat_line": ""
+      },
+      {
+        "week": 3,
+        "team_id": 4,
+        "player_id": -16021,
+        "name": "Eagles D/ST",
+        "position": "D/ST",
+        "points": -1.0,
+        "pro_team": "PHI",
+        "pro_opponent": "CHI",
+        "pro_home": false,
+        "pro_team_score": 7.0,
+        "pro_opponent_score": 27.0,
+        "stat_line": ""
+      },
+      {
+        "week": 1,
+        "team_id": 2,
+        "player_id": 3917315,
+        "name": "Kyler Murray",
+        "position": "QB",
+        "points": -0.3800000000000001,
+        "pro_team": "MIN",
+        "pro_opponent": "GB",
+        "pro_home": true,
+        "pro_team_score": 39.0,
+        "pro_opponent_score": 22.0,
+        "stat_line": "18 pass yds, 1 INT, 9 rush yds"
+      },
+      {
+        "week": 2,
+        "team_id": 8,
+        "player_id": 3915416,
+        "name": "DJ Moore",
+        "position": "WR",
+        "points": -0.1,
+        "pro_team": "BUF",
+        "pro_opponent": "DET",
+        "pro_home": true,
+        "pro_team_score": 41.0,
+        "pro_opponent_score": 31.0,
+        "stat_line": "-1 rush yds"
+      },
+      {
+        "week": 1,
+        "team_id": 8,
+        "player_id": -16024,
+        "name": "Chargers D/ST",
+        "position": "D/ST",
+        "points": 0.0,
+        "pro_team": "LAC",
+        "pro_opponent": "ARI",
+        "pro_home": true,
+        "pro_team_score": 14.0,
+        "pro_opponent_score": 26.0,
+        "stat_line": ""
+      },
+      {
+        "week": 1,
+        "team_id": 1,
+        "player_id": 4360248,
+        "name": "Kyle Pitts Sr.",
+        "position": "TE",
+        "points": 0.0,
+        "pro_team": "ATL",
+        "pro_opponent": "PIT",
+        "pro_home": false,
+        "pro_team_score": 13.0,
+        "pro_opponent_score": 20.0,
+        "stat_line": ""
+      },
+      {
+        "week": 1,
+        "team_id": 2,
+        "player_id": 4429205,
+        "name": "Jordan Addison",
+        "position": "WR",
+        "points": 0.0,
+        "pro_team": "MIN",
+        "pro_opponent": "GB",
+        "pro_home": true,
+        "pro_team_score": 39.0,
+        "pro_opponent_score": 22.0,
+        "stat_line": ""
+      }
+    ]
+  },
+  "bench_mistakes": {
+    "worst_single_instances": [
+      {
+        "week": 1,
+        "team_id": 6,
+        "player_id": 4685720,
+        "name": "Bryce Young",
+        "position": "QB",
+        "points": 31.439999999999998
+      },
+      {
+        "week": 1,
+        "team_id": 7,
+        "player_id": 4695883,
+        "name": "Jalen Coker",
+        "position": "WR",
+        "points": 29.8
+      },
+      {
+        "week": 3,
+        "team_id": 10,
+        "player_id": 2578570,
+        "name": "Jacoby Brissett",
+        "position": "QB",
+        "points": 25.6
+      },
+      {
+        "week": 3,
+        "team_id": 7,
+        "player_id": 15168,
+        "name": "Case Keenum",
+        "position": "QB",
+        "points": 24.48
+      },
+      {
+        "week": 3,
+        "team_id": 6,
+        "player_id": 4426338,
+        "name": "Bo Nix",
+        "position": "QB",
+        "points": 24.14
+      },
+      {
+        "week": 2,
+        "team_id": 6,
+        "player_id": 4685720,
+        "name": "Bryce Young",
+        "position": "QB",
+        "points": 24.08
+      },
+      {
+        "week": 2,
+        "team_id": 4,
+        "player_id": -16029,
+        "name": "Panthers D/ST",
+        "position": "D/ST",
+        "points": 24.0
+      },
+      {
+        "week": 1,
+        "team_id": 11,
+        "player_id": 4360689,
+        "name": "Tyler Shough",
+        "position": "QB",
+        "points": 23.2
+      },
+      {
+        "week": 3,
+        "team_id": 9,
+        "player_id": 8439,
+        "name": "Aaron Rodgers",
+        "position": "QB",
+        "points": 22.68
+      },
+      {
+        "week": 2,
+        "team_id": 11,
+        "player_id": 4360689,
+        "name": "Tyler Shough",
+        "position": "QB",
+        "points": 22.380000000000003
+      }
+    ],
+    "season_totals": [
+      {
+        "team_id": 6,
+        "points_left_on_bench": 79.66
+      },
+      {
+        "team_id": 7,
+        "points_left_on_bench": 74.28
+      },
+      {
+        "team_id": 11,
+        "points_left_on_bench": 66.18
+      },
+      {
+        "team_id": 5,
+        "points_left_on_bench": 58.84
+      },
+      {
+        "team_id": 10,
+        "points_left_on_bench": 57.22
+      },
+      {
+        "team_id": 9,
+        "points_left_on_bench": 55.62
+      },
+      {
+        "team_id": 4,
+        "points_left_on_bench": 54.52
+      },
+      {
+        "team_id": 2,
+        "points_left_on_bench": 48.2
+      },
+      {
+        "team_id": 1,
+        "points_left_on_bench": 41.2
+      },
+      {
+        "team_id": 8,
+        "points_left_on_bench": 38.4
+      },
+      {
+        "team_id": 12,
+        "points_left_on_bench": 37.3
+      },
+      {
+        "team_id": 3,
+        "points_left_on_bench": 37.3
+      }
+    ]
+  },
+  "injury_burden": [
+    {
+      "team_id": 1,
+      "player_weeks_on_ir": 10,
+      "distinct_players_on_ir": [
+        "Carson Beck",
+        "Ja'Kobi Lane",
+        "James Conner",
+        "Jonathon Brooks",
+        "Tank Dell"
+      ]
+    },
+    {
+      "team_id": 4,
+      "player_weeks_on_ir": 10,
+      "distinct_players_on_ir": [
+        "Jonah Coleman",
+        "Jordyn Tyson",
+        "Michael Penix Jr.",
+        "Tua Tagovailoa",
+        "Zach Charbonnet"
+      ]
+    },
+    {
+      "team_id": 3,
+      "player_weeks_on_ir": 8,
+      "distinct_players_on_ir": [
+        "Alec Pierce",
+        "De'Zhaun Stribling",
+        "Dillon Gabriel",
+        "Jalen McMillan",
+        "Michael Pittman Jr."
+      ]
+    },
+    {
+      "team_id": 9,
+      "player_weeks_on_ir": 8,
+      "distinct_players_on_ir": [
+        "A.J. Brown",
+        "Isiah Pacheco",
+        "Jordan Mason",
+        "Sam Darnold"
+      ]
+    },
+    {
+      "team_id": 7,
+      "player_weeks_on_ir": 6,
+      "distinct_players_on_ir": [
+        "Brock Bowers",
+        "Jaxson Dart",
+        "Jayden Daniels",
+        "Nico Collins",
+        "TreVeyon Henderson"
+      ]
+    },
+    {
+      "team_id": 5,
+      "player_weeks_on_ir": 3,
+      "distinct_players_on_ir": [
+        "Dylan Sampson",
+        "Rico Dowdle"
+      ]
+    },
+    {
+      "team_id": 6,
+      "player_weeks_on_ir": 2,
+      "distinct_players_on_ir": [
+        "Jauan Jennings"
+      ]
+    },
+    {
+      "team_id": 2,
+      "player_weeks_on_ir": 2,
+      "distinct_players_on_ir": [
+        "Kyler Murray",
+        "Zay Flowers"
+      ]
+    },
+    {
+      "team_id": 10,
+      "player_weeks_on_ir": 2,
+      "distinct_players_on_ir": [
+        "Adonai Mitchell",
+        "Caleb Douglas"
+      ]
+    },
+    {
+      "team_id": 12,
+      "player_weeks_on_ir": 1,
+      "distinct_players_on_ir": [
+        "Dallas Goedert"
+      ]
+    }
+  ],
+  "best_waiver_pickups": [
+    {
+      "player_id": -16016,
+      "name": "Vikings D/ST",
+      "position": "D/ST",
+      "team_id": 3,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 24.0,
+      "games_started": 2,
+      "points_per_game": 12.0
+    },
+    {
+      "player_id": 4689936,
+      "name": "Jake Bates",
+      "position": "K",
+      "team_id": 1,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "WAIVER",
+      "points_while_rostered": 21.0,
+      "games_started": 3,
+      "points_per_game": 7.0
+    },
+    {
+      "player_id": 2576980,
+      "name": "Marcus Mariota",
+      "position": "QB",
+      "team_id": 7,
+      "week_added": 3,
+      "rostered_through_week": 3,
+      "source": "WAIVER",
+      "points_while_rostered": 20.42,
+      "games_started": 1,
+      "points_per_game": 20.42
+    },
+    {
+      "player_id": -16030,
+      "name": "Jaguars D/ST",
+      "position": "D/ST",
+      "team_id": 12,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "WAIVER",
+      "points_while_rostered": 15.0,
+      "games_started": 2,
+      "points_per_game": 7.5
+    },
+    {
+      "player_id": 4697745,
+      "name": "Tyler Loop",
+      "position": "K",
+      "team_id": 4,
+      "week_added": 3,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 12.0,
+      "games_started": 1,
+      "points_per_game": 12.0
+    },
+    {
+      "player_id": -16020,
+      "name": "Jets D/ST",
+      "position": "D/ST",
+      "team_id": 6,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 11.0,
+      "games_started": 1,
+      "points_per_game": 11.0
+    },
+    {
+      "player_id": 4429086,
+      "name": "Michael Mayer",
+      "position": "TE",
+      "team_id": 7,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 10.0,
+      "games_started": 2,
+      "points_per_game": 5.0
+    },
+    {
+      "player_id": -16025,
+      "name": "49ers D/ST",
+      "position": "D/ST",
+      "team_id": 1,
+      "week_added": 2,
+      "rostered_through_week": 3,
+      "source": "WAIVER",
+      "points_while_rostered": 9.0,
+      "games_started": 2,
+      "points_per_game": 4.5
+    },
+    {
+      "player_id": -16012,
+      "name": "Chiefs D/ST",
+      "position": "D/ST",
+      "team_id": 7,
+      "week_added": 2,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 8.0,
+      "games_started": 2,
+      "points_per_game": 4.0
+    },
+    {
+      "player_id": -16010,
+      "name": "Titans D/ST",
+      "position": "D/ST",
+      "team_id": 6,
+      "week_added": 3,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 8.0,
+      "games_started": 1,
+      "points_per_game": 8.0
+    },
+    {
+      "player_id": -16004,
+      "name": "Bengals D/ST",
+      "position": "D/ST",
+      "team_id": 3,
+      "week_added": 2,
+      "rostered_through_week": 2,
+      "source": "FREEAGENT",
+      "points_while_rostered": 7.0,
+      "games_started": 1,
+      "points_per_game": 7.0
+    },
+    {
+      "player_id": 2573079,
+      "name": "Carson Wentz",
+      "position": "QB",
+      "team_id": 3,
+      "week_added": 2,
+      "rostered_through_week": 3,
+      "source": "WAIVER",
+      "points_while_rostered": 6.32,
+      "games_started": 1,
+      "points_per_game": 6.32
+    },
+    {
+      "player_id": -16033,
+      "name": "Ravens D/ST",
+      "position": "D/ST",
+      "team_id": 6,
+      "week_added": 2,
+      "rostered_through_week": 2,
+      "source": "WAIVER",
+      "points_while_rostered": 5.0,
+      "games_started": 1,
+      "points_per_game": 5.0
+    },
+    {
+      "player_id": 3117256,
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "team_id": 11,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 4.5,
+      "games_started": 1,
+      "points_per_game": 4.5
+    },
+    {
+      "player_id": -16021,
+      "name": "Eagles D/ST",
+      "position": "D/ST",
+      "team_id": 4,
+      "week_added": 1,
+      "rostered_through_week": 3,
+      "source": "FREEAGENT",
+      "points_while_rostered": 4.0,
+      "games_started": 2,
+      "points_per_game": 2.0
+    }
+  ],
+  "trades": [],
+  "rivalries": [
+    {
+      "team_ids": [
+        10,
+        12
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 0.96,
+          "winner_team_id": 12
+        }
+      ],
+      "avg_margin": 0.96,
+      "record": {
+        "10": 0,
+        "12": 1
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        9
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 5.34,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 5.34,
+      "record": {
+        "3": 0,
+        "9": 1
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        10
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 7.44,
+          "winner_team_id": 10
+        }
+      ],
+      "avg_margin": 7.44,
+      "record": {
+        "3": 0,
+        "10": 1
+      }
+    },
+    {
+      "team_ids": [
+        7,
+        8
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 8.36,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 8.36,
+      "record": {
+        "7": 0,
+        "8": 1
+      }
+    },
+    {
+      "team_ids": [
+        9,
+        11
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 13.0,
+          "winner_team_id": 11
+        }
+      ],
+      "avg_margin": 13.0,
+      "record": {
+        "9": 0,
+        "11": 1
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        11
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 13.34,
+          "winner_team_id": 4
+        }
+      ],
+      "avg_margin": 13.34,
+      "record": {
+        "4": 1,
+        "11": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        6
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 16.36,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 16.36,
+      "record": {
+        "2": 0,
+        "6": 1
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        12
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 21.54,
+          "winner_team_id": 6
+        }
+      ],
+      "avg_margin": 21.54,
+      "record": {
+        "6": 1,
+        "12": 0
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        12
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 25.44,
+          "winner_team_id": 12
+        }
+      ],
+      "avg_margin": 25.44,
+      "record": {
+        "5": 0,
+        "12": 1
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        9
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 28.68,
+          "winner_team_id": 9
+        }
+      ],
+      "avg_margin": 28.68,
+      "record": {
+        "5": 0,
+        "9": 1
+      }
+    },
+    {
+      "team_ids": [
+        4,
+        7
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 28.76,
+          "winner_team_id": 7
+        }
+      ],
+      "avg_margin": 28.76,
+      "record": {
+        "4": 0,
+        "7": 1
+      }
+    },
+    {
+      "team_ids": [
+        5,
+        10
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 31.24,
+          "winner_team_id": 5
+        }
+      ],
+      "avg_margin": 31.24,
+      "record": {
+        "5": 1,
+        "10": 0
+      }
+    },
+    {
+      "team_ids": [
+        3,
+        4
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 45.34,
+          "winner_team_id": 3
+        }
+      ],
+      "avg_margin": 45.34,
+      "record": {
+        "3": 1,
+        "4": 0
+      }
+    },
+    {
+      "team_ids": [
+        2,
+        8
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 53.04,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 53.04,
+      "record": {
+        "2": 0,
+        "8": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        11
+      ],
+      "games": [
+        {
+          "week": 3,
+          "margin": 54.08,
+          "winner_team_id": 11
+        }
+      ],
+      "avg_margin": 54.08,
+      "record": {
+        "1": 0,
+        "11": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        2
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 54.5,
+          "winner_team_id": 2
+        }
+      ],
+      "avg_margin": 54.5,
+      "record": {
+        "1": 0,
+        "2": 1
+      }
+    },
+    {
+      "team_ids": [
+        1,
+        7
+      ],
+      "games": [
+        {
+          "week": 2,
+          "margin": 64.94,
+          "winner_team_id": 1
+        }
+      ],
+      "avg_margin": 64.94,
+      "record": {
+        "1": 1,
+        "7": 0
+      }
+    },
+    {
+      "team_ids": [
+        6,
+        8
+      ],
+      "games": [
+        {
+          "week": 1,
+          "margin": 94.32,
+          "winner_team_id": 8
+        }
+      ],
+      "avg_margin": 94.32,
+      "record": {
+        "6": 0,
+        "8": 1
+      }
+    }
+  ]
+}
