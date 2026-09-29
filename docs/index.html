@@ -502,14 +502,10 @@
     <p class="lede" style="font-size:0.95rem;">Mike's quarterback crisis is over for now. Jayden Daniels is out and Jaxson Dart is on IR, but pickups Marcus Mariota and Case Keenum combined for 44.9 points in their first week with him. Imran's backfield is the new emergency. De'Von Achane went to IR after a 1.7-point day, Travis Etienne Jr. is out, and James Conner and Jonathon Brooks were already on IR. That leaves Imran with Jadarian Price, Tyler Allgeier, Brian Robinson Jr., and Emanuel Wilson. He's thinking about renaming the team AY’chan and AY’chan Injury Law. Ben loses Baker Mayfield and Puka Nacua but can still start Justin Herbert and Michael Penix Jr. at quarterback. Josh Allen is questionable after a two-interception game, and Pete picked up Cooper Rush last week.</p>
     <div class="top-scorers-list" id="injury-list"></div>
 
-    <div class="section-label">Stats Roundup</div>
-    <p class="section-sublabel">Current playoff picture and points leaders through three weeks</p>
-    <p class="stat-subhead">Current Playoff Picture</p>
+    <div class="section-label">Playoff Picture</div>
+    <p class="section-sublabel">Standings through three weeks</p>
     <div class="standings-list" id="standings-list"></div>
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
-    <p class="stat-subhead">Top Scorers</p>
-    <div class="top-scorers-list" id="top-scorers-list"></div>
-    <p class="standings-caption">Total points through three weeks</p>
 
     <div class="section-label">Week 4 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
@@ -732,19 +728,6 @@ const STANDINGS = [
   { team: 1,  wins: 1, losses: 2, pf: 315.4, back: 34.6 },
 ];
 
-// ---------- Top Scorers: total points through 3 weeks, started players
-// only, summed from docs/data/2026/weekly_boxscores.json weeks 1-3.
-const TOP_SCORERS = [
-  { name: 'Josh Allen', pos: 'QB', team: 3, pts: 93.44 },
-  { name: 'Jaxon Smith-Njigba', pos: 'WR', team: 8, pts: 90.56 },
-  { name: 'Jahmyr Gibbs', pos: 'RB', team: 9, pts: 89.30 },
-  { name: 'Brock Purdy', pos: 'QB', team: 12, pts: 80.86 },
-  { name: 'Kenneth Walker III', pos: 'RB', team: 4, pts: 73.70 },
-  { name: 'Derrick Henry', pos: 'RB', team: 8, pts: 72.40 },
-  { name: 'Bijan Robinson', pos: 'RB', team: 10, pts: 71.20 },
-  { name: 'Patrick Mahomes', pos: 'QB', team: 6, pts: 66.58 },
-];
-
 // ---------- Week 4 preview. 2025 head-to-head from
 // docs/data/2025/matchups.json: these pairs met once in the 2025
 // regular season (Week 4); Pete/Imran also met in the Week 16
@@ -829,16 +812,6 @@ function renderStandingsRow(s, idx) {
   `;
 }
 
-function renderTopScorerRow(p) {
-  const t = TEAMS[p.team];
-  return `
-    <div class="top-scorer-row">
-      <span><b>${p.name}</b> <span class="top-scorer-team">${p.pos} &middot; ${t.name} (${ownerLabel(t)})</span></span>
-      <span class="top-scorer-pts">${p.pts.toFixed(1)}</span>
-    </div>
-  `;
-}
-
 function renderWeek4Matchup(m) {
   const gamesHtml = m.games.map(g => `
     <div class="matchup-h2h-row">
@@ -898,7 +871,6 @@ function renderCurrentEdition() {
   document.getElementById('recap-matchup-grid').innerHTML = MATCHUP_RESULTS.map(renderMatchupResult).join('');
   document.getElementById('injury-list').innerHTML = INJURIES.map(renderInjuryRow).join('');
   document.getElementById('standings-list').innerHTML = STANDINGS.map(renderStandingsRow).join('');
-  document.getElementById('top-scorers-list').innerHTML = TOP_SCORERS.map(renderTopScorerRow).join('');
   document.getElementById('week4-matchup-grid').innerHTML = WEEK4_MATCHUPS.map(renderWeek4Matchup).join('');
 }
 
@@ -976,7 +948,16 @@ function std_biggestFlip(weeklyBoxscores, week, aId, bId) {
   return best;
 }
 
-function std_renderTopPerformances(moments, weeklyBoxscores) {
+function std_renderTopPerformances(moments, weeklyBoxscores, playerTotals) {
+  // Total points, not per-game rate (see small-sample note in the
+  // project memory: early-season rate stats surface flukes).
+  const leaders = Object.entries(playerTotals)
+    .flatMap(([teamId, players]) => players.map(p => ({ ...p, team_id: Number(teamId) })))
+    .sort((a, b) => b.points - a.points).slice(0, 8).map(p => `
+      <li>
+        <div class="std-rank-main">${std_pos(p.position)}<b>${p.name}</b><div style="margin-top:4px">${std_chip(p.team_id, 'sm', `&middot; ${std_fmt1(p.ppg)} PPG`)}</div></div>
+        <div class="std-rank-value">${std_fmt1(p.points)}</div>
+      </li>`).join('');
   const teamWeeks = moments.weekly_team_extremes.best_weeks.slice(0, 5).map(w => {
     const top = (weeklyBoxscores[w.week]?.[w.team_id] || []).filter(p => p.started).sort((a, b) => b.points - a.points).slice(0, 3);
     return `
@@ -994,6 +975,7 @@ function std_renderTopPerformances(moments, weeklyBoxscores) {
       </li>`).join('');
   return `
     <div class="std-grid">
+      <div class="std-card" style="grid-column: 1 / -1;"><div class="std-card-title">Season Scoring Leaders</div><ul class="std-rank-list">${leaders}</ul></div>
       <div class="std-card"><div class="std-card-title">Top Team Weeks</div><ul class="std-rank-list">${teamWeeks}</ul></div>
       <div class="std-card"><div class="std-card-title">Top Player Weeks</div><ul class="std-rank-list">${playerWeeks}</ul></div>
     </div>`;
@@ -1201,7 +1183,7 @@ async function renderSeasonToDate() {
   });
   const playerTotals = std_playerTotals(weeklyBoxscores);
   const draftedSet = new Set(draftPicks.map(p => `${p.team_id}_${p.player_id}`));
-  document.getElementById('std-top-performances').innerHTML = std_renderTopPerformances(moments, weeklyBoxscores);
+  document.getElementById('std-top-performances').innerHTML = std_renderTopPerformances(moments, weeklyBoxscores, playerTotals);
   document.getElementById('std-superlatives').innerHTML = std_renderSuperlatives(moments, matchups, weeklyBoxscores, analytics, gamesPlayed, playerTotals, draftedSet, teamsLive, weeksPlayed);
 }
 
