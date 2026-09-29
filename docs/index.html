@@ -34,7 +34,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="favicon-180.png">
 <title>Just Stream It - Weekly News: Week 3 Recap</title>
-<meta name="description" content="The Nielson News, Week 3 Recap: four losing teams had a winning lineup on the bench, Olave Oyl is the last unbeaten team, the injury report, standings, points leaders, and every Week 4 matchup.">
+<meta name="description" content="The Nielson News, Week 3 Recap: ESPN's projections cost three teams a win, Olave Oyl stands alone at 3-0, the injury report, standings, points leaders, and every Week 4 matchup.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
@@ -438,16 +438,16 @@
   <!-- ================= CURRENT EDITION: Week 3 Recap / Week 4 Preview ================= -->
   <section class="edition" id="panel-current">
     <p class="kicker">Week 3 Recap</p>
-    <h2 class="edition-head">Four Losers Had a Winning Lineup on the Bench</h2>
+    <h2 class="edition-head">Missed Opportunities</h2>
     <p class="dateline">2026 Season &middot; Week 3 Complete &middot; Week 4 Preview Below</p>
-    <p class="lede">Four of this week's six losing teams had enough points on their bench to win. Cara, Karl, and mariss went with ESPN's projections at the spots that cost them, and the backups beat those projections anyway. Karl's loss stung most. He fell to Melinda by 1.0 point with Jacoby Brissett's 25.6 sitting on his bench. Mike's case is different. He added Marcus Mariota and Case Keenum this week to cover for Jayden Daniels and Jaxson Dart, then started only Mariota. Keenum scored 24.5 in reserve, enough to flip an 8.4-point loss. Olave Oyl (Joe) is now the league's last unbeaten team at 3-0, and seven teams sit at 1-2.</p>
+    <p class="lede">ESPN's projections cost three teams a win this week. Cara, Karl, and mariss all went with the numbers, and all three watched their benches outscore the players they started. Karl took the cruelest loss, falling to Melinda by one point while Jacoby Brissett dropped 25.6 on his bench. Mike's miss stung in a different way. The Bears waited too long to name Case Keenum their starter, so Mike played it safe and left him out of the OP slot. Keenum scored 24.5, enough to flip an 8.4-point loss to Joe. That leaves Olave Oyl (Joe) alone at 3-0 and seven teams stuck at 1-2.</p>
 
     <div class="section-label">Week 3 Results</div>
     <div class="matchup-grid" id="recap-matchup-grid"></div>
 
     <div class="section-label">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 4</p>
-    <p class="lede" style="font-size:0.95rem;">Mike's quarterback emergency has eased for now. Daniels is out and Dart is on IR, but Mariota and Keenum combined for 44.9 points in their first week on his roster. The new trouble is Imran's backfield. De'Von Achane had 1.7 points and has since gone to IR, Travis Etienne Jr. is out, and James Conner and Jonathon Brooks were already on IR. That leaves Jadarian Price, Tyler Allgeier, Brian Robinson Jr., and Emanuel Wilson. Ben loses Baker Mayfield and Puka Nacua, both out, and still has Justin Herbert and Michael Penix Jr. at quarterback. Josh Allen is questionable after a two-interception game, and Pete picked up Cooper Rush this week.</p>
+    <p class="lede" style="font-size:0.95rem;">Mike's quarterback crisis is over for now. Jayden Daniels is out and Jaxson Dart is on IR, but pickups Marcus Mariota and Case Keenum combined for 44.9 points in their first week with him. Imran's backfield is the new emergency. De'Von Achane went to IR after a 1.7-point day, Travis Etienne Jr. is out, and James Conner and Jonathon Brooks were already on IR. That leaves Imran with Jadarian Price, Tyler Allgeier, Brian Robinson Jr., and Emanuel Wilson. Ben loses Baker Mayfield and Puka Nacua but can still start Justin Herbert and Michael Penix Jr. at quarterback. Josh Allen is questionable after a two-interception game, and Pete picked up Cooper Rush last week.</p>
     <div class="top-scorers-list" id="injury-list"></div>
 
     <div class="section-label">Stats Roundup</div>
@@ -593,17 +593,17 @@ function crestImg(teamId) {
 // trade touches any of these pairs.
 const MATCHUP_RESULTS = [
   { a: 12, aScore: 140.76, b: 10, bScore: 139.80, tag: 'Game of the Week',
-    text: `Buffalo Abusement Park (Melinda) beat The Aristocrats (Karl) 140.8-139.8, the closest game of the season. Brock Purdy threw 4 touchdowns for 31.3, and Joe Burrow and Ja'Marr Chase added 42.9 between them. James Cook III, from Melinda's favorite team, ran for 154 yards and a score. Bijan Robinson nearly erased all of it with 194 rushing yards and 2 touchdowns (34.3). Karl started Dak Prescott (18.9) over Jacoby Brissett (25.6), the call the projections backed, and lost by less than the gap between them. Karl had swept the 2025 series.` },
+    text: `Buffalo Abusement Park (Melinda) edged The Aristocrats (Karl) 140.8-139.8 in the closest game of the season. Brock Purdy threw 4 touchdowns for 31.3, and Joe Burrow and Ja'Marr Chase piled on 42.9 more. James Cook III gave Melinda a reason to love her Bills even more with 154 rushing yards and a score. Bijan Robinson nearly stole it back for Karl with 194 yards and 2 touchdowns (34.3). Karl started Dak Prescott (18.9) over Jacoby Brissett (25.6) because the projections told him to, and that one call cost him the game. It's Melinda's first win over Karl, who swept her in 2025.` },
   { a: 11, aScore: 126.14, b: 1, bScore: 72.06, tag: 'Blowout of the Week',
-    text: `Rice Rice Baby (Kris) beat Three Lions Football Club (Imran) 126.1-72.1. Imran's 72.1 is the league's lowest score this season, one week after he put up 150.8. De'Von Achane, Jadarian Price, and Kyle Pitts Sr. combined for 3.4 points. Tyler Shough threw 4 touchdowns for Kris (23.8), and Lamar Jackson scored 20.4 in his first game against the team once named for him.` },
+    text: `Imran crashed from 150.8 in Week 2 to 72.1 in Week 3, the league's lowest score this season, and Rice Rice Baby (Kris) ran away with it 126.1-72.1. De'Von Achane, Jadarian Price, and Kyle Pitts Sr. combined for 3.4 points, and Achane landed on IR afterward. Tyler Shough threw 4 touchdowns for Kris (23.8). Lamar Jackson added 20.4 in his first game against the team once named after him.` },
   { a: 9, aScore: 137.64, b: 5, bScore: 108.96, tag: 'Stud of the Week',
-    text: `Jahmyr Gibbs scored 3 touchdowns and 37.9 points, the week's best individual game, as McConkey Kong Country 2 (Ronjan) beat Team Kantastrophe (Cara) 137.6-109.0. Sam Darnold was listed as out a week ago and came back with 379 yards and 4 touchdowns (27.7). Cara played the projections and got 3.8 from Drake Maye, who threw 2 interceptions in his second straight rough week. Kirk Cousins scored 22.2 on her bench. Cara won both 2025 meetings.` },
+    text: `Jahmyr Gibbs scored 3 touchdowns and 37.9 points, the best game by any player this week, as McConkey Kong Country 2 (Ronjan) beat Team Kantastrophe (Cara) 137.6-109.0. Sam Darnold shook off last week's injury with 379 yards and 4 touchdowns (27.7). Cara followed the projections to the letter and started Drake Maye, who threw 2 interceptions and scored 3.8, his second dud in a row. Kirk Cousins sat on her bench with 22.2. Cara had swept Ronjan in 2025.` },
   { a: 3, aScore: 153.56, b: 4, bScore: 108.22, tag: 'Upset Alert',
-    text: `Beard Al (Pete) got his first win of the season with the week's high score, 153.6-108.2 over Conquering Heroes (Ben). Pete entered the week ranked #12 and Ben #3. Josh Allen had his quietest game of the year (17.0), and Pete didn't need more. Drake London caught 9 passes for 194 yards. Michael Wilson spent all of 2025 on Ben's roster and had 11 catches and a touchdown against him. The Vikings defense added 19.0. Ben's two quarterbacks, Justin Herbert and Baker Mayfield, combined for 24.0.` },
+    text: `Beard Al (Pete) finally won a game, and he did it with the week's top score, 153.6-108.2 over Conquering Heroes (Ben). The #12 team took down the #3 team on a day Josh Allen managed just 17.0. Drake London hauled in 9 catches for 194 yards. Michael Wilson, who played for Ben all of 2025, burned his old team with 11 catches and a touchdown. The Vikings defense chipped in 19.0. Justin Herbert and Baker Mayfield gave Ben a combined 24.0.` },
   { a: 8, aScore: 131.68, b: 7, bScore: 123.32, tag: null,
-    text: `Olave Oyl (Joe) beat Terrible Towels (Mike) 131.7-123.3. Jaxon Smith-Njigba scored 2 more touchdowns (30.4), and Derrick Henry ran for 2 of his own (21.4). Mike put J.K. Dobbins (5.8) in his OP slot while Case Keenum, projected higher, scored 24.5 on the bench. Christian Watson, a Packer, scored 19.1 for Mike against Joe, a Packers fan. Joe is 3-0 all-time against Mike.` },
+    text: `Olave Oyl (Joe) held off Terrible Towels (Mike) 131.7-123.3 to stay perfect. Jaxon Smith-Njigba scored 2 more touchdowns (30.4), and Derrick Henry ran in 2 of his own (21.4). Mike had the win sitting on his bench. The Bears didn't name Case Keenum their starter until it was too late, so Mike played it safe with J.K. Dobbins (5.8) in the OP slot. Keenum scored 24.5. Christian Watson made Packers fan Joe sweat with 19.1 for Mike. Joe is now 3-0 all-time against Mike.` },
   { a: 6, aScore: 138.32, b: 2, bScore: 121.96, tag: null,
-    text: `Mahomes is where the heart is (Lisette) beat Mednis Madness (mariss) 138.3-122.0. George Kittle caught 2 touchdowns (23.2), and Garrett Wilson added 21.7. The team's namesake, Patrick Mahomes, scored 15.9 while Bo Nix put up 24.1 on her bench. Geno Smith kept mariss close with 321 yards and 3 touchdowns (26.0) in Kyler Murray's return. Isaiah Likely's 2.3 at tight end hurt, with Kenyon Sadiq's 20.0 in reserve. Deebo Samuel Sr., a Mednis Madness receiver last year, scored a touchdown against his old team.` },
+    text: `Mahomes is where the heart is (Lisette) beat Mednis Madness (mariss) 138.3-122.0 behind George Kittle's 2 touchdowns (23.2) and Garrett Wilson's 21.7. Patrick Mahomes, the team's namesake, scored 15.9 while Bo Nix put up 24.1 on Lisette's bench. Geno Smith kept mariss in it with 321 yards and 3 touchdowns (26.0) as Kyler Murray returned. mariss started Isaiah Likely (2.3) over Kenyon Sadiq (20.0), the projections' pick. Flip those two and mariss wins. Deebo Samuel Sr., a Mednis Madness receiver last season, scored a touchdown against his old team.` },
 ];
 
 // ---------- Leaguewide injury audit: every rostered player whose
@@ -697,33 +697,33 @@ const WEEK4_MATCHUPS = [
   { a: 6, aTag: '#2 &middot; 2-1', b: 10, bTag: '#6 &middot; 1-2',
     games: [{ week: 4, aScore: 140.24, bScore: 152.84 }],
     swaps: [ { player: 'Travis Kelce (TE)', from: 6, to: 10, round: 9 } ],
-    note: `Only Joe has scored more than Karl's 404.2 points. Karl is 1-2 anyway, with his two losses coming by a combined 32.2. Travis Kelce was on Lisette's 2025 roster and now plays for Karl. Karl won the only 2025 meeting, 152.8-140.2.` },
+    note: `Karl has scored 404.2 points, second only to Joe, and has a 1-2 record to show for it. His two losses came by a combined 32.2. Travis Kelce left Lisette's roster in the offseason and now catches passes for Karl. Karl won their only 2025 meeting 152.8-140.2.` },
   { a: 7, aTag: '#8 &middot; 1-2', b: 2, bTag: '#11 &middot; 1-2',
     games: [{ week: 4, aScore: 89.28, bScore: 140.98 }],
     swaps: [],
-    note: `mariss won the only 2025 meeting 141.0-89.3. Justin Jefferson is questionable for Mike, and Caleb Williams remains out for mariss.` },
+    note: `mariss crushed Mike 141.0-89.3 in their only 2025 meeting. Mike could be without Justin Jefferson, who's questionable. Caleb Williams remains out for mariss.` },
   { a: 9, aTag: '#5 &middot; 2-1', b: 12, bTag: '#3 &middot; 2-1',
     games: [{ week: 4, aScore: 140.72, bScore: 132.86 }],
     swaps: [ { player: 'Khalil Shakir (WR)', from: 9, to: 12, round: 9 } ],
-    note: `Ronjan, a Bengals fan, faces Joe Burrow and Ja'Marr Chase, who scored 42.9 for Melinda last week. Khalil Shakir was on Ronjan's 2025 roster and now plays for Melinda. Ronjan won the 2025 meeting 140.7-132.9.` },
+    note: `Bengals fan Ronjan has to face Joe Burrow and Ja'Marr Chase, who combined for 42.9 points for Melinda last week. Khalil Shakir switched sides in the offseason, from Ronjan's roster to Melinda's. Ronjan won the 2025 meeting 140.7-132.9.` },
   { a: 11, aTag: '#4 &middot; 2-1', b: 8, bTag: '#1 &middot; 3-0',
     games: [{ week: 4, aScore: 99.40, bScore: 139.92 }],
     swaps: [ { player: 'Rashee Rice (WR)', from: 8, to: 11, round: 3 },
              { player: 'Josh Downs (WR)', from: 11, to: 8, round: 12 },
              { player: 'Woody Marks (RB)', from: 8, to: 11, round: 15 } ],
-    note: `Joe won the 2025 meeting 139.9-99.4. Rashee Rice and Woody Marks left Joe's 2025 roster for Kris, and Josh Downs went the other way.` },
+    note: `Kris gets a shot at the league's only unbeaten team. Joe won their 2025 meeting 139.9-99.4. Rashee Rice and Woody Marks left Joe's roster for Kris in the offseason, and Josh Downs went the other way.` },
   { a: 4, aTag: '#9 &middot; 1-2', b: 5, bTag: '#10 &middot; 1-2',
     games: [{ week: 4, aScore: 160.82, bScore: 152.02 }],
     swaps: [ { player: 'Chase Brown (RB)', from: 5, to: 4, round: 3 },
              { player: 'J.J. McCarthy (QB)', from: 4, to: 5, round: 14 } ],
-    note: `Ben won the 2025 meeting 160.8-152.0. Chase Brown went from Cara's 2025 roster to Ben's, and J.J. McCarthy went from Ben's to Cara's. Ben plays without Baker Mayfield and Puka Nacua.` },
+    note: `One of these 1-2 teams drops to 1-3. Ben won the 2025 meeting 160.8-152.0. Chase Brown moved from Cara's roster to Ben's, and J.J. McCarthy made the opposite trip. Ben plays without Baker Mayfield and Puka Nacua.` },
   { a: 3, aTag: '#7 &middot; 1-2', b: 1, bTag: '#12 &middot; 1-2',
     games: [{ week: 4, aScore: 139.04, bScore: 111.30 }, { week: 16, label: 'Semifinal', aScore: 101.60, bScore: 115.44 }],
     swaps: [ { player: 'Drake London (WR)', from: 1, to: 3, round: 2 },
              { player: "De'Von Achane (RB)", from: 3, to: 1, round: 2 },
              { player: 'Kyren Williams (RB)', from: 1, to: 3, round: 4 },
              { player: 'David Montgomery (RB)', from: 1, to: 3, round: 6 } ],
-    note: `This is a rematch of the 2025 semifinal, which Imran won 115.4-101.6 on his way to the title game. Drake London, Kyren Williams, and David Montgomery were all on Imran's 2025 roster and scored 48.5 for Pete last week. Achane went the other direction and is now on IR. Josh Allen is questionable.` },
+    note: `It's a rematch of last year's semifinal, which Imran won 115.4-101.6 on his way to the title game. Pete now starts three of Imran's 2025 players: Drake London, Kyren Williams, and David Montgomery combined for 48.5 points last week. De'Von Achane made the opposite move and now sits on IR. Josh Allen is questionable.` },
 ];
 
 function renderMatchupResult(m) {
