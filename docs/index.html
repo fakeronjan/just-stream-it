@@ -33,8 +33,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="favicon-180.png">
-<title>Just Stream It - Weekly News: Week 2 Recap</title>
-<meta name="description" content="The Nielson News, Week 2 Recap: ten of twelve teams are 1-1, seven quarterbacks leaguewide carry a real injury tag, the current playoff picture, points leaders, and every Week 3 matchup.">
+<title>Just Stream It - Weekly News: Week 3 Recap</title>
+<meta name="description" content="The Nielson News, Week 3 Recap: four losing teams had a winning lineup on the bench, Olave Oyl is the last unbeaten team, the injury report, standings, points leaders, and every Week 4 matchup.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
@@ -415,7 +415,7 @@
   <header class="masthead">
     <div class="masthead-meta">
       <span>Est. 2025</span>
-      <span>Week 3 Edition</span>
+      <span>Week 4 Edition</span>
       <span>Price: One Waiver Claim</span>
     </div>
     <div class="nameplate-row">
@@ -429,13 +429,43 @@
   </header>
 
   <div class="edition-tabs" id="edition-tabs">
-    <button class="edition-tab active" data-panel="panel-current" type="button">Week 2 Recap</button>
+    <button class="edition-tab active" data-panel="panel-current" type="button">Week 3 Recap</button>
+    <button class="edition-tab" data-panel="panel-week2-recap" type="button">Week 2 Recap</button>
     <button class="edition-tab" data-panel="panel-week1-recap" type="button">Week 1 Recap</button>
     <button class="edition-tab" data-panel="panel-week1-preview" type="button">Week 1 Preview</button>
   </div>
 
-  <!-- ================= CURRENT EDITION: Week 2 Recap / Week 3 Preview ================= -->
+  <!-- ================= CURRENT EDITION: Week 3 Recap / Week 4 Preview ================= -->
   <section class="edition" id="panel-current">
+    <p class="kicker">Week 3 Recap</p>
+    <h2 class="edition-head">Four Losers Had a Winning Lineup on the Bench</h2>
+    <p class="dateline">2026 Season &middot; Week 3 Complete &middot; Week 4 Preview Below</p>
+    <p class="lede">Four of this week's six losing teams had enough points on their bench to win. Cara, Karl, and mariss went with ESPN's projections at the spots that cost them, and the backups beat those projections anyway. Karl's loss stung most. He fell to Melinda by 1.0 point with Jacoby Brissett's 25.6 sitting on his bench. Mike's case is different. He added Marcus Mariota and Case Keenum this week to cover for Jayden Daniels and Jaxson Dart, then started only Mariota. Keenum scored 24.5 in reserve, enough to flip an 8.4-point loss. Olave Oyl (Joe) is now the league's last unbeaten team at 3-0, and seven teams sit at 1-2.</p>
+
+    <div class="section-label">Week 3 Results</div>
+    <div class="matchup-grid" id="recap-matchup-grid"></div>
+
+    <div class="section-label">The Injury Report</div>
+    <p class="section-sublabel">Who's hurt heading into Week 4</p>
+    <p class="lede" style="font-size:0.95rem;">Mike's quarterback emergency has eased for now. Daniels is out and Dart is on IR, but Mariota and Keenum combined for 44.9 points in their first week on his roster. The new trouble is Imran's backfield. De'Von Achane had 1.7 points and has since gone to IR, Travis Etienne Jr. is out, and James Conner and Jonathon Brooks were already on IR. That leaves Jadarian Price, Tyler Allgeier, Brian Robinson Jr., and Emanuel Wilson. Ben loses Baker Mayfield and Puka Nacua, both out, and still has Justin Herbert and Michael Penix Jr. at quarterback. Josh Allen is questionable after a two-interception game, and Pete picked up Cooper Rush this week.</p>
+    <div class="top-scorers-list" id="injury-list"></div>
+
+    <div class="section-label">Stats Roundup</div>
+    <p class="section-sublabel">Current playoff picture and points leaders through three weeks</p>
+    <p class="stat-subhead">Current Playoff Picture</p>
+    <div class="standings-list" id="standings-list"></div>
+    <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
+    <p class="stat-subhead">Top Scorers</p>
+    <div class="top-scorers-list" id="top-scorers-list"></div>
+    <p class="standings-caption">Total points through three weeks</p>
+
+    <div class="section-label">Week 4 Matchups</div>
+    <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
+    <div class="matchup-grid" id="week4-matchup-grid"></div>
+  </section>
+
+  <!-- ================= FROZEN EDITION: Week 2 Recap / Week 3 Preview (published 9/22/2026) ================= -->
+  <section class="edition" id="panel-week2-recap" hidden>
     <p class="kicker">Week 2 Recap</p>
     <h2 class="edition-head">Ten Teams Are Tied at 1-1</h2>
     <p class="dateline">2026 Season &middot; Week 2 Complete &middot; Week 3 Preview Below</p>
@@ -443,24 +473,24 @@
 
     <div class="section-label">The Injury Report</div>
     <p class="section-sublabel">Every quarterback with a real designation</p>
-    <div class="top-scorers-list" id="qb-injury-list"></div>
+    <div class="top-scorers-list" id="wk2r-qb-injury-list"></div>
     <p class="lede" style="font-size:0.95rem; margin-top:16px;">Pete (Dillon Gabriel), Ben (Tua Tagovailoa), and Ronjan (Sam Darnold) are next-man-up situations: all three already have two other NFL-caliber arms rostered and starting in that player's place. mariss is a real downgrade, not a crisis: Kyler Murray hasn't played since leaving Week 1 early, and Caleb Williams is now doubtful too, but Geno Smith and Jameis Winston are both healthy, and Smith already filled in for 15.6 points in Week 2. Mike is the one actual emergency: Jayden Daniels is doubtful, Jaxson Dart is questionable, and the only other quarterback on his roster, rookie Shedeur Sanders, hasn't played a single snap all season. If both Daniels and Dart sit in Week 3, Mike may not have a second warm body to put on the field.</p>
 
     <p class="section-sublabel" style="margin-top:24px;">Checked against ESPN's own pregame projections</p>
-    <div class="matchup-grid" id="recap-matchup-grid"></div>
+    <div class="matchup-grid" id="wk2r-recap-matchup-grid"></div>
 
     <div class="section-label">Stats Roundup</div>
     <p class="section-sublabel">Current playoff picture and points leaders through two weeks</p>
     <p class="stat-subhead">Current Playoff Picture</p>
-    <div class="standings-list" id="standings-list"></div>
+    <div class="standings-list" id="wk2r-standings-list"></div>
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
     <p class="stat-subhead">Top Scorers</p>
-    <div class="top-scorers-list" id="top-scorers-list"></div>
+    <div class="top-scorers-list" id="wk2r-top-scorers-list"></div>
     <p class="standings-caption">Total points through two weeks</p>
 
     <div class="section-label">Week 3 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
-    <div class="matchup-grid" id="week3-matchup-grid"></div>
+    <div class="matchup-grid" id="wk2r-week3-matchup-grid"></div>
   </section>
 
   <!-- ================= FROZEN EDITION: Week 1 Recap / Week 2 Preview (published 9/15/2026) ================= -->
@@ -494,7 +524,8 @@
 
   </section>
 
-  <footer class="masthead-footer" id="footer-current">2026 Season, Week 2 Recap / Week 3 Preview &middot; Compiled from live ESPN box score, projection, and injury data</footer>
+  <footer class="masthead-footer" id="footer-current">2026 Season, Week 3 Recap / Week 4 Preview &middot; Compiled from live ESPN box score, projection, and injury data</footer>
+  <footer class="masthead-footer" id="footer-week2-recap" hidden>2026 Season, Week 2 Recap / Week 3 Preview &middot; Compiled from live ESPN box score, projection, and injury data</footer>
   <footer class="masthead-footer" id="footer-week1-recap" hidden>2026 Season, Week 1 Recap / Week 2 Preview &middot; Compiled from live ESPN box score, projection, and injury data</footer>
   <footer class="masthead-footer" id="footer-week1-preview" hidden>2026 Season, Week 1 Preview &middot; Compiled from live ESPN draft and schedule data</footer>
 
@@ -520,7 +551,7 @@ function setupEditionTabs() {
 }
 
 /* ============================================================
-   CURRENT EDITION: Week 2 Recap / Week 3 Preview
+   CURRENT EDITION: Week 3 Recap / Week 4 Preview
    ============================================================ */
 const LOGO = {
   1: 'logos/2026/1.jpg', 2: 'logos/2026/2.svg', 3: 'logos/2026/3.jpg', 4: 'logos/2026/4.jpg',
@@ -550,45 +581,71 @@ function crestImg(teamId) {
   return `<img src="${LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
 }
 
-// ---------- All 6 Week 2 results, same treatment as Week 1 Recap: every
-// number checked against docs/data/2026/weekly_boxscores.json (actual +
-// ESPN's own pregame projected_points) and rosters.json's injury_status,
-// not estimated. Swap/fandom detail folded in as one clause per game,
-// never the headline - see [[feedback-just-stream-it-weekly-recap-process]].
-// No new real trades touch any of these 6 pairs (checked all 4 real 2025
-// trades - the one relevant pair, Kris/Ronjan, already played out Week 1).
+// ---------- All 6 Week 3 results. Every number checked against
+// docs/data/2026/weekly_boxscores.json (actual + ESPN's pregame
+// projected_points). "Winning lineup on the bench" = the loser's best
+// possible lineup from actual points (QB, 2 RB, 3 WR, TE, FLEX, OP,
+// D/ST, K; IR excluded) beats the opponent's actual score. Tags come
+// from build_weekly_recap.py's features. The engine also flagged
+// Melinda (#9) over Karl (#2) and Ronjan (#10) over Cara (#4) as
+// upsets, but entering Week 3 ten teams were 1-1 and ranked only by
+// points, so only Pete (0-2, #12) over Ben (#3) is tagged. No 2025
+// trade touches any of these pairs.
 const MATCHUP_RESULTS = [
-  { a: 1, aScore: 150.78, b: 7, bScore: 85.84, tag: 'Blowout of the Week',
-    text: `Three Lions Football Club (Imran) beat Terrible Towels (Mike) 150.8-85.8, the week's biggest margin. The seeds didn't see it coming: Imran entered the week ranked #12, Mike #2. Jared Goff threw for 327 yards and 4 touchdowns (29.8), and Amon-Ra St. Brown added 30.7 of his own. J.K. Dobbins, sent to Mike in the same offseason deal that also moved RJ Harvey and Shedeur Sanders, managed only 3.6 against his old team. Jaxson Dart was limited to 20 passing yards - Mike's QB room is in real trouble heading into Week 3 (more above).` },
-  { a: 9, aScore: 112.28, b: 3, bScore: 106.94, tag: 'Game of the Week',
-    text: `The week's tightest game came down to 5.3 points: McConkey Kong Country 2 (Ronjan) held off Beard Al (Pete) 112.3-106.9. Trevor Lawrence was quiet (6.2 on a 15.9 projection) and Saquon Barkley was worse (2.5 on 16.4), but a streamed Cam Ward covered the gap with 20.0 out of the OP slot. Tony Pollard, on Pete's roster all of 2025, chipped in 7.0 against his old team. Pete's night belonged to Josh Allen: 40.8 points, the week's best individual score, and a two-week total of 76.5 - the league's best at any position. Beard Al is 0-2 anyway.` },
-  { a: 5, aScore: 154.70, b: 10, bScore: 123.46, tag: 'Upset Alert',
-    text: `Team Kantastrophe (Cara) beat The Aristocrats (Karl) 154.7-123.5 as the #11 seed over the #4. CeeDee Lamb (31.3) and Jonathan Taylor (27.2) carried her, ironic since Lamb plays for Dallas and Cara's an Eagles fan, exactly the kind of division-rival production that's supposed to sting. Matthew Stafford added 27.0; Drake Maye was the bust (8.0 on an 18.2 projection). Karl's own Cowboys quarterback, Dak Prescott, put up 29.8 anyway and still lost. Bijan Robinson and DK Metcalf, swapped for each other in the offseason, were both quiet against their old rosters (9.6 and 4.7).` },
-  { a: 8, aScore: 134.04, b: 2, bScore: 81.00, tag: null,
-    text: `Olave Oyl (Joe) beat Mednis Madness (mariss) 134.0-81.0, the week's second-largest margin. Jaxon Smith-Njigba was the story for Joe: 155 yards and 3 touchdowns for 38.0, more than double his projection. Chris Olave added 18.6, even as Jalen Hurts threw 2 picks and DJ Moore was shut out. Caleb Williams - the QB mariss took from Joe in a round-one draft-day swap - faced his old team for the first time and managed only 7.7, part of a rough two weeks at quarterback for mariss (more above).` },
-  { a: 6, aScore: 136.60, b: 12, bScore: 115.06, tag: null,
-    text: `Mahomes is where the heart is (Lisette) beat Buffalo Abusement Park (Melinda) 136.6-115.1. Patrick Mahomes comfortably beat his own projection at 29.0, while Bo Nix (14.1 on 18.6) and Rhamondre Stevenson (3.1 on 11.6) were both quiet. Melinda got a big night from Brock Purdy (28.5) and Ja'Marr Chase (23.0), and her own favorite team's back, Buffalo's James Cook III, ran for 135 yards - not enough. Dallas Goedert was the low point, under a point on an 8.6 projection.` },
-  { a: 4, aScore: 126.66, b: 11, bScore: 113.32, tag: null,
-    text: `Conquering Heroes (Ben) beat Rice Rice Baby (Kris) 126.7-113.3, the week's second-tightest game. Davante Adams was the story: 195 yards and 2 touchdowns for 35.5, nearly triple his 13.1 projection, covering for a rough day from Justin Herbert (7.9 on 19.5, 2 INTs), who faced Kris's team for the first time since the offseason swap that sent him to Ben. DeVonta Smith answered for Kris with 22.7, but Lamar Jackson (14.8 on 21.7) couldn't keep pace.` },
+  { a: 12, aScore: 140.76, b: 10, bScore: 139.80, tag: 'Game of the Week',
+    text: `Buffalo Abusement Park (Melinda) beat The Aristocrats (Karl) 140.8-139.8, the closest game of the season. Brock Purdy threw 4 touchdowns for 31.3, and Joe Burrow and Ja'Marr Chase added 42.9 between them. James Cook III, from Melinda's favorite team, ran for 154 yards and a score. Bijan Robinson nearly erased all of it with 194 rushing yards and 2 touchdowns (34.3). Karl started Dak Prescott (18.9) over Jacoby Brissett (25.6), the call the projections backed, and lost by less than the gap between them. Karl had swept the 2025 series.` },
+  { a: 11, aScore: 126.14, b: 1, bScore: 72.06, tag: 'Blowout of the Week',
+    text: `Rice Rice Baby (Kris) beat Three Lions Football Club (Imran) 126.1-72.1. Imran's 72.1 is the league's lowest score this season, one week after he put up 150.8. De'Von Achane, Jadarian Price, and Kyle Pitts Sr. combined for 3.4 points. Tyler Shough threw 4 touchdowns for Kris (23.8), and Lamar Jackson scored 20.4 in his first game against the team once named for him.` },
+  { a: 9, aScore: 137.64, b: 5, bScore: 108.96, tag: 'Stud of the Week',
+    text: `Jahmyr Gibbs scored 3 touchdowns and 37.9 points, the week's best individual game, as McConkey Kong Country 2 (Ronjan) beat Team Kantastrophe (Cara) 137.6-109.0. Sam Darnold was listed as out a week ago and came back with 379 yards and 4 touchdowns (27.7). Cara played the projections and got 3.8 from Drake Maye, who threw 2 interceptions in his second straight rough week. Kirk Cousins scored 22.2 on her bench. Cara won both 2025 meetings.` },
+  { a: 3, aScore: 153.56, b: 4, bScore: 108.22, tag: 'Upset Alert',
+    text: `Beard Al (Pete) got his first win of the season with the week's high score, 153.6-108.2 over Conquering Heroes (Ben). Pete entered the week ranked #12 and Ben #3. Josh Allen had his quietest game of the year (17.0), and Pete didn't need more. Drake London caught 9 passes for 194 yards. Michael Wilson spent all of 2025 on Ben's roster and had 11 catches and a touchdown against him. The Vikings defense added 19.0. Ben's two quarterbacks, Justin Herbert and Baker Mayfield, combined for 24.0.` },
+  { a: 8, aScore: 131.68, b: 7, bScore: 123.32, tag: null,
+    text: `Olave Oyl (Joe) beat Terrible Towels (Mike) 131.7-123.3. Jaxon Smith-Njigba scored 2 more touchdowns (30.4), and Derrick Henry ran for 2 of his own (21.4). Mike put J.K. Dobbins (5.8) in his OP slot while Case Keenum, projected higher, scored 24.5 on the bench. Christian Watson, a Packer, scored 19.1 for Mike against Joe, a Packers fan. Joe is 3-0 all-time against Mike.` },
+  { a: 6, aScore: 138.32, b: 2, bScore: 121.96, tag: null,
+    text: `Mahomes is where the heart is (Lisette) beat Mednis Madness (mariss) 138.3-122.0. George Kittle caught 2 touchdowns (23.2), and Garrett Wilson added 21.7. The team's namesake, Patrick Mahomes, scored 15.9 while Bo Nix put up 24.1 on her bench. Geno Smith kept mariss close with 321 yards and 3 touchdowns (26.0) in Kyler Murray's return. Isaiah Likely's 2.3 at tight end hurt, with Kenyon Sadiq's 20.0 in reserve. Deebo Samuel Sr., a Mednis Madness receiver last year, scored a touchdown against his old team.` },
 ];
 
-// ---------- Comprehensive QB injury audit, leaguewide - not just the two
-// teams it turns out actually matter. Every non-ACTIVE QB in
-// docs/data/2026/rosters.json's injury_status, any team, cross-checked
-// one by one. Kyler Murray's own tag currently reads ACTIVE (he's
-// technically eligible again) but he played 9 offensive snaps in Week 1
-// (18 pass yds, 9 rush yds) and sat all of Week 2 on IR - a real,
-// ongoing injury story the raw tag alone doesn't show.
-const QB_INJURIES = [
-  { name: 'Caleb Williams', team: 2, status: 'Doubtful' },
-  { name: 'Kyler Murray', team: 2, status: 'Hurt Wk 1, missed Wk 2' },
-  { name: 'Jayden Daniels', team: 7, status: 'Doubtful' },
-  { name: 'Jaxson Dart', team: 7, status: 'Questionable' },
+// ---------- Leaguewide injury audit: every rostered player whose
+// injury_status in docs/data/2026/rosters.json (pulled 9/29/2026) is
+// anything other than ACTIVE, any team, any position.
+const INJURIES = [
+  { name: "De'Von Achane", team: 1, status: 'Injured Reserve' },
+  { name: 'Travis Etienne Jr.', team: 1, status: 'Out' },
+  { name: 'James Conner', team: 1, status: 'Injured Reserve' },
+  { name: 'Jonathon Brooks', team: 1, status: 'Injured Reserve' },
+  { name: 'Tank Dell', team: 1, status: 'Injured Reserve' },
+  { name: "Ja'Kobi Lane", team: 1, status: 'Injured Reserve' },
+  { name: 'Jayden Daniels', team: 7, status: 'Out' },
+  { name: 'Jaxson Dart', team: 7, status: 'Injured Reserve' },
+  { name: 'Nico Collins', team: 7, status: 'Out' },
+  { name: 'Justin Jefferson', team: 7, status: 'Questionable' },
+  { name: 'Jalen Coker', team: 7, status: 'Questionable' },
+  { name: 'Puka Nacua', team: 4, status: 'Out' },
+  { name: 'Baker Mayfield', team: 4, status: 'Out' },
+  { name: 'Zach Charbonnet', team: 4, status: 'Out' },
+  { name: 'Jordyn Tyson', team: 4, status: 'Injured Reserve' },
+  { name: 'Jonah Coleman', team: 4, status: 'Injured Reserve' },
+  { name: 'Josh Allen', team: 3, status: 'Questionable' },
+  { name: 'Terrance Ferguson', team: 3, status: 'Doubtful' },
   { name: 'Dillon Gabriel', team: 3, status: 'Injured Reserve' },
-  { name: 'Tua Tagovailoa', team: 4, status: 'Out' },
-  { name: 'Sam Darnold', team: 9, status: 'Out' },
+  { name: 'Alec Pierce', team: 3, status: 'Injured Reserve' },
+  { name: "De'Zhaun Stribling", team: 3, status: 'Injured Reserve' },
+  { name: 'Caleb Williams', team: 2, status: 'Out' },
+  { name: 'Rico Dowdle', team: 5, status: 'Out' },
+  { name: 'Dylan Sampson', team: 5, status: 'Injured Reserve' },
+  { name: 'Breece Hall', team: 8, status: 'Questionable' },
+  { name: 'Jayden Reed', team: 8, status: 'Out' },
+  { name: 'A.J. Brown', team: 9, status: 'Injured Reserve' },
+  { name: 'Jordan Mason', team: 9, status: 'Injured Reserve' },
+  { name: 'Isiah Pacheco', team: 9, status: 'Injured Reserve' },
+  { name: 'Josh Jacobs', team: 10, status: 'Day-to-Day' },
+  { name: 'Mike Evans', team: 10, status: 'Questionable' },
+  { name: 'Adonai Mitchell', team: 10, status: 'Out' },
+  { name: 'Caleb Douglas', team: 10, status: 'Out' },
+  { name: 'Dallas Goedert', team: 12, status: 'Out' },
 ];
-function renderQbInjuryRow(p) {
+function renderInjuryRow(p) {
   const t = TEAMS[p.team];
   return `
     <div class="top-scorer-row">
@@ -599,81 +656,74 @@ function renderQbInjuryRow(p) {
 }
 
 // ---------- Current playoff picture, straight from
-// docs/data/2026/weekly_recap.json's playoff_picture (build_weekly_recap.py) -
-// rank/record/PF/back all engine-computed off real Week 2 results, not
-// hand-estimated. "back" is only set when a team is tied in wins with the
-// team directly above it (a tiebreaker margin), per the engine's own
-// build_playoff_picture() - left null everywhere else, matching the
-// source data exactly rather than inventing a value.
+// docs/data/2026/weekly_recap.json's playoff_picture after Week 3.
 const STANDINGS = [
-  { team: 8,  wins: 2, losses: 0, pf: 335.7, back: null },
-  { team: 10, wins: 1, losses: 1, pf: 264.4, back: null },
-  { team: 4,  wins: 1, losses: 1, pf: 254.3, back: 10.1 },
-  { team: 5,  wins: 1, losses: 1, pf: 252.7, back: 1.6 },
-  { team: 11, wins: 1, losses: 1, pf: 248.2, back: 4.5 },
-  { team: 6,  wins: 1, losses: 1, pf: 243.9, back: 4.3 },
-  { team: 1,  wins: 1, losses: 1, pf: 243.4, back: 0.5 },
-  { team: 7,  wins: 1, losses: 1, pf: 242.2, back: 1.2 },
-  { team: 12, wins: 1, losses: 1, pf: 238.5, back: 3.7 },
-  { team: 9,  wins: 1, losses: 1, pf: 234.2, back: 4.3 },
-  { team: 2,  wins: 1, losses: 1, pf: 228.1, back: 6.1 },
-  { team: 3,  wins: 0, losses: 2, pf: 240.4, back: null },
+  { team: 8,  wins: 3, losses: 0, pf: 467.3, back: null },
+  { team: 6,  wins: 2, losses: 1, pf: 382.2, back: null },
+  { team: 12, wins: 2, losses: 1, pf: 379.3, back: 2.9 },
+  { team: 11, wins: 2, losses: 1, pf: 374.4, back: 4.9 },
+  { team: 9,  wins: 2, losses: 1, pf: 371.8, back: 2.6 },
+  { team: 10, wins: 1, losses: 2, pf: 404.2, back: null },
+  { team: 3,  wins: 1, losses: 2, pf: 394.0, back: 10.2 },
+  { team: 7,  wins: 1, losses: 2, pf: 365.5, back: 28.5 },
+  { team: 4,  wins: 1, losses: 2, pf: 362.5, back: 3.0 },
+  { team: 5,  wins: 1, losses: 2, pf: 361.7, back: 0.8 },
+  { team: 2,  wins: 1, losses: 2, pf: 350.0, back: 11.7 },
+  { team: 1,  wins: 1, losses: 2, pf: 315.4, back: 34.6 },
 ];
 
-// ---------- Top Scorers: total points through 2 weeks, any position -
-// total, not per-game rate, deliberately (see [[small-sample-leaderboard-metric]]:
-// a 2-week rate stat surfaces flukes). Summed directly from started
-// players in docs/data/2026/weekly_boxscores.json weeks 1-2.
+// ---------- Top Scorers: total points through 3 weeks, started players
+// only, summed from docs/data/2026/weekly_boxscores.json weeks 1-3.
 const TOP_SCORERS = [
-  { name: 'Josh Allen', pos: 'QB', team: 3, pts: 76.48 },
-  { name: 'Jaxon Smith-Njigba', pos: 'WR', team: 8, pts: 60.20 },
-  { name: 'Amon-Ra St. Brown', pos: 'WR', team: 1, pts: 54.40 },
-  { name: 'Kenneth Walker III', pos: 'RB', team: 4, pts: 53.40 },
-  { name: 'Jahmyr Gibbs', pos: 'RB', team: 9, pts: 51.40 },
-  { name: 'Derrick Henry', pos: 'RB', team: 8, pts: 51.00 },
-  { name: 'Jonathan Taylor', pos: 'RB', team: 5, pts: 50.80 },
-  { name: 'Patrick Mahomes', pos: 'QB', team: 6, pts: 50.64 },
+  { name: 'Josh Allen', pos: 'QB', team: 3, pts: 93.44 },
+  { name: 'Jaxon Smith-Njigba', pos: 'WR', team: 8, pts: 90.56 },
+  { name: 'Jahmyr Gibbs', pos: 'RB', team: 9, pts: 89.30 },
+  { name: 'Brock Purdy', pos: 'QB', team: 12, pts: 80.86 },
+  { name: 'Kenneth Walker III', pos: 'RB', team: 4, pts: 73.70 },
+  { name: 'Derrick Henry', pos: 'RB', team: 8, pts: 72.40 },
+  { name: 'Bijan Robinson', pos: 'RB', team: 10, pts: 71.20 },
+  { name: 'Patrick Mahomes', pos: 'QB', team: 6, pts: 66.58 },
 ];
 
-// ---------- Week 3 preview, same structure as Week 2's own preview
-// section: team identity, 2025 head-to-head series, Familiar Faces
-// swaps. Rank/record reflect real Week 2 results (weekly_recap.json's
-// playoff_picture / STANDINGS above), not a projection. Series and swaps
-// computed the same way as before: 2025 head-to-head from
-// docs/data/2025/matchups.json (every pair met exactly twice, weeks 3
-// and 14), swaps by cross-referencing docs/data/2025/rosters.json
-// against docs/data/2026/draft.json by ESPN player_id, D/ST and K
-// excluded. No trade history box on any of these 6 - checked all 4 real
-// 2025 trades against these pairs and none match.
-const WEEK3_MATCHUPS = [
-  { a: 2, aTag: '#11 &middot; 1-1', b: 6, bTag: '#6 &middot; 1-1',
-    games: [{ week: 3, aScore: 131.16, bScore: 110.98 }, { week: 14, aScore: 101.28, bScore: 70.98 }],
-    swaps: [ { player: 'Chuba Hubbard (RB)', from: 6, to: 2, round: 7 },
-             { player: 'Deebo Samuel Sr. (WR)', from: 2, to: 6, round: 13 },
-             { player: 'Brenton Strange (TE)', from: 2, to: 6, round: 14 } ],
-    note: `mariss swept the 2025 series 2-0, but arrives short-handed: Caleb Williams (doubtful) and Kyler Murray, who's barely played since Week 1, leave him thin at QB (more above). Chuba Hubbard, sent to mariss in the offseason, faces his old team for the first time.` },
-  { a: 12, aTag: '#9 &middot; 1-1', b: 10, bTag: '#2 &middot; 1-1',
-    games: [{ week: 3, aScore: 87.12, bScore: 131.64 }, { week: 14, aScore: 109.9, bScore: 139.24 }],
-    swaps: [ { player: 'Courtland Sutton (WR)', from: 12, to: 10, round: 6 },
-             { player: 'Hunter Henry (TE)', from: 12, to: 10, round: 10 } ],
-    note: `Karl swept the 2025 series 2-0 and is off to the league's second-best start; Melinda is coming off a Week 2 win. Courtland Sutton and Hunter Henry, both on Melinda's 2025 roster, now play for Karl.` },
-  { a: 8, aTag: '#1 &middot; 2-0', b: 7, bTag: '#8 &middot; 1-1',
-    games: [{ week: 3, aScore: 132.82, bScore: 98.96 }, { week: 14, aScore: 109.22, bScore: 60.02 }],
-    swaps: [ { player: 'Justin Jefferson (WR)', from: 8, to: 7, round: 2 } ],
-    note: `Joe is 2-0 and has never lost to Mike, sweeping the 2025 series too. Mike's real problem is at quarterback: Jayden Daniels is doubtful, Jaxson Dart is questionable, and Shedeur Sanders, his only healthy option, hasn't scored through two weeks (more above). Justin Jefferson, on Joe's 2025 roster, catches passes for Mike now - whoever's throwing them.` },
-  { a: 5, aTag: '#4 &middot; 1-1', b: 9, bTag: '#10 &middot; 1-1',
-    games: [{ week: 3, aScore: 156.36, bScore: 128.5 }, { week: 14, aScore: 131.14, bScore: 128.26 }],
+// ---------- Week 4 preview. 2025 head-to-head from
+// docs/data/2025/matchups.json: these pairs met once in the 2025
+// regular season (Week 4); Pete/Imran also met in the Week 16
+// semifinal (verified against season_moments.json's bracket standings -
+// Pete eliminated round 2). Ronjan/Melinda's Week 16 game was a
+// consolation game and is left out. Swaps by player_id, 2025 rosters vs
+// 2026 draft, D/ST and K excluded; round = 2026 draft round. No 2025
+// trade involves any of these pairs.
+const WEEK4_MATCHUPS = [
+  { a: 6, aTag: '#2 &middot; 2-1', b: 10, bTag: '#6 &middot; 1-2',
+    games: [{ week: 4, aScore: 140.24, bScore: 152.84 }],
+    swaps: [ { player: 'Travis Kelce (TE)', from: 6, to: 10, round: 9 } ],
+    note: `Only Joe has scored more than Karl's 404.2 points. Karl is 1-2 anyway, with his two losses coming by a combined 32.2. Travis Kelce was on Lisette's 2025 roster and now plays for Karl. Karl won the only 2025 meeting, 152.8-140.2.` },
+  { a: 7, aTag: '#8 &middot; 1-2', b: 2, bTag: '#11 &middot; 1-2',
+    games: [{ week: 4, aScore: 89.28, bScore: 140.98 }],
     swaps: [],
-    note: `No swaps between these two. Cara swept the 2025 series 2-0, the second meeting decided by under 3 points, and enters off the third-best team score of the season so far (154.7). Ronjan is looking to build on a nail-biter Week 2 win.` },
-  { a: 1, aTag: '#7 &middot; 1-1', b: 11, bTag: '#5 &middot; 1-1',
-    games: [{ week: 3, aScore: 119.0, bScore: 116.64 }, { week: 14, aScore: 164.82, bScore: 97.0 }],
-    swaps: [ { player: 'Lamar Jackson (QB)', from: 1, to: 11, round: 1 },
-             { player: 'Tyler Allgeier (RB)', from: 11, to: 1, round: 15 } ],
-    note: `Imran swept the 2025 series 2-0. Lamar Jackson - the QB his team was originally named for, back when it was Lamar and Drake's Grahamy's - left in the offseason and went #2 overall to Kris; this is the first time Imran faces his old namesake. Tyler Allgeier came back the other way in the same draft.` },
-  { a: 3, aTag: '#12 &middot; 0-2', b: 4, bTag: '#3 &middot; 1-1',
-    games: [{ week: 3, aScore: 161.44, bScore: 106.3 }, { week: 14, aScore: 148.34, bScore: 167.62 }],
-    swaps: [ { player: 'Michael Wilson (WR)', from: 4, to: 3, round: 10 } ],
-    note: `The 2025 series is split 1-1, each side winning on the road. Pete is 0-2 despite Josh Allen's league-leading 76.5 points over two weeks - Beard Al has lost both games by single digits. Michael Wilson, on Ben's roster all of 2025, is now Pete's depth receiver.` },
+    note: `mariss won the only 2025 meeting 141.0-89.3. Justin Jefferson is questionable for Mike, and Caleb Williams remains out for mariss.` },
+  { a: 9, aTag: '#5 &middot; 2-1', b: 12, bTag: '#3 &middot; 2-1',
+    games: [{ week: 4, aScore: 140.72, bScore: 132.86 }],
+    swaps: [ { player: 'Khalil Shakir (WR)', from: 9, to: 12, round: 9 } ],
+    note: `Ronjan, a Bengals fan, faces Joe Burrow and Ja'Marr Chase, who scored 42.9 for Melinda last week. Khalil Shakir was on Ronjan's 2025 roster and now plays for Melinda. Ronjan won the 2025 meeting 140.7-132.9.` },
+  { a: 11, aTag: '#4 &middot; 2-1', b: 8, bTag: '#1 &middot; 3-0',
+    games: [{ week: 4, aScore: 99.40, bScore: 139.92 }],
+    swaps: [ { player: 'Rashee Rice (WR)', from: 8, to: 11, round: 3 },
+             { player: 'Josh Downs (WR)', from: 11, to: 8, round: 12 },
+             { player: 'Woody Marks (RB)', from: 8, to: 11, round: 15 } ],
+    note: `Joe won the 2025 meeting 139.9-99.4. Rashee Rice and Woody Marks left Joe's 2025 roster for Kris, and Josh Downs went the other way.` },
+  { a: 4, aTag: '#9 &middot; 1-2', b: 5, bTag: '#10 &middot; 1-2',
+    games: [{ week: 4, aScore: 160.82, bScore: 152.02 }],
+    swaps: [ { player: 'Chase Brown (RB)', from: 5, to: 4, round: 3 },
+             { player: 'J.J. McCarthy (QB)', from: 4, to: 5, round: 14 } ],
+    note: `Ben won the 2025 meeting 160.8-152.0. Chase Brown went from Cara's 2025 roster to Ben's, and J.J. McCarthy went from Ben's to Cara's. Ben plays without Baker Mayfield and Puka Nacua.` },
+  { a: 3, aTag: '#7 &middot; 1-2', b: 1, bTag: '#12 &middot; 1-2',
+    games: [{ week: 4, aScore: 139.04, bScore: 111.30 }, { week: 16, label: 'Semifinal', aScore: 101.60, bScore: 115.44 }],
+    swaps: [ { player: 'Drake London (WR)', from: 1, to: 3, round: 2 },
+             { player: "De'Von Achane (RB)", from: 3, to: 1, round: 2 },
+             { player: 'Kyren Williams (RB)', from: 1, to: 3, round: 4 },
+             { player: 'David Montgomery (RB)', from: 1, to: 3, round: 6 } ],
+    note: `This is a rematch of the 2025 semifinal, which Imran won 115.4-101.6 on his way to the title game. Drake London, Kyren Williams, and David Montgomery were all on Imran's 2025 roster and scored 48.5 for Pete last week. Achane went the other direction and is now on IR. Josh Allen is questionable.` },
 ];
 
 function renderMatchupResult(m) {
@@ -729,10 +779,10 @@ function renderTopScorerRow(p) {
   `;
 }
 
-function renderWeek3Matchup(m) {
+function renderWeek4Matchup(m) {
   const gamesHtml = m.games.map(g => `
     <div class="matchup-h2h-row">
-      <span class="matchup-h2h-week">Week ${g.week}</span>
+      <span class="matchup-h2h-week">${g.label || 'Week ' + g.week}</span>
       <span class="matchup-h2h-score">
         <span class="${g.aScore > g.bScore ? 'win' : ''}">${g.aScore.toFixed(2)}</span>
         &ndash;
@@ -742,9 +792,12 @@ function renderWeek3Matchup(m) {
   `).join('');
   const aWins = m.games.filter(g => g.aScore > g.bScore).length;
   const bWins = m.games.filter(g => g.bScore > g.aScore).length;
-  const seriesLabel = aWins === bWins
-    ? `2025 series: ${aWins}-${bWins}`
-    : `2025 series: ${aWins > bWins ? TEAMS[m.a].owner : TEAMS[m.b].owner} swept ${Math.max(aWins, bWins)}-${Math.min(aWins, bWins)}`;
+  const leader = aWins > bWins ? TEAMS[m.a].owner : TEAMS[m.b].owner;
+  const seriesLabel = m.games.length === 1
+    ? `2025 meeting: ${leader} won`
+    : aWins === bWins
+      ? `2025 series: ${aWins}-${bWins}`
+      : `2025 series: ${leader} swept ${Math.max(aWins, bWins)}-${Math.min(aWins, bWins)}`;
   const swapsHtml = m.swaps.length ? `
     <p class="matchup-series" style="margin-top:14px;">Familiar Faces from Last Year</p>
     <div class="matchup-fact-list">
@@ -782,11 +835,285 @@ function renderWeek3Matchup(m) {
 }
 
 function renderCurrentEdition() {
-  document.getElementById('qb-injury-list').innerHTML = QB_INJURIES.map(renderQbInjuryRow).join('');
   document.getElementById('recap-matchup-grid').innerHTML = MATCHUP_RESULTS.map(renderMatchupResult).join('');
+  document.getElementById('injury-list').innerHTML = INJURIES.map(renderInjuryRow).join('');
   document.getElementById('standings-list').innerHTML = STANDINGS.map(renderStandingsRow).join('');
   document.getElementById('top-scorers-list').innerHTML = TOP_SCORERS.map(renderTopScorerRow).join('');
-  document.getElementById('week3-matchup-grid').innerHTML = WEEK3_MATCHUPS.map(renderWeek3Matchup).join('');
+  document.getElementById('week4-matchup-grid').innerHTML = WEEK4_MATCHUPS.map(renderWeek4Matchup).join('');
+}
+
+/* ============================================================
+   FROZEN PANEL: Week 2 Recap / Week 3 Preview (published 9/22/2026)
+   WK2R_-prefixed throughout so nothing here can collide with the
+   current edition's own LOGO/TEAMS/etc. above. WK2R_LOGO points at the
+   locked logos/2026-wk03/ snapshot, not the live logos/2026/ path -
+   see this file's header comment for why.
+   ============================================================ */
+const WK2R_LOGO = {
+  1: 'logos/2026-wk03/1.jpg', 2: 'logos/2026-wk03/2.svg', 3: 'logos/2026-wk03/3.jpg', 4: 'logos/2026-wk03/4.jpg',
+  5: 'logos/2026-wk03/5.svg', 6: 'logos/2026-wk03/6.jpg', 7: 'logos/2026-wk03/7.jpg', 8: 'logos/2026-wk03/8.jpg',
+  9: 'logos/2026-wk03/9.jpg', 10: 'logos/2026-wk03/10.jpg', 11: 'logos/2026-wk03/11.jpg', 12: 'logos/2026-wk03/12.jpg',
+};
+
+const WK2R_TEAMS = {
+  1:  { owner: 'Imran', name: 'Three Lions Football Club', titleStatus2025: 'runnerup' },
+  2:  { owner: 'mariss', name: 'Mednis Madness' },
+  3:  { owner: 'Pete', name: 'Beard Al' },
+  4:  { owner: 'Ben', name: 'Conquering Heroes' },
+  5:  { owner: 'Cara', name: 'Team Kantastrophe', titleStatus2025: 'champ' },
+  6:  { owner: 'Lisette', name: 'Mahomes is where the heart is ❤' },
+  7:  { owner: 'Mike', name: 'Terrible Towels' },
+  8:  { owner: 'Joe', name: 'Olave Oyl' },
+  9:  { owner: 'Ronjan', name: 'McConkey Kong Country 2' },
+  10: { owner: 'Karl', name: 'The Aristocrats' },
+  11: { owner: 'Kris', name: 'Rice Rice Baby' },
+  12: { owner: 'Melinda', name: 'Buffalo Abusement Park' },
+};
+
+// Deliberately plain - no inline sizing. Always placed inside a
+// .matchup-side wrapper, whose own CSS sizes it at 112px full color, no
+// filter; the standings list below sizes it down separately (.standings-team img).
+function WK2R_crestImg(teamId) {
+  return `<img src="${WK2R_LOGO[teamId]}" alt="" onerror="this.style.visibility='hidden'">`;
+}
+
+// ---------- All 6 Week 2 results, same treatment as Week 1 Recap: every
+// number checked against docs/data/2026/weekly_boxscores.json (actual +
+// ESPN's own pregame projected_points) and rosters.json's injury_status,
+// not estimated. Swap/fandom detail folded in as one clause per game,
+// never the headline - see [[feedback-just-stream-it-weekly-recap-process]].
+// No new real trades touch any of these 6 pairs (checked all 4 real 2025
+// trades - the one relevant pair, Kris/Ronjan, already played out Week 1).
+const WK2R_MATCHUP_RESULTS = [
+  { a: 1, aScore: 150.78, b: 7, bScore: 85.84, tag: 'Blowout of the Week',
+    text: `Three Lions Football Club (Imran) beat Terrible Towels (Mike) 150.8-85.8, the week's biggest margin. The seeds didn't see it coming: Imran entered the week ranked #12, Mike #2. Jared Goff threw for 327 yards and 4 touchdowns (29.8), and Amon-Ra St. Brown added 30.7 of his own. J.K. Dobbins, sent to Mike in the same offseason deal that also moved RJ Harvey and Shedeur Sanders, managed only 3.6 against his old team. Jaxson Dart was limited to 20 passing yards - Mike's QB room is in real trouble heading into Week 3 (more above).` },
+  { a: 9, aScore: 112.28, b: 3, bScore: 106.94, tag: 'Game of the Week',
+    text: `The week's tightest game came down to 5.3 points: McConkey Kong Country 2 (Ronjan) held off Beard Al (Pete) 112.3-106.9. Trevor Lawrence was quiet (6.2 on a 15.9 projection) and Saquon Barkley was worse (2.5 on 16.4), but a streamed Cam Ward covered the gap with 20.0 out of the OP slot. Tony Pollard, on Pete's roster all of 2025, chipped in 7.0 against his old team. Pete's night belonged to Josh Allen: 40.8 points, the week's best individual score, and a two-week total of 76.5 - the league's best at any position. Beard Al is 0-2 anyway.` },
+  { a: 5, aScore: 154.70, b: 10, bScore: 123.46, tag: 'Upset Alert',
+    text: `Team Kantastrophe (Cara) beat The Aristocrats (Karl) 154.7-123.5 as the #11 seed over the #4. CeeDee Lamb (31.3) and Jonathan Taylor (27.2) carried her, ironic since Lamb plays for Dallas and Cara's an Eagles fan, exactly the kind of division-rival production that's supposed to sting. Matthew Stafford added 27.0; Drake Maye was the bust (8.0 on an 18.2 projection). Karl's own Cowboys quarterback, Dak Prescott, put up 29.8 anyway and still lost. Bijan Robinson and DK Metcalf, swapped for each other in the offseason, were both quiet against their old rosters (9.6 and 4.7).` },
+  { a: 8, aScore: 134.04, b: 2, bScore: 81.00, tag: null,
+    text: `Olave Oyl (Joe) beat Mednis Madness (mariss) 134.0-81.0, the week's second-largest margin. Jaxon Smith-Njigba was the story for Joe: 155 yards and 3 touchdowns for 38.0, more than double his projection. Chris Olave added 18.6, even as Jalen Hurts threw 2 picks and DJ Moore was shut out. Caleb Williams - the QB mariss took from Joe in a round-one draft-day swap - faced his old team for the first time and managed only 7.7, part of a rough two weeks at quarterback for mariss (more above).` },
+  { a: 6, aScore: 136.60, b: 12, bScore: 115.06, tag: null,
+    text: `Mahomes is where the heart is (Lisette) beat Buffalo Abusement Park (Melinda) 136.6-115.1. Patrick Mahomes comfortably beat his own projection at 29.0, while Bo Nix (14.1 on 18.6) and Rhamondre Stevenson (3.1 on 11.6) were both quiet. Melinda got a big night from Brock Purdy (28.5) and Ja'Marr Chase (23.0), and her own favorite team's back, Buffalo's James Cook III, ran for 135 yards - not enough. Dallas Goedert was the low point, under a point on an 8.6 projection.` },
+  { a: 4, aScore: 126.66, b: 11, bScore: 113.32, tag: null,
+    text: `Conquering Heroes (Ben) beat Rice Rice Baby (Kris) 126.7-113.3, the week's second-tightest game. Davante Adams was the story: 195 yards and 2 touchdowns for 35.5, nearly triple his 13.1 projection, covering for a rough day from Justin Herbert (7.9 on 19.5, 2 INTs), who faced Kris's team for the first time since the offseason swap that sent him to Ben. DeVonta Smith answered for Kris with 22.7, but Lamar Jackson (14.8 on 21.7) couldn't keep pace.` },
+];
+
+// ---------- Comprehensive QB injury audit, leaguewide - not just the two
+// teams it turns out actually matter. Every non-ACTIVE QB in
+// docs/data/2026/rosters.json's injury_status, any team, cross-checked
+// one by one. Kyler Murray's own tag currently reads ACTIVE (he's
+// technically eligible again) but he played 9 offensive snaps in Week 1
+// (18 pass yds, 9 rush yds) and sat all of Week 2 on IR - a real,
+// ongoing injury story the raw tag alone doesn't show.
+const WK2R_QB_INJURIES = [
+  { name: 'Caleb Williams', team: 2, status: 'Doubtful' },
+  { name: 'Kyler Murray', team: 2, status: 'Hurt Wk 1, missed Wk 2' },
+  { name: 'Jayden Daniels', team: 7, status: 'Doubtful' },
+  { name: 'Jaxson Dart', team: 7, status: 'Questionable' },
+  { name: 'Dillon Gabriel', team: 3, status: 'Injured Reserve' },
+  { name: 'Tua Tagovailoa', team: 4, status: 'Out' },
+  { name: 'Sam Darnold', team: 9, status: 'Out' },
+];
+function WK2R_renderQbInjuryRow(p) {
+  const t = WK2R_TEAMS[p.team];
+  return `
+    <div class="top-scorer-row">
+      <span><b>${p.name}</b> <span class="top-scorer-team">${t.name} (${ownerLabel(t)})</span></span>
+      <span class="top-scorer-pts">${p.status}</span>
+    </div>
+  `;
+}
+
+// ---------- Current playoff picture, straight from
+// docs/data/2026/weekly_recap.json's playoff_picture (build_weekly_recap.py) -
+// rank/record/PF/back all engine-computed off real Week 2 results, not
+// hand-estimated. "back" is only set when a team is tied in wins with the
+// team directly above it (a tiebreaker margin), per the engine's own
+// build_playoff_picture() - left null everywhere else, matching the
+// source data exactly rather than inventing a value.
+const WK2R_STANDINGS = [
+  { team: 8,  wins: 2, losses: 0, pf: 335.7, back: null },
+  { team: 10, wins: 1, losses: 1, pf: 264.4, back: null },
+  { team: 4,  wins: 1, losses: 1, pf: 254.3, back: 10.1 },
+  { team: 5,  wins: 1, losses: 1, pf: 252.7, back: 1.6 },
+  { team: 11, wins: 1, losses: 1, pf: 248.2, back: 4.5 },
+  { team: 6,  wins: 1, losses: 1, pf: 243.9, back: 4.3 },
+  { team: 1,  wins: 1, losses: 1, pf: 243.4, back: 0.5 },
+  { team: 7,  wins: 1, losses: 1, pf: 242.2, back: 1.2 },
+  { team: 12, wins: 1, losses: 1, pf: 238.5, back: 3.7 },
+  { team: 9,  wins: 1, losses: 1, pf: 234.2, back: 4.3 },
+  { team: 2,  wins: 1, losses: 1, pf: 228.1, back: 6.1 },
+  { team: 3,  wins: 0, losses: 2, pf: 240.4, back: null },
+];
+
+// ---------- Top Scorers: total points through 2 weeks, any position -
+// total, not per-game rate, deliberately (see [[small-sample-leaderboard-metric]]:
+// a 2-week rate stat surfaces flukes). Summed directly from started
+// players in docs/data/2026/weekly_boxscores.json weeks 1-2.
+const WK2R_TOP_SCORERS = [
+  { name: 'Josh Allen', pos: 'QB', team: 3, pts: 76.48 },
+  { name: 'Jaxon Smith-Njigba', pos: 'WR', team: 8, pts: 60.20 },
+  { name: 'Amon-Ra St. Brown', pos: 'WR', team: 1, pts: 54.40 },
+  { name: 'Kenneth Walker III', pos: 'RB', team: 4, pts: 53.40 },
+  { name: 'Jahmyr Gibbs', pos: 'RB', team: 9, pts: 51.40 },
+  { name: 'Derrick Henry', pos: 'RB', team: 8, pts: 51.00 },
+  { name: 'Jonathan Taylor', pos: 'RB', team: 5, pts: 50.80 },
+  { name: 'Patrick Mahomes', pos: 'QB', team: 6, pts: 50.64 },
+];
+
+// ---------- Week 3 preview, same structure as Week 2's own preview
+// section: team identity, 2025 head-to-head series, Familiar Faces
+// swaps. Rank/record reflect real Week 2 results (weekly_recap.json's
+// playoff_picture / WK2R_STANDINGS above), not a projection. Series and swaps
+// computed the same way as before: 2025 head-to-head from
+// docs/data/2025/matchups.json (every pair met exactly twice, weeks 3
+// and 14), swaps by cross-referencing docs/data/2025/rosters.json
+// against docs/data/2026/draft.json by ESPN player_id, D/ST and K
+// excluded. No trade history box on any of these 6 - checked all 4 real
+// 2025 trades against these pairs and none match.
+const WK2R_WEEK3_MATCHUPS = [
+  { a: 2, aTag: '#11 &middot; 1-1', b: 6, bTag: '#6 &middot; 1-1',
+    games: [{ week: 3, aScore: 131.16, bScore: 110.98 }, { week: 14, aScore: 101.28, bScore: 70.98 }],
+    swaps: [ { player: 'Chuba Hubbard (RB)', from: 6, to: 2, round: 7 },
+             { player: 'Deebo Samuel Sr. (WR)', from: 2, to: 6, round: 13 },
+             { player: 'Brenton Strange (TE)', from: 2, to: 6, round: 14 } ],
+    note: `mariss swept the 2025 series 2-0, but arrives short-handed: Caleb Williams (doubtful) and Kyler Murray, who's barely played since Week 1, leave him thin at QB (more above). Chuba Hubbard, sent to mariss in the offseason, faces his old team for the first time.` },
+  { a: 12, aTag: '#9 &middot; 1-1', b: 10, bTag: '#2 &middot; 1-1',
+    games: [{ week: 3, aScore: 87.12, bScore: 131.64 }, { week: 14, aScore: 109.9, bScore: 139.24 }],
+    swaps: [ { player: 'Courtland Sutton (WR)', from: 12, to: 10, round: 6 },
+             { player: 'Hunter Henry (TE)', from: 12, to: 10, round: 10 } ],
+    note: `Karl swept the 2025 series 2-0 and is off to the league's second-best start; Melinda is coming off a Week 2 win. Courtland Sutton and Hunter Henry, both on Melinda's 2025 roster, now play for Karl.` },
+  { a: 8, aTag: '#1 &middot; 2-0', b: 7, bTag: '#8 &middot; 1-1',
+    games: [{ week: 3, aScore: 132.82, bScore: 98.96 }, { week: 14, aScore: 109.22, bScore: 60.02 }],
+    swaps: [ { player: 'Justin Jefferson (WR)', from: 8, to: 7, round: 2 } ],
+    note: `Joe is 2-0 and has never lost to Mike, sweeping the 2025 series too. Mike's real problem is at quarterback: Jayden Daniels is doubtful, Jaxson Dart is questionable, and Shedeur Sanders, his only healthy option, hasn't scored through two weeks (more above). Justin Jefferson, on Joe's 2025 roster, catches passes for Mike now - whoever's throwing them.` },
+  { a: 5, aTag: '#4 &middot; 1-1', b: 9, bTag: '#10 &middot; 1-1',
+    games: [{ week: 3, aScore: 156.36, bScore: 128.5 }, { week: 14, aScore: 131.14, bScore: 128.26 }],
+    swaps: [],
+    note: `No swaps between these two. Cara swept the 2025 series 2-0, the second meeting decided by under 3 points, and enters off the third-best team score of the season so far (154.7). Ronjan is looking to build on a nail-biter Week 2 win.` },
+  { a: 1, aTag: '#7 &middot; 1-1', b: 11, bTag: '#5 &middot; 1-1',
+    games: [{ week: 3, aScore: 119.0, bScore: 116.64 }, { week: 14, aScore: 164.82, bScore: 97.0 }],
+    swaps: [ { player: 'Lamar Jackson (QB)', from: 1, to: 11, round: 1 },
+             { player: 'Tyler Allgeier (RB)', from: 11, to: 1, round: 15 } ],
+    note: `Imran swept the 2025 series 2-0. Lamar Jackson - the QB his team was originally named for, back when it was Lamar and Drake's Grahamy's - left in the offseason and went #2 overall to Kris; this is the first time Imran faces his old namesake. Tyler Allgeier came back the other way in the same draft.` },
+  { a: 3, aTag: '#12 &middot; 0-2', b: 4, bTag: '#3 &middot; 1-1',
+    games: [{ week: 3, aScore: 161.44, bScore: 106.3 }, { week: 14, aScore: 148.34, bScore: 167.62 }],
+    swaps: [ { player: 'Michael Wilson (WR)', from: 4, to: 3, round: 10 } ],
+    note: `The 2025 series is split 1-1, each side winning on the road. Pete is 0-2 despite Josh Allen's league-leading 76.5 points over two weeks - Beard Al has lost both games by single digits. Michael Wilson, on Ben's roster all of 2025, is now Pete's depth receiver.` },
+];
+
+function WK2R_renderMatchupResult(m) {
+  const aWin = m.aScore > m.bScore;
+  const tagHtml = m.tag ? `<p class="kicker" style="margin-bottom:10px;">${m.tag}</p>` : '';
+  return `
+    <div class="matchup-card">
+      ${tagHtml}
+      <div class="matchup-teams">
+        <div class="matchup-side">
+          ${WK2R_crestImg(m.a)}
+          <span class="m-team">${WK2R_TEAMS[m.a].name}</span>
+          <span class="m-owner">${ownerLabel(WK2R_TEAMS[m.a])}</span>
+          <span class="matchup-result-score ${aWin ? 'win' : ''}">${m.aScore.toFixed(1)}</span>
+        </div>
+        <span class="matchup-vs">${aWin ? 'def.' : 'lost to'}</span>
+        <div class="matchup-side">
+          ${WK2R_crestImg(m.b)}
+          <span class="m-team">${WK2R_TEAMS[m.b].name}</span>
+          <span class="m-owner">${ownerLabel(WK2R_TEAMS[m.b])}</span>
+          <span class="matchup-result-score ${!aWin ? 'win' : ''}">${m.bScore.toFixed(1)}</span>
+        </div>
+      </div>
+      <p class="matchup-result-text">${m.text}</p>
+    </div>
+  `;
+}
+
+function WK2R_renderStandingsRow(s, idx) {
+  const t = WK2R_TEAMS[s.team];
+  const rank = idx + 1;
+  const backHtml = s.back != null ? ` &middot; -${s.back.toFixed(1)}` : '';
+  return `
+    <div class="standings-row${rank === 6 ? ' playoff-line' : ''}">
+      <span class="standings-rank">${rank}</span>
+      <span class="standings-team">
+        ${WK2R_crestImg(s.team)}
+        <span class="standings-team-name"><b>${t.name}</b><span>${ownerLabel(t)}</span></span>
+      </span>
+      <span class="standings-record">${s.wins}-${s.losses}</span>
+      <span class="standings-pf">${s.pf.toFixed(1)} PF${backHtml}</span>
+    </div>
+  `;
+}
+
+function WK2R_renderTopScorerRow(p) {
+  const t = WK2R_TEAMS[p.team];
+  return `
+    <div class="top-scorer-row">
+      <span><b>${p.name}</b> <span class="top-scorer-team">${p.pos} &middot; ${t.name} (${ownerLabel(t)})</span></span>
+      <span class="top-scorer-pts">${p.pts.toFixed(1)}</span>
+    </div>
+  `;
+}
+
+function WK2R_renderWeek3Matchup(m) {
+  const gamesHtml = m.games.map(g => `
+    <div class="matchup-h2h-row">
+      <span class="matchup-h2h-week">Week ${g.week}</span>
+      <span class="matchup-h2h-score">
+        <span class="${g.aScore > g.bScore ? 'win' : ''}">${g.aScore.toFixed(2)}</span>
+        &ndash;
+        <span class="${g.bScore > g.aScore ? 'win' : ''}">${g.bScore.toFixed(2)}</span>
+      </span>
+    </div>
+  `).join('');
+  const aWins = m.games.filter(g => g.aScore > g.bScore).length;
+  const bWins = m.games.filter(g => g.bScore > g.aScore).length;
+  const seriesLabel = aWins === bWins
+    ? `2025 series: ${aWins}-${bWins}`
+    : `2025 series: ${aWins > bWins ? WK2R_TEAMS[m.a].owner : WK2R_TEAMS[m.b].owner} swept ${Math.max(aWins, bWins)}-${Math.min(aWins, bWins)}`;
+  const swapsHtml = m.swaps.length ? `
+    <p class="matchup-series" style="margin-top:14px;">Familiar Faces from Last Year</p>
+    <div class="matchup-fact-list">
+      ${m.swaps.map(s => `
+        <div class="matchup-fact-row">
+          <span class="matchup-fact-tag">${WK2R_TEAMS[s.from].owner} &rarr; ${WK2R_TEAMS[s.to].owner} (R${s.round})</span>
+          <span>${s.player}</span>
+        </div>
+      `).join('')}
+    </div>
+  ` : '';
+  return `
+    <div class="matchup-card">
+      <div class="matchup-teams">
+        <div class="matchup-side">
+          ${WK2R_crestImg(m.a)}
+          <span class="m-team">${WK2R_TEAMS[m.a].name}</span>
+          <span class="m-owner">${ownerLabel(WK2R_TEAMS[m.a])}</span>
+          <span class="matchup-result-tag">${m.aTag}</span>
+        </div>
+        <span class="matchup-vs">vs</span>
+        <div class="matchup-side">
+          ${WK2R_crestImg(m.b)}
+          <span class="m-team">${WK2R_TEAMS[m.b].name}</span>
+          <span class="m-owner">${ownerLabel(WK2R_TEAMS[m.b])}</span>
+          <span class="matchup-result-tag">${m.bTag}</span>
+        </div>
+      </div>
+      <p class="matchup-series">${seriesLabel}</p>
+      <div class="matchup-h2h">${gamesHtml}</div>
+      ${swapsHtml}
+      <p class="matchup-result-text">${m.note}</p>
+    </div>
+  `;
+}
+
+function WK2R_renderEdition() {
+  document.getElementById('wk2r-qb-injury-list').innerHTML = WK2R_QB_INJURIES.map(WK2R_renderQbInjuryRow).join('');
+  document.getElementById('wk2r-recap-matchup-grid').innerHTML = WK2R_MATCHUP_RESULTS.map(WK2R_renderMatchupResult).join('');
+  document.getElementById('wk2r-standings-list').innerHTML = WK2R_STANDINGS.map(WK2R_renderStandingsRow).join('');
+  document.getElementById('wk2r-top-scorers-list').innerHTML = WK2R_TOP_SCORERS.map(WK2R_renderTopScorerRow).join('');
+  document.getElementById('wk2r-week3-matchup-grid').innerHTML = WK2R_WEEK3_MATCHUPS.map(WK2R_renderWeek3Matchup).join('');
 }
 
 /* ============================================================
@@ -1226,6 +1553,7 @@ async function loadApp() {
   const meta = await (await fetch('data/meta.json')).json();
   document.getElementById('resources-nav').innerHTML = renderNav('weekly-news', meta.league_id);
   renderCurrentEdition();
+  WK2R_renderEdition();
   WK1R_renderEdition();
   document.getElementById('rebrand-cards').innerHTML = REBRANDS.map(renderRebrand).join('');
   PV_renderMatchups();

@@ -17,7 +17,7 @@
       "pro_team": "MIA",
       "lineup_slot": "RB",
       "keeper_value": 2,
-      "injury_status": "OUT",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -431,7 +431,7 @@
       "pro_team": "BUF",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -541,7 +541,7 @@
       "pro_team": "LAR",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -651,7 +651,7 @@
       "name": "Puka Nacua",
       "position": "WR",
       "pro_team": "LAR",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 2,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -681,7 +681,7 @@
       "name": "Baker Mayfield",
       "position": "QB",
       "pro_team": "TB",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 2,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -711,7 +711,7 @@
       "name": "Emeka Egbuka",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "WR",
+      "lineup_slot": "FLEX",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -721,7 +721,7 @@
       "name": "Blake Corum",
       "position": "RB",
       "pro_team": "LAR",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 19,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -771,7 +771,7 @@
       "name": "Michael Penix Jr.",
       "position": "QB",
       "pro_team": "ATL",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -801,7 +801,7 @@
       "name": "Eagles D/ST",
       "position": "D/ST",
       "pro_team": "PHI",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -861,7 +861,7 @@
       "name": "Ravens D/ST",
       "position": "D/ST",
       "pro_team": "BAL",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -1002,7 +1002,7 @@
       "player_id": 4433970,
       "name": "J.J. McCarthy",
       "position": "QB",
-      "pro_team": "MIN",
+      "pro_team": "NYG",
       "lineup_slot": "BE",
       "keeper_value": 4,
       "injury_status": "ACTIVE",
@@ -1811,7 +1811,7 @@
       "name": "Romeo Doubs",
       "position": "WR",
       "pro_team": "NE",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 15,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1881,7 +1881,7 @@
       "name": "Keenan Allen",
       "position": "WR",
       "pro_team": "IND",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 12,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
