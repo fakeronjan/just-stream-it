@@ -803,6 +803,12 @@ const WEEK4_MATCHUPS = [
     note: `It's a rematch of last year's semifinal, which Imran won 115.4-101.6 on his way to the title game. Pete now starts three of Imran's 2025 players: Drake London, Kyren Williams, and David Montgomery combined for 48.5 points last week. De'Von Achane made the opposite move and now sits on IR. Josh Allen is questionable.` },
 ];
 
+// Record after this week's game, from STANDINGS (engine playoff_picture).
+function recordAfterWeek(teamId) {
+  const r = STANDINGS.find(x => x.team === teamId);
+  return `${r.wins}-${r.losses}`;
+}
+
 function renderMatchupResult(m) {
   const aWin = m.aScore > m.bScore;
   const tagHtml = m.tag ? `<p class="kicker" style="margin-bottom:10px;">${m.tag}</p>` : '';
@@ -815,6 +821,7 @@ function renderMatchupResult(m) {
           <span class="m-team">${TEAMS[m.a].name}</span>
           <span class="m-owner">${ownerLabel(TEAMS[m.a])}</span>
           <span class="matchup-result-score ${aWin ? 'win' : ''}">${m.aScore.toFixed(1)}</span>
+          <span class="matchup-result-tag">${recordAfterWeek(m.a)}</span>
         </div>
         <span class="matchup-vs">${aWin ? 'def.' : 'lost to'}</span>
         <div class="matchup-side">
@@ -822,6 +829,7 @@ function renderMatchupResult(m) {
           <span class="m-team">${TEAMS[m.b].name}</span>
           <span class="m-owner">${ownerLabel(TEAMS[m.b])}</span>
           <span class="matchup-result-score ${!aWin ? 'win' : ''}">${m.bScore.toFixed(1)}</span>
+          <span class="matchup-result-tag">${recordAfterWeek(m.b)}</span>
         </div>
       </div>
       <p class="matchup-result-text">${m.text}</p>
