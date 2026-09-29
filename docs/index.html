@@ -440,6 +440,31 @@
   .std-flip-row.winner { color: var(--ink); font-weight: 700; }
   .std-trade-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-top: 1px solid rgba(28,26,22,0.2); padding-top: 6px; }
 
+  /* ---------- injury report table (current edition) ---------- */
+  .inj-table { width: 100%; max-width: 600px; margin: 16px auto 0; border-collapse: collapse; font-size: 0.86rem; }
+  .inj-table th {
+    font-family: "Special Elite", monospace; font-size: 0.6rem; font-weight: 400; color: var(--meta);
+    text-transform: uppercase; letter-spacing: 0.05em; text-align: left; padding: 0 8px 6px; border-bottom: 2px solid var(--ink);
+  }
+  .inj-table td { padding: 5px 8px; border-bottom: 1px solid rgba(28,26,22,0.12); vertical-align: top; }
+  .inj-table tr.group-start td { border-top: 1px solid var(--ink); }
+  .inj-table tbody tr:first-child td { border-top: none; }
+  .inj-team { width: 38%; }
+  .inj-team-name { display: block; font-weight: 700; line-height: 1.25; }
+  .inj-team-owner { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
+  .inj-status { white-space: nowrap; text-align: right; color: var(--ink-dim); }
+  .inj-table th:last-child { text-align: right; }
+  .inj-player { white-space: nowrap; }
+  .inj-short { display: none; }
+  @media (max-width: 520px) {
+    .inj-table { font-size: 0.78rem; }
+    .inj-table td, .inj-table th { padding-left: 4px; padding-right: 4px; }
+    .inj-team { width: 34%; }
+    .inj-player { white-space: normal; }
+    .inj-full { display: none; }
+    .inj-short { display: inline; }
+  }
+
   footer.masthead-footer {
     margin-top: 50px; padding-top: 14px; border-top: 1px solid var(--ink);
     text-align: center; font-family: "Special Elite", monospace; font-size: 0.65rem;
@@ -500,7 +525,7 @@
     <div class="section-label">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 4</p>
     <p class="lede" style="font-size:0.95rem;">Mike's quarterback crisis is over for now. Jayden Daniels is out and Jaxson Dart is on IR, but pickups Marcus Mariota and Case Keenum combined for 44.9 points in their first week with him. Imran's backfield is the new emergency. De'Von Achane went to IR after a 1.7-point day, Travis Etienne Jr. is out, and James Conner and Jonathon Brooks were already on IR. That leaves Imran with Jadarian Price, Tyler Allgeier, Brian Robinson Jr., and Emanuel Wilson. He's thinking about renaming the team AY’chan and AY’chan Injury Law. Ben loses Baker Mayfield and Puka Nacua but can still start Justin Herbert and Michael Penix Jr. at quarterback. Josh Allen is questionable after a two-interception game, and Pete picked up Cooper Rush last week.</p>
-    <div class="top-scorers-list" id="injury-list"></div>
+    <div id="injury-list"></div>
 
     <div class="section-label">Playoff Picture</div>
     <p class="section-sublabel">Standings through three weeks</p>
@@ -666,49 +691,58 @@ const MATCHUP_RESULTS = [
 // injury_status in docs/data/2026/rosters.json (pulled 9/29/2026) is
 // anything other than ACTIVE, any team, any position.
 const INJURIES = [
-  { name: "De'Von Achane", team: 1, status: 'Injured Reserve' },
-  { name: 'Travis Etienne Jr.', team: 1, status: 'Out' },
-  { name: 'James Conner', team: 1, status: 'Injured Reserve' },
-  { name: 'Jonathon Brooks', team: 1, status: 'Injured Reserve' },
-  { name: 'Tank Dell', team: 1, status: 'Injured Reserve' },
-  { name: "Ja'Kobi Lane", team: 1, status: 'Injured Reserve' },
-  { name: 'Jayden Daniels', team: 7, status: 'Out' },
-  { name: 'Jaxson Dart', team: 7, status: 'Injured Reserve' },
-  { name: 'Nico Collins', team: 7, status: 'Out' },
-  { name: 'Justin Jefferson', team: 7, status: 'Questionable' },
-  { name: 'Jalen Coker', team: 7, status: 'Questionable' },
-  { name: 'Puka Nacua', team: 4, status: 'Out' },
-  { name: 'Baker Mayfield', team: 4, status: 'Out' },
-  { name: 'Zach Charbonnet', team: 4, status: 'Out' },
-  { name: 'Jordyn Tyson', team: 4, status: 'Injured Reserve' },
-  { name: 'Jonah Coleman', team: 4, status: 'Injured Reserve' },
-  { name: 'Josh Allen', team: 3, status: 'Questionable' },
-  { name: 'Terrance Ferguson', team: 3, status: 'Doubtful' },
-  { name: 'Dillon Gabriel', team: 3, status: 'Injured Reserve' },
-  { name: 'Alec Pierce', team: 3, status: 'Injured Reserve' },
-  { name: "De'Zhaun Stribling", team: 3, status: 'Injured Reserve' },
-  { name: 'Caleb Williams', team: 2, status: 'Out' },
-  { name: 'Rico Dowdle', team: 5, status: 'Out' },
-  { name: 'Dylan Sampson', team: 5, status: 'Injured Reserve' },
-  { name: 'Breece Hall', team: 8, status: 'Questionable' },
-  { name: 'Jayden Reed', team: 8, status: 'Out' },
-  { name: 'A.J. Brown', team: 9, status: 'Injured Reserve' },
-  { name: 'Jordan Mason', team: 9, status: 'Injured Reserve' },
-  { name: 'Isiah Pacheco', team: 9, status: 'Injured Reserve' },
-  { name: 'Josh Jacobs', team: 10, status: 'Day-to-Day' },
-  { name: 'Mike Evans', team: 10, status: 'Questionable' },
-  { name: 'Adonai Mitchell', team: 10, status: 'Out' },
-  { name: 'Caleb Douglas', team: 10, status: 'Out' },
-  { name: 'Dallas Goedert', team: 12, status: 'Out' },
+  { name: "De'Von Achane", pos: 'RB', team: 1, status: 'Injured Reserve' },
+  { name: 'Travis Etienne Jr.', pos: 'RB', team: 1, status: 'Out' },
+  { name: 'James Conner', pos: 'RB', team: 1, status: 'Injured Reserve' },
+  { name: 'Jonathon Brooks', pos: 'RB', team: 1, status: 'Injured Reserve' },
+  { name: 'Tank Dell', pos: 'WR', team: 1, status: 'Injured Reserve' },
+  { name: "Ja'Kobi Lane", pos: 'WR', team: 1, status: 'Injured Reserve' },
+  { name: 'Jayden Daniels', pos: 'QB', team: 7, status: 'Out' },
+  { name: 'Jaxson Dart', pos: 'QB', team: 7, status: 'Injured Reserve' },
+  { name: 'Nico Collins', pos: 'WR', team: 7, status: 'Out' },
+  { name: 'Justin Jefferson', pos: 'WR', team: 7, status: 'Questionable' },
+  { name: 'Jalen Coker', pos: 'WR', team: 7, status: 'Questionable' },
+  { name: 'Puka Nacua', pos: 'WR', team: 4, status: 'Out' },
+  { name: 'Baker Mayfield', pos: 'QB', team: 4, status: 'Out' },
+  { name: 'Zach Charbonnet', pos: 'RB', team: 4, status: 'Out' },
+  { name: 'Jordyn Tyson', pos: 'WR', team: 4, status: 'Injured Reserve' },
+  { name: 'Jonah Coleman', pos: 'RB', team: 4, status: 'Injured Reserve' },
+  { name: 'Josh Allen', pos: 'QB', team: 3, status: 'Questionable' },
+  { name: 'Terrance Ferguson', pos: 'TE', team: 3, status: 'Doubtful' },
+  { name: 'Dillon Gabriel', pos: 'QB', team: 3, status: 'Injured Reserve' },
+  { name: 'Alec Pierce', pos: 'WR', team: 3, status: 'Injured Reserve' },
+  { name: "De'Zhaun Stribling", pos: 'WR', team: 3, status: 'Injured Reserve' },
+  { name: 'Caleb Williams', pos: 'QB', team: 2, status: 'Out' },
+  { name: 'Rico Dowdle', pos: 'RB', team: 5, status: 'Out' },
+  { name: 'Dylan Sampson', pos: 'RB', team: 5, status: 'Injured Reserve' },
+  { name: 'Breece Hall', pos: 'RB', team: 8, status: 'Questionable' },
+  { name: 'Jayden Reed', pos: 'WR', team: 8, status: 'Out' },
+  { name: 'A.J. Brown', pos: 'WR', team: 9, status: 'Injured Reserve' },
+  { name: 'Jordan Mason', pos: 'RB', team: 9, status: 'Injured Reserve' },
+  { name: 'Isiah Pacheco', pos: 'RB', team: 9, status: 'Injured Reserve' },
+  { name: 'Josh Jacobs', pos: 'RB', team: 10, status: 'Day-to-Day' },
+  { name: 'Mike Evans', pos: 'WR', team: 10, status: 'Questionable' },
+  { name: 'Adonai Mitchell', pos: 'WR', team: 10, status: 'Out' },
+  { name: 'Caleb Douglas', pos: 'WR', team: 10, status: 'Out' },
+  { name: 'Dallas Goedert', pos: 'TE', team: 12, status: 'Out' },
 ];
-function renderInjuryRow(p) {
-  const t = TEAMS[p.team];
-  return `
-    <div class="top-scorer-row">
-      <span><b>${p.name}</b> <span class="top-scorer-team">${t.name} (${ownerLabel(t)})</span></span>
-      <span class="top-scorer-pts">${p.status}</span>
-    </div>
-  `;
+// One row per player, grouped by team: the team cell spans all of
+// that team's rows (rowspan) so each owner appears once.
+const INJ_SHORT = { 'Injured Reserve': 'IR', 'Questionable': 'Q', 'Doubtful': 'D', 'Day-to-Day': 'DTD', 'Out': 'Out' };
+function renderInjuryTable(rows) {
+  const groups = [];
+  rows.forEach(p => {
+    const last = groups[groups.length - 1];
+    if (last && last.team === p.team) last.players.push(p);
+    else groups.push({ team: p.team, players: [p] });
+  });
+  const body = groups.map(g => g.players.map((p, idx) => `
+    <tr${idx === 0 ? ' class="group-start"' : ''}>
+      ${idx === 0 ? `<td class="inj-team" rowspan="${g.players.length}"><span class="inj-team-name">${TEAMS[g.team].name}</span><span class="inj-team-owner">${ownerLabel(TEAMS[g.team])}</span></td>` : ''}
+      <td class="inj-player"><span class="std-pos">${p.pos}</span>${p.name}</td>
+      <td class="inj-status"><span class="inj-full">${p.status}</span><span class="inj-short">${INJ_SHORT[p.status] || p.status}</span></td>
+    </tr>`).join('')).join('');
+  return `<table class="inj-table"><thead><tr><th>Team</th><th>Player</th><th>Status</th></tr></thead><tbody>${body}</tbody></table>`;
 }
 
 // ---------- Current playoff picture, straight from
@@ -869,7 +903,7 @@ function renderWeek4Matchup(m) {
 
 function renderCurrentEdition() {
   document.getElementById('recap-matchup-grid').innerHTML = MATCHUP_RESULTS.map(renderMatchupResult).join('');
-  document.getElementById('injury-list').innerHTML = INJURIES.map(renderInjuryRow).join('');
+  document.getElementById('injury-list').innerHTML = renderInjuryTable(INJURIES);
   document.getElementById('standings-list').innerHTML = STANDINGS.map(renderStandingsRow).join('');
   document.getElementById('week4-matchup-grid').innerHTML = WEEK4_MATCHUPS.map(renderWeek4Matchup).join('');
 }
