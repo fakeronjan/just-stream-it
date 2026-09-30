@@ -4,11 +4,11 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 19,
+    "transactions_count": 23,
     "trades_count": 0,
-    "waiver_pickups": 7,
-    "free_agent_pickups": 8,
-    "drops": 8,
+    "waiver_pickups": 8,
+    "free_agent_pickups": 10,
+    "drops": 9,
     "players_started_count": 16,
     "started_points_total": 362.48,
     "started_points_by_source": {
@@ -163,11 +163,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 14,
+    "transactions_count": 18,
     "trades_count": 0,
-    "waiver_pickups": 5,
+    "waiver_pickups": 7,
     "free_agent_pickups": 8,
-    "drops": 5,
+    "drops": 7,
     "players_started_count": 13,
     "started_points_total": 315.42,
     "started_points_by_source": {
@@ -255,11 +255,11 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 6,
+    "transactions_count": 7,
     "trades_count": 0,
-    "waiver_pickups": 2,
+    "waiver_pickups": 3,
     "free_agent_pickups": 4,
-    "drops": 2,
+    "drops": 3,
     "players_started_count": 13,
     "started_points_total": 467.34,
     "started_points_by_source": {
@@ -749,11 +749,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 13,
+    "transactions_count": 15,
     "trades_count": 0,
-    "waiver_pickups": 3,
+    "waiver_pickups": 5,
     "free_agent_pickups": 10,
-    "drops": 3,
+    "drops": 5,
     "players_started_count": 15,
     "started_points_total": 393.96,
     "started_points_by_source": {
