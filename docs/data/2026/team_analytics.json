@@ -163,11 +163,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 18,
+    "transactions_count": 19,
     "trades_count": 0,
-    "waiver_pickups": 7,
+    "waiver_pickups": 8,
     "free_agent_pickups": 8,
-    "drops": 7,
+    "drops": 8,
     "players_started_count": 13,
     "started_points_total": 315.42,
     "started_points_by_source": {
@@ -255,10 +255,10 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 7,
+    "transactions_count": 8,
     "trades_count": 0,
     "waiver_pickups": 3,
-    "free_agent_pickups": 4,
+    "free_agent_pickups": 5,
     "drops": 3,
     "players_started_count": 13,
     "started_points_total": 467.34,
@@ -480,11 +480,11 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "transactions_count": 4,
+    "transactions_count": 6,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 3,
-    "drops": 1,
+    "free_agent_pickups": 4,
+    "drops": 2,
     "players_started_count": 15,
     "started_points_total": 382.22,
     "started_points_by_source": {
@@ -749,11 +749,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 15,
+    "transactions_count": 16,
     "trades_count": 0,
     "waiver_pickups": 5,
     "free_agent_pickups": 10,
-    "drops": 5,
+    "drops": 6,
     "players_started_count": 15,
     "started_points_total": 393.96,
     "started_points_by_source": {
