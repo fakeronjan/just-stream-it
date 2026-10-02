@@ -585,14 +585,14 @@
     "CLE": {
       "opponent": "PIT",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 27.0,
+      "opponent_score": 24.0
     },
     "PIT": {
       "opponent": "CLE",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 24.0,
+      "opponent_score": 27.0
     },
     "WSH": {
       "opponent": "IND",
