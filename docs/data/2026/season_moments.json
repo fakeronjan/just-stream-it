@@ -931,6 +931,4827 @@
       ]
     }
   ],
+  "best_ball": {
+    "standings": [
+      {
+        "team_id": 8,
+        "games": 3,
+        "wins": 3,
+        "losses": 0,
+        "best_ball_wins": 2,
+        "best_ball_losses": 1,
+        "blown": 0,
+        "points_for": 467.34,
+        "optimal_points_for": 487.94,
+        "bench_points": 20.6,
+        "efficiency": 0.9578
+      },
+      {
+        "team_id": 7,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 2,
+        "best_ball_losses": 1,
+        "blown": 1,
+        "points_for": 365.52,
+        "optimal_points_for": 484.4,
+        "bench_points": 118.88,
+        "efficiency": 0.7546
+      },
+      {
+        "team_id": 6,
+        "games": 3,
+        "wins": 2,
+        "losses": 1,
+        "best_ball_wins": 2,
+        "best_ball_losses": 1,
+        "blown": 0,
+        "points_for": 382.22,
+        "optimal_points_for": 473.98,
+        "bench_points": 91.76,
+        "efficiency": 0.8064
+      },
+      {
+        "team_id": 3,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 2,
+        "best_ball_losses": 1,
+        "blown": 1,
+        "points_for": 393.96,
+        "optimal_points_for": 458.54,
+        "bench_points": 64.58,
+        "efficiency": 0.8592
+      },
+      {
+        "team_id": 10,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 2,
+        "best_ball_losses": 1,
+        "blown": 1,
+        "points_for": 404.16,
+        "optimal_points_for": 456.54,
+        "bench_points": 52.38,
+        "efficiency": 0.8853
+      },
+      {
+        "team_id": 11,
+        "games": 3,
+        "wins": 2,
+        "losses": 1,
+        "best_ball_wins": 2,
+        "best_ball_losses": 1,
+        "blown": 1,
+        "points_for": 374.38,
+        "optimal_points_for": 452.9,
+        "bench_points": 78.52,
+        "efficiency": 0.8266
+      },
+      {
+        "team_id": 5,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 1,
+        "best_ball_losses": 2,
+        "blown": 2,
+        "points_for": 361.68,
+        "optimal_points_for": 467.42,
+        "bench_points": 105.74,
+        "efficiency": 0.7738
+      },
+      {
+        "team_id": 9,
+        "games": 3,
+        "wins": 2,
+        "losses": 1,
+        "best_ball_wins": 1,
+        "best_ball_losses": 2,
+        "blown": 1,
+        "points_for": 371.84,
+        "optimal_points_for": 443.96,
+        "bench_points": 72.12,
+        "efficiency": 0.8376
+      },
+      {
+        "team_id": 12,
+        "games": 3,
+        "wins": 2,
+        "losses": 1,
+        "best_ball_wins": 1,
+        "best_ball_losses": 2,
+        "blown": 1,
+        "points_for": 379.28,
+        "optimal_points_for": 436.48,
+        "bench_points": 57.2,
+        "efficiency": 0.869
+      },
+      {
+        "team_id": 2,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 1,
+        "best_ball_losses": 2,
+        "blown": 1,
+        "points_for": 350.04,
+        "optimal_points_for": 423.82,
+        "bench_points": 73.78,
+        "efficiency": 0.8259
+      },
+      {
+        "team_id": 4,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 1,
+        "best_ball_losses": 2,
+        "blown": 0,
+        "points_for": 362.48,
+        "optimal_points_for": 410.1,
+        "bench_points": 47.62,
+        "efficiency": 0.8839
+      },
+      {
+        "team_id": 1,
+        "games": 3,
+        "wins": 1,
+        "losses": 2,
+        "best_ball_wins": 1,
+        "best_ball_losses": 2,
+        "blown": 0,
+        "points_for": 315.42,
+        "optimal_points_for": 371.72,
+        "bench_points": 56.3,
+        "efficiency": 0.8485
+      }
+    ],
+    "weeks": [
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 8,
+        "opponent_id": 6,
+        "actual": 201.62,
+        "optimal": 201.62,
+        "bench_points": 0.0,
+        "efficiency": 1.0,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4040715,
+            "name": "Jalen Hurts",
+            "position": "QB",
+            "points": 24.72,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3043078,
+            "name": "Derrick Henry",
+            "position": "RB",
+            "points": 34.8,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4361579,
+            "name": "Javonte Williams",
+            "position": "RB",
+            "points": 21.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4361370,
+            "name": "Chris Olave",
+            "position": "WR",
+            "points": 23.2,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4430878,
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "points": 22.2,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3915416,
+            "name": "DJ Moore",
+            "position": "WR",
+            "points": 18.5,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4572680,
+            "name": "Tucker Kraft",
+            "position": "TE",
+            "points": 8.0,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16024,
+            "name": "Chargers D/ST",
+            "position": "D/ST",
+            "points": 0.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4869461,
+            "name": "Trey Smack",
+            "position": "K",
+            "points": 13.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4427366,
+            "name": "Breece Hall",
+            "position": "RB",
+            "points": 18.8,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4242512,
+            "name": "Malik Willis",
+            "position": "QB",
+            "points": 16.7,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 6,
+        "opponent_id": 8,
+        "actual": 107.3,
+        "optimal": 152.1,
+        "bench_points": 44.8,
+        "efficiency": 0.7055,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 4685720,
+            "name": "Bryce Young",
+            "position": "QB",
+            "points": 31.44,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 3126486,
+            "name": "Deebo Samuel Sr.",
+            "position": "WR",
+            "points": 15.0,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4430539,
+            "name": "Brenton Strange",
+            "position": "TE",
+            "points": 9.3,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4685720,
+            "name": "Bryce Young",
+            "position": "QB",
+            "points": 31.44,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4569173,
+            "name": "Rhamondre Stevenson",
+            "position": "RB",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3117251,
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "points": 11.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3126486,
+            "name": "Deebo Samuel Sr.",
+            "position": "WR",
+            "points": 15.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "points": 12.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569618,
+            "name": "Garrett Wilson",
+            "position": "WR",
+            "points": 10.9,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4430539,
+            "name": "Brenton Strange",
+            "position": "TE",
+            "points": 9.3,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16020,
+            "name": "Jets D/ST",
+            "position": "D/ST",
+            "points": 11.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 2971573,
+            "name": "Ka'imi Fairbairn",
+            "position": "K",
+            "points": 9.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4685472,
+            "name": "Tetairoa McMillan",
+            "position": "WR",
+            "points": 8.0,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3139477,
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "points": 21.66,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 5,
+        "opponent_id": 12,
+        "actual": 98.02,
+        "optimal": 132.8,
+        "bench_points": 34.78,
+        "efficiency": 0.7381,
+        "won": false,
+        "best_ball_won": false,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "points": 13.8,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569559,
+            "name": "Devaughn Vele",
+            "position": "WR",
+            "points": 16.4,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 2976212,
+            "name": "Stefon Diggs",
+            "position": "WR",
+            "points": 13.5,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3929645,
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "points": 12.9,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 3042519,
+            "name": "Aaron Jones Sr.",
+            "position": "RB",
+            "points": 10.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "points": 13.8,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4242335,
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "points": 23.6,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4596448,
+            "name": "Bucky Irving",
+            "position": "RB",
+            "points": 16.8,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569559,
+            "name": "Devaughn Vele",
+            "position": "WR",
+            "points": 16.4,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 2976212,
+            "name": "Stefon Diggs",
+            "position": "WR",
+            "points": 13.5,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4241389,
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "points": 12.9,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 3929645,
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "points": 12.9,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16034,
+            "name": "Texans D/ST",
+            "position": "D/ST",
+            "points": -4.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 3055899,
+            "name": "Harrison Butker",
+            "position": "K",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 3042519,
+            "name": "Aaron Jones Sr.",
+            "position": "RB",
+            "points": 10.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4595348,
+            "name": "Malik Nabers",
+            "position": "WR",
+            "points": 9.9,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 12,
+        "opponent_id": 5,
+        "actual": 123.46,
+        "optimal": 143.56,
+        "bench_points": 20.1,
+        "efficiency": 0.86,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4575131,
+            "name": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "points": 12.1,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4373678,
+            "name": "Khalil Shakir",
+            "position": "WR",
+            "points": 7.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 3917232,
+            "name": "Tyler Bass",
+            "position": "K",
+            "points": 13.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4361741,
+            "name": "Brock Purdy",
+            "position": "QB",
+            "points": 21.1,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4608686,
+            "name": "Kyle Monangai",
+            "position": "RB",
+            "points": 19.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4575131,
+            "name": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "points": 12.1,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4373678,
+            "name": "Khalil Shakir",
+            "position": "WR",
+            "points": 7.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4426388,
+            "name": "Jameson Williams",
+            "position": "WR",
+            "points": 6.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4431299,
+            "name": "Rome Odunze",
+            "position": "WR",
+            "points": 6.2,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 3121023,
+            "name": "Dallas Goedert",
+            "position": "TE",
+            "points": 21.7,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16030,
+            "name": "Jaguars D/ST",
+            "position": "D/ST",
+            "points": 14.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 3917232,
+            "name": "Tyler Bass",
+            "position": "K",
+            "points": 13.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4379399,
+            "name": "James Cook III",
+            "position": "RB",
+            "points": 8.4,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3915511,
+            "name": "Joe Burrow",
+            "position": "QB",
+            "points": 14.16,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 1,
+        "opponent_id": 2,
+        "actual": 92.58,
+        "optimal": 112.08,
+        "bench_points": 19.5,
+        "efficiency": 0.826,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4723820,
+            "name": "Omar Cooper Jr.",
+            "position": "WR",
+            "points": 3.5,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4385690,
+            "name": "Dalton Kincaid",
+            "position": "TE",
+            "points": 15.5,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4373626,
+            "name": "Tyler Allgeier",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3046779,
+            "name": "Jared Goff",
+            "position": "QB",
+            "points": 16.44,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4239996,
+            "name": "Travis Etienne Jr.",
+            "position": "RB",
+            "points": 11.3,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429160,
+            "name": "De'Von Achane",
+            "position": "RB",
+            "points": 8.6,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4374302,
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "points": 23.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4685278,
+            "name": "Luther Burden III",
+            "position": "WR",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4723820,
+            "name": "Omar Cooper Jr.",
+            "position": "WR",
+            "points": 3.5,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4385690,
+            "name": "Dalton Kincaid",
+            "position": "TE",
+            "points": 15.5,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16003,
+            "name": "Bears D/ST",
+            "position": "D/ST",
+            "points": 2.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4689936,
+            "name": "Jake Bates",
+            "position": "K",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4373626,
+            "name": "Tyler Allgeier",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 3917792,
+            "name": "Daniel Jones",
+            "position": "QB",
+            "points": 9.04,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 2,
+        "opponent_id": 1,
+        "actual": 147.08,
+        "optimal": 164.16,
+        "bench_points": 17.08,
+        "efficiency": 0.896,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4870653,
+            "name": "KC Concepcion",
+            "position": "WR",
+            "points": 5.8,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 5083315,
+            "name": "Kenyon Sadiq",
+            "position": "TE",
+            "points": 9.9,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 15864,
+            "name": "Geno Smith",
+            "position": "QB",
+            "points": 9.3,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4431611,
+            "name": "Caleb Williams",
+            "position": "QB",
+            "points": 37.26,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4241416,
+            "name": "Chuba Hubbard",
+            "position": "RB",
+            "points": 22.2,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4696981,
+            "name": "Cam Skattebo",
+            "position": "RB",
+            "points": 14.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4429615,
+            "name": "Zay Flowers",
+            "position": "WR",
+            "points": 23.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569587,
+            "name": "Wan'Dale Robinson",
+            "position": "WR",
+            "points": 6.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4870653,
+            "name": "KC Concepcion",
+            "position": "WR",
+            "points": 5.8,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4361050,
+            "name": "Isaiah Likely",
+            "position": "TE",
+            "points": 23.8,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16019,
+            "name": "Giants D/ST",
+            "position": "D/ST",
+            "points": 4.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 17372,
+            "name": "Chris Boswell",
+            "position": "K",
+            "points": 8.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 5083315,
+            "name": "Kenyon Sadiq",
+            "position": "TE",
+            "points": 9.9,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 15864,
+            "name": "Geno Smith",
+            "position": "QB",
+            "points": 9.3,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 3,
+        "opponent_id": 10,
+        "actual": 133.46,
+        "optimal": 134.76,
+        "bench_points": 1.3,
+        "efficiency": 0.9904,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "OP",
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "points": 3.7,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3918298,
+            "name": "Josh Allen",
+            "position": "QB",
+            "points": 35.66,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4035538,
+            "name": "David Montgomery",
+            "position": "RB",
+            "points": 27.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4430737,
+            "name": "Kyren Williams",
+            "position": "RB",
+            "points": 14.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4360078,
+            "name": "Alec Pierce",
+            "position": "WR",
+            "points": 8.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4360761,
+            "name": "Michael Wilson",
+            "position": "WR",
+            "points": 8.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4035687,
+            "name": "Michael Pittman Jr.",
+            "position": "WR",
+            "points": 7.3,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4361307,
+            "name": "Trey McBride",
+            "position": "TE",
+            "points": 20.0,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16016,
+            "name": "Vikings D/ST",
+            "position": "D/ST",
+            "points": 5.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4574716,
+            "name": "Harrison Mevis",
+            "position": "K",
+            "points": 1.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4426502,
+            "name": "Drake London",
+            "position": "WR",
+            "points": 4.5,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "points": 3.7,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 10,
+        "opponent_id": 3,
+        "actual": 140.9,
+        "optimal": 154.1,
+        "bench_points": 13.2,
+        "efficiency": 0.9143,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4869645,
+            "name": "Caleb Douglas",
+            "position": "WR",
+            "points": 11.9,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4597500,
+            "name": "Adonai Mitchell",
+            "position": "WR",
+            "points": 7.5,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 2577417,
+            "name": "Dak Prescott",
+            "position": "QB",
+            "points": 14.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4890973,
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "points": 29.7,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4430807,
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "points": 27.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 16737,
+            "name": "Mike Evans",
+            "position": "WR",
+            "points": 13.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4869645,
+            "name": "Caleb Douglas",
+            "position": "WR",
+            "points": 11.9,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4597500,
+            "name": "Adonai Mitchell",
+            "position": "WR",
+            "points": 7.5,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 15847,
+            "name": "Travis Kelce",
+            "position": "TE",
+            "points": 8.6,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16023,
+            "name": "Steelers D/ST",
+            "position": "D/ST",
+            "points": 19.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 3953687,
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "points": 2.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4871023,
+            "name": "Carnell Tate",
+            "position": "WR",
+            "points": 5.8,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3122840,
+            "name": "Deshaun Watson",
+            "position": "QB",
+            "points": 14.0,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 4,
+        "opponent_id": 7,
+        "actual": 127.6,
+        "optimal": 136.94,
+        "bench_points": 9.34,
+        "efficiency": 0.9318,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 2578570,
+            "name": "Jacoby Brissett",
+            "position": "QB",
+            "points": 16.48,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16033,
+            "name": "Ravens D/ST",
+            "position": "D/ST",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4832955,
+            "name": "Emmett Johnson",
+            "position": "RB",
+            "points": 7.8,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 2578570,
+            "name": "Jacoby Brissett",
+            "position": "QB",
+            "points": 16.48,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4567048,
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "points": 32.6,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4362238,
+            "name": "Chase Brown",
+            "position": "RB",
+            "points": 16.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4432620,
+            "name": "Parker Washington",
+            "position": "WR",
+            "points": 16.8,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4426515,
+            "name": "Puka Nacua",
+            "position": "WR",
+            "points": 9.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4567750,
+            "name": "Emeka Egbuka",
+            "position": "WR",
+            "points": 8.8,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4723086,
+            "name": "Colston Loveland",
+            "position": "TE",
+            "points": 0.0,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16033,
+            "name": "Ravens D/ST",
+            "position": "D/ST",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4567104,
+            "name": "Will Reichard",
+            "position": "K",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4832955,
+            "name": "Emmett Johnson",
+            "position": "RB",
+            "points": 7.8,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4038941,
+            "name": "Justin Herbert",
+            "position": "QB",
+            "points": 13.26,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 7,
+        "opponent_id": 4,
+        "actual": 156.36,
+        "optimal": 194.66,
+        "bench_points": 38.3,
+        "efficiency": 0.8032,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4568490,
+            "name": "RJ Harvey",
+            "position": "RB",
+            "points": 6.1,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4695883,
+            "name": "Jalen Coker",
+            "position": "WR",
+            "points": 29.8,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4036133,
+            "name": "T.J. Hockenson",
+            "position": "TE",
+            "points": 11.6,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16017,
+            "name": "Patriots D/ST",
+            "position": "D/ST",
+            "points": 7.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4689114,
+            "name": "Jaxson Dart",
+            "position": "QB",
+            "points": 26.6,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4882093,
+            "name": "Bhayshul Tuten",
+            "position": "RB",
+            "points": 9.3,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4568490,
+            "name": "RJ Harvey",
+            "position": "RB",
+            "points": 6.1,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4695883,
+            "name": "Jalen Coker",
+            "position": "WR",
+            "points": 29.8,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4248528,
+            "name": "Christian Watson",
+            "position": "WR",
+            "points": 29.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4262921,
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "points": 27.2,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4036133,
+            "name": "T.J. Hockenson",
+            "position": "TE",
+            "points": 11.6,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16017,
+            "name": "Patriots D/ST",
+            "position": "D/ST",
+            "points": 7.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4686361,
+            "name": "Cam Little",
+            "position": "K",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4258173,
+            "name": "Nico Collins",
+            "position": "WR",
+            "points": 17.7,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4426348,
+            "name": "Jayden Daniels",
+            "position": "QB",
+            "points": 17.66,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 11,
+        "opponent_id": 9,
+        "actual": 134.92,
+        "optimal": 154.46,
+        "bench_points": 19.54,
+        "efficiency": 0.8735,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "points": 11.2,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3117256,
+            "name": "Dalton Schultz",
+            "position": "TE",
+            "points": 5.5,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4034949,
+            "name": "Eddy Pineiro",
+            "position": "K",
+            "points": 10.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "points": 23.2,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3916387,
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "points": 24.96,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4259545,
+            "name": "D'Andre Swift",
+            "position": "RB",
+            "points": 31.9,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4870808,
+            "name": "Jeremiyah Love",
+            "position": "RB",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "points": 11.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4428331,
+            "name": "Rashee Rice",
+            "position": "WR",
+            "points": 8.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4241478,
+            "name": "DeVonta Smith",
+            "position": "WR",
+            "points": 6.8,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 3117256,
+            "name": "Dalton Schultz",
+            "position": "TE",
+            "points": 5.5,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16026,
+            "name": "Seahawks D/ST",
+            "position": "D/ST",
+            "points": 14.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4034949,
+            "name": "Eddy Pineiro",
+            "position": "K",
+            "points": 10.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4685702,
+            "name": "Quinshon Judkins",
+            "position": "RB",
+            "points": 6.0,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "points": 23.2,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 1,
+        "is_playoffs": false,
+        "team_id": 9,
+        "opponent_id": 11,
+        "actual": 121.92,
+        "optimal": 144.64,
+        "bench_points": 22.72,
+        "efficiency": 0.8429,
+        "won": false,
+        "best_ball_won": false,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4360569,
+            "name": "Jordan Mason",
+            "position": "RB",
+            "points": 11.9,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4586312,
+            "name": "Jaylin Noel",
+            "position": "WR",
+            "points": 6.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4382466,
+            "name": "Jalen Nailor",
+            "position": "WR",
+            "points": 4.2,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 8439,
+            "name": "Aaron Rodgers",
+            "position": "QB",
+            "points": 12.54,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4360310,
+            "name": "Trevor Lawrence",
+            "position": "QB",
+            "points": 26.1,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429795,
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "points": 31.1,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4360569,
+            "name": "Jordan Mason",
+            "position": "RB",
+            "points": 11.9,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4612826,
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "points": 16.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4586312,
+            "name": "Jaylin Noel",
+            "position": "WR",
+            "points": 6.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4382466,
+            "name": "Jalen Nailor",
+            "position": "WR",
+            "points": 4.2,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4430027,
+            "name": "Sam LaPorta",
+            "position": "TE",
+            "points": 7.3,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16014,
+            "name": "Rams D/ST",
+            "position": "D/ST",
+            "points": 1.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4360234,
+            "name": "Evan McPherson",
+            "position": "K",
+            "points": 19.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 3929630,
+            "name": "Saquon Barkley",
+            "position": "RB",
+            "points": 8.5,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 8439,
+            "name": "Aaron Rodgers",
+            "position": "QB",
+            "points": 12.54,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 6,
+        "opponent_id": 12,
+        "actual": 136.6,
+        "optimal": 154.26,
+        "bench_points": 17.66,
+        "efficiency": 0.8855,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4428557,
+            "name": "Tyjae Spears",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "points": 7.8,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4685720,
+            "name": "Bryce Young",
+            "position": "QB",
+            "points": 24.08,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3139477,
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "points": 28.98,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3117251,
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "points": 20.6,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4428557,
+            "name": "Tyjae Spears",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569618,
+            "name": "Garrett Wilson",
+            "position": "WR",
+            "points": 14.2,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4685472,
+            "name": "Tetairoa McMillan",
+            "position": "WR",
+            "points": 12.6,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4683062,
+            "name": "Xavier Worthy",
+            "position": "WR",
+            "points": 11.0,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 3040151,
+            "name": "George Kittle",
+            "position": "TE",
+            "points": 16.0,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16033,
+            "name": "Ravens D/ST",
+            "position": "D/ST",
+            "points": 5.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 2971573,
+            "name": "Ka'imi Fairbairn",
+            "position": "K",
+            "points": 6.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "points": 7.8,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4685720,
+            "name": "Bryce Young",
+            "position": "QB",
+            "points": 24.08,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 12,
+        "opponent_id": 6,
+        "actual": 115.06,
+        "optimal": 145.56,
+        "bench_points": 30.5,
+        "efficiency": 0.7905,
+        "won": false,
+        "best_ball_won": false,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4360939,
+            "name": "Rashod Bateman",
+            "position": "WR",
+            "points": 18.3,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3116365,
+            "name": "Mark Andrews",
+            "position": "TE",
+            "points": 7.9,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16005,
+            "name": "Browns D/ST",
+            "position": "D/ST",
+            "points": 5.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 3917232,
+            "name": "Tyler Bass",
+            "position": "K",
+            "points": 5.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4608686,
+            "name": "Kyle Monangai",
+            "position": "RB",
+            "points": 6.8,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4361741,
+            "name": "Brock Purdy",
+            "position": "QB",
+            "points": 28.48,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4379399,
+            "name": "James Cook III",
+            "position": "RB",
+            "points": 20.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4569987,
+            "name": "Jaylen Warren",
+            "position": "RB",
+            "points": 8.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4362628,
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "points": 23.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4360939,
+            "name": "Rashod Bateman",
+            "position": "WR",
+            "points": 18.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4431299,
+            "name": "Rome Odunze",
+            "position": "WR",
+            "points": 5.8,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 3116365,
+            "name": "Mark Andrews",
+            "position": "TE",
+            "points": 7.9,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16005,
+            "name": "Browns D/ST",
+            "position": "D/ST",
+            "points": 5.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 3917232,
+            "name": "Tyler Bass",
+            "position": "K",
+            "points": 5.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4608686,
+            "name": "Kyle Monangai",
+            "position": "RB",
+            "points": 6.8,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 3915511,
+            "name": "Joe Burrow",
+            "position": "QB",
+            "points": 16.18,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 2,
+        "opponent_id": 8,
+        "actual": 81.0,
+        "optimal": 99.4,
+        "bench_points": 18.4,
+        "efficiency": 0.8149,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4870653,
+            "name": "KC Concepcion",
+            "position": "WR",
+            "points": 5.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4686422,
+            "name": "Xavier Hutchinson",
+            "position": "WR",
+            "points": 5.2,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4242355,
+            "name": "Jake Ferguson",
+            "position": "TE",
+            "points": 18.3,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 15864,
+            "name": "Geno Smith",
+            "position": "QB",
+            "points": 15.58,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4685382,
+            "name": "Omarion Hampton",
+            "position": "RB",
+            "points": 16.5,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4241416,
+            "name": "Chuba Hubbard",
+            "position": "RB",
+            "points": 13.4,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4426354,
+            "name": "George Pickens",
+            "position": "WR",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4870653,
+            "name": "KC Concepcion",
+            "position": "WR",
+            "points": 5.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4686422,
+            "name": "Xavier Hutchinson",
+            "position": "WR",
+            "points": 5.2,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4242355,
+            "name": "Jake Ferguson",
+            "position": "TE",
+            "points": 18.3,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16019,
+            "name": "Giants D/ST",
+            "position": "D/ST",
+            "points": -1.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 17372,
+            "name": "Chris Boswell",
+            "position": "K",
+            "points": 4.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4696981,
+            "name": "Cam Skattebo",
+            "position": "RB",
+            "points": 7.5,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4431611,
+            "name": "Caleb Williams",
+            "position": "QB",
+            "points": 7.72,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 8,
+        "opponent_id": 2,
+        "actual": 134.04,
+        "optimal": 148.24,
+        "bench_points": 14.2,
+        "efficiency": 0.9042,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4688813,
+            "name": "Josh Downs",
+            "position": "WR",
+            "points": 10.7,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4428850,
+            "name": "Dontayvion Wicks",
+            "position": "WR",
+            "points": 9.9,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4040715,
+            "name": "Jalen Hurts",
+            "position": "QB",
+            "points": 16.16,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3043078,
+            "name": "Derrick Henry",
+            "position": "RB",
+            "points": 16.2,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4427366,
+            "name": "Breece Hall",
+            "position": "RB",
+            "points": 11.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4430878,
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "points": 38.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4361370,
+            "name": "Chris Olave",
+            "position": "WR",
+            "points": 18.6,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4688813,
+            "name": "Josh Downs",
+            "position": "WR",
+            "points": 10.7,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4572680,
+            "name": "Tucker Kraft",
+            "position": "TE",
+            "points": 2.5,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16024,
+            "name": "Chargers D/ST",
+            "position": "D/ST",
+            "points": 4.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4869461,
+            "name": "Trey Smack",
+            "position": "K",
+            "points": 8.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4428850,
+            "name": "Dontayvion Wicks",
+            "position": "WR",
+            "points": 9.9,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4242512,
+            "name": "Malik Willis",
+            "position": "QB",
+            "points": 12.48,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 10,
+        "opponent_id": 5,
+        "actual": 123.46,
+        "optimal": 142.38,
+        "bench_points": 18.92,
+        "efficiency": 0.8671,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4597500,
+            "name": "Adonai Mitchell",
+            "position": "WR",
+            "points": 9.3,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4685247,
+            "name": "Braelon Allen",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 3122840,
+            "name": "Deshaun Watson",
+            "position": "QB",
+            "points": 19.72,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 2577417,
+            "name": "Dak Prescott",
+            "position": "QB",
+            "points": 29.76,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4430807,
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "points": 9.6,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4890973,
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "points": 8.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4597500,
+            "name": "Adonai Mitchell",
+            "position": "WR",
+            "points": 9.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 16737,
+            "name": "Mike Evans",
+            "position": "WR",
+            "points": 6.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4871023,
+            "name": "Carnell Tate",
+            "position": "WR",
+            "points": 4.2,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 15847,
+            "name": "Travis Kelce",
+            "position": "TE",
+            "points": 20.6,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16007,
+            "name": "Broncos D/ST",
+            "position": "D/ST",
+            "points": 9.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 3953687,
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "points": 17.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4685247,
+            "name": "Braelon Allen",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 3122840,
+            "name": "Deshaun Watson",
+            "position": "QB",
+            "points": 19.72,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 5,
+        "opponent_id": 10,
+        "actual": 154.7,
+        "optimal": 189.7,
+        "bench_points": 35.0,
+        "efficiency": 0.8155,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 2976212,
+            "name": "Stefon Diggs",
+            "position": "WR",
+            "points": 19.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569559,
+            "name": "Devaughn Vele",
+            "position": "WR",
+            "points": 8.9,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "points": 20.22,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 12483,
+            "name": "Matthew Stafford",
+            "position": "QB",
+            "points": 26.98,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4242335,
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "points": 27.2,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4596448,
+            "name": "Bucky Irving",
+            "position": "RB",
+            "points": 11.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4241389,
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "points": 31.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 2976212,
+            "name": "Stefon Diggs",
+            "position": "WR",
+            "points": 19.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569559,
+            "name": "Devaughn Vele",
+            "position": "WR",
+            "points": 8.9,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4431459,
+            "name": "Tyler Warren",
+            "position": "TE",
+            "points": 11.4,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16034,
+            "name": "Texans D/ST",
+            "position": "D/ST",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 3055899,
+            "name": "Harrison Butker",
+            "position": "K",
+            "points": 16.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 3042519,
+            "name": "Aaron Jones Sr.",
+            "position": "RB",
+            "points": 10.5,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "points": 20.22,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 7,
+        "opponent_id": 1,
+        "actual": 85.84,
+        "optimal": 132.64,
+        "bench_points": 46.8,
+        "efficiency": 0.6472,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4432710,
+            "name": "TreVeyon Henderson",
+            "position": "RB",
+            "points": 13.6,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4832800,
+            "name": "Denzel Boston",
+            "position": "WR",
+            "points": 18.0,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4036133,
+            "name": "T.J. Hockenson",
+            "position": "TE",
+            "points": 4.4,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16017,
+            "name": "Patriots D/ST",
+            "position": "D/ST",
+            "points": 20.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4426348,
+            "name": "Jayden Daniels",
+            "position": "QB",
+            "points": 14.74,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4432710,
+            "name": "TreVeyon Henderson",
+            "position": "RB",
+            "points": 13.6,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4882093,
+            "name": "Bhayshul Tuten",
+            "position": "RB",
+            "points": 13.2,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4832800,
+            "name": "Denzel Boston",
+            "position": "WR",
+            "points": 18.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4248528,
+            "name": "Christian Watson",
+            "position": "WR",
+            "points": 12.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4239993,
+            "name": "Tee Higgins",
+            "position": "WR",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4036133,
+            "name": "T.J. Hockenson",
+            "position": "TE",
+            "points": 4.4,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16017,
+            "name": "Patriots D/ST",
+            "position": "D/ST",
+            "points": 20.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4686361,
+            "name": "Cam Little",
+            "position": "K",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4695883,
+            "name": "Jalen Coker",
+            "position": "WR",
+            "points": 10.6,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4262921,
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "points": 7.0,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 1,
+        "opponent_id": 7,
+        "actual": 150.78,
+        "optimal": 153.98,
+        "bench_points": 3.2,
+        "efficiency": 0.9792,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4241474,
+            "name": "Brian Robinson Jr.",
+            "position": "RB",
+            "points": 7.7,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3046779,
+            "name": "Jared Goff",
+            "position": "QB",
+            "points": 29.78,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429160,
+            "name": "De'Von Achane",
+            "position": "RB",
+            "points": 10.8,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4241474,
+            "name": "Brian Robinson Jr.",
+            "position": "RB",
+            "points": 7.7,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4374302,
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "points": 30.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4372016,
+            "name": "Jaylen Waddle",
+            "position": "WR",
+            "points": 17.8,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4685278,
+            "name": "Luther Burden III",
+            "position": "WR",
+            "points": 4.7,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4385690,
+            "name": "Dalton Kincaid",
+            "position": "TE",
+            "points": 19.0,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16025,
+            "name": "49ers D/ST",
+            "position": "D/ST",
+            "points": 9.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4689936,
+            "name": "Jake Bates",
+            "position": "K",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4239996,
+            "name": "Travis Etienne Jr.",
+            "position": "RB",
+            "points": 6.1,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3917792,
+            "name": "Daniel Jones",
+            "position": "QB",
+            "points": 11.4,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 9,
+        "opponent_id": 3,
+        "actual": 112.28,
+        "optimal": 132.58,
+        "bench_points": 20.3,
+        "efficiency": 0.8469,
+        "won": true,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4428718,
+            "name": "Tre Tucker",
+            "position": "WR",
+            "points": 20.4,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4361411,
+            "name": "Pat Freiermuth",
+            "position": "TE",
+            "points": 5.4,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4688380,
+            "name": "Cam Ward",
+            "position": "QB",
+            "points": 20.02,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429795,
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "points": 20.3,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3916148,
+            "name": "Tony Pollard",
+            "position": "RB",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4428718,
+            "name": "Tre Tucker",
+            "position": "WR",
+            "points": 20.4,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4361432,
+            "name": "Romeo Doubs",
+            "position": "WR",
+            "points": 11.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4612826,
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "points": 5.0,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4430027,
+            "name": "Sam LaPorta",
+            "position": "TE",
+            "points": 14.2,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16014,
+            "name": "Rams D/ST",
+            "position": "D/ST",
+            "points": 11.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4360234,
+            "name": "Evan McPherson",
+            "position": "K",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4361411,
+            "name": "Pat Freiermuth",
+            "position": "TE",
+            "points": 5.4,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4360310,
+            "name": "Trevor Lawrence",
+            "position": "QB",
+            "points": 6.16,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 3,
+        "opponent_id": 9,
+        "actual": 106.94,
+        "optimal": 151.42,
+        "bench_points": 44.48,
+        "efficiency": 0.7062,
+        "won": false,
+        "best_ball_won": true,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "points": 11.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4360761,
+            "name": "Michael Wilson",
+            "position": "WR",
+            "points": 2.8,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4570037,
+            "name": "Terrance Ferguson",
+            "position": "TE",
+            "points": 14.4,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16016,
+            "name": "Vikings D/ST",
+            "position": "D/ST",
+            "points": 16.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 3924327,
+            "name": "Drew Lock",
+            "position": "QB",
+            "points": 21.4,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3918298,
+            "name": "Josh Allen",
+            "position": "QB",
+            "points": 40.82,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4430737,
+            "name": "Kyren Williams",
+            "position": "RB",
+            "points": 14.7,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "points": 11.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4426502,
+            "name": "Drake London",
+            "position": "WR",
+            "points": 6.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3121422,
+            "name": "Terry McLaurin",
+            "position": "WR",
+            "points": 6.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4360761,
+            "name": "Michael Wilson",
+            "position": "WR",
+            "points": 2.8,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4570037,
+            "name": "Terrance Ferguson",
+            "position": "TE",
+            "points": 14.4,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16016,
+            "name": "Vikings D/ST",
+            "position": "D/ST",
+            "points": 16.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4574716,
+            "name": "Harrison Mevis",
+            "position": "K",
+            "points": 3.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4361307,
+            "name": "Trey McBride",
+            "position": "TE",
+            "points": 14.1,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3924327,
+            "name": "Drew Lock",
+            "position": "QB",
+            "points": 21.4,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 11,
+        "opponent_id": 4,
+        "actual": 113.32,
+        "optimal": 141.8,
+        "bench_points": 28.48,
+        "efficiency": 0.7992,
+        "won": false,
+        "best_ball_won": false,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "points": 22.38,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429013,
+            "name": "Tank Bigsby",
+            "position": "RB",
+            "points": 10.8,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "points": 3.3,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3117256,
+            "name": "Dalton Schultz",
+            "position": "TE",
+            "points": 20.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 2473037,
+            "name": "Jason Myers",
+            "position": "K",
+            "points": 7.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "points": 22.38,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429013,
+            "name": "Tank Bigsby",
+            "position": "RB",
+            "points": 10.8,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4259545,
+            "name": "D'Andre Swift",
+            "position": "RB",
+            "points": 10.4,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4241478,
+            "name": "DeVonta Smith",
+            "position": "WR",
+            "points": 22.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4428331,
+            "name": "Rashee Rice",
+            "position": "WR",
+            "points": 10.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "points": 3.3,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3117256,
+            "name": "Dalton Schultz",
+            "position": "TE",
+            "points": 20.0,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16026,
+            "name": "Seahawks D/ST",
+            "position": "D/ST",
+            "points": 10.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 2473037,
+            "name": "Jason Myers",
+            "position": "K",
+            "points": 7.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 5083076,
+            "name": "Harold Fannin Jr.",
+            "position": "TE",
+            "points": 7.9,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4432577,
+            "name": "C.J. Stroud",
+            "position": "QB",
+            "points": 17.02,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "is_playoffs": false,
+        "team_id": 4,
+        "opponent_id": 11,
+        "actual": 126.66,
+        "optimal": 152.08,
+        "bench_points": 25.42,
+        "efficiency": 0.8329,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4702555,
+            "name": "Jonah Coleman",
+            "position": "RB",
+            "points": 13.3,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16029,
+            "name": "Panthers D/ST",
+            "position": "D/ST",
+            "points": 24.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3052587,
+            "name": "Baker Mayfield",
+            "position": "QB",
+            "points": 12.18,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4567048,
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "points": 20.8,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4702555,
+            "name": "Jonah Coleman",
+            "position": "RB",
+            "points": 13.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 16800,
+            "name": "Davante Adams",
+            "position": "WR",
+            "points": 35.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4432620,
+            "name": "Parker Washington",
+            "position": "WR",
+            "points": 13.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4567750,
+            "name": "Emeka Egbuka",
+            "position": "WR",
+            "points": 8.8,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4723086,
+            "name": "Colston Loveland",
+            "position": "TE",
+            "points": 0.8,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16029,
+            "name": "Panthers D/ST",
+            "position": "D/ST",
+            "points": 24.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 17427,
+            "name": "Cairo Santos",
+            "position": "K",
+            "points": 4.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4429096,
+            "name": "Blake Corum",
+            "position": "RB",
+            "points": 9.7,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4362238,
+            "name": "Chase Brown",
+            "position": "RB",
+            "points": 9.7,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 2,
+        "opponent_id": 6,
+        "actual": 121.96,
+        "optimal": 160.26,
+        "bench_points": 38.3,
+        "efficiency": 0.761,
+        "won": false,
+        "best_ball_won": false,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4569587,
+            "name": "Wan'Dale Robinson",
+            "position": "WR",
+            "points": 15.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4429615,
+            "name": "Zay Flowers",
+            "position": "WR",
+            "points": 12.9,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 5083315,
+            "name": "Kenyon Sadiq",
+            "position": "TE",
+            "points": 20.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 15864,
+            "name": "Geno Smith",
+            "position": "QB",
+            "points": 26.04,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4241416,
+            "name": "Chuba Hubbard",
+            "position": "RB",
+            "points": 13.0,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4696981,
+            "name": "Cam Skattebo",
+            "position": "RB",
+            "points": 11.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4429205,
+            "name": "Jordan Addison",
+            "position": "WR",
+            "points": 17.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569587,
+            "name": "Wan'Dale Robinson",
+            "position": "WR",
+            "points": 15.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4429615,
+            "name": "Zay Flowers",
+            "position": "WR",
+            "points": 12.9,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 5083315,
+            "name": "Kenyon Sadiq",
+            "position": "TE",
+            "points": 20.0,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16019,
+            "name": "Giants D/ST",
+            "position": "D/ST",
+            "points": 9.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 17372,
+            "name": "Chris Boswell",
+            "position": "K",
+            "points": 13.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4426354,
+            "name": "George Pickens",
+            "position": "WR",
+            "points": 11.7,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3917315,
+            "name": "Kyler Murray",
+            "position": "QB",
+            "points": 10.42,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 6,
+        "opponent_id": 2,
+        "actual": 138.32,
+        "optimal": 167.62,
+        "bench_points": 29.3,
+        "efficiency": 0.8252,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 4426338,
+            "name": "Bo Nix",
+            "position": "QB",
+            "points": 24.14,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429835,
+            "name": "George Holani",
+            "position": "RB",
+            "points": 8.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "points": 18.5,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4426338,
+            "name": "Bo Nix",
+            "position": "QB",
+            "points": 24.14,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 3117251,
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "points": 19.6,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429835,
+            "name": "George Holani",
+            "position": "RB",
+            "points": 8.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569618,
+            "name": "Garrett Wilson",
+            "position": "WR",
+            "points": 21.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4701936,
+            "name": "Matthew Golden",
+            "position": "WR",
+            "points": 18.5,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 3126486,
+            "name": "Deebo Samuel Sr.",
+            "position": "WR",
+            "points": 15.4,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 3040151,
+            "name": "George Kittle",
+            "position": "TE",
+            "points": 23.2,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16010,
+            "name": "Titans D/ST",
+            "position": "D/ST",
+            "points": 8.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 2971573,
+            "name": "Ka'imi Fairbairn",
+            "position": "K",
+            "points": 5.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4569173,
+            "name": "Rhamondre Stevenson",
+            "position": "RB",
+            "points": 5.3,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4036378,
+            "name": "Jordan Love",
+            "position": "QB",
+            "points": 18.48,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 12,
+        "opponent_id": 10,
+        "actual": 140.76,
+        "optimal": 147.36,
+        "bench_points": 6.6,
+        "efficiency": 0.9552,
+        "won": true,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "TE",
+            "player_id": 4361411,
+            "name": "Pat Freiermuth",
+            "position": "TE",
+            "points": 4.1,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16005,
+            "name": "Browns D/ST",
+            "position": "D/ST",
+            "points": 4.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4575131,
+            "name": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "points": 4.8,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4361741,
+            "name": "Brock Purdy",
+            "position": "QB",
+            "points": 31.28,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4379399,
+            "name": "James Cook III",
+            "position": "RB",
+            "points": 19.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4569987,
+            "name": "Jaylen Warren",
+            "position": "RB",
+            "points": 19.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4362628,
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "points": 20.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4426388,
+            "name": "Jameson Williams",
+            "position": "WR",
+            "points": 6.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4431299,
+            "name": "Rome Odunze",
+            "position": "WR",
+            "points": 5.9,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4361411,
+            "name": "Pat Freiermuth",
+            "position": "TE",
+            "points": 4.1,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16005,
+            "name": "Browns D/ST",
+            "position": "D/ST",
+            "points": 4.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4362081,
+            "name": "Cameron Dicker",
+            "position": "K",
+            "points": 9.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4575131,
+            "name": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "points": 4.8,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 3915511,
+            "name": "Joe Burrow",
+            "position": "QB",
+            "points": 22.58,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 10,
+        "opponent_id": 12,
+        "actual": 139.8,
+        "optimal": 160.06,
+        "bench_points": 20.26,
+        "efficiency": 0.8734,
+        "won": false,
+        "best_ball_won": true,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 2578570,
+            "name": "Jacoby Brissett",
+            "position": "QB",
+            "points": 25.6,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4686658,
+            "name": "Mike Washington Jr.",
+            "position": "RB",
+            "points": 11.4,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16007,
+            "name": "Broncos D/ST",
+            "position": "D/ST",
+            "points": 9.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 2578570,
+            "name": "Jacoby Brissett",
+            "position": "QB",
+            "points": 25.6,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4430807,
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "points": 34.3,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4686658,
+            "name": "Mike Washington Jr.",
+            "position": "RB",
+            "points": 11.4,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 16737,
+            "name": "Mike Evans",
+            "position": "WR",
+            "points": 10.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4871023,
+            "name": "Carnell Tate",
+            "position": "WR",
+            "points": 8.8,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3128429,
+            "name": "Courtland Sutton",
+            "position": "WR",
+            "points": 6.1,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 15847,
+            "name": "Travis Kelce",
+            "position": "TE",
+            "points": 12.9,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16007,
+            "name": "Broncos D/ST",
+            "position": "D/ST",
+            "points": 9.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 3953687,
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "points": 10.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4890973,
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "points": 10.8,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3122840,
+            "name": "Deshaun Watson",
+            "position": "QB",
+            "points": 20.26,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 8,
+        "opponent_id": 7,
+        "actual": 131.68,
+        "optimal": 138.08,
+        "bench_points": 6.4,
+        "efficiency": 0.9537,
+        "won": true,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 4600981,
+            "name": "Pat Bryant",
+            "position": "WR",
+            "points": 13.4,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4040715,
+            "name": "Jalen Hurts",
+            "position": "QB",
+            "points": 12.62,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3043078,
+            "name": "Derrick Henry",
+            "position": "RB",
+            "points": 21.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4361579,
+            "name": "Javonte Williams",
+            "position": "RB",
+            "points": 17.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4430878,
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "points": 30.36,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4361370,
+            "name": "Chris Olave",
+            "position": "WR",
+            "points": 15.2,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4600981,
+            "name": "Pat Bryant",
+            "position": "WR",
+            "points": 13.4,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4572680,
+            "name": "Tucker Kraft",
+            "position": "TE",
+            "points": 4.6,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16018,
+            "name": "Saints D/ST",
+            "position": "D/ST",
+            "points": 2.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4869461,
+            "name": "Trey Smack",
+            "position": "K",
+            "points": 1.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4688813,
+            "name": "Josh Downs",
+            "position": "WR",
+            "points": 10.2,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4242512,
+            "name": "Malik Willis",
+            "position": "QB",
+            "points": 10.0,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 7,
+        "opponent_id": 8,
+        "actual": 123.32,
+        "optimal": 157.1,
+        "bench_points": 33.78,
+        "efficiency": 0.785,
+        "won": false,
+        "best_ball_won": true,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 15168,
+            "name": "Case Keenum",
+            "position": "QB",
+            "points": 24.48,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4568490,
+            "name": "RJ Harvey",
+            "position": "RB",
+            "points": 7.7,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4832800,
+            "name": "Denzel Boston",
+            "position": "WR",
+            "points": 7.1,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4429086,
+            "name": "Michael Mayer",
+            "position": "TE",
+            "points": 10.7,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 15168,
+            "name": "Case Keenum",
+            "position": "QB",
+            "points": 24.48,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4882093,
+            "name": "Bhayshul Tuten",
+            "position": "RB",
+            "points": 16.0,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4568490,
+            "name": "RJ Harvey",
+            "position": "RB",
+            "points": 7.7,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4248528,
+            "name": "Christian Watson",
+            "position": "WR",
+            "points": 19.1,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4239993,
+            "name": "Tee Higgins",
+            "position": "WR",
+            "points": 18.0,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4832800,
+            "name": "Denzel Boston",
+            "position": "WR",
+            "points": 7.1,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4432665,
+            "name": "Brock Bowers",
+            "position": "TE",
+            "points": 22.6,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16012,
+            "name": "Chiefs D/ST",
+            "position": "D/ST",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4686361,
+            "name": "Cam Little",
+            "position": "K",
+            "points": 4.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4429086,
+            "name": "Michael Mayer",
+            "position": "TE",
+            "points": 10.7,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 2576980,
+            "name": "Marcus Mariota",
+            "position": "QB",
+            "points": 20.42,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 5,
+        "opponent_id": 9,
+        "actual": 108.96,
+        "optimal": 144.92,
+        "bench_points": 35.96,
+        "efficiency": 0.7519,
+        "won": false,
+        "best_ball_won": false,
+        "blown": true,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "points": 22.22,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4362619,
+            "name": "Chris Rodriguez Jr.",
+            "position": "RB",
+            "points": 9.7,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569603,
+            "name": "Malik Washington",
+            "position": "WR",
+            "points": 8.6,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3929645,
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "points": 19.3,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 14880,
+            "name": "Kirk Cousins",
+            "position": "QB",
+            "points": 22.22,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 3042519,
+            "name": "Aaron Jones Sr.",
+            "position": "RB",
+            "points": 11.7,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4362619,
+            "name": "Chris Rodriguez Jr.",
+            "position": "RB",
+            "points": 9.7,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4241389,
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "points": 16.7,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4047650,
+            "name": "DK Metcalf",
+            "position": "WR",
+            "points": 10.6,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4569603,
+            "name": "Malik Washington",
+            "position": "WR",
+            "points": 8.6,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 3929645,
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "points": 19.3,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16034,
+            "name": "Texans D/ST",
+            "position": "D/ST",
+            "points": 10.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 3055899,
+            "name": "Harrison Butker",
+            "position": "K",
+            "points": 5.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4431459,
+            "name": "Tyler Warren",
+            "position": "TE",
+            "points": 10.2,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 12483,
+            "name": "Matthew Stafford",
+            "position": "QB",
+            "points": 20.9,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 9,
+        "opponent_id": 5,
+        "actual": 137.64,
+        "optimal": 166.74,
+        "bench_points": 29.1,
+        "efficiency": 0.8255,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 15818,
+            "name": "Keenan Allen",
+            "position": "WR",
+            "points": 15.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 2977187,
+            "name": "Cooper Kupp",
+            "position": "WR",
+            "points": 12.6,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16014,
+            "name": "Rams D/ST",
+            "position": "D/ST",
+            "points": 5.0,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 8439,
+            "name": "Aaron Rodgers",
+            "position": "QB",
+            "points": 22.68,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3912547,
+            "name": "Sam Darnold",
+            "position": "QB",
+            "points": 27.66,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4429795,
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "points": 37.9,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 3916148,
+            "name": "Tony Pollard",
+            "position": "RB",
+            "points": 11.6,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 15818,
+            "name": "Keenan Allen",
+            "position": "WR",
+            "points": 15.3,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 2977187,
+            "name": "Cooper Kupp",
+            "position": "WR",
+            "points": 12.6,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4612826,
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "points": 8.6,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4430027,
+            "name": "Sam LaPorta",
+            "position": "TE",
+            "points": 5.9,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16014,
+            "name": "Rams D/ST",
+            "position": "D/ST",
+            "points": 5.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4360234,
+            "name": "Evan McPherson",
+            "position": "K",
+            "points": 11.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 3929630,
+            "name": "Saquon Barkley",
+            "position": "RB",
+            "points": 8.5,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 8439,
+            "name": "Aaron Rodgers",
+            "position": "QB",
+            "points": 22.68,
+            "was_started": false
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 1,
+        "opponent_id": 11,
+        "actual": 72.06,
+        "optimal": 105.66,
+        "bench_points": 33.6,
+        "efficiency": 0.682,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4241474,
+            "name": "Brian Robinson Jr.",
+            "position": "RB",
+            "points": 11.0,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4239996,
+            "name": "Travis Etienne Jr.",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 2973405,
+            "name": "Kalif Raymond",
+            "position": "WR",
+            "points": 18.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3046779,
+            "name": "Jared Goff",
+            "position": "QB",
+            "points": 19.36,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4241474,
+            "name": "Brian Robinson Jr.",
+            "position": "RB",
+            "points": 11.0,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4239996,
+            "name": "Travis Etienne Jr.",
+            "position": "RB",
+            "points": 8.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 2973405,
+            "name": "Kalif Raymond",
+            "position": "WR",
+            "points": 18.0,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4685278,
+            "name": "Luther Burden III",
+            "position": "WR",
+            "points": 16.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4374302,
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "points": 9.9,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4385690,
+            "name": "Dalton Kincaid",
+            "position": "TE",
+            "points": 2.8,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16025,
+            "name": "49ers D/ST",
+            "position": "D/ST",
+            "points": 0.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4689936,
+            "name": "Jake Bates",
+            "position": "K",
+            "points": 7.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4372016,
+            "name": "Jaylen Waddle",
+            "position": "WR",
+            "points": 5.4,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3917792,
+            "name": "Daniel Jones",
+            "position": "QB",
+            "points": 7.9,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 11,
+        "opponent_id": 1,
+        "actual": 126.14,
+        "optimal": 156.64,
+        "bench_points": 30.5,
+        "efficiency": 0.8053,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "WR",
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "points": 15.9,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 5083076,
+            "name": "Harold Fannin Jr.",
+            "position": "TE",
+            "points": 20.6,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16008,
+            "name": "Lions D/ST",
+            "position": "D/ST",
+            "points": 7.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 2473037,
+            "name": "Jason Myers",
+            "position": "K",
+            "points": 9.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4360689,
+            "name": "Tyler Shough",
+            "position": "QB",
+            "points": 23.8,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4870808,
+            "name": "Jeremiyah Love",
+            "position": "RB",
+            "points": 19.4,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4259545,
+            "name": "D'Andre Swift",
+            "position": "RB",
+            "points": 9.8,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3916433,
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "points": 15.9,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4428331,
+            "name": "Rashee Rice",
+            "position": "WR",
+            "points": 12.3,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4241478,
+            "name": "DeVonta Smith",
+            "position": "WR",
+            "points": 9.5,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 5083076,
+            "name": "Harold Fannin Jr.",
+            "position": "TE",
+            "points": 20.6,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16008,
+            "name": "Lions D/ST",
+            "position": "D/ST",
+            "points": 7.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 2473037,
+            "name": "Jason Myers",
+            "position": "K",
+            "points": 9.0,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4685702,
+            "name": "Quinshon Judkins",
+            "position": "RB",
+            "points": 8.9,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 3916387,
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "points": 20.44,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 3,
+        "opponent_id": 4,
+        "actual": 153.56,
+        "optimal": 172.36,
+        "bench_points": 18.8,
+        "efficiency": 0.8909,
+        "won": true,
+        "best_ball_won": true,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "RB",
+            "player_id": 4596334,
+            "name": "Keaton Mitchell",
+            "position": "RB",
+            "points": 12.2,
+            "was_started": false
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "points": 10.6,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 3918298,
+            "name": "Josh Allen",
+            "position": "QB",
+            "points": 16.96,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4430737,
+            "name": "Kyren Williams",
+            "position": "RB",
+            "points": 18.8,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4596334,
+            "name": "Keaton Mitchell",
+            "position": "RB",
+            "points": 12.2,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4426502,
+            "name": "Drake London",
+            "position": "WR",
+            "points": 23.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4360761,
+            "name": "Michael Wilson",
+            "position": "WR",
+            "points": 20.4,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 3121422,
+            "name": "Terry McLaurin",
+            "position": "WR",
+            "points": 16.7,
+            "was_started": true
+          },
+          {
+            "slot": "TE",
+            "player_id": 4361307,
+            "name": "Trey McBride",
+            "position": "TE",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16016,
+            "name": "Vikings D/ST",
+            "position": "D/ST",
+            "points": 19.0,
+            "was_started": true
+          },
+          {
+            "slot": "K",
+            "player_id": 4574716,
+            "name": "Harrison Mevis",
+            "position": "K",
+            "points": 16.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4697815,
+            "name": "Rachaad White",
+            "position": "RB",
+            "points": 10.6,
+            "was_started": false
+          },
+          {
+            "slot": "OP",
+            "player_id": 4035538,
+            "name": "David Montgomery",
+            "position": "RB",
+            "points": 5.8,
+            "was_started": true
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "is_playoffs": false,
+        "team_id": 4,
+        "opponent_id": 3,
+        "actual": 108.22,
+        "optimal": 121.08,
+        "bench_points": 12.86,
+        "efficiency": 0.8938,
+        "won": false,
+        "best_ball_won": false,
+        "blown": false,
+        "missed_starters": [
+          {
+            "slot": "QB",
+            "player_id": 4360423,
+            "name": "Michael Penix Jr.",
+            "position": "QB",
+            "points": 14.04,
+            "was_started": false
+          },
+          {
+            "slot": "WR",
+            "player_id": 4686612,
+            "name": "Tre' Harris",
+            "position": "WR",
+            "points": 10.6,
+            "was_started": false
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16033,
+            "name": "Ravens D/ST",
+            "position": "D/ST",
+            "points": 1.0,
+            "was_started": false
+          }
+        ],
+        "optimal_lineup": [
+          {
+            "slot": "QB",
+            "player_id": 4360423,
+            "name": "Michael Penix Jr.",
+            "position": "QB",
+            "points": 14.04,
+            "was_started": false
+          },
+          {
+            "slot": "RB",
+            "player_id": 4567048,
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "points": 20.3,
+            "was_started": true
+          },
+          {
+            "slot": "RB",
+            "player_id": 4362238,
+            "name": "Chase Brown",
+            "position": "RB",
+            "points": 7.9,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 16800,
+            "name": "Davante Adams",
+            "position": "WR",
+            "points": 17.2,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4432620,
+            "name": "Parker Washington",
+            "position": "WR",
+            "points": 11.5,
+            "was_started": true
+          },
+          {
+            "slot": "WR",
+            "player_id": 4686612,
+            "name": "Tre' Harris",
+            "position": "WR",
+            "points": 10.6,
+            "was_started": false
+          },
+          {
+            "slot": "TE",
+            "player_id": 4723086,
+            "name": "Colston Loveland",
+            "position": "TE",
+            "points": 5.1,
+            "was_started": true
+          },
+          {
+            "slot": "D/ST",
+            "player_id": -16033,
+            "name": "Ravens D/ST",
+            "position": "D/ST",
+            "points": 1.0,
+            "was_started": false
+          },
+          {
+            "slot": "K",
+            "player_id": 4697745,
+            "name": "Tyler Loop",
+            "position": "K",
+            "points": 12.0,
+            "was_started": true
+          },
+          {
+            "slot": "FLEX",
+            "player_id": 4567750,
+            "name": "Emeka Egbuka",
+            "position": "WR",
+            "points": 8.7,
+            "was_started": true
+          },
+          {
+            "slot": "OP",
+            "player_id": 4038941,
+            "name": "Justin Herbert",
+            "position": "QB",
+            "points": 12.74,
+            "was_started": true
+          }
+        ]
+      }
+    ]
+  },
   "best_waiver_pickups": [
     {
       "player_id": -16016,

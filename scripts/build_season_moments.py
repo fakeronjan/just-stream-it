@@ -216,6 +216,107 @@ def compute_bench_mistakes(weekly_boxscores):
     return {"worst_single_instances": instances[:10], "season_totals": season_totals_list}
 
 
+# Starting lineup rules, (slot, eligible positions, count). Ordered most- to
+# least-restrictive: FLEX (RB/WR/TE) is a subset of OP (superflex), so
+# filling every slot greedily with the best remaining eligible player in
+# this order is provably optimal - no search needed.
+OPTIMAL_LINEUP_SLOTS = [
+    ("QB", {"QB"}, 1),
+    ("RB", {"RB"}, 2),
+    ("WR", {"WR"}, 3),
+    ("TE", {"TE"}, 1),
+    ("D/ST", {"D/ST"}, 1),
+    ("K", {"K"}, 1),
+    ("FLEX", {"RB", "WR", "TE"}, 1),
+    ("OP", {"QB", "RB", "WR", "TE"}, 1),
+]
+
+
+def optimal_lineup(players):
+    """Hindsight-best lineup from a team's roster that week. IR-slot players
+    are excluded (couldn't legally start)."""
+    pool = sorted((p for p in players if p["lineup_slot_id"] != 21), key=lambda p: -p["points"])
+    used, lineup = set(), []
+    for slot, eligible, count in OPTIMAL_LINEUP_SLOTS:
+        for _ in range(count):
+            pick = next((p for p in pool if p["player_id"] not in used and p["position"] in eligible), None)
+            if pick:
+                used.add(pick["player_id"])
+                lineup.append({"slot": slot, "player_id": pick["player_id"], "name": pick["name"],
+                               "position": pick["position"], "points": round(pick["points"], 2),
+                               "was_started": pick["started"]})
+    return lineup
+
+
+def compute_best_ball(matchups, weekly_boxscores):
+    """Best-ball view: every team's optimal lineup every week, points left on
+    the bench (optimal - actual), lineup efficiency (actual / optimal), and a
+    regular-season best-ball record replaying each real matchup with BOTH
+    teams' optimal scores. `blown` = lost, but your optimal lineup would have
+    beaten the opponent's actual score.
+    """
+    weeks = []
+    totals = defaultdict(lambda: defaultdict(float))
+    for m in sorted(matchups, key=lambda m: m["week"]):
+        week = str(m["week"])
+        sides = {}
+        for side in ("home", "away"):
+            tid = m[f"{side}_team_id"]
+            players = weekly_boxscores[week][str(tid)]
+            lineup = optimal_lineup(players)
+            sides[side] = {
+                "team_id": tid,
+                "actual": sum(p["points"] for p in players if p["started"]),
+                "optimal": sum(p["points"] for p in lineup),
+                "lineup": lineup,
+            }
+        for me, opp in (("home", "away"), ("away", "home")):
+            a, b = sides[me], sides[opp]
+            row = {
+                "week": m["week"],
+                "is_playoffs": m["is_playoffs"],
+                "team_id": a["team_id"],
+                "opponent_id": b["team_id"],
+                "actual": round(a["actual"], 2),
+                "optimal": round(a["optimal"], 2),
+                "bench_points": round(a["optimal"] - a["actual"], 2),
+                "efficiency": round(a["actual"] / a["optimal"], 4) if a["optimal"] else None,
+                "won": a["actual"] > b["actual"],
+                "best_ball_won": a["optimal"] > b["optimal"],
+                "blown": a["actual"] < b["actual"] and a["optimal"] > b["actual"],
+                "missed_starters": [p for p in a["lineup"] if not p["was_started"]],
+                "optimal_lineup": a["lineup"],
+            }
+            weeks.append(row)
+            if not m["is_playoffs"]:
+                t = totals[a["team_id"]]
+                t["games"] += 1
+                t["wins"] += row["won"]
+                t["best_ball_wins"] += row["best_ball_won"]
+                t["blown"] += row["blown"]
+                t["actual"] += a["actual"]
+                t["optimal"] += a["optimal"]
+
+    standings = []
+    for tid, t in totals.items():
+        games = int(t["games"])
+        standings.append({
+            "team_id": tid,
+            "games": games,
+            "wins": int(t["wins"]),
+            "losses": games - int(t["wins"]),
+            "best_ball_wins": int(t["best_ball_wins"]),
+            "best_ball_losses": games - int(t["best_ball_wins"]),
+            "blown": int(t["blown"]),
+            "points_for": round(t["actual"], 2),
+            "optimal_points_for": round(t["optimal"], 2),
+            "bench_points": round(t["optimal"] - t["actual"], 2),
+            "efficiency": round(t["actual"] / t["optimal"], 4) if t["optimal"] else None,
+        })
+    standings.sort(key=lambda r: (-r["best_ball_wins"], -r["optimal_points_for"]))
+    return {"standings": standings, "weeks": weeks}
+
+
 def build_arrival_timeline(draft_picks, transactions):
     """player_id -> sorted [(week, team_id, source), ...] - every event
     where a player joined a roster (draft, waiver/FA add, trade-in).
@@ -422,6 +523,7 @@ def main(season):
         "player_extremes": compute_player_extremes(weekly_boxscores, nfl_schedule),
         "bench_mistakes": compute_bench_mistakes(weekly_boxscores),
         "injury_burden": compute_injury_burden(weekly_boxscores),
+        "best_ball": compute_best_ball(matchups, weekly_boxscores),
         "best_waiver_pickups": pickups[:15],
         "trades": trades,
         "rivalries": compute_rivalries(matchups),
