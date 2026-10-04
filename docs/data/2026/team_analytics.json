@@ -749,11 +749,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 18,
+    "transactions_count": 20,
     "trades_count": 0,
     "waiver_pickups": 5,
-    "free_agent_pickups": 12,
-    "drops": 6,
+    "free_agent_pickups": 13,
+    "drops": 7,
     "players_started_count": 15,
     "started_points_total": 393.96,
     "started_points_by_source": {

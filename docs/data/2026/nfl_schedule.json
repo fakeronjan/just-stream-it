@@ -582,29 +582,17 @@
     }
   },
   "4": {
-    "CLE": {
-      "opponent": "PIT",
-      "home": true,
-      "team_score": 27.0,
-      "opponent_score": 24.0
-    },
-    "PIT": {
-      "opponent": "CLE",
-      "home": false,
-      "team_score": 24.0,
-      "opponent_score": 27.0
-    },
     "WSH": {
       "opponent": "IND",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 13.0,
+      "opponent_score": 27.0
     },
     "IND": {
       "opponent": "WSH",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 27.0,
+      "opponent_score": 13.0
     },
     "BUF": {
       "opponent": "NE",
@@ -761,6 +749,18 @@
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
+    },
+    "CLE": {
+      "opponent": "PIT",
+      "home": true,
+      "team_score": 27.0,
+      "opponent_score": 24.0
+    },
+    "PIT": {
+      "opponent": "CLE",
+      "home": false,
+      "team_score": 24.0,
+      "opponent_score": 27.0
     },
     "NO": {
       "opponent": "ATL",
