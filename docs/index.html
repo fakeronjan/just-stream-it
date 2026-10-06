@@ -205,6 +205,29 @@
   .edition-tab:hover { color: var(--ink); }
   .edition-tab.active { color: var(--red); font-weight: 700; border-bottom-color: var(--red); }
 
+  /* ---------- section nav: sticky jump links for the CURRENT edition
+     only (frozen tabs stay as published). One line, scrolls sideways
+     on phones instead of wrapping, same as the site nav. ---------- */
+  .section-nav {
+    position: sticky; top: 0; z-index: 20;
+    display: flex; flex-wrap: nowrap; gap: 0;
+    overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+    background: var(--paper);
+    border-bottom: 1px solid var(--ink);
+    margin: 0 0 20px;
+  }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a {
+    flex: 0 0 auto; white-space: nowrap; text-decoration: none;
+    font-family: "Special Elite", monospace; font-size: 0.68rem;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--ink-dim); padding: 9px 12px;
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+  }
+  .section-nav a:hover { color: var(--ink); }
+  .section-nav a.active { color: var(--red); border-bottom-color: var(--red); }
+  #panel-current .section-label { scroll-margin-top: 48px; }
+
   /* ---------- edition ---------- */
   .edition { margin-top: 32px; }
 
@@ -527,36 +550,37 @@
 
   <!-- ================= CURRENT EDITION: Week 4 Recap / Week 5 Preview ================= -->
   <section class="edition" id="panel-current">
+    <nav class="section-nav" id="section-nav" aria-label="Sections"><a href="#sec-results">Results</a><a href="#sec-injuries">Injuries</a><a href="#sec-standings">Standings</a><a href="#sec-bestball">Best Ball</a><a href="#sec-week5">Week 5</a><a href="#sec-season">Season to Date</a></nav>
     <p class="kicker">Week 4 Recap</p>
     <h2 class="edition-head">Average Joe and the Aristocrats</h2>
     <p class="dateline">2026 Season &middot; Week 4 Complete &middot; Week 5 Preview Below</p>
     <p class="lede">Olave Oyl (Joe) is still unbeaten at 4-0, even though the team has scored less every week. Joe's 201.6 in Week 1 would have beaten all 11 other teams, while his 112.2 this week would have beaten only two. The schedule has made up the difference. Two of his four opponents posted the week's lowest score, and Mike left a winning lineup on his bench against him in Week 3. That's why no team has faced fewer points than Joe's 406.6. His lineup calls have helped too, since no manager has started a higher share of his possible points than Joe's 94.3%.</p>
     <p class="lede">Karl is 1-3 and deserves a lot better. The Aristocrats have scored 528.7 points, third-most in the league, and their 29-15 all-play record trails only Lisette's. That all-play mark is worth about 2.6 wins, and no other team has fallen even one full win short of its scoring. His schedule explains it. Since beating Pete in Week 1, Karl has drawn the week's top score twice and the second-best score once. Cara scored 154.7 against him in Week 2, Melinda beat him by less than a point in Week 3, and Lisette hit him with the season's second-highest score this week (169.0). No team has faced more points than Karl's 597.9. Only the Melinda loss was in his own hands, since he left Jacoby Brissett's 25.6 on the bench that week. He sits one game out of the last playoff spot.</p>
 
-    <div class="section-label">Week 4 Results</div>
+    <div class="section-label" id="sec-results">Week 4 Results</div>
     <div class="matchup-grid" id="recap-matchup-grid"></div>
 
-    <div class="section-label">The Injury Report</div>
+    <div class="section-label" id="sec-injuries">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 5</p>
     <p class="lede" style="font-size:0.95rem;">Seven starters left Week 4 games hurt and never returned, and the number of players listed as out jumped from 5 to 18. IR slots hold 22 players, the same as this point last season.</p>
     <div id="injury-list"></div>
 
-    <div class="section-label">Playoff Picture</div>
+    <div class="section-label" id="sec-standings">Playoff Picture</div>
     <p class="section-sublabel">Standings through four weeks</p>
     <div class="standings-list" id="standings-list"></div>
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
 
-    <div class="section-label">Best Ball</div>
+    <div class="section-label" id="sec-bestball">Best Ball</div>
     <p class="section-sublabel">2026 season to date</p>
     <p class="lede" style="font-size:0.95rem;">Lineup calls have decided three games this season. Pete blew one against Ronjan in Week 2, and Karl and Mike both blew one in Week 3, where Karl's was the one-point loss to Melinda with Jacoby Brissett on his bench. Each of them would have won even if the opponent had also set a perfect lineup. Nobody blew a game through four weeks last season. Week 4 left plenty of points on benches but produced no blown games, because every loser would still have lost a matchup of perfect lineups. Efficiency explains part of Joe's run. His 94.3% leads the league, and his Week 3 win over Mike was one of the three blown games. Mike ranks last at 77.4% after benching 143.8 points, and perfect lineups on both sides would have him at 3-1. Ben shows the limit of good management. He ranks second at 88.7% and is still 1-3, because he'd be 1-3 with perfect lineups too.</p>
     <div class="standings-list" id="best-ball-list"></div>
     <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
 
-    <div class="section-label">Week 5 Matchups</div>
+    <div class="section-label" id="sec-week5">Week 5 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="week5-matchup-grid"></div>
 
-    <div class="section-label">Top Performances</div>
+    <div class="section-label" id="sec-season">Top Performances</div>
     <p class="section-sublabel">2026 season to date</p>
     <div id="std-top-performances"></div>
 
@@ -2335,12 +2359,34 @@ function PV_renderMatchups() {
 /* ============================================================
    Boot
    ============================================================ */
+
+// Highlights the section-nav link for whichever section is currently
+// under the sticky bar.
+function setupSectionNav() {
+  const nav = document.getElementById('section-nav');
+  if (!nav) return;
+  const links = [...nav.querySelectorAll('a')];
+  const targets = links.map(a => document.querySelector(a.getAttribute('href')));
+  const update = () => {
+    let idx = -1;
+    targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top <= 60) idx = i; });
+    links.forEach((a, i) => a.classList.toggle('active', i === idx));
+    if (idx >= 0) {
+      const a = links[idx];
+      if (a.offsetLeft < nav.scrollLeft || a.offsetLeft + a.offsetWidth > nav.scrollLeft + nav.clientWidth)
+        nav.scrollTo({ left: a.offsetLeft - 8, behavior: 'smooth' });
+    }
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
 async function loadApp() {
   document.getElementById('lock-screen').style.display = 'none';
   document.getElementById('app').style.display = '';
   const meta = await (await fetch('data/meta.json')).json();
   document.getElementById('resources-nav').innerHTML = renderNav('weekly-news', meta.league_id);
   renderCurrentEdition();
+  setupSectionNav();
   renderSeasonToDate();
   WK3R_renderEdition();
   WK2R_renderEdition();
