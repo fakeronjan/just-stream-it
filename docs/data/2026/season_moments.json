@@ -1057,7 +1057,7 @@
         "losses": 2,
         "best_ball_wins": 2,
         "best_ball_losses": 2,
-        "blown": 2,
+        "blown": 0,
         "points_for": 515.22,
         "optimal_points_for": 652.48,
         "bench_points": 137.26,
@@ -1070,7 +1070,7 @@
         "losses": 1,
         "best_ball_wins": 2,
         "best_ball_losses": 2,
-        "blown": 1,
+        "blown": 0,
         "points_for": 515.02,
         "optimal_points_for": 605.32,
         "bench_points": 90.3,
@@ -1096,7 +1096,7 @@
         "losses": 3,
         "best_ball_wins": 2,
         "best_ball_losses": 2,
-        "blown": 2,
+        "blown": 1,
         "points_for": 499.78,
         "optimal_points_for": 585.56,
         "bench_points": 85.78,
@@ -1109,7 +1109,7 @@
         "losses": 2,
         "best_ball_wins": 2,
         "best_ball_losses": 2,
-        "blown": 2,
+        "blown": 0,
         "points_for": 469.4,
         "optimal_points_for": 573.26,
         "bench_points": 103.86,
@@ -1135,7 +1135,7 @@
         "losses": 2,
         "best_ball_wins": 1,
         "best_ball_losses": 3,
-        "blown": 2,
+        "blown": 0,
         "points_for": 488.04,
         "optimal_points_for": 591.9,
         "bench_points": 103.86,
@@ -1148,7 +1148,7 @@
         "losses": 3,
         "best_ball_wins": 1,
         "best_ball_losses": 3,
-        "blown": 2,
+        "blown": 0,
         "points_for": 471.48,
         "optimal_points_for": 572.5,
         "bench_points": 101.02,
@@ -1413,7 +1413,7 @@
         "efficiency": 0.7381,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "QB",
@@ -2582,7 +2582,7 @@
         "efficiency": 0.8429,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "RB",
@@ -2848,7 +2848,7 @@
         "efficiency": 0.7905,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "WR",
@@ -4017,7 +4017,7 @@
         "efficiency": 0.7992,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "QB",
@@ -4283,7 +4283,7 @@
         "efficiency": 0.761,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "WR",
@@ -5049,7 +5049,7 @@
         "efficiency": 0.7519,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "QB",
@@ -6210,7 +6210,7 @@
         "efficiency": 0.8168,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "QB",
@@ -6355,7 +6355,7 @@
         "efficiency": 0.7855,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "QB",
@@ -6621,7 +6621,7 @@
         "efficiency": 0.7895,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "QB",
@@ -7161,7 +7161,7 @@
         "efficiency": 0.8331,
         "won": false,
         "best_ball_won": false,
-        "blown": true,
+        "blown": false,
         "missed_starters": [
           {
             "slot": "RB",

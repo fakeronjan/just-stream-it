@@ -382,12 +382,13 @@
   .standings-record { font-variant-numeric: tabular-nums; font-size: 0.85rem; text-align: right; white-space: nowrap; }
   /* Best-ball table: fixed numeric columns so every row lines up
      (plain .standings-row sizes its auto columns per row). */
-  .bb-row { grid-template-columns: 24px 1fr 96px 104px; }
+  .bb-row { grid-template-columns: 24px 1fr 110px 104px; }
   .bb-head { font-family: "Special Elite", monospace; font-size: 0.6rem; color: var(--meta); text-transform: uppercase; letter-spacing: 0.04em; padding: 0 0 4px; border-bottom: 1px solid var(--ink); }
   .bb-head span:nth-child(n+3) { text-align: right; }
+  .standings-team-name b .bb-rec { white-space: nowrap; font-weight: 400; font-variant-numeric: tabular-nums; color: var(--ink-dim); font-family: inherit; font-size: inherit; text-transform: none; letter-spacing: 0; }
   .bb-sub { display: block; font-family: "Special Elite", monospace; font-size: 0.58rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap; }
   @media (max-width: 520px) {
-    .bb-row { grid-template-columns: 18px 1fr 78px 78px; gap: 8px; }
+    .bb-row { grid-template-columns: 18px 1fr 74px 78px; gap: 8px; }
     .bb-sub { font-size: 0.52rem; }
   }
   .standings-pf { font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--ink-dim); text-align: right; white-space: nowrap; }
@@ -549,9 +550,9 @@
 
     <div class="section-label">Best Ball</div>
     <p class="section-sublabel">2026 season to date</p>
-    <p class="lede" style="font-size:0.95rem;">Lineup mistakes are deciding more games this year. Thirteen of the season's 24 losers had a winning lineup on their bench, compared with 10 at this point last season. This week added four more from mariss, Ronjan, Kris, and Pete. Efficiency explains part of Joe's run. His 94.3% leads the league, and his Week 3 win came against a Mike lineup that left the winning points on the bench. Mike ranks last at 77.4% because he has benched 143.8 points, and perfect lineups would have him at 3-1. Ben shows the limit of good management. He ranks second at 88.7% and is still 1-3, because his roster would be 1-3 even with perfect lineups.</p>
+    <p class="lede" style="font-size:0.95rem;">Lineup calls have decided three games this season. Pete blew one against Ronjan in Week 2, and Karl and Mike both blew one in Week 3, where Karl's was the one-point loss to Melinda with Jacoby Brissett on his bench. Each of them would have won even if the opponent had also set a perfect lineup. Nobody blew a game through four weeks last season. Week 4 left plenty of points on benches but produced no blown games, because every loser would still have lost a matchup of perfect lineups. Efficiency explains part of Joe's run. His 94.3% leads the league, and his Week 3 win over Mike was one of the three blown games. Mike ranks last at 77.4% after benching 143.8 points, and perfect lineups on both sides would have him at 3-1. Ben shows the limit of good management. He ranks second at 88.7% and is still 1-3, because he'd be 1-3 with perfect lineups too.</p>
     <div class="standings-list" id="best-ball-list"></div>
-    <p class="standings-caption">Efficiency is points started divided by best possible points. Best ball pits each team's best lineup against its opponent's best lineup. Blown counts losses that a team's best lineup would have won.</p>
+    <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
 
     <div class="section-label">Week 5 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
@@ -831,14 +832,14 @@ const BEST_BALL = [
   { team: 8, wins: 4, losses: 0, bbWins: 3, bbLosses: 1, blown: 0, bench: 35.0, eff: 94.3 },
   { team: 4, wins: 1, losses: 3, bbWins: 1, bbLosses: 3, blown: 0, bench: 61.6, eff: 88.7 },
   { team: 10, wins: 1, losses: 3, bbWins: 2, bbLosses: 2, blown: 1, bench: 70.6, eff: 88.2 },
-  { team: 3, wins: 1, losses: 3, bbWins: 2, bbLosses: 2, blown: 2, bench: 85.8, eff: 85.4 },
-  { team: 12, wins: 3, losses: 1, bbWins: 2, bbLosses: 2, blown: 1, bench: 90.3, eff: 85.1 },
+  { team: 3, wins: 1, losses: 3, bbWins: 2, bbLosses: 2, blown: 1, bench: 85.8, eff: 85.4 },
+  { team: 12, wins: 3, losses: 1, bbWins: 2, bbLosses: 2, blown: 0, bench: 90.3, eff: 85.1 },
   { team: 6, wins: 3, losses: 1, bbWins: 3, bbLosses: 1, blown: 0, bench: 100.6, eff: 84.6 },
   { team: 1, wins: 2, losses: 2, bbWins: 2, bbLosses: 2, blown: 0, bench: 88.9, eff: 83.2 },
-  { team: 9, wins: 2, losses: 2, bbWins: 1, bbLosses: 3, blown: 2, bench: 103.9, eff: 82.5 },
-  { team: 2, wins: 1, losses: 3, bbWins: 1, bbLosses: 3, blown: 2, bench: 101.0, eff: 82.3 },
-  { team: 11, wins: 2, losses: 2, bbWins: 2, bbLosses: 2, blown: 2, bench: 103.9, eff: 81.9 },
-  { team: 5, wins: 2, losses: 2, bbWins: 2, bbLosses: 2, blown: 2, bench: 137.3, eff: 79.0 },
+  { team: 9, wins: 2, losses: 2, bbWins: 1, bbLosses: 3, blown: 0, bench: 103.9, eff: 82.5 },
+  { team: 2, wins: 1, losses: 3, bbWins: 1, bbLosses: 3, blown: 0, bench: 101.0, eff: 82.3 },
+  { team: 11, wins: 2, losses: 2, bbWins: 2, bbLosses: 2, blown: 0, bench: 103.9, eff: 81.9 },
+  { team: 5, wins: 2, losses: 2, bbWins: 2, bbLosses: 2, blown: 0, bench: 137.3, eff: 79.0 },
   { team: 7, wins: 2, losses: 2, bbWins: 3, bbLosses: 1, blown: 1, bench: 143.8, eff: 77.4 },
 ];
 
@@ -943,9 +944,9 @@ function renderBestBallRow(s, idx) {
       <span class="standings-rank">${idx + 1}</span>
       <span class="standings-team">
         ${crestImg(s.team)}
-        <span class="standings-team-name"><b>${t.name}</b><span>${ownerLabel(t)}</span></span>
+        <span class="standings-team-name"><b>${t.name} <span class="bb-rec">${s.wins}-${s.losses}</span></b><span>${ownerLabel(t)}</span></span>
       </span>
-      <span class="standings-record">${s.wins}-${s.losses}<span class="bb-sub">Best ball ${s.bbWins}-${s.bbLosses}</span></span>
+      <span class="standings-record">${s.bbWins}-${s.bbLosses}</span>
       <span class="standings-record">${s.eff.toFixed(1)}%<span class="bb-sub">${s.bench.toFixed(1)} bench</span>${blownHtml}</span>
     </div>
   `;
@@ -1011,7 +1012,7 @@ function renderCurrentEdition() {
   document.getElementById('injury-list').innerHTML = renderInjuryTable(INJURIES);
   document.getElementById('standings-list').innerHTML = STANDINGS.map(renderStandingsRow).join('');
   document.getElementById('best-ball-list').innerHTML =
-    `<div class="standings-row bb-row bb-head"><span></span><span>Team</span><span>Record</span><span>Efficiency</span></div>`
+    `<div class="standings-row bb-row bb-head"><span></span><span>Team</span><span>Optimal Lineup Record</span><span>Efficiency</span></div>`
     + BEST_BALL.map(renderBestBallRow).join('');
   document.getElementById('week5-matchup-grid').innerHTML = WEEK5_MATCHUPS.map(renderWeek5Matchup).join('');
 }

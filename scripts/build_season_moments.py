@@ -252,8 +252,9 @@ def compute_best_ball(matchups, weekly_boxscores):
     """Best-ball view: every team's optimal lineup every week, points left on
     the bench (optimal - actual), lineup efficiency (actual / optimal), and a
     regular-season best-ball record replaying each real matchup with BOTH
-    teams' optimal scores. `blown` = lost, but your optimal lineup would have
-    beaten the opponent's actual score.
+    teams' optimal scores. `blown` = lost the real game but would have won the
+    best-ball replay (your optimal beats the opponent's optimal), i.e. the
+    loss is on your lineup even if the opponent had set a perfect lineup too.
     """
     weeks = []
     totals = defaultdict(lambda: defaultdict(float))
@@ -283,7 +284,7 @@ def compute_best_ball(matchups, weekly_boxscores):
                 "efficiency": round(a["actual"] / a["optimal"], 4) if a["optimal"] else None,
                 "won": a["actual"] > b["actual"],
                 "best_ball_won": a["optimal"] > b["optimal"],
-                "blown": a["actual"] < b["actual"] and a["optimal"] > b["actual"],
+                "blown": a["actual"] < b["actual"] and a["optimal"] > b["optimal"],
                 "missed_starters": [p for p in a["lineup"] if not p["was_started"]],
                 "optimal_lineup": a["lineup"],
             }
