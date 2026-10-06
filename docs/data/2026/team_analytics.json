@@ -666,11 +666,11 @@
     "owners": [
       "Michael Higgins"
     ],
-    "transactions_count": 7,
+    "transactions_count": 8,
     "trades_count": 0,
     "waiver_pickups": 2,
     "free_agent_pickups": 4,
-    "drops": 1,
+    "drops": 2,
     "players_started_count": 17,
     "started_points_total": 492.96,
     "started_points_by_source": {
