@@ -467,6 +467,7 @@
   .inj-table th:last-child { text-align: right; }
   .inj-player { white-space: nowrap; }
   .inj-short { display: none; }
+  .inj-note { font-style: italic; color: var(--ink-dim); font-size: 0.84rem; line-height: 1.45; padding: 4px 8px 12px !important; border-bottom: none !important; }
   @media (max-width: 520px) {
     .inj-table { font-size: 0.78rem; }
     .inj-table td, .inj-table th { padding-left: 4px; padding-right: 4px; }
@@ -537,10 +538,7 @@
 
     <div class="section-label">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 5</p>
-    <p class="lede" style="font-size:0.95rem;">Week 4 will leave rosters short for a while. Twenty rostered players picked up a new designation, and the number listed as out jumped from 5 to 18. Seven starters got hurt during their games and never came back. Marcus Mariota (knee), Saquon Barkley (hamstring), and Rashee Rice (hamstring) went down in the first quarter, and Ladd McConkey (foot), DJ Moore (shoulder), Ja'Marr Chase, and Lamar Jackson (ankle) were gone by halftime. Most of them are questionable for Week 5, which leaves Ronjan, Kris, Joe, and Melinda with game-time decisions on Sunday. Rice is the one ESPN expects to miss more time, with a return no sooner than Week 6. The longest absences hit depth players. Jaxson Dart had meniscus surgery and isn't expected back until January, after the fantasy season ends, while Tank Bigsby (abdominal surgery) and Jadarian Price are out into November. The season-long count still looks normal, with 22 players in IR slots today and exactly 22 after Week 4 of 2025.</p>
-    <p class="lede" style="font-size:0.95rem;">Mike traded for a quarterback after injuries took three of his, and the fix may only last a week. Jayden Daniels is out with a dislocated elbow, Jaxson Dart won't be back until January, and Marcus Mariota is doubtful after spraining his MCL in Week 4. Mike sent Nico Collins and Michael Mayer to Ben for Tyson Bagent and Davante Adams. Bagent is starting in Chicago only because Caleb Williams strained his hamstring, and ESPN expects Williams back as soon as Week 6. The price was steep, since Collins had just caught 2 touchdowns for Mike (27.3).</p>
-    <p class="lede" style="font-size:0.95rem;">Pete's quarterback shortage won't fix itself. He started Darren Waller in the OP slot in Week 4 because he had no second quarterback, and nothing has changed since. Atlanta listed Cooper Rush as out on a coach's decision, Dillon Gabriel is on IR, and Carson Wentz and Drew Lock are backups. Josh Allen is the only quarterback on the roster with a starting job. His receivers are thin too, with Terry McLaurin out with a hamstring injury and Alec Pierce on IR until at least Week 7.</p>
-    <p class="lede" style="font-size:0.95rem;">Imran's backfield will run through his pickups for weeks. Travis Etienne Jr. and Jadarian Price joined James Conner and Jonathon Brooks on IR this week, and ESPN doesn't expect Price back until November. That leaves Emanuel Wilson and Ollie Gordon II, both added during the season, alongside Brian Robinson Jr. and Tyler Allgeier. Imran still has no defense on his roster.</p>
+    <p class="lede" style="font-size:0.95rem;">Seven starters left Week 4 games hurt and never returned, and the number of players listed as out jumped from 5 to 18. IR slots hold 22 players, the same as this point last season.</p>
     <div id="injury-list"></div>
 
     <div class="section-label">Playoff Picture</div>
@@ -788,6 +786,18 @@ const INJURIES = [
   { name: "Caleb Williams", pos: 'QB', team: 2, status: 'Out' },
 ];
 
+// Forward-looking note per team, rendered as a full-width row closing
+// that team's group. Only teams with something to say get one. Return
+// timelines from ESPN's game-summary injury reports (returnDate).
+const INJ_NOTES = {
+  3: `Josh Allen is the only quarterback with a starting job. Atlanta ruled Cooper Rush out on a coach's decision, Dillon Gabriel is on IR, and Carson Wentz and Drew Lock are backups. Alec Pierce is out until at least Week 7.`,
+  7: `Mike lost Jayden Daniels, Jaxson Dart, and Marcus Mariota, then traded Nico Collins and Michael Mayer to Ben for Tyson Bagent and Davante Adams. Bagent only starts until Caleb Williams returns, possibly in Week 6. Dart is out until January after meniscus surgery.`,
+  1: `Four running backs are on IR, and ESPN doesn't expect Jadarian Price back until November. In-season pickups Emanuel Wilson and Ollie Gordon II will carry the backfield.`,
+  11: `Lamar Jackson and Jeremiyah Love are questionable with ankle injuries. ESPN expects Rashee Rice's hamstring to keep him out until Week 6, and Tank Bigsby is out into November after abdominal surgery.`,
+  9: `Saquon Barkley (hamstring) and Ladd McConkey (foot) both left Week 4 early and are questionable for Week 5.`,
+  8: `DJ Moore hurt his shoulder in Week 4 and is questionable for Week 5.`,
+  12: `Ja'Marr Chase left Week 4 in the second quarter and is questionable for Week 5.`,
+};
 // One row per player, grouped by team: the team cell spans all of
 // that team's rows (rowspan) so each owner appears once.
 const INJ_SHORT = { 'Injured Reserve': 'IR', 'Questionable': 'Q', 'Doubtful': 'D', 'Day-to-Day': 'DTD', 'Out': 'Out' };
@@ -803,7 +813,8 @@ function renderInjuryTable(rows) {
       ${idx === 0 ? `<td class="inj-team" rowspan="${g.players.length}"><span class="inj-team-name">${TEAMS[g.team].name}</span><span class="inj-team-owner">${ownerLabel(TEAMS[g.team])}</span></td>` : ''}
       <td class="inj-player"><span class="std-pos">${p.pos}</span>${p.name}</td>
       <td class="inj-status"><span class="inj-full">${p.status}</span><span class="inj-short">${INJ_SHORT[p.status] || p.status}</span></td>
-    </tr>`).join('')).join('');
+    </tr>`).join('') + (INJ_NOTES[g.team] ? `
+    <tr class="inj-note-row"><td colspan="3" class="inj-note">${INJ_NOTES[g.team]}</td></tr>` : '')).join('');
   return `<table class="inj-table"><thead><tr><th>Team</th><th>Player</th><th>Status</th></tr></thead><tbody>${body}</tbody></table>`;
 }
 
