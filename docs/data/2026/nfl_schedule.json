@@ -582,18 +582,6 @@
     }
   },
   "4": {
-    "NO": {
-      "opponent": "ATL",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "ATL": {
-      "opponent": "NO",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "CLE": {
       "opponent": "PIT",
       "home": true,
@@ -773,6 +761,18 @@
       "home": false,
       "team_score": 26.0,
       "opponent_score": 32.0
+    },
+    "NO": {
+      "opponent": "ATL",
+      "home": true,
+      "team_score": 24.0,
+      "opponent_score": 45.0
+    },
+    "ATL": {
+      "opponent": "NO",
+      "home": false,
+      "team_score": 45.0,
+      "opponent_score": 24.0
     }
   },
   "5": {

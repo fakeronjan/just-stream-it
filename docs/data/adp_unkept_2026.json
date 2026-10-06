@@ -4950,22 +4950,13 @@
     "adjusted_rank": 550
   },
   {
-    "player_id": 4372019,
-    "name": "Jerome Ford",
-    "position": "RB",
-    "pro_team": "FA",
-    "superflex_rank": 2014,
-    "standard_rank": 2019,
-    "adjusted_rank": 551
-  },
-  {
     "player_id": 4372066,
     "name": "Jake Moody",
     "position": "K",
     "pro_team": "FA",
     "superflex_rank": 2112,
     "standard_rank": 2117,
-    "adjusted_rank": 552
+    "adjusted_rank": 551
   },
   {
     "player_id": 4429202,
@@ -4974,7 +4965,7 @@
     "pro_team": "FA",
     "superflex_rank": 2131,
     "standard_rank": 2136,
-    "adjusted_rank": 553
+    "adjusted_rank": 552
   },
   {
     "player_id": 4722893,
@@ -4983,7 +4974,7 @@
     "pro_team": "CLE",
     "superflex_rank": 2205,
     "standard_rank": 2210,
-    "adjusted_rank": 554
+    "adjusted_rank": 553
   },
   {
     "player_id": 4690070,
@@ -4992,7 +4983,7 @@
     "pro_team": "CIN",
     "superflex_rank": 2211,
     "standard_rank": 2216,
-    "adjusted_rank": 555
+    "adjusted_rank": 554
   },
   {
     "player_id": 4429676,
@@ -5001,7 +4992,7 @@
     "pro_team": "DAL",
     "superflex_rank": 2233,
     "standard_rank": 2283,
-    "adjusted_rank": 556
+    "adjusted_rank": 555
   },
   {
     "player_id": 4429939,
@@ -5010,7 +5001,7 @@
     "pro_team": "FA",
     "superflex_rank": 2312,
     "standard_rank": 2317,
-    "adjusted_rank": 557
+    "adjusted_rank": 556
   },
   {
     "player_id": 4360698,
@@ -5019,7 +5010,7 @@
     "pro_team": "FA",
     "superflex_rank": 2335,
     "standard_rank": 2340,
-    "adjusted_rank": 558
+    "adjusted_rank": 557
   },
   {
     "player_id": 3043234,
@@ -5028,7 +5019,7 @@
     "pro_team": "FA",
     "superflex_rank": 2381,
     "standard_rank": 1745,
-    "adjusted_rank": 559
+    "adjusted_rank": 558
   },
   {
     "player_id": 4051167,
@@ -5037,7 +5028,7 @@
     "pro_team": "FA",
     "superflex_rank": 2384,
     "standard_rank": 2388,
-    "adjusted_rank": 560
+    "adjusted_rank": 559
   },
   {
     "player_id": 4429805,
@@ -5046,6 +5037,15 @@
     "pro_team": "BUF",
     "superflex_rank": 2420,
     "standard_rank": 2435,
+    "adjusted_rank": 560
+  },
+  {
+    "player_id": 5092436,
+    "name": "Jude McAtamney",
+    "position": "K",
+    "pro_team": "FA",
+    "superflex_rank": 2450,
+    "standard_rank": 2447,
     "adjusted_rank": 561
   },
   {
