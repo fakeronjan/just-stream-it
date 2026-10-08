@@ -3303,22 +3303,13 @@
     "adjusted_rank": 367
   },
   {
-    "player_id": 4048228,
-    "name": "John Bates",
-    "position": "TE",
-    "pro_team": "WSH",
-    "superflex_rank": 1046,
-    "standard_rank": 1045,
-    "adjusted_rank": 368
-  },
-  {
     "player_id": 4241372,
     "name": "Hollywood Brown",
     "position": "WR",
     "pro_team": "PHI",
     "superflex_rank": 1047,
     "standard_rank": 1046,
-    "adjusted_rank": 369
+    "adjusted_rank": 368
   },
   {
     "player_id": 4683153,
@@ -3327,7 +3318,7 @@
     "pro_team": "BUF",
     "superflex_rank": 1048,
     "standard_rank": 1047,
-    "adjusted_rank": 370
+    "adjusted_rank": 369
   },
   {
     "player_id": 3917914,
@@ -3336,7 +3327,7 @@
     "pro_team": "ATL",
     "superflex_rank": 1051,
     "standard_rank": 1050,
-    "adjusted_rank": 371
+    "adjusted_rank": 370
   },
   {
     "player_id": 4061956,
@@ -3345,7 +3336,7 @@
     "pro_team": "IND",
     "superflex_rank": 1054,
     "standard_rank": 1053,
-    "adjusted_rank": 372
+    "adjusted_rank": 371
   },
   {
     "player_id": 4569371,
@@ -3354,7 +3345,7 @@
     "pro_team": "NYJ",
     "superflex_rank": 1057,
     "standard_rank": 1056,
-    "adjusted_rank": 373
+    "adjusted_rank": 372
   },
   {
     "player_id": 4360797,
@@ -3363,7 +3354,7 @@
     "pro_team": "LAR",
     "superflex_rank": 1059,
     "standard_rank": 1058,
-    "adjusted_rank": 374
+    "adjusted_rank": 373
   },
   {
     "player_id": 5092508,
@@ -3372,7 +3363,7 @@
     "pro_team": "CIN",
     "superflex_rank": 1066,
     "standard_rank": 1065,
-    "adjusted_rank": 375
+    "adjusted_rank": 374
   },
   {
     "player_id": 4431492,
@@ -3381,7 +3372,7 @@
     "pro_team": "PIT",
     "superflex_rank": 1075,
     "standard_rank": 1074,
-    "adjusted_rank": 376
+    "adjusted_rank": 375
   },
   {
     "player_id": 4602667,
@@ -3390,7 +3381,7 @@
     "pro_team": "WSH",
     "superflex_rank": 1077,
     "standard_rank": 1076,
-    "adjusted_rank": 377
+    "adjusted_rank": 376
   },
   {
     "player_id": 4372096,
@@ -3399,7 +3390,7 @@
     "pro_team": "DAL",
     "superflex_rank": 1078,
     "standard_rank": 1077,
-    "adjusted_rank": 378
+    "adjusted_rank": 377
   },
   {
     "player_id": 4685553,
@@ -3408,7 +3399,7 @@
     "pro_team": "LAC",
     "superflex_rank": 1080,
     "standard_rank": 1079,
-    "adjusted_rank": 379
+    "adjusted_rank": 378
   },
   {
     "player_id": 2998565,
@@ -3417,7 +3408,7 @@
     "pro_team": "IND",
     "superflex_rank": 1081,
     "standard_rank": 1080,
-    "adjusted_rank": 380
+    "adjusted_rank": 379
   },
   {
     "player_id": 4573699,
@@ -3426,7 +3417,7 @@
     "pro_team": "BUF",
     "superflex_rank": 1084,
     "standard_rank": 1083,
-    "adjusted_rank": 381
+    "adjusted_rank": 380
   },
   {
     "player_id": 4690923,
@@ -3435,7 +3426,7 @@
     "pro_team": "WSH",
     "superflex_rank": 1089,
     "standard_rank": 1088,
-    "adjusted_rank": 382
+    "adjusted_rank": 381
   },
   {
     "player_id": 4361372,
@@ -3444,7 +3435,7 @@
     "pro_team": "NYJ",
     "superflex_rank": 1094,
     "standard_rank": 1093,
-    "adjusted_rank": 383
+    "adjusted_rank": 382
   },
   {
     "player_id": 5088338,
@@ -3453,7 +3444,7 @@
     "pro_team": "BAL",
     "superflex_rank": 1095,
     "standard_rank": 1094,
-    "adjusted_rank": 384
+    "adjusted_rank": 383
   },
   {
     "player_id": 4383396,
@@ -3462,7 +3453,7 @@
     "pro_team": "DAL",
     "superflex_rank": 1096,
     "standard_rank": 1095,
-    "adjusted_rank": 385
+    "adjusted_rank": 384
   },
   {
     "player_id": 4883647,
@@ -3471,7 +3462,7 @@
     "pro_team": "TEN",
     "superflex_rank": 1102,
     "standard_rank": 1101,
-    "adjusted_rank": 386
+    "adjusted_rank": 385
   },
   {
     "player_id": 3052897,
@@ -3480,7 +3471,7 @@
     "pro_team": "BAL",
     "superflex_rank": 1105,
     "standard_rank": 1104,
-    "adjusted_rank": 387
+    "adjusted_rank": 386
   },
   {
     "player_id": 4569382,
@@ -3489,7 +3480,7 @@
     "pro_team": "LAR",
     "superflex_rank": 1115,
     "standard_rank": 1114,
-    "adjusted_rank": 388
+    "adjusted_rank": 387
   },
   {
     "player_id": 4608810,
@@ -3498,7 +3489,7 @@
     "pro_team": "TB",
     "superflex_rank": 1119,
     "standard_rank": 1118,
-    "adjusted_rank": 389
+    "adjusted_rank": 388
   },
   {
     "player_id": 4708486,
@@ -3507,7 +3498,7 @@
     "pro_team": "FA",
     "superflex_rank": 1120,
     "standard_rank": 1119,
-    "adjusted_rank": 390
+    "adjusted_rank": 389
   },
   {
     "player_id": 4698597,
@@ -3516,6 +3507,15 @@
     "pro_team": "NO",
     "superflex_rank": 1121,
     "standard_rank": 1120,
+    "adjusted_rank": 390
+  },
+  {
+    "player_id": 4426553,
+    "name": "Davis Allen",
+    "position": "TE",
+    "pro_team": "LAR",
+    "superflex_rank": 1133,
+    "standard_rank": 1132,
     "adjusted_rank": 391
   },
   {
@@ -4953,7 +4953,7 @@
     "player_id": 4360238,
     "name": "Dameon Pierce",
     "position": "RB",
-    "pro_team": "FA",
+    "pro_team": "PHI",
     "superflex_rank": 1990,
     "standard_rank": 1995,
     "adjusted_rank": 551
@@ -5031,12 +5031,12 @@
     "adjusted_rank": 559
   },
   {
-    "player_id": 4051167,
-    "name": "Parker Romo",
-    "position": "K",
-    "pro_team": "FA",
-    "superflex_rank": 2384,
-    "standard_rank": 2388,
+    "player_id": 3919510,
+    "name": "Alex Bachman",
+    "position": "WR",
+    "pro_team": "LAR",
+    "superflex_rank": 2393,
+    "standard_rank": 1895,
     "adjusted_rank": 560
   },
   {

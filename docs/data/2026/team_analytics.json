@@ -255,10 +255,10 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 9,
+    "transactions_count": 10,
     "trades_count": 0,
     "waiver_pickups": 4,
-    "free_agent_pickups": 5,
+    "free_agent_pickups": 6,
     "drops": 4,
     "players_started_count": 14,
     "started_points_total": 579.56,
@@ -411,10 +411,10 @@
     "owners": [
       "Kris Wikstrom"
     ],
-    "transactions_count": 2,
+    "transactions_count": 4,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 1,
+    "free_agent_pickups": 3,
     "drops": 1,
     "players_started_count": 16,
     "started_points_total": 469.4,
@@ -758,11 +758,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 24,
+    "transactions_count": 26,
     "trades_count": 0,
-    "waiver_pickups": 7,
+    "waiver_pickups": 9,
     "free_agent_pickups": 13,
-    "drops": 11,
+    "drops": 13,
     "players_started_count": 18,
     "started_points_total": 499.78,
     "started_points_by_source": {
