@@ -779,14 +779,14 @@
     "DAL": {
       "opponent": "TB",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 16.0,
+      "opponent_score": 24.0
     },
     "TB": {
       "opponent": "DAL",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 24.0,
+      "opponent_score": 16.0
     },
     "JAX": {
       "opponent": "PHI",

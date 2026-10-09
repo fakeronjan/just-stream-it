@@ -96,11 +96,11 @@
     "owners": [
       "Cara Kantrowitz"
     ],
-    "transactions_count": 2,
+    "transactions_count": 4,
     "trades_count": 0,
     "waiver_pickups": 0,
-    "free_agent_pickups": 2,
-    "drops": 0,
+    "free_agent_pickups": 3,
+    "drops": 1,
     "players_started_count": 13,
     "started_points_total": 515.22,
     "started_points_by_source": {
@@ -581,11 +581,11 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 3,
+    "transactions_count": 4,
     "trades_count": 0,
     "waiver_pickups": 1,
     "free_agent_pickups": 2,
-    "drops": 1,
+    "drops": 2,
     "players_started_count": 17,
     "started_points_total": 515.02,
     "started_points_by_source": {
