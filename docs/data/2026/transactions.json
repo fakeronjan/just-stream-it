@@ -122,6 +122,40 @@
     ]
   },
   {
+    "id": "c922ed84-3c45-43e4-b71c-b56946803108",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 5,
+    "items": [
+      {
+        "player_id": 4569371,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "0e875462-90c1-4451-abc9-af22f203d49f",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 5,
+    "items": [
+      {
+        "player_id": 4432710,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4262921,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "f1d06d13-0f9f-4b18-bd7c-dcc4dfa6075e",
     "type": "ROSTER",
     "team_id": 2,
@@ -288,6 +322,20 @@
     ]
   },
   {
+    "id": "26ec25be-2c16-4209-879a-9cd8b94af628",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 5,
+    "items": [
+      {
+        "player_id": 2991662,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "98bffe57-5104-4e16-982e-29e97c9e0135",
     "type": "WAIVER",
     "team_id": 4,
@@ -328,6 +376,26 @@
     ]
   },
   {
+    "id": "a2fee18b-a1a6-4ad5-84b4-cd220c7b80eb",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 5,
+    "items": [
+      {
+        "player_id": 4715355,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4432708,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "fa691349-3463-4b1b-8efa-d214516a71d7",
     "type": "ROSTER",
     "team_id": 2,
@@ -355,6 +423,20 @@
     "items": [
       {
         "player_id": 4038815,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "5f2562dc-f711-4ac8-9a09-f03f1497fa3e",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 5,
+    "items": [
+      {
+        "player_id": 4429025,
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
@@ -1088,6 +1170,20 @@
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "0e50a756-e665-43be-998e-4d21f682aa92",
+    "type": "FREEAGENT",
+    "team_id": 11,
+    "week": 5,
+    "items": [
+      {
+        "player_id": 5123663,
+        "from_team_id": 0,
+        "to_team_id": 11,
+        "type": "ADD"
       }
     ]
   },
