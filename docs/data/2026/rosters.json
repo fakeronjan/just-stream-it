@@ -5,7 +5,7 @@
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "pro_team": "DET",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 2,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -25,7 +25,7 @@
       "name": "Jared Goff",
       "position": "QB",
       "pro_team": "DET",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 4,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -75,7 +75,7 @@
       "name": "Makai Lemon",
       "position": "WR",
       "pro_team": "PHI",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -85,7 +85,7 @@
       "name": "Dalton Kincaid",
       "position": "TE",
       "pro_team": "BUF",
-      "lineup_slot": "TE",
+      "lineup_slot": "FLEX",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -115,7 +115,7 @@
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "pro_team": "ATL",
-      "lineup_slot": "BE",
+      "lineup_slot": "TE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -135,7 +135,7 @@
       "name": "Tyler Allgeier",
       "position": "RB",
       "pro_team": "ARI",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -145,7 +145,7 @@
       "name": "Brian Robinson Jr.",
       "position": "RB",
       "pro_team": "ATL",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "RB",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -205,7 +205,7 @@
       "name": "Ollie Gordon II",
       "position": "RB",
       "pro_team": "MIA",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -239,7 +239,7 @@
       "pro_team": "CHI",
       "lineup_slot": "BE",
       "keeper_value": 3,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -309,7 +309,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -955,7 +955,7 @@
       "pro_team": "PIT",
       "lineup_slot": "BE",
       "keeper_value": 18,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -985,7 +985,7 @@
       "pro_team": "WSH",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1339,7 +1339,7 @@
       "pro_team": "NE",
       "lineup_slot": "BE",
       "keeper_value": 6,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1459,7 +1459,7 @@
       "pro_team": "WSH",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "ADD"
     },
     {
@@ -1521,7 +1521,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 6,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1541,7 +1541,7 @@
       "pro_team": "BUF",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1629,7 +1629,7 @@
       "name": "Pat Bryant",
       "position": "WR",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
@@ -1691,7 +1691,7 @@
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "pro_team": "DET",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
       "keeper_value": 1,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1701,9 +1701,9 @@
       "name": "Saquon Barkley",
       "position": "RB",
       "pro_team": "PHI",
-      "lineup_slot": "BE",
+      "lineup_slot": "RB",
       "keeper_value": 2,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1781,7 +1781,7 @@
       "name": "Rams D/ST",
       "position": "D/ST",
       "pro_team": "LAR",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "DRAFT"
@@ -1901,7 +1901,7 @@
       "name": "Jaguars D/ST",
       "position": "D/ST",
       "pro_team": "JAX",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": null,
       "acquisition_type": "ADD"
@@ -2045,7 +2045,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2117,7 +2117,7 @@
       "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 1,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2147,7 +2147,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2217,7 +2217,7 @@
       "pro_team": "LAC",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2439,7 +2439,7 @@
       "pro_team": "CHI",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
