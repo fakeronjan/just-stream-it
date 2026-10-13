@@ -776,18 +776,6 @@
     }
   },
   "5": {
-    "LAR": {
-      "opponent": "BUF",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "BUF": {
-      "opponent": "LAR",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "DAL": {
       "opponent": "TB",
       "home": true,
@@ -955,6 +943,18 @@
       "home": false,
       "team_score": 30.0,
       "opponent_score": 23.0
+    },
+    "LAR": {
+      "opponent": "BUF",
+      "home": true,
+      "team_score": 34.0,
+      "opponent_score": 37.0
+    },
+    "BUF": {
+      "opponent": "LAR",
+      "home": false,
+      "team_score": 37.0,
+      "opponent_score": 34.0
     }
   },
   "6": {

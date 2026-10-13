@@ -516,7 +516,7 @@
     "player_id": 4432708,
     "name": "Marvin Harrison Jr.",
     "position": "WR",
-    "pro_team": "ARI",
+    "pro_team": "HOU",
     "superflex_rank": 108,
     "standard_rank": 74,
     "adjusted_rank": 58
@@ -4419,22 +4419,13 @@
     "adjusted_rank": 491
   },
   {
-    "player_id": 4430681,
-    "name": "Jared Wayne",
-    "position": "WR",
-    "pro_team": "HOU",
-    "superflex_rank": 1399,
-    "standard_rank": 1399,
-    "adjusted_rank": 492
-  },
-  {
     "player_id": 4241476,
     "name": "Tyrell Shavers",
     "position": "WR",
     "pro_team": "BUF",
     "superflex_rank": 1400,
     "standard_rank": 1398,
-    "adjusted_rank": 493
+    "adjusted_rank": 492
   },
   {
     "player_id": 4877706,
@@ -4443,7 +4434,7 @@
     "pro_team": "HOU",
     "superflex_rank": 1402,
     "standard_rank": 1401,
-    "adjusted_rank": 494
+    "adjusted_rank": 493
   },
   {
     "player_id": 4685350,
@@ -4452,7 +4443,7 @@
     "pro_team": "CAR",
     "superflex_rank": 1403,
     "standard_rank": 1402,
-    "adjusted_rank": 495
+    "adjusted_rank": 494
   },
   {
     "player_id": 4427238,
@@ -4461,7 +4452,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1404,
     "standard_rank": 1403,
-    "adjusted_rank": 496
+    "adjusted_rank": 495
   },
   {
     "player_id": 4432734,
@@ -4470,7 +4461,7 @@
     "pro_team": "SEA",
     "superflex_rank": 1405,
     "standard_rank": 1404,
-    "adjusted_rank": 497
+    "adjusted_rank": 496
   },
   {
     "player_id": 4432775,
@@ -4479,7 +4470,7 @@
     "pro_team": "LV",
     "superflex_rank": 1406,
     "standard_rank": 1405,
-    "adjusted_rank": 498
+    "adjusted_rank": 497
   },
   {
     "player_id": 4708049,
@@ -4488,7 +4479,7 @@
     "pro_team": "MIN",
     "superflex_rank": 1407,
     "standard_rank": 1406,
-    "adjusted_rank": 499
+    "adjusted_rank": 498
   },
   {
     "player_id": 4683243,
@@ -4497,7 +4488,7 @@
     "pro_team": "CAR",
     "superflex_rank": 1408,
     "standard_rank": 1407,
-    "adjusted_rank": 500
+    "adjusted_rank": 499
   },
   {
     "player_id": 4431466,
@@ -4506,7 +4497,7 @@
     "pro_team": "SF",
     "superflex_rank": 1409,
     "standard_rank": 1408,
-    "adjusted_rank": 501
+    "adjusted_rank": 500
   },
   {
     "player_id": 4429955,
@@ -4515,7 +4506,7 @@
     "pro_team": "PIT",
     "superflex_rank": 1417,
     "standard_rank": 1416,
-    "adjusted_rank": 502
+    "adjusted_rank": 501
   },
   {
     "player_id": 4601080,
@@ -4524,7 +4515,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1418,
     "standard_rank": 1417,
-    "adjusted_rank": 503
+    "adjusted_rank": 502
   },
   {
     "player_id": 5091739,
@@ -4533,7 +4524,7 @@
     "pro_team": "CAR",
     "superflex_rank": 1431,
     "standard_rank": 1430,
-    "adjusted_rank": 504
+    "adjusted_rank": 503
   },
   {
     "player_id": 4605951,
@@ -4542,7 +4533,7 @@
     "pro_team": "LAR",
     "superflex_rank": 1432,
     "standard_rank": 1431,
-    "adjusted_rank": 505
+    "adjusted_rank": 504
   },
   {
     "player_id": 4431325,
@@ -4551,7 +4542,7 @@
     "pro_team": "CLE",
     "superflex_rank": 1440,
     "standard_rank": 1436,
-    "adjusted_rank": 506
+    "adjusted_rank": 505
   },
   {
     "player_id": 4432722,
@@ -4560,7 +4551,7 @@
     "pro_team": "WSH",
     "superflex_rank": 1444,
     "standard_rank": 1437,
-    "adjusted_rank": 507
+    "adjusted_rank": 506
   },
   {
     "player_id": 4567747,
@@ -4569,7 +4560,7 @@
     "pro_team": "KC",
     "superflex_rank": 1445,
     "standard_rank": 1440,
-    "adjusted_rank": 508
+    "adjusted_rank": 507
   },
   {
     "player_id": 4808759,
@@ -4578,7 +4569,7 @@
     "pro_team": "DAL",
     "superflex_rank": 1448,
     "standard_rank": 1447,
-    "adjusted_rank": 509
+    "adjusted_rank": 508
   },
   {
     "player_id": 4600597,
@@ -4587,7 +4578,7 @@
     "pro_team": "SEA",
     "superflex_rank": 1449,
     "standard_rank": 1448,
-    "adjusted_rank": 510
+    "adjusted_rank": 509
   },
   {
     "player_id": 5344782,
@@ -4596,7 +4587,7 @@
     "pro_team": "ATL",
     "superflex_rank": 1450,
     "standard_rank": 1449,
-    "adjusted_rank": 511
+    "adjusted_rank": 510
   },
   {
     "player_id": 4635009,
@@ -4605,7 +4596,7 @@
     "pro_team": "GB",
     "superflex_rank": 1453,
     "standard_rank": 1452,
-    "adjusted_rank": 512
+    "adjusted_rank": 511
   },
   {
     "player_id": 2576581,
@@ -4614,6 +4605,15 @@
     "pro_team": "BAL",
     "superflex_rank": 1591,
     "standard_rank": 1590,
+    "adjusted_rank": 512
+  },
+  {
+    "player_id": 3118892,
+    "name": "Justin Watson",
+    "position": "WR",
+    "pro_team": "FA",
+    "superflex_rank": 1599,
+    "standard_rank": 1598,
     "adjusted_rank": 513
   },
   {
