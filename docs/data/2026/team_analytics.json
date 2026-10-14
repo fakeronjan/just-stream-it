@@ -4,11 +4,11 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 31,
+    "transactions_count": 35,
     "trades_count": 0,
-    "waiver_pickups": 11,
-    "free_agent_pickups": 15,
-    "drops": 12,
+    "waiver_pickups": 14,
+    "free_agent_pickups": 16,
+    "drops": 15,
     "players_started_count": 22,
     "started_points_total": 625.66,
     "started_points_by_source": {
@@ -266,9 +266,9 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 10,
+    "transactions_count": 11,
     "trades_count": 0,
-    "waiver_pickups": 4,
+    "waiver_pickups": 5,
     "free_agent_pickups": 6,
     "drops": 4,
     "players_started_count": 17,
@@ -521,11 +521,11 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "transactions_count": 6,
+    "transactions_count": 7,
     "trades_count": 0,
-    "waiver_pickups": 1,
+    "waiver_pickups": 2,
     "free_agent_pickups": 4,
-    "drops": 2,
+    "drops": 3,
     "players_started_count": 17,
     "started_points_total": 705.08,
     "started_points_by_source": {
@@ -790,10 +790,10 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 27,
+    "transactions_count": 29,
     "trades_count": 0,
-    "waiver_pickups": 9,
-    "free_agent_pickups": 14,
+    "waiver_pickups": 10,
+    "free_agent_pickups": 15,
     "drops": 13,
     "players_started_count": 20,
     "started_points_total": 639.9,
@@ -882,11 +882,11 @@
     "owners": [
       "Ronjan Sikdar"
     ],
-    "transactions_count": 9,
+    "transactions_count": 11,
     "trades_count": 0,
-    "waiver_pickups": 5,
+    "waiver_pickups": 7,
     "free_agent_pickups": 2,
-    "drops": 4,
+    "drops": 6,
     "players_started_count": 19,
     "started_points_total": 616.68,
     "started_points_by_source": {
