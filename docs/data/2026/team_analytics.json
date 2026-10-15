@@ -174,11 +174,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 22,
+    "transactions_count": 25,
     "trades_count": 0,
     "waiver_pickups": 9,
-    "free_agent_pickups": 9,
-    "drops": 9,
+    "free_agent_pickups": 11,
+    "drops": 10,
     "players_started_count": 18,
     "started_points_total": 541.44,
     "started_points_by_source": {
@@ -521,10 +521,10 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "transactions_count": 7,
+    "transactions_count": 8,
     "trades_count": 0,
     "waiver_pickups": 2,
-    "free_agent_pickups": 4,
+    "free_agent_pickups": 5,
     "drops": 3,
     "players_started_count": 17,
     "started_points_total": 705.08,
@@ -698,11 +698,11 @@
     "owners": [
       "Michael Higgins"
     ],
-    "transactions_count": 9,
+    "transactions_count": 10,
     "trades_count": 0,
     "waiver_pickups": 3,
     "free_agent_pickups": 4,
-    "drops": 2,
+    "drops": 3,
     "players_started_count": 20,
     "started_points_total": 645.3,
     "started_points_by_source": {
