@@ -4,10 +4,10 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 35,
+    "transactions_count": 36,
     "trades_count": 0,
     "waiver_pickups": 14,
-    "free_agent_pickups": 16,
+    "free_agent_pickups": 17,
     "drops": 15,
     "players_started_count": 22,
     "started_points_total": 625.66,
@@ -96,10 +96,10 @@
     "owners": [
       "Cara Kantrowitz"
     ],
-    "transactions_count": 5,
+    "transactions_count": 6,
     "trades_count": 0,
     "waiver_pickups": 0,
-    "free_agent_pickups": 4,
+    "free_agent_pickups": 5,
     "drops": 1,
     "players_started_count": 14,
     "started_points_total": 703.6,
@@ -613,10 +613,10 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 4,
+    "transactions_count": 5,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 2,
+    "free_agent_pickups": 3,
     "drops": 2,
     "players_started_count": 17,
     "started_points_total": 685.78,
@@ -790,11 +790,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 29,
+    "transactions_count": 32,
     "trades_count": 0,
     "waiver_pickups": 10,
-    "free_agent_pickups": 15,
-    "drops": 13,
+    "free_agent_pickups": 17,
+    "drops": 14,
     "players_started_count": 20,
     "started_points_total": 639.9,
     "started_points_by_source": {
@@ -882,10 +882,10 @@
     "owners": [
       "Ronjan Sikdar"
     ],
-    "transactions_count": 11,
+    "transactions_count": 12,
     "trades_count": 0,
     "waiver_pickups": 7,
-    "free_agent_pickups": 2,
+    "free_agent_pickups": 3,
     "drops": 6,
     "players_started_count": 19,
     "started_points_total": 616.68,
