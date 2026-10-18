@@ -958,29 +958,17 @@
     }
   },
   "6": {
-    "DEN": {
-      "opponent": "SEA",
-      "home": true,
-      "team_score": 17.0,
-      "opponent_score": 14.0
-    },
-    "SEA": {
-      "opponent": "DEN",
-      "home": false,
-      "team_score": 14.0,
-      "opponent_score": 17.0
-    },
     "JAX": {
       "opponent": "HOU",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 14.0,
+      "opponent_score": 17.0
     },
     "HOU": {
       "opponent": "JAX",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 17.0,
+      "opponent_score": 14.0
     },
     "ATL": {
       "opponent": "CHI",
@@ -1113,6 +1101,18 @@
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
+    },
+    "DEN": {
+      "opponent": "SEA",
+      "home": true,
+      "team_score": 17.0,
+      "opponent_score": 14.0
+    },
+    "SEA": {
+      "opponent": "DEN",
+      "home": false,
+      "team_score": 14.0,
+      "opponent_score": 17.0
     },
     "SF": {
       "opponent": "WSH",
