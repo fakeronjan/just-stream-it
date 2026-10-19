@@ -272,6 +272,26 @@
     ]
   },
   {
+    "id": "a4b885bd-1c15-4617-a8d2-724eef1c3f28",
+    "type": "ROSTER",
+    "team_id": 5,
+    "week": 6,
+    "items": [
+      {
+        "player_id": 4431459,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3929645,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "ed0f799a-ee35-49fc-803c-95b4f3ae8ac4",
     "type": "ROSTER",
     "team_id": 3,
@@ -660,6 +680,26 @@
     ]
   },
   {
+    "id": "7967ef8d-393a-4325-8dc5-008e43255f4a",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 6,
+    "items": [
+      {
+        "player_id": 3915416,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 5081432,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "9b68f77a-bb9a-4565-81b8-984e706a7d58",
     "type": "FREEAGENT",
     "team_id": 9,
@@ -744,6 +784,26 @@
         "from_team_id": 0,
         "to_team_id": 8,
         "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "36e9ae1b-9b12-42ed-bb1e-2caac8034850",
+    "type": "FREEAGENT",
+    "team_id": 8,
+    "week": 6,
+    "items": [
+      {
+        "player_id": 3068267,
+        "from_team_id": 0,
+        "to_team_id": 8,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4595342,
+        "from_team_id": 8,
+        "to_team_id": 0,
+        "type": "DROP"
       }
     ]
   },
@@ -1571,6 +1631,26 @@
       },
       {
         "player_id": 3915511,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "6be4c067-0062-4a7a-817c-ea3fa5218b84",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 6,
+    "items": [
+      {
+        "player_id": 3068267,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 5081432,
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
