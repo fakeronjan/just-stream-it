@@ -426,3 +426,6 @@ details.redacted summary {
 }
 
 .empty-state { text-align: center; color: var(--dim); padding: 3rem 0; }
+
+/* Multi-line headings never leave an orphan word (see theme.css). */
+h1, h2, h3, h4 { text-wrap: balance; }

@@ -738,3 +738,11 @@ nav.resources .nav-sep { color: var(--text-mute); }
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
+/* Multi-line headings and team names split into lines of near-equal
+   length, never a lone orphan word on the last line (Ronjan's rule,
+   2026-10-20). Flex/block children only, which these all are. */
+h1, h2, h3, h4, .section-title, .subtitle, .tile-headline, .bracket-round-title,
+.chip-name, .team-row-name, .scorer-name, .bracket-team, .name {
+  text-wrap: balance;
+}
