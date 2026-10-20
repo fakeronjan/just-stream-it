@@ -371,12 +371,19 @@
   .side-by-side .m-team, .side-by-side .m-owner { text-align: left; }
   .side-by-side .side-b .m-team, .side-by-side .side-b .m-owner { text-align: right; }
   .side-by-side .matchup-result-score { margin-top: 2px; }
+  .side-by-side .matchup-vs { font-family: "Rozha One", serif; font-size: 1.6rem; color: var(--ink); text-transform: lowercase; line-height: 1; }
   @media (max-width: 560px) {
     .side-by-side .matchup-side { gap: 8px; }
     .side-by-side .matchup-side img { width: 56px; height: 56px; }
     .side-by-side .m-team { font-size: 0.82rem; }
     .side-by-side .m-owner { font-size: 0.62rem; }
     .matchup-teams.side-by-side { gap: 8px; }
+    .side-by-side .matchup-vs { font-size: 1.15rem; }
+  }
+  @media (max-width: 420px) {
+    .side-by-side .matchup-side, .side-by-side .matchup-side.side-b { flex-direction: column; gap: 6px; }
+    .side-by-side .m-info, .side-by-side .side-b .m-info { align-items: center; }
+    .side-by-side .m-team, .side-by-side .m-owner, .side-by-side .side-b .m-team, .side-by-side .side-b .m-owner { text-align: center; }
   }
 
   .matchup-rosters {
