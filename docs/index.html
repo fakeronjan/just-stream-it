@@ -22,10 +22,12 @@
   Week 1) and repoint the frozen panel's own LOGO map at that folder
   instead - otherwise the frozen tab would silently start showing
   whatever a team's CURRENT logo is instead of what it actually was.
-  The "Top Performances" + "Superlatives" (Season to Date) block at the
-  bottom of the current panel reads LIVE 2026 data (season_moments.json,
-  team_analytics.json, rebuilt by the daily cron). When freezing the
-  current panel, MOVE that block (its HTML + renderSeasonToDate() call)
+  The Statbook block (All-Play Records, Best Ball, Top Performances,
+  Superlatives) at the bottom of the current panel reads LIVE 2026 data
+  (matchups.json, season_moments.json, team_analytics.json, rebuilt by
+  the daily cron). Its Best Ball paragraph is the one weekly-written
+  piece: rewrite it each edition. When freezing the current panel, MOVE
+  that block (its HTML + renderSeasonToDate() call)
   to the new current panel - don't leave a copy in the frozen tab, since
   a frozen tab can't show live numbers.
   Each panel below is self-contained with its own JS data (PV_-prefixed
@@ -428,7 +430,7 @@
   .top-scorer-team { font-family: "Special Elite", monospace; font-size: 0.62rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; }
   .top-scorer-pts { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 
-  /* ---------- season to date (Top Performances + Superlatives): same
+  /* ---------- Statbook (Top Performances + Superlatives tiles): same
      tiles and logic as season-2025.html's renderTopPerformances /
      renderSuperlatives, restyled for newsprint. Reads live 2026 data, so
      it always belongs to the CURRENT edition - see the header comment. ---------- */
@@ -552,7 +554,7 @@
 
   <!-- ================= CURRENT EDITION: Week 6 Recap / Week 7 Preview ================= -->
   <section class="edition" id="panel-current">
-    <nav class="section-nav" id="section-nav" aria-label="Sections"><a href="#sec-results">Results</a><a href="#sec-injuries">Injuries</a><a href="#sec-standings">Standings</a><a href="#sec-bestball">Best Ball</a><a href="#sec-week7">Week 7</a><a href="#sec-season">Season to Date</a></nav>
+    <nav class="section-nav" id="section-nav" aria-label="Sections"><a href="#sec-results">Results</a><a href="#sec-injuries">Injuries</a><a href="#sec-standings">Standings</a><a href="#sec-week7">Week 7</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 6 Recap</p>
     <h2 class="edition-head">Where the Heart Is</h2>
     <p class="dateline">2026 Season &middot; Week 6 Complete &middot; Week 7 Preview Below</p>
@@ -572,22 +574,26 @@
     <div class="standings-list" id="standings-list"></div>
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
 
-    <div class="section-label" id="sec-bestball">Best Ball</div>
-    <p class="section-sublabel">2026 season to date</p>
-    <p class="lede" style="font-size:0.95rem;">Kris and Pete both lost games their best lineups would have won. It was Pete's second, tied with Mike for the league lead, and perfect lineups would have him at 3-3 instead of 1-5. Joe still leads at 95.1%, and his lineup calls didn't cost him this week, since he started 95.4% of his best possible points.</p>
-    <div class="standings-list" id="best-ball-list"></div>
-    <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
-
     <div class="section-label" id="sec-week7">Week 7 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="week7-matchup-grid"></div>
 
-    <div class="section-label" id="sec-season">Top Performances</div>
+    <div class="section-label" id="sec-statbook">Statbook</div>
     <p class="section-sublabel">2026 season to date</p>
+
+    <h3 class="stat-subhead">All-Play Records</h3>
+    <div class="standings-list" id="std-all-play"></div>
+    <p class="standings-caption">All-play counts each team's score against all 11 others every week. Luck is actual wins minus the wins that all-play rate predicts.</p>
+
+    <h3 class="stat-subhead">Best Ball</h3>
+    <p class="lede" style="font-size:0.95rem;">Kris and Pete both lost games their best lineups would have won. It was Pete's second, tied with Mike for the league lead, and perfect lineups would have him at 3-3 instead of 1-5. Joe still leads at 95.1%, and his lineup calls didn't cost him this week, since he started 95.4% of his best possible points.</p>
+    <div class="standings-list" id="best-ball-list"></div>
+    <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
+
+    <h3 class="stat-subhead">Top Performances</h3>
     <div id="std-top-performances"></div>
 
-    <div class="section-label">Superlatives</div>
-    <p class="section-sublabel">2026 season to date</p>
+    <h3 class="stat-subhead">Superlatives</h3>
     <div id="std-superlatives"></div>
   </section>
 
@@ -939,25 +945,6 @@ const STANDINGS = [
   { team: 3,  wins: 1, losses: 5, pf: 743.4, back: null },
 ];
 
-// ---------- Best ball, regular season through Week 6, straight from
-// docs/data/2026/season_moments.json's best_ball.standings (pulled
-// 10/20/2026), sorted by efficiency (actual / optimal). Static snapshot
-// on purpose: the prose above quotes these exact numbers.
-const BEST_BALL = [
-  { team: 8, wins: 5, losses: 1, bbWins: 4, bbLosses: 2, blown: 0, bench: 42.6, eff: 95.1 },
-  { team: 6, wins: 5, losses: 1, bbWins: 4, bbLosses: 2, blown: 0, bench: 124.8, eff: 87.2 },
-  { team: 4, wins: 2, losses: 4, bbWins: 2, bbLosses: 4, blown: 0, bench: 112.6, eff: 87.1 },
-  { team: 10, wins: 2, losses: 4, bbWins: 3, bbLosses: 3, blown: 1, bench: 115.6, eff: 86.9 },
-  { team: 12, wins: 5, losses: 1, bbWins: 4, bbLosses: 2, blown: 0, bench: 120.5, eff: 86.9 },
-  { team: 2, wins: 3, losses: 3, bbWins: 2, bbLosses: 4, blown: 0, bench: 112.5, eff: 86.6 },
-  { team: 9, wins: 2, losses: 4, bbWins: 1, bbLosses: 5, blown: 0, bench: 117.0, eff: 86.3 },
-  { team: 3, wins: 1, losses: 5, bbWins: 3, bbLosses: 3, blown: 2, bench: 120.0, eff: 86.1 },
-  { team: 1, wins: 2, losses: 4, bbWins: 2, bbLosses: 4, blown: 0, bench: 108.2, eff: 85.4 },
-  { team: 5, wins: 4, losses: 2, bbWins: 4, bbLosses: 2, blown: 0, bench: 147.6, eff: 85.0 },
-  { team: 11, wins: 2, losses: 4, bbWins: 3, bbLosses: 3, blown: 1, bench: 138.2, eff: 83.2 },
-  { team: 7, wins: 3, losses: 3, bbWins: 4, bbLosses: 2, blown: 2, bench: 158.3, eff: 83.0 },
-];
-
 // ---------- Week 7 preview. 2025 head-to-head from
 // docs/data/2025/matchups.json: every pair met once in the 2025
 // regular season (Week 7), and mariss/Cara also met in the Week 16
@@ -1050,25 +1037,6 @@ function renderStandingsRow(s, idx) {
   `;
 }
 
-// Best-ball row: same grid as the standings rows. Middle column is the
-// real record over the best-ball record; right column is efficiency over
-// bench points (+ blown losses, when any).
-function renderBestBallRow(s, idx) {
-  const t = TEAMS[s.team];
-  const blownHtml = s.blown ? `<span class="bb-sub">${s.blown} blown</span>` : '';
-  return `
-    <div class="standings-row bb-row">
-      <span class="standings-rank">${idx + 1}</span>
-      <span class="standings-team">
-        ${crestImg(s.team)}
-        <span class="standings-team-name"><b>${t.name} <span class="bb-rec">${s.wins}-${s.losses}</span></b><span>${ownerLabel(t)}</span></span>
-      </span>
-      <span class="standings-record">${s.bbWins}-${s.bbLosses}</span>
-      <span class="standings-record">${s.eff.toFixed(1)}%<span class="bb-sub">${s.bench.toFixed(1)} bench</span>${blownHtml}</span>
-    </div>
-  `;
-}
-
 function renderWeek7Matchup(m) {
   const gamesHtml = m.games.map(g => `
     <div class="matchup-h2h-row">
@@ -1128,14 +1096,12 @@ function renderCurrentEdition() {
   document.getElementById('recap-matchup-grid').innerHTML = MATCHUP_RESULTS.map(renderMatchupResult).join('');
   document.getElementById('injury-list').innerHTML = renderInjuryTable(INJURIES);
   document.getElementById('standings-list').innerHTML = STANDINGS.map(renderStandingsRow).join('');
-  document.getElementById('best-ball-list').innerHTML =
-    `<div class="standings-row bb-row bb-head"><span></span><span>Team</span><span>Optimal Lineup Record</span><span>Efficiency</span></div>`
-    + BEST_BALL.map(renderBestBallRow).join('');
   document.getElementById('week7-matchup-grid').innerHTML = WEEK7_MATCHUPS.map(renderWeek7Matchup).join('');
 }
 
 /* ============================================================
-   SEASON TO DATE: Top Performances + Superlatives. Same tiles and
+   STATBOOK: All-Play Records + Best Ball (live tables) and Top
+   Performances + Superlatives. The tiles use the same
    selection logic as season-2025.html (renderTopPerformances /
    renderSuperlatives), pointed at live 2026 data so it refreshes every
    time the daily cron rebuilds season_moments.json / team_analytics.json.
@@ -1428,6 +1394,59 @@ function std_renderSuperlatives(moments, matchups, weeklyBoxscores, analytics, g
     </div>`;
 }
 
+// All-play: every played week, each team's score against all 11 others.
+// Luck = real wins minus all-play win rate x games played.
+function std_renderAllPlay(matchups, gamesPlayed) {
+  const byWeek = {};
+  matchups.forEach(m => {
+    (byWeek[m.week] = byWeek[m.week] || []).push([m.home_team_id, m.home_score], [m.away_team_id, m.away_score]);
+  });
+  const ap = {}, wins = {};
+  Object.values(byWeek).forEach(scores => scores.forEach(([t, sc]) => {
+    const r = ap[t] = ap[t] || { w: 0, l: 0 };
+    scores.forEach(([o, os]) => { if (o !== t) { if (sc > os) r.w++; else if (sc < os) r.l++; } });
+  }));
+  matchups.forEach(m => { const w = m.winner === 'HOME' ? m.home_team_id : m.away_team_id; wins[w] = (wins[w] || 0) + 1; });
+  const rows = Object.keys(ap).map(Number).map(t => {
+    const g = gamesPlayed[t], pct = ap[t].w / (ap[t].w + ap[t].l), w = wins[t] || 0;
+    return { t, ...ap[t], pct, wins: w, losses: g - w, luck: w - pct * g };
+  }).sort((a, b) => b.pct - a.pct || b.luck - a.luck);
+  const fmtLuck = v => (v >= 0.05 ? '+' : '') + v.toFixed(1);
+  return `<div class="standings-row bb-row bb-head"><span></span><span>Team</span><span>All-Play</span><span>Luck</span></div>`
+    + rows.map((r, i) => `
+    <div class="standings-row bb-row">
+      <span class="standings-rank">${i + 1}</span>
+      <span class="standings-team">
+        ${crestImg(r.t)}
+        <span class="standings-team-name"><b>${TEAMS[r.t].name} <span class="bb-rec">${r.wins}-${r.losses}</span></b><span>${ownerLabel(TEAMS[r.t])}</span></span>
+      </span>
+      <span class="standings-record">${r.w}-${r.l}<span class="bb-sub">${(r.pct * 100).toFixed(1)}%</span></span>
+      <span class="standings-record">${fmtLuck(r.luck)}</span>
+    </div>`).join('');
+}
+
+// Best ball, live from season_moments.json's best_ball.standings, sorted
+// by efficiency. Middle column is the real record over the best-ball
+// record; right column is efficiency over bench points (+ blown losses).
+function std_renderBestBall(moments) {
+  const rows = [...moments.best_ball.standings].sort((a, b) => b.efficiency - a.efficiency);
+  return `<div class="standings-row bb-row bb-head"><span></span><span>Team</span><span>Optimal Lineup Record</span><span>Efficiency</span></div>`
+    + rows.map((s, i) => {
+      const t = TEAMS[s.team_id];
+      const blownHtml = s.blown ? `<span class="bb-sub">${s.blown} blown</span>` : '';
+      return `
+    <div class="standings-row bb-row">
+      <span class="standings-rank">${i + 1}</span>
+      <span class="standings-team">
+        ${crestImg(s.team_id)}
+        <span class="standings-team-name"><b>${t.name} <span class="bb-rec">${s.wins}-${s.losses}</span></b><span>${ownerLabel(t)}</span></span>
+      </span>
+      <span class="standings-record">${s.best_ball_wins}-${s.best_ball_losses}</span>
+      <span class="standings-record">${(s.efficiency * 100).toFixed(1)}%<span class="bb-sub">${s.bench_points.toFixed(1)} bench</span>${blownHtml}</span>
+    </div>`;
+    }).join('');
+}
+
 async function renderSeasonToDate() {
   const get = name => fetch(`data/${STD_SEASON}/${name}`).then(r => r.json());
   const [teamsLive, moments, allMatchups, weeklyBoxscores, analytics, draftPicks] = await Promise.all([
@@ -1443,6 +1462,8 @@ async function renderSeasonToDate() {
   });
   const playerTotals = std_playerTotals(weeklyBoxscores);
   const draftedSet = new Set(draftPicks.map(p => `${p.team_id}_${p.player_id}`));
+  document.getElementById('std-all-play').innerHTML = std_renderAllPlay(matchups, gamesPlayed);
+  document.getElementById('best-ball-list').innerHTML = std_renderBestBall(moments);
   document.getElementById('std-top-performances').innerHTML = std_renderTopPerformances(moments, weeklyBoxscores, playerTotals);
   document.getElementById('std-superlatives').innerHTML = std_renderSuperlatives(moments, matchups, weeklyBoxscores, analytics, gamesPlayed, playerTotals, draftedSet, teamsLive, weeksPlayed);
 }
