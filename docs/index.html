@@ -359,6 +359,25 @@
     text-transform: uppercase; letter-spacing: 0.03em; text-align: center; margin-top: 1px;
   }
   .matchup-vs { font-family: "Special Elite", monospace; color: var(--meta); font-size: 0.8rem; flex: 0 0 auto; }
+  /* Side-by-side variant (current edition, from Week 6): logos sit at the
+     card's outer edges with the team text beside them, so the header is
+     only as tall as the logo. */
+  .matchup-teams.side-by-side { justify-content: space-between; }
+  .side-by-side .matchup-side { flex-direction: row; align-items: center; gap: 14px; min-width: 0; }
+  .side-by-side .matchup-side.side-b { flex-direction: row-reverse; }
+  .side-by-side .matchup-side img { flex-shrink: 0; }
+  .side-by-side .m-info { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-width: 0; }
+  .side-by-side .side-b .m-info { align-items: flex-end; }
+  .side-by-side .m-team, .side-by-side .m-owner { text-align: left; }
+  .side-by-side .side-b .m-team, .side-by-side .side-b .m-owner { text-align: right; }
+  .side-by-side .matchup-result-score { margin-top: 2px; }
+  @media (max-width: 560px) {
+    .side-by-side .matchup-side { gap: 8px; }
+    .side-by-side .matchup-side img { width: 56px; height: 56px; }
+    .side-by-side .m-team { font-size: 0.82rem; }
+    .side-by-side .m-owner { font-size: 0.62rem; }
+    .matchup-teams.side-by-side { gap: 8px; }
+  }
 
   .matchup-rosters {
     display: grid;
@@ -1005,21 +1024,25 @@ function renderMatchupResult(m) {
   return `
     <div class="matchup-card">
       ${tagHtml}
-      <div class="matchup-teams">
+      <div class="matchup-teams side-by-side">
         <div class="matchup-side">
           ${crestImg(m.a)}
+          <span class="m-info">
           <span class="m-team">${TEAMS[m.a].name}</span>
           <span class="m-owner">${ownerLabel(TEAMS[m.a])}</span>
           <span class="matchup-result-score ${aWin ? 'win' : ''}">${m.aScore.toFixed(1)}</span>
           <span class="matchup-result-tag">${recordAfterWeek(m.a)}</span>
+          </span>
         </div>
         <span class="matchup-vs">${aWin ? 'def.' : 'lost to'}</span>
-        <div class="matchup-side">
+        <div class="matchup-side side-b">
           ${crestImg(m.b)}
+          <span class="m-info">
           <span class="m-team">${TEAMS[m.b].name}</span>
           <span class="m-owner">${ownerLabel(TEAMS[m.b])}</span>
           <span class="matchup-result-score ${!aWin ? 'win' : ''}">${m.bScore.toFixed(1)}</span>
           <span class="matchup-result-tag">${recordAfterWeek(m.b)}</span>
+          </span>
         </div>
       </div>
       <p class="matchup-result-text">${m.text}</p>
@@ -1076,19 +1099,23 @@ function renderWeek7Matchup(m) {
   ` : '';
   return `
     <div class="matchup-card">
-      <div class="matchup-teams">
+      <div class="matchup-teams side-by-side">
         <div class="matchup-side">
           ${crestImg(m.a)}
+          <span class="m-info">
           <span class="m-team">${TEAMS[m.a].name}</span>
           <span class="m-owner">${ownerLabel(TEAMS[m.a])}</span>
           <span class="matchup-result-tag">${m.aTag}</span>
+          </span>
         </div>
         <span class="matchup-vs">vs</span>
-        <div class="matchup-side">
+        <div class="matchup-side side-b">
           ${crestImg(m.b)}
+          <span class="m-info">
           <span class="m-team">${TEAMS[m.b].name}</span>
           <span class="m-owner">${ownerLabel(TEAMS[m.b])}</span>
           <span class="matchup-result-tag">${m.bTag}</span>
+          </span>
         </div>
       </div>
       <p class="matchup-series">${seriesLabel}</p>
