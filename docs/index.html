@@ -30,6 +30,10 @@
   that block (its HTML + renderSeasonToDate() call)
   to the new current panel - don't leave a copy in the frozen tab, since
   a frozen tab can't show live numbers.
+  Frozen panels KEEP their sticky section nav: when freezing, prefix
+  every sec-* target id with the panel's prefix (e.g. wk6r-sec-results)
+  and point the nav links at those ids. setupSectionNav() handles any
+  number of .section-nav bars.
   Each panel below is self-contained with its own JS data (PV_-prefixed
   for the Week 1 Preview panel, unprefixed for the current one) so
   frozen panels never share a live data object with the current one.
@@ -207,9 +211,10 @@
   .edition-tab:hover { color: var(--ink); }
   .edition-tab.active { color: var(--red); font-weight: 700; border-bottom-color: var(--red); }
 
-  /* ---------- section nav: sticky jump links for the CURRENT edition
-     only (frozen tabs stay as published). One line, scrolls sideways
-     on phones instead of wrapping, same as the site nav. ---------- */
+  /* ---------- section nav: sticky jump links, one per edition panel
+     (frozen tabs keep theirs, with wkNr-sec-* target ids). One line,
+     scrolls sideways on phones instead of wrapping, same as the site
+     nav. ---------- */
   .section-nav {
     position: sticky; top: 0; z-index: 20;
     display: flex; flex-wrap: nowrap; gap: 0;
@@ -228,7 +233,7 @@
   }
   .section-nav a:hover { color: var(--ink); }
   .section-nav a.active { color: var(--red); border-bottom-color: var(--red); }
-  #panel-current .section-label { scroll-margin-top: 48px; }
+  .edition .section-label { scroll-margin-top: 48px; }
 
   /* ---------- edition ---------- */
   .edition { margin-top: 32px; }
@@ -554,7 +559,7 @@
 
   <!-- ================= CURRENT EDITION: Week 6 Recap / Week 7 Preview ================= -->
   <section class="edition" id="panel-current">
-    <nav class="section-nav" id="section-nav" aria-label="Sections"><a href="#sec-results">Week 6 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week7">Week 7 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
+    <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 6 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week7">Week 7 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 6 Recap</p>
     <h2 class="edition-head">Where the Heart Is</h2>
     <p class="dateline">2026 Season &middot; Week 6 Complete &middot; Week 7 Preview Below</p>
@@ -599,35 +604,36 @@
 
   <!-- ================= FROZEN EDITION: Week 5 Recap / Week 6 Preview (published 10/13/2026) ================= -->
   <section class="edition" id="panel-week5-recap" hidden>
+    <nav class="section-nav" aria-label="Sections"><a href="#wk5r-sec-results">Week 5 Results</a><a href="#wk5r-sec-rebrands">Rebrands</a><a href="#wk5r-sec-injuries">Injuries</a><a href="#wk5r-sec-standings">Standings</a><a href="#wk5r-sec-bestball">Best Ball</a><a href="#wk5r-sec-week6">Week 6 Preview</a></nav>
     <p class="kicker">Week 5 Recap</p>
     <h2 class="edition-head">Close Calls</h2>
     <p class="dateline">2026 Season &middot; Week 5 Complete &middot; Week 6 Preview Below</p>
     <p class="lede">Two games came down to less than two points this week, and both losers left the winning margin on their bench. Karl beat Ronjan 129.1-128.6 in the closest game of the season, one week after he lost to Melinda by less than a point. Ronjan started 97.7% of his best possible points, but Calvin Ridley's 4.3 on the bench would have beaten Romeo Doubs's 2.1 and flipped the result. Mike's mistake cost more. He picked up the Cowboys D/ST this week and watched them score -2.0, so an empty defense slot would have beaten Lisette. Karl's win moves him into fifth place, and Mike holds the last playoff spot at sixth.</p>
     <p class="lede">Cara's 188.4 against Imran was the highest score since Joe's 201.6 in Week 1, and it sets up the biggest game of Week 6. Joe is 5-0 because none of his opponents has scored more than 140.1 against him. Cara has scored 341.9 over the last two weeks, more than any other team, and Joe faces her with only one healthy quarterback after Malik Willis goes on bye.</p>
 
-    <div class="section-label">Week 5 Results</div>
+    <div class="section-label" id="wk5r-sec-results">Week 5 Results</div>
     <div class="matchup-grid" id="wk5r-recap-matchup-grid"></div>
 
-    <div class="section-label">Rebrand Watch</div>
+    <div class="section-label" id="wk5r-sec-rebrands">Rebrand Watch</div>
     <div class="rebrand-cards" id="wk5r-rebrand-watch" style="grid-template-columns: minmax(0, 420px);"></div>
 
-    <div class="section-label">The Injury Report</div>
+    <div class="section-label" id="wk5r-sec-injuries">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 6</p>
     <p class="lede" style="font-size:0.95rem;">Three starters left Week 5 games hurt and never returned: Deebo Samuel, KC Concepcion, and Will Shipley. Four more players moved to IR this week, which brings the leaguewide total to 17.</p>
     <div id="wk5r-injury-list"></div>
 
-    <div class="section-label">Playoff Picture</div>
+    <div class="section-label" id="wk5r-sec-standings">Playoff Picture</div>
     <p class="section-sublabel">Standings through five weeks</p>
     <div class="standings-list" id="wk5r-standings-list"></div>
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
 
-    <div class="section-label">Best Ball</div>
+    <div class="section-label" id="wk5r-sec-bestball">Best Ball</div>
     <p class="section-sublabel">2026 season to date</p>
     <p class="lede" style="font-size:0.95rem;">Mike's loss to Lisette was the only blown game of Week 5, and it was his second of the season, the most in the league. With perfect lineups on both sides every week, Mike would be 4-1 instead of 2-3. He has started 80.4% of his best possible points, the lowest share in the league, and left 157.8 on his bench. Joe is the opposite case. He leads the league at 95.1%, and his 5-0 record is one win better than perfect lineups would have earned. Lisette, Melinda, and Ronjan also have one more win than their best lineups.</p>
     <div class="standings-list" id="wk5r-best-ball-list"></div>
     <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
 
-    <div class="section-label">Week 6 Matchups</div>
+    <div class="section-label" id="wk5r-sec-week6">Week 6 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="wk5r-week6-matchup-grid"></div>
 
@@ -636,32 +642,33 @@
 
   <!-- ================= FROZEN EDITION: Week 4 Recap / Week 5 Preview (published 10/6/2026) ================= -->
   <section class="edition" id="panel-week4-recap" hidden>
+    <nav class="section-nav" aria-label="Sections"><a href="#wk4r-sec-results">Week 4 Results</a><a href="#wk4r-sec-injuries">Injuries</a><a href="#wk4r-sec-standings">Standings</a><a href="#wk4r-sec-bestball">Best Ball</a><a href="#wk4r-sec-week5">Week 5 Preview</a></nav>
     <p class="kicker">Week 4 Recap</p>
     <h2 class="edition-head">Average Joe and the Aristocrats</h2>
     <p class="dateline">2026 Season &middot; Week 4 Complete &middot; Week 5 Preview Below</p>
     <p class="lede">Olave Oyl (Joe) is still unbeaten at 4-0, even though the team has scored less every week. Joe's 201.6 in Week 1 would have beaten all 11 other teams, while his 112.2 this week would have beaten only two. The schedule has made up the difference. Two of his four opponents posted the week's lowest score, and Mike left a winning lineup on his bench against him in Week 3. That's why no team has faced fewer points than Joe's 406.6. His lineup calls have helped too, since no manager has started a higher share of his possible points than Joe's 94.3%.</p>
     <p class="lede">Karl is 1-3 and deserves a lot better. The Aristocrats have scored 528.7 points, third-most in the league, and their 29-15 all-play record trails only Lisette's. That all-play mark is worth about 2.6 wins, and no other team has fallen even one full win short of its scoring. His schedule explains it. Since beating Pete in Week 1, Karl has drawn the week's top score twice and the second-best score once. Cara scored 154.7 against him in Week 2, Melinda beat him by less than a point in Week 3, and Lisette hit him with the season's second-highest score this week (169.0). No team has faced more points than Karl's 597.9. Only the Melinda loss was in his own hands, since he left Jacoby Brissett's 25.6 on the bench that week. He sits one game out of the last playoff spot.</p>
 
-    <div class="section-label">Week 4 Results</div>
+    <div class="section-label" id="wk4r-sec-results">Week 4 Results</div>
     <div class="matchup-grid" id="wk4r-recap-matchup-grid"></div>
 
-    <div class="section-label">The Injury Report</div>
+    <div class="section-label" id="wk4r-sec-injuries">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 5</p>
     <p class="lede" style="font-size:0.95rem;">Seven starters left Week 4 games hurt and never returned, and the number of players listed as out jumped from 5 to 18. IR slots hold 22 players, the same as this point last season.</p>
     <div id="wk4r-injury-list"></div>
 
-    <div class="section-label">Playoff Picture</div>
+    <div class="section-label" id="wk4r-sec-standings">Playoff Picture</div>
     <p class="section-sublabel">Standings through four weeks</p>
     <div class="standings-list" id="wk4r-standings-list"></div>
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
 
-    <div class="section-label">Best Ball</div>
+    <div class="section-label" id="wk4r-sec-bestball">Best Ball</div>
     <p class="section-sublabel">2026 season to date</p>
     <p class="lede" style="font-size:0.95rem;">Lineup calls have decided three games this season. Pete blew one against Ronjan in Week 2, and Karl and Mike both blew one in Week 3, where Karl's was the one-point loss to Melinda with Jacoby Brissett on his bench. Each of them would have won even if the opponent had also set a perfect lineup. Nobody blew a game through four weeks last season. Week 4 left plenty of points on benches but produced no blown games, because every loser would still have lost a matchup of perfect lineups. Efficiency explains part of Joe's run. His 94.3% leads the league, and his Week 3 win over Mike was one of the three blown games. Mike ranks last at 77.4% after benching 143.8 points, and perfect lineups on both sides would have him at 3-1. Ben shows the limit of good management. He ranks second at 88.7% and is still 1-3, because he'd be 1-3 with perfect lineups too.</p>
     <div class="standings-list" id="wk4r-best-ball-list"></div>
     <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
 
-    <div class="section-label">Week 5 Matchups</div>
+    <div class="section-label" id="wk4r-sec-week5">Week 5 Matchups</div>
     <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="wk4r-week5-matchup-grid"></div>
 
@@ -3200,13 +3207,15 @@ function PV_renderMatchups() {
    ============================================================ */
 
 // Highlights the section-nav link for whichever section is currently
-// under the sticky bar.
+// under the sticky bar. Every edition panel has its own nav; only the
+// visible panel's nav is updated.
 function setupSectionNav() {
-  const nav = document.getElementById('section-nav');
-  if (!nav) return;
-  const links = [...nav.querySelectorAll('a')];
-  const targets = links.map(a => document.querySelector(a.getAttribute('href')));
-  const update = () => {
+  const navs = [...document.querySelectorAll('.section-nav')].map(nav => {
+    const links = [...nav.querySelectorAll('a')];
+    return { nav, links, targets: links.map(a => document.querySelector(a.getAttribute('href'))) };
+  });
+  const update = () => navs.forEach(({ nav, links, targets }) => {
+    if (nav.closest('.edition').hidden) return;
     let idx = -1;
     targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top <= 60) idx = i; });
     links.forEach((a, i) => a.classList.toggle('active', i === idx));
@@ -3215,8 +3224,9 @@ function setupSectionNav() {
       if (a.offsetLeft < nav.scrollLeft || a.offsetLeft + a.offsetWidth > nav.scrollLeft + nav.clientWidth)
         nav.scrollTo({ left: a.offsetLeft - 8, behavior: 'smooth' });
     }
-  };
+  });
   window.addEventListener('scroll', update, { passive: true });
+  document.querySelectorAll('.edition-tab').forEach(t => t.addEventListener('click', () => requestAnimationFrame(update)));
   update();
 }
 async function loadApp() {
