@@ -2105,5 +2105,408 @@
         "games_remaining": 9
       }
     ]
+  },
+  {
+    "week": 6,
+    "features": [
+      {
+        "type": "game_of_the_week",
+        "team_ids": [
+          7,
+          11
+        ],
+        "text": "It came down to the last stat line: Terrible Towels (Mike) over Rice Rice Baby (Kris), 129.9-125.1.",
+        "lineups": {
+          "7": [
+            {
+              "name": "Jayden Daniels",
+              "position": "QB",
+              "pro_team": "WSH",
+              "points": 21.0
+            },
+            {
+              "name": "Bhayshul Tuten",
+              "position": "RB",
+              "pro_team": "JAX",
+              "points": 22.7
+            },
+            {
+              "name": "J.K. Dobbins",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 12.100000000000001
+            },
+            {
+              "name": "Christian Watson",
+              "position": "WR",
+              "pro_team": "GB",
+              "points": 7.9
+            },
+            {
+              "name": "Davante Adams",
+              "position": "WR",
+              "pro_team": "LAR",
+              "points": 5.4
+            },
+            {
+              "name": "Denzel Boston",
+              "position": "WR",
+              "pro_team": "CLE",
+              "points": 2.0
+            },
+            {
+              "name": "Brock Bowers",
+              "position": "TE",
+              "pro_team": "LV",
+              "points": 9.0
+            },
+            {
+              "name": "Jalen Coker",
+              "position": "FLEX",
+              "pro_team": "CAR",
+              "points": 12.700000000000001
+            },
+            {
+              "name": "Chiefs D/ST",
+              "position": "D/ST",
+              "pro_team": "KC",
+              "points": 14.0
+            },
+            {
+              "name": "Cam Little",
+              "position": "K",
+              "pro_team": "JAX",
+              "points": 10.0
+            },
+            {
+              "name": "RJ Harvey",
+              "position": "RB",
+              "pro_team": "DEN",
+              "points": 13.1
+            }
+          ],
+          "11": [
+            {
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "pro_team": "HOU",
+              "points": 22.98
+            },
+            {
+              "name": "Woody Marks",
+              "position": "RB",
+              "pro_team": "HOU",
+              "points": 9.100000000000001
+            },
+            {
+              "name": "Quinshon Judkins",
+              "position": "RB",
+              "pro_team": "CLE",
+              "points": 0.0
+            },
+            {
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "pro_team": "PHI",
+              "points": 17.0
+            },
+            {
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "pro_team": "JAX",
+              "points": 10.8
+            },
+            {
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "pro_team": "HOU",
+              "points": 4.9
+            },
+            {
+              "name": "Harold Fannin Jr.",
+              "position": "TE",
+              "pro_team": "CLE",
+              "points": 1.4
+            },
+            {
+              "name": "D'Andre Swift",
+              "position": "FLEX",
+              "pro_team": "CHI",
+              "points": 21.0
+            },
+            {
+              "name": "Seahawks D/ST",
+              "position": "D/ST",
+              "pro_team": "SEA",
+              "points": 6.0
+            },
+            {
+              "name": "Eddy Pineiro",
+              "position": "K",
+              "pro_team": "SF",
+              "points": 5.0
+            },
+            {
+              "name": "Tyler Shough",
+              "position": "QB",
+              "pro_team": "NO",
+              "points": 26.96
+            }
+          ]
+        }
+      },
+      {
+        "type": "stud_of_the_week",
+        "team_ids": [
+          9
+        ],
+        "text": "Stud of the week: Trevor Lawrence (Gibbs-n Them the Business (Ronjan)) dropped 27.3 points, best of anyone in the league."
+      },
+      {
+        "type": "upset_alert",
+        "team_ids": [
+          4,
+          10
+        ],
+        "text": "The Aristocrats (Karl) came in ranked #5 and still found a way to lose to #12 Conquering Heroes (Ben)."
+      }
+    ],
+    "briefs": [
+      {
+        "winner_team_id": 6,
+        "loser_team_id": 9,
+        "winner_score": 145.12,
+        "loser_score": 122.16,
+        "text": "Mahomes is where the heart is \u2764 (Lisette, 5-1) beat Gibbs-n Them the Business (Ronjan, 2-4) 145.1-122.2"
+      },
+      {
+        "winner_team_id": 7,
+        "loser_team_id": 11,
+        "winner_score": 129.9,
+        "loser_score": 125.14,
+        "text": "Terrible Towels (Mike, 3-3) beat Rice Rice Baby (Kris, 2-4) 129.9-125.1"
+      },
+      {
+        "winner_team_id": 4,
+        "loser_team_id": 10,
+        "winner_score": 133.26,
+        "loser_score": 109.54,
+        "text": "Conquering Heroes (Ben, 2-4) beat The Aristocrats (Karl, 2-4) 133.3-109.5"
+      },
+      {
+        "winner_team_id": 2,
+        "loser_team_id": 3,
+        "winner_score": 112.38,
+        "loser_score": 103.5,
+        "text": "Mednis Madness (mariss, 3-3) beat Beard Al (Pete, 1-5) 112.4-103.5"
+      },
+      {
+        "winner_team_id": 12,
+        "loser_team_id": 1,
+        "winner_score": 111.16,
+        "loser_score": 89.76,
+        "text": "Buffalo Abusement Park (Melinda, 5-1) beat Three Lions Football Club (Imran, 2-4) 111.2-89.8"
+      },
+      {
+        "winner_team_id": 5,
+        "loser_team_id": 8,
+        "winner_score": 131.18,
+        "loser_score": 99.2,
+        "text": "Team Kantastrophe (Cara, 4-2) beat Olave Oyl (Joe, 5-1) 131.2-99.2"
+      }
+    ],
+    "looking_ahead": {
+      "week": 7,
+      "matchups": [
+        {
+          "team_ids": [
+            11,
+            6
+          ],
+          "text": "Rice Rice Baby (Kris, #10, 2-4) takes on Mahomes is where the heart is \u2764 (Lisette, #1, 5-1); Play every week and it's Kris 1-5 Lisette"
+        },
+        {
+          "team_ids": [
+            9,
+            4
+          ],
+          "text": "Gibbs-n Them the Business (Ronjan, #9, 2-4) faces Conquering Heroes (Ben, #8, 2-4); All-play says Ronjan 1-5 Ben"
+        },
+        {
+          "team_ids": [
+            7,
+            3
+          ],
+          "text": "Terrible Towels (Mike, #5, 3-3) squares off against Beard Al (Pete, #12, 1-5); By weekly scoring alone, Mike has the edge, 4-2 over Pete"
+        },
+        {
+          "team_ids": [
+            10,
+            1
+          ],
+          "text": "The Aristocrats (Karl, #7, 2-4) takes on Three Lions Football Club (Imran, #11, 2-4); Play every week and it's Karl 4-2 Imran"
+        },
+        {
+          "team_ids": [
+            2,
+            5
+          ],
+          "text": "Next up: Mednis Madness (mariss, #6, 3-3) vs. Team Kantastrophe (Cara, #4, 4-2); All-play says mariss 2-4 Cara"
+        },
+        {
+          "team_ids": [
+            12,
+            8
+          ],
+          "text": "Buffalo Abusement Park (Melinda, #3, 5-1) and Olave Oyl (Joe, #2, 5-1) go head-to-head; All-play says Melinda 4-2 Joe"
+        }
+      ]
+    },
+    "playoff_picture": [
+      {
+        "team_id": 6,
+        "rank": 1,
+        "wins": 5,
+        "losses": 1,
+        "points_for": 850.2,
+        "points_back": null,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 8,
+        "rank": 2,
+        "wins": 5,
+        "losses": 1,
+        "points_for": 826.3,
+        "points_back": 23.9,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 12,
+        "rank": 3,
+        "wins": 5,
+        "losses": 1,
+        "points_for": 796.9,
+        "points_back": 29.4,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 6,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 5,
+        "rank": 4,
+        "wins": 4,
+        "losses": 2,
+        "points_for": 834.8,
+        "points_back": null,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 7,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 7,
+        "rank": 5,
+        "wins": 3,
+        "losses": 3,
+        "points_for": 775.2,
+        "points_back": null,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 2,
+        "rank": 6,
+        "wins": 3,
+        "losses": 3,
+        "points_for": 725.7,
+        "points_back": 49.5,
+        "in_playoffs": true,
+        "status": "alive",
+        "magic_number": 8,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 10,
+        "rank": 7,
+        "wins": 2,
+        "losses": 4,
+        "points_for": 767.4,
+        "points_back": null,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 4,
+        "rank": 8,
+        "wins": 2,
+        "losses": 4,
+        "points_for": 758.9,
+        "points_back": 8.5,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 9,
+        "rank": 9,
+        "wins": 2,
+        "losses": 4,
+        "points_for": 738.8,
+        "points_back": 20.1,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 11,
+        "rank": 10,
+        "wins": 2,
+        "losses": 4,
+        "points_for": 685.0,
+        "points_back": 53.8,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 1,
+        "rank": 11,
+        "wins": 2,
+        "losses": 4,
+        "points_for": 631.2,
+        "points_back": 53.8,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
+      },
+      {
+        "team_id": 3,
+        "rank": 12,
+        "wins": 1,
+        "losses": 5,
+        "points_for": 743.4,
+        "points_back": null,
+        "in_playoffs": false,
+        "status": "alive",
+        "magic_number": null,
+        "games_remaining": 8
+      }
+    ]
   }
 ]

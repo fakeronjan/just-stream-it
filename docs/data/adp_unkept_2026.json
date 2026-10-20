@@ -4179,7 +4179,7 @@
     "player_id": 2972515,
     "name": "Cooper Rush",
     "position": "QB",
-    "pro_team": "ATL",
+    "pro_team": "FA",
     "superflex_rank": 1328,
     "standard_rank": 1327,
     "adjusted_rank": 465
@@ -4815,21 +4815,21 @@
     "adjusted_rank": 535
   },
   {
-    "player_id": 16728,
-    "name": "Teddy Bridgewater",
-    "position": "QB",
-    "pro_team": "DET",
-    "superflex_rank": 1769,
-    "standard_rank": 1771,
-    "adjusted_rank": 536
-  },
-  {
     "player_id": 15965,
     "name": "Dustin Hopkins",
     "position": "K",
     "pro_team": "FA",
     "superflex_rank": 1770,
     "standard_rank": 1772,
+    "adjusted_rank": 536
+  },
+  {
+    "player_id": 14881,
+    "name": "Russell Wilson",
+    "position": "QB",
+    "pro_team": "FA",
+    "superflex_rank": 1772,
+    "standard_rank": 1774,
     "adjusted_rank": 537
   },
   {

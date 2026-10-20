@@ -958,18 +958,6 @@
     }
   },
   "6": {
-    "SF": {
-      "opponent": "WSH",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "WSH": {
-      "opponent": "SF",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "DEN": {
       "opponent": "SEA",
       "home": true,
@@ -1124,6 +1112,18 @@
       "opponent": "GB",
       "home": false,
       "team_score": 13.0,
+      "opponent_score": 23.0
+    },
+    "SF": {
+      "opponent": "WSH",
+      "home": true,
+      "team_score": 23.0,
+      "opponent_score": 17.0
+    },
+    "WSH": {
+      "opponent": "SF",
+      "home": false,
+      "team_score": 17.0,
       "opponent_score": 23.0
     }
   },
