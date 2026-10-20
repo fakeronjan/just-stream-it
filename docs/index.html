@@ -986,38 +986,40 @@ const STANDINGS = [
 // draft, D/ST and K excluded, round = 2026 draft round; Travis Hunter
 // (Mike -> Pete) left out since he's no longer on Pete's roster. Byes
 // (BUF, JAX, LAC, WSH) from ESPN's Week 7 scoreboard; injuries from
-// rosters.json and ESPN 10/20/2026.
+// rosters.json and ESPN 10/20/2026. Ordered by stakes, Game of the
+// Week first. Stakes from enumerating all 64 Week 7 outcomes against
+// playoff_picture (wins, then current points_for as the tiebreak).
 const WEEK7_MATCHUPS = [
-  { a: 11, aTag: '#10 &middot; 2-4', b: 6, bTag: '#1 &middot; 5-1',
-    games: [{ week: 7, aScore: 144.76, bScore: 145.90 }],
-    swaps: [ { player: 'Matthew Golden (WR)', from: 11, to: 6, round: 9 } ],
-    note: `Lisette has topped 136 points five straight weeks, and Kris hasn't done it once. A Lamar Jackson return would give Kris three starting quarterbacks. Lisette won the 2025 meeting 145.9-144.8.` },
+  { a: 12, tag: 'Game of the Week', aTag: '#3 &middot; 5-1', b: 8, bTag: '#2 &middot; 5-1',
+    games: [{ week: 7, aScore: 102.68, bScore: 159.82 }],
+    swaps: [ { player: 'Tucker Kraft (TE)', from: 12, to: 8, round: 7 } ],
+    note: `Two of the three 5-1 teams meet. The winner takes first place if Kris upsets Lisette, and the loser drops to fourth if Cara beats mariss. Both are short-handed. Melinda loses James Cook III, Khalil Shakir, and Tyler Bass to Buffalo's bye, and Joe could lose Tyler Huntley if Lamar Jackson returns. Joe won the 2025 meeting 159.8-102.7.` },
+  { a: 2, aTag: '#6 &middot; 3-3', b: 5, bTag: '#4 &middot; 4-2',
+    games: [{ week: 7, aScore: 144.58, bScore: 127.76 }, { week: 16, label: 'Semifinal', aScore: 100.54, bScore: 176.08 }],
+    swaps: [ { player: 'Malik Nabers (WR)', from: 2, to: 5, round: 4 },
+             { player: 'Tyler Warren (TE)', from: 2, to: 5, round: 6 } ],
+    note: `mariss keeps the last playoff spot with a win. On current points he loses it with a loss, because the Ronjan-Ben winner would also be 3-4 and has outscored him. Giants fan mariss also faces his old receiver Malik Nabers, who has 46.1 points over the last two weeks. Cara beat mariss in last season's semifinal on her way to the title.` },
+  { a: 10, aTag: '#7 &middot; 2-4', b: 1, bTag: '#11 &middot; 2-4',
+    games: [{ week: 7, aScore: 93.74, bScore: 94.06 }],
+    swaps: [ { player: 'Dalton Kincaid (TE)', from: 10, to: 1, round: 10 },
+             { player: 'Adonai Mitchell (WR)', from: 1, to: 10, round: 16 },
+             { player: 'Braelon Allen (RB)', from: 1, to: 10, round: 19 } ],
+    note: `Karl has scored more than anyone below the playoff line, so a win plus a mariss loss moves him into the top six. He has faced at least 128.6 points every week. Imran gets his three Lions back from their bye, while Karl waits on a doubtful Mike Evans. Imran won the 2025 meeting 94.1-93.7.` },
   { a: 9, aTag: '#9 &middot; 2-4', b: 4, bTag: '#8 &middot; 2-4',
     games: [{ week: 7, aScore: 161.50, bScore: 103.88 }],
     swaps: [ { player: 'Puka Nacua (WR)', from: 9, to: 4, round: 1 } ],
-    note: `Puka Nacua was the league's top-scoring receiver last season with 289.5 points for Ronjan. Ronjan kept Jahmyr Gibbs and Trevor Lawrence instead, and Ben took Puka in the first round. Now Puka faces his old team with Lawrence on bye. Ronjan won the 2025 meeting 161.5-103.9.` },
+    note: `The winner reaches 3-4 and takes the last playoff spot if mariss and Karl both lose. Puka Nacua was the league's top-scoring receiver last season with 289.5 points for Ronjan. Ronjan kept Jahmyr Gibbs and Trevor Lawrence instead, and Ben took Puka in the first round. Ronjan won the 2025 meeting 161.5-103.9.` },
   { a: 7, aTag: '#5 &middot; 3-3', b: 3, bTag: '#12 &middot; 1-5',
     games: [{ week: 7, aScore: 127.26, bScore: 136.52 }],
     swaps: [ { player: 'Terry McLaurin (WR)', from: 7, to: 3, round: 5 },
              { player: 'TreVeyon Henderson (RB)', from: 3, to: 7, round: 7 },
              { player: 'Alec Pierce (WR)', from: 7, to: 3, round: 8 },
              { player: 'Jalen Coker (WR)', from: 3, to: 7, round: 14 } ],
-    note: `Neither team has a starting quarterback, because Jayden Daniels and Josh Allen are both on bye. Every other quarterback on either roster is a backup or hurt. Pete won the 2025 meeting 136.5-127.3.` },
-  { a: 10, aTag: '#7 &middot; 2-4', b: 1, bTag: '#11 &middot; 2-4',
-    games: [{ week: 7, aScore: 93.74, bScore: 94.06 }],
-    swaps: [ { player: 'Dalton Kincaid (TE)', from: 10, to: 1, round: 10 },
-             { player: 'Adonai Mitchell (WR)', from: 1, to: 10, round: 16 },
-             { player: 'Braelon Allen (RB)', from: 1, to: 10, round: 19 } ],
-    note: `Imran gets his three Lions back from their bye, and Karl is waiting on a doubtful Mike Evans. No opponent has scored fewer than 128.6 against Karl. Imran won the 2025 meeting 94.1-93.7.` },
-  { a: 2, aTag: '#6 &middot; 3-3', b: 5, bTag: '#4 &middot; 4-2',
-    games: [{ week: 7, aScore: 144.58, bScore: 127.76 }, { week: 16, label: 'Semifinal', aScore: 100.54, bScore: 176.08 }],
-    swaps: [ { player: 'Malik Nabers (WR)', from: 2, to: 5, round: 4 },
-             { player: 'Tyler Warren (TE)', from: 2, to: 5, round: 6 } ],
-    note: `Giants fan mariss faces his old receiver Malik Nabers, who has scored 46.1 for Cara the last two weeks. Tyler Warren, mariss's 145.4-point tight end last season, is out with a groin injury. Cara beat mariss in last season's semifinal on her way to the title.` },
-  { a: 12, aTag: '#3 &middot; 5-1', b: 8, bTag: '#2 &middot; 5-1',
-    games: [{ week: 7, aScore: 102.68, bScore: 159.82 }],
-    swaps: [ { player: 'Tucker Kraft (TE)', from: 12, to: 8, round: 7 } ],
-    note: `Two 5-1 teams meet short-handed. Melinda loses James Cook III, Khalil Shakir, and Tyler Bass to Buffalo's bye, and Joe gets Malik Willis back but may lose Huntley to Lamar Jackson's return. Joe won the 2025 meeting 159.8-102.7.` },
+    note: `Neither team has a starting quarterback, because Jayden Daniels and Josh Allen are both on bye. Mike has enough points to stay in the top six even with a loss, while a loss would leave Pete at least two games out of a playoff spot with seven to play. Pete won the 2025 meeting 136.5-127.3.` },
+  { a: 11, aTag: '#10 &middot; 2-4', b: 6, bTag: '#1 &middot; 5-1',
+    games: [{ week: 7, aScore: 144.76, bScore: 145.90 }],
+    swaps: [ { player: 'Matthew Golden (WR)', from: 11, to: 6, round: 9 } ],
+    note: `Lisette keeps first place with a win, and a loss hands it to the Melinda-Joe winner. She has topped 136 points five straight weeks, and Kris hasn't done it once. A Lamar Jackson return would give Kris three starting quarterbacks. Lisette won the 2025 meeting 145.9-144.8.` },
 ];
 // Record after this week's game, from STANDINGS (engine playoff_picture).
 function recordAfterWeek(teamId) {
@@ -1106,6 +1108,7 @@ function renderWeek7Matchup(m) {
   ` : '';
   return `
     <div class="matchup-card">
+      ${m.tag ? `<p class="kicker" style="margin-bottom:10px;">${m.tag}</p>` : ''}
       <div class="matchup-teams side-by-side">
         <div class="matchup-side">
           ${crestImg(m.a)}
