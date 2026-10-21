@@ -4,11 +4,11 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 37,
+    "transactions_count": 39,
     "trades_count": 0,
-    "waiver_pickups": 14,
+    "waiver_pickups": 16,
     "free_agent_pickups": 18,
-    "drops": 15,
+    "drops": 17,
     "players_started_count": 25,
     "started_points_total": 758.92,
     "started_points_by_source": {
@@ -181,11 +181,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 27,
+    "transactions_count": 30,
     "trades_count": 0,
-    "waiver_pickups": 9,
+    "waiver_pickups": 12,
     "free_agent_pickups": 12,
-    "drops": 11,
+    "drops": 13,
     "players_started_count": 20,
     "started_points_total": 631.2,
     "started_points_by_source": {
@@ -447,11 +447,11 @@
     "owners": [
       "Kris Wikstrom"
     ],
-    "transactions_count": 5,
+    "transactions_count": 8,
     "trades_count": 0,
-    "waiver_pickups": 1,
-    "free_agent_pickups": 4,
-    "drops": 1,
+    "waiver_pickups": 3,
+    "free_agent_pickups": 5,
+    "drops": 3,
     "players_started_count": 20,
     "started_points_total": 685.02,
     "started_points_by_source": {
@@ -723,10 +723,10 @@
     "owners": [
       "Michael Higgins"
     ],
-    "transactions_count": 10,
+    "transactions_count": 11,
     "trades_count": 0,
     "waiver_pickups": 3,
-    "free_agent_pickups": 4,
+    "free_agent_pickups": 5,
     "drops": 3,
     "players_started_count": 21,
     "started_points_total": 775.2,
@@ -815,11 +815,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 32,
+    "transactions_count": 36,
     "trades_count": 0,
-    "waiver_pickups": 10,
+    "waiver_pickups": 13,
     "free_agent_pickups": 17,
-    "drops": 14,
+    "drops": 18,
     "players_started_count": 24,
     "started_points_total": 743.4,
     "started_points_by_source": {
@@ -907,11 +907,11 @@
     "owners": [
       "Ronjan Sikdar"
     ],
-    "transactions_count": 14,
+    "transactions_count": 15,
     "trades_count": 0,
-    "waiver_pickups": 7,
+    "waiver_pickups": 8,
     "free_agent_pickups": 4,
-    "drops": 7,
+    "drops": 8,
     "players_started_count": 22,
     "started_points_total": 738.84,
     "started_points_by_source": {
@@ -999,11 +999,11 @@
     "owners": [
       "mariss mednis"
     ],
-    "transactions_count": 5,
+    "transactions_count": 7,
     "trades_count": 0,
-    "waiver_pickups": 0,
+    "waiver_pickups": 2,
     "free_agent_pickups": 3,
-    "drops": 2,
+    "drops": 4,
     "players_started_count": 17,
     "started_points_total": 725.66,
     "started_points_by_source": {
