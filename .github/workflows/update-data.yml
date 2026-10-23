@@ -31,12 +31,8 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: python generate_data.py
 
-      - name: Build keeper guide
-        working-directory: scripts
-        env:
-          ESPN_S2: ${{ secrets.ESPN_S2 }}
-          ESPN_SWID: ${{ secrets.ESPN_SWID }}
-        run: python build_keeper_guide.py
+      # The 2026 keeper guide is frozen: keepers were locked preseason, and
+      # rebuilding from in-season rosters breaks when a kept player is traded.
 
       # In-season stats behind the Weekly News "Season to Date" section
       # (and the recap engine): box scores + transactions + team analytics,
