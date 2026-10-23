@@ -4,11 +4,11 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 39,
+    "transactions_count": 42,
     "trades_count": 0,
-    "waiver_pickups": 16,
-    "free_agent_pickups": 18,
-    "drops": 17,
+    "waiver_pickups": 17,
+    "free_agent_pickups": 19,
+    "drops": 19,
     "players_started_count": 25,
     "started_points_total": 758.92,
     "started_points_by_source": {
@@ -96,11 +96,11 @@
     "owners": [
       "Cara Kantrowitz"
     ],
-    "transactions_count": 6,
+    "transactions_count": 7,
     "trades_count": 0,
     "waiver_pickups": 0,
     "free_agent_pickups": 5,
-    "drops": 1,
+    "drops": 2,
     "players_started_count": 17,
     "started_points_total": 834.78,
     "started_points_by_source": {
@@ -181,10 +181,10 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 30,
+    "transactions_count": 31,
     "trades_count": 0,
     "waiver_pickups": 12,
-    "free_agent_pickups": 12,
+    "free_agent_pickups": 13,
     "drops": 13,
     "players_started_count": 20,
     "started_points_total": 631.2,
@@ -273,10 +273,10 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 14,
+    "transactions_count": 16,
     "trades_count": 0,
     "waiver_pickups": 6,
-    "free_agent_pickups": 8,
+    "free_agent_pickups": 10,
     "drops": 5,
     "players_started_count": 21,
     "started_points_total": 826.34,
@@ -539,10 +539,10 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "transactions_count": 8,
+    "transactions_count": 9,
     "trades_count": 0,
     "waiver_pickups": 2,
-    "free_agent_pickups": 5,
+    "free_agent_pickups": 6,
     "drops": 3,
     "players_started_count": 17,
     "started_points_total": 850.2,
@@ -631,10 +631,10 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 5,
+    "transactions_count": 7,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 3,
+    "free_agent_pickups": 5,
     "drops": 2,
     "players_started_count": 20,
     "started_points_total": 796.94,
@@ -815,10 +815,10 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 36,
+    "transactions_count": 41,
     "trades_count": 0,
     "waiver_pickups": 13,
-    "free_agent_pickups": 17,
+    "free_agent_pickups": 22,
     "drops": 18,
     "players_started_count": 24,
     "started_points_total": 743.4,

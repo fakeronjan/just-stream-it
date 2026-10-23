@@ -1131,14 +1131,14 @@
     "CHI": {
       "opponent": "NE",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 30.0,
+      "opponent_score": 24.0
     },
     "NE": {
       "opponent": "CHI",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 24.0,
+      "opponent_score": 30.0
     },
     "NO": {
       "opponent": "PIT",
