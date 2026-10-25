@@ -167,7 +167,7 @@
       "pro_team": "DEN",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -469,7 +469,7 @@
       "name": "David Montgomery",
       "position": "RB",
       "pro_team": "HOU",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 6,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -489,7 +489,7 @@
       "name": "Michael Wilson",
       "position": "WR",
       "pro_team": "ARI",
-      "lineup_slot": 7,
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -579,7 +579,7 @@
       "name": "Ryan Flournoy",
       "position": "WR",
       "pro_team": "DAL",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -640,6 +640,16 @@
       "position": "QB",
       "pro_team": "IND",
       "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4608810,
+      "name": "Tez Johnson",
+      "position": "WR",
+      "pro_team": "TB",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -857,16 +867,6 @@
       "acquisition_type": "TRADE"
     },
     {
-      "player_id": -16033,
-      "name": "Ravens D/ST",
-      "position": "D/ST",
-      "pro_team": "BAL",
-      "lineup_slot": "D/ST",
-      "keeper_value": 0,
-      "injury_status": null,
-      "acquisition_type": "ADD"
-    },
-    {
       "player_id": 5220680,
       "name": "Ted Hurst III",
       "position": "WR",
@@ -874,6 +874,16 @@
       "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": -16004,
+      "name": "Bengals D/ST",
+      "position": "D/ST",
+      "pro_team": "CIN",
+      "lineup_slot": "D/ST",
+      "keeper_value": 0,
+      "injury_status": null,
       "acquisition_type": "ADD"
     }
   ],
@@ -955,7 +965,7 @@
       "pro_team": "PIT",
       "lineup_slot": "BE",
       "keeper_value": 18,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1055,7 +1065,7 @@
       "pro_team": "CLE",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1197,7 +1207,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 14,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1387,7 +1397,7 @@
       "name": "RJ Harvey",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1497,7 +1507,7 @@
       "name": "Chase Brown",
       "position": "RB",
       "pro_team": "CIN",
-      "lineup_slot": "BE",
+      "lineup_slot": "RB",
       "keeper_value": 5,
       "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
@@ -1529,7 +1539,7 @@
       "name": "Breece Hall",
       "position": "RB",
       "pro_team": "NYJ",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 6,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1549,7 +1559,7 @@
       "name": "Malik Willis",
       "position": "QB",
       "pro_team": "MIA",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1589,7 +1599,7 @@
       "name": "Josh Downs",
       "position": "WR",
       "pro_team": "IND",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1599,9 +1609,9 @@
       "name": "Dontayvion Wicks",
       "position": "WR",
       "pro_team": "PHI",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1649,7 +1659,7 @@
       "name": "Tyler Huntley",
       "position": "QB",
       "pro_team": "BAL",
-      "lineup_slot": "BE",
+      "lineup_slot": "QB",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -1689,7 +1699,7 @@
       "name": "Jared Goff",
       "position": "QB",
       "pro_team": "DET",
-      "lineup_slot": "QB",
+      "lineup_slot": 7,
       "keeper_value": 4,
       "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
@@ -1699,9 +1709,9 @@
       "name": "Christian Kirk",
       "position": "WR",
       "pro_team": "SF",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1833,7 +1843,7 @@
       "pro_team": "MIN",
       "lineup_slot": "IR",
       "keeper_value": 12,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2003,7 +2013,7 @@
       "name": "Mike Evans",
       "position": "WR",
       "pro_team": "SF",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 6,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -2033,7 +2043,7 @@
       "name": "Broncos D/ST",
       "position": "D/ST",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "D/ST",
       "keeper_value": 12,
       "injury_status": null,
       "acquisition_type": "DRAFT"
@@ -2043,7 +2053,7 @@
       "name": "Steelers D/ST",
       "position": "D/ST",
       "pro_team": "PIT",
-      "lineup_slot": "D/ST",
+      "lineup_slot": "BE",
       "keeper_value": 10,
       "injury_status": null,
       "acquisition_type": "DRAFT"
@@ -2064,16 +2074,6 @@
       "position": "QB",
       "pro_team": "CLE",
       "lineup_slot": "BE",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "DRAFT"
-    },
-    {
-      "player_id": 4597500,
-      "name": "Adonai Mitchell",
-      "position": "WR",
-      "pro_team": "NYJ",
-      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -2137,6 +2137,16 @@
       "keeper_value": 11,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4710855,
+      "name": "Konata Mumpfield",
+      "position": "WR",
+      "pro_team": "LAR",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
     }
   ],
   "11": [
@@ -2145,9 +2155,9 @@
       "name": "Lamar Jackson",
       "position": "QB",
       "pro_team": "BAL",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 1,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2177,7 +2187,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2195,7 +2205,7 @@
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "pro_team": "CLE",
-      "lineup_slot": "TE",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -2265,7 +2275,7 @@
       "name": "Tyler Shough",
       "position": "QB",
       "pro_team": "NO",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -2305,7 +2315,7 @@
       "name": "Dalton Schultz",
       "position": "TE",
       "pro_team": "HOU",
-      "lineup_slot": "BE",
+      "lineup_slot": "TE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -2439,7 +2449,7 @@
       "pro_team": "PHI",
       "lineup_slot": "TE",
       "keeper_value": 12,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
