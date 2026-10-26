@@ -1128,146 +1128,14 @@
     }
   },
   "7": {
-    "NO": {
-      "opponent": "PIT",
-      "home": true,
-      "team_score": 10.0,
-      "opponent_score": 13.0
-    },
-    "PIT": {
-      "opponent": "NO",
-      "home": false,
-      "team_score": 13.0,
-      "opponent_score": 10.0
-    },
-    "ATL": {
-      "opponent": "SF",
+    "PHI": {
+      "opponent": "DAL",
       "home": true,
       "team_score": 0.0,
       "opponent_score": 0.0
     },
-    "SF": {
-      "opponent": "ATL",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "TEN": {
-      "opponent": "CLE",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "CLE": {
-      "opponent": "TEN",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "MIN": {
-      "opponent": "IND",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "IND": {
-      "opponent": "MIN",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "NYJ": {
-      "opponent": "MIA",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "MIA": {
-      "opponent": "NYJ",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "CAR": {
-      "opponent": "TB",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "TB": {
-      "opponent": "CAR",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "BAL": {
-      "opponent": "CIN",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "CIN": {
-      "opponent": "BAL",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "HOU": {
-      "opponent": "NYG",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "NYG": {
-      "opponent": "HOU",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "ARI": {
-      "opponent": "DEN",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "DEN": {
-      "opponent": "ARI",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "DET": {
-      "opponent": "GB",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "GB": {
-      "opponent": "DET",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "LV": {
-      "opponent": "LAR",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "LAR": {
-      "opponent": "LV",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "SEA": {
-      "opponent": "KC",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "KC": {
-      "opponent": "SEA",
+    "DAL": {
+      "opponent": "PHI",
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
@@ -1284,17 +1152,149 @@
       "team_score": 24.0,
       "opponent_score": 30.0
     },
-    "PHI": {
-      "opponent": "DAL",
+    "NO": {
+      "opponent": "PIT",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 10.0,
+      "opponent_score": 16.0
     },
-    "DAL": {
-      "opponent": "PHI",
+    "PIT": {
+      "opponent": "NO",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 16.0,
+      "opponent_score": 10.0
+    },
+    "ATL": {
+      "opponent": "SF",
+      "home": true,
+      "team_score": 29.0,
+      "opponent_score": 20.0
+    },
+    "SF": {
+      "opponent": "ATL",
+      "home": false,
+      "team_score": 20.0,
+      "opponent_score": 29.0
+    },
+    "TEN": {
+      "opponent": "CLE",
+      "home": true,
+      "team_score": 24.0,
+      "opponent_score": 27.0
+    },
+    "CLE": {
+      "opponent": "TEN",
+      "home": false,
+      "team_score": 27.0,
+      "opponent_score": 24.0
+    },
+    "MIN": {
+      "opponent": "IND",
+      "home": true,
+      "team_score": 16.0,
+      "opponent_score": 10.0
+    },
+    "IND": {
+      "opponent": "MIN",
+      "home": false,
+      "team_score": 10.0,
+      "opponent_score": 16.0
+    },
+    "NYJ": {
+      "opponent": "MIA",
+      "home": true,
+      "team_score": 25.0,
+      "opponent_score": 28.0
+    },
+    "MIA": {
+      "opponent": "NYJ",
+      "home": false,
+      "team_score": 28.0,
+      "opponent_score": 25.0
+    },
+    "CAR": {
+      "opponent": "TB",
+      "home": true,
+      "team_score": 13.0,
+      "opponent_score": 43.0
+    },
+    "TB": {
+      "opponent": "CAR",
+      "home": false,
+      "team_score": 43.0,
+      "opponent_score": 13.0
+    },
+    "BAL": {
+      "opponent": "CIN",
+      "home": true,
+      "team_score": 13.0,
+      "opponent_score": 35.0
+    },
+    "CIN": {
+      "opponent": "BAL",
+      "home": false,
+      "team_score": 35.0,
+      "opponent_score": 13.0
+    },
+    "HOU": {
+      "opponent": "NYG",
+      "home": true,
+      "team_score": 21.0,
+      "opponent_score": 27.0
+    },
+    "NYG": {
+      "opponent": "HOU",
+      "home": false,
+      "team_score": 27.0,
+      "opponent_score": 21.0
+    },
+    "ARI": {
+      "opponent": "DEN",
+      "home": true,
+      "team_score": 16.0,
+      "opponent_score": 30.0
+    },
+    "DEN": {
+      "opponent": "ARI",
+      "home": false,
+      "team_score": 30.0,
+      "opponent_score": 16.0
+    },
+    "DET": {
+      "opponent": "GB",
+      "home": true,
+      "team_score": 20.0,
+      "opponent_score": 17.0
+    },
+    "GB": {
+      "opponent": "DET",
+      "home": false,
+      "team_score": 17.0,
+      "opponent_score": 20.0
+    },
+    "LV": {
+      "opponent": "LAR",
+      "home": true,
+      "team_score": 21.0,
+      "opponent_score": 35.0
+    },
+    "LAR": {
+      "opponent": "LV",
+      "home": false,
+      "team_score": 35.0,
+      "opponent_score": 21.0
+    },
+    "SEA": {
+      "opponent": "KC",
+      "home": true,
+      "team_score": 20.0,
+      "opponent_score": 3.0
+    },
+    "KC": {
+      "opponent": "SEA",
+      "home": false,
+      "team_score": 3.0,
+      "opponent_score": 20.0
     }
   },
   "8": {
