@@ -1128,18 +1128,6 @@
     }
   },
   "7": {
-    "PHI": {
-      "opponent": "DAL",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "DAL": {
-      "opponent": "PHI",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "CHI": {
       "opponent": "NE",
       "home": true,
@@ -1295,6 +1283,18 @@
       "home": false,
       "team_score": 3.0,
       "opponent_score": 20.0
+    },
+    "PHI": {
+      "opponent": "DAL",
+      "home": true,
+      "team_score": 21.0,
+      "opponent_score": 38.0
+    },
+    "DAL": {
+      "opponent": "PHI",
+      "home": false,
+      "team_score": 38.0,
+      "opponent_score": 21.0
     }
   },
   "8": {
@@ -1588,18 +1588,6 @@
       "team_score": 0.0,
       "opponent_score": 0.0
     },
-    "SF": {
-      "opponent": "LV",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "LV": {
-      "opponent": "SF",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "NE": {
       "opponent": "GB",
       "home": true,
@@ -1608,6 +1596,18 @@
     },
     "GB": {
       "opponent": "NE",
+      "home": false,
+      "team_score": 0.0,
+      "opponent_score": 0.0
+    },
+    "SF": {
+      "opponent": "LV",
+      "home": true,
+      "team_score": 0.0,
+      "opponent_score": 0.0
+    },
+    "LV": {
+      "opponent": "SF",
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0

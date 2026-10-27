@@ -327,55 +327,55 @@
     "week": 7,
     "is_playoffs": false,
     "home_team_id": 11,
-    "home_score": 0.0,
+    "home_score": 118.74,
     "away_team_id": 6,
-    "away_score": 0.0,
-    "winner": "UNDECIDED"
+    "away_score": 102.28,
+    "winner": "HOME"
   },
   {
     "week": 7,
     "is_playoffs": false,
     "home_team_id": 9,
-    "home_score": 0.0,
+    "home_score": 129.96,
     "away_team_id": 4,
-    "away_score": 0.0,
-    "winner": "UNDECIDED"
+    "away_score": 111.38,
+    "winner": "HOME"
   },
   {
     "week": 7,
     "is_playoffs": false,
     "home_team_id": 7,
-    "home_score": 0.0,
+    "home_score": 82.94,
     "away_team_id": 3,
-    "away_score": 0.0,
-    "winner": "UNDECIDED"
+    "away_score": 109.0,
+    "winner": "AWAY"
   },
   {
     "week": 7,
     "is_playoffs": false,
     "home_team_id": 10,
-    "home_score": 0.0,
+    "home_score": 125.96,
     "away_team_id": 1,
-    "away_score": 0.0,
-    "winner": "UNDECIDED"
+    "away_score": 144.32,
+    "winner": "AWAY"
   },
   {
     "week": 7,
     "is_playoffs": false,
     "home_team_id": 2,
-    "home_score": 0.0,
+    "home_score": 124.22,
     "away_team_id": 5,
-    "away_score": 0.0,
-    "winner": "UNDECIDED"
+    "away_score": 141.84,
+    "winner": "AWAY"
   },
   {
     "week": 7,
     "is_playoffs": false,
     "home_team_id": 12,
-    "home_score": 0.0,
+    "home_score": 127.4,
     "away_team_id": 8,
-    "away_score": 0.0,
-    "winner": "UNDECIDED"
+    "away_score": 86.74,
+    "winner": "HOME"
   },
   {
     "week": 8,

@@ -1,804 +1,12 @@
 [
   {
-    "id": "851bd385-2433-497a-b019-da5ed29c4499",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4035538,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4697815,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "5744d531-2e7b-4a4a-a5f4-b479543a9f7c",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4242512,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4035671,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "6cd13852-7c8e-49e0-93cb-97975055bd6a",
-    "type": "FREEAGENT",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4429084,
-        "from_team_id": 0,
-        "to_team_id": 1,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4360635,
-        "from_team_id": 1,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "d132debc-715b-4a70-8135-1cc62bdd1e05",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 2473037,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4034949,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "2f5e27b0-29b4-47f7-a5eb-d3c4f0309a42",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4426385,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "ba2755a0-88b8-44ee-a47c-83c682db0637",
-    "type": "WAIVER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4361409,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16025,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "39aafacd-5818-4735-beb6-aa6e0d87a181",
+    "id": "678ab8da-0cf6-4b88-9180-f114ad45949c",
     "type": "ROSTER",
     "team_id": 1,
-    "week": 7,
+    "week": 8,
     "items": [
       {
-        "player_id": 4385690,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4360248,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "cfbd62d9-cc58-4b4a-b099-8b3236343473",
-    "type": "FREEAGENT",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4715355,
-        "from_team_id": 0,
-        "to_team_id": 11,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4034949,
-        "from_team_id": 11,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "3f9371f5-e57c-4821-b5c9-8a8bd2321fce",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4567750,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4685261,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "4d28ecf5-0b9c-4612-8e72-93abece4dff7",
-    "type": "WAIVER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16009,
-        "from_team_id": 0,
-        "to_team_id": 1,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16011,
-        "from_team_id": 1,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "f3984e76-f550-4a5d-b5f8-55bc5efc20fe",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4373626,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4711533,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "4f869b8f-3496-4fde-b10b-e973480d96af",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3046779,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3917792,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "36536796-87f5-498e-9aa3-eeeb6724b54c",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4430027,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 2573401,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "6814cea7-75aa-489a-8446-21cdf833da99",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4568263,
-        "from_team_id": 1,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "9c74baab-5373-4fc6-b2fc-1baa04a11e0a",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4882093,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4568490,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "072fe788-bbd2-4584-a3c1-93688da55c6b",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 2973405,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4685278,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "f9a207d3-b3b4-428e-b703-220cccc4050b",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4567750,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "4257779f-4b3b-4c2e-b6fb-b83ccaccad42",
-    "type": "FREEAGENT",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4427728,
-        "from_team_id": 0,
-        "to_team_id": 12,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "d872d162-e06c-4edd-9541-e48d4b3e8a3b",
-    "type": "FREEAGENT",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4710855,
-        "from_team_id": 0,
-        "to_team_id": 10,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "5236c692-73de-46d7-b39b-7520cda7811a",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3916148,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3054850,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "529e6964-cae3-42f8-984f-f1cc3878a7a6",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4426385,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "cc6ff21f-339a-48d7-aa07-8d0732b1ee3a",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4870795,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4887558,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "71d9c3b5-30f1-42d6-8673-44b8b9a429bb",
-    "type": "FREEAGENT",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16030,
-        "from_team_id": 0,
-        "to_team_id": 1,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4870795,
-        "from_team_id": 1,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "e43d3593-de99-4fad-9d7f-412c068c96e3",
-    "type": "WAIVER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4710855,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4241464,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "cac32cf9-0939-4e98-a50c-57f1787122ae",
-    "type": "WAIVER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685415,
-        "from_team_id": 0,
-        "to_team_id": 11,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4715355,
-        "from_team_id": 11,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "f88eb99f-ec6c-4dae-8f65-e3620836ff42",
-    "type": "WAIVER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16033,
-        "from_team_id": 0,
-        "to_team_id": 4,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16025,
-        "from_team_id": 4,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "1ecba855-8142-4fe1-9742-000dc75f3381",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685415,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "64be5516-55a6-4180-9113-2b4ca56e993d",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4715355,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4241478,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "9a1505c0-579b-4b18-9c90-ad4e7c652c5b",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4374302,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "5dbb419d-3d1a-47c6-a69a-343e2cb2a55b",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4243331,
-        "from_team_id": 9,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "cd4489b4-75fd-4f16-addf-bf9896e21673",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4568490,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4362238,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "67893bd1-807e-48c1-ac96-a276da6f0aa6",
-    "type": "ROSTER",
-    "team_id": 2,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4242355,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3116165,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "94bd88bb-c855-4c85-bae1-cf6de4f6cf1c",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4882093,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "02042ca8-4406-40c5-a764-b059d14ba7af",
-    "type": "ROSTER",
-    "team_id": 6,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3139477,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4685720,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "502fa6c2-d540-4a3c-b3ee-5f5a660e649f",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 5123663,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3916433,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "ce327913-e8b6-4d67-bef6-c1d40e106d48",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4035671,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3046779,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "03c6919b-2e3f-4ace-a54f-5e758c61e801",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4870795,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "4c7e4fcf-f264-4472-95ac-af731263ffd1",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 16737,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "71011c82-4600-4568-8c4f-e8d43114709d",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3121422,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4697815,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4596334,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": -16016,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429086,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": -16025,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4427095,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "f3cb23d8-1816-420f-af5b-ea9fec9b32a2",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3068267,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4427366,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "95ab8f76-dd2e-4669-8c17-0f46f659a141",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4882093,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4239993,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "b67d5aaf-a865-4f63-879a-bfe42e9bb9f4",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4597500,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "92321798-b892-4ec2-9a04-7cc9b394c197",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4870795,
+        "player_id": 4432708,
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
@@ -812,410 +20,10 @@
     ]
   },
   {
-    "id": "790862b4-25db-418e-aee3-5f659c22e7b5",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360761,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429086,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4695193,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "1bdc6795-9205-415a-90c4-980277c7ffde",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360689,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3916387,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "b50a1554-c297-462e-a5fa-68f912a39d9f",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4362628,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4032473,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "05853719-098f-4c78-99fa-958cf8a40563",
-    "type": "ROSTER",
-    "team_id": 5,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 2976212,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4869961,
-        "from_team_id": 5,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "48358927-1737-4d24-b036-89794ed88a3c",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4427366,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3043078,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "f51dc485-d05b-482a-af27-10676bf0f699",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4035538,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3121422,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "a0ef8afe-91b0-4ee9-a9da-f7da7b170c99",
-    "type": "ROSTER",
-    "team_id": 2,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4569587,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429205,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "60f8c6a8-1aae-4bce-b726-d59d0191b7b3",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4047365,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4635008,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "64dfb730-3b45-49ab-802a-59866e0d3775",
-    "type": "ROSTER",
-    "team_id": 5,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4241389,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3042519,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4569559,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "7d7f5738-1c2d-41fa-bb32-98ed808b363a",
-    "type": "FREEAGENT",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16004,
-        "from_team_id": 0,
-        "to_team_id": 4,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16033,
-        "from_team_id": 4,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "3667a372-1b30-4e6f-9f54-a9c263dbf899",
+    "id": "f8f7151b-ed1d-4f27-beaf-f3f68b070b0a",
     "type": "ROSTER",
     "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3917792,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3046779,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "6a947eb2-4378-46f2-a996-42dcd1e5991b",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4040715,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "be825570-dfd8-470e-88cf-83d05d63c88e",
-    "type": "WAIVER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4696044,
-        "from_team_id": 0,
-        "to_team_id": 4,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4429023,
-        "from_team_id": 4,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "eb17e5b7-ace5-4157-8fb4-b8eb50edd251",
-    "type": "WAIVER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16020,
-        "from_team_id": 0,
-        "to_team_id": 9,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16030,
-        "from_team_id": 9,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "7949323c-24c6-40cc-8cdc-2155ca88dd9b",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4361432,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4047646,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "4a84a99b-79cc-4422-a4e2-23dfe9f2c9da",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3052587,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "76d8dad5-cf9d-47f3-a442-81a444d12cc5",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16017,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": -16025,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "fc67e82c-5919-4778-8444-72f062721709",
-    "type": "WAIVER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3843945,
-        "from_team_id": 0,
-        "to_team_id": 11,
-        "type": "ADD"
-      },
-      {
-        "player_id": 5123663,
-        "from_team_id": 11,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "61e9c06d-1950-49b3-9de0-00fe67470420",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16023,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": -16007,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "7b4f56d1-4931-4569-bd2d-b1cc0d7ad8a6",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4385690,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4870795,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "c68b0cee-feb1-4fe2-85c9-9380569c8707",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
+    "week": 8,
     "items": [
       {
         "player_id": 4241474,
@@ -1224,7 +32,7 @@
         "type": "LINEUP"
       },
       {
-        "player_id": 3917792,
+        "player_id": 4702555,
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
@@ -1232,647 +40,13 @@
     ]
   },
   {
-    "id": "f75d5e13-ee31-482f-8609-84b2de4c8c6a",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4427728,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4379399,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "f4468366-1828-4b2c-b04a-84d6bc47793c",
-    "type": "WAIVER",
-    "team_id": 2,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3116165,
-        "from_team_id": 0,
-        "to_team_id": 2,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4682648,
-        "from_team_id": 2,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "7fc91163-f558-472a-ab98-3c54b518a8ec",
-    "type": "WAIVER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4695193,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4596334,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "b1d562b2-301b-4e46-8bd2-28455e1a6bb8",
-    "type": "FREEAGENT",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4426386,
-        "from_team_id": 0,
-        "to_team_id": 8,
-        "type": "ADD"
-      },
-      {
-        "player_id": 15168,
-        "from_team_id": 8,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "ef9de27c-3452-401b-b22e-92ba5c0987c3",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 8439,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4360310,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "bcfa3f00-36e6-40ef-91b0-7a6ebc7911b2",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4426348,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "e2cceae6-cae3-45d6-a8a3-8195503d9d1e",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3043078,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4427366,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4242512,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4688813,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4428850,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4035671,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3046779,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "515d4650-152c-4a05-8ddc-2aa30d6b3539",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360310,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3912547,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "47e6acf4-f589-40df-b0b2-832b536b1abd",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4262921,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 16800,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "2dbe5c04-807d-4763-ad6f-fbc3c1c8d6d1",
-    "type": "ROSTER",
-    "team_id": 2,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 2969939,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3917315,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "21a26cc7-42d2-44b3-8d54-d04bdecdedce",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4431299,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4373678,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "403d7e7c-fc0b-44fe-be72-7f339fe2e405",
-    "type": "FREEAGENT",
-    "team_id": 6,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16010,
-        "from_team_id": 0,
-        "to_team_id": 6,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16033,
-        "from_team_id": 6,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "197127c0-03c5-4467-91c5-b80df79a4baf",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3916148,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429795,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "665510da-bd21-4659-b5f9-55f512788299",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4035538,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429023,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "477acb37-7888-4835-8b34-945b39b47c35",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360238,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3054850,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "13097c4e-d432-4cee-8571-938c24d35bbb",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3043078,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4427366,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "7836f772-d140-4eef-a85a-017b4ea70f4f",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360689,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3916387,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "720d9fc8-b3fa-41e3-8f91-cb1bc90488b4",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4426515,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 5220680,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "ce690a7c-7b05-4ca4-9334-618e1dfc9490",
-    "type": "FREEAGENT",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4431487,
-        "from_team_id": 0,
-        "to_team_id": 11,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16028,
-        "from_team_id": 11,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "5b018f53-6b46-4272-8cb2-cd9837347b54",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 5083076,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3117256,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "7a91b14e-d37d-493e-8845-6a6d264a3fcf",
-    "type": "FREEAGENT",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3055899,
-        "from_team_id": 0,
-        "to_team_id": 7,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "8abe2904-e487-432c-a4c4-c73688b3c16b",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4242512,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4035671,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "d90330ad-0854-4ccc-af9c-5292129ca78d",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3929630,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "6c59ec81-a47b-4cf5-8a23-4e0b5b4cd609",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4426388,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4431299,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "a5da66fc-d7bb-4b97-8cb1-3e309cd2266b",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4434153,
-        "from_team_id": 4,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "5881ba9b-0be1-47f0-aebb-3c6df42061db",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360761,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 5083754,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4608810,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "c12c916f-17f7-4f5f-b6d7-0a97b37f57c2",
-    "type": "FREEAGENT",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 5220680,
-        "from_team_id": 0,
-        "to_team_id": 4,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "63b6e7e1-e3c5-4a84-a677-3f77a63b3d0d",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3121422,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "0641896c-416d-44dc-9096-824d2bb12fcc",
+    "id": "228a1e81-f20c-46ec-986d-f81323b71ed1",
     "type": "ROSTER",
     "team_id": 1,
-    "week": 7,
+    "week": 8,
     "items": [
       {
-        "player_id": 4723820,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4373626,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "0abedb15-b864-4d2c-b5da-36eb05908918",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4689936,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "bac4435b-df2d-4263-bd42-d2316b71b8fc",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685415,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "c27aa921-3248-4a46-9e3d-f07b417e4550",
-    "type": "FREEAGENT",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 5082424,
-        "from_team_id": 0,
-        "to_team_id": 12,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16004,
-        "from_team_id": 12,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "bc102216-ee3b-43de-a1fc-5053904b5323",
-    "type": "WAIVER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360635,
-        "from_team_id": 0,
-        "to_team_id": 1,
-        "type": "ADD"
-      },
-      {
-        "player_id": 2973405,
+        "player_id": -16015,
         "from_team_id": 1,
         "to_team_id": 0,
         "type": "DROP"
@@ -1880,825 +54,19 @@
     ]
   },
   {
-    "id": "f1588323-daef-4a76-996b-e6f28322fe71",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4567750,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "033d506b-8f92-46e7-99e8-a7dc3ba604b1",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4361411,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3116365,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "bece3eb9-1e15-41d7-985f-d36701d6d379",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685247,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4047365,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "a24e8cf3-3cd0-4509-80d7-f26aae939b7e",
+    "id": "f82c9969-ab79-49d4-aad0-ace704cdc106",
     "type": "ROSTER",
     "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3046779,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "689f8506-1843-4481-9c1a-018e804600ce",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4887558,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4711533,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "c78396bb-8a43-4c6a-b815-c6c81d642181",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4597500,
-        "from_team_id": 10,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "b6a467a5-013f-47e3-9234-312877875d4e",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4429059,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4870808,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "84cde8a8-07a2-41a1-829e-8a82cdfc2bb6",
-    "type": "FREEAGENT",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4429023,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4710855,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "d9ad08b6-abb7-47e8-823d-145bf178066e",
-    "type": "FREEAGENT",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 5529,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 3924327,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "6cdd86da-c1c0-43e6-8107-a3fd4cf5867b",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4575131,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "8f8d6e7c-fbe4-44e5-a82a-b7e5f79f81d4",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4870808,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429059,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "8cbc5ea5-9cdd-44d3-93ad-433edee3d130",
-    "type": "ROSTER",
-    "team_id": 11,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4431487,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4685415,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "10746947-abe6-456b-8987-1d506e826ea2",
-    "type": "WAIVER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4567104,
-        "from_team_id": 0,
-        "to_team_id": 4,
-        "type": "ADD"
-      },
-      {
-        "player_id": 5082424,
-        "from_team_id": 4,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "3c7737fe-86cf-41a2-b5ba-8584dd0db38e",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4887558,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4723820,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "0f9e4df6-49fb-4081-b4fa-251e646e53a1",
-    "type": "WAIVER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4723820,
-        "from_team_id": 0,
-        "to_team_id": 1,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "33abf316-fc8b-4efe-8b91-0c181cebabd1",
-    "type": "FREEAGENT",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4608810,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "b0293271-1ad6-4ab1-b3c7-55defeea18b7",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685247,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4635008,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "c08adec1-174f-4ced-a8ed-362341295f58",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3917232,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 5082424,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "f1ee19ab-656b-4553-a9d3-dd6a05acf050",
-    "type": "FREEAGENT",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4683423,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4241479,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "f132b141-2056-4648-99b3-a8953476b460",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4887558,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "1b311e4c-e1ea-42f5-a235-fb733504900c",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4887558,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4373626,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "5224d72d-626d-47dd-9813-2a69ccae6228",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4362238,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4429096,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "9190674a-9a02-41f4-b74a-980e12033824",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4612826,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 15818,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "253142c1-e2a6-423f-ba37-6efba6a3fe5e",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4586312,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 16737,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "7d26b61a-8890-477c-ae9d-a1e281d3283d",
-    "type": "FREEAGENT",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4241479,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 2573079,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "0def426c-3da4-4fca-8d5b-b85b74266591",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16020,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": -16014,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "141d134a-2374-489c-ae3c-b42cb248b8af",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 16800,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "73ca820c-9d7f-4063-8965-3cce37ce50f0",
-    "type": "ROSTER",
-    "team_id": 10,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3128429,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "3a0bda0b-51b1-4fdd-b415-bf0bc0883458",
-    "type": "ROSTER",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685201,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "5ccf2a7b-5c02-4836-af49-af201c935139",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3043078,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4427366,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4242512,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4428850,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4035671,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3046779,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3895856,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "91d7e88f-750c-49e5-9c68-93e62e26035a",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4711533,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4887558,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "aec4e887-479a-4dfe-92da-74c3d931304c",
-    "type": "FREEAGENT",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4722893,
-        "from_team_id": 0,
-        "to_team_id": 3,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4241983,
-        "from_team_id": 3,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "fbf92fc4-b4ea-46bf-8388-3dd9a1d7d198",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4361411,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 3915511,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "33e5e159-3adb-4199-be08-821e6e24945c",
-    "type": "ROSTER",
-    "team_id": 12,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16027,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": -16005,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "8015ae25-f52d-41d8-85dd-b3e0403499a2",
-    "type": "ROSTER",
-    "team_id": 1,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685278,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4374302,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "f67f6840-6989-4ba8-a3f1-352b9d025ea8",
-    "type": "WAIVER",
-    "team_id": 2,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4360516,
-        "from_team_id": 0,
-        "to_team_id": 2,
-        "type": "ADD"
-      },
-      {
-        "player_id": 4239934,
-        "from_team_id": 2,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "6e3f045c-46b6-4dd1-95b2-1b37b6170fdc",
-    "type": "FREEAGENT",
-    "team_id": 1,
-    "week": 7,
+    "week": 8,
     "items": [
       {
         "player_id": -16015,
         "from_team_id": 0,
-        "to_team_id": 1,
-        "type": "ADD"
-      },
-      {
-        "player_id": -16009,
-        "from_team_id": 1,
-        "to_team_id": 0,
-        "type": "DROP"
-      }
-    ]
-  },
-  {
-    "id": "3f8dbf73-40e0-4edc-809d-5fe0765c3eae",
-    "type": "FREEAGENT",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3895856,
-        "from_team_id": 0,
-        "to_team_id": 8,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "31f62e40-1f8a-48fb-94ff-0458c827e209",
-    "type": "FREEAGENT",
-    "team_id": 4,
-    "week": 7,
-    "items": [
-      {
-        "player_id": -16025,
-        "from_team_id": 0,
-        "to_team_id": 4,
-        "type": "ADD"
-      }
-    ]
-  },
-  {
-    "id": "ca7b4c45-1619-402b-a3ef-354c3a403199",
-    "type": "ROSTER",
-    "team_id": 8,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4688813,
-        "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
       },
       {
-        "player_id": 4427366,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "08ed18d0-1d0d-4872-9beb-fd0e28a0984c",
-    "type": "ROSTER",
-    "team_id": 2,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4685382,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4696981,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "7a960c68-0e27-42a4-b1ad-3d8c29c733f0",
-    "type": "ROSTER",
-    "team_id": 9,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 3929630,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      },
-      {
-        "player_id": 4360238,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "dbe73099-d834-4d88-a93e-76ac56863b9d",
-    "type": "ROSTER",
-    "team_id": 7,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4686361,
-        "from_team_id": 0,
-        "to_team_id": 0,
-        "type": "LINEUP"
-      }
-    ]
-  },
-  {
-    "id": "e4318abb-ef6a-4706-a657-16f319aaffaa",
-    "type": "ROSTER",
-    "team_id": 3,
-    "week": 7,
-    "items": [
-      {
-        "player_id": 4035538,
+        "player_id": -16030,
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
@@ -12267,6 +9635,2768 @@
       },
       {
         "player_id": 4832800,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "851bd385-2433-497a-b019-da5ed29c4499",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4035538,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4697815,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "5744d531-2e7b-4a4a-a5f4-b479543a9f7c",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4242512,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4035671,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "6cd13852-7c8e-49e0-93cb-97975055bd6a",
+    "type": "FREEAGENT",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4429084,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4360635,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "d132debc-715b-4a70-8135-1cc62bdd1e05",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 2473037,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4034949,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "2f5e27b0-29b4-47f7-a5eb-d3c4f0309a42",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4426385,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "ba2755a0-88b8-44ee-a47c-83c682db0637",
+    "type": "WAIVER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4361409,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16025,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "39aafacd-5818-4735-beb6-aa6e0d87a181",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4385690,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4360248,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "cfbd62d9-cc58-4b4a-b099-8b3236343473",
+    "type": "FREEAGENT",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4715355,
+        "from_team_id": 0,
+        "to_team_id": 11,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4034949,
+        "from_team_id": 11,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "3f9371f5-e57c-4821-b5c9-8a8bd2321fce",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4567750,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4685261,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f3984e76-f550-4a5d-b5f8-55bc5efc20fe",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4373626,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4711533,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "4d28ecf5-0b9c-4612-8e72-93abece4dff7",
+    "type": "WAIVER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16009,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16011,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "4f869b8f-3496-4fde-b10b-e973480d96af",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3046779,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3917792,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "36536796-87f5-498e-9aa3-eeeb6724b54c",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4430027,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 2573401,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "6814cea7-75aa-489a-8446-21cdf833da99",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4568263,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "9c74baab-5373-4fc6-b2fc-1baa04a11e0a",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4882093,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4568490,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "072fe788-bbd2-4584-a3c1-93688da55c6b",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 2973405,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4685278,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f9a207d3-b3b4-428e-b703-220cccc4050b",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4567750,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "4257779f-4b3b-4c2e-b6fb-b83ccaccad42",
+    "type": "FREEAGENT",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4427728,
+        "from_team_id": 0,
+        "to_team_id": 12,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "d872d162-e06c-4edd-9541-e48d4b3e8a3b",
+    "type": "FREEAGENT",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4710855,
+        "from_team_id": 0,
+        "to_team_id": 10,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "5236c692-73de-46d7-b39b-7520cda7811a",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3916148,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3054850,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "529e6964-cae3-42f8-984f-f1cc3878a7a6",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4426385,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "cc6ff21f-339a-48d7-aa07-8d0732b1ee3a",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4870795,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4887558,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "71d9c3b5-30f1-42d6-8673-44b8b9a429bb",
+    "type": "FREEAGENT",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16030,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4870795,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "e43d3593-de99-4fad-9d7f-412c068c96e3",
+    "type": "WAIVER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4710855,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4241464,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "cac32cf9-0939-4e98-a50c-57f1787122ae",
+    "type": "WAIVER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685415,
+        "from_team_id": 0,
+        "to_team_id": 11,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4715355,
+        "from_team_id": 11,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "f88eb99f-ec6c-4dae-8f65-e3620836ff42",
+    "type": "WAIVER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16033,
+        "from_team_id": 0,
+        "to_team_id": 4,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16025,
+        "from_team_id": 4,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "64be5516-55a6-4180-9113-2b4ca56e993d",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4715355,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4241478,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "1ecba855-8142-4fe1-9742-000dc75f3381",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685415,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "9a1505c0-579b-4b18-9c90-ad4e7c652c5b",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4374302,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "cd4489b4-75fd-4f16-addf-bf9896e21673",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4568490,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4362238,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "5dbb419d-3d1a-47c6-a69a-343e2cb2a55b",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4243331,
+        "from_team_id": 9,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "94bd88bb-c855-4c85-bae1-cf6de4f6cf1c",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4882093,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "67893bd1-807e-48c1-ac96-a276da6f0aa6",
+    "type": "ROSTER",
+    "team_id": 2,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4242355,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3116165,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "02042ca8-4406-40c5-a764-b059d14ba7af",
+    "type": "ROSTER",
+    "team_id": 6,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3139477,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4685720,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "502fa6c2-d540-4a3c-b3ee-5f5a660e649f",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 5123663,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3916433,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "ce327913-e8b6-4d67-bef6-c1d40e106d48",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4035671,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3046779,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "4c7e4fcf-f264-4472-95ac-af731263ffd1",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 16737,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "03c6919b-2e3f-4ace-a54f-5e758c61e801",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4870795,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "71011c82-4600-4568-8c4f-e8d43114709d",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3121422,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4697815,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4596334,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16016,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429086,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16025,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4427095,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f3cb23d8-1816-420f-af5b-ea9fec9b32a2",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3068267,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4427366,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "95ab8f76-dd2e-4669-8c17-0f46f659a141",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4882093,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4239993,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "b67d5aaf-a865-4f63-879a-bfe42e9bb9f4",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4597500,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "92321798-b892-4ec2-9a04-7cc9b394c197",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4870795,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4723820,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "790862b4-25db-418e-aee3-5f659c22e7b5",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360761,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429086,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4695193,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "1bdc6795-9205-415a-90c4-980277c7ffde",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360689,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3916387,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "b50a1554-c297-462e-a5fa-68f912a39d9f",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4362628,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4032473,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "48358927-1737-4d24-b036-89794ed88a3c",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4427366,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3043078,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "05853719-098f-4c78-99fa-958cf8a40563",
+    "type": "ROSTER",
+    "team_id": 5,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 2976212,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4869961,
+        "from_team_id": 5,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "f51dc485-d05b-482a-af27-10676bf0f699",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4035538,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3121422,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "a0ef8afe-91b0-4ee9-a9da-f7da7b170c99",
+    "type": "ROSTER",
+    "team_id": 2,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4569587,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429205,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "60f8c6a8-1aae-4bce-b726-d59d0191b7b3",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4047365,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4635008,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "64dfb730-3b45-49ab-802a-59866e0d3775",
+    "type": "ROSTER",
+    "team_id": 5,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4241389,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3042519,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4569559,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "7d7f5738-1c2d-41fa-bb32-98ed808b363a",
+    "type": "FREEAGENT",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16004,
+        "from_team_id": 0,
+        "to_team_id": 4,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16033,
+        "from_team_id": 4,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "6a947eb2-4378-46f2-a996-42dcd1e5991b",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4040715,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "3667a372-1b30-4e6f-9f54-a9c263dbf899",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3917792,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3046779,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "be825570-dfd8-470e-88cf-83d05d63c88e",
+    "type": "WAIVER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4696044,
+        "from_team_id": 0,
+        "to_team_id": 4,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4429023,
+        "from_team_id": 4,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "eb17e5b7-ace5-4157-8fb4-b8eb50edd251",
+    "type": "WAIVER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16020,
+        "from_team_id": 0,
+        "to_team_id": 9,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16030,
+        "from_team_id": 9,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "7949323c-24c6-40cc-8cdc-2155ca88dd9b",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4361432,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4047646,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "4a84a99b-79cc-4422-a4e2-23dfe9f2c9da",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3052587,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "fc67e82c-5919-4778-8444-72f062721709",
+    "type": "WAIVER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3843945,
+        "from_team_id": 0,
+        "to_team_id": 11,
+        "type": "ADD"
+      },
+      {
+        "player_id": 5123663,
+        "from_team_id": 11,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "76d8dad5-cf9d-47f3-a442-81a444d12cc5",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16017,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16025,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "61e9c06d-1950-49b3-9de0-00fe67470420",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16023,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16007,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "7b4f56d1-4931-4569-bd2d-b1cc0d7ad8a6",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4385690,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4870795,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "c68b0cee-feb1-4fe2-85c9-9380569c8707",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4241474,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3917792,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f75d5e13-ee31-482f-8609-84b2de4c8c6a",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4427728,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4379399,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f4468366-1828-4b2c-b04a-84d6bc47793c",
+    "type": "WAIVER",
+    "team_id": 2,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3116165,
+        "from_team_id": 0,
+        "to_team_id": 2,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4682648,
+        "from_team_id": 2,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "7fc91163-f558-472a-ab98-3c54b518a8ec",
+    "type": "WAIVER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4695193,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4596334,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "b1d562b2-301b-4e46-8bd2-28455e1a6bb8",
+    "type": "FREEAGENT",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4426386,
+        "from_team_id": 0,
+        "to_team_id": 8,
+        "type": "ADD"
+      },
+      {
+        "player_id": 15168,
+        "from_team_id": 8,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "ef9de27c-3452-401b-b22e-92ba5c0987c3",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 8439,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4360310,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "bcfa3f00-36e6-40ef-91b0-7a6ebc7911b2",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4426348,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "e2cceae6-cae3-45d6-a8a3-8195503d9d1e",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3043078,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4427366,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4242512,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4688813,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4428850,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4035671,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3046779,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "515d4650-152c-4a05-8ddc-2aa30d6b3539",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360310,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3912547,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "47e6acf4-f589-40df-b0b2-832b536b1abd",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4262921,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 16800,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "2dbe5c04-807d-4763-ad6f-fbc3c1c8d6d1",
+    "type": "ROSTER",
+    "team_id": 2,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 2969939,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3917315,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "21a26cc7-42d2-44b3-8d54-d04bdecdedce",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4431299,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4373678,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "403d7e7c-fc0b-44fe-be72-7f339fe2e405",
+    "type": "FREEAGENT",
+    "team_id": 6,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16010,
+        "from_team_id": 0,
+        "to_team_id": 6,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16033,
+        "from_team_id": 6,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "197127c0-03c5-4467-91c5-b80df79a4baf",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3916148,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429795,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "665510da-bd21-4659-b5f9-55f512788299",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4035538,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429023,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "477acb37-7888-4835-8b34-945b39b47c35",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360238,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3054850,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "13097c4e-d432-4cee-8571-938c24d35bbb",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3043078,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4427366,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "7836f772-d140-4eef-a85a-017b4ea70f4f",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360689,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3916387,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "720d9fc8-b3fa-41e3-8f91-cb1bc90488b4",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4426515,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 5220680,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "ce690a7c-7b05-4ca4-9334-618e1dfc9490",
+    "type": "FREEAGENT",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4431487,
+        "from_team_id": 0,
+        "to_team_id": 11,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16028,
+        "from_team_id": 11,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "5b018f53-6b46-4272-8cb2-cd9837347b54",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 5083076,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3117256,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "8abe2904-e487-432c-a4c4-c73688b3c16b",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4242512,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4035671,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "7a91b14e-d37d-493e-8845-6a6d264a3fcf",
+    "type": "FREEAGENT",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3055899,
+        "from_team_id": 0,
+        "to_team_id": 7,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "d90330ad-0854-4ccc-af9c-5292129ca78d",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3929630,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "6c59ec81-a47b-4cf5-8a23-4e0b5b4cd609",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4426388,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4431299,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "a5da66fc-d7bb-4b97-8cb1-3e309cd2266b",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4434153,
+        "from_team_id": 4,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "5881ba9b-0be1-47f0-aebb-3c6df42061db",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360761,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 5083754,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4608810,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "c12c916f-17f7-4f5f-b6d7-0a97b37f57c2",
+    "type": "FREEAGENT",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 5220680,
+        "from_team_id": 0,
+        "to_team_id": 4,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "63b6e7e1-e3c5-4a84-a677-3f77a63b3d0d",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3121422,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "0641896c-416d-44dc-9096-824d2bb12fcc",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4723820,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4373626,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "0abedb15-b864-4d2c-b5da-36eb05908918",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4689936,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "bac4435b-df2d-4263-bd42-d2316b71b8fc",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685415,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "c27aa921-3248-4a46-9e3d-f07b417e4550",
+    "type": "FREEAGENT",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 5082424,
+        "from_team_id": 0,
+        "to_team_id": 12,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16004,
+        "from_team_id": 12,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "bc102216-ee3b-43de-a1fc-5053904b5323",
+    "type": "WAIVER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360635,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      },
+      {
+        "player_id": 2973405,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "f1588323-daef-4a76-996b-e6f28322fe71",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4567750,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "033d506b-8f92-46e7-99e8-a7dc3ba604b1",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4361411,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3116365,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "bece3eb9-1e15-41d7-985f-d36701d6d379",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685247,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4047365,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "a24e8cf3-3cd0-4509-80d7-f26aae939b7e",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3046779,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "c78396bb-8a43-4c6a-b815-c6c81d642181",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4597500,
+        "from_team_id": 10,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "689f8506-1843-4481-9c1a-018e804600ce",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4887558,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4711533,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "b6a467a5-013f-47e3-9234-312877875d4e",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4429059,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4870808,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "84cde8a8-07a2-41a1-829e-8a82cdfc2bb6",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4429023,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4710855,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "d9ad08b6-abb7-47e8-823d-145bf178066e",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 5529,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 3924327,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "6cdd86da-c1c0-43e6-8107-a3fd4cf5867b",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4575131,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "8f8d6e7c-fbe4-44e5-a82a-b7e5f79f81d4",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4870808,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429059,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "8cbc5ea5-9cdd-44d3-93ad-433edee3d130",
+    "type": "ROSTER",
+    "team_id": 11,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4431487,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4685415,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "10746947-abe6-456b-8987-1d506e826ea2",
+    "type": "WAIVER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4567104,
+        "from_team_id": 0,
+        "to_team_id": 4,
+        "type": "ADD"
+      },
+      {
+        "player_id": 5082424,
+        "from_team_id": 4,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "3c7737fe-86cf-41a2-b5ba-8584dd0db38e",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4887558,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4723820,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "0f9e4df6-49fb-4081-b4fa-251e646e53a1",
+    "type": "WAIVER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4723820,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "33abf316-fc8b-4efe-8b91-0c181cebabd1",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4608810,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "b0293271-1ad6-4ab1-b3c7-55defeea18b7",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685247,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4635008,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f1ee19ab-656b-4553-a9d3-dd6a05acf050",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4683423,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4241479,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "c08adec1-174f-4ced-a8ed-362341295f58",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3917232,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 5082424,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "2c4f6b34-4826-4708-9e10-18e9c6b94a4f",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 0,
+    "items": [
+      {
+        "player_id": 4426515,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4432620,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429096,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4258173,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16017,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4882093,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 5220680,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16004,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f132b141-2056-4648-99b3-a8953476b460",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4887558,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "1b311e4c-e1ea-42f5-a235-fb733504900c",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4887558,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4373626,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "5224d72d-626d-47dd-9813-2a69ccae6228",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4362238,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4429096,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "9190674a-9a02-41f4-b74a-980e12033824",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4612826,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 15818,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "253142c1-e2a6-423f-ba37-6efba6a3fe5e",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4586312,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 16737,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "7d26b61a-8890-477c-ae9d-a1e281d3283d",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4241479,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 2573079,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "141d134a-2374-489c-ae3c-b42cb248b8af",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 16800,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "0def426c-3da4-4fca-8d5b-b85b74266591",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16020,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16014,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "73ca820c-9d7f-4063-8965-3cce37ce50f0",
+    "type": "ROSTER",
+    "team_id": 10,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3128429,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "3a0bda0b-51b1-4fdd-b415-bf0bc0883458",
+    "type": "ROSTER",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685201,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "91d7e88f-750c-49e5-9c68-93e62e26035a",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4711533,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4887558,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "aec4e887-479a-4dfe-92da-74c3d931304c",
+    "type": "FREEAGENT",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4722893,
+        "from_team_id": 0,
+        "to_team_id": 3,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4241983,
+        "from_team_id": 3,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "5ccf2a7b-5c02-4836-af49-af201c935139",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3043078,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4427366,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4242512,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4428850,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4035671,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3046779,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3895856,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "fbf92fc4-b4ea-46bf-8388-3dd9a1d7d198",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4361411,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3915511,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "8015ae25-f52d-41d8-85dd-b3e0403499a2",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685278,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4374302,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "33e5e159-3adb-4199-be08-821e6e24945c",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16027,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16005,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "f67f6840-6989-4ba8-a3f1-352b9d025ea8",
+    "type": "WAIVER",
+    "team_id": 2,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4360516,
+        "from_team_id": 0,
+        "to_team_id": 2,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4239934,
+        "from_team_id": 2,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "6e3f045c-46b6-4dd1-95b2-1b37b6170fdc",
+    "type": "FREEAGENT",
+    "team_id": 1,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16015,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      },
+      {
+        "player_id": -16009,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
+    "id": "3f8dbf73-40e0-4edc-809d-5fe0765c3eae",
+    "type": "FREEAGENT",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3895856,
+        "from_team_id": 0,
+        "to_team_id": 8,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "31f62e40-1f8a-48fb-94ff-0458c827e209",
+    "type": "FREEAGENT",
+    "team_id": 4,
+    "week": 7,
+    "items": [
+      {
+        "player_id": -16025,
+        "from_team_id": 0,
+        "to_team_id": 4,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
+    "id": "ca7b4c45-1619-402b-a3ef-354c3a403199",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4688813,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4427366,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "08ed18d0-1d0d-4872-9beb-fd0e28a0984c",
+    "type": "ROSTER",
+    "team_id": 2,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4685382,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4696981,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "dbe73099-d834-4d88-a93e-76ac56863b9d",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4686361,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "7a960c68-0e27-42a4-b1ad-3d8c29c733f0",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 3929630,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4360238,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "e4318abb-ef6a-4706-a657-16f319aaffaa",
+    "type": "ROSTER",
+    "team_id": 3,
+    "week": 7,
+    "items": [
+      {
+        "player_id": 4035538,
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
