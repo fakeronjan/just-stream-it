@@ -96,11 +96,11 @@
     "owners": [
       "Cara Kantrowitz"
     ],
-    "transactions_count": 7,
+    "transactions_count": 8,
     "trades_count": 0,
-    "waiver_pickups": 0,
+    "waiver_pickups": 1,
     "free_agent_pickups": 5,
-    "drops": 2,
+    "drops": 3,
     "players_started_count": 17,
     "started_points_total": 976.62,
     "started_points_by_source": {
