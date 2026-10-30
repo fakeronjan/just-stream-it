@@ -67,7 +67,7 @@
       "pro_team": "ARI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -87,7 +87,7 @@
       "pro_team": "ATL",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -397,7 +397,7 @@
       "name": "Tyrone Tracy Jr.",
       "position": "RB",
       "pro_team": "NYG",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 7,
       "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
@@ -420,6 +420,16 @@
       "lineup_slot": "D/ST",
       "keeper_value": 0,
       "injury_status": null,
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4040761,
+      "name": "Devin Singletary",
+      "position": "RB",
+      "pro_team": "NYG",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -693,7 +703,7 @@
       "pro_team": "TB",
       "lineup_slot": "WR",
       "keeper_value": 9,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -915,7 +925,7 @@
       "pro_team": "IND",
       "lineup_slot": "TE",
       "keeper_value": 9,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -955,7 +965,7 @@
       "pro_team": "WSH",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1025,7 +1035,7 @@
       "pro_team": "CLE",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1147,7 +1157,7 @@
       "pro_team": "GB",
       "lineup_slot": "WR",
       "keeper_value": 9,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1289,7 +1299,7 @@
       "pro_team": "LV",
       "lineup_slot": "TE",
       "keeper_value": 3,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1309,7 +1319,7 @@
       "pro_team": "NE",
       "lineup_slot": "BE",
       "keeper_value": 6,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1319,7 +1329,7 @@
       "pro_team": "GB",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1369,7 +1379,7 @@
       "pro_team": "DEN",
       "lineup_slot": "RB",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1651,7 +1661,7 @@
       "pro_team": "DET",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
     },
     {
@@ -1703,7 +1713,7 @@
       "pro_team": "DET",
       "lineup_slot": "RB",
       "keeper_value": 1,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1891,7 +1901,7 @@
       "name": "Dameon Pierce",
       "position": "RB",
       "pro_team": "PHI",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 0,
       "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
@@ -1904,6 +1914,16 @@
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": null,
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4241555,
+      "name": "Elijah Mitchell",
+      "position": "RB",
+      "pro_team": "PHI",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     }
   ],
@@ -1985,7 +2005,7 @@
       "pro_team": "KC",
       "lineup_slot": "TE",
       "keeper_value": 8,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2055,7 +2075,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2085,7 +2105,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "OUT",
       "acquisition_type": "ADD"
     },
     {
@@ -2117,7 +2137,7 @@
       "pro_team": "BAL",
       "lineup_slot": "QB",
       "keeper_value": 1,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2339,7 +2359,7 @@
       "pro_team": "CIN",
       "lineup_slot": "WR",
       "keeper_value": 1,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {

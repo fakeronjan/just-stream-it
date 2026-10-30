@@ -1301,14 +1301,14 @@
     "GB": {
       "opponent": "CAR",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 27.0,
+      "opponent_score": 19.0
     },
     "CAR": {
       "opponent": "GB",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 19.0,
+      "opponent_score": 27.0
     },
     "BUF": {
       "opponent": "BAL",
