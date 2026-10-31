@@ -115,7 +115,7 @@
       "name": "Emanuel Wilson",
       "position": "RB",
       "pro_team": "SEA",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -135,7 +135,7 @@
       "name": "Jonah Coleman",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -501,7 +501,7 @@
       "pro_team": "ARI",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -701,7 +701,7 @@
       "name": "Emeka Egbuka",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "WR",
+      "lineup_slot": "IR",
       "keeper_value": 9,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -723,7 +723,7 @@
       "pro_team": "CHI",
       "lineup_slot": "TE",
       "keeper_value": 11,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -731,7 +731,7 @@
       "name": "Zach Charbonnet",
       "position": "RB",
       "pro_team": "SEA",
-      "lineup_slot": "IR",
+      "lineup_slot": "BE",
       "keeper_value": 13,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -861,7 +861,7 @@
       "name": "Makai Lemon",
       "position": "WR",
       "pro_team": "PHI",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -975,7 +975,7 @@
       "pro_team": "MIN",
       "lineup_slot": "FLEX",
       "keeper_value": 8,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1045,7 +1045,7 @@
       "pro_team": "MIA",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1187,7 +1187,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 14,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1379,7 +1379,7 @@
       "pro_team": "DEN",
       "lineup_slot": "RB",
       "keeper_value": 9,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1591,7 +1591,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1723,7 +1723,7 @@
       "pro_team": "PHI",
       "lineup_slot": "FLEX",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1743,7 +1743,7 @@
       "pro_team": "LAC",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1985,7 +1985,7 @@
       "pro_team": "TEN",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2005,7 +2005,7 @@
       "pro_team": "KC",
       "lineup_slot": "TE",
       "keeper_value": 8,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2147,7 +2147,7 @@
       "pro_team": "ARI",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2157,7 +2157,7 @@
       "pro_team": "KC",
       "lineup_slot": "IR",
       "keeper_value": 7,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2167,7 +2167,7 @@
       "pro_team": "PHI",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2327,7 +2327,7 @@
       "pro_team": "ARI",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
     },
     {
