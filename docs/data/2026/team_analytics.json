@@ -367,10 +367,10 @@
     "owners": [
       "Karlos Abel"
     ],
-    "transactions_count": 7,
+    "transactions_count": 9,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 4,
+    "free_agent_pickups": 6,
     "drops": 3,
     "players_started_count": 18,
     "started_points_total": 893.32,
@@ -638,10 +638,10 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 7,
+    "transactions_count": 8,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 5,
+    "free_agent_pickups": 6,
     "drops": 2,
     "players_started_count": 22,
     "started_points_total": 924.34,
@@ -730,11 +730,11 @@
     "owners": [
       "Michael Higgins"
     ],
-    "transactions_count": 11,
+    "transactions_count": 13,
     "trades_count": 0,
     "waiver_pickups": 3,
-    "free_agent_pickups": 5,
-    "drops": 3,
+    "free_agent_pickups": 6,
+    "drops": 4,
     "players_started_count": 24,
     "started_points_total": 858.14,
     "started_points_by_source": {
