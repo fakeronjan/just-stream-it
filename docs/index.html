@@ -160,15 +160,15 @@
   nav.resources {
     display: flex;
     flex-wrap: nowrap;
-    gap: 4px 14px;
+    gap: 4px 6px;  /* tightened 11/3 when Just Scream It joined the nav, so all items fit one line at desktop width */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     justify-content: flex-start;
     font-family: "Special Elite", monospace;
-    font-size: 0.72rem;
+    font-size: 0.64rem;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     padding: 8px 0 18px;
   }
   nav.resources::-webkit-scrollbar { display: none; }
@@ -234,6 +234,33 @@
   .section-nav a:hover { color: var(--ink); }
   .section-nav a.active { color: var(--red); border-bottom-color: var(--red); }
   .edition .section-label { scroll-margin-top: 48px; }
+
+  /* ---------- Just Scream It card: one per edition, after the ledes, linking
+     to that week's episode on just-scream-it.html. Styled as a boxed
+     newsprint notice so it reads as part of the paper. ---------- */
+  .watch-card {
+    display: flex; gap: 16px; align-items: center;
+    margin: 22px 0 0; padding: 12px;
+    border: 2px solid var(--ink); background: var(--paper-2);
+    color: var(--ink); text-decoration: none; scroll-margin-top: 48px;
+  }
+  .watch-card:hover .watch-head, .watch-card:focus-visible .watch-head { color: var(--red); }
+  .watch-thumb { position: relative; flex: 0 0 200px; max-width: 45%; aspect-ratio: 16 / 9; border: 1px solid var(--ink); }
+  .watch-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .watch-play {
+    position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%);
+    width: 40px; height: 40px; border-radius: 50%; background: rgba(28, 26, 22, 0.8); border: 2px solid #fff;
+    display: grid; place-items: center;
+  }
+  .watch-play::after { content: ""; margin-left: 4px; border-left: 13px solid #fff; border-top: 8px solid transparent; border-bottom: 8px solid transparent; }
+  .watch-text { display: grid; gap: 2px; min-width: 0; }
+  .watch-kicker { font-family: "Special Elite", monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
+  .watch-head { font-family: "Rozha One", serif; font-size: 1.35rem; line-height: 1.15; }
+  .watch-dek { font-size: 0.92rem; line-height: 1.4; color: var(--ink-dim); }
+  @media (max-width: 520px) {
+    .watch-card { flex-direction: column; align-items: stretch; }
+    .watch-thumb { flex: none; max-width: 100%; }
+  }
 
   /* ---------- edition ---------- */
   .edition { margin-top: 32px; }
@@ -619,12 +646,21 @@
 
   <!-- ================= CURRENT EDITION: Week 8 Recap / Week 9 Preview ================= -->
   <section class="edition" id="panel-current">
-    <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 8 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week9">Week 9 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
+    <nav class="section-nav" aria-label="Sections"><a href="#sec-watch">Watch</a><a href="#sec-results">Week 8 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week9">Week 9 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 8 Recap</p>
     <h2 class="edition-head">Burrowed In</h2>
     <p class="dateline">2026 Season &middot; Week 8 Complete &middot; Week 9 Preview Below</p>
     <p class="lede">Melinda has a one-game lead and the league's most points, and Joe Burrow is the reason. He threw for 462 yards and 5 touchdowns against Tennessee, then ran in the overtime winner. Only Norm Van Brocklin, in 1951, has also passed for 450 yards and 5 scores, run for a touchdown, and thrown multiple interceptions in one game. Burrow's 39.5 points led the league this week. Joe is also 6-2, even though his all-play record is below .500, because no team except Melinda has faced fewer points.</p>
     <p class="lede">The playoff line has a gap now. Ronjan and Mike are 4-4, a game ahead of four 3-5 teams. Mike got there by beating Cara, who came into the week as the league's top scorer. Pete jumped from 12th to seventh. Kris fell to ninth and lost his quarterback on Baltimore's first snap. Lamar Jackson needs surgery on his throwing thumb and is likely out for the season.</p>
+
+    <a class="watch-card" id="sec-watch" href="just-scream-it.html?week=8">
+      <span class="watch-thumb"><img src="just-scream-it/thumb_week08.jpg" alt=""><span class="watch-play"></span></span>
+      <span class="watch-text">
+        <span class="watch-kicker">Now showing &middot; 5:12</span>
+        <span class="watch-head">Just Scream It</span>
+        <span class="watch-dek">The pundits recap Week 8 and pick every Week 9 game.</span>
+      </span>
+    </a>
 
     <div class="section-label" id="sec-results">Week 8 Results</div>
     <div class="matchup-grid" id="recap-matchup-grid"></div>

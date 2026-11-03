@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<title>Just Stream It - Just Scream It</title>
+<meta name="description" content="Just Scream It, the league's weekly video recap: four pundits break down the week and pick every game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Karla:wght@400;600;700;800&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+<script src="nav.js"></script>
+<script>
+(function() {
+  var saved = localStorage.getItem('jsi_theme');
+  var light = saved ? saved === 'light' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+  if (light) document.documentElement.setAttribute('data-theme', 'light');
+})();
+</script>
+<style>
+  /* Episode data lives in EPISODES and PUNDITS at the bottom of this file.
+     Each new episode: add one EPISODES row (newest goes last, the page
+     renders newest first), drop its thumbnail in just-scream-it/, and
+     update the PUNDITS records. */
+  h1.jsi-show { font-family: "Alfa Slab One", "Rockwell", Georgia, serif; font-weight: 400; letter-spacing: 0.01em; }
+
+  .player-card { padding: 0; overflow: hidden; }
+  .player { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+  .player iframe, .player button { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .player button { padding: 0; cursor: pointer; background: #000; }
+  .player button img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .play-badge {
+    position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%);
+    width: 76px; height: 76px; border-radius: 50%;
+    background: rgba(14, 22, 40, 0.78); border: 3px solid #fff;
+    display: grid; place-items: center;
+  }
+  .play-badge::after {
+    content: ""; margin-left: 6px;
+    border-left: 24px solid #fff; border-top: 15px solid transparent; border-bottom: 15px solid transparent;
+  }
+  .player button:hover .play-badge, .player button:focus-visible .play-badge { background: var(--brand-dim); }
+  .player-meta { padding: 14px 18px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .player-title { font-family: "Oswald", sans-serif; font-weight: 600; font-size: 1.2rem; color: var(--text); }
+  .player-sub { color: var(--text-mute); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+
+  .desk { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  @media (max-width: 760px) { .desk { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .pundit { text-align: center; display: grid; gap: 6px; justify-items: center; align-content: start; padding: 18px 14px; }
+  .pundit img { width: 96px; height: 96px; border-radius: 50%; }
+  .pundit-name { font-family: "Oswald", sans-serif; font-weight: 600; font-size: 1rem; line-height: 1.25; color: var(--text); text-wrap: balance; }
+  .pundit-desc { color: var(--text-dim); font-size: 0.82rem; line-height: 1.35; text-wrap: balance; }
+  .pundit-record { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 1.35rem; color: var(--brand); font-variant-numeric: tabular-nums; line-height: 1.1; margin-top: 2px; }
+  .pundit-record-label { color: var(--text-mute); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+
+  .episodes { display: grid; grid-template-columns: repeat(auto-fill, min(264px, 100%)); gap: 16px; justify-content: start; }
+  .episode {
+    appearance: none; text-align: left; cursor: pointer; padding: 0; overflow: hidden;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px; color: inherit; font: inherit;
+  }
+  .episode:hover, .episode:focus-visible { border-color: var(--brand-dim); }
+  .episode img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+  .episode-body { padding: 10px 12px 12px; display: grid; gap: 2px; }
+  .episode-title { font-family: "Oswald", sans-serif; font-weight: 600; font-size: 0.98rem; color: var(--text); }
+  .episode-sub { color: var(--text-mute); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+  .episode.now { border-color: var(--brand); }
+  .now-tag { color: var(--brand); font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode"></button>
+
+<div id="lock-screen">
+  <div class="lock-box">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="">
+    <p class="lock-title">Just Stream It</p>
+    <p>League members only. Enter the passphrase to continue:</p>
+    <form id="auth-form" class="prompt-line">
+      <span class="dollar">$</span>
+      <input type="text" id="auth-input" autocomplete="off" autofocus>
+    </form>
+    <p class="lock-error" id="auth-error">Wrong passphrase - try again.</p>
+  </div>
+</div>
+
+<div id="app" style="display:none" class="page">
+
+  <header class="site-header">
+    <img class="logo" src="logos/just-stream-it-logo.png" alt="Just Stream It">
+    <div>
+      <h1 class="jsi-show">Just Scream It</h1>
+      <nav class="resources" id="resources-nav"></nav>
+    </div>
+  </header>
+
+  <div class="section">
+    <div class="section-title" id="player-label">Latest Episode</div>
+    <div class="card player-card">
+      <div class="player" id="player"></div>
+      <div class="player-meta"><span class="player-title" id="player-title"></span><span class="player-sub" id="player-sub"></span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">The Desk</div>
+    <p class="section-note">Season pick records through Week 8</p>
+    <div class="desk" id="desk"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">All Episodes</div>
+    <div class="episodes" id="episodes"></div>
+  </div>
+
+</div>
+
+<script>
+const PASSWORD = 'cockroach';
+
+// One row per episode, oldest first (rendered newest first).
+const EPISODES = [
+  { week: 8, youtube: 'D6s1uzWGvIQ', title: 'Week 8 Recap · Week 9 Picks', date: '11/3/2026', runtime: '5:12', thumb: 'just-scream-it/thumb_week08.jpg' },
+];
+
+// Desk order. Records are every game picked through the last completed week.
+const PUNDITS = [
+  { name: 'Esteban "El Huracán" Montenegro-Bravo', desc: 'Hype · Rides the Hot Hand', img: 'just-scream-it/pundit-e.png', w: 25, l: 23 },
+  { name: 'Dr. Octavia "The Decimal" Prudence-Washington, PhD, PhD', desc: 'Analytics · Scoring Average', img: 'just-scream-it/pundit-o.png', w: 25, l: 23 },
+  { name: 'Chip "Thunderhawk" Blasterson III', desc: 'Former Player · Fades Favorites', img: 'just-scream-it/pundit-c.png', w: 24, l: 24 },
+  { name: 'Madame Mei-Lin "The Oracle of the Over/Under" Zhao-Fontaine', desc: 'Mystic · Reads the Stars', img: 'just-scream-it/pundit-m.png', w: 23, l: 25 },
+];
+
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+
+function showEpisode(ep, autoplay) {
+  const player = document.getElementById('player');
+  if (autoplay) {
+    player.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${ep.youtube}?autoplay=1&rel=0" title="Just Scream It, ${esc(ep.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+  } else {
+    player.innerHTML = `<button type="button" aria-label="Play Just Scream It, ${esc(ep.title)}"><img src="${ep.thumb}" alt=""><span class="play-badge"></span></button>`;
+    player.querySelector('button').addEventListener('click', () => showEpisode(ep, true));
+  }
+  const newest = EPISODES[EPISODES.length - 1];
+  document.getElementById('player-label').textContent = ep === newest ? 'Latest Episode' : `Week ${ep.week} Episode`;
+  document.getElementById('player-title').textContent = ep.title;
+  document.getElementById('player-sub').textContent = `${ep.date} · ${ep.runtime}`;
+  renderEpisodes(ep);
+}
+
+function renderEpisodes(current) {
+  const list = [...EPISODES].reverse();
+  const el = document.getElementById('episodes');
+  el.innerHTML = list.map((ep, i) => `
+    <button type="button" class="episode${ep === current ? ' now' : ''}" data-i="${i}">
+      <img src="${ep.thumb}" alt="">
+      <span class="episode-body">
+        ${ep === current ? '<span class="now-tag">Now playing</span>' : ''}
+        <span class="episode-title">${esc(ep.title)}</span>
+        <span class="episode-sub">${ep.date} · ${ep.runtime}</span>
+      </span>
+    </button>`).join('');
+  el.querySelectorAll('.episode').forEach(b => b.addEventListener('click', () => {
+    showEpisode(list[+b.dataset.i], true);
+    document.getElementById('player-label').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+}
+
+function renderDesk() {
+  document.getElementById('desk').innerHTML = PUNDITS.map(p => `
+    <div class="card pundit">
+      <img src="${p.img}" alt="">
+      <div class="pundit-record">${p.w}-${p.l}</div>
+      <div class="pundit-record-label">Season picks</div>
+      <div class="pundit-name">${esc(p.name)}</div>
+      <div class="pundit-desc">${esc(p.desc)}</div>
+    </div>`).join('');
+}
+
+async function loadApp() {
+  document.getElementById('lock-screen').style.display = 'none';
+  document.getElementById('app').style.display = '';
+  const meta = await (await fetch('data/meta.json')).json();
+  document.getElementById('resources-nav').innerHTML = renderNav('just-scream-it', meta.league_id);
+  renderDesk();
+  const want = +new URLSearchParams(location.search).get('week');
+  const ep = EPISODES.find(e => e.week === want) || EPISODES[EPISODES.length - 1];
+  showEpisode(ep, false);
+}
+
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = document.getElementById('auth-input');
+  if (input.value === PASSWORD) {
+    localStorage.setItem('jsi_auth', 'granted');
+    loadApp();
+  } else {
+    document.getElementById('auth-error').classList.add('show');
+    input.value = '';
+  }
+});
+
+if (localStorage.getItem('jsi_auth') === 'granted') {
+  loadApp();
+}
+
+function updateThemeToggleIcon() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.getElementById('theme-toggle').textContent = isLight ? '\u{1F319}' : '\u{2600}\u{FE0F}';
+}
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jsi_theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('jsi_theme', 'light');
+  }
+  updateThemeToggleIcon();
+});
+updateThemeToggleIcon();
+</script>
+</body>
+</html>

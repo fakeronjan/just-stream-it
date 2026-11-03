@@ -6,6 +6,7 @@
 // opened in a new tab) - see fakeronjan-com/src/_includes/base.njk.
 const NAV_INTERNAL = [
   { key: 'weekly-news', label: 'Weekly News', href: 'index.html' },
+  { key: 'just-scream-it', label: 'Just Scream It', href: 'just-scream-it.html' },
   { key: 'draft-summary', label: '2026 Draft Summary', href: 'draft-summary.html' },
   { key: 'season-2025', label: '2025 Season Recap', href: 'season-2025.html' },
   { key: 'league-rules', label: 'League Rules', href: 'league-rules.html' },
