@@ -87,7 +87,7 @@
       "pro_team": "ATL",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -479,7 +479,7 @@
       "name": "David Montgomery",
       "position": "RB",
       "pro_team": "HOU",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 6,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -579,7 +579,7 @@
       "name": "Ryan Flournoy",
       "position": "WR",
       "pro_team": "DAL",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -589,7 +589,7 @@
       "name": "Jahan Dotson",
       "position": "WR",
       "pro_team": "ATL",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -619,7 +619,7 @@
       "name": "Tez Johnson",
       "position": "WR",
       "pro_team": "TB",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -703,7 +703,7 @@
       "pro_team": "TB",
       "lineup_slot": "IR",
       "keeper_value": 9,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -843,7 +843,7 @@
       "pro_team": "JAX",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "TRADE"
     },
     {
@@ -955,7 +955,7 @@
       "pro_team": "LAR",
       "lineup_slot": "QB",
       "keeper_value": 11,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1015,7 +1015,7 @@
       "pro_team": "JAX",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1227,7 +1227,7 @@
       "pro_team": "BAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1319,7 +1319,7 @@
       "pro_team": "NE",
       "lineup_slot": "BE",
       "keeper_value": 6,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1521,7 +1521,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "BE",
       "keeper_value": 6,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1591,7 +1591,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1721,7 +1721,7 @@
       "name": "Saquon Barkley",
       "position": "RB",
       "pro_team": "PHI",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "RB",
       "keeper_value": 2,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1733,7 +1733,7 @@
       "pro_team": "NE",
       "lineup_slot": "IR",
       "keeper_value": 3,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1781,7 +1781,7 @@
       "name": "Tony Pollard",
       "position": "RB",
       "pro_team": "TEN",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1861,7 +1861,7 @@
       "name": "Alvin Kamara",
       "position": "RB",
       "pro_team": "NO",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 4,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1871,7 +1871,7 @@
       "name": "Cooper Kupp",
       "position": "WR",
       "pro_team": "SEA",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 8,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -1881,7 +1881,7 @@
       "name": "Keenan Allen",
       "position": "WR",
       "pro_team": "IND",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 12,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -1893,7 +1893,7 @@
       "pro_team": "BAL",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -2105,7 +2105,7 @@
       "pro_team": "GB",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -2187,7 +2187,7 @@
       "pro_team": "PHI",
       "lineup_slot": "IR",
       "keeper_value": 7,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2237,7 +2237,7 @@
       "pro_team": "JAX",
       "lineup_slot": "WR",
       "keeper_value": 9,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2479,7 +2479,7 @@
       "pro_team": "CHI",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2509,7 +2509,7 @@
       "pro_team": "SEA",
       "lineup_slot": "IR",
       "keeper_value": 13,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {

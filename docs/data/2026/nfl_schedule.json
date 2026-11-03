@@ -1298,18 +1298,6 @@
     }
   },
   "8": {
-    "SEA": {
-      "opponent": "CHI",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "CHI": {
-      "opponent": "SEA",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "GB": {
       "opponent": "CAR",
       "home": true,
@@ -1465,6 +1453,18 @@
       "home": false,
       "team_score": 10.0,
       "opponent_score": 27.0
+    },
+    "SEA": {
+      "opponent": "CHI",
+      "home": true,
+      "team_score": 17.0,
+      "opponent_score": 34.0
+    },
+    "CHI": {
+      "opponent": "SEA",
+      "home": false,
+      "team_score": 34.0,
+      "opponent_score": 17.0
     }
   },
   "9": {
