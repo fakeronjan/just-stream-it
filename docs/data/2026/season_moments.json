@@ -13825,7 +13825,53 @@
       "points_per_game": 10.0
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "trade_id": "f1b6e670-cdec-44d9-b635-7724bd34d0db",
+      "week": 9,
+      "sides": [
+        {
+          "team_id": 9,
+          "players_received": [
+            {
+              "player_id": 4432708,
+              "name": "Marvin Harrison Jr.",
+              "position": "WR",
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 8,
+              "games_started": 0,
+              "points_per_game": 0.0
+            },
+            {
+              "player_id": 3917792,
+              "name": "Daniel Jones",
+              "position": "QB",
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 8,
+              "games_started": 0,
+              "points_per_game": 0.0
+            }
+          ],
+          "total_points": 0.0
+        },
+        {
+          "team_id": 1,
+          "players_received": [
+            {
+              "player_id": 3912547,
+              "name": "Sam Darnold",
+              "position": "QB",
+              "points_while_rostered": 0.0,
+              "rostered_through_week": 8,
+              "games_started": 0,
+              "points_per_game": 0.0
+            }
+          ],
+          "total_points": 0.0
+        }
+      ]
+    }
+  ],
   "rivalries": [
     {
       "team_ids": [
