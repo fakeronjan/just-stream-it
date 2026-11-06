@@ -1471,14 +1471,14 @@
     "BAL": {
       "opponent": "JAX",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 10.0,
+      "opponent_score": 33.0
     },
     "JAX": {
       "opponent": "BAL",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 33.0,
+      "opponent_score": 10.0
     },
     "ATL": {
       "opponent": "CIN",

@@ -652,11 +652,11 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 8,
+    "transactions_count": 9,
     "trades_count": 0,
     "waiver_pickups": 1,
     "free_agent_pickups": 6,
-    "drops": 2,
+    "drops": 3,
     "players_started_count": 23,
     "started_points_total": 1077.32,
     "started_points_by_source": {
@@ -836,10 +836,10 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 48,
+    "transactions_count": 50,
     "trades_count": 0,
     "waiver_pickups": 15,
-    "free_agent_pickups": 25,
+    "free_agent_pickups": 27,
     "drops": 22,
     "players_started_count": 28,
     "started_points_total": 988.86,
