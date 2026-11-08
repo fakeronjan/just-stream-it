@@ -77,7 +77,7 @@
       "pro_team": "ATL",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -247,7 +247,7 @@
       "name": "Omarion Hampton",
       "position": "RB",
       "pro_team": "LAC",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 5,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -259,7 +259,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -267,9 +267,9 @@
       "name": "George Pickens",
       "position": "WR",
       "pro_team": "DAL",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 3,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -319,7 +319,7 @@
       "pro_team": "DAL",
       "lineup_slot": "BE",
       "keeper_value": 11,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -329,7 +329,7 @@
       "pro_team": "NYG",
       "lineup_slot": "BE",
       "keeper_value": 11,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -347,7 +347,7 @@
       "name": "KC Concepcion",
       "position": "WR",
       "pro_team": "CLE",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -651,7 +651,7 @@
       "pro_team": "NE",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -763,7 +763,7 @@
       "pro_team": "NO",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1327,7 +1327,7 @@
       "name": "TreVeyon Henderson",
       "position": "RB",
       "pro_team": "NE",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 6,
       "injury_status": "OUT",
       "acquisition_type": "DRAFT"
@@ -1479,7 +1479,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
     },
     {
@@ -1497,6 +1497,16 @@
       "name": "Corey Kiner",
       "position": "RB",
       "pro_team": "NE",
+      "lineup_slot": "BE",
+      "keeper_value": 0,
+      "injury_status": "ACTIVE",
+      "acquisition_type": "ADD"
+    },
+    {
+      "player_id": 4569682,
+      "name": "Audric Estime",
+      "position": "RB",
+      "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
@@ -1541,7 +1551,7 @@
       "pro_team": "BUF",
       "lineup_slot": "WR",
       "keeper_value": 7,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1601,7 +1611,7 @@
       "pro_team": "DEN",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1618,7 +1628,7 @@
       "player_id": 4599739,
       "name": "Kendre Miller",
       "position": "RB",
-      "pro_team": "NO",
+      "pro_team": "FA",
       "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
@@ -1651,7 +1661,7 @@
       "pro_team": "DET",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
     },
     {
@@ -1671,7 +1681,7 @@
       "pro_team": "SF",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1701,7 +1711,7 @@
       "pro_team": "SF",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -2065,7 +2075,7 @@
       "pro_team": "CLE",
       "lineup_slot": 7,
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2125,7 +2135,7 @@
       "pro_team": "BUF",
       "lineup_slot": "WR",
       "keeper_value": 11,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {

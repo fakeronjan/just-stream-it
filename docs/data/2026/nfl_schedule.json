@@ -1468,29 +1468,17 @@
     }
   },
   "9": {
-    "BAL": {
-      "opponent": "JAX",
-      "home": true,
-      "team_score": 10.0,
-      "opponent_score": 33.0
-    },
-    "JAX": {
-      "opponent": "BAL",
-      "home": false,
-      "team_score": 33.0,
-      "opponent_score": 10.0
-    },
     "ATL": {
       "opponent": "CIN",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 17.0,
+      "opponent_score": 34.0
     },
     "CIN": {
       "opponent": "ATL",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 34.0,
+      "opponent_score": 17.0
     },
     "IND": {
       "opponent": "DAL",
@@ -1635,6 +1623,18 @@
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
+    },
+    "BAL": {
+      "opponent": "JAX",
+      "home": true,
+      "team_score": 10.0,
+      "opponent_score": 33.0
+    },
+    "JAX": {
+      "opponent": "BAL",
+      "home": false,
+      "team_score": 33.0,
+      "opponent_score": 10.0
     },
     "MIN": {
       "opponent": "BUF",
