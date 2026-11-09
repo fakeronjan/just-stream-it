@@ -166,6 +166,32 @@
     ]
   },
   {
+    "id": "1cf90218-a4b2-4c4e-ac76-921b7b1d63f0",
+    "type": "ROSTER",
+    "team_id": 8,
+    "week": 9,
+    "items": [
+      {
+        "player_id": 3915416,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4599739,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3043116,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "3c3660ae-555a-4bcf-b0bf-3da8770fb685",
     "type": "FREEAGENT",
     "team_id": 1,
