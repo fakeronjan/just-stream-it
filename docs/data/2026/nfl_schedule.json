@@ -1468,18 +1468,6 @@
     }
   },
   "9": {
-    "MIN": {
-      "opponent": "BUF",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "BUF": {
-      "opponent": "MIN",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "BAL": {
       "opponent": "JAX",
       "home": true,
@@ -1647,6 +1635,18 @@
       "home": false,
       "team_score": 24.0,
       "opponent_score": 27.0
+    },
+    "MIN": {
+      "opponent": "BUF",
+      "home": true,
+      "team_score": 6.0,
+      "opponent_score": 23.0
+    },
+    "BUF": {
+      "opponent": "MIN",
+      "home": false,
+      "team_score": 23.0,
+      "opponent_score": 6.0
     }
   },
   "10": {

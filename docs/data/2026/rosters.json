@@ -15,7 +15,7 @@
       "name": "Jaylen Waddle",
       "position": "WR",
       "pro_team": "DEN",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 7,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -25,7 +25,7 @@
       "name": "Jadarian Price",
       "position": "RB",
       "pro_team": "SEA",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -115,7 +115,7 @@
       "name": "Jonah Coleman",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -125,7 +125,7 @@
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "pro_team": "NYJ",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -227,7 +227,7 @@
       "pro_team": "DAL",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "ADD"
     }
   ],
@@ -319,7 +319,7 @@
       "pro_team": "DAL",
       "lineup_slot": "BE",
       "keeper_value": 11,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -673,7 +673,7 @@
       "pro_team": "LAR",
       "lineup_slot": "WR",
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -883,7 +883,7 @@
       "pro_team": "ARI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "ADD"
     }
   ],
@@ -1741,7 +1741,7 @@
       "name": "Saquon Barkley",
       "position": "RB",
       "pro_team": "PHI",
-      "lineup_slot": "RB",
+      "lineup_slot": "BE",
       "keeper_value": 2,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1791,7 +1791,7 @@
       "name": "Tony Pollard",
       "position": "RB",
       "pro_team": "TEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "RB",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1821,7 +1821,7 @@
       "name": "Aaron Rodgers",
       "position": "QB",
       "pro_team": "PIT",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 11,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -1931,7 +1931,7 @@
       "name": "Daniel Jones",
       "position": "QB",
       "pro_team": "IND",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
