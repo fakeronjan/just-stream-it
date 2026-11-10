@@ -111,7 +111,7 @@
 
   <div class="section">
     <div class="section-title">The Desk</div>
-    <p class="section-note">Season pick records through Week 8</p>
+    <p class="section-note">Season pick records through Week 9</p>
     <div class="desk" id="desk"></div>
   </div>
 
@@ -128,14 +128,15 @@ const PASSWORD = 'cockroach';
 // One row per episode, oldest first (rendered newest first).
 const EPISODES = [
   { week: 8, youtube: 'D6s1uzWGvIQ', title: 'Week 8 Recap · Week 9 Picks', date: '11/3/2026', runtime: '5:12', thumb: 'just-scream-it/thumb_week08.jpg' },
+  { week: 9, youtube: '6e5iOuWzpxM', title: 'Week 9 Recap · Week 10 Picks', date: '11/10/2026', runtime: '8:15', thumb: 'just-scream-it/thumb_week09.jpg' },
 ];
 
 // Desk order. Records are every game picked through the last completed week.
 const PUNDITS = [
-  { name: 'Esteban "El Huracán" Montenegro-Bravo', desc: 'Hype · Rides the Hot Hand', img: 'just-scream-it/pundit-e.png', w: 25, l: 23 },
-  { name: 'Dr. Octavia "The Decimal" Prudence-Washington, PhD, PhD', desc: 'Analytics · Scoring Average', img: 'just-scream-it/pundit-o.png', w: 25, l: 23 },
-  { name: 'Chip "Thunderhawk" Blasterson III', desc: 'Former Player · Fades Favorites', img: 'just-scream-it/pundit-c.png', w: 24, l: 24 },
-  { name: 'Madame Mei-Lin "The Oracle of the Over/Under" Zhao-Fontaine', desc: 'Mystic · Reads the Stars', img: 'just-scream-it/pundit-m.png', w: 23, l: 25 },
+  { name: 'Esteban "El Huracán" Montenegro-Bravo', desc: 'Hype · Rides the Hot Hand', img: 'just-scream-it/pundit-e.png', w: 27, l: 27 },
+  { name: 'Dr. Octavia "The Decimal" Prudence-Washington, PhD, PhD', desc: 'Analytics · Scoring Average', img: 'just-scream-it/pundit-o.png', w: 28, l: 26 },
+  { name: 'Chip "Thunderhawk" Blasterson III', desc: 'Former Player · Fades Favorites', img: 'just-scream-it/pundit-c.png', w: 27, l: 27 },
+  { name: 'Madame Mei-Lin "The Oracle of the Over/Under" Zhao-Fontaine', desc: 'Mystic · Reads the Stars', img: 'just-scream-it/pundit-m.png', w: 25, l: 29 },
 ];
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
