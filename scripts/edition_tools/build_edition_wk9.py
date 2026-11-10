@@ -1,4 +1,5 @@
-# Week 9 edition builder (11/10/2026), kept as a template for writing the current panel from data + prose."""Write the Week 9 Recap / Week 10 Preview into the current panel of docs/index.html."""
+# Week 9 edition builder (11/10/2026), kept as a template for writing the current panel from data + prose.
+"""Write the Week 9 Recap / Week 10 Preview into the current panel of docs/index.html."""
 import json, re
 R = '/Users/ronjan/code/fakeronjan/games/just-stream-it/'
 P = R + 'docs/index.html'

@@ -1,4 +1,5 @@
-# Template from the Week 8 freeze (11/10/2026). For the next freeze, bump the week numbers, WK8R_ prefix, wk09 logo folder, and the published date."""Freeze the current Week 8 Recap edition into panel-week8-recap (WK8R_ prefix, logos/2026-wk09/).
+# Template from the Week 8 freeze (11/10/2026). For the next freeze, bump the week numbers, WK8R_ prefix, wk09 logo folder, and the published date.
+"""Freeze the current Week 8 Recap edition into panel-week8-recap (WK8R_ prefix, logos/2026-wk09/).
 Purely structural: no text content changes. Verifies by de-prefixing."""
 import re, sys, shutil, os
 P = '/Users/ronjan/code/fakeronjan/games/just-stream-it/docs/index.html'
