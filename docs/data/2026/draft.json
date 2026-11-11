@@ -1663,7 +1663,7 @@
     "player_id": 4688813,
     "player_name": "Josh Downs",
     "position": "WR",
-    "pro_team": "IND",
+    "pro_team": "KC",
     "keeper": false,
     "reserved_for_keeper": false
   },
@@ -1843,7 +1843,7 @@
     "player_id": 14880,
     "player_name": "Kirk Cousins",
     "position": "QB",
-    "pro_team": "LV",
+    "pro_team": "MIN",
     "keeper": false,
     "reserved_for_keeper": false
   },

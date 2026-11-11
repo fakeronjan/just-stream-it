@@ -4,11 +4,11 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 48,
+    "transactions_count": 51,
     "trades_count": 0,
-    "waiver_pickups": 19,
-    "free_agent_pickups": 22,
-    "drops": 22,
+    "waiver_pickups": 20,
+    "free_agent_pickups": 23,
+    "drops": 24,
     "players_started_count": 30,
     "started_points_total": 1115.6,
     "started_points_by_source": {
@@ -188,11 +188,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 44,
+    "transactions_count": 46,
     "trades_count": 1,
-    "waiver_pickups": 17,
+    "waiver_pickups": 19,
     "free_agent_pickups": 18,
-    "drops": 17,
+    "drops": 19,
     "players_started_count": 31,
     "started_points_total": 995.38,
     "started_points_by_source": {
@@ -280,11 +280,11 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 24,
+    "transactions_count": 30,
     "trades_count": 0,
     "waiver_pickups": 7,
-    "free_agent_pickups": 14,
-    "drops": 9,
+    "free_agent_pickups": 18,
+    "drops": 11,
     "players_started_count": 28,
     "started_points_total": 1124.96,
     "started_points_by_source": {
@@ -468,11 +468,11 @@
     "owners": [
       "Kris Wikstrom"
     ],
-    "transactions_count": 10,
+    "transactions_count": 11,
     "trades_count": 0,
-    "waiver_pickups": 4,
+    "waiver_pickups": 5,
     "free_agent_pickups": 6,
-    "drops": 4,
+    "drops": 5,
     "players_started_count": 23,
     "started_points_total": 1044.42,
     "started_points_by_source": {
@@ -560,9 +560,9 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "transactions_count": 14,
+    "transactions_count": 16,
     "trades_count": 0,
-    "waiver_pickups": 6,
+    "waiver_pickups": 8,
     "free_agent_pickups": 6,
     "drops": 8,
     "players_started_count": 21,
@@ -1035,10 +1035,10 @@
     "owners": [
       "mariss mednis"
     ],
-    "transactions_count": 11,
+    "transactions_count": 12,
     "trades_count": 0,
     "waiver_pickups": 3,
-    "free_agent_pickups": 6,
+    "free_agent_pickups": 7,
     "drops": 5,
     "players_started_count": 21,
     "started_points_total": 1050.62,
