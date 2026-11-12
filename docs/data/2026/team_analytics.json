@@ -4,11 +4,11 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 51,
+    "transactions_count": 53,
     "trades_count": 0,
     "waiver_pickups": 20,
-    "free_agent_pickups": 23,
-    "drops": 24,
+    "free_agent_pickups": 24,
+    "drops": 25,
     "players_started_count": 30,
     "started_points_total": 1115.6,
     "started_points_by_source": {
@@ -838,11 +838,11 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 50,
+    "transactions_count": 53,
     "trades_count": 0,
     "waiver_pickups": 15,
-    "free_agent_pickups": 27,
-    "drops": 22,
+    "free_agent_pickups": 28,
+    "drops": 24,
     "players_started_count": 30,
     "started_points_total": 1073.42,
     "started_points_by_source": {
