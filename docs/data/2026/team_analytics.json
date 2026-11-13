@@ -188,11 +188,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 46,
+    "transactions_count": 50,
     "trades_count": 1,
     "waiver_pickups": 19,
-    "free_agent_pickups": 18,
-    "drops": 19,
+    "free_agent_pickups": 21,
+    "drops": 20,
     "players_started_count": 31,
     "started_points_total": 995.38,
     "started_points_by_source": {
@@ -374,10 +374,10 @@
     "owners": [
       "Karlos Abel"
     ],
-    "transactions_count": 10,
+    "transactions_count": 11,
     "trades_count": 0,
     "waiver_pickups": 2,
-    "free_agent_pickups": 6,
+    "free_agent_pickups": 7,
     "drops": 4,
     "players_started_count": 20,
     "started_points_total": 1099.98,
@@ -468,10 +468,10 @@
     "owners": [
       "Kris Wikstrom"
     ],
-    "transactions_count": 11,
+    "transactions_count": 13,
     "trades_count": 0,
     "waiver_pickups": 5,
-    "free_agent_pickups": 6,
+    "free_agent_pickups": 8,
     "drops": 5,
     "players_started_count": 23,
     "started_points_total": 1044.42,
@@ -652,10 +652,10 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 9,
+    "transactions_count": 10,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 6,
+    "free_agent_pickups": 7,
     "drops": 3,
     "players_started_count": 23,
     "started_points_total": 1230.14,

@@ -1653,14 +1653,14 @@
     "NYG": {
       "opponent": "WSH",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 21.0,
+      "opponent_score": 24.0
     },
     "WSH": {
       "opponent": "NYG",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 24.0,
+      "opponent_score": 21.0
     },
     "DET": {
       "opponent": "NE",
