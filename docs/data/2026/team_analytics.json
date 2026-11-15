@@ -4,10 +4,10 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 53,
+    "transactions_count": 54,
     "trades_count": 0,
     "waiver_pickups": 20,
-    "free_agent_pickups": 24,
+    "free_agent_pickups": 25,
     "drops": 25,
     "players_started_count": 30,
     "started_points_total": 1115.6,
@@ -560,11 +560,11 @@
     "owners": [
       "Lisette Bruens"
     ],
-    "transactions_count": 16,
+    "transactions_count": 17,
     "trades_count": 0,
     "waiver_pickups": 8,
     "free_agent_pickups": 6,
-    "drops": 8,
+    "drops": 9,
     "players_started_count": 21,
     "started_points_total": 1236.02,
     "started_points_by_source": {
@@ -930,10 +930,10 @@
     "owners": [
       "Ronjan Sikdar"
     ],
-    "transactions_count": 19,
+    "transactions_count": 20,
     "trades_count": 1,
     "waiver_pickups": 9,
-    "free_agent_pickups": 5,
+    "free_agent_pickups": 6,
     "drops": 10,
     "players_started_count": 24,
     "started_points_total": 1098.6,
@@ -1035,10 +1035,10 @@
     "owners": [
       "mariss mednis"
     ],
-    "transactions_count": 12,
+    "transactions_count": 14,
     "trades_count": 0,
     "waiver_pickups": 3,
-    "free_agent_pickups": 7,
+    "free_agent_pickups": 9,
     "drops": 5,
     "players_started_count": 21,
     "started_points_total": 1050.62,

@@ -1650,77 +1650,53 @@
     }
   },
   "10": {
-    "NYG": {
-      "opponent": "WSH",
-      "home": true,
-      "team_score": 21.0,
-      "opponent_score": 24.0
-    },
-    "WSH": {
-      "opponent": "NYG",
-      "home": false,
-      "team_score": 24.0,
-      "opponent_score": 21.0
-    },
-    "DET": {
-      "opponent": "NE",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "NE": {
-      "opponent": "DET",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "ATL": {
       "opponent": "KC",
       "home": true,
       "team_score": 0.0,
-      "opponent_score": 0.0
+      "opponent_score": 7.0
     },
     "KC": {
       "opponent": "ATL",
       "home": false,
-      "team_score": 0.0,
+      "team_score": 7.0,
       "opponent_score": 0.0
     },
     "CLE": {
       "opponent": "HOU",
       "home": true,
       "team_score": 0.0,
-      "opponent_score": 0.0
+      "opponent_score": 10.0
     },
     "HOU": {
       "opponent": "CLE",
       "home": false,
-      "team_score": 0.0,
+      "team_score": 10.0,
       "opponent_score": 0.0
     },
     "GB": {
       "opponent": "MIN",
       "home": true,
       "team_score": 0.0,
-      "opponent_score": 0.0
+      "opponent_score": 3.0
     },
     "MIN": {
       "opponent": "GB",
       "home": false,
-      "team_score": 0.0,
+      "team_score": 3.0,
       "opponent_score": 0.0
     },
     "TEN": {
       "opponent": "JAX",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 3.0,
+      "opponent_score": 7.0
     },
     "JAX": {
       "opponent": "TEN",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 7.0,
+      "opponent_score": 3.0
     },
     "IND": {
       "opponent": "MIA",
@@ -1757,6 +1733,18 @@
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
+    },
+    "DET": {
+      "opponent": "NE",
+      "home": true,
+      "team_score": 35.0,
+      "opponent_score": 10.0
+    },
+    "NE": {
+      "opponent": "DET",
+      "home": false,
+      "team_score": 10.0,
+      "opponent_score": 35.0
     },
     "LV": {
       "opponent": "SEA",
@@ -1805,6 +1793,18 @@
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
+    },
+    "NYG": {
+      "opponent": "WSH",
+      "home": true,
+      "team_score": 21.0,
+      "opponent_score": 24.0
+    },
+    "WSH": {
+      "opponent": "NYG",
+      "home": false,
+      "team_score": 24.0,
+      "opponent_score": 21.0
     },
     "BAL": {
       "opponent": "LAC",
