@@ -168,6 +168,26 @@
     ]
   },
   {
+    "id": "7261dd0b-91d5-453b-80cc-8bc7fd0a4af4",
+    "type": "ROSTER",
+    "team_id": 9,
+    "week": 10,
+    "items": [
+      {
+        "player_id": 4612826,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 4428718,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "4d4c0139-731c-4b6f-83ad-7e22b159bc41",
     "type": "FREEAGENT",
     "team_id": 11,

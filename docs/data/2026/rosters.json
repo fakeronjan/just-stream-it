@@ -117,7 +117,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -329,7 +329,7 @@
       "pro_team": "NYJ",
       "lineup_slot": "QB",
       "keeper_value": 4,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -349,7 +349,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 15,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -905,7 +905,7 @@
       "pro_team": "NE",
       "lineup_slot": "QB",
       "keeper_value": 4,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1309,7 +1309,7 @@
       "pro_team": "LV",
       "lineup_slot": "TE",
       "keeper_value": 3,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1761,9 +1761,9 @@
       "name": "Ladd McConkey",
       "position": "WR",
       "pro_team": "LAC",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 5,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1861,7 +1861,7 @@
       "name": "Tre Tucker",
       "position": "WR",
       "pro_team": "LV",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -2025,7 +2025,7 @@
       "pro_team": "KC",
       "lineup_slot": "TE",
       "keeper_value": 8,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2307,7 +2307,7 @@
       "pro_team": "HOU",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "DOUBTFUL",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2569,7 +2569,7 @@
       "pro_team": "PIT",
       "lineup_slot": "TE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
