@@ -9,14 +9,14 @@ src = open(P).read()
 h_start = src.index('  <!-- ================= CURRENT EDITION: Week 9 Recap / Week 10 Preview ================= -->')
 h_stat = src.index('    <div class="section-label" id="sec-statbook">')
 LEDE1 = ("Four weeks to go, and the middle of the standings just crashed into itself. Every team from third place to sixth "
-         "lost in Week 10. Cara and Joe slid to 6-4, Mike and Ronjan tumbled to 5-5, and mariss pulled even with them by knocking "
+         "lost in Week 10. Cara and Joe slid to 6-4, Mike and Ronjan tumbled to 5-5, and mariss caught them by knocking "
          "off Ronjan. That leaves five teams within one game of each other, with Ben and Pete lurking one game back at 4-6. Up "
          "top, Lisette and Melinda pulled away. Both won by more than 55 to reach 8-2, two games clear in the race for the two byes.")
 LEDE2 = ("The middle found creative ways to lose. Ronjan put up 156.7 against mariss and still came up short, the most any team has scored "
          "in a defeat all season. Cara watched Drake Maye go down on New England's first drive in Munich while J.J. McCarthy and "
          "Kirk Cousins piled up 32.5 on her bench, and Pete escaped with 110.5. Mike stuck a receiver in his OP slot and fell to "
-         "last-place Karl. Now the pileup turns into a demolition derby. Mike plays Ronjan, Ben faces mariss, and on current "
-         "points both winners would hold playoff spots while both losers would be on the outside.")
+         "last-place Karl. Now the pileup turns into a demolition derby. Mike plays Ronjan, Ben faces mariss, and if the "
+         "season ended after Week 11, both winners would be in and both losers would be out.")
 INJ_INTRO = ("It was a brutal week in the trainer's room. Drake Maye's ankle is the worst of it. Malik Willis joined Jalen Hurts "
              "on injured reserve, Jordan Addison needs thumb surgery, and Woody Marks is in the concussion protocol.")
 BB = ("Cara blew the only game of Week 10, her second of the season. Her lineup captured just 77.4% of its possible points, the "
@@ -216,8 +216,8 @@ W11 = [
 ]
 
 NOTE = {
- 9: "Win and you're in. Lose and you're on the outside looking in, at least on current points. Byes thin out both lineups: A.J. Brown and Cooper Kupp sit for Ronjan, and Mike loses Christian Watson. Mike also has exactly one healthy starting quarterback in Jayden Daniels, so keep an eye on his OP slot. Mike won the 2025 meeting 139.3-99.5.",
- 4: "Another play-in game. mariss jumps into the top six with a win. So does Ben, because he's outscored Mike, Ronjan, and mariss and owns the tiebreaker on current points. Meanwhile, byes gut Ben's lineup, taking Blake Corum, Zach Charbonnet, and Michael Penix Jr. mariss plays without Jordan Addison and KC Concepcion. Ben won the 2025 meeting 124.2-96.2.",
+ 9: "Win and you're in the top six heading into Week 12. Lose and you're on the outside looking in. Byes thin out both lineups: A.J. Brown and Cooper Kupp sit for Ronjan, and Mike loses Christian Watson. Mike also has exactly one healthy starting quarterback in Jayden Daniels, so keep an eye on his OP slot. Mike won the 2025 meeting 139.3-99.5.",
+ 4: "Another play-in game. mariss jumps into the top six with a win. So does Ben, since he's outscored Mike, Ronjan, and mariss and would win the points tiebreaker. Meanwhile, byes gut Ben's lineup, taking Blake Corum, Zach Charbonnet, and Michael Penix Jr. mariss plays without Jordan Addison and KC Concepcion. Ben won the 2025 meeting 124.2-96.2.",
  5: "A win keeps Lisette in first place. Cara is safe in the top six this week either way, and she gets a reunion with Rico Dowdle, who scored 176.0 points for Lisette last season and ranks 44th among running backs for Cara. Green Bay's bye costs Lisette Jordan Love and Matthew Golden. Lisette won the 2025 meeting 137.6-127.0.",
  3: "Melinda grabs first place with a win if Lisette stumbles, or if both come out on top and Melinda outscores her by more than half a point. Pete is fresh off the upset but loses Kyren Williams and Drake London to byes. Rome Odunze, 124.1 points for Pete last season, now lines up against him. Pete won the 2025 meeting 149.8-126.7.",
  1: "Joe holds his playoff spot this week no matter what. It's the first meeting since Joe shipped Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and leads every receiver this year, so the revenge game writes itself. Except it doesn't. Seattle is on bye, and Smith-Njigba, Drew Lock, and Jadarian Price all sit. Imran won the 2025 meeting 112.1-110.7.",
