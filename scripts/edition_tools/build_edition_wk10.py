@@ -17,11 +17,11 @@ LEDE2 = ("The middle found creative ways to lose. Ronjan put up 156.7 against ma
          "Kirk Cousins piled up 32.5 on her bench, and Pete escaped with 110.5. Mike stuck a receiver in his OP slot and fell to "
          "last-place Karl. Now the pileup turns into a demolition derby. Mike plays Ronjan, Ben plays mariss, and on current "
          "points both winners would hold playoff spots while both losers would be on the outside.")
-INJ_INTRO = ("Drake Maye's ankle is the week's worst news. Malik Willis joined Jalen Hurts on injured reserve, Jordan Addison needs "
-             "thumb surgery, and Woody Marks is in the concussion protocol.")
-BB = ("Cara blew the only game of Week 10, her second this season. Her lineup used 77.4% of its possible points, the lowest of "
-      "the week, and she's last in efficiency at 83.4%. Joe still leads at 93.7%. Karl's best lineups would have him at 6-4 "
-      "instead of 3-7, and Ronjan and mariss each have two more wins than theirs would have earned.")
+INJ_INTRO = ("It was a brutal week in the trainer's room. Drake Maye's ankle is the worst of it. Malik Willis joined Jalen Hurts "
+             "on injured reserve, Jordan Addison needs thumb surgery, and Woody Marks is in the concussion protocol.")
+BB = ("Cara blew the only game of Week 10, her second of the season. Her lineup captured just 77.4% of its possible points, the "
+      "worst of the week, and she's dead last in efficiency at 83.4%. Joe still leads the league at 93.7%. Karl's best lineups "
+      "would have him at 6-4 instead of 3-7, while Ronjan and mariss have each banked two more wins than their best lineups earned.")
 html_new = f'''  <!-- ================= CURRENT EDITION: Week 10 Recap / Week 11 Preview ================= -->
   <section class="edition" id="panel-current">
     <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 10 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week11">Week 11 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
@@ -109,6 +109,17 @@ RESULTS = [
   "34.8 in the win over Dallas. The team's namesake threw for 348 yards and 5 touchdowns (35.4) a week after his elbow "
   "MRI. Imran got 27.1 from Jaxon Smith-Njigba, but his lineup came in 24.7 under its projection, and only Kris scored less."),
 ]
+
+# ---- punched-up copy (11/17, Ronjan: "punch everything up")
+CARD = {
+ 3: "Beard Al (Pete) stole one from Team Kantastrophe (Cara), 110.5-106.2, and the heist started on the first drive. Drake Maye went down on a sack in Munich and left with 3.0, while J.J. McCarthy (17.1) and Kirk Cousins (15.4) sat on Cara's bench. Her best lineup would have hung 137.2. Bills fan Pete rode two Josh Allen rushing touchdowns and 21.0 from a Vikings defense that smothered Green Bay 30-10. To rub it in, Eagles fan Cara had to watch a Cowboy, Ryan Flournoy, catch a touchdown for Pete (16.1).",
+ 12: "Buffalo Abusement Park (Melinda) ran Rice Rice Baby (Kris) off the field, 168.9-103.2, with a full-blown air raid. Joe Burrow threw for 409 yards and 4 touchdowns (33.2), Ja'Marr Chase torched Pittsburgh for 231 yards on 11 catches (28.6), and Brock Purdy chipped in a casual 389 yards (31.7) in San Francisco's 46-40 track meet in Dallas. Bills fan Melinda even squeezed 157 rushing yards out of James Cook (21.7). Kris lost Woody Marks to a concussion in the third quarter, and Seth McGowan, fresh off Ben's scrap heap, scored 13.7 on the bench.",
+ 10: "The Aristocrats (Karl) finally got one, 127.3-106.1, and Terrible Towels (Mike) practically handed it over. Deshaun Watson's return from a concussion sent Shedeur Sanders back to Cleveland's bench, and Jaxson Dart is on injured reserve, so Mike plugged receiver Jalen Coker into his OP slot. Coker scored 0.3. Brock Bowers hurt his ankle early and managed 2.8. Cowboys fan Karl cashed in 46.4 from his own team: 5 touchdown passes from Dak Prescott (34.4) and 12.0 from Brandon Aubrey's leg. Last place beat fifth place, and Karl has his third win.",
+ 2: "Mednis Madness (mariss) went nuclear, beating Gibbs-n Them the Business (Ronjan) 170.1-156.7 and blowing past ESPN's projection by 63.1, the biggest gap of the week. Giants fan mariss got 48.9 from two Giants, Cam Skattebo (25.7) and Isaiah Likely (23.2). His MVP was a Cowboy, though. George Pickens hauled in 11 catches for 145 yards and 3 touchdowns (38.0). Jahmyr Gibbs racked up 252 yards and 2 scores (40.7) for Ronjan, and Trevor Lawrence threw 3 more (26.8). All Ronjan got for it was a record nobody wants, breaking the losing-score mark Melinda set a week ago.",
+ 4: "Conquering Heroes (Ben) played his first game without Puka Nacua and hung the week's top score on Olave Oyl (Joe), 170.5-126.7. When Kenneth Walker III sat with a groin injury, Ben's other Chiefs back, waiver pickup Emmett Johnson, grabbed the job and ran wild for 171 yards and 2 receiving touchdowns (32.1). Parker Washington shredded Tennessee for 152 yards (24.7). Joe's October trade haul held up its end with 44.2 from Amon-Ra St. Brown and Jared Goff, but with Jalen Hurts and Malik Willis on injured reserve, Joe had to start Derrick Henry at OP (16.5).",
+ 6: "Mahomes is where the heart is (Lisette) turned into a 49ers fan club and flattened Sophomore Slump (Imran), 163.6-105.9. Christian McCaffrey went off for 161 receiving yards and 3 scores (44.3), the best day of anyone in the league, and Deebo Samuel Sr. (24.4) and George Kittle (10.4) added 34.8 more. The team's namesake was pretty good too. Patrick Mahomes threw for 348 yards and 5 touchdowns (35.4) a week after his elbow MRI. Jaxon Smith-Njigba gave Imran 27.1, but the rest of the lineup came in 24.7 under projection, and only Kris scored less.",
+}
+for r in RESULTS: r['text'] = CARD[r['a']]
 lines = []
 for r in RESULTS:
     lines.append(f"  {{ a: {r['a']}, aScore: {r['aScore']:.2f}, b: {r['b']}, bScore: {r['bScore']:.2f}, tag: {repr(r['tag']) if r['tag'] else 'null'},\n    text: {bt(r['text'])} }},")
@@ -198,11 +209,21 @@ W11 = [
       note="Melinda moves into first with a win if Lisette loses, or if both win and Melinda outscores her by more than 0.5. Rome Odunze scored 124.1 points for Pete last season and now plays for Melinda. Pete loses Kyren Williams and Drake London to byes. Pete won the 2025 meeting 149.8-126.7."),
  dict(a=1, b=8, tag=None, games=[(112.06, 110.66)],
       swaps=[("Malik Willis (QB)", 1, 8, "round: 6"), ("Jaxon Smith-Njigba (WR)", 8, 1, "how: 'via Joe'"), ("Javonte Williams (RB)", 8, 1, "how: 'via Joe'")],
-      note="Joe stays in the top six this week no matter what. It's the first meeting since Joe traded Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and has the most points of any receiver this year, but Seattle's bye takes him, Drew Lock, and Jadarian Price out of Imran's lineup. Imran won the 2025 meeting 112.1-110.7."),
+      note="Joe holds his playoff spot this week no matter what. It's the first meeting since Joe traded Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and has the most points of any receiver this year, but Seattle's bye takes him, Drew Lock, and Jadarian Price out of Imran's lineup. Imran won the 2025 meeting 112.1-110.7."),
  dict(a=11, b=10, tag=None, games=[(94.76, 137.38)],
       swaps=[("Dak Prescott (QB)", 11, 10, "round: 2"), ("D'Andre Swift (RB)", 10, 11, "round: 5"), ("Hollywood Brown (WR)", 10, 11, "how: 'waivers'")],
       note="Both teams are two games out of the top six with four weeks left. Dak Prescott scored 282.1 points for Kris last season and ranks fourth among quarterbacks for Karl. D'Andre Swift went the other way after scoring 206.3 for Karl, and he's 12th among backs this year. Byes take Bijan Robinson from Karl and Quinshon Judkins from Kris. Karl won the 2025 meeting 137.4-94.8."),
 ]
+
+NOTE = {
+ 9: "Win and you're in. Lose and you're on the outside looking in, at least on current points. Byes thin out both lineups: A.J. Brown and Cooper Kupp sit for Ronjan, and Christian Watson sits for Mike. Mike also has exactly one healthy starting quarterback in Jayden Daniels, so keep an eye on his OP slot. Mike won the 2025 meeting 139.3-99.5.",
+ 4: "Another play-in game. mariss jumps into the top six with a win. So does Ben, because he's outscored Mike, Ronjan, and mariss and owns the tiebreaker on current points. Meanwhile, byes gut Ben's lineup, taking Blake Corum, Zach Charbonnet, and Michael Penix Jr. mariss plays without Jordan Addison and KC Concepcion. Ben won the 2025 meeting 124.2-96.2.",
+ 5: "A win keeps Lisette in first place. Cara is safe in the top six this week either way, and she gets a reunion with Rico Dowdle, who scored 176.0 points for Lisette last season and ranks 44th among running backs for Cara. Green Bay's bye costs Lisette Jordan Love and Matthew Golden. Lisette won the 2025 meeting 137.6-127.0.",
+ 3: "Melinda grabs first place with a win if Lisette stumbles, or if both win and Melinda outscores her by more than half a point. Pete is fresh off the upset but loses Kyren Williams and Drake London to byes. Rome Odunze, 124.1 points for Pete last season, now lines up against him. Pete won the 2025 meeting 149.8-126.7.",
+ 1: "Joe holds his playoff spot this week no matter what. It's the first meeting since Joe shipped Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and leads all receivers this year, so the revenge game writes itself. Except it doesn't. Seattle is on bye, and Smith-Njigba, Drew Lock, and Jadarian Price all sit. Imran won the 2025 meeting 112.1-110.7.",
+ 11: "Both teams are two games out with four to play, so neither can afford a loss. Dak Prescott scored 282.1 points for Kris last season and just threw 5 touchdowns for Karl. D'Andre Swift went the other way after scoring 206.3 for Karl, and he's 12th among backs this year. Byes take Bijan Robinson from Karl and Quinshon Judkins from Kris. Karl won the 2025 meeting 137.4-94.8.",
+}
+for m in W11: m['note'] = NOTE[m['a']]
 wl = []
 for m in W11:
     g = ', '.join(f"{{ week: 11, aScore: {x:.2f}, bScore: {y:.2f} }}" for x, y in m['games'])

@@ -669,7 +669,7 @@
 
     <div class="section-label" id="sec-injuries">The Injury Report</div>
     <p class="section-sublabel">Who's hurt heading into Week 11</p>
-    <p class="lede" style="font-size:0.95rem;">Drake Maye's ankle is the week's worst news. Malik Willis joined Jalen Hurts on injured reserve, Jordan Addison needs thumb surgery, and Woody Marks is in the concussion protocol.</p>
+    <p class="lede" style="font-size:0.95rem;">It was a brutal week in the trainer's room. Drake Maye's ankle is the worst of it. Malik Willis joined Jalen Hurts on injured reserve, Jordan Addison needs thumb surgery, and Woody Marks is in the concussion protocol.</p>
     <div id="injury-list"></div>
 
     <div class="section-label" id="sec-statbook">Statbook</div>
@@ -680,7 +680,7 @@
     <p class="standings-caption">All-play counts each team's score against all 11 others every week. Luck is actual wins minus the wins that all-play rate predicts.</p>
 
     <h3 class="stat-subhead">Best Ball</h3>
-    <p class="lede" style="font-size:0.95rem;">Cara blew the only game of Week 10, her second this season. Her lineup used 77.4% of its possible points, the lowest of the week, and she's last in efficiency at 83.4%. Joe still leads at 93.7%. Karl's best lineups would have him at 6-4 instead of 3-7, and Ronjan and mariss each have two more wins than theirs would have earned.</p>
+    <p class="lede" style="font-size:0.95rem;">Cara blew the only game of Week 10, her second of the season. Her lineup captured just 77.4% of its possible points, the worst of the week, and she's dead last in efficiency at 83.4%. Joe still leads the league at 93.7%. Karl's best lineups would have him at 6-4 instead of 3-7, while Ronjan and mariss have each banked two more wins than their best lineups earned.</p>
     <div class="standings-list" id="best-ball-list"></div>
     <p class="standings-caption">Efficiency is points started divided by best possible points. Optimal lineup record pits each team's best lineup against its opponent's best lineup. Blown counts real losses that would have been wins with both teams at their best.</p>
 
@@ -1055,17 +1055,17 @@ function crestImg(teamId) {
 // Ryans on Marks.
 const MATCHUP_RESULTS = [
   { a: 3, aScore: 110.54, b: 5, bScore: 106.18, tag: 'Game of the Week',
-    text: `Beard Al (Pete) beat Team Kantastrophe (Cara) 110.5-106.2 because Cara lost her quarterback on the first drive. Drake Maye went down on a sack in Munich and finished with 3.0, while J.J. McCarthy (17.1) and Kirk Cousins (15.4) sat on her bench. Her best lineup would have scored 137.2. Bills fan Pete got two rushing touchdowns from Josh Allen and 21.0 from the Vikings defense in a 30-10 win at Green Bay. Eagles fan Cara also had to watch a Cowboy, Ryan Flournoy, catch a touchdown for Pete (16.1).` },
+    text: `Beard Al (Pete) stole one from Team Kantastrophe (Cara), 110.5-106.2, and the heist started on the first drive. Drake Maye went down on a sack in Munich and left with 3.0, while J.J. McCarthy (17.1) and Kirk Cousins (15.4) sat on Cara's bench. Her best lineup would have hung 137.2. Bills fan Pete rode two Josh Allen rushing touchdowns and 21.0 from a Vikings defense that smothered Green Bay 30-10. To rub it in, Eagles fan Cara had to watch a Cowboy, Ryan Flournoy, catch a touchdown for Pete (16.1).` },
   { a: 12, aScore: 168.92, b: 11, bScore: 103.16, tag: 'Blowout of the Week',
-    text: `Buffalo Abusement Park (Melinda) beat Rice Rice Baby (Kris) 168.9-103.2 with two quarterbacks who threw for almost 800 yards. Joe Burrow passed for 409 yards and 4 touchdowns (33.2), Ja'Marr Chase caught 11 passes for 231 yards (28.6), and Brock Purdy threw for 389 yards (31.7) in San Francisco's 46-40 win in Dallas. Bills fan Melinda added 157 rushing yards from James Cook (21.7). Kris lost Woody Marks to a concussion in the third quarter, and Seth McGowan, the back he picked up after Ben dropped him, scored 13.7 on his bench.` },
+    text: `Buffalo Abusement Park (Melinda) ran Rice Rice Baby (Kris) off the field, 168.9-103.2, with a full-blown air raid. Joe Burrow threw for 409 yards and 4 touchdowns (33.2), Ja'Marr Chase torched Pittsburgh for 231 yards on 11 catches (28.6), and Brock Purdy chipped in a casual 389 yards (31.7) in San Francisco's 46-40 track meet in Dallas. Bills fan Melinda even squeezed 157 rushing yards out of James Cook (21.7). Kris lost Woody Marks to a concussion in the third quarter, and Seth McGowan, fresh off Ben's scrap heap, scored 13.7 on the bench.` },
   { a: 10, aScore: 127.32, b: 7, bScore: 106.06, tag: 'Upset Alert',
-    text: `The Aristocrats (Karl) beat Terrible Towels (Mike) 127.3-106.1 because Mike had no second quarterback. Deshaun Watson's return from a concussion sent Shedeur Sanders back to Cleveland's bench, and Jaxson Dart is on injured reserve, so Mike started receiver Jalen Coker at OP for 0.3. Brock Bowers hurt his ankle in the first quarter and finished with 2.8. Cowboys fan Karl got 46.4 from two Cowboys. Dak Prescott threw 5 touchdowns (34.4) in the shootout with San Francisco, and Brandon Aubrey kicked for 12.0. Karl came in last and beat the fifth-place team for his third win.` },
+    text: `The Aristocrats (Karl) finally got one, 127.3-106.1, and Terrible Towels (Mike) practically handed it over. Deshaun Watson's return from a concussion sent Shedeur Sanders back to Cleveland's bench, and Jaxson Dart is on injured reserve, so Mike plugged receiver Jalen Coker into his OP slot. Coker scored 0.3. Brock Bowers hurt his ankle early and managed 2.8. Cowboys fan Karl cashed in 46.4 from his own team: 5 touchdown passes from Dak Prescott (34.4) and 12.0 from Brandon Aubrey's leg. Last place beat fifth place, and Karl has his third win.` },
   { a: 2, aScore: 170.12, b: 9, bScore: 156.70, tag: 'Plot Twist',
-    text: `Mednis Madness (mariss) beat Gibbs-n Them the Business (Ronjan) 170.1-156.7 by scoring 63.1 more than ESPN projected, the biggest gap of the week. Giants fan mariss got 48.9 from two Giants, Cam Skattebo (25.7) and Isaiah Likely (23.2), but his top scorer was a Cowboy. George Pickens had 11 catches, 145 yards, and 3 touchdowns (38.0). Jahmyr Gibbs piled up 252 yards and 2 touchdowns (40.7) for Ronjan, and Trevor Lawrence threw 3 more (26.8). Ronjan's 156.7 broke the record for a losing score that Melinda set a week earlier.` },
+    text: `Mednis Madness (mariss) went nuclear, beating Gibbs-n Them the Business (Ronjan) 170.1-156.7 and blowing past ESPN's projection by 63.1, the biggest gap of the week. Giants fan mariss got 48.9 from two Giants, Cam Skattebo (25.7) and Isaiah Likely (23.2). His MVP was a Cowboy, though. George Pickens hauled in 11 catches for 145 yards and 3 touchdowns (38.0). Jahmyr Gibbs racked up 252 yards and 2 scores (40.7) for Ronjan, and Trevor Lawrence threw 3 more (26.8). All Ronjan got for it was a record nobody wants, breaking the losing-score mark Melinda set a week ago.` },
   { a: 4, aScore: 170.54, b: 8, bScore: 126.72, tag: null,
-    text: `Conquering Heroes (Ben) beat Olave Oyl (Joe) 170.5-126.7 with the week's top score, in his first game without Puka Nacua. Kenneth Walker III sat out with a groin injury, and Emmett Johnson, the Chiefs back Ben picked up, replaced him with 171 yards and 2 receiving touchdowns (32.1). Parker Washington caught 7 passes for 152 yards (24.7), and Blake Corum ran for 100 (19.4). Joe got 44.2 from Amon-Ra St. Brown and Jared Goff, the pair he traded for in October. With Jalen Hurts and Malik Willis on injured reserve, he started Derrick Henry at OP (16.5).` },
+    text: `Conquering Heroes (Ben) played his first game without Puka Nacua and hung the week's top score on Olave Oyl (Joe), 170.5-126.7. When Kenneth Walker III sat with a groin injury, Ben's other Chiefs back, waiver pickup Emmett Johnson, grabbed the job and ran wild for 171 yards and 2 receiving touchdowns (32.1). Parker Washington shredded Tennessee for 152 yards (24.7). Joe's October trade haul held up its end with 44.2 from Amon-Ra St. Brown and Jared Goff, but with Jalen Hurts and Malik Willis on injured reserve, Joe had to start Derrick Henry at OP (16.5).` },
   { a: 6, aScore: 163.62, b: 1, bScore: 105.88, tag: 'Stud of the Week',
-    text: `Mahomes is where the heart is (Lisette) beat Sophomore Slump (Imran) 163.6-105.9 behind three 49ers. Christian McCaffrey caught 4 passes for 161 yards and scored 3 touchdowns (44.3), and Deebo Samuel Sr. (24.4) and George Kittle (10.4) added 34.8 in the win over Dallas. The team's namesake threw for 348 yards and 5 touchdowns (35.4) a week after his elbow MRI. Imran got 27.1 from Jaxon Smith-Njigba, but his lineup came in 24.7 under its projection, and only Kris scored less.` },
+    text: `Mahomes is where the heart is (Lisette) turned into a 49ers fan club and flattened Sophomore Slump (Imran), 163.6-105.9. Christian McCaffrey went off for 161 receiving yards and 3 scores (44.3), the best day of anyone in the league, and Deebo Samuel Sr. (24.4) and George Kittle (10.4) added 34.8 more. The team's namesake was pretty good too. Patrick Mahomes threw for 348 yards and 5 touchdowns (35.4) a week after his elbow MRI. Jaxon Smith-Njigba gave Imran 27.1, but the rest of the lineup came in 24.7 under projection, and only Kris scored less.` },
 ];
 
 // ---------- Leaguewide injury audit: every rostered player (D/ST
@@ -1187,11 +1187,11 @@ const WEEK11_MATCHUPS = [
     games: [{ week: 11, aScore: 99.52, bScore: 139.34 }],
     swaps: [ { player: "Tre Tucker (WR)", from: 7, to: 9, round: 16 },
              { player: "Davante Adams (WR)", from: 9, to: 7, how: 'via Ben' } ],
-    note: `Whoever wins holds a playoff spot on current points, and whoever loses falls to seventh or lower. Byes take A.J. Brown and Cooper Kupp from Ronjan and Christian Watson from Mike. Jayden Daniels is Mike's only healthy starting quarterback. Mike won the 2025 meeting 139.3-99.5.` },
+    note: `Win and you're in. Lose and you're on the outside looking in, at least on current points. Byes thin out both lineups: A.J. Brown and Cooper Kupp sit for Ronjan, and Christian Watson sits for Mike. Mike also has exactly one healthy starting quarterback in Jayden Daniels, so keep an eye on his OP slot. Mike won the 2025 meeting 139.3-99.5.` },
   { a: 4, aTag: '#8 &middot; 4-6<span class="tag-ppg">128.6 PPG (#4)</span>', b: 2, bTag: '#7 &middot; 5-5<span class="tag-ppg">122.1 PPG (#9)</span>',
     games: [{ week: 11, aScore: 124.18, bScore: 96.20 }],
     swaps: [ { player: "Omarion Hampton (RB)", from: 4, to: 2, round: 2 } ],
-    note: `A win puts mariss in the top six. A win puts Ben there too on current points, since he has outscored Mike, Ronjan, and mariss. Ben loses Blake Corum, Zach Charbonnet, and Michael Penix Jr. to byes, and mariss plays without Jordan Addison and KC Concepcion. Ben won the 2025 meeting 124.2-96.2.` },
+    note: `Another play-in game. mariss jumps into the top six with a win. So does Ben, because he's outscored Mike, Ronjan, and mariss and owns the tiebreaker on current points. Meanwhile, byes gut Ben's lineup, taking Blake Corum, Zach Charbonnet, and Michael Penix Jr. mariss plays without Jordan Addison and KC Concepcion. Ben won the 2025 meeting 124.2-96.2.` },
   { a: 5, aTag: '#3 &middot; 6-4<span class="tag-ppg">130.2 PPG (#3)</span>', b: 6, bTag: '#1 &middot; 8-2<span class="tag-ppg">140.0 PPG (#1)</span>',
     games: [{ week: 11, aScore: 127.04, bScore: 137.64 }],
     swaps: [ { player: "Garrett Wilson (WR)", from: 5, to: 6, round: 4 },
@@ -1199,24 +1199,24 @@ const WEEK11_MATCHUPS = [
              { player: "Chris Rodriguez Jr. (RB)", from: 6, to: 5, round: 16 },
              { player: "Devaughn Vele (WR)", from: 6, to: 5, round: 18 },
              { player: "Malik Washington (WR)", from: 6, to: 5, how: 'waivers' } ],
-    note: `Lisette keeps first place with a win. Cara stays in the top six whatever happens. Rico Dowdle scored 176.0 points for Lisette last season and ranks 44th among running backs for Cara. Lisette loses Jordan Love and Matthew Golden to Green Bay's bye. Lisette won the 2025 meeting 137.6-127.0.` },
+    note: `A win keeps Lisette in first place. Cara is safe in the top six this week either way, and she gets a reunion with Rico Dowdle, who scored 176.0 points for Lisette last season and ranks 44th among running backs for Cara. Green Bay's bye costs Lisette Jordan Love and Matthew Golden. Lisette won the 2025 meeting 137.6-127.0.` },
   { a: 3, aTag: '#9 &middot; 4-6<span class="tag-ppg">118.4 PPG (#10)</span>', b: 12, bTag: '#2 &middot; 8-2<span class="tag-ppg">139.9 PPG (#2)</span>',
     games: [{ week: 11, aScore: 149.78, bScore: 126.70 }],
     swaps: [ { player: "Rome Odunze (WR)", from: 3, to: 12, round: 5 },
              { player: "Rashid Shaheed (WR)", from: 3, to: 12, round: 14 } ],
-    note: `Melinda moves into first with a win if Lisette loses, or if both win and Melinda outscores her by more than 0.5. Rome Odunze scored 124.1 points for Pete last season and now plays for Melinda. Pete loses Kyren Williams and Drake London to byes. Pete won the 2025 meeting 149.8-126.7.` },
+    note: `Melinda grabs first place with a win if Lisette stumbles, or if both win and Melinda outscores her by more than half a point. Pete is fresh off the upset but loses Kyren Williams and Drake London to byes. Rome Odunze, 124.1 points for Pete last season, now lines up against him. Pete won the 2025 meeting 149.8-126.7.` },
   { a: 1, aTag: '#12 &middot; 3-7<span class="tag-ppg">110.1 PPG (#12)</span>', b: 8, bTag: '#4 &middot; 6-4<span class="tag-ppg">125.2 PPG (#7)</span>',
     games: [{ week: 11, aScore: 112.06, bScore: 110.66 }],
     swaps: [ { player: "Malik Willis (QB)", from: 1, to: 8, round: 6 },
              { player: "Jaxon Smith-Njigba (WR)", from: 8, to: 1, how: 'via Joe' },
              { player: "Javonte Williams (RB)", from: 8, to: 1, how: 'via Joe' } ],
-    note: `Joe stays in the top six this week no matter what. It's the first meeting since Joe traded Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and has the most points of any receiver this year, but Seattle's bye takes him, Drew Lock, and Jadarian Price out of Imran's lineup. Imran won the 2025 meeting 112.1-110.7.` },
+    note: `Joe holds his playoff spot this week no matter what. It's the first meeting since Joe shipped Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and leads all receivers this year, so the revenge game writes itself. Except it doesn't. Seattle is on bye, and Smith-Njigba, Drew Lock, and Jadarian Price all sit. Imran won the 2025 meeting 112.1-110.7.` },
   { a: 11, aTag: '#11 &middot; 3-7<span class="tag-ppg">114.8 PPG (#11)</span>', b: 10, bTag: '#10 &middot; 3-7<span class="tag-ppg">122.7 PPG (#8)</span>',
     games: [{ week: 11, aScore: 94.76, bScore: 137.38 }],
     swaps: [ { player: "Dak Prescott (QB)", from: 11, to: 10, round: 2 },
              { player: "D'Andre Swift (RB)", from: 10, to: 11, round: 5 },
              { player: "Hollywood Brown (WR)", from: 10, to: 11, how: 'waivers' } ],
-    note: `Both teams are two games out of the top six with four weeks left. Dak Prescott scored 282.1 points for Kris last season and ranks fourth among quarterbacks for Karl. D'Andre Swift went the other way after scoring 206.3 for Karl, and he's 12th among backs this year. Byes take Bijan Robinson from Karl and Quinshon Judkins from Kris. Karl won the 2025 meeting 137.4-94.8.` },
+    note: `Both teams are two games out with four to play, so neither can afford a loss. Dak Prescott scored 282.1 points for Kris last season and just threw 5 touchdowns for Karl. D'Andre Swift went the other way after scoring 206.3 for Karl, and he's 12th among backs this year. Byes take Bijan Robinson from Karl and Quinshon Judkins from Kris. Karl won the 2025 meeting 137.4-94.8.` },
 ];
 // Record after this week's game, from STANDINGS (engine playoff_picture).
 function recordAfterWeek(teamId) {
