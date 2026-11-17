@@ -1650,18 +1650,6 @@
     }
   },
   "10": {
-    "BAL": {
-      "opponent": "LAC",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "LAC": {
-      "opponent": "BAL",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "NYG": {
       "opponent": "WSH",
       "home": true,
@@ -1817,6 +1805,18 @@
       "home": false,
       "team_score": 18.0,
       "opponent_score": 38.0
+    },
+    "BAL": {
+      "opponent": "LAC",
+      "home": true,
+      "team_score": 20.0,
+      "opponent_score": 23.0
+    },
+    "LAC": {
+      "opponent": "BAL",
+      "home": false,
+      "team_score": 23.0,
+      "opponent_score": 20.0
     }
   },
   "11": {

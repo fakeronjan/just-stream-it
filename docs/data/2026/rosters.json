@@ -15,7 +15,7 @@
       "name": "Jaylen Waddle",
       "position": "WR",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "WR",
       "keeper_value": 7,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -25,7 +25,7 @@
       "name": "Jadarian Price",
       "position": "RB",
       "pro_team": "SEA",
-      "lineup_slot": "FLEX",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -45,7 +45,7 @@
       "name": "Dalton Kincaid",
       "position": "TE",
       "pro_team": "BUF",
-      "lineup_slot": "BE",
+      "lineup_slot": "TE",
       "keeper_value": 9,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -65,7 +65,7 @@
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "pro_team": "ATL",
-      "lineup_slot": "TE",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
@@ -105,7 +105,7 @@
       "name": "Jonah Coleman",
       "position": "RB",
       "pro_team": "DEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "FLEX",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -135,7 +135,7 @@
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "pro_team": "SEA",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 5,
       "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
@@ -185,7 +185,7 @@
       "name": "Drew Lock",
       "position": "QB",
       "pro_team": "SEA",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -195,7 +195,7 @@
       "name": "Joe Milton",
       "position": "QB",
       "pro_team": "PHI",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -227,7 +227,7 @@
       "pro_team": "IND",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     }
   ],
@@ -693,7 +693,7 @@
       "pro_team": "KC",
       "lineup_slot": "IR",
       "keeper_value": 6,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1369,7 +1369,7 @@
       "pro_team": "MIN",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1763,7 +1763,7 @@
       "pro_team": "LAC",
       "lineup_slot": "BE",
       "keeper_value": 5,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1913,7 +1913,7 @@
       "pro_team": "HOU",
       "lineup_slot": "IR",
       "keeper_value": 5,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "TRADE"
     },
     {
@@ -2005,7 +2005,7 @@
       "pro_team": "TEN",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2015,7 +2015,7 @@
       "pro_team": "SF",
       "lineup_slot": "IR",
       "keeper_value": 6,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2217,7 +2217,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 7,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2519,7 +2519,7 @@
       "pro_team": "CHI",
       "lineup_slot": "IR",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
