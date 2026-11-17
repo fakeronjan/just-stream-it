@@ -8,15 +8,15 @@ src = open(P).read()
 # ================= HTML =================
 h_start = src.index('  <!-- ================= CURRENT EDITION: Week 9 Recap / Week 10 Preview ================= -->')
 h_stat = src.index('    <div class="section-label" id="sec-statbook">')
-LEDE1 = ("Four weeks are left in the regular season, and every team from third place to sixth lost in Week 10. Cara and Joe "
-         "fell to 6-4, Mike and Ronjan fell to 5-5, and mariss caught them with a win over Ronjan. One game now separates third "
-         "place from seventh, and Ben and Pete are one more game back at 4-6. Lisette and Melinda are the only teams pulling away. "
-         "Both won by more than 55 points to reach 8-2, two games clear of everyone else in the race for the two byes.")
-LEDE2 = ("The losses in the middle came in every shape. Ronjan scored 156.7 against mariss, the most any team has scored in a loss "
-         "this season. Cara lost to Pete's 110.5 because Drake Maye hurt his ankle on New England's first drive in Munich, while "
-         "J.J. McCarthy and Kirk Cousins scored 32.5 on her bench. Mike started a receiver in his OP slot and lost to last-place Karl. "
-         "Week 11 pits Mike against Ronjan and Ben against mariss. On current points, both winners would hold playoff spots and "
-         "both losers would be on the outside.")
+LEDE1 = ("Four weeks to go, and the middle of the standings just crashed into itself. Every team from third place to sixth "
+         "lost in Week 10. Cara and Joe slid to 6-4, Mike and Ronjan slid to 5-5, and mariss pulled even with them by knocking "
+         "off Ronjan. That leaves five teams within one game of each other, with Ben and Pete lurking one game back at 4-6. Up "
+         "top, Lisette and Melinda pulled away. Both won by more than 55 to reach 8-2, two games clear in the race for the two byes.")
+LEDE2 = ("The middle found creative ways to lose. Ronjan put up 156.7 against mariss and still lost, the most any team has scored "
+         "in a loss all season. Cara watched Drake Maye go down on New England's first drive in Munich while J.J. McCarthy and "
+         "Kirk Cousins piled up 32.5 on her bench, and Pete escaped with 110.5. Mike stuck a receiver in his OP slot and fell to "
+         "last-place Karl. Now the pileup turns into a demolition derby. Mike plays Ronjan, Ben plays mariss, and on current "
+         "points both winners would hold playoff spots while both losers would be on the outside.")
 INJ_INTRO = ("Drake Maye's ankle is the week's worst news. Malik Willis joined Jalen Hurts on injured reserve, Jordan Addison needs "
              "thumb surgery, and Woody Marks is in the concussion protocol.")
 BB = ("Cara blew the only game of Week 10, her second this season. Her lineup used 77.4% of its possible points, the lowest of "
@@ -26,7 +26,7 @@ html_new = f'''  <!-- ================= CURRENT EDITION: Week 10 Recap / Week 11
   <section class="edition" id="panel-current">
     <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 10 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week11">Week 11 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 10 Recap</p>
-    <h2 class="edition-head">Pileup</h2>
+    <h2 class="edition-head">It&rsquo;s a Pileup!</h2>
     <p class="dateline">2026 Season &middot; Week 10 Complete &middot; Week 11 Preview Below</p>
     <p class="lede">{LEDE1}</p>
     <p class="lede">{LEDE2}</p>
