@@ -8,15 +8,15 @@ src = open(P).read()
 # ================= HTML =================
 h_start = src.index('  <!-- ================= CURRENT EDITION: Week 9 Recap / Week 10 Preview ================= -->')
 h_stat = src.index('    <div class="section-label" id="sec-statbook">')
-LEDE1 = ("Half a point separates first place from second after ten weeks. Lisette and Melinda both won by more than 55, so both "
-         "are 8-2, and Lisette leads on points, 1,399.6 to 1,399.1. Christian McCaffrey scored 44.3 for her, the best individual "
-         "score of the week, and Patrick Mahomes threw 5 touchdowns. Melinda answered with 61.8 from Joe Burrow and Ja'Marr Chase "
-         "in Cincinnati's 38-18 win over Pittsburgh. Lisette plays Cara next, and Melinda plays Pete.")
-LEDE2 = ("The race for the last two playoff spots comes down to Week 11. Mike, Ronjan, and mariss are all 5-5, and Mike plays "
-         "Ronjan, so the winner keeps a spot and the loser falls out. Ben and mariss play for the other one. Ronjan fell into the "
-         "tie by scoring 156.7 against mariss, the most any team has scored in a loss this season. Pete won the same week with "
-         "110.5. He beat Cara because Drake Maye hurt his ankle on New England's first drive in Munich, while J.J. McCarthy and "
-         "Kirk Cousins scored 32.5 on her bench. The Patriots fear the ankle is broken.")
+LEDE1 = ("Four weeks are left in the regular season, and every team from third place to sixth lost in Week 10. Cara and Joe "
+         "fell to 6-4, Mike and Ronjan fell to 5-5, and mariss caught them with a win over Ronjan. One game now separates third "
+         "place from seventh, and Ben and Pete are one more game back at 4-6. Lisette and Melinda are the only teams pulling away. "
+         "Both won by more than 55 points to reach 8-2, two games clear of everyone else in the race for the two byes.")
+LEDE2 = ("The losses in the middle came in every shape. Ronjan scored 156.7 against mariss, the most any team has scored in a loss "
+         "this season. Cara lost to Pete's 110.5 because Drake Maye hurt his ankle on New England's first drive in Munich, while "
+         "J.J. McCarthy and Kirk Cousins scored 32.5 on her bench. Mike started a receiver in his OP slot and lost to last-place Karl. "
+         "Week 11 pits Mike against Ronjan and Ben against mariss. On current points, both winners would hold playoff spots and "
+         "both losers would be on the outside.")
 INJ_INTRO = ("Drake Maye's ankle is the week's worst news. Malik Willis joined Jalen Hurts on injured reserve, Jordan Addison needs "
              "thumb surgery, and Woody Marks is in the concussion protocol.")
 BB = ("Cara blew the only game of Week 10, her second this season. Her lineup used 77.4% of its possible points, the lowest of "
@@ -26,7 +26,7 @@ html_new = f'''  <!-- ================= CURRENT EDITION: Week 10 Recap / Week 11
   <section class="edition" id="panel-current">
     <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 10 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week11">Week 11 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 10 Recap</p>
-    <h2 class="edition-head">Half a Point</h2>
+    <h2 class="edition-head">Pileup</h2>
     <p class="dateline">2026 Season &middot; Week 10 Complete &middot; Week 11 Preview Below</p>
     <p class="lede">{LEDE1}</p>
     <p class="lede">{LEDE2}</p>
@@ -198,7 +198,7 @@ W11 = [
       note="Melinda moves into first with a win if Lisette loses, or if both win and Melinda outscores her by more than 0.5. Rome Odunze scored 124.1 points for Pete last season and now plays for Melinda. Pete loses Kyren Williams and Drake London to byes. Pete won the 2025 meeting 149.8-126.7."),
  dict(a=1, b=8, tag=None, games=[(112.06, 110.66)],
       swaps=[("Malik Willis (QB)", 1, 8, "round: 6"), ("Jaxon Smith-Njigba (WR)", 8, 1, "how: 'via Joe'"), ("Javonte Williams (RB)", 8, 1, "how: 'via Joe'")],
-      note="Joe holds a playoff spot this week no matter what. It's the first meeting since Joe traded Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and has the most points of any receiver this year, but Seattle's bye takes him, Drew Lock, and Jadarian Price out of Imran's lineup. Imran won the 2025 meeting 112.1-110.7."),
+      note="Joe stays in the top six this week no matter what. It's the first meeting since Joe traded Jaxon Smith-Njigba and Javonte Williams to Imran. Smith-Njigba scored 289.0 points for Joe last season and has the most points of any receiver this year, but Seattle's bye takes him, Drew Lock, and Jadarian Price out of Imran's lineup. Imran won the 2025 meeting 112.1-110.7."),
  dict(a=11, b=10, tag=None, games=[(94.76, 137.38)],
       swaps=[("Dak Prescott (QB)", 11, 10, "round: 2"), ("D'Andre Swift (RB)", 10, 11, "round: 5"), ("Hollywood Brown (WR)", 10, 11, "how: 'waivers'")],
       note="Both teams are two games out of the top six with four weeks left. Dak Prescott scored 282.1 points for Kris last season and ranks fourth among quarterbacks for Karl. D'Andre Swift went the other way after scoring 206.3 for Karl, and he's 12th among backs this year. Byes take Bijan Robinson from Karl and Quinshon Judkins from Kris. Karl won the 2025 meeting 137.4-94.8."),
