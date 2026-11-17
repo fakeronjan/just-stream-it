@@ -24,12 +24,21 @@ BB = ("Cara blew the only game of Week 10, her second of the season. Her lineup 
       "would have him at 6-4 instead of 3-7, while Ronjan and mariss have each banked two more wins than their optimal lineups earned.")
 html_new = f'''  <!-- ================= CURRENT EDITION: Week 10 Recap / Week 11 Preview ================= -->
   <section class="edition" id="panel-current">
-    <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 10 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week11">Week 11 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
+    <nav class="section-nav" aria-label="Sections"><a href="#sec-watch">Watch</a><a href="#sec-results">Week 10 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week11">Week 11 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 10 Recap</p>
     <h2 class="edition-head">It&rsquo;s a Pileup!</h2>
     <p class="dateline">2026 Season &middot; Week 10 Complete &middot; Week 11 Preview Below</p>
     <p class="lede">{LEDE1}</p>
     <p class="lede">{LEDE2}</p>
+
+    <a class="watch-card" id="sec-watch" href="just-scream-it.html?week=10">
+      <span class="watch-thumb"><img src="just-scream-it/thumb_week10.jpg" alt=""><span class="watch-play"></span></span>
+      <span class="watch-text">
+        <span class="watch-kicker">Now showing &middot; 8:42</span>
+        <span class="watch-head">Just Scream It</span>
+        <span class="watch-dek">The pundits recap Week 10 and pick every Week 11 game.</span>
+      </span>
+    </a>
 
     <div class="section-label" id="sec-results">Week 10 Results</div>
     <div class="matchup-grid" id="recap-matchup-grid"></div>
