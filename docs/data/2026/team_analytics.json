@@ -188,10 +188,10 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 53,
+    "transactions_count": 54,
     "trades_count": 1,
     "waiver_pickups": 21,
-    "free_agent_pickups": 21,
+    "free_agent_pickups": 22,
     "drops": 23,
     "players_started_count": 31,
     "started_points_total": 1101.26,
@@ -280,10 +280,10 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 30,
+    "transactions_count": 32,
     "trades_count": 0,
     "waiver_pickups": 7,
-    "free_agent_pickups": 18,
+    "free_agent_pickups": 20,
     "drops": 11,
     "players_started_count": 29,
     "started_points_total": 1251.68,
@@ -468,10 +468,10 @@
     "owners": [
       "Kris Wikstrom"
     ],
-    "transactions_count": 13,
+    "transactions_count": 15,
     "trades_count": 0,
     "waiver_pickups": 5,
-    "free_agent_pickups": 8,
+    "free_agent_pickups": 10,
     "drops": 5,
     "players_started_count": 25,
     "started_points_total": 1147.58,
@@ -652,11 +652,11 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 10,
+    "transactions_count": 11,
     "trades_count": 0,
     "waiver_pickups": 1,
     "free_agent_pickups": 7,
-    "drops": 3,
+    "drops": 4,
     "players_started_count": 24,
     "started_points_total": 1399.06,
     "started_points_by_source": {
@@ -838,10 +838,10 @@
     "owners": [
       "Pete Gallagher"
     ],
-    "transactions_count": 53,
+    "transactions_count": 54,
     "trades_count": 0,
     "waiver_pickups": 15,
-    "free_agent_pickups": 28,
+    "free_agent_pickups": 29,
     "drops": 24,
     "players_started_count": 32,
     "started_points_total": 1183.96,

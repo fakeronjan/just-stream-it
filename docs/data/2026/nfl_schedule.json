@@ -1823,14 +1823,14 @@
     "HOU": {
       "opponent": "IND",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 26.0,
+      "opponent_score": 3.0
     },
     "IND": {
       "opponent": "HOU",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 3.0,
+      "opponent_score": 26.0
     },
     "BUF": {
       "opponent": "MIA",
