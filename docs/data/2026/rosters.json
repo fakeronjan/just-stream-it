@@ -47,7 +47,7 @@
       "pro_team": "BUF",
       "lineup_slot": "BE",
       "keeper_value": 9,
-      "injury_status": "DOUBTFUL",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -57,7 +57,7 @@
       "pro_team": "ARI",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -491,7 +491,7 @@
       "pro_team": "LAR",
       "lineup_slot": "BE",
       "keeper_value": 4,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -539,9 +539,9 @@
       "name": "Roman Wilson",
       "position": "WR",
       "pro_team": "PIT",
-      "lineup_slot": "IR",
+      "lineup_slot": "WR",
       "keeper_value": 0,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -551,7 +551,7 @@
       "pro_team": "CAR",
       "lineup_slot": "FLEX",
       "keeper_value": 16,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -629,7 +629,7 @@
       "name": "Kalif Raymond",
       "position": "WR",
       "pro_team": "CHI",
-      "lineup_slot": "WR",
+      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -650,16 +650,6 @@
       "position": "RB",
       "pro_team": "LAC",
       "lineup_slot": "RB",
-      "keeper_value": 0,
-      "injury_status": "ACTIVE",
-      "acquisition_type": "ADD"
-    },
-    {
-      "player_id": 4686612,
-      "name": "Tre' Harris",
-      "position": "WR",
-      "pro_team": "LAC",
-      "lineup_slot": "BE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -693,7 +683,7 @@
       "pro_team": "TB",
       "lineup_slot": 7,
       "keeper_value": 2,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1195,9 +1185,9 @@
       "name": "Tyjae Spears",
       "position": "RB",
       "pro_team": "TEN",
-      "lineup_slot": "BE",
+      "lineup_slot": "IR",
       "keeper_value": 14,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "INJURY_RESERVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1287,7 +1277,7 @@
       "name": "Brock Bowers",
       "position": "TE",
       "pro_team": "LV",
-      "lineup_slot": "TE",
+      "lineup_slot": 7,
       "keeper_value": 3,
       "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
@@ -1469,7 +1459,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "OUT",
       "acquisition_type": "ADD"
     },
     {
@@ -1487,7 +1477,7 @@
       "name": "Mike Gesicki",
       "position": "TE",
       "pro_team": "CIN",
-      "lineup_slot": 7,
+      "lineup_slot": "TE",
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
@@ -1681,7 +1671,7 @@
       "pro_team": "WSH",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1985,7 +1975,7 @@
       "pro_team": "TEN",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
