@@ -1998,6 +1998,26 @@
     ]
   },
   {
+    "id": "af8434dd-559c-46a4-adec-f06579654bef",
+    "type": "ROSTER",
+    "team_id": 7,
+    "week": 11,
+    "items": [
+      {
+        "player_id": 4432665,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": 3116389,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "5ab9a79c-8efd-44d0-a426-72b3c36f3b7e",
     "type": "ROSTER",
     "team_id": 6,

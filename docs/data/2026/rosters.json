@@ -491,7 +491,7 @@
       "pro_team": "LAR",
       "lineup_slot": "BE",
       "keeper_value": 4,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -601,7 +601,7 @@
       "pro_team": "LAC",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "ADD"
     },
     {
@@ -673,7 +673,7 @@
       "pro_team": "LAC",
       "lineup_slot": "QB",
       "keeper_value": 2,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -823,7 +823,7 @@
       "pro_team": "JAX",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "TRADE"
     },
     {
@@ -1015,7 +1015,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1055,7 +1055,7 @@
       "pro_team": "LV",
       "lineup_slot": "K",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1277,9 +1277,9 @@
       "name": "Brock Bowers",
       "position": "TE",
       "pro_team": "LV",
-      "lineup_slot": 7,
+      "lineup_slot": "BE",
       "keeper_value": 3,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1427,7 +1427,7 @@
       "name": "Samaje Perine",
       "position": "RB",
       "pro_team": "CIN",
-      "lineup_slot": "BE",
+      "lineup_slot": 7,
       "keeper_value": 0,
       "injury_status": "ACTIVE",
       "acquisition_type": "TRADE"
@@ -1459,7 +1459,7 @@
       "pro_team": "NO",
       "lineup_slot": "BE",
       "keeper_value": 0,
-      "injury_status": "OUT",
+      "injury_status": "ACTIVE",
       "acquisition_type": "ADD"
     },
     {
@@ -1713,7 +1713,7 @@
       "pro_team": "PHI",
       "lineup_slot": "FLEX",
       "keeper_value": 2,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1733,7 +1733,7 @@
       "pro_team": "LAC",
       "lineup_slot": "WR",
       "keeper_value": 5,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -1985,7 +1985,7 @@
       "pro_team": "SF",
       "lineup_slot": "IR",
       "keeper_value": 6,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2347,7 +2347,7 @@
       "pro_team": "IND",
       "lineup_slot": "RB",
       "keeper_value": 0,
-      "injury_status": "QUESTIONABLE",
+      "injury_status": "OUT",
       "acquisition_type": "ADD"
     },
     {
@@ -2449,7 +2449,7 @@
       "pro_team": "PHI",
       "lineup_slot": "BE",
       "keeper_value": 12,
-      "injury_status": "ACTIVE",
+      "injury_status": "QUESTIONABLE",
       "acquisition_type": "DRAFT"
     },
     {
@@ -2489,7 +2489,7 @@
       "pro_team": "WSH",
       "lineup_slot": "IR",
       "keeper_value": 10,
-      "injury_status": "INJURY_RESERVE",
+      "injury_status": "ACTIVE",
       "acquisition_type": "DRAFT"
     },
     {
