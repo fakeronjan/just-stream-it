@@ -26,12 +26,21 @@ BB = ("Nobody blew a game in Week 11. mariss and Mike both started their best po
       "at 7-4 instead of 4-7.")
 html_new = f'''  <!-- ================= CURRENT EDITION: Week 11 Recap / Week 12 Preview ================= -->
   <section class="edition" id="panel-current">
-    <nav class="section-nav" aria-label="Sections"><a href="#sec-results">Week 11 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week12">Week 12 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
+    <nav class="section-nav" aria-label="Sections"><a href="#sec-watch">Watch</a><a href="#sec-results">Week 11 Results</a><a href="#sec-standings">Standings</a><a href="#sec-week12">Week 12 Preview</a><a href="#sec-injuries">Injuries</a><a href="#sec-statbook">Statbook</a></nav>
     <p class="kicker">Week 11 Recap</p>
     <h2 class="edition-head">Bye Bye Bye!</h2>
     <p class="dateline">2026 Season &middot; Week 11 Complete &middot; Week 12 Preview Below</p>
     <p class="lede">{LEDE1}</p>
     <p class="lede">{LEDE2}</p>
+
+    <a class="watch-card" id="sec-watch" href="just-scream-it.html?week=11">
+      <span class="watch-thumb"><img src="just-scream-it/thumb_week11.jpg" alt=""><span class="watch-play"></span></span>
+      <span class="watch-text">
+        <span class="watch-kicker">Now showing &middot; 10:30</span>
+        <span class="watch-head">Just Scream It</span>
+        <span class="watch-dek">The pundits recap Week 11 and pick every Week 12 game.</span>
+      </span>
+    </a>
 
     <div class="section-label" id="sec-results">Week 11 Results</div>
     <div class="matchup-grid" id="recap-matchup-grid"></div>
