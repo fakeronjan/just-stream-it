@@ -213,7 +213,7 @@ for m in W12:
     g26 = [x for x in M26 if x['week'] == 1 and {x['home_team_id'], x['away_team_id']} == {m['a'], m['b']}][0]
     sa, sb = (g26['home_score'], g26['away_score']) if g26['home_team_id'] == m['a'] else (g26['away_score'], g26['home_score'])
     games = [(2025, w, x, y) for w, x, y in m['games']] + [(2026, 1, sa, sb)]
-    g = ', '.join(f"{{ week: {w}, label: 'Week {w}, {yr}', aScore: {x:.2f}, bScore: {y:.2f} }}" for yr, w, x, y in games)
+    g = ', '.join(f"{{ week: {w}, label: '{yr} Week {w}', aScore: {x:.2f}, bScore: {y:.2f} }}" for yr, w, x, y in games)
     sw = ',\n             '.join(f"{{ player: {json.dumps(p)}, from: {f}, to: {t}, {k} }}" for p, f, t, k in m['swaps'])
     tg = f"tag: '{m['tag']}', " if m['tag'] else ''
     wl.append(f"  {{ a: {m['a']}, {tg}aTag: '{tag(m['a'])}', b: {m['b']}, bTag: '{tag(m['b'])}',\n    games: [{g}],\n    swaps: [ {sw} ],\n    note: {bt(m['note'])} }},")
