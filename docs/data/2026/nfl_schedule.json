@@ -1820,18 +1820,6 @@
     }
   },
   "11": {
-    "WSH": {
-      "opponent": "CIN",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "CIN": {
-      "opponent": "WSH",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "HOU": {
       "opponent": "IND",
       "home": true,
@@ -1975,6 +1963,18 @@
       "home": false,
       "team_score": 10.0,
       "opponent_score": 35.0
+    },
+    "WSH": {
+      "opponent": "CIN",
+      "home": true,
+      "team_score": 22.0,
+      "opponent_score": 20.0
+    },
+    "CIN": {
+      "opponent": "WSH",
+      "home": false,
+      "team_score": 20.0,
+      "opponent_score": 22.0
     }
   },
   "12": {
