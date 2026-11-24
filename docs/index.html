@@ -665,7 +665,7 @@
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
 
     <div class="section-label" id="sec-week12">Week 12 Matchups</div>
-    <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
+    <p class="section-sublabel">Rosters, head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="week12-matchup-grid"></div>
 
     <div class="section-label" id="sec-injuries">The Injury Report</div>
@@ -1210,9 +1210,9 @@ const STANDINGS = [
 ];
 
 // ---------- Week 12 preview. 2025 head-to-head from
-// docs/data/2025/matchups.json: every pair met twice in the 2025 regular
-// season (Weeks 1 and 12), and every Week 12 game is a rematch of 2026
-// Week 1. Swaps by player_id, 2025 final rosters vs current 2026
+// docs/data/2025/matchups.json (every pair met twice, Weeks 1 and 12)
+// plus each pair's 2026 Week 1 meeting from docs/data/2026/matchups.json,
+// all in one list, newest first. Swaps by player_id, 2025 final rosters vs current 2026
 // rosters, D/ST and K excluded; `round` = 2026 draft round, `how`
 // replaces it when the player arrived another way. No NFL byes in Week
 // 12; GB-LAR plays Wednesday, CHI-DET, PHI-DAL, and KC-BUF Thursday,
@@ -1222,34 +1222,34 @@ const STANDINGS = [
 // 11, rank among 12. Position ranks are 2026 season points.
 const WEEK12_MATCHUPS = [
   { a: 6, tag: 'Game of the Week', aTag: '#1 &middot; 9-2<span class="tag-ppg">139.5 PPG (#1)</span>', b: 8, bTag: '#3 &middot; 7-4<span class="tag-ppg">125.5 PPG (#6)</span>',
-    games: [{ week: 1, aScore: 108.26, bScore: 153.52 }, { week: 12, aScore: 122.62, bScore: 163.36 }],
+    games: [{ week: 1, label: 'Week 1, 2025', aScore: 108.26, bScore: 153.52 }, { week: 12, label: 'Week 12, 2025', aScore: 122.62, bScore: 163.36 }, { week: 1, label: 'Week 1, 2026', aScore: 107.30, bScore: 201.62 }],
     swaps: [  ],
-    note: `Lisette clinches a first-round bye with a win. Joe clinches a playoff spot by winning if Mike also loses. This is a Week 1 rematch, and Joe won that one 201.6-107.3, still the highest score of 2026. Lisette's namesake plays at Buffalo on Thanksgiving night, and Packers fan Joe gets his team Wednesday night against the Rams.` },
+    note: `Lisette clinches a first-round bye with a win. Joe clinches a playoff spot by winning if Mike also loses. Lisette's namesake plays at Buffalo on Thanksgiving night, and Packers fan Joe gets his team Wednesday night against the Rams.` },
   { a: 12, aTag: '#2 &middot; 9-2<span class="tag-ppg">137.7 PPG (#2)</span>', b: 5, bTag: '#5 &middot; 6-5<span class="tag-ppg">127.4 PPG (#5)</span>',
-    games: [{ week: 1, aScore: 134.00, bScore: 122.28 }, { week: 12, aScore: 104.72, bScore: 132.08 }],
+    games: [{ week: 1, label: 'Week 1, 2025', aScore: 134.00, bScore: 122.28 }, { week: 12, label: 'Week 12, 2025', aScore: 104.72, bScore: 132.08 }, { week: 1, label: 'Week 1, 2026', aScore: 123.46, bScore: 98.02 }],
     swaps: [ { player: "Juwan Johnson (TE)", from: 12, to: 5, round: 15 },
              { player: "Dallas Goedert (TE)", from: 5, to: 12, round: 8 } ],
-    note: `Melinda clinches a bye if she and Lisette both win. Seven of her Week 11 starters play Thursday or Friday, so her week could be over before Cara's starts. Eagles fan Cara gets CeeDee Lamb against her own team on Thanksgiving. Dallas Goedert scored 86.3 points for Cara last season and now plays for Melinda. Melinda won the Week 1 meeting 123.5-98.0.` },
+    note: `Melinda clinches a bye if she and Lisette both win. Seven of her Week 11 starters play Thursday or Friday, so her week could be over before Cara's starts. Eagles fan Cara gets CeeDee Lamb against her own team on Thanksgiving. Dallas Goedert scored 86.3 points for Cara last season and now plays for Melinda.` },
   { a: 7, aTag: '#7 &middot; 5-6<span class="tag-ppg">123.9 PPG (#8)</span>', b: 4, bTag: '#8 &middot; 4-7<span class="tag-ppg">128.8 PPG (#3)</span>',
-    games: [{ week: 1, aScore: 86.88, bScore: 100.44 }, { week: 12, aScore: 67.26, bScore: 137.04 }],
+    games: [{ week: 1, label: 'Week 1, 2025', aScore: 86.88, bScore: 100.44 }, { week: 12, label: 'Week 12, 2025', aScore: 67.26, bScore: 137.04 }, { week: 1, label: 'Week 1, 2026', aScore: 156.36, bScore: 127.60 }],
     swaps: [ { player: "Parker Washington (WR)", from: 7, to: 4, round: 7 },
              { player: "Brock Bowers (TE)", from: 4, to: 7, round: 4 },
              { player: "Tee Higgins (WR)", from: 4, to: 7, round: 5 } ],
-    note: `Ben is eliminated with a loss if Ronjan, Cara, and mariss all win. A Mike win plus an Imran upset of mariss would put Mike back in the top six, as long as he stays ahead of mariss on total points. Tee Higgins scored 148.0 points for Ben last season and ranks sixth among receivers for Mike, and Parker Washington went the other way and ranks 10th. Ben has both Chiefs backs for Thursday night in Buffalo. Mike won the Week 1 meeting 156.4-127.6.` },
+    note: `Ben is eliminated with a loss if Ronjan, Cara, and mariss all win. A Mike win plus an Imran upset of mariss would put Mike back in the top six, as long as he stays ahead of mariss on total points. Tee Higgins scored 148.0 points for Ben last season and ranks sixth among receivers for Mike, and Parker Washington went the other way and ranks 10th. Ben has both Chiefs backs for Thursday night in Buffalo.` },
   { a: 10, aTag: '#9 &middot; 4-7<span class="tag-ppg">125.1 PPG (#7)</span>', b: 3, bTag: '#10 &middot; 4-7<span class="tag-ppg">113.0 PPG (#10)</span>',
-    games: [{ week: 1, aScore: 111.88, bScore: 159.04 }, { week: 12, aScore: 116.50, bScore: 119.26 }],
+    games: [{ week: 1, label: 'Week 1, 2025', aScore: 111.88, bScore: 159.04 }, { week: 12, label: 'Week 12, 2025', aScore: 116.50, bScore: 119.26 }, { week: 1, label: 'Week 1, 2026', aScore: 140.90, bScore: 133.46 }],
     swaps: [  ],
-    note: `If Ronjan, Cara, and mariss all win, the loser here is eliminated. Cowboys fan Karl has Dak Prescott and Brandon Aubrey on Thanksgiving against the Eagles, and Bills fan Pete has Josh Allen hosting the Chiefs that night. Karl won the Week 1 meeting 140.9-133.5.` },
+    note: `If Ronjan, Cara, and mariss all win, the loser here is eliminated. Cowboys fan Karl has Dak Prescott and Brandon Aubrey on Thanksgiving against the Eagles, and Bills fan Pete has Josh Allen hosting the Chiefs that night.` },
   { a: 9, aTag: '#4 &middot; 6-5<span class="tag-ppg">127.4 PPG (#4)</span>', b: 11, bTag: '#11 &middot; 3-8<span class="tag-ppg">112.7 PPG (#11)</span>',
-    games: [{ week: 1, aScore: 115.90, bScore: 143.04 }, { week: 12, aScore: 189.40, bScore: 120.78 }],
+    games: [{ week: 1, label: 'Week 1, 2025', aScore: 115.90, bScore: 143.04 }, { week: 12, label: 'Week 12, 2025', aScore: 189.40, bScore: 120.78 }, { week: 1, label: 'Week 1, 2026', aScore: 121.92, bScore: 134.92 }],
     swaps: [ { player: "Sam LaPorta (TE)", from: 11, to: 9, round: 6 },
              { player: "DeVonta Smith (WR)", from: 9, to: 11, round: 4 } ],
-    note: `A loss ends Kris's season. Chiefs fan Kris has Rashee Rice at Buffalo on Thanksgiving night, and Ronjan has Jahmyr Gibbs and Sam LaPorta against the Bears that afternoon. Kris won the Week 1 meeting 134.9-121.9.` },
+    note: `A loss ends Kris's season. Chiefs fan Kris has Rashee Rice at Buffalo on Thanksgiving night, and Ronjan has Jahmyr Gibbs and Sam LaPorta against the Bears that afternoon.` },
   { a: 2, aTag: '#6 &middot; 6-5<span class="tag-ppg">123.7 PPG (#9)</span>', b: 1, bTag: '#12 &middot; 3-8<span class="tag-ppg">110.7 PPG (#12)</span>',
-    games: [{ week: 1, aScore: 111.92, bScore: 139.98 }, { week: 12, aScore: 171.34, bScore: 103.66 }],
+    games: [{ week: 1, label: 'Week 1, 2025', aScore: 111.92, bScore: 139.98 }, { week: 12, label: 'Week 12, 2025', aScore: 171.34, bScore: 103.66 }, { week: 1, label: 'Week 1, 2026', aScore: 147.08, bScore: 92.58 }],
     swaps: [ { player: "Elic Ayomanor (WR)", from: 2, to: 1, how: 'waivers' },
              { player: "Isaiah Likely (TE)", from: 1, to: 2, round: 6 } ],
-    note: `A loss ends Imran's season, too. mariss would stay in the top six with a win. Sam Darnold could return for Imran against San Francisco and Isaiah Likely, a former Imran tight end, ranks second at the position for mariss. mariss won the Week 1 meeting 147.1-92.6.` },
+    note: `A loss ends Imran's season, too. mariss would stay in the top six with a win. Sam Darnold could return for Imran against San Francisco, and Isaiah Likely, a former Imran tight end, ranks second at the position for mariss.` },
 ];
 // Record after this week's game, from STANDINGS (engine playoff_picture).
 function recordAfterWeek(teamId) {
@@ -1307,7 +1307,8 @@ function renderStandingsRow(s, idx) {
 }
 
 function renderWeek12Matchup(m) {
-  const gamesHtml = m.games.map(g => `
+  // games stay chronological in the data; newest meeting shows first
+  const gamesHtml = m.games.slice().reverse().map(g => `
     <div class="matchup-h2h-row">
       <span class="matchup-h2h-week">${g.label || 'Week ' + g.week}</span>
       <span class="matchup-h2h-score">
@@ -1320,11 +1321,10 @@ function renderWeek12Matchup(m) {
   const aWins = m.games.filter(g => g.aScore > g.bScore).length;
   const bWins = m.games.filter(g => g.bScore > g.aScore).length;
   const leader = aWins > bWins ? TEAMS[m.a].owner : TEAMS[m.b].owner;
-  const seriesLabel = m.games.length === 1
-    ? `2025 meeting: ${leader} won`
-    : aWins === bWins
-      ? `2025 series: ${aWins}-${bWins}`
-      : `2025 series: ${leader} swept ${Math.max(aWins, bWins)}-${Math.min(aWins, bWins)}`;
+  const hi = Math.max(aWins, bWins), lo = Math.min(aWins, bWins);
+  const seriesLabel = aWins === bWins
+    ? `Series tied ${aWins}-${bWins}`
+    : lo === 0 ? `Series: ${leader} swept ${hi}-0` : `Series: ${leader} leads ${hi}-${lo}`;
   const swapsHtml = m.swaps.length ? `
     <p class="matchup-series" style="margin-top:14px;">Familiar Faces from Last Year</p>
     <div class="matchup-fact-list">

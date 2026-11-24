@@ -42,7 +42,7 @@ html_new = f'''  <!-- ================= CURRENT EDITION: Week 11 Recap / Week 12
     <p class="standings-caption">Top 6 make the playoffs &middot; back column shown only when tied in wins</p>
 
     <div class="section-label" id="sec-week12">Week 12 Matchups</div>
-    <p class="section-sublabel">Rosters, 2025 head-to-head, and Familiar Faces</p>
+    <p class="section-sublabel">Rosters, head-to-head, and Familiar Faces</p>
     <div class="matchup-grid" id="week12-matchup-grid"></div>
 
     <div class="section-label" id="sec-injuries">The Injury Report</div>
@@ -199,24 +199,28 @@ W12 = [
       swaps=[("Elic Ayomanor (WR)", 2, 1, "how: 'waivers'"), ("Isaiah Likely (TE)", 1, 2, "round: 6")]),
 ]
 NOTE = {
- 6: "Lisette clinches a first-round bye with a win. Joe clinches a playoff spot by winning if Mike also loses. This is a Week 1 rematch, and Joe won that one 201.6-107.3, still the highest score of 2026. Lisette's namesake plays at Buffalo on Thanksgiving night, and Packers fan Joe gets his team Wednesday night against the Rams.",
- 12: "Melinda clinches a bye if she and Lisette both win. Seven of her Week 11 starters play Thursday or Friday, so her week could be over before Cara's starts. Eagles fan Cara gets CeeDee Lamb against her own team on Thanksgiving. Dallas Goedert scored 86.3 points for Cara last season and now plays for Melinda. Melinda won the Week 1 meeting 123.5-98.0.",
- 7: "Ben is eliminated with a loss if Ronjan, Cara, and mariss all win. A Mike win plus an Imran upset of mariss would put Mike back in the top six, as long as he stays ahead of mariss on total points. Tee Higgins scored 148.0 points for Ben last season and ranks sixth among receivers for Mike, and Parker Washington went the other way and ranks 10th. Ben has both Chiefs backs for Thursday night in Buffalo. Mike won the Week 1 meeting 156.4-127.6.",
- 10: "If Ronjan, Cara, and mariss all win, the loser here is eliminated. Cowboys fan Karl has Dak Prescott and Brandon Aubrey on Thanksgiving against the Eagles, and Bills fan Pete has Josh Allen hosting the Chiefs that night. Karl won the Week 1 meeting 140.9-133.5.",
- 9: "A loss ends Kris's season. Chiefs fan Kris has Rashee Rice at Buffalo on Thanksgiving night, and Ronjan has Jahmyr Gibbs and Sam LaPorta against the Bears that afternoon. Kris won the Week 1 meeting 134.9-121.9.",
- 2: "A loss ends Imran's season, too. mariss would stay in the top six with a win. Sam Darnold could return for Imran against San Francisco and Isaiah Likely, a former Imran tight end, ranks second at the position for mariss. mariss won the Week 1 meeting 147.1-92.6.",
+ 6: "Lisette clinches a first-round bye with a win. Joe clinches a playoff spot by winning if Mike also loses. Lisette's namesake plays at Buffalo on Thanksgiving night, and Packers fan Joe gets his team Wednesday night against the Rams.",
+ 12: "Melinda clinches a bye if she and Lisette both win. Seven of her Week 11 starters play Thursday or Friday, so her week could be over before Cara's starts. Eagles fan Cara gets CeeDee Lamb against her own team on Thanksgiving. Dallas Goedert scored 86.3 points for Cara last season and now plays for Melinda.",
+ 7: "Ben is eliminated with a loss if Ronjan, Cara, and mariss all win. A Mike win plus an Imran upset of mariss would put Mike back in the top six, as long as he stays ahead of mariss on total points. Tee Higgins scored 148.0 points for Ben last season and ranks sixth among receivers for Mike, and Parker Washington went the other way and ranks 10th. Ben has both Chiefs backs for Thursday night in Buffalo.",
+ 10: "If Ronjan, Cara, and mariss all win, the loser here is eliminated. Cowboys fan Karl has Dak Prescott and Brandon Aubrey on Thanksgiving against the Eagles, and Bills fan Pete has Josh Allen hosting the Chiefs that night.",
+ 9: "A loss ends Kris's season. Chiefs fan Kris has Rashee Rice at Buffalo on Thanksgiving night, and Ronjan has Jahmyr Gibbs and Sam LaPorta against the Bears that afternoon.",
+ 2: "A loss ends Imran's season, too. mariss would stay in the top six with a win. Sam Darnold could return for Imran against San Francisco, and Isaiah Likely, a former Imran tight end, ranks second at the position for mariss.",
 }
+M26 = json.load(open(R + 'docs/data/2026/matchups.json'))
 wl = []
 for m in W12:
     m['note'] = NOTE[m['a']]
-    g = ', '.join(f"{{ week: {w}, aScore: {x:.2f}, bScore: {y:.2f} }}" for w, x, y in m['games'])
+    g26 = [x for x in M26 if x['week'] == 1 and {x['home_team_id'], x['away_team_id']} == {m['a'], m['b']}][0]
+    sa, sb = (g26['home_score'], g26['away_score']) if g26['home_team_id'] == m['a'] else (g26['away_score'], g26['home_score'])
+    games = [(2025, w, x, y) for w, x, y in m['games']] + [(2026, 1, sa, sb)]
+    g = ', '.join(f"{{ week: {w}, label: 'Week {w}, {yr}', aScore: {x:.2f}, bScore: {y:.2f} }}" for yr, w, x, y in games)
     sw = ',\n             '.join(f"{{ player: {json.dumps(p)}, from: {f}, to: {t}, {k} }}" for p, f, t, k in m['swaps'])
     tg = f"tag: '{m['tag']}', " if m['tag'] else ''
     wl.append(f"  {{ a: {m['a']}, {tg}aTag: '{tag(m['a'])}', b: {m['b']}, bTag: '{tag(m['b'])}',\n    games: [{g}],\n    swaps: [ {sw} ],\n    note: {bt(m['note'])} }},")
 w_js = ('''// ---------- Week 12 preview. 2025 head-to-head from
-// docs/data/2025/matchups.json: every pair met twice in the 2025 regular
-// season (Weeks 1 and 12), and every Week 12 game is a rematch of 2026
-// Week 1. Swaps by player_id, 2025 final rosters vs current 2026
+// docs/data/2025/matchups.json (every pair met twice, Weeks 1 and 12)
+// plus each pair's 2026 Week 1 meeting from docs/data/2026/matchups.json,
+// all in one list, newest first. Swaps by player_id, 2025 final rosters vs current 2026
 // rosters, D/ST and K excluded; `round` = 2026 draft round, `how`
 // replaces it when the player arrived another way. No NFL byes in Week
 // 12; GB-LAR plays Wednesday, CHI-DET, PHI-DAL, and KC-BUF Thursday,
@@ -228,6 +232,19 @@ const WEEK12_MATCHUPS = [
 ''' + '\n'.join(wl) + '\n];')
 js = repl_block(js, "// ---------- Week 11 preview.", "\n];", w_js)
 js = js.replace('function renderWeek11Matchup(m)', 'function renderWeek12Matchup(m)')
+OLD_G = "  const gamesHtml = m.games.map(g => `"
+assert OLD_G in js
+js = js.replace(OLD_G, "  // games stay chronological in the data; newest meeting shows first\n  const gamesHtml = m.games.slice().reverse().map(g => `", 1)
+OLD_S = """  const seriesLabel = m.games.length === 1
+    ? `2025 meeting: ${leader} won`
+    : aWins === bWins
+      ? `2025 series: ${aWins}-${bWins}`
+      : `2025 series: ${leader} swept ${Math.max(aWins, bWins)}-${Math.min(aWins, bWins)}`;"""
+assert OLD_S in js
+js = js.replace(OLD_S, """  const hi = Math.max(aWins, bWins), lo = Math.min(aWins, bWins);
+  const seriesLabel = aWins === bWins
+    ? `Series tied ${aWins}-${bWins}`
+    : lo === 0 ? `Series: ${leader} swept ${hi}-0` : `Series: ${leader} leads ${hi}-${lo}`;""", 1)
 js = js.replace("document.getElementById('week11-matchup-grid').innerHTML = WEEK11_MATCHUPS.map(renderWeek11Matchup).join('');",
                 "document.getElementById('week12-matchup-grid').innerHTML = WEEK12_MATCHUPS.map(renderWeek12Matchup).join('');")
 assert 'WEEK11' not in js and 'Week11' not in js and 'week11' not in js, [l for l in js.splitlines() if 'eek11' in l.replace('Week 11', '')]
