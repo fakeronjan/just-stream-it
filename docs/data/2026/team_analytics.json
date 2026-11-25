@@ -4,10 +4,10 @@
     "owners": [
       "Ben Porter"
     ],
-    "transactions_count": 58,
+    "transactions_count": 59,
     "trades_count": 0,
     "waiver_pickups": 21,
-    "free_agent_pickups": 26,
+    "free_agent_pickups": 27,
     "drops": 28,
     "players_started_count": 35,
     "started_points_total": 1417.06,
@@ -188,11 +188,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 54,
+    "transactions_count": 55,
     "trades_count": 1,
-    "waiver_pickups": 21,
+    "waiver_pickups": 22,
     "free_agent_pickups": 22,
-    "drops": 23,
+    "drops": 24,
     "players_started_count": 34,
     "started_points_total": 1217.98,
     "started_points_by_source": {
@@ -280,10 +280,10 @@
     "owners": [
       "Joseph Sebranek"
     ],
-    "transactions_count": 32,
+    "transactions_count": 33,
     "trades_count": 0,
     "waiver_pickups": 7,
-    "free_agent_pickups": 20,
+    "free_agent_pickups": 21,
     "drops": 11,
     "players_started_count": 30,
     "started_points_total": 1380.74,
@@ -374,11 +374,11 @@
     "owners": [
       "Karlos Abel"
     ],
-    "transactions_count": 15,
+    "transactions_count": 17,
     "trades_count": 0,
-    "waiver_pickups": 3,
+    "waiver_pickups": 5,
     "free_agent_pickups": 7,
-    "drops": 7,
+    "drops": 9,
     "players_started_count": 25,
     "started_points_total": 1375.84,
     "started_points_by_source": {
@@ -468,11 +468,11 @@
     "owners": [
       "Kris Wikstrom"
     ],
-    "transactions_count": 15,
+    "transactions_count": 16,
     "trades_count": 0,
-    "waiver_pickups": 5,
+    "waiver_pickups": 6,
     "free_agent_pickups": 10,
-    "drops": 5,
+    "drops": 6,
     "players_started_count": 28,
     "started_points_total": 1240.12,
     "started_points_by_source": {
@@ -746,10 +746,10 @@
     "owners": [
       "Michael Higgins"
     ],
-    "transactions_count": 16,
+    "transactions_count": 17,
     "trades_count": 0,
     "waiver_pickups": 4,
-    "free_agent_pickups": 8,
+    "free_agent_pickups": 9,
     "drops": 5,
     "players_started_count": 29,
     "started_points_total": 1362.36,
