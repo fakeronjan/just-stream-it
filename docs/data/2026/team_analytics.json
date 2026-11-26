@@ -96,10 +96,10 @@
     "owners": [
       "Cara Kantrowitz"
     ],
-    "transactions_count": 9,
+    "transactions_count": 11,
     "trades_count": 0,
-    "waiver_pickups": 1,
-    "free_agent_pickups": 5,
+    "waiver_pickups": 2,
+    "free_agent_pickups": 6,
     "drops": 4,
     "players_started_count": 21,
     "started_points_total": 1401.3,
@@ -188,11 +188,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 55,
+    "transactions_count": 57,
     "trades_count": 1,
     "waiver_pickups": 22,
-    "free_agent_pickups": 22,
-    "drops": 24,
+    "free_agent_pickups": 23,
+    "drops": 25,
     "players_started_count": 34,
     "started_points_total": 1217.98,
     "started_points_by_source": {
@@ -652,11 +652,11 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 11,
+    "transactions_count": 12,
     "trades_count": 0,
     "waiver_pickups": 1,
     "free_agent_pickups": 7,
-    "drops": 4,
+    "drops": 5,
     "players_started_count": 24,
     "started_points_total": 1514.96,
     "started_points_by_source": {

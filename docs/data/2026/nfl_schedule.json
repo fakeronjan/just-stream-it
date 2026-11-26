@@ -1978,29 +1978,17 @@
     }
   },
   "12": {
-    "LAR": {
-      "opponent": "GB",
-      "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
-    "GB": {
-      "opponent": "LAR",
-      "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
-    },
     "DET": {
       "opponent": "CHI",
       "home": true,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 35.0,
+      "opponent_score": 24.0
     },
     "CHI": {
       "opponent": "DET",
       "home": false,
-      "team_score": 0.0,
-      "opponent_score": 0.0
+      "team_score": 24.0,
+      "opponent_score": 35.0
     },
     "DAL": {
       "opponent": "PHI",
@@ -2025,6 +2013,18 @@
       "home": false,
       "team_score": 0.0,
       "opponent_score": 0.0
+    },
+    "LAR": {
+      "opponent": "GB",
+      "home": true,
+      "team_score": 26.0,
+      "opponent_score": 13.0
+    },
+    "GB": {
+      "opponent": "LAR",
+      "home": false,
+      "team_score": 13.0,
+      "opponent_score": 26.0
     },
     "PIT": {
       "opponent": "DEN",
