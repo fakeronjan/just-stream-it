@@ -188,11 +188,11 @@
     "owners": [
       "Imran Hirani"
     ],
-    "transactions_count": 57,
+    "transactions_count": 59,
     "trades_count": 1,
     "waiver_pickups": 22,
-    "free_agent_pickups": 23,
-    "drops": 25,
+    "free_agent_pickups": 24,
+    "drops": 26,
     "players_started_count": 34,
     "started_points_total": 1217.98,
     "started_points_by_source": {
@@ -652,10 +652,10 @@
     "owners": [
       "Melinda Thomas"
     ],
-    "transactions_count": 12,
+    "transactions_count": 13,
     "trades_count": 0,
     "waiver_pickups": 1,
-    "free_agent_pickups": 7,
+    "free_agent_pickups": 8,
     "drops": 5,
     "players_started_count": 24,
     "started_points_total": 1514.96,
@@ -746,11 +746,11 @@
     "owners": [
       "Michael Higgins"
     ],
-    "transactions_count": 17,
+    "transactions_count": 18,
     "trades_count": 0,
-    "waiver_pickups": 4,
+    "waiver_pickups": 5,
     "free_agent_pickups": 9,
-    "drops": 5,
+    "drops": 6,
     "players_started_count": 29,
     "started_points_total": 1362.36,
     "started_points_by_source": {

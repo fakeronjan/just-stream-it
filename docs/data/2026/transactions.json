@@ -34,6 +34,20 @@
     ]
   },
   {
+    "id": "78bc1288-2b10-414f-8c6b-252ba057ea4d",
+    "type": "FREEAGENT",
+    "team_id": 1,
+    "week": 12,
+    "items": [
+      {
+        "player_id": 4360438,
+        "from_team_id": 0,
+        "to_team_id": 1,
+        "type": "ADD"
+      }
+    ]
+  },
+  {
     "id": "303b9c36-f8fa-46ea-b54e-a19156f8fc45",
     "type": "ROSTER",
     "team_id": 10,
@@ -216,6 +230,26 @@
     ]
   },
   {
+    "id": "eb2e3a22-0ff5-4ec7-9efb-363867e28cb1",
+    "type": "ROSTER",
+    "team_id": 12,
+    "week": 12,
+    "items": [
+      {
+        "player_id": -16027,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      },
+      {
+        "player_id": -16024,
+        "from_team_id": 0,
+        "to_team_id": 0,
+        "type": "LINEUP"
+      }
+    ]
+  },
+  {
     "id": "7d741365-f3a9-48a5-a241-13b3f619885d",
     "type": "ROSTER",
     "team_id": 7,
@@ -308,6 +342,26 @@
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "8ed46d13-a74a-4f86-b46e-325ae0457b5f",
+    "type": "FREEAGENT",
+    "team_id": 12,
+    "week": 12,
+    "items": [
+      {
+        "player_id": -16024,
+        "from_team_id": 0,
+        "to_team_id": 12,
+        "type": "ADD"
+      },
+      {
+        "player_id": 3116365,
+        "from_team_id": 12,
+        "to_team_id": 0,
+        "type": "DROP"
       }
     ]
   },
@@ -798,6 +852,20 @@
     ]
   },
   {
+    "id": "82e3f703-8ea1-45bb-a048-4aab54942094",
+    "type": "ROSTER",
+    "team_id": 1,
+    "week": 12,
+    "items": [
+      {
+        "player_id": 3930086,
+        "from_team_id": 1,
+        "to_team_id": 0,
+        "type": "DROP"
+      }
+    ]
+  },
+  {
     "id": "5ce21275-9b10-4441-8deb-e42eedc42a53",
     "type": "ROSTER",
     "team_id": 7,
@@ -834,6 +902,26 @@
         "from_team_id": 0,
         "to_team_id": 0,
         "type": "LINEUP"
+      }
+    ]
+  },
+  {
+    "id": "3b79b2dd-d427-4b42-a96b-bc3965be704d",
+    "type": "WAIVER",
+    "team_id": 7,
+    "week": 12,
+    "items": [
+      {
+        "player_id": 2576980,
+        "from_team_id": 0,
+        "to_team_id": 7,
+        "type": "ADD"
+      },
+      {
+        "player_id": 4432762,
+        "from_team_id": 7,
+        "to_team_id": 0,
+        "type": "DROP"
       }
     ]
   },
